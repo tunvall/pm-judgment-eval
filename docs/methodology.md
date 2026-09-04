@@ -32,6 +32,12 @@ Abstracting a case for the repo risks removing exactly the domain-specific detai
 
 Each case is run at least **2 times per model** before its score is treated as meaningful. Model output is stochastic; a single run cannot distinguish "this model is weak on this dimension" from "this model got unlucky on one generation." The run/results data model keys on `case_id × model × trial`, not `case_id × model`.
 
+## System prompt and harness scope
+
+The core benchmark tests models, not harnesses. Every model receives an identical, minimal system prompt — no vendor-specific tuning, and no personal skills, style guides, or CLAUDE.md-style customization applied to any one vendor and not the others. Applying custom instruction tuning to one model (e.g. Claude, under a personally-developed skills setup) while testing others out of the box would compare "a heavily prompt-engineered model" against "vanilla everyone else," which confounds prompt-engineering effort with model capability and makes any result uninterpretable.
+
+If there's a later interest in testing whether a specific personal setup (e.g. a Claude Code configuration with custom skills) measurably improves judgment scores over the vanilla model, that is a distinct, explicitly-labeled Phase 7 harness experiment — reported separately, never blended into the core model-vs-model comparison.
+
 ## Scoring reliability
 
 Not every rubric criterion is equally trustworthy as a numeric score. Criteria that ask whether a specific, checkable thing was done or mentioned (e.g. "proposes a realistic next step") are more reliably judge-scorable than criteria that ask whether a stance was *correct* (e.g. "conviction" scored as "did it disagree" risks collapsing back into agreement-with-Fredrik scoring through the back door). Where a criterion can't be scored without smuggling in agreement with the historical decision, it should be flagged as qualitative-only in the case file and excluded from any weighted aggregate, even if it's still worth reading in raw judge output.
@@ -45,6 +51,29 @@ The judge prompt must explicitly instruct against two specific gaming patterns: 
 ## Reporting
 
 No single aggregate leaderboard score is the primary output of an evaluation run. Primary outputs are per-dimension performance, case-level disagreement between models, judge-vs-human disagreement, and specific strong/weak response examples. A total score may be computed but is secondary to the qualitative comparison.
+
+## Cost and efficiency
+
+Cost is tracked as a separate reported axis, never folded into the judgment-dimension scores or any weighted aggregate. Raw token counts are not compared directly across vendors — each provider (Anthropic, OpenAI, Google, Mistral, xAI, etc.) uses its own tokenizer, so the same response text yields a different token count depending on which model produced it, making cross-vendor token counts an apples-to-oranges comparison.
+
+Instead: read `input_tokens`/`output_tokens` directly from each API response's usage metadata (every major provider returns this — no local tokenizer needed), then multiply by that provider's published per-token rate to get actual dollar cost per response. This is the real per-unit-cost proxy. Report it alongside judgment scores as a comparison (e.g. "Model A scores highest on tradeoff reasoning but costs 3x more per response than Model B, which scores nearly as well"), not blended into a single number.
+
+Latency (wall-clock time per response) is logged as free metadata captured from timing each API call, but is not a scored dimension in v0 — secondary to cost, worth having recorded, not worth building analysis around yet.
+
+## Repeatability across model releases
+
+A core design goal is that testing a newly-released model against the existing results should be cheap and valid, not a full re-run. This requires:
+
+- **The case set, rubric, and judge are frozen before cross-vendor comparison begins**, and versioned (`case_version`, `judge_prompt_version`, already part of the Section 14 run-metadata schema in SPEC.md). A new model's score is only comparable to existing scores if it was evaluated against the same case version and judge version. If a case needs to change later, that's a new case version, and any comparison spanning the change carries a caveat rather than being treated as apples-to-apples.
+- **Results are append-only.** The results store is keyed by `case_id × model × trial × run_id`. Testing a new model means running only that model against the frozen case set and appending — never re-running models already on the board. The reporting step recomputes the comparison from whatever is currently in the store, so it can be rerun at any time to pick up newly-added models.
+- **Model versions are pinned exactly**, never referenced by a rolling alias like "latest" — providers update what an alias points to without warning, which would silently break reproducibility for exactly this workflow. The exact pinned model ID is recorded in run metadata (`model_version_if_known`).
+- **The judge is the fragile point in this chain.** Upgrading the judge model invalidates comparability between scores produced under the old judge and the new one, since the standard being applied changed, not just the model being tested. Judge changes should be rare and deliberate: bump `judge_prompt_version` when it happens, and re-judge a sample of already-scored models under the new judge to see how much rankings shift, following the same judge-reliability check already described for LLM-as-judge generally.
+
+## Iteration sequencing across vendors
+
+Case set, rubric, and judge get iterated against a single model family first (not the full vendor set) — cheaper and faster to develop against one API while the schema and rubric are still unstable. Only once the rubric and judge are stable does the frozen v1 dataset run against the broader vendor set (Phase 5).
+
+Risk to watch during iteration: developing the rubric primarily against one vendor's outputs risks shaping it — not around the "correct" answer (that risk is already handled by the hindsight-bias process above), but around that vendor's typical response *style* — its structure, hedging patterns, verbosity — in ways that could unfairly penalize a differently-shaped but equally valid response from another vendor. Before calling the rubric final, sanity-check 2-3 cases against a second model (a spot check, not a full run) specifically to confirm the rubric doesn't silently reward or punish stylistic patterns rather than reasoning quality.
 
 ## A note on where the sanitization/NDA process lives
 
