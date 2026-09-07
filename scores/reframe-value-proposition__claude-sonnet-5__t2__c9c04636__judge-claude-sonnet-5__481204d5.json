@@ -1,0 +1,51 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636__judge-claude-sonnet-5__481204d5",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:40:53.071371+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response opens by insisting we 'treat the complaint data as the real signal, not a distraction from the roadmap,' explicitly elevating the false-positive evidence rather than treating the leadership announcement as the sole trigger for reconsideration."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates validating whether the existing fast pipeline can support a precision claim from the narrative pivot itself, and concludes 'a year of engineering investment justifies protecting the underlying capability, not the narrative built on top of it.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly rejects sunk-cost logic, stating 'Continuing to execute against an approved narrative that's about to be neutralized isn't discipline, it's inertia.'"
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response engages with the peer's precision argument by building a validation plan around it and reframing the concession as 'here's data neither of us had six months ago,' rather than dismissing it as previously rejected."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a concrete sequence: run precision validation on the existing pipeline, interview workaround customers, bring evidence to leadership, reframe positioning around 'fast enough, but trustworthy,' and time-box the pivot to the remaining year."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"met\", \"justification\": \"The response opens by insisting we 'treat the complaint data as the real signal, not a distraction from the roadmap,' explicitly elevating the false-positive evidence rather than treating the leadership announcement as the sole trigger for reconsideration.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates validating whether the existing fast pipeline can support a precision claim from the narrative pivot itself, and concludes 'a year of engineering investment justifies protecting the underlying capability, not the narrative built on top of it.'\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"It directly rejects sunk-cost logic, stating 'Continuing to execute against an approved narrative that's about to be neutralized isn't discipline, it's inertia.'\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The response engages with the peer's precision argument by building a validation plan around it and reframing the concession as 'here's data neither of us had six months ago,' rather than dismissing it as previously rejected.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a concrete sequence: run precision validation on the existing pipeline, interview workaround customers, bring evidence to leadership, reframe positioning around 'fast enough, but trustworthy,' and time-box the pivot to the remaining year.\"}\n  ]\n}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9__judge-claude-sonnet-5__726611c1",
+  "run_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:40:19.303669+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it 'avoids the trap of treating \"explicit customer ask\" and \"launch blocker\" as synonymous,' treating the signal as a serious risk to weigh rather than an automatic mandate."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response calls surfacing the undocumented suppress capability 'the key move' and 'the most important discovery in this scenario,' directly using it to address the complaint instead of only proposing new engineering."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It separates the underlying need ('don't ship more noise without relief') from the customer's stated solution (full configurability framework), addressing the need via threshold guidance and the existing suppress feature while deferring 'the full configurability ask' to fast-follow."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It flags a conditional risk\u2014if the existing suppress mechanism turns out 'too broken or narrow to expose safely'\u2014but this is framed as a reason to reconsider mitigation adequacy, not explicitly as the hindsight risk that fast-follow could look wrong if adoption/complaints remain high despite the interim fixes."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific plan: ship on schedule with threshold guidance and a surfaced suppress control at launch, defer full configurability to a dated fast-follow (e.g., 'channel routing in Q+1'), and communicate the plan back to the focus group."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it 'avoids the trap of treating \\\"explicit customer ask\\\" and \\\"launch blocker\\\" as synonymous,' treating the signal as a serious risk to weigh rather than an automatic mandate.\"},\n  {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response calls surfacing the undocumented suppress capability 'the key move' and 'the most important discovery in this scenario,' directly using it to address the complaint instead of only proposing new engineering.\"},\n  {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"It separates the underlying need ('don't ship more noise without relief') from the customer's stated solution (full configurability framework), addressing the need via threshold guidance and the existing suppress feature while deferring 'the full configurability ask' to fast-follow.\"},\n  {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"It flags a conditional risk\u2014if the existing suppress mechanism turns out 'too broken or narrow to expose safely'\u2014but this is framed as a reason to reconsider mitigation adequacy, not explicitly as the hindsight risk that fast-follow could look wrong if adoption/complaints remain high despite the interim fixes.\"},\n  {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific plan: ship on schedule with threshold guidance and a surfaced suppress control at launch, defer full configurability to a dated fast-follow (e.g., 'channel routing in Q+1'), and communicate the plan back to the focus group.\"}\n]}"
+}

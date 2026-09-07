@@ -1,0 +1,51 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8__judge-claude-sonnet-5__1d153d59",
+  "run_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:40:07.098794+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly treats the signal as 'valid and urgent' but chooses to respond to the underlying need rather than the literal ask, and frames the block decision as one to actively test with the reviewer rather than accept at face value."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response calls surfacing the undocumented suppress feature 'the highest-leverage move available' and makes it the first concrete action item, directly leveraging existing functionality instead of only proposing new engineering."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The signal is about pain, not about a specific solution... The customers didn't say you must ship a full configuration framework,' clearly separating the underlying need from the stated ask."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response acknowledges a 'strategic tradeoff (multi-quarter delay vs. customer trust)' and proposes re-confirming with customers, but it never explicitly names the specific risk that fast-following could look like the wrong call in hindsight if adoption/complaints turn out high \u2014 it treats the fast-follow package as largely sufficient rather than flagging that residual exposure."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, dated, sequenced plan (surface suppress feature, ship threshold tuning, communicate roadmap, re-confirm with reviewer/customers) rather than just weighing pros and cons."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly treats the signal as 'valid and urgent' but chooses to respond to the underlying need rather than the literal ask, and frames the block decision as one to actively test with the reviewer rather than accept at face value.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response calls surfacing the undocumented suppress feature 'the highest-leverage move available' and makes it the first concrete action item, directly leveraging existing functionality instead of only proposing new engineering.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The signal is about pain, not about a specific solution... The customers didn't say you must ship a full configuration framework,' clearly separating the underlying need from the stated ask.\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response acknowledges a 'strategic tradeoff (multi-quarter delay vs. customer trust)' and proposes re-confirming with customers, but it never explicitly names the specific risk that fast-following could look like the wrong call in hindsight if adoption/complaints turn out high \u2014 it treats the fast-follow package as largely sufficient rather than flagging that residual exposure.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, dated, sequenced plan (surface suppress feature, ship threshold tuning, communicate roadmap, re-confirm with reviewer/customers) rather than just weighing pros and cons.\"}\n  ]\n}"
+}

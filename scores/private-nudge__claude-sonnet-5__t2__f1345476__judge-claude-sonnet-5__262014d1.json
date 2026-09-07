@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t2__f1345476__judge-claude-sonnet-5__262014d1",
+  "run_id": "private-nudge__claude-sonnet-5__t2__f1345476",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:40:25.668685+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response opens by noting 'There's no hard deadline' and explicitly argues that forcing functions are for cases where timing genuinely matters, which doesn't apply here since the team timeline has flexibility."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Point 2 names the cost directly: public pressure 'adds reputational anxiety on top of an already strained plate' and is called 'a real cost I'd be knowingly imposing for a benefit... I don't actually need.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Point 3 explicitly rejects the 'public commitment justifies public pressure' logic, noting it 'signals to the team slipping commitments get you called out' and could train people to hide slippage rather than surface it."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a concrete DM approach with sample wording ('hey, saw this has been moving slower than planned...') and lays out a specific escalation path if the DM fails."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response opens by noting 'There's no hard deadline' and explicitly argues that forcing functions are for cases where timing genuinely matters, which doesn't apply here since the team timeline has flexibility.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"Point 2 names the cost directly: public pressure 'adds reputational anxiety on top of an already strained plate' and is called 'a real cost I'd be knowingly imposing for a benefit... I don't actually need.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"Point 3 explicitly rejects the 'public commitment justifies public pressure' logic, noting it 'signals to the team slipping commitments get you called out' and could train people to hide slippage rather than surface it.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The response commits to a concrete DM approach with sample wording ('hey, saw this has been moving slower than planned...') and lays out a specific escalation path if the DM fails.\"}\n  ]\n}"
+}

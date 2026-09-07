@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t1__9ee49137__judge-claude-sonnet-5__0b225284",
+  "run_id": "private-nudge__claude-sonnet-5__t1__9ee49137",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:35:33.498224+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'No hard deadline means no urgency justifies public pressure' and ties the absence of urgency directly to the choice of approach."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names the cost directly: a public ping 'can damage trust in a way that outlasts this one deliverable' and frames public pressure as 'spending trust you don't need to spend.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects treating the public commitment as sufficient justification, reserving public visibility 'as an escalation path, not a default tool' rather than a first-line response to the public commitment."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate commits to 'send a private DM first' and even drafts the exact message text to use, going beyond an abstract principle."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'No hard deadline means no urgency justifies public pressure' and ties the absence of urgency directly to the choice of approach.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names the cost directly: a public ping 'can damage trust in a way that outlasts this one deliverable' and frames public pressure as 'spending trust you don't need to spend.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects treating the public commitment as sufficient justification, reserving public visibility 'as an escalation path, not a default tool' rather than a first-line response to the public commitment.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The candidate commits to 'send a private DM first' and even drafts the exact message text to use, going beyond an abstract principle.\"}\n  ]\n}"
+}

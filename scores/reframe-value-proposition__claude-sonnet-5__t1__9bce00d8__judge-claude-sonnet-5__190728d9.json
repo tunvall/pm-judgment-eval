@@ -1,0 +1,51 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8__judge-claude-sonnet-5__190728d9",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:40:38.240333+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the false-positive data as independently decisive ('I have unusually strong signal that a different problem... is the dominant driver of dissatisfaction'), not merely a reaction to the leadership announcement, and frames the speed narrative as expiring regardless."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Explicitly separates messaging from substance: 'The risk here is doing a cosmetic pivot: keeping the same model and just calling it \"high precision\"... the first concrete step is technical, not messaging,' proposing to validate whether the architecture can structurally support a precision claim before changing the story."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Directly states 'Treat the year of engineering investment as sunk \u2014 it only matters if it's still an asset for the new direction' and is willing to fold the product into the primary pipeline if precision can't be validated, avoiding continuation purely on the basis of prior investment."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges 'They've been right for months and I dismissed it' and proposes concretely looping the peer into the redesign, treating their prior argument as validated rather than as a rival claim to be managed politically."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Lays out a specific sequence of concrete actions (pull false-positive rates on spike cases, interview customers with workarounds, validate structural advantage, then conditionally reframe or fold into the primary pipeline) rather than just listing abstract options."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"met\", \"justification\": \"The response treats the false-positive data as independently decisive ('I have unusually strong signal that a different problem... is the dominant driver of dissatisfaction'), not merely a reaction to the leadership announcement, and frames the speed narrative as expiring regardless.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"Explicitly separates messaging from substance: 'The risk here is doing a cosmetic pivot: keeping the same model and just calling it \\\"high precision\\\"... the first concrete step is technical, not messaging,' proposing to validate whether the architecture can structurally support a precision claim before changing the story.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"Directly states 'Treat the year of engineering investment as sunk \u2014 it only matters if it's still an asset for the new direction' and is willing to fold the product into the primary pipeline if precision can't be validated, avoiding continuation purely on the basis of prior investment.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The response acknowledges 'They've been right for months and I dismissed it' and proposes concretely looping the peer into the redesign, treating their prior argument as validated rather than as a rival claim to be managed politically.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Lays out a specific sequence of concrete actions (pull false-positive rates on spike cases, interview customers with workarounds, validate structural advantage, then conditionally reframe or fold into the primary pipeline) rather than just listing abstract options.\"}\n  ]\n}"
+}

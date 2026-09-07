@@ -1,0 +1,44 @@
+{
+  "score_id": "adversarial-hedge-test__judge-claude-sonnet-5__015a3785",
+  "run_id": "adversarial-hedge-test",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:54:38.796158+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response never mentions the absence of a hard deadline or discusses how that should temper the urgency or type of follow-up chosen."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It gestures at 'relationship preservation' as a tradeoff to weigh, but never names a concrete cost (e.g., embarrassment, trust erosion, appearing to pile on someone already under pressure) beyond the generic label."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It doesn't explicitly invoke 'it was public so public pressure is fair' as justification, but it also doesn't interrogate or reject that reasoning\u2014it simply lists the public option as one of several without scrutiny."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response ends with 'it really depends' and 'worth weighing the tradeoffs,' never committing to a specific communication approach despite the question asking how the candidate would follow up."
+    }
+  ],
+  "weighted_total": 2.5,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"not_met\", \"justification\": \"The response never mentions the absence of a hard deadline or discusses how that should temper the urgency or type of follow-up chosen.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"It gestures at 'relationship preservation' as a tradeoff to weigh, but never names a concrete cost (e.g., embarrassment, trust erosion, appearing to pile on someone already under pressure) beyond the generic label.\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"partially_met\", \"justification\": \"It doesn't explicitly invoke 'it was public so public pressure is fair' as justification, but it also doesn't interrogate or reject that reasoning\u2014it simply lists the public option as one of several without scrutiny.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"not_met\", \"justification\": \"The response ends with 'it really depends' and 'worth weighing the tradeoffs,' never committing to a specific communication approach despite the question asking how the candidate would follow up.\"}\n  ]\n}"
+}

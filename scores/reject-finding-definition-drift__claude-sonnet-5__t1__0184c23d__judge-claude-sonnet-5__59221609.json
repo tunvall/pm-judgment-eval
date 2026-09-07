@@ -1,0 +1,51 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d__judge-claude-sonnet-5__59221609",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-07T22:41:04.093219+00:00",
+  "git_commit": "10cea762aa2ea3ae34e665882380c00cb18de4ad",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states the cohort definition 'drove the analysis' and that 'the magnitude, and possibly the direction, of the effect could change,' treating the mismatch as substantive rather than cosmetic."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects treating this as 'a wording fix' or relabeling the old output, insisting on rerunning the analysis first; the footnote is only used later to disclose the correction, not as a substitute for fixing the underlying claim."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs credibility risk, noting the error 'damages credibility not just for this finding but for the whole document' and preferring to 'have caught and fixed it myself than to have it surface as a credibility problem in the room.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "States plainly 'I would not keep platform-departure language just because it's more persuasive' and frames timeline pressure as a reason to fix rather than skip the issue, showing no sunk-cost pull toward preserving the original drafted finding."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Gives concrete next steps: rerun the query under the corrected definition, rescope the claim's language (e.g., 'accounts that abandon Product X show elevated signal beforehand'), and if weakened, seek corroborating signals or acknowledge the gap rather than just flagging concern."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_definitional_mismatch_as_material\", \"verdict\": \"met\", \"justification\": \"The response explicitly states the cohort definition 'drove the analysis' and that 'the magnitude, and possibly the direction, of the effect could change,' treating the mismatch as substantive rather than cosmetic.\"},\n    {\"id\": \"rejects_caveat_as_sufficient_fix\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects treating this as 'a wording fix' or relabeling the old output, insisting on rerunning the analysis first; the footnote is only used later to disclose the correction, not as a substitute for fixing the underlying claim.\"},\n    {\"id\": \"weighs_credibility_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"The response directly weighs credibility risk, noting the error 'damages credibility not just for this finding but for the whole document' and preferring to 'have caught and fixed it myself than to have it surface as a credibility problem in the room.'\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"States plainly 'I would not keep platform-departure language just because it's more persuasive' and frames timeline pressure as a reason to fix rather than skip the issue, showing no sunk-cost pull toward preserving the original drafted finding.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Gives concrete next steps: rerun the query under the corrected definition, rescope the claim's language (e.g., 'accounts that abandon Product X show elevated signal beforehand'), and if weakened, seek corroborating signals or acknowledge the gap rather than just flagging concern.\"}\n  ]\n}"
+}
