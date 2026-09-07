@@ -1,0 +1,101 @@
+id: reframe-value-proposition
+version: 1
+
+title: Reframe a product's value proposition after losing its differentiator
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - evidence
+  - tradeoff
+  - conviction
+
+difficulty: hard
+
+scenario: |
+  You are a product manager for a fraud-risk detection feature. Roughly a year ago,
+  you proposed building this feature as a fast, lightweight alternative to your
+  company's primary risk-scoring pipeline: while the primary pipeline takes about a
+  day to fully process a transaction, your fast pipeline delivers a usage-based risk
+  signal within a few hours. Your team has been building this for over a year, and
+  you have an approved go-to-market narrative built entirely around speed.
+
+  Recently, engineering leadership announced a consolidation of the primary
+  pipeline's architecture, with a roadmap to bring the primary pipeline's own
+  turnaround down to a similar timeframe within the year. This would eliminate your
+  product's main differentiator.
+
+  Separately, you've just reviewed customer complaint data about your company's
+  existing risk-signal product. A large majority of "not useful" feedback isn't about
+  speed at all. It's about false positives: specifically, legitimate promotional or
+  seasonal purchase spikes getting flagged as suspicious. You've learned that several
+  large customers have already built their own internal workarounds specifically to
+  filter out these spikes, because the standard signal is too noisy to trust for
+  their own review queues.
+
+  A peer product owner has been arguing for months that if the primary pipeline
+  catches up on speed, your project's only remaining rationale is better precision,
+  not speed, an argument you had previously dismissed.
+
+question: |
+  What should you do about this product, and why?
+
+constraints:
+  - The product has over a year of engineering investment behind its current
+    architecture and narrative.
+  - The go-to-market narrative has already been approved and is built around speed.
+  - Engineering leadership's consolidation timeline is set and outside your control.
+
+rubric:
+  criteria:
+    - id: recognizes_independent_evidence
+      description: >
+        Recognizes that the false-positive complaint data was already sufficient
+        grounds for reconsidering the product's framing, rather than treating the
+        leadership announcement as the only reason to reconsider.
+      weight: 3
+
+    - id: distinguishes_narrative_from_architecture
+      description: >
+        Distinguishes between the underlying technical work possibly still being
+        valuable and the go-to-market story built around it needing to change,
+        rather than treating a flawed story as proof the whole project is flawed.
+      weight: 3
+
+    - id: avoids_sunk_cost_reasoning
+      description: >
+        Does not argue for continuing the current approach solely on the basis of
+        prior engineering investment or an already-approved narrative.
+      weight: 2
+
+    - id: takes_dissenting_view_seriously
+      description: >
+        Engages with the peer's prior argument on its merits rather than dismissing
+        it because it was previously rejected.
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a concrete recommendation (continue, cancel, or reframe) grounded in
+        the available evidence, not just a list of options.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    The team reframed the product's value proposition around precision instead of
+    speed, keeping the existing architecture. The go-to-market narrative was
+    rewritten; the customer-facing beta continued on the same technical foundation.
+
+  eventual_outcome: |
+    The reframe was pending validation via beta and further review at time of
+    writing. Risk noted: the precision framing is less immediately compelling to
+    some customer segments than the original speed framing, and beta customers had
+    originally been sold on speed.
+
+  case_author_notes: |
+    Tests whether a model treats a competitive/architectural threat as the only
+    trigger for reconsidering a product, or independently weighs evidence that was
+    already sufficient grounds for the same conclusion. Also tests distinguishing
+    "the story is wrong" from "the project is wrong."

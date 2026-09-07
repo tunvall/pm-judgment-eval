@@ -1,0 +1,102 @@
+id: override-customer-signal
+version: 1
+
+title: Override an explicit customer signal on a launch blocker
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - conviction
+  - evidence
+  - calibration
+
+difficulty: medium
+
+scenario: |
+  You are a product manager for a notification/alerting feature. Ahead of an
+  upcoming launch, a customer focus group surfaced a strong, consistent signal:
+  customers want the ability to suppress or pause individual alerts, adjust
+  thresholds, and reroute notifications away from the default channel, and they want
+  it before launch, not after. One participant described receiving the same alert
+  daily for weeks with no easy way to stop it. Several customers said they would only
+  accept the higher alert volume that comes with a new detection capability you're
+  about to launch if it's paired with real alert management. A senior reviewer who
+  ran the focus group summarized this as the single most important piece of feedback
+  from the session.
+
+  While digging into your existing system in response to this feedback, you discover
+  a rudimentary suppress-from-notification capability that already exists in the
+  product, but it's undocumented and hard to find; almost no one on the team knew it
+  was there. A broader, more complete alert-management framework has also been
+  proposed as a longer-term investment, but building full configurability before
+  your launch would take multiple quarters, pushing the whole launch back
+  substantially. You also know of a cheap design mitigation: guiding customers
+  toward higher alert thresholds on the noisier part of your detection system, which
+  would reduce much of the expected volume increase without any new engineering.
+
+question: |
+  Do you block the launch on alert configurability, or treat it as a fast-follow?
+  What do you do, and why?
+
+constraints:
+  - The launch timeline is tight; building full alert configurability before launch
+    would take multiple quarters.
+  - Customer signal explicitly named this as a launch blocker, not a nice-to-have.
+
+rubric:
+  criteria:
+    - id: does_not_treat_signal_as_automatically_binding
+      description: >
+        Recognizes that an explicit customer statement of "this is a blocker" is
+        strong evidence but not automatically decisive, and weighs it against other
+        available information rather than deferring to it uncritically.
+      weight: 3
+
+    - id: identifies_existing_capability_as_relevant
+      description: >
+        Notices that the undocumented suppress capability is directly relevant to
+        addressing the underlying complaint, rather than only proposing new
+        engineering work.
+      weight: 2
+
+    - id: distinguishes_need_from_stated_solution
+      description: >
+        Recognizes that the customer's underlying need (some control over alert
+        volume) may be addressable short of the full configurability framework they
+        referenced.
+      weight: 3
+
+    - id: flags_residual_risk_explicitly
+      description: >
+        Names the real risk that treating this as fast-follow could look wrong in
+        hindsight if adoption is high, rather than presenting the fast-follow path
+        as risk-free.
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a concrete recommendation (blocker vs. fast-follow) with a plan,
+        rather than only listing pros and cons.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Classified alert configurability as fast-follow, not a launch blocker. Made the
+    existing undocumented suppress capability discoverable, paired it with the cheap
+    design mitigation (guiding customers to higher thresholds), and planned a small
+    early-access group specifically to surface friction before wider rollout.
+
+  eventual_outcome: |
+    The richer alert-management framework remained on the post-launch roadmap; the
+    documented suppress capability shipped without further enhancement at time of
+    writing. The team explicitly flagged that if adoption came in high and customers
+    hit real friction, the decision could look wrong in hindsight; that risk had not
+    yet been resolved either way.
+
+  case_author_notes: |
+    Tests willingness to override an explicit, unambiguous customer signal when
+    other information suggests the underlying need can be met more cheaply, and
+    whether that override comes with honest risk acknowledgment rather than false
+    confidence.

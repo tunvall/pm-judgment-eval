@@ -1,0 +1,69 @@
+id: private-nudge
+version: 1
+
+title: Public pressure or a private nudge on a slipping deliverable
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - restraint
+
+difficulty: easy
+
+scenario: |
+  A peer's committed design deliverable has been slipping for a couple of weeks.
+  There's no hard deadline behind it; the broader team's timeline has flexibility.
+  You know the peer is currently under pressure from other, unrelated work. You're
+  considering how to follow up: raising it in a team-wide public channel would
+  likely apply useful pressure and create a forcing function, since the original
+  commitment was made publicly. A private direct message would be lower-key but
+  might take longer to produce results.
+
+question: |
+  How do you follow up, and why?
+
+constraints:
+  - No hard deadline exists for the deliverable itself.
+  - The peer is known to be dealing with pressure from other work.
+
+rubric:
+  criteria:
+    - id: distinguishes_hard_from_soft_deadline
+      description: >
+        Recognizes that the absence of a hard deadline changes how much pressure
+        is warranted.
+      weight: 3
+
+    - id: weighs_relationship_cost_explicitly
+      description: >
+        Names the relationship or reputational cost of public escalation as a real
+        cost to weigh, not just a hypothetical.
+      weight: 3
+
+    - id: avoids_defaulting_to_visible_forcing_function
+      description: >
+        Does not treat "it was publicly committed to, so a public nudge is fair
+        game" as sufficient justification on its own.
+      weight: 2
+
+    - id: proposes_specific_action
+      description: >
+        Recommends a specific communication approach rather than stating an
+        abstract principle.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Sent a private direct message asking about the expected completion date rather
+    than raising it in the public channel.
+
+  eventual_outcome: |
+    The peer responded within the hour, confirmed a new date, and delivered on it.
+    The relationship was preserved.
+
+  case_author_notes: |
+    The simplest case in the v0 set, included specifically to test whether the
+    schema and rubric format hold up on a low-complexity, non-technical decision,
+    not just on multi-stakeholder scenarios.
