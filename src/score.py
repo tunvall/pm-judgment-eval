@@ -1,0 +1,80 @@
+"""CLI: score one saved run against its case's rubric using a judge model."""
+
+import argparse
+import json
+import subprocess
+import uuid
+from datetime import datetime, timezone
+from pathlib import Path
+
+from src.case_loader import load_case
+from src.judge import JUDGE_PROMPT_VERSION, build_judge_prompt, parse_judge_output, score_criteria
+from src.models import PROVIDERS
+
+JUDGE_PROMPT_PATH = Path("prompts/judge/judge-prompt-v1.md")
+
+
+def get_git_commit():
+    try:
+        return subprocess.check_output(["git", "rev-parse", "HEAD"]).decode().strip()
+    except Exception:
+        return None
+
+
+def score_run(run_path, judge_provider, judge_model, temperature=None):
+    run_record = json.loads(Path(run_path).read_text())
+    case = load_case("evals/cases/{}.yaml".format(run_record["case_id"]))
+
+    template = JUDGE_PROMPT_PATH.read_text()
+    judge_prompt = build_judge_prompt(case, run_record["response"], template)
+
+    call_fn = PROVIDERS[judge_provider]
+    judge_response = call_fn(model=judge_model, system_prompt="", user_prompt=judge_prompt, temperature=temperature)
+
+    judge_output = parse_judge_output(judge_response.text)
+    scored_criteria, weighted_sum, max_possible = score_criteria(case, judge_output)
+
+    score_id = "{}__judge-{}__{}".format(run_record["run_id"], judge_model, uuid.uuid4().hex[:8])
+
+    record = {
+        "score_id": score_id,
+        "run_id": run_record["run_id"],
+        "case_id": run_record["case_id"],
+        "case_version": run_record["case_version"],
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "git_commit": get_git_commit(),
+        "judge_provider": judge_provider,
+        "judge_model": judge_model,
+        "judge_prompt_version": JUDGE_PROMPT_VERSION,
+        "criteria": scored_criteria,
+        "weighted_total": weighted_sum,
+        "max_possible": max_possible,
+        "raw_judge_response": judge_response.text,
+    }
+
+    scores_dir = Path("scores")
+    scores_dir.mkdir(exist_ok=True)
+    out_path = scores_dir / "{}.json".format(score_id)
+    out_path.write_text(json.dumps(record, indent=2))
+
+    return record, out_path
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Score one saved run against its case's rubric.")
+    parser.add_argument("--run", required=True, help="Path to a saved result JSON file")
+    parser.add_argument("--judge-provider", default="anthropic")
+    parser.add_argument("--judge-model", required=True)
+    parser.add_argument("--temperature", type=float, default=None,
+                         help="Omit to use the API's own default; some model versions reject temperature=0.")
+    args = parser.parse_args()
+
+    record, out_path = score_run(args.run, args.judge_provider, args.judge_model, args.temperature)
+    print("Saved: {}".format(out_path))
+    print("Weighted: {:.2f} / {:.2f}".format(record["weighted_total"], record["max_possible"]))
+    for c in record["criteria"]:
+        print("  [{}] {} (weight {})".format(c["verdict"], c["id"], c["weight"]))
+
+
+if __name__ == "__main__":
+    main()

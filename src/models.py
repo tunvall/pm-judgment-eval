@@ -16,18 +16,24 @@ class ModelResponse:
     latency_ms: int
 
 
-def call_anthropic(model, system_prompt, user_prompt, temperature=1.0, max_tokens=4096):
+def call_anthropic(model, system_prompt, user_prompt, temperature=None, max_tokens=4096):
     import anthropic
 
     client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
-    start = time.monotonic()
-    response = client.messages.create(
+    kwargs = dict(
         model=model,
         max_tokens=max_tokens,
-        temperature=temperature,
         system=system_prompt,
         messages=[{"role": "user", "content": user_prompt}],
     )
+    # Some model versions reject temperature=0 as deprecated (observed live,
+    # 2026-09-07, on claude-sonnet-5) even though other values are accepted.
+    # Only send it if the caller explicitly asked for a non-default value.
+    if temperature is not None:
+        kwargs["temperature"] = temperature
+
+    start = time.monotonic()
+    response = client.messages.create(**kwargs)
     latency_ms = int((time.monotonic() - start) * 1000)
     text = "".join(block.text for block in response.content if block.type == "text")
     return ModelResponse(

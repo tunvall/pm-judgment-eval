@@ -75,6 +75,23 @@ Case set, rubric, and judge get iterated against a single model family first (no
 
 Risk to watch during iteration: developing the rubric primarily against one vendor's outputs risks shaping it — not around the "correct" answer (that risk is already handled by the hindsight-bias process above), but around that vendor's typical response *style* — its structure, hedging patterns, verbosity — in ways that could unfairly penalize a differently-shaped but equally valid response from another vendor. Before calling the rubric final, sanity-check 2-3 cases against a second model (a spot check, not a full run) specifically to confirm the rubric doesn't silently reward or punish stylistic patterns rather than reasoning quality.
 
+## Judge validation: does the rubric actually discriminate
+
+Near-ceiling scores across a real candidate model's outputs are not, by themselves,
+evidence that the judge or rubric works. They could equally mean the rubric is too
+easy to satisfy. Before trusting scores from any rubric/judge pair, check that a
+deliberately weak response scores meaningfully lower than the real candidate
+outputs on the same case. `tests/fixtures/adversarial-hedge-test.json` is a
+hand-written, intentionally hedging, non-committal answer to the `private-nudge`
+case, run through `src/score.py` the same way a real result would be. First run:
+2.5/10 versus 10/10 for the real candidate outputs on that case, with justifications
+that correctly identified the specific hedging pattern (never naming the actual
+deadline fact, never committing to an action, listing the public-channel option
+without scrutinizing it). This is evidence the rubric can discriminate; it is not
+evidence that self-preference bias is absent, since the same model was both
+candidate and judge for this check. That question stays open until a second model
+exists to judge with (Phase 5).
+
 ## A note on where the sanitization/NDA process lives
 
 The step-by-step checklist for what can and cannot leave the internal environment, and the pre-commit review process for sanitized cases, is deliberately kept outside this repository so it never ships even if this repo eventually goes public. It is referenced here only as: consult that checklist before adding or updating any case sourced from real work history.

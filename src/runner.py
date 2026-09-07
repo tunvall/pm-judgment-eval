@@ -26,7 +26,7 @@ def get_git_commit():
         return None
 
 
-def run(case_path, provider, model, trial=1, temperature=1.0):
+def run(case_path, provider, model, trial=1, temperature=None):
     case = load_case(case_path)
     user_prompt = build_candidate_prompt(case)
     system_prompt = SYSTEM_PROMPT_PATH.read_text()
@@ -68,7 +68,8 @@ def main():
     parser.add_argument("--provider", default="anthropic", choices=list(PROVIDERS.keys()))
     parser.add_argument("--model", required=True, help="Exact pinned model version string, never an alias")
     parser.add_argument("--trial", type=int, default=1)
-    parser.add_argument("--temperature", type=float, default=1.0)
+    parser.add_argument("--temperature", type=float, default=None,
+                         help="Omit to use the API's own default; some model versions reject temperature=0.")
     args = parser.parse_args()
 
     record, out_path = run(args.case, args.provider, args.model, args.trial, args.temperature)
