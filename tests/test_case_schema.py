@@ -5,6 +5,7 @@ from src.case_loader import load_all_cases
 REQUIRED_TOP_LEVEL_FIELDS = (
     "id",
     "version",
+    "set",
     "title",
     "source",
     "dimensions",
@@ -14,6 +15,8 @@ REQUIRED_TOP_LEVEL_FIELDS = (
     "rubric",
     "analysis_only",
 )
+
+VALID_SETS = {"dev", "heldout"}
 
 REQUIRED_ANALYSIS_ONLY_FIELDS = ("historical_decision", "eventual_outcome", "case_author_notes")
 
@@ -41,6 +44,11 @@ def test_rubric_criteria_well_formed():
             assert "description" in criterion
             assert "weight" in criterion
             assert isinstance(criterion["weight"], (int, float))
+
+
+def test_set_field_is_valid():
+    for case in load_all_cases():
+        assert case["set"] in VALID_SETS, "case {} has invalid set: {}".format(case["id"], case.get("set"))
 
 
 def test_case_ids_are_unique():

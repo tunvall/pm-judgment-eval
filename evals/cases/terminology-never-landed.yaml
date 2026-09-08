@@ -1,0 +1,101 @@
+id: terminology-never-landed
+version: 1
+set: heldout
+
+title: A naming decision keeps getting reopened and never lands
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - ambiguity
+  - restraint
+
+difficulty: medium
+
+scenario: |
+  You are a product manager. The customer-facing name for a new fast-turnaround
+  risk score at your company has been reopened at least three times over the life
+  of the product, and no name has survived past the review cycle in which it was
+  chosen.
+
+  Round one settled on language describing the score as an early estimate;
+  reviewers later objected that this made the score sound experimental without
+  explaining why the number differed from the fully-processed version. Round two
+  tried distinguishing an estimated score from a final one; a senior design
+  reviewer objected that this fragmented terminology already used consistently
+  elsewhere in the product family. Round three tried distinguishing the score by
+  its underlying processing method; this was immediately re-litigated because
+  every version of the score technically qualified under that same description.
+
+  You are now heading into a fourth round. Every prior round had customer research
+  showing a different way the current candidate name confused people, and no
+  candidate has ever been unambiguously better than the alternatives it replaced.
+  The underlying API field name was locked early on for backward-compatibility
+  reasons and can no longer change regardless of what customer-facing name is
+  chosen. The naming also needs to stay consistent across a family of related
+  products, which adds reviewers and constraints beyond just this one team.
+
+question: |
+  How do you approach this fourth round, and why?
+
+constraints:
+  - The underlying API field name is already locked and cannot change.
+  - The naming must stay consistent across a family of related products.
+  - Three previous rounds have each been overturned in the following review cycle.
+
+rubric:
+  criteria:
+    - id: recognizes_pattern_not_just_instance
+      description: >
+        Identifies the repeated failure to converge as the actual problem, not
+        just this round's specific naming choice in isolation.
+      weight: 3
+
+    - id: proposes_forcing_function
+      description: >
+        Suggests a concrete mechanism to end the cycle (a decision owner, a
+        deadline, explicitly accepting an imperfect name) and recognizes that
+        continued indecision has a real cost, not a neutral or free default.
+      weight: 3
+
+    - id: distinguishes_principled_objection_from_bikeshedding
+      description: >
+        Considers whether continued reopening reflects genuinely new concerns
+        each round or diminishing-returns re-litigation, rather than treating
+        every objection as equally weighty by default.
+      weight: 2
+
+    - id: accounts_for_locked_constraints
+      description: >
+        Factors in that the underlying API field name is already fixed and
+        shapes the recommendation accordingly, rather than proposing something
+        that would require reopening already-settled architecture.
+      weight: 2
+
+    - id: avoids_repeating_failed_approach
+      description: >
+        If proposing a new candidate name, explicitly addresses why this attempt
+        would differ from the three ad hoc attempts that already failed, rather
+        than repeating the same pattern a fourth time.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Each round produced a decision. None survived to the next round. The
+    underlying API field name became locked by default because backward
+    compatibility prevented renaming after ship; customer-facing naming remained
+    open through a fourth round.
+
+  eventual_outcome: |
+    No stable customer-facing name was ever reached after four review cycles.
+    This was a de facto failure of the team to converge despite producing an
+    explicit decision each time, not a case of never deciding at all.
+
+  case_author_notes: |
+    The only case in the v0/held-out set with an outright failure as its outcome,
+    included deliberately per the spec's requirement to source negative and
+    mixed-outcome examples, not just successes. Tests recognizing that "keep
+    reopening it" is itself a decision with a cost, and whether a model proposes
+    a way to break the cycle rather than just producing a fifth candidate name.

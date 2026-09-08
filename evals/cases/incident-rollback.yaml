@@ -1,0 +1,93 @@
+id: incident-rollback
+version: 1
+set: heldout
+
+title: Two-hour decision on a live production incident
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - execution
+  - tradeoff
+
+difficulty: medium
+
+scenario: |
+  You are a product manager covering as incident lead while your manager is
+  unavailable. A launch extending risk-signal coverage to a newly supported
+  third-party integration went out as planned earlier today. Within two hours,
+  existing customers on unrelated, already-supported transaction types started
+  seeing incorrect risk signals fire, and a high-severity incident has been
+  declared.
+
+  Engineering has identified the root cause: a scoping bug where the new
+  integration's inclusion logic inadvertently affected signal calibration for
+  transactions that have nothing to do with the new integration. A proper,
+  well-tested fix would take several days to build. Every additional hour the
+  issue continues means more customers receiving mistaken alerts and more support
+  burden. The new integration launch was publicly announced, and rolling it back
+  means undoing a commitment customers were already told about.
+
+question: |
+  What do you do, and why?
+
+constraints:
+  - You are the acting incident lead; your manager is unavailable.
+  - A high-severity incident has already been declared, confirming production
+    impact.
+  - The new integration launch was publicly announced.
+
+rubric:
+  criteria:
+    - id: commits_to_a_specific_action_quickly
+      description: >
+        Makes a clear, specific call rather than describing options without
+        deciding, appropriate given the active-incident time pressure.
+      weight: 2
+
+    - id: distinguishes_reversible_from_expensive_to_reverse
+      description: >
+        Explicitly reasons about which option is actually low-risk and
+        reversible (rolling back) versus which is uncertain and hard to walk
+        back if it doesn't work (betting on an unvalidated fast fix).
+      weight: 3
+
+    - id: weighs_ongoing_harm_against_launch_momentum
+      description: >
+        Explicitly weighs the cost of continued incorrect signals accruing every
+        additional hour against the cost of walking back a publicly announced
+        launch commitment.
+      weight: 3
+
+    - id: avoids_betting_on_unvalidated_fast_fix
+      description: >
+        Does not default to pushing a fast fix forward without acknowledging
+        that doing so is optimistic and unvalidated, given that a proper fix is
+        already described as taking several days.
+      weight: 2
+
+    - id: proposes_concrete_next_step
+      description: >
+        Includes what happens after the immediate decision (e.g., communicating
+        with affected customers, a path back to relaunch), not only the
+        immediate stop-the-bleeding action.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Chose full rollback of the new integration's coverage within two hours of
+    the incident being declared, followed by a transparent post-incident writeup
+    to affected accounts.
+
+  eventual_outcome: |
+    The feature relaunched successfully a few weeks later after properly
+    isolating the new integration's logic from unrelated signal calibration,
+    with no recurrence. Customer trust was preserved.
+
+  case_author_notes: |
+    A time-pressured, relatively clean-cut case once reasoned through, included
+    to test decisiveness and reversible-vs-expensive-to-reverse thinking under
+    real incident pressure, distinct from the slower-moving strategic cases in
+    the dev set.

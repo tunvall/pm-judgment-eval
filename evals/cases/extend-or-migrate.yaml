@@ -1,0 +1,108 @@
+id: extend-or-migrate
+version: 1
+set: heldout
+
+title: Extend the old platform, or accelerate a company-wide migration
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - conviction
+  - execution
+
+difficulty: medium
+
+scenario: |
+  You are a product manager launching a new tier of a risk-guardrails product
+  that needs a notification system. Two internal platforms exist: an older one,
+  already marked for eventual retirement, that currently powers your company's
+  main alerting product; and a newer one that company-wide strategy has
+  designated as the long-term destination for all notification traffic going
+  forward. Nobody disputes that the newer platform is the right long-term
+  direction.
+
+  The open question is narrower: should you accelerate your team's migration to
+  the newer platform specifically to support this launch, or extend the older
+  platform for this one need and handle the full migration as a separate, later
+  effort?
+
+  The timeline being informally circulated for onboarding onto the newer platform
+  assumes no major gaps and looks achievable within your launch window. But a
+  closer technical review turns up several real mismatches between the two
+  platforms: they model message routing differently at a fundamental level, they
+  have different requirements for verifying contact information before sending,
+  they support different delivery-destination types, and they render templates
+  differently. Once you account for these, a realistic estimate for fully
+  onboarding is roughly double the optimistic timeline being circulated, which
+  leaves no schedule margin before your launch date. Extending the older
+  platform to cover this one additional need, by contrast, is a smaller,
+  already-proven piece of work your team has done before.
+
+question: |
+  What do you do, and why?
+
+constraints:
+  - Company-wide strategy has already designated the newer platform as the
+    long-term direction; nobody disputes that.
+  - The optimistic timeline being circulated for the newer platform is
+    significantly less than your own technically-derived estimate.
+  - Extending the older platform is smaller and already-proven, but that
+    platform is marked for eventual retirement.
+
+rubric:
+  criteria:
+    - id: distinguishes_direction_from_this_launchs_timeline
+      description: >
+        Separates "is the newer platform the right eventual destination" (not
+        actually in question) from "should this specific launch be the vehicle
+        for that migration," rather than treating a timeline concern as
+        disagreement with the strategy itself.
+      weight: 3
+
+    - id: uses_own_realistic_estimate_over_circulating_one
+      description: >
+        Grounds the recommendation in the more pessimistic, technically-derived
+        estimate rather than the optimistic one being informally circulated, and
+        is willing to say so even though it's not what others are assuming.
+      weight: 3
+
+    - id: identifies_risk_of_partial_migration
+      description: >
+        Recognizes that migrating only this one product while leaving the rest
+        on the old platform creates two systems with an inconsistent customer
+        experience, rather than treating a partial migration as a clean,
+        low-risk hedge.
+      weight: 2
+
+    - id: anticipates_pushback_and_addresses_it
+      description: >
+        Acknowledges that recommending against accelerating the migration will
+        look like resisting stated company direction, and addresses that
+        directly rather than ignoring the optics of the recommendation.
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a specific recommendation rather than only describing the
+        tradeoff between the two platforms.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Extended the older platform for this launch and treated the full migration
+    to the newer platform as its own dedicated effort, aligned with the
+    company-wide initiative but not rushed to fit this launch's timeline.
+
+  eventual_outcome: |
+    The launch shipped on the older platform without incident. The full
+    migration proceeded separately as its own workstream, without the
+    inconsistent-customer-experience risk a partial migration would have
+    created.
+
+  case_author_notes: |
+    Tests willingness to disagree with a specific application of stated
+    top-down strategy (accelerate the migration for this launch) while
+    explicitly endorsing the strategy itself, and honest timeline arithmetic
+    against an optimistic estimate already in circulation.

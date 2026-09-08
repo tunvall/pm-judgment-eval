@@ -69,6 +69,22 @@ A core design goal is that testing a newly-released model against the existing r
 - **Model versions are pinned exactly**, never referenced by a rolling alias like "latest" — providers update what an alias points to without warning, which would silently break reproducibility for exactly this workflow. The exact pinned model ID is recorded in run metadata (`model_version_if_known`).
 - **The judge is the fragile point in this chain.** Upgrading the judge model invalidates comparability between scores produced under the old judge and the new one, since the standard being applied changed, not just the model being tested. Judge changes should be rare and deliberate: bump `judge_prompt_version` when it happens, and re-judge a sample of already-scored models under the new judge to see how much rankings shift, following the same judge-reliability check already described for LLM-as-judge generally.
 
+## Dev set vs. held-out set
+
+Every case has a `set` field: `dev` or `heldout`. The distinction matters and was
+not explicit until a later methodology review caught that it should be: the
+original 5 cases were used to validate the schema, the rubric-writing process, and
+the judge, including reading real scored Claude output while building confidence
+in the mechanism. That makes them a development set, not a clean comparison set,
+even though nothing was tuned dishonestly against them.
+
+Held-out cases are converted from the sanitized shortlist the same way as dev
+cases, following the same hindsight-bias rubric process, but are never viewed
+against any model's real output before being finalized. Comparative conclusions
+about model behavior should be drawn primarily from held-out results; dev-set
+results are useful for continuity and sanity-checking but should be reported
+separately, never blended into the same leaderboard.
+
 ## Iteration sequencing across vendors
 
 Case set, rubric, and judge get iterated against a single model family first (not the full vendor set) — cheaper and faster to develop against one API while the schema and rubric are still unstable. Only once the rubric and judge are stable does the frozen v1 dataset run against the broader vendor set (Phase 5).
