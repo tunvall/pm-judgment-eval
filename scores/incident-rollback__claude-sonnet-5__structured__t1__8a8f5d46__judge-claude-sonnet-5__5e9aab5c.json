@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__judge-claude-sonnet-5__5e9aab5c",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:35:41.691697+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, unambiguous call to 'Pull the new integration launch back (full or effectively full rollback) immediately,' not a hedge among options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly contrasts rollback's 'highest certainty of stopping harm' and 'bounded and manageable' reputational cost against targeted mitigation's risk that 'a quick targeted fix might be incomplete or introduce new bugs,' noting 'quick confidence... is exactly what a rushed incident is bad at delivering.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states 'Prioritize stopping harm to the larger, already-supported customer base over preserving the optics of a just-announced feature. The blast radius... outweighs the cost of a delayed/paused new integration.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects hand-tuning a fast scoped fix under time pressure, stating 'Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy,' favoring full revert over an unvalidated quick patch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lists concrete follow-ups including external/internal communication framed as 'a pause, not a cancellation,' monitoring signal rates, keeping the incident open until baseline is confirmed, and a post-incident review with relaunch path."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, unambiguous call to 'Pull the new integration launch back (full or effectively full rollback) immediately,' not a hedge among options.\"},\n  {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It explicitly contrasts rollback's 'highest certainty of stopping harm' and 'bounded and manageable' reputational cost against targeted mitigation's risk that 'a quick targeted fix might be incomplete or introduce new bugs,' noting 'quick confidence... is exactly what a rushed incident is bad at delivering.'\"},\n  {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly states 'Prioritize stopping harm to the larger, already-supported customer base over preserving the optics of a just-announced feature. The blast radius... outweighs the cost of a delayed/paused new integration.'\"},\n  {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects hand-tuning a fast scoped fix under time pressure, stating 'Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy,' favoring full revert over an unvalidated quick patch.\"},\n  {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lists concrete follow-ups including external/internal communication framed as 'a pause, not a cancellation,' monitoring signal rates, keeping the incident open until baseline is confirmed, and a post-incident review with relaunch path.\"}\n]}"
+}

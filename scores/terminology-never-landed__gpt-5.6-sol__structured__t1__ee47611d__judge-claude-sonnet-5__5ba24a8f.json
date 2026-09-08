@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d__judge-claude-sonnet-5__5ba24a8f",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:39:32.749022+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'the primary problem is no longer generating names. It is setting decision criteria... and establishing durable governance,' treating repeated failure to converge as the core issue rather than just picking a better word."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response proposes a named accountable decision-maker, a 'reopening rule' limiting future relitigation, and instructs choosing 'the candidate with the best weighted performance, even if none wins every measure,' while also noting delay 'makes naming perfection more important than delivering customer value.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly separates 'materially new customer evidence, legal or regulatory issues, or a family-wide taxonomy change' from cases where 'a reviewer prefers another imperfect option,' and asks reviewers to agree on 'which concerns are disqualifying versus merely imperfect.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the API field as fixed throughout, stating 'documentation should explicitly map the customer-facing term to the locked API field' and framing the objective as one that 'can be clearly mapped to the immutable API field' rather than proposing any change to it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects 'another open-ended naming exercise' as likely to 'reproduce the same cycle' and instead proposes a criteria-first, bounded process with exclusions and a reopening rule, directly contrasting this with the prior three ad hoc rounds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'the primary problem is no longer generating names. It is setting decision criteria... and establishing durable governance,' treating repeated failure to converge as the core issue rather than just picking a better word.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response proposes a named accountable decision-maker, a 'reopening rule' limiting future relitigation, and instructs choosing 'the candidate with the best weighted performance, even if none wins every measure,' while also noting delay 'makes naming perfection more important than delivering customer value.'\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"It explicitly separates 'materially new customer evidence, legal or regulatory issues, or a family-wide taxonomy change' from cases where 'a reviewer prefers another imperfect option,' and asks reviewers to agree on 'which concerns are disqualifying versus merely imperfect.'\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response treats the API field as fixed throughout, stating 'documentation should explicitly map the customer-facing term to the locked API field' and framing the objective as one that 'can be clearly mapped to the immutable API field' rather than proposing any change to it.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects 'another open-ended naming exercise' as likely to 'reproduce the same cycle' and instead proposes a criteria-first, bounded process with exclusions and a reopening rule, directly contrasting this with the prior three ad hoc rounds.\"}\n  ]\n}"
+}

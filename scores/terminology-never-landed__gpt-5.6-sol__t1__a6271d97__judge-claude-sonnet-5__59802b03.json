@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97__judge-claude-sonnet-5__59802b03",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:39:44.049773+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the task as 'a decision-closure and terminology-system exercise, not another open-ended naming brainstorm,' treating the repeated failure to converge as the core problem rather than just picking a new name."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes naming 'one accountable decision-maker,' setting a 'reopening threshold' after selection, and explicitly states the team should choose 'even if it is not universally preferred' since 'continuing to search for one imposes real consistency and delivery costs.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The reopening threshold distinguishes 'new evidence of material harm' from 'merely a new reviewer preference,' but the response does not explicitly analyze whether the three prior rounds' objections were genuinely new problems or diminishing-returns re-litigation\u2014it only builds a forward-looking filter rather than diagnosing the past pattern."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response repeatedly ties the naming criteria and decision record to 'clear mapping to the immutable API field' and 'the locked API field,' showing the recommendation is shaped around this fixed constraint rather than ignoring it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly contrasts its approach with prior rounds by insisting on 'criteria before considering candidates' and comprehension-based testing over preference testing, noting 'preference questions alone will continue producing ambiguous evidence,' signaling awareness of why past ad hoc attempts failed."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the task as 'a decision-closure and terminology-system exercise, not another open-ended naming brainstorm,' treating the repeated failure to converge as the core problem rather than just picking a new name.\"},\n  {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes naming 'one accountable decision-maker,' setting a 'reopening threshold' after selection, and explicitly states the team should choose 'even if it is not universally preferred' since 'continuing to search for one imposes real consistency and delivery costs.'\"},\n  {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"The reopening threshold distinguishes 'new evidence of material harm' from 'merely a new reviewer preference,' but the response does not explicitly analyze whether the three prior rounds' objections were genuinely new problems or diminishing-returns re-litigation\u2014it only builds a forward-looking filter rather than diagnosing the past pattern.\"},\n  {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response repeatedly ties the naming criteria and decision record to 'clear mapping to the immutable API field' and 'the locked API field,' showing the recommendation is shaped around this fixed constraint rather than ignoring it.\"},\n  {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"It explicitly contrasts its approach with prior rounds by insisting on 'criteria before considering candidates' and comprehension-based testing over preference testing, noting 'preference questions alone will continue producing ambiguous evidence,' signaling awareness of why past ad hoc attempts failed.\"}\n]}"
+}

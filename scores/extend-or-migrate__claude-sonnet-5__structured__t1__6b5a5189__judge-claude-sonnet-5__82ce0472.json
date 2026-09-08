@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189__judge-claude-sonnet-5__82ce0472",
+  "run_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:34:21.315782+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'the dispute is only about whether this launch is the forcing function for that migration' and frames the recommendation as 'a sequencing decision' rather than a rejection of the strategic direction."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its recommendation in the 2x realistic estimate, stating 'the mismatches identified...aren't scope creep \u2014 they're evidence that the optimistic timeline was wrong, not that the team should try harder to hit it.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response flags risks like the old-platform work becoming 'semi-permanent' and creating 'duplicate engineering effort,' and briefly mentions not wanting to 'quietly create a second permanent home for notification logic on a deprecated platform,' but it never frames this as an inconsistent customer-facing experience across two coexisting systems."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly names 'Perception/strategic friction \u2014 extending a platform marked for retirement can look like working against company strategy' and proposes mitigating it by framing the decision explicitly as sequencing with stakeholder sign-off."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation (extend the old platform with an abstraction layer, schedule migration separately) and lists concrete next steps like getting stakeholder sign-off and scoping the migration as its own project."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'the dispute is only about whether this launch is the forcing function for that migration' and frames the recommendation as 'a sequencing decision' rather than a rejection of the strategic direction.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response grounds its recommendation in the 2x realistic estimate, stating 'the mismatches identified...aren't scope creep \u2014 they're evidence that the optimistic timeline was wrong, not that the team should try harder to hit it.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response flags risks like the old-platform work becoming 'semi-permanent' and creating 'duplicate engineering effort,' and briefly mentions not wanting to 'quietly create a second permanent home for notification logic on a deprecated platform,' but it never frames this as an inconsistent customer-facing experience across two coexisting systems.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly names 'Perception/strategic friction \u2014 extending a platform marked for retirement can look like working against company strategy' and proposes mitigating it by framing the decision explicitly as sequencing with stakeholder sign-off.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation (extend the old platform with an abstraction layer, schedule migration separately) and lists concrete next steps like getting stakeholder sign-off and scoping the migration as its own project.\"}\n  ]\n}"
+}

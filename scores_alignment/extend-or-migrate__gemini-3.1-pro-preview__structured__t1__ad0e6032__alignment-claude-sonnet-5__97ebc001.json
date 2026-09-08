@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032__alignment-claude-sonnet-5__97ebc001",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:16.250382+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommended extending the old platform for this launch and deferring the full migration to the new platform as a separate future effort, which matches the historical decision exactly in substance and reasoning.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommended extending the old platform for this launch and deferring the full migration to the new platform as a separate future effort, which matches the historical decision exactly in substance and reasoning.\"\n}"
+}

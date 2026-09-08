@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f__judge-claude-sonnet-5__ac9bba91",
+  "run_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:37:29.016817+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the absence of a hard deadline to disproportionality of public pressure: 'because there is no hard deadline and the broader timeline is flexible, applying public pressure is disproportionate to the actual urgency of the deliverable.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names concrete relational costs of public escalation, e.g. 'likely to be perceived as public shaming or throwing them under the bus. This degrades trust, damages your long-term working relationship, and reduces psychological safety.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly rejects the 'public commitment justifies public pressure' logic, calling public pressure 'a blunt instrument' that is unjustified absent a hard deadline, rather than treating the original public commitment as sufficient license."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete script for the private DM ('Hey, I know you're swamped...') and a specific follow-up step of having the peer post an update in the public channel, not just an abstract principle."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the absence of a hard deadline to disproportionality of public pressure: 'because there is no hard deadline and the broader timeline is flexible, applying public pressure is disproportionate to the actual urgency of the deliverable.'\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names concrete relational costs of public escalation, e.g. 'likely to be perceived as public shaming or throwing them under the bus. This degrades trust, damages your long-term working relationship, and reduces psychological safety.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response directly rejects the 'public commitment justifies public pressure' logic, calling public pressure 'a blunt instrument' that is unjustified absent a hard deadline, rather than treating the original public commitment as sufficient license.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"It gives a concrete script for the private DM ('Hey, I know you're swamped...') and a specific follow-up step of having the peer post an update in the public channel, not just an abstract principle.\"}\n  ]\n}"
+}

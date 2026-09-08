@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873__alignment-claude-sonnet-5__3c033623",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:40.699823+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome was that naming remained unresolved and open into a fourth round, with no lasting decision made (the API name only became locked by default, not chosen as the customer-facing solution). The candidate instead proposes a concrete resolution mechanism\u2014convening veto-holders, adopting the API name as the plain-English basis, pairing with UX copy, and forcibly locking the decision as final\u2014which is a substantively different outcome than the historical pattern of continued unresolved reopening.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome was that naming remained unresolved and open into a fourth round, with no lasting decision made (the API name only became locked by default, not chosen as the customer-facing solution). The candidate instead proposes a concrete resolution mechanism\\u2014convening veto-holders, adopting the API name as the plain-English basis, pairing with UX copy, and forcibly locking the decision as final\\u2014which is a substantively different outcome than the historical pattern of continued unresolved reopening.\"\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189__alignment-claude-sonnet-5__37f5cdb6",
+  "run_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:10.710894+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommended extending the old platform for this launch and scoping the full migration to the new platform as a separate, deliberately planned project, which matches the historical decision to extend the older platform and handle migration as its own dedicated effort not rushed for this launch.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommended extending the old platform for this launch and scoping the full migration to the new platform as a separate, deliberately planned project, which matches the historical decision to extend the older platform and handle migration as its own dedicated effort not rushed for this launch.\"\n}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c__judge-claude-sonnet-5__9a858cbc",
+  "run_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:36:53.649264+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response reframes the customer's stated blocker as a need to be satisfied rather than a literal requirement to build the full framework, stating 'we have to translate their proposed solution... into their actual pain point' and choosing a lighter-weight path instead of the multi-quarter build the customers implied they wanted."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly builds its plan around surfacing the hidden feature: 'Since the backend logic for a rudimentary suppress-from-notification capability already exists, I would allocate immediate design and front-end resources to bring this into the main user flow.'"
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly articulates this distinction: 'we have to translate their *proposed solution* (a full alert management framework) into their *actual pain point* (alert fatigue and unmanageable noise)... they just want a stop button.'"
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response frames its hybrid plan as solving the problem ('This fulfills the requirement... before launch') and only contrasts extreme failure modes (launching as-is vs. blocking for quarters), without acknowledging that the lighter mitigation could still fall short of customer expectations or look wrong in hindsight if adoption/complaints are high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete, numbered action plan (surface hidden feature, implement threshold defaults, launch on schedule, communicate roadmap) rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response reframes the customer's stated blocker as a need to be satisfied rather than a literal requirement to build the full framework, stating 'we have to translate their proposed solution... into their actual pain point' and choosing a lighter-weight path instead of the multi-quarter build the customers implied they wanted.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response explicitly builds its plan around surfacing the hidden feature: 'Since the backend logic for a rudimentary suppress-from-notification capability already exists, I would allocate immediate design and front-end resources to bring this into the main user flow.'\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response directly articulates this distinction: 'we have to translate their *proposed solution* (a full alert management framework) into their *actual pain point* (alert fatigue and unmanageable noise)... they just want a stop button.'\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"not_met\", \"justification\": \"The response frames its hybrid plan as solving the problem ('This fulfills the requirement... before launch') and only contrasts extreme failure modes (launching as-is vs. blocking for quarters), without acknowledging that the lighter mitigation could still fall short of customer expectations or look wrong in hindsight if adoption/complaints are high.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete, numbered action plan (surface hidden feature, implement threshold defaults, launch on schedule, communicate roadmap) rather than just listing tradeoffs.\"}\n  ]\n}"
+}

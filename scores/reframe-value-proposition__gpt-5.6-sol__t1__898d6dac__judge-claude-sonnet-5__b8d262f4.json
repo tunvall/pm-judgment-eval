@@ -1,0 +1,51 @@
+{
+  "score_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac__judge-claude-sonnet-5__b8d262f4",
+  "run_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:37:56.911601+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the situation as having 'two independent signals': the disappearing speed differentiator and the complaint/workaround data revealing 'a more important problem,' rather than treating the leadership announcement as the sole trigger."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It separates 'Reset the product thesis' (narrative) from 'Do not assume the existing product delivers better precision' (architecture validation), proposing to test whether the current architecture can actually reduce false positives rather than assuming the story alone invalidates the tech or vice versa."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Explicitly states 'I would not continue with the approved narrative merely because it is approved or because a year has already been invested' and later calls the prior investment 'a sunk cost' that doesn't justify continued investment."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response concedes 'the peer product owner's concern was correct' and proposes involving them in the reset, engaging with the precision argument as the emerging core thesis rather than dismissing it as previously rejected."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Gives a concrete, staged plan: run a pivot review with a labeled evaluation set and predefined pivot threshold, then either reposition around precision, fold capabilities into the primary pipeline, or stop the project depending on results."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the situation as having 'two independent signals': the disappearing speed differentiator and the complaint/workaround data revealing 'a more important problem,' rather than treating the leadership announcement as the sole trigger.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"It separates 'Reset the product thesis' (narrative) from 'Do not assume the existing product delivers better precision' (architecture validation), proposing to test whether the current architecture can actually reduce false positives rather than assuming the story alone invalidates the tech or vice versa.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"Explicitly states 'I would not continue with the approved narrative merely because it is approved or because a year has already been invested' and later calls the prior investment 'a sunk cost' that doesn't justify continued investment.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The response concedes 'the peer product owner's concern was correct' and proposes involving them in the reset, engaging with the precision argument as the emerging core thesis rather than dismissing it as previously rejected.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Gives a concrete, staged plan: run a pivot review with a labeled evaluation set and predefined pivot threshold, then either reposition around precision, fold capabilities into the primary pipeline, or stop the project depending on results.\"}\n  ]\n}"
+}

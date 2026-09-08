@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b__judge-claude-sonnet-5__7f7bf6db",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:35:28.276089+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames its recommendation as separating the two outcomes\u2014'Launch the new product tier reliably' vs. 'Migrate notification traffic correctly to the long-term platform'\u2014stating 'This does not change the strategic destination.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly grounds the decision in 'the realistic estimate roughly twice the circulated timeline' and states it would not commit the launch to 'an estimate that the technical review has already shown to be unrealistic.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response never discusses the risk of running two platforms in parallel with an inconsistent customer experience; it focuses only on scoping and technical/schedule risk of the accelerate option, not on divergence risk from a partial migration."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses optics, saying it would 'communicate the decision as a risk-adjusted sequencing choice, not resistance to company strategy.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific plan (use old platform for launch, run migration separately) with concrete guardrails like defined parity/exit criteria and an abstraction layer, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames its recommendation as separating the two outcomes\u2014'Launch the new product tier reliably' vs. 'Migrate notification traffic correctly to the long-term platform'\u2014stating 'This does not change the strategic destination.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"It explicitly grounds the decision in 'the realistic estimate roughly twice the circulated timeline' and states it would not commit the launch to 'an estimate that the technical review has already shown to be unrealistic.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response never discusses the risk of running two platforms in parallel with an inconsistent customer experience; it focuses only on scoping and technical/schedule risk of the accelerate option, not on divergence risk from a partial migration.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"It directly addresses optics, saying it would 'communicate the decision as a risk-adjusted sequencing choice, not resistance to company strategy.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific plan (use old platform for launch, run migration separately) with concrete guardrails like defined parity/exit criteria and an abstraction layer, rather than just listing tradeoffs.\"}\n  ]\n}"
+}

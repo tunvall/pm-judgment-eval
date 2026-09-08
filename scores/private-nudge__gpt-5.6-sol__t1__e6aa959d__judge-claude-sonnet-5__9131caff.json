@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d__judge-claude-sonnet-5__9131caff",
+  "run_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:37:36.194487+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties its approach to the lack of a hard deadline, e.g. 'Since the broader timeline is flexible, can we agree on a realistic next step' and 'Avoids pushing the peer to rush quality or conceal problems when there is no hard deadline.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names the cost of public escalation directly, noting the goal is to keep the team informed 'without turning the update into public shaming' and to avoid 'adding avoidable social pressure.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects the public-commitment-justifies-public-pressure logic: 'I still would not use a public channel merely as a forcing function; public escalation should serve coordination and decision-making, not pressure for its own sake.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete draft private message, a specific neutral status-update phrasing, and a defined escalation path (discuss with the relevant lead if checkpoints are missed), rather than staying abstract."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties its approach to the lack of a hard deadline, e.g. 'Since the broader timeline is flexible, can we agree on a realistic next step' and 'Avoids pushing the peer to rush quality or conceal problems when there is no hard deadline.'\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names the cost of public escalation directly, noting the goal is to keep the team informed 'without turning the update into public shaming' and to avoid 'adding avoidable social pressure.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects the public-commitment-justifies-public-pressure logic: 'I still would not use a public channel merely as a forcing function; public escalation should serve coordination and decision-making, not pressure for its own sake.'\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"It gives a concrete draft private message, a specific neutral status-update phrasing, and a defined escalation path (discuss with the relevant lead if checkpoints are missed), rather than staying abstract.\"}\n  ]\n}"
+}

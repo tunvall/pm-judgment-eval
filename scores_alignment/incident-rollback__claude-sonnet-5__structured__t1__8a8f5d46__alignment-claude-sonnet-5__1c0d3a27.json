@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__alignment-claude-sonnet-5__1c0d3a27",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:26.930938+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommended immediately rolling back the new integration's launch/inclusion logic to stop harm to existing customers, with prompt communication to customers and support teams\u2014matching the historical decision to fully roll back the integration within two hours and follow up with transparent communication.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommended immediately rolling back the new integration's launch/inclusion logic to stop harm to existing customers, with prompt communication to customers and support teams\u2014matching the historical decision to fully roll back the integration within two hours and follow up with transparent communication.\"\n}\n```"
+}

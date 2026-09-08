@@ -1,0 +1,14 @@
+{
+  "score_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d__alignment-claude-sonnet-5__b39c2d10",
+  "run_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:58.922698+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to follow up via a private, empathetic direct message asking about status and expected timeline, explicitly avoiding public-channel pressure\u2014matching the historical decision to send a private DM asking about expected completion date rather than raising it publicly.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to follow up via a private, empathetic direct message asking about status and expected timeline, explicitly avoiding public-channel pressure\u2014matching the historical decision to send a private DM asking about expected completion date rather than raising it publicly.\"\n}"
+}

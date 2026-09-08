@@ -1,0 +1,14 @@
+{
+  "score_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7__alignment-claude-sonnet-5__5bfa6352",
+  "run_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:07.667083+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate chose to keep the finding but correct its framing to 'product churn' language, whereas the historical decision was to kill the finding entirely and rebuild the section using other data instead of retaining and reframing it.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate chose to keep the finding but correct its framing to 'product churn' language, whereas the historical decision was to kill the finding entirely and rebuild the section using other data instead of retaining and reframing it.\"\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd__alignment-claude-sonnet-5__2ed28d8a",
+  "run_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:11.380581+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both reject presenting the finding as strong platform-churn evidence and consider rebuilding the argument on other data, matching the historical outcome's spirit. However, the candidate explicitly keeps open the option of publishing a narrower, caveated version of the finding, whereas the historical decision explicitly killed the finding outright rather than publish it with a caveat.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both reject presenting the finding as strong platform-churn evidence and consider rebuilding the argument on other data, matching the historical outcome's spirit. However, the candidate explicitly keeps open the option of publishing a narrower, caveated version of the finding, whereas the historical decision explicitly killed the finding outright rather than publish it with a caveat.\"\n}"
+}

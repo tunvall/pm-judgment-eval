@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d__alignment-claude-sonnet-5__891a2451",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:44.356647+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The historical outcome was that naming remained unresolved and open through a fourth round with no durable decision reached, which matches the candidate's acknowledgment that it would not commit to a specific name without further testing. However, the candidate's core recommendation\u2014establishing binding governance, ranked criteria, and a strict reopening rule to end the cycle\u2014represents a substantive procedural intervention not reflected in the historical account, where the pattern of reopening simply continued without such a structural fix.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The historical outcome was that naming remained unresolved and open through a fourth round with no durable decision reached, which matches the candidate's acknowledgment that it would not commit to a specific name without further testing. However, the candidate's core recommendation\u2014establishing binding governance, ranked criteria, and a strict reopening rule to end the cycle\u2014represents a substantive procedural intervention not reflected in the historical account, where the pattern of reopening simply continued without such a structural fix.\"\n}"
+}

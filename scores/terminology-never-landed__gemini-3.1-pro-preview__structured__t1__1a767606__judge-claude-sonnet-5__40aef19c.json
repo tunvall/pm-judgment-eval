@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606__judge-claude-sonnet-5__40aef19c",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:38:59.707368+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the issue as 'no longer about finding the right words; it is a governance and decision-making failure,' addressing the repeated failure pattern rather than just this round's word choice."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a concrete rubric-and-meeting mechanism to force a decision, with an executive escalation fallback if consensus fails, and frames continued churn as burning cycles/delaying launch rather than being free."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It notes reviewers were 'free to veto a name the moment they spot a flaw' and assumes objections arose in silos with unweighed subjective criteria, but it never actually assesses whether each of the three prior objections was legitimate/new versus re-litigation\u2014it treats them all as inputs to be weighed equally in a rubric rather than diagnosing diminishing returns explicitly."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The locked API name is treated as a fixed constraint throughout (listed in evidence, factored into the one-pager, and even evaluated as its own alternative before being set aside), and the recommendation is built around it rather than reopening it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The recommendation explicitly says to 'Stop pitching names' and instead reset the process by aligning on a rubric first, directly distinguishing this approach from the three prior ad hoc name-picking attempts."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the issue as 'no longer about finding the right words; it is a governance and decision-making failure,' addressing the repeated failure pattern rather than just this round's word choice.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes a concrete rubric-and-meeting mechanism to force a decision, with an executive escalation fallback if consensus fails, and frames continued churn as burning cycles/delaying launch rather than being free.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"It notes reviewers were 'free to veto a name the moment they spot a flaw' and assumes objections arose in silos with unweighed subjective criteria, but it never actually assesses whether each of the three prior objections was legitimate/new versus re-litigation\u2014it treats them all as inputs to be weighed equally in a rubric rather than diagnosing diminishing returns explicitly.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The locked API name is treated as a fixed constraint throughout (listed in evidence, factored into the one-pager, and even evaluated as its own alternative before being set aside), and the recommendation is built around it rather than reopening it.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The recommendation explicitly says to 'Stop pitching names' and instead reset the process by aligning on a rubric first, directly distinguishing this approach from the three prior ad hoc name-picking attempts.\"}\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3__alignment-claude-sonnet-5__e06ea6d3",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:33.103993+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommends immediately rolling back the new integration launch to restore core service, matching the historical decision to fully roll back within two hours, and also includes transparent communication to affected customers similar to the historical post-incident writeup.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommends immediately rolling back the new integration launch to restore core service, matching the historical decision to fully roll back within two hours, and also includes transparent communication to affected customers similar to the historical post-incident writeup.\"\n}\n```"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "reframe-value-proposition__gemini-3.1-pro-preview__t1__a33b1efa__judge-claude-sonnet-5__09e11605",
+  "run_id": "reframe-value-proposition__gemini-3.1-pro-preview__t1__a33b1efa",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:37:43.375508+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response treats the false-positive data as a 'massive, validated pain point' and central to the pivot, but it frames the rationale as a joint response to both the leadership announcement and the complaint data rather than explicitly stating the complaint data alone already warranted reconsideration before the speed catch-up was announced."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two, stating 'The 1+ year of engineering investment isn't wasted; it is simply being repositioned' and proposes reusing the usage-based architecture while changing only the GTM story."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly names and rejects sunk cost reasoning, stating 'It avoids the Sunk Cost Fallacy while preserving engineering work' and justifies continuation on repositioning rather than prior investment alone."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate proposes to 'go to the peer Product Owner, admit they were right about precision being the ultimate differentiator, and ask to collaborate,' engaging with and validating the previously dismissed argument."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a concrete plan: pivot the GTM narrative to precision, retune the architecture for spike detection, engage workaround-building customers as beta testers, and reposition the product as a complement to the primary pipeline."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"partially_met\", \"justification\": \"The response treats the false-positive data as a 'massive, validated pain point' and central to the pivot, but it frames the rationale as a joint response to both the leadership announcement and the complaint data rather than explicitly stating the complaint data alone already warranted reconsideration before the speed catch-up was announced.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the two, stating 'The 1+ year of engineering investment isn't wasted; it is simply being repositioned' and proposes reusing the usage-based architecture while changing only the GTM story.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response directly names and rejects sunk cost reasoning, stating 'It avoids the Sunk Cost Fallacy while preserving engineering work' and justifies continuation on repositioning rather than prior investment alone.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The candidate proposes to 'go to the peer Product Owner, admit they were right about precision being the ultimate differentiator, and ask to collaborate,' engaging with and validating the previously dismissed argument.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a concrete plan: pivot the GTM narrative to precision, retune the architecture for spike detection, engage workaround-building customers as beta testers, and reposition the product as a complement to the primary pipeline.\"}\n  ]\n}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3__judge-claude-sonnet-5__2653e2b6",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:36:05.845748+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly states 'I would immediately order a rollback of the new integration launch' and frames this with high confidence, making a clear decisive call rather than hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response assumes rollback 'is technically feasible, can be executed quickly, and will immediately resolve the issue,' and separately flags the hotfix as risking 'compounding the incident by introducing new, uncalibrated bugs... potentially prolonging the outage,' but it never explicitly frames the decision in terms of reversibility (rollback as a safe, undoable move vs. an unvalidated fix being hard to walk back if it fails)."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The tradeoffs section directly weighs 'PR and marketing momentum of the new launch' against 'immense damage to existing customer trust' and support overload from ongoing incorrect signals, concluding the former is outweighed."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly considers and rejects the rapid hotfix option, noting it 'risks compounding the incident by introducing new, uncalibrated bugs into a sensitive risk-decisioning system,' rather than defaulting to it as a quick fix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Next steps go beyond the immediate rollback to include monitoring, informing Support/Marketing/GTM with scripts, updating the public status page, and later 'kick off the engineering workstream to build, properly test, and eventually relaunch' the integration."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'I would immediately order a rollback of the new integration launch' and frames this with high confidence, making a clear decisive call rather than hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response assumes rollback 'is technically feasible, can be executed quickly, and will immediately resolve the issue,' and separately flags the hotfix as risking 'compounding the incident by introducing new, uncalibrated bugs... potentially prolonging the outage,' but it never explicitly frames the decision in terms of reversibility (rollback as a safe, undoable move vs. an unvalidated fix being hard to walk back if it fails).\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The tradeoffs section directly weighs 'PR and marketing momentum of the new launch' against 'immense damage to existing customer trust' and support overload from ongoing incorrect signals, concluding the former is outweighed.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly considers and rejects the rapid hotfix option, noting it 'risks compounding the incident by introducing new, uncalibrated bugs into a sensitive risk-decisioning system,' rather than defaulting to it as a quick fix.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Next steps go beyond the immediate rollback to include monitoring, informing Support/Marketing/GTM with scripts, updating the public status page, and later 'kick off the engineering workstream to build, properly test, and eventually relaunch' the integration.\"}\n  ]\n}"
+}

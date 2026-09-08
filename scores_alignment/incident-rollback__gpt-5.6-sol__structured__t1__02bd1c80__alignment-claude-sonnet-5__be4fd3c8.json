@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80__alignment-claude-sonnet-5__be4fd3c8",
+  "run_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:38.792804+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's primary recommendation is an immediate full rollback of the new integration to the last known good state, prioritizing stopping customer harm over preserving the public commitment, matching the historical decision to fully roll back and communicate transparently. The candidate also builds in a kill-switch alternative if faster, but explicitly defaults to rollback, aligning with the actual outcome.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's primary recommendation is an immediate full rollback of the new integration to the last known good state, prioritizing stopping customer harm over preserving the public commitment, matching the historical decision to fully roll back and communicate transparently. The candidate also builds in a kill-switch alternative if faster, but explicitly defaults to rollback, aligning with the actual outcome.\"\n}\n```"
+}

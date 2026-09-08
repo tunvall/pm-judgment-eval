@@ -1,0 +1,14 @@
+{
+  "score_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3__alignment-claude-sonnet-5__4d5ac3fa",
+  "run_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:48.524085+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's proposed 'minimum package' (surface the hidden suppress feature, use threshold guidance, staged/early-access rollout, fast-follow full framework) closely mirrors the historical decision to treat configurability as fast-follow with the same mitigations. However, the candidate frames this as conditional on re-validating with customers first and keeps open the option to fully block broad launch if customers reject the minimum package, whereas historically the team proceeded directly with the mitigation package and early-access group without that explicit gating step.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's proposed 'minimum package' (surface the hidden suppress feature, use threshold guidance, staged/early-access rollout, fast-follow full framework) closely mirrors the historical decision to treat configurability as fast-follow with the same mitigations. However, the candidate frames this as conditional on re-validating with customers first and keeps open the option to fully block broad launch if customers reject the minimum package, whereas historically the team proceeded directly with the mitigation package and early-access group without that explicit gating step.\"\n}"
+}

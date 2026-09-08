@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c__judge-claude-sonnet-5__895762c8",
+  "run_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:38:33.543407+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the task as 'how do we make a naming decision that stays decided' rather than picking a new name, and analyzes all three rounds as instances of a single structural failure mode."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It recommends naming 'a single decision-owner with authority to close the round,' setting an explicit narrow reopening bar (new usage data, not aesthetic objection), and states the org must accept some residual confusion is inevitable rather than treating continued delay as free."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges each past objection was 'substantively correct given the criteria they were applying' (not bikeshedding) but diagnoses the real problem as lack of pre-agreed criteria, and proposes a reopening bar restricted to new quantitative data rather than 'renewed aesthetic objection.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly notes the API/customer-facing name decoupling means 'internal/external consistency is not and never will be an available design constraint... can be dropped entirely,' shaping the rubric accordingly."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The recommendation explicitly rejects 'run round four like the first three' as having 'already failed three times with the same actors and incentives,' and instead fixes process/criteria before any wordsmithing, favoring reuse of existing family patterns over inventing new vocabulary since 'novelty has been the source of every failure so far.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the task as 'how do we make a naming decision that stays decided' rather than picking a new name, and analyzes all three rounds as instances of a single structural failure mode.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It recommends naming 'a single decision-owner with authority to close the round,' setting an explicit narrow reopening bar (new usage data, not aesthetic objection), and states the org must accept some residual confusion is inevitable rather than treating continued delay as free.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response acknowledges each past objection was 'substantively correct given the criteria they were applying' (not bikeshedding) but diagnoses the real problem as lack of pre-agreed criteria, and proposes a reopening bar restricted to new quantitative data rather than 'renewed aesthetic objection.'\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"It explicitly notes the API/customer-facing name decoupling means 'internal/external consistency is not and never will be an available design constraint... can be dropped entirely,' shaping the rubric accordingly.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The recommendation explicitly rejects 'run round four like the first three' as having 'already failed three times with the same actors and incentives,' and instead fixes process/criteria before any wordsmithing, favoring reuse of existing family patterns over inventing new vocabulary since 'novelty has been the source of every failure so far.'\"}\n  ]\n}"
+}

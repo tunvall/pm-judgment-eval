@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-claude-sonnet-5__0200b402",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:35:54.953751+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' leaving no ambiguity about the immediate call."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames rollback as 'a known, bounded action \u2014 not a gamble' and reversible ('we can re-launch once fixed'), contrasting it with leaving the bug live, which it says is 'not obviously reversible in terms of customer trust and support load.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The 'Severity comparison isn't close' section directly weighs the compounding harm to existing customers against 'reputational/scheduling friction on a newly announced feature,' concluding the former dominates."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly states 'A proper, well-tested fix taking days is the wrong thing to optimize for right now' and treats it as a follow-up project rather than something to rush or bet on during the incident window."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'Concrete actions' list includes customer-facing status updates, escalation to the manager, and 'a follow-up track for engineering to build the proper fix and a re-launch plan,' going beyond just the immediate rollback."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' leaving no ambiguity about the immediate call.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames rollback as 'a known, bounded action \u2014 not a gamble' and reversible ('we can re-launch once fixed'), contrasting it with leaving the bug live, which it says is 'not obviously reversible in terms of customer trust and support load.'\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The 'Severity comparison isn't close' section directly weighs the compounding harm to existing customers against 'reputational/scheduling friction on a newly announced feature,' concluding the former dominates.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'A proper, well-tested fix taking days is the wrong thing to optimize for right now' and treats it as a follow-up project rather than something to rush or bet on during the incident window.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The 'Concrete actions' list includes customer-facing status updates, escalation to the manager, and 'a follow-up track for engineering to build the proper fix and a re-launch plan,' going beyond just the immediate rollback.\"}\n  ]\n}"
+}

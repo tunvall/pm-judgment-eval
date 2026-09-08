@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97__alignment-claude-sonnet-5__55796ec1",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:53.900168+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate proposes a structured process explicitly designed to finally close the naming decision in round four with governance, criteria, and a reopening threshold to prevent further churn. The historical outcome shows naming remained open and unresolved through the fourth round, i.e., the cycle of reopening continued rather than being resolved as the candidate intends.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate proposes a structured process explicitly designed to finally close the naming decision in round four with governance, criteria, and a reopening threshold to prevent further churn. The historical outcome shows naming remained open and unresolved through the fourth round, i.e., the cycle of reopening continued rather than being resolved as the candidate intends.\"\n}"
+}

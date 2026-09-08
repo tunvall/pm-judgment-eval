@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80__judge-claude-sonnet-5__fbe0b79f",
+  "run_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:36:34.054630+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives an unambiguous recommendation: 'Immediately roll back the new integration launch to the last known good state,' rather than merely listing options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly contrasts rollback as the 'Fastest dependable route to known-good behavior' against the hotfix option where 'a rushed and inadequately tested calibration change could worsen the incident,' and separately flags rollback's own residual risks as manageable."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states 'The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers,' explicitly trading off reputational/momentum cost against accruing customer harm."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The tradeoffs section explicitly rejects the hotfix path, noting it 'could preserve the launch, but a rushed and inadequately tested calibration change could worsen the incident,' and the recommendation states it would 'not delay mitigation to invent or test a novel partial workaround.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'Next steps' section goes beyond the immediate rollback to include customer communication, proactive correction for affected customers, building/testing the permanent fix, and setting 'explicit relaunch criteria.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives an unambiguous recommendation: 'Immediately roll back the new integration launch to the last known good state,' rather than merely listing options.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It explicitly contrasts rollback as the 'Fastest dependable route to known-good behavior' against the hotfix option where 'a rushed and inadequately tested calibration change could worsen the incident,' and separately flags rollback's own residual risks as manageable.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly states 'The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers,' explicitly trading off reputational/momentum cost against accruing customer harm.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The tradeoffs section explicitly rejects the hotfix path, noting it 'could preserve the launch, but a rushed and inadequately tested calibration change could worsen the incident,' and the recommendation states it would 'not delay mitigation to invent or test a novel partial workaround.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The 'Next steps' section goes beyond the immediate rollback to include customer communication, proactive correction for affected customers, building/testing the permanent fix, and setting 'explicit relaunch criteria.'\"}\n  ]\n}"
+}

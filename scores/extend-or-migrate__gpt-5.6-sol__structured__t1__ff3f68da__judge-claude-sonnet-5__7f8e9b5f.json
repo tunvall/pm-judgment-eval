@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__structured__t1__ff3f68da__judge-claude-sonnet-5__7f8e9b5f",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__structured__t1__ff3f68da",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:35:12.353373+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The decisive factor is not disagreement with the long-term strategy; it is execution risk,' clearly separating the strategic direction from the launch-specific timeline question."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its recommendation in the technically-derived estimate, stating 'Betting the launch on the optimistic timeline would amount to ignoring known technical evidence' and calls for 'Publish the realistic newer-platform estimate and the technical gaps behind it, replacing the optimistic timeline as the planning baseline.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response notes 'Supporting two platforms may add operational overhead' and that a hybrid approach 'could create two behavior sets and make testing and support harder,' but this is framed mainly as operational/testing burden rather than explicitly flagging the inconsistent customer-facing experience of one product diverging from the rest of the company's notification traffic."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response implicitly preempts the optics concern by clarifying the recommendation is not strategic disagreement ('The decisive factor is not disagreement with the long-term strategy') and offers conditions under which it would reverse course, but it never explicitly names or addresses how the recommendation might be perceived as resisting company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, specific recommendation ('Extend the older platform for this launch, and treat migration to the newer platform as an explicit, separately staffed follow-up initiative') along with a concrete numbered list of next steps."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The decisive factor is not disagreement with the long-term strategy; it is execution risk,' clearly separating the strategic direction from the launch-specific timeline question.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response grounds its recommendation in the technically-derived estimate, stating 'Betting the launch on the optimistic timeline would amount to ignoring known technical evidence' and calls for 'Publish the realistic newer-platform estimate and the technical gaps behind it, replacing the optimistic timeline as the planning baseline.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response notes 'Supporting two platforms may add operational overhead' and that a hybrid approach 'could create two behavior sets and make testing and support harder,' but this is framed mainly as operational/testing burden rather than explicitly flagging the inconsistent customer-facing experience of one product diverging from the rest of the company's notification traffic.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"partially_met\", \"justification\": \"The response implicitly preempts the optics concern by clarifying the recommendation is not strategic disagreement ('The decisive factor is not disagreement with the long-term strategy') and offers conditions under which it would reverse course, but it never explicitly names or addresses how the recommendation might be perceived as resisting company direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, specific recommendation ('Extend the older platform for this launch, and treat migration to the newer platform as an explicit, separately staffed follow-up initiative') along with a concrete numbered list of next steps.\"}\n  ]\n}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__t1__def09891__judge-claude-sonnet-5__c3a04816",
+  "run_id": "terminology-never-landed__claude-sonnet-5__t1__def09891",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:38:47.111414+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses the issue as 'a governance problem wearing a naming costume' and analyzes why each round failed for a different reason rather than treating round four as an isolated naming choice."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Proposes assigning 'a single decision owner with cross-family authority' and a rule that future reopens require violating pre-agreed criteria, culminating in 'Ship it as final... and treat further churn as a documented backlog item, not a blocker.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Notes each prior objection was genuinely new rather than repeated ('each round satisfies the previous objection and gets shot down by a new one'), and institutes a rule that only pre-agreed criteria violations count as valid reopens going forward, implicitly filtering out re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Explicitly references the API field as 'locked and out of scope' when justifying why the name doesn't need to carry all explanatory weight and can be supplemented by tooltips instead."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Explicitly states 'Picking a fourth candidate name without fixing this just produces a fourth reopening' and restructures the approach around establishing a conceptual model and joint criteria before generating any candidate name, rather than repeating ad hoc naming attempts."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly diagnoses the issue as 'a governance problem wearing a naming costume' and analyzes why each round failed for a different reason rather than treating round four as an isolated naming choice.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"Proposes assigning 'a single decision owner with cross-family authority' and a rule that future reopens require violating pre-agreed criteria, culminating in 'Ship it as final... and treat further churn as a documented backlog item, not a blocker.'\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"Notes each prior objection was genuinely new rather than repeated ('each round satisfies the previous objection and gets shot down by a new one'), and institutes a rule that only pre-agreed criteria violations count as valid reopens going forward, implicitly filtering out re-litigation.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"Explicitly references the API field as 'locked and out of scope' when justifying why the name doesn't need to carry all explanatory weight and can be supplemented by tooltips instead.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"Explicitly states 'Picking a fourth candidate name without fixing this just produces a fourth reopening' and restructures the approach around establishing a conceptual model and joint criteria before generating any candidate name, rather than repeating ad hoc naming attempts.\"}\n  ]\n}"
+}

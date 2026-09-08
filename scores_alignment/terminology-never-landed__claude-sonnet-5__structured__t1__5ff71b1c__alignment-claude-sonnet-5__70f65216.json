@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c__alignment-claude-sonnet-5__70f65216",
+  "run_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:17.352265+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome shows the naming decision remained unresolved through a fourth round, implying the same reopening pattern continued unchecked. The candidate instead proposes a structural fix (pre-agreed criteria, single decision-owner, explicit reopening bar) explicitly designed to prevent further reopening, which is a substantively different approach than what actually occurred.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome shows the naming decision remained unresolved through a fourth round, implying the same reopening pattern continued unchecked. The candidate instead proposes a structural fix (pre-agreed criteria, single decision-owner, explicit reopening bar) explicitly designed to prevent further reopening, which is a substantively different approach than what actually occurred.\"\n}"
+}

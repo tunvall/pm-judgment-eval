@@ -1,0 +1,51 @@
+{
+  "score_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3__judge-claude-sonnet-5__7c3794be",
+  "run_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:37:12.858865+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response separates the customer's stated need from the literal ask ('I also would not assume that the only acceptable response is the full multi-quarter framework'), but it still treats the blocker signal as decisive by default, gating broad launch on customer re-validation rather than weighing it against other business/timeline considerations explicitly."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly proposes to 'Make the existing suppress-from-notification capability prominent, understandable, and documented' as part of the pre-launch package, directly leveraging the discovered feature."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The key is not to equate \"customers asked for full configurability\" with \"we must build the entire architectural framework first\"' and proposes a minimal package (suppression + threshold guidance) as a possible substitute for the full framework."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response mitigates risk via instrumentation and a staged rollout with rollback ability, but never explicitly names the risk that deferring full configurability could look like the wrong call in hindsight if adoption/complaints are high\u2014it only describes mitigation mechanisms, not the risk itself as a named trade-off."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete plan: build a minimum alert-control package, validate it with customers, and follow a clear decision rule ('If customers validate... proceed with a limited or staged launch... If they still say... block broad availability'), going beyond a mere pros/cons list."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"partially_met\", \"justification\": \"The response separates the customer's stated need from the literal ask ('I also would not assume that the only acceptable response is the full multi-quarter framework'), but it still treats the blocker signal as decisive by default, gating broad launch on customer re-validation rather than weighing it against other business/timeline considerations explicitly.\"}, {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response explicitly proposes to 'Make the existing suppress-from-notification capability prominent, understandable, and documented' as part of the pre-launch package, directly leveraging the discovered feature.\"}, {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The key is not to equate \\\"customers asked for full configurability\\\" with \\\"we must build the entire architectural framework first\\\"' and proposes a minimal package (suppression + threshold guidance) as a possible substitute for the full framework.\"}, {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response mitigates risk via instrumentation and a staged rollout with rollback ability, but never explicitly names the risk that deferring full configurability could look like the wrong call in hindsight if adoption/complaints are high\u2014it only describes mitigation mechanisms, not the risk itself as a named trade-off.\"}, {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete plan: build a minimum alert-control package, validate it with customers, and follow a clear decision rule ('If customers validate... proceed with a limited or staged launch... If they still say... block broad availability'), going beyond a mere pros/cons list.\"}]}"
+}

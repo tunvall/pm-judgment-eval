@@ -1,0 +1,14 @@
+{
+  "score_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac__alignment-claude-sonnet-5__a13a0f3b",
+  "run_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:04.179852+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's core recommendation\u2014reframe the product's value proposition from speed to precision (context-aware, high-confidence detection), keep and test the existing architecture rather than scrap it, and rewrite the go-to-market narrative\u2014matches the historical decision to reframe around precision on the same technical foundation. The candidate adds conditional validation steps and a fallback to stop/absorb, which is an elaboration but the primary stated path (pivot to precision, keep architecture, revise narrative) aligns with what actually happened.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's core recommendation\u2014reframe the product's value proposition from speed to precision (context-aware, high-confidence detection), keep and test the existing architecture rather than scrap it, and rewrite the go-to-market narrative\u2014matches the historical decision to reframe around precision on the same technical foundation. The candidate adds conditional validation steps and a fallback to stop/absorb, which is an elaboration but the primary stated path (pivot to precision, keep architecture, revise narrative) aligns with what actually happened.\"\n}"
+}

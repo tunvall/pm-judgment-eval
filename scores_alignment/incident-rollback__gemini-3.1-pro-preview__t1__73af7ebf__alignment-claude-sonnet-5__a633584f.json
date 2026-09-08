@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__alignment-claude-sonnet-5__a633584f",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:02:36.186060+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose immediate full rollback of the new integration to protect existing customers, paired with transparent communications, matching the historical decision of full rollback within two hours followed by a transparent post-incident writeup.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose immediate full rollback of the new integration to protect existing customers, paired with transparent communications, matching the historical decision of full rollback within two hours followed by a transparent post-incident writeup.\"\n}\n```"
+}

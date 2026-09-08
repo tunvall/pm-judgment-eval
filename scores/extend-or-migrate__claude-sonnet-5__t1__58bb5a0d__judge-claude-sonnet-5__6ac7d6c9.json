@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-claude-sonnet-5__6ac7d6c9",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:34:32.857734+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The disagreement is about sequencing, not direction' and separates agreement on the long-term architecture from the question of whether this launch must be the migration vehicle."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the circulated estimate as 'simply wrong' given the technical review, and grounds the decision in 'a 2x gap with zero schedule margin' rather than the optimistic figure."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses the cost of keeping one more system around to retire later, but never raises the risk of running two platforms creating an inconsistent customer experience across products; its framing is purely about technical/schedule risk, not user-facing inconsistency."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response anticipates that deferring could look like resisting strategy ('the actual mistake being pressured into') and proactively addresses the optics by committing to document mismatches, scope a real migration project, and get explicit agreement so it 'doesn't quietly disappear.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear decision ('extend the older platform... and decouple the platform migration into its own separately-scoped project') along with concrete follow-up actions like building a migration-friendly interface and securing sign-off on a deferred timeline."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The disagreement is about sequencing, not direction' and separates agreement on the long-term architecture from the question of whether this launch must be the migration vehicle.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response treats the circulated estimate as 'simply wrong' given the technical review, and grounds the decision in 'a 2x gap with zero schedule margin' rather than the optimistic figure.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response discusses the cost of keeping one more system around to retire later, but never raises the risk of running two platforms creating an inconsistent customer experience across products; its framing is purely about technical/schedule risk, not user-facing inconsistency.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response anticipates that deferring could look like resisting strategy ('the actual mistake being pressured into') and proactively addresses the optics by committing to document mismatches, scope a real migration project, and get explicit agreement so it 'doesn't quietly disappear.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear decision ('extend the older platform... and decouple the platform migration into its own separately-scoped project') along with concrete follow-up actions like building a migration-friendly interface and securing sign-off on a deferred timeline.\"}\n  ]\n}"
+}

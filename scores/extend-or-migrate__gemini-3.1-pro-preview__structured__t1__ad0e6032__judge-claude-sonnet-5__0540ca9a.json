@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032__judge-claude-sonnet-5__0540ca9a",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:34:48.172565+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the choice as 'Prioritize Launch' vs 'Prioritize Architecture' rather than disputing the strategy, and its final next step is to 'Schedule the migration... ensuring the architectural strategy is honored, just deferred,' clearly separating direction from vehicle-for-this-launch."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly relies on the technically-derived estimate, stating 'An estimate that consumes 100% of the schedule buffer is virtually guaranteed to slip' and treating the zero-margin timeline as unrealistic rather than deferring to the optimistic circulated one."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses technical debt and schedule risk of migrating this one product to the new platform, but never raises the concern that having this product on the new platform while the main alerting product stays on the old one creates an inconsistent customer/system experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly lists 'Strategic Misalignment/Optics: Leadership or the team owning the new platform may view this as resisting company strategy' as a risk and proposes mitigating it via 'clear communication of the technical realities and a firm commitment to the future migration.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation (Alternative 1: extend the old platform) and lays out concrete next steps including communicating the decision, sharing feedback with the platform team, executing the launch, and scheduling the future migration."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the choice as 'Prioritize Launch' vs 'Prioritize Architecture' rather than disputing the strategy, and its final next step is to 'Schedule the migration... ensuring the architectural strategy is honored, just deferred,' clearly separating direction from vehicle-for-this-launch.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly relies on the technically-derived estimate, stating 'An estimate that consumes 100% of the schedule buffer is virtually guaranteed to slip' and treating the zero-margin timeline as unrealistic rather than deferring to the optimistic circulated one.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response discusses technical debt and schedule risk of migrating this one product to the new platform, but never raises the concern that having this product on the new platform while the main alerting product stays on the old one creates an inconsistent customer/system experience.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response explicitly lists 'Strategic Misalignment/Optics: Leadership or the team owning the new platform may view this as resisting company strategy' as a risk and proposes mitigating it via 'clear communication of the technical realities and a firm commitment to the future migration.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation (Alternative 1: extend the old platform) and lays out concrete next steps including communicating the decision, sharing feedback with the platform team, executing the launch, and scheduling the future migration.\"}\n  ]\n}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873__judge-claude-sonnet-5__337ddcc3",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:39:13.541266+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the issue as 'no longer a naming problem; it is a stakeholder management and UX problem' and diagnoses the pattern (asking a short name to do too much work, chasing a 'perfect' zero-confusion name) rather than just re-picking a candidate name for round four."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response proposes convening veto-holders up front, setting the rule to choose 'the least worst name, not a perfect name,' and locking the decision so 'No one is allowed to reopen the naming decision in a later cycle unless a catastrophic legal/compliance issue arises,' explicitly invoking 'Disagree and Commit.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response treats each prior objection as legitimate and designs around it (lexicon constraint for Round 2, UX copy for Round 1), and implicitly acknowledges diminishing returns by noting 'no 3-word name can explain a complex risk variance,' but it never explicitly weighs whether the repeated reopening reflects genuinely new information versus re-litigation of the same settled tradeoffs."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly incorporates the locked API name, proposing to 'make the customer-facing name a direct, plain-English translation of the API field name' to avoid dev/support friction, rather than ignoring or reopening that architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly contrasts its approach with prior rounds by shifting explanatory burden from the name itself to mandatory UX copy ('A name cannot explain a methodology. That is what UI copy is for') and by pre-securing buy-in from the specific reviewers who killed prior rounds, rather than proposing another ad hoc name in isolation."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the issue as 'no longer a naming problem; it is a stakeholder management and UX problem' and diagnoses the pattern (asking a short name to do too much work, chasing a 'perfect' zero-confusion name) rather than just re-picking a candidate name for round four.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response proposes convening veto-holders up front, setting the rule to choose 'the least worst name, not a perfect name,' and locking the decision so 'No one is allowed to reopen the naming decision in a later cycle unless a catastrophic legal/compliance issue arises,' explicitly invoking 'Disagree and Commit.'\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"The response treats each prior objection as legitimate and designs around it (lexicon constraint for Round 2, UX copy for Round 1), and implicitly acknowledges diminishing returns by noting 'no 3-word name can explain a complex risk variance,' but it never explicitly weighs whether the repeated reopening reflects genuinely new information versus re-litigation of the same settled tradeoffs.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response directly incorporates the locked API name, proposing to 'make the customer-facing name a direct, plain-English translation of the API field name' to avoid dev/support friction, rather than ignoring or reopening that architecture.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts its approach with prior rounds by shifting explanatory burden from the name itself to mandatory UX copy ('A name cannot explain a methodology. That is what UI copy is for') and by pre-securing buy-in from the specific reviewers who killed prior rounds, rather than proposing another ad hoc name in isolation.\"}\n  ]\n}"
+}

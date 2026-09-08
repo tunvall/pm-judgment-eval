@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606__alignment-claude-sonnet-5__cf6420db",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:03:37.549060+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome was that naming remained unresolved and open into a fourth round with no durable decision reached, whereas the candidate proposes a concrete process (criteria-first rubric with veto-holders) explicitly designed to produce and lock a final name in this round, framing success as breaking the cycle rather than continuing it.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome was that naming remained unresolved and open into a fourth round with no durable decision reached, whereas the candidate proposes a concrete process (criteria-first rubric with veto-holders) explicitly designed to produce and lock a final name in this round, framing success as breaking the cycle rather than continuing it.\"\n}"
+}

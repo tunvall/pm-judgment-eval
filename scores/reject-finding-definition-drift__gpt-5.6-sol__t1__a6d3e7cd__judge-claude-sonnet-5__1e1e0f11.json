@@ -1,0 +1,51 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd__judge-claude-sonnet-5__1e1e0f11",
+  "run_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-08T14:38:24.048794+00:00",
+  "git_commit": "d622fac94d9481ba3cc82d45c2ab524bf952df1f",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states the finding 'does not establish that they left the broader platform or that Signal Y caused disengagement,' treating the distinction as substantive rather than a technicality."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "States directly that 'a caveat would not cure misleading headline language,' rejecting a footnote-only approach as insufficient."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Explicitly weighs 'substantial credibility and decision-quality risk' against a weakened narrative, and notes the mismatch 'is also likely to be discovered' given knowledgeable reviewers, framing the real standard as whether executives can safely decide from the claim."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "No part of the reasoning appeals to prior analysis or drafting effort as a reason to retain the finding; instead it recommends correcting or removing it regardless of work already done."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Gives concrete alternatives: rerun analysis with a true departure definition, rescope the claim to precise product-level language with an example rewrite, or remove the finding and treat the broader claim as a hypothesis for follow-up validation."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_definitional_mismatch_as_material\", \"verdict\": \"met\", \"justification\": \"The response explicitly states the finding 'does not establish that they left the broader platform or that Signal Y caused disengagement,' treating the distinction as substantive rather than a technicality.\"},\n    {\"id\": \"rejects_caveat_as_sufficient_fix\", \"verdict\": \"met\", \"justification\": \"States directly that 'a caveat would not cure misleading headline language,' rejecting a footnote-only approach as insufficient.\"},\n    {\"id\": \"weighs_credibility_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"Explicitly weighs 'substantial credibility and decision-quality risk' against a weakened narrative, and notes the mismatch 'is also likely to be discovered' given knowledgeable reviewers, framing the real standard as whether executives can safely decide from the claim.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"No part of the reasoning appeals to prior analysis or drafting effort as a reason to retain the finding; instead it recommends correcting or removing it regardless of work already done.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Gives concrete alternatives: rerun analysis with a true departure definition, rescope the claim to precise product-level language with an example rewrite, or remove the finding and treat the broader claim as a hypothesis for follow-up validation.\"}\n  ]\n}"
+}
