@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f__judge-claude-sonnet-5__d4310c71",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:32:00.167401+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Opens with an unambiguous decision: 'roll the new integration back now, and treat it as a pause of the launch rather than a cancellation,' with no hedging before committing."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Explicitly contrasts rollback as 'a known-good state we ran yesterday; that's the lowest-variance move' against the hotfix path, warning that 'untested hotfixes on a live high-sev incident are how you turn one incident into two.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Directly weighs 'existing, paying customers... getting incorrect risk signals' compounding hourly against the announced launch, concluding the announcement concern is 'largely sunk cost pressure' compared to product-integrity damage."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "States the default is rollback 'unless engineering is genuinely confident, not hopeful,' explicitly refusing to bet on an unvalidated quick fix given the multi-day estimate for a proper solution."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Lays out a detailed post-decision sequence including verification, remediation of already-fired alerts, staged customer/CS/marketing communication, and a re-launch path gated on a regression suite and staged rollout."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"Opens with an unambiguous decision: 'roll the new integration back now, and treat it as a pause of the launch rather than a cancellation,' with no hedging before committing.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"Explicitly contrasts rollback as 'a known-good state we ran yesterday; that's the lowest-variance move' against the hotfix path, warning that 'untested hotfixes on a live high-sev incident are how you turn one incident into two.'\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"Directly weighs 'existing, paying customers... getting incorrect risk signals' compounding hourly against the announced launch, concluding the announcement concern is 'largely sunk cost pressure' compared to product-integrity damage.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"States the default is rollback 'unless engineering is genuinely confident, not hopeful,' explicitly refusing to bet on an unvalidated quick fix given the multi-day estimate for a proper solution.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Lays out a detailed post-decision sequence including verification, remediation of already-fired alerts, staged customer/CS/marketing communication, and a re-launch path gated on a regression suite and staged rollout.\"}\n  ]\n}"
+}

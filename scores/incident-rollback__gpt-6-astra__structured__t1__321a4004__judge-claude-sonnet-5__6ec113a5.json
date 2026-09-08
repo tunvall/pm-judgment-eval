@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004__judge-claude-sonnet-5__6ec113a5",
+  "run_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:35:11.508028+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly states 'Initiate rollback now, with engineering executing and verifying it,' and specifies that alternatives are used only in narrow, promptly-verifiable conditions \u2014 this is a decisive call, not a hedge."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response contrasts rollback (restoring the prior known-good state, subject only to a 'brief rollback-safety check') against emergency patching, which 'introduces regression risk under pressure' and is explicitly rejected as a default given the multi-day testing timeline \u2014 capturing the reversible-vs-unvalidated-bet distinction even without using the word 'reversible' itself."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'Leaving the launch live... knowingly extends confirmed harm for days. Communications do not compensate for incorrect signals' and 'A public commitment matters, but it does not justify continuing a known production defect,' directly weighing ongoing harm against the cost of walking back the announcement."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects emergency patching as the default strategy, noting 'The stated testing timeline argues against treating it as the default containment strategy,' rather than optimistically pushing a fast fix forward."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lists concrete follow-on steps beyond containment, including customer/support communication, verification of recovery, identifying affected customers for remediation, and building a properly tested fix with staged relaunch."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response clearly states 'Initiate rollback now, with engineering executing and verifying it,' and specifies that alternatives are used only in narrow, promptly-verifiable conditions \u2014 this is a decisive call, not a hedge.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response contrasts rollback (restoring the prior known-good state, subject only to a 'brief rollback-safety check') against emergency patching, which 'introduces regression risk under pressure' and is explicitly rejected as a default given the multi-day testing timeline \u2014 capturing the reversible-vs-unvalidated-bet distinction even without using the word 'reversible' itself.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'Leaving the launch live... knowingly extends confirmed harm for days. Communications do not compensate for incorrect signals' and 'A public commitment matters, but it does not justify continuing a known production defect,' directly weighing ongoing harm against the cost of walking back the announcement.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects emergency patching as the default strategy, noting 'The stated testing timeline argues against treating it as the default containment strategy,' rather than optimistically pushing a fast fix forward.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lists concrete follow-on steps beyond containment, including customer/support communication, verification of recovery, identifying affected customers for remediation, and building a properly tested fix with staged relaunch.\"}\n  ]\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601__alignment-claude-sonnet-5__b4df35de",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:34:05.192921+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome is that naming remained unresolved through a fourth round with no lasting decision, whereas the candidate proposes a concrete process (synchronous decision-making, trade-off matrix, disagree-and-commit) explicitly designed to land a durable name in round four, implying resolution rather than continued churn.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome is that naming remained unresolved through a fourth round with no lasting decision, whereas the candidate proposes a concrete process (synchronous decision-making, trade-off matrix, disagree-and-commit) explicitly designed to land a durable name in round four, implying resolution rather than continued churn.\"\n}\n```"
+}

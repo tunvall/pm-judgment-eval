@@ -1,0 +1,15 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c__alignment-claude-sonnet-5__4a609f17",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:32:37.864498+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to extend the older platform for this launch and treat the migration to the newer platform as a separate, dedicated effort, matching the historical decision exactly in substance and rationale.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to extend the older platform for this launch and treat the migration to the newer platform as a separate, dedicated effort, matching the historical decision exactly in substance and rationale.\"\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6__alignment-claude-sonnet-5__4a728872",
+  "run_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:34:29.371644+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's primary recommendation is to disable/rollback the new integration quickly (within a ~30-60 min timebox), defaulting to full rollback if a clean feature flag isn't confirmed, followed by transparent customer communication \u2014 matching the historical decision to fully roll back within two hours and issue transparent communications to affected accounts.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's primary recommendation is to disable/rollback the new integration quickly (within a ~30-60 min timebox), defaulting to full rollback if a clean feature flag isn't confirmed, followed by transparent customer communication \u2014 matching the historical decision to fully roll back within two hours and issue transparent communications to affected accounts.\"\n}\n```"
+}

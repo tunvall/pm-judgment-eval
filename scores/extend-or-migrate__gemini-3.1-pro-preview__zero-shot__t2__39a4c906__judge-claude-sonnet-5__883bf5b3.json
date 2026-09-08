@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t2__39a4c906__judge-claude-sonnet-5__883bf5b3",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t2__39a4c906",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:33:17.369771+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two questions, stating 'Nobody disputes the long-term direction, but migrating a system while simultaneously launching a new product tier conflates two separate risks' and 'Strategic alignment does not require immediate tactical adoption.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the zero-margin estimate as a 'massive red flag' based on the technical review's mismatches, and plans to 'share our technical review with the team managing the new platform' to correct the optimistic circulated timeline, showing it trusts its own derived estimate."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response only mentions generic 'technical debt' from extending the old platform but never addresses the risk of running two inconsistent systems or a fragmented customer experience if only this launch moved to the new platform while the rest stayed on the old one."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly acknowledges optics with 'To ensure this decision is well-received and doesn't just look like a team dodging a company-wide mandate' and proposes concrete mitigations like sharing findings and committing to a future roadmap."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear decision ('extend the older platform... schedule the migration... as a separate, subsequent effort') and lays out specific next steps like sharing technical findings and placing migration on a future roadmap."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the two questions, stating 'Nobody disputes the long-term direction, but migrating a system while simultaneously launching a new product tier conflates two separate risks' and 'Strategic alignment does not require immediate tactical adoption.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response treats the zero-margin estimate as a 'massive red flag' based on the technical review's mismatches, and plans to 'share our technical review with the team managing the new platform' to correct the optimistic circulated timeline, showing it trusts its own derived estimate.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response only mentions generic 'technical debt' from extending the old platform but never addresses the risk of running two inconsistent systems or a fragmented customer experience if only this launch moved to the new platform while the rest stayed on the old one.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly acknowledges optics with 'To ensure this decision is well-received and doesn't just look like a team dodging a company-wide mandate' and proposes concrete mitigations like sharing findings and committing to a future roadmap.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear decision ('extend the older platform... schedule the migration... as a separate, subsequent effort') and lays out specific next steps like sharing technical findings and placing migration on a future roadmap.\"}\n  ]\n}"
+}

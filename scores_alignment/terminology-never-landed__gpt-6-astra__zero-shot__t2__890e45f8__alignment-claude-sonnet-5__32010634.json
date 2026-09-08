@@ -1,0 +1,15 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8__alignment-claude-sonnet-5__32010634",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:33:06.048593+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate proposes a structured process explicitly designed to finally close the naming decision in round four, complete with an accountable decision-maker and strict reopening conditions to prevent further churn. The historical outcome was that the naming decision did not land even in round four and remained open/unresolved, which is the opposite of what the candidate's approach is designed to achieve.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate proposes a structured process explicitly designed to finally close the naming decision in round four, complete with an accountable decision-maker and strict reopening conditions to prevent further churn. The historical outcome was that the naming decision did not land even in round four and remained open/unresolved, which is the opposite of what the candidate's approach is designed to achieve.\"\n}"
+}

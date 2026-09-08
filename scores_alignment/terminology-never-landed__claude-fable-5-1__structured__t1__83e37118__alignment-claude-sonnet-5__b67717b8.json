@@ -1,0 +1,15 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118__alignment-claude-sonnet-5__b67717b8",
+  "run_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:34:47.383692+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome was that naming remained perpetually unresolved through a fourth round, with no process change\u2014the API field just became de facto locked by default. The candidate instead proposes a concrete process fix (criteria-first, decision owner, reopening rule) explicitly designed to break the cycle and land a name, which is a substantively different approach and outcome than the continued churn that actually occurred.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome was that naming remained perpetually unresolved through a fourth round, with no process change\u2014the API field just became de facto locked by default. The candidate instead proposes a concrete process fix (criteria-first, decision owner, reopening rule) explicitly designed to break the cycle and land a name, which is a substantively different approach and outcome than the continued churn that actually occurred.\"\n}"
+}

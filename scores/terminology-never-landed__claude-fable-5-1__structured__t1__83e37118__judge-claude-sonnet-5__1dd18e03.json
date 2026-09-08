@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118__judge-claude-sonnet-5__1dd18e03",
+  "run_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:34:32.237697+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the problem as 'one bad process applied three times' rather than three bad name choices, and states the objective is 'how to make a naming decision that stays made' rather than which name to pick."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Proposes a named decision owner, a pre-agreed acceptance threshold, a formal reopening rule limited to 'new evidence of material customer harm,' and a decision record; also notes the cost of inaction via the 'punt' tradeoff ('the placeholder becomes de facto permanent, customers keep being confused')."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response observes the three objections were 'different in kind' (tone, glossary consistency, technical accuracy) and were never assembled into agreed criteria beforehand, and installs a reopening rule that explicitly excludes 'preference or new reviewer' as valid grounds for relitigation, directly separating principled concerns from repeat bikeshedding."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The API field lock is treated as a hard constraint baked into the criteria ('maps to the locked API field') and the response reasons that the name should 'map to it cleanly rather than contradict it' since it's visible to some customers, without proposing any change to the field itself."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Alternative 1 ('repeat the loop') is explicitly rejected as 'near-certain to fail the same way, because the target keeps moving,' and the recommended approach is framed as fundamentally different by locking criteria and decision rights before any candidate is proposed, rather than proposing a fourth ad hoc name."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the problem as 'one bad process applied three times' rather than three bad name choices, and states the objective is 'how to make a naming decision that stays made' rather than which name to pick.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"Proposes a named decision owner, a pre-agreed acceptance threshold, a formal reopening rule limited to 'new evidence of material customer harm,' and a decision record; also notes the cost of inaction via the 'punt' tradeoff ('the placeholder becomes de facto permanent, customers keep being confused').\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response observes the three objections were 'different in kind' (tone, glossary consistency, technical accuracy) and were never assembled into agreed criteria beforehand, and installs a reopening rule that explicitly excludes 'preference or new reviewer' as valid grounds for relitigation, directly separating principled concerns from repeat bikeshedding.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The API field lock is treated as a hard constraint baked into the criteria ('maps to the locked API field') and the response reasons that the name should 'map to it cleanly rather than contradict it' since it's visible to some customers, without proposing any change to the field itself.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"Alternative 1 ('repeat the loop') is explicitly rejected as 'near-certain to fail the same way, because the target keeps moving,' and the recommended approach is framed as fundamentally different by locking criteria and decision rights before any candidate is proposed, rather than proposing a fourth ad hoc name.\"}\n  ]\n}"
+}

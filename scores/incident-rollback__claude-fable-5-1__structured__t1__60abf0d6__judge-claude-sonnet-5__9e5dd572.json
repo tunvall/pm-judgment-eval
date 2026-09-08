@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6__judge-claude-sonnet-5__9e5dd572",
+  "run_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:34:19.763729+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, time-boxed directive: disable via feature flag if confirmed within 30 minutes, 'otherwise, execute a full rollback,' and explicitly states 'Do not wait for a hotfix and do not leave it live.'"
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the two paths: rollback/flag disable is called 'low-risk' and reverting 'to a state that was working this morning,' while the hotfix is called trading 'known, reversible harm for unknown, possibly compounding harm.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The recommendation section directly weighs the two costs: 'The cost of rollback is a communications problem about a feature that has existed for a few hours. The cost of not rolling back is our core product being wrong for our entire installed base for several days.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects the hotfix option explicitly, noting engineering already said a proper fix takes days and 'a rushed patch to calibration logic that is already misbehaving in ways nobody anticipated is exactly how a high-sev becomes a second high-sev.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'Next steps' section lays out a full timeline covering execution, customer/support communication, escalation to leadership, remediation of already-fired signals, and a relaunch plan with regression tests and staged rollout."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, time-boxed directive: disable via feature flag if confirmed within 30 minutes, 'otherwise, execute a full rollback,' and explicitly states 'Do not wait for a hotfix and do not leave it live.'\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts the two paths: rollback/flag disable is called 'low-risk' and reverting 'to a state that was working this morning,' while the hotfix is called trading 'known, reversible harm for unknown, possibly compounding harm.'\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The recommendation section directly weighs the two costs: 'The cost of rollback is a communications problem about a feature that has existed for a few hours. The cost of not rolling back is our core product being wrong for our entire installed base for several days.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response rejects the hotfix option explicitly, noting engineering already said a proper fix takes days and 'a rushed patch to calibration logic that is already misbehaving in ways nobody anticipated is exactly how a high-sev becomes a second high-sev.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The 'Next steps' section lays out a full timeline covering execution, customer/support communication, escalation to leadership, remediation of already-fired signals, and a relaunch plan with regression tests and staged rollout.\"}\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601__judge-claude-sonnet-5__b9516686",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:33:50.454204+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses the meta-problem as a broken process where 'stakeholders are acting as serial vetoes rather than a unified decision-making body,' rather than treating round four as just another naming attempt."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Proposes a synchronous decision meeting and an explicit 'Disagree and Commit' step with recorded agreement to formally close the door on future litigation, treating continued indecision as costly ('unblock the launch')."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response builds in a future-facing test ('Has new data emerged that makes this mitigation impossible?') to filter re-litigation from genuine new concerns, but it never analyzes whether the three prior rounds' objections were themselves principled versus diminishing-returns bikeshedding."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Step 3 explicitly anchors the customer-facing name to the locked API field name, treating the fixed constraint as 'a forcing function for alignment' rather than ignoring it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than proposing another ad hoc candidate name, the response explicitly shifts strategy\u2014pairing name with mitigating UI copy and using a trade-off matrix\u2014arguing this differs from prior rounds' pursuit of a 'self-explanatory' name."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly diagnoses the meta-problem as a broken process where 'stakeholders are acting as serial vetoes rather than a unified decision-making body,' rather than treating round four as just another naming attempt.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"Proposes a synchronous decision meeting and an explicit 'Disagree and Commit' step with recorded agreement to formally close the door on future litigation, treating continued indecision as costly ('unblock the launch').\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"The response builds in a future-facing test ('Has new data emerged that makes this mitigation impossible?') to filter re-litigation from genuine new concerns, but it never analyzes whether the three prior rounds' objections were themselves principled versus diminishing-returns bikeshedding.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"Step 3 explicitly anchors the customer-facing name to the locked API field name, treating the fixed constraint as 'a forcing function for alignment' rather than ignoring it.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"Rather than proposing another ad hoc candidate name, the response explicitly shifts strategy\u2014pairing name with mitigating UI copy and using a trade-off matrix\u2014arguing this differs from prior rounds' pursuit of a 'self-explanatory' name.\"}\n  ]\n}"
+}

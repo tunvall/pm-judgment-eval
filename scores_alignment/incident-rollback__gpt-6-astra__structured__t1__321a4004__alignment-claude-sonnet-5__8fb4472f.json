@@ -1,0 +1,15 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004__alignment-claude-sonnet-5__8fb4472f",
+  "run_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:35:31.165883+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommends immediate rollback of the new integration's launch as the primary containment path, executed by engineering with verification, plus transparent customer communication\u2014matching the historical decision to fully roll back within the two-hour window and follow with transparent communication.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommends immediate rollback of the new integration's launch as the primary containment path, executed by engineering with verification, plus transparent customer communication\u2014matching the historical decision to fully roll back within the two-hour window and follow with transparent communication.\"\n}"
+}

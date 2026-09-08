@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c__judge-claude-sonnet-5__bc0a2b2b",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:32:27.058534+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The decision is not whether to follow the company's platform strategy. It is whether to put a broader migration on the critical path for this launch,' clearly separating the two questions."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It grounds the recommendation in the technically-derived estimate, noting it is 'roughly twice the circulated estimate' and that 'treating the optimistic timeline as the plan would mean accepting delivery risk without evidence.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response only mentions 'additional work on a retiring platform' as a cost of the extension but never discusses the risk of running two inconsistent systems side by side for customers across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It implicitly addresses optics by framing the decision as 'preserving the strategic destination while declining to make this launch depend on an inadequately buffered migration' and inviting leadership to make an explicit override decision, but it never directly names that the recommendation could be perceived as resisting company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation ('extend the older platform... make migration... a separate, explicitly owned effort') and lays out three concrete safeguards for execution."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The decision is not whether to follow the company's platform strategy. It is whether to put a broader migration on the critical path for this launch,' clearly separating the two questions.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"It grounds the recommendation in the technically-derived estimate, noting it is 'roughly twice the circulated estimate' and that 'treating the optimistic timeline as the plan would mean accepting delivery risk without evidence.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response only mentions 'additional work on a retiring platform' as a cost of the extension but never discusses the risk of running two inconsistent systems side by side for customers across products.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"partially_met\", \"justification\": \"It implicitly addresses optics by framing the decision as 'preserving the strategic destination while declining to make this launch depend on an inadequately buffered migration' and inviting leadership to make an explicit override decision, but it never directly names that the recommendation could be perceived as resisting company direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation ('extend the older platform... make migration... a separate, explicitly owned effort') and lays out three concrete safeguards for execution.\"}\n  ]\n}"
+}

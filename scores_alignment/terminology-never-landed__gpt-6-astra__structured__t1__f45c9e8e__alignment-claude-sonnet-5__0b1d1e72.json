@@ -1,0 +1,15 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e__alignment-claude-sonnet-5__0b1d1e72",
+  "run_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:35:45.774975+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate proposes a structured, criteria-led process explicitly designed to produce a durable, closed decision in round four (decision owner, deadline, reopening only for material new evidence). The historical record shows the opposite outcome: naming remained open and unresolved even through the fourth round, with only the API field settled by default rather than deliberate choice, indicating no such closure mechanism was actually achieved.",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate proposes a structured, criteria-led process explicitly designed to produce a durable, closed decision in round four (decision owner, deadline, reopening only for material new evidence). The historical record shows the opposite outcome: naming remained open and unresolved even through the fourth round, with only the API field settled by default rather than deliberate choice, indicating no such closure mechanism was actually achieved.\"\n}"
+}

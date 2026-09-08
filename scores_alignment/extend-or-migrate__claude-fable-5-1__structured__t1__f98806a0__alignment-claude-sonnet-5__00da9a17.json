@@ -1,0 +1,15 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0__alignment-claude-sonnet-5__00da9a17",
+  "run_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:34:17.271952+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommended extending the older platform for the launch and treating the migration to the newer platform as a separate, dated follow-on effort\u2014matching the historical decision to extend the old platform and pursue migration as its own dedicated effort rather than rushing it for the launch.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommended extending the older platform for the launch and treating the migration to the newer platform as a separate, dated follow-on effort\u2014matching the historical decision to extend the old platform and pursue migration as its own dedicated effort rather than rushing it for the launch.\"\n}"
+}

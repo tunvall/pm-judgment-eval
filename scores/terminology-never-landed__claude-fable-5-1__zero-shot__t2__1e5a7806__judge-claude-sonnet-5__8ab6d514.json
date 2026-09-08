@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806__judge-claude-sonnet-5__8ab6d514",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:32:11.277411+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the problem as systemic, stating 'the problem isn't that we haven't found the right word yet... we've been running an optimization against a moving target' rather than treating round four as just another naming attempt."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Proposes a named decision owner, a time box, a decision record, and a strict reopening rule requiring an objection to show the name is 'worse on the agreed criteria,' and explicitly frames continued churn as a real, non-neutral cost ('docs, SDKs, marketing, and partner teams are all waiting')."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response calls out that a prior objection was 'a documentation complaint dressed as a naming complaint' and sets a reopening rule that objections must be comparatively worse rather than merely flawed, explicitly noting 'everything has a flaw; we've already proven that empirically.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response incorporates the locked API field name as a candidate and tiebreaker ('possibly the raw API field name, since developers will see it anyway and alignment has real value') without proposing any change to the underlying architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects inventing a fourth candidate ('A fresh candidate would just have an unknown failure mode, which will be discovered in the next review cycle and look worse by comparison') and instead proposes selecting among existing tested candidates under new, pre-agreed criteria and a comparative research protocol."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the problem as systemic, stating 'the problem isn't that we haven't found the right word yet... we've been running an optimization against a moving target' rather than treating round four as just another naming attempt.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"Proposes a named decision owner, a time box, a decision record, and a strict reopening rule requiring an objection to show the name is 'worse on the agreed criteria,' and explicitly frames continued churn as a real, non-neutral cost ('docs, SDKs, marketing, and partner teams are all waiting').\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response calls out that a prior objection was 'a documentation complaint dressed as a naming complaint' and sets a reopening rule that objections must be comparatively worse rather than merely flawed, explicitly noting 'everything has a flaw; we've already proven that empirically.'\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response incorporates the locked API field name as a candidate and tiebreaker ('possibly the raw API field name, since developers will see it anyway and alignment has real value') without proposing any change to the underlying architecture.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects inventing a fourth candidate ('A fresh candidate would just have an unknown failure mode, which will be discovered in the next review cycle and look worse by comparison') and instead proposes selecting among existing tested candidates under new, pre-agreed criteria and a comparative research protocol.\"}\n  ]\n}"
+}

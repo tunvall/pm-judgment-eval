@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0__judge-claude-sonnet-5__8833eede",
+  "run_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:34:08.265060+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response opens by stating 'The decision is about sequencing, not direction. Everyone agrees the newer platform is the destination,' and reiterates in the recommendation that 'Nothing about this choice contradicts the strategy.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly bases its recommendation on 'an estimate that already doubled once' rather than the circulated optimistic timeline, and even proposes correcting the record by circulating the technical review to the roadmap owner."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Alternative 4 (migrating only the new tier) is explicitly rejected because it 'creates a split-brain operational picture for one product (two places to debug, two on-call stories) right at launch,' rather than treated as a clean hedge."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response names 'Political perception' as a risk\u2014'Choosing the legacy platform can be read as not buying into the strategy'\u2014and gives a mitigation of proactive framing and communication."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific option (extend the old platform with an abstraction layer and a dated migration plan) and lists six concrete next steps rather than merely describing tradeoffs."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response opens by stating 'The decision is about sequencing, not direction. Everyone agrees the newer platform is the destination,' and reiterates in the recommendation that 'Nothing about this choice contradicts the strategy.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly bases its recommendation on 'an estimate that already doubled once' rather than the circulated optimistic timeline, and even proposes correcting the record by circulating the technical review to the roadmap owner.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"met\", \"justification\": \"Alternative 4 (migrating only the new tier) is explicitly rejected because it 'creates a split-brain operational picture for one product (two places to debug, two on-call stories) right at launch,' rather than treated as a clean hedge.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response names 'Political perception' as a risk\u2014'Choosing the legacy platform can be read as not buying into the strategy'\u2014and gives a mitigation of proactive framing and communication.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific option (extend the old platform with an abstraction layer and a dated migration plan) and lists six concrete next steps rather than merely describing tradeoffs.\"}\n  ]\n}"
+}

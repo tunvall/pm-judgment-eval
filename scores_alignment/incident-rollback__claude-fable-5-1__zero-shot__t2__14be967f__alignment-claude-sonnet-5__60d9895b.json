@@ -1,0 +1,15 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f__alignment-claude-sonnet-5__60d9895b",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:32:08.746146+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to roll back the new integration promptly to stop harm to existing customers, matching the historical decision, and also planned transparent communication/post-incident writeup to affected accounts, consistent with the historical follow-up.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to roll back the new integration promptly to stop harm to existing customers, matching the historical decision, and also planned transparent communication/post-incident writeup to affected accounts, consistent with the historical follow-up.\"\n}"
+}

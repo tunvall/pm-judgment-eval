@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e__judge-claude-sonnet-5__832a270f",
+  "run_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:35:34.158580+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the problem as governance rather than wording: 'Decisions have not survived subsequent reviews. This points to a decision-governance problem as well as a wording problem,' and recommends making round four 'a decision about the naming framework...not another naming contest.'"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes naming a decision owner, setting 'a decision date and reopening rule,' and specifies that if no candidate materially outperforms others, the team should 'choose the family-consistent option with the least misleading interpretation and lowest change cost,' treating continued indecision as costly rather than neutral."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly separates substantive criteria from preference by stating criteria should 'Require family consistency and factual accuracy...Treat stylistic preferences separately,' and the reopening rule reopens only 'for material new evidence or changed product constraints\u2014not simply because another reviewer finds an imperfection.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly notes 'The API field is immutable. Changing the display name cannot resolve that constraint' and instructs to 'Keep the API field unchanged and document its mapping to the customer-facing name,' shaping the whole recommendation around this fixed constraint."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response contrasts its bounded, criteria-led approach against 'Run another open-ended naming round,' explicitly noting that repeating that pattern 'repeats the process that has already failed and leaves late objections unconstrained,' justifying why round four's process differs from the prior three."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the problem as governance rather than wording: 'Decisions have not survived subsequent reviews. This points to a decision-governance problem as well as a wording problem,' and recommends making round four 'a decision about the naming framework...not another naming contest.'\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes naming a decision owner, setting 'a decision date and reopening rule,' and specifies that if no candidate materially outperforms others, the team should 'choose the family-consistent option with the least misleading interpretation and lowest change cost,' treating continued indecision as costly rather than neutral.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates substantive criteria from preference by stating criteria should 'Require family consistency and factual accuracy...Treat stylistic preferences separately,' and the reopening rule reopens only 'for material new evidence or changed product constraints\u2014not simply because another reviewer finds an imperfection.'\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"It directly notes 'The API field is immutable. Changing the display name cannot resolve that constraint' and instructs to 'Keep the API field unchanged and document its mapping to the customer-facing name,' shaping the whole recommendation around this fixed constraint.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response contrasts its bounded, criteria-led approach against 'Run another open-ended naming round,' explicitly noting that repeating that pattern 'repeats the process that has already failed and leaves late objections unconstrained,' justifying why round four's process differs from the prior three.\"}\n  ]\n}"
+}

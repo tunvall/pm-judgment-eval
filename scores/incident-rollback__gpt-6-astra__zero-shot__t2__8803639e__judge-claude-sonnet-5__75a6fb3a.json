@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e__judge-claude-sonnet-5__75a6fb3a",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T23:32:40.517009+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back the launch now, in coordination with engineering, rather than leave incorrect risk signals in production for several days,' made without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response labels rollback as 'a visible, reversible launch setback' and states it would not 'delay containment to attempt a rushed version of the multi-day fix,' but it never explicitly frames the fast-fix path as uncertain or hard to walk back if it fails, so the contrast is implicit rather than fully drawn."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions' and frames the final tradeoff as 'a visible, reversible launch setback and continuing customer harm.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly says it 'would not delay containment to attempt a rushed version of the multi-day fix,' explicitly rejecting reliance on an unvalidated quick patch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, the response outlines communication to customers/support, addressing already-incurred impact (reprocessing signals, customer guidance), and a 'Before relaunch' section requiring tested fixes and controlled rollout criteria."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back the launch now, in coordination with engineering, rather than leave incorrect risk signals in production for several days,' made without waiting for the manager.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response labels rollback as 'a visible, reversible launch setback' and states it would not 'delay containment to attempt a rushed version of the multi-day fix,' but it never explicitly frames the fast-fix path as uncertain or hard to walk back if it fails, so the contrast is implicit rather than fully drawn.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions' and frames the final tradeoff as 'a visible, reversible launch setback and continuing customer harm.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response directly says it 'would not delay containment to attempt a rushed version of the multi-day fix,' explicitly rejecting reliance on an unvalidated quick patch.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, the response outlines communication to customers/support, addressing already-incurred impact (reprocessing signals, customer guidance), and a 'Before relaunch' section requiring tested fixes and controlled rollout criteria.\"}\n  ]\n}"
+}

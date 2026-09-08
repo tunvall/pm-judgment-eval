@@ -1,0 +1,15 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806__alignment-claude-sonnet-5__436e024d",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:32:24.082024+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome is that no decision survived and round four itself remained unresolved/open, whereas the candidate proposes a concrete process that leads to a closed, locked decision in round four with a named owner and reopening rules. The candidate's approach explicitly aims to break the historical pattern rather than continue it.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome is that no decision survived and round four itself remained unresolved/open, whereas the candidate proposes a concrete process that leads to a closed, locked decision in round four with a named owner and reopening rules. The candidate's approach explicitly aims to break the historical pattern rather than continue it.\"\n}\n```"
+}

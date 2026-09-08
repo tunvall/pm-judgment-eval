@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8__judge-claude-sonnet-5__289e8ba4",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:32:53.149401+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the problem as the recurring cycle itself, stating 'we have been finding genuine weaknesses in each name without establishing that its replacement is better' and that 'a fourth candidate subjected to the same process is likely to meet the same fate.'"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response proposes 'one accountable decision-maker,' a closing mechanism ('If the evidence remains mixed, choose the viable option that best preserves family terminology'), and explicit reopening conditions, treating indecision as something to actively end rather than a neutral default."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly calls for a decision record that would 'distinguish a demonstrated misunderstanding from a terminology preference\u2014and prevent us from repeatedly rediscovering the same trade-offs,' directly separating genuine concerns from re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response states 'The API field name is a fixed implementation constraint, not something to reopen' and calls for 'an explicit, stable mapping between it and the customer-facing terminology,' incorporating the lock into the plan rather than ignoring it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than just proposing another candidate name, the response changes the underlying process\u2014setting criteria and decision authority before reviewing candidates, testing 'complete naming treatments' against a different evaluative question, and requiring a decision record\u2014explicitly to avoid repeating the ad hoc pattern of prior rounds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the problem as the recurring cycle itself, stating 'we have been finding genuine weaknesses in each name without establishing that its replacement is better' and that 'a fourth candidate subjected to the same process is likely to meet the same fate.'\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response proposes 'one accountable decision-maker,' a closing mechanism ('If the evidence remains mixed, choose the viable option that best preserves family terminology'), and explicit reopening conditions, treating indecision as something to actively end rather than a neutral default.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response explicitly calls for a decision record that would 'distinguish a demonstrated misunderstanding from a terminology preference\u2014and prevent us from repeatedly rediscovering the same trade-offs,' directly separating genuine concerns from re-litigation.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response states 'The API field name is a fixed implementation constraint, not something to reopen' and calls for 'an explicit, stable mapping between it and the customer-facing terminology,' incorporating the lock into the plan rather than ignoring it.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"Rather than just proposing another candidate name, the response changes the underlying process\u2014setting criteria and decision authority before reviewing candidates, testing 'complete naming treatments' against a different evaluative question, and requiring a decision record\u2014explicitly to avoid repeating the ad hoc pattern of prior rounds.\"}\n  ]\n}"
+}

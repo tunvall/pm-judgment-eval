@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t2__01fcac7b__judge-claude-sonnet-5__8e70777e",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t2__01fcac7b",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T23:31:38.736800+00:00",
+  "git_commit": "d3df478274c401fa0fa1a76d2b09e561597d80da",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The strategic question and the launch question are different questions' and separates whether the new platform is the right destination from whether this launch should be the migration vehicle."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly favors the technically-derived estimate, arguing 'the honest interpretation is that the original number was produced without looking' and that a plan with zero margin 'is already late.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "In considering a greenfield option for just the new tier, the response concludes it would likely still say no 'because the contact-verification and rendering differences would make two tiers of the same product behave inconsistently for the same customers,' capturing the inconsistent-experience risk of partial migration."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response implicitly frames the recommendation as not resisting the strategy ('Nobody disputes the destination') and proposes correcting the circulated timeline, but it never explicitly acknowledges that the recommendation will look like pushing back against stated company direction or directly addresses that optics concern."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear decision ('extend the older platform for this launch') and lays out concrete follow-up actions (correcting the timeline record, building a thin interface, checking greenfield feasibility, and roadmapping the migration with an owner and date)."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The strategic question and the launch question are different questions' and separates whether the new platform is the right destination from whether this launch should be the migration vehicle.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly favors the technically-derived estimate, arguing 'the honest interpretation is that the original number was produced without looking' and that a plan with zero margin 'is already late.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"met\", \"justification\": \"In considering a greenfield option for just the new tier, the response concludes it would likely still say no 'because the contact-verification and rendering differences would make two tiers of the same product behave inconsistently for the same customers,' capturing the inconsistent-experience risk of partial migration.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"partially_met\", \"justification\": \"The response implicitly frames the recommendation as not resisting the strategy ('Nobody disputes the destination') and proposes correcting the circulated timeline, but it never explicitly acknowledges that the recommendation will look like pushing back against stated company direction or directly addresses that optics concern.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear decision ('extend the older platform for this launch') and lays out concrete follow-up actions (correcting the timeline record, building a thin interface, checking greenfield feasibility, and roadmapping the migration with an owner and date).\"}\n  ]\n}"
+}
