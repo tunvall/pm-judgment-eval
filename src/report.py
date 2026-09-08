@@ -18,6 +18,10 @@ def load_case_sets():
     return {c["id"]: c.get("set", "unknown") for c in load_all_cases()}
 
 
+def load_case_versions():
+    return {c["id"]: c["version"] for c in load_all_cases()}
+
+
 def load_json_dir(path):
     items = []
     if not Path(path).exists():
@@ -32,24 +36,43 @@ def load_json_dir(path):
 
 def build_report():
     case_sets = load_case_sets()
+    case_versions = load_case_versions()
+    stale_filtered = 0
 
     runs = {
         r["run_id"]: r for r in load_json_dir("results") if r["run_id"] not in EXCLUDE_RUN_IDS
     }
 
+    def is_current(score):
+        current = case_versions.get(score.get("case_id"))
+        # case_version on a score record means "which rubric/case revision this
+        # score was produced against" (see src/score.py); a score tied to an
+        # older revision is stale once the case has been bumped, e.g.
+        # incident-rollback v1 -> v2. Keep the run itself (still valid), drop
+        # the outdated score so it doesn't sit next to the current one.
+        return score.get("case_version") == current
+
     reasoning_scores = defaultdict(list)
     for s in load_json_dir("scores"):
         if s.get("failed"):
             continue
-        if s.get("run_id") in runs:
-            reasoning_scores[s["run_id"]].append(s)
+        if s.get("run_id") not in runs:
+            continue
+        if not is_current(s):
+            stale_filtered += 1
+            continue
+        reasoning_scores[s["run_id"]].append(s)
 
     alignment_scores = defaultdict(list)
     for s in load_json_dir("scores_alignment"):
         if s.get("failed"):
             continue
-        if s.get("run_id") in runs:
-            alignment_scores[s["run_id"]].append(s)
+        if s.get("run_id") not in runs:
+            continue
+        if not is_current(s):
+            stale_filtered += 1
+            continue
+        alignment_scores[s["run_id"]].append(s)
 
     rows = []
     for run_id, run in runs.items():
@@ -66,7 +89,7 @@ def build_report():
         }
         rows.append(row)
 
-    return rows
+    return rows, stale_filtered
 
 
 def format_report(rows):
@@ -105,13 +128,15 @@ def format_report(rows):
 
 
 def main():
-    rows = build_report()
+    rows, stale_filtered = build_report()
     print(format_report(rows))
     print()
     print("Total runs: {}".format(len(rows)))
     print("Scored (reasoning): {}  Scored (alignment): {}".format(
         sum(1 for r in rows if r["reasoning"]), sum(1 for r in rows if r["alignment"])
     ))
+    if stale_filtered:
+        print("Filtered {} stale score(s) tied to an outdated case version.".format(stale_filtered))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,15 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__alignment-claude-sonnet-5__e87e8798",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T18:28:49.082542+00:00",
+  "git_commit": "c4e0939aa46b585e22b42a7a1791e0ec3641a4b2",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose immediate rollback/disabling of the new integration to restore correct behavior, matching the historical decision to fully roll back within two hours, and also included transparent communication to affected customers, mirroring the historical post-incident writeup.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose immediate rollback/disabling of the new integration to restore correct behavior, matching the historical decision to fully roll back within two hours, and also included transparent communication to affected customers, mirroring the historical post-incident writeup.\"\n}\n```"
+}

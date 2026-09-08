@@ -36,7 +36,12 @@ def score_alignment(run_path, judge_provider, judge_model, temperature=None, max
         "score_id": score_id,
         "run_id": run_record["run_id"],
         "case_id": run_record["case_id"],
-        "case_version": run_record["case_version"],
+        # See src/score.py for why this is the case's current version, not the
+        # run's original case_version: it records which historical_decision
+        # text was actually compared against, which can be revised
+        # independently of the candidate's original run.
+        "case_version": case["version"],
+        "candidate_case_version": run_record["case_version"],
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "git_commit": get_git_commit(),
         "judge_provider": judge_provider,
