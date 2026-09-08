@@ -69,6 +69,29 @@ A core design goal is that testing a newly-released model against the existing r
 - **Model versions are pinned exactly**, never referenced by a rolling alias like "latest" — providers update what an alias points to without warning, which would silently break reproducibility for exactly this workflow. The exact pinned model ID is recorded in run metadata (`model_version_if_known`).
 - **The judge is the fragile point in this chain.** Upgrading the judge model invalidates comparability between scores produced under the old judge and the new one, since the standard being applied changed, not just the model being tested. Judge changes should be rare and deliberate: bump `judge_prompt_version` when it happens, and re-judge a sample of already-scored models under the new judge to see how much rankings shift, following the same judge-reliability check already described for LLM-as-judge generally.
 
+## Truncation is a fairness risk, not just a data-quality one
+
+The default `max_tokens` (4096) is not equally generous across every
+model/layer combination. `claude-fable-5-1` under the structured layer hit
+exactly 4096 output tokens on `terminology-never-landed`, mid-sentence,
+confirmed by inspecting the raw response text, not inferred from the token
+count alone. A truncated response scored against the rubric as-is would be
+penalized for an infrastructure limit, not for its actual reasoning; a
+criterion like a required "next steps" section could score not_met simply
+because the response never got there, which is a fairness violation on top
+of the more familiar "no ambiguity" quality-of-run issue.
+
+Handled by re-running that specific call at double the budget (8192) and
+confirming by inspection that the new response ends naturally. Not fixed
+generally: `max_tokens` is still 4096 by default. Two other Fable 5.1
+structured responses landed at 3643 and 3691 tokens, close to the ceiling
+but confirmed complete by inspection, meaning this model/layer combination
+runs close to the edge routinely, not just in this one instance. Worth
+raising the default for structured-layer runs specifically before running
+this at any larger scale, and worth spot-checking any future response whose
+output_tokens lands suspiciously close to whatever ceiling is set, the same
+discipline used here, not just trusting the token count.
+
 ## Flagship selection was inconsistent across vendors, now corrected
 
 The original "one strong model per vendor" line-up (Phase 5) was `claude-sonnet-5`,
