@@ -1,0 +1,19 @@
+{
+  "run_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe",
+  "timestamp": "2026-09-08T17:50:43.013426+00:00",
+  "git_commit": "556d78e7ddbf82b706a0a7188f53e596c5ed6ee6",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "anthropic",
+  "model_name": "claude-fable-5-1",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 312,
+  "output_tokens": 1199,
+  "latency_ms": 22986,
+  "prompt": "# Public pressure or a private nudge on a slipping deliverable\n\nA peer's committed design deliverable has been slipping for a couple of weeks.\nThere's no hard deadline behind it; the broader team's timeline has flexibility.\nYou know the peer is currently under pressure from other, unrelated work. You're\nconsidering how to follow up: raising it in a team-wide public channel would\nlikely apply useful pressure and create a forcing function, since the original\ncommitment was made publicly. A private direct message would be lower-key but\nmight take longer to produce results.\n\nHow do you follow up, and why?\n\nConstraints:\n- No hard deadline exists for the deliverable itself.\n- The peer is known to be dealing with pressure from other work.",
+  "response": "**Private DM first, and make it concrete \u2014 not just \"hey, how's that design coming?\"**\n\nHere's the reasoning.\n\n**The public-channel option uses leverage I don't need.** The whole argument for public pressure is that it creates a forcing function. But there's no hard deadline and the team timeline has slack, so there's nothing to force. I'd be spending real capital \u2014 my peer's trust, and the team's sense of whether it's safe to commit to things \u2014 to buy speed I don't actually require. That's a bad trade even if it \"works.\"\n\n**Public pressure doesn't fix the actual problem.** The slip almost certainly isn't a motivation issue; it's bandwidth. They're being pulled by other work. Posting in a team channel doesn't create hours in their week. Best case, it produces a stressed, rushed deliverable or a face-saving re-commitment they can't hit either. Worst case, it reads as me publicly scoring a point off a colleague who's already drowning, and everyone watching learns that making a public commitment is a liability.\n\n**What the DM actually looks like:**\n- Acknowledge I know they're slammed with other stuff.\n- Ask what a *realistic* date is now \u2014 not the original one.\n- Ask what would help: can I unblock something, take a chunk of it, or cut scope so a smaller version ships?\n- Agree on a new date.\n\n**Then close the loop publicly \u2014 but have them do it.** The original commitment was public, so the update should be too. I'd suggest they post the revised timeline in the channel themselves (\"this is landing on X instead, here's why\"). That preserves the integrity of the public commitment, keeps the team informed, and lets the peer control the narrative instead of being called out.\n\n**If that stalls:** if we agree on a date privately and it slips again with no communication, then a neutral, factual public check-in (\"where do we stand on this \u2014 planning around it\") is fair game. Escalation is legitimate as a second step; it's a poor first one.\n\nThe \"private might be slower\" concern is real but weak here: with no deadline, a week's difference costs nothing, while the relationship damage from going public first is durable."
+}

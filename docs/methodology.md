@@ -69,6 +69,48 @@ A core design goal is that testing a newly-released model against the existing r
 - **Model versions are pinned exactly**, never referenced by a rolling alias like "latest" — providers update what an alias points to without warning, which would silently break reproducibility for exactly this workflow. The exact pinned model ID is recorded in run metadata (`model_version_if_known`).
 - **The judge is the fragile point in this chain.** Upgrading the judge model invalidates comparability between scores produced under the old judge and the new one, since the standard being applied changed, not just the model being tested. Judge changes should be rare and deliberate: bump `judge_prompt_version` when it happens, and re-judge a sample of already-scored models under the new judge to see how much rankings shift, following the same judge-reliability check already described for LLM-as-judge generally.
 
+## Flagship selection was inconsistent across vendors, now corrected
+
+The original "one strong model per vendor" line-up (Phase 5) was `claude-sonnet-5`,
+`gpt-5.6-sol`, `gemini-3.1-pro-preview`. The OpenAI and Gemini picks were verified
+against each vendor's own documentation as their actual flagship at the time.
+`claude-sonnet-5` was not verified the same way; it was chosen because it happened
+to be the model running this project, not because it was confirmed to be
+Anthropic's top tier. It is not: Anthropic's flagship line at the time was
+`claude-fable-5-1` (Mythos-class, positioned above Opus-class, itself above
+Sonnet). This means every comparative result produced before this correction had
+Claude represented by a mid-tier model while the other two vendors were
+represented by their actual best. That is a real, uncorrected asymmetry in past
+results, not a minor caveat — any conclusion drawn from data before this point
+that compares Claude's standing against GPT or Gemini should be treated as
+comparing the wrong tier, not a fair three-way flagship comparison.
+
+Corrected line-up: `claude-fable-5-1`, `gpt-6-astra`, `gemini-3.1-pro-preview`.
+GPT-5.6-Sol was itself superseded by GPT-6 Astra five days after this project
+started using it; Gemini's pick was rechecked at the same time and remains
+current (Google's next Pro-tier model had not shipped as of this check).
+
+Two things worth naming about the corrected models rather than treating the
+fix as complete and moving on:
+
+- `claude-fable-5-1` and `gpt-6-astra` are both built and marketed primarily
+  for sustained, multi-step agentic work (planning across stages, tool use,
+  long-horizon tasks), not single-shot Q&A. That's not disqualifying for this
+  project's stateless single-turn calls, but it means both models are being
+  used somewhat outside their headline use case, worth remembering when
+  interpreting results.
+- Both models carry safety-classifier behavior that can silently reroute or
+  refuse certain sensitive request categories (cybersecurity, bio/chem,
+  model distillation). None of this project's cases should trigger that, but
+  it means the model ID alone doesn't unconditionally guarantee that model
+  answered every call; worth spot-checking if a response ever looks anomalous.
+
+Practical lesson for adding any future vendor or re-checking an existing one:
+verify the current flagship via the vendor's own docs or a live model-list
+query, every time, regardless of which model happens to be convenient (e.g.,
+being the model already running the project). Convenience was exactly how
+this asymmetry got introduced in the first place.
+
 ## Dev set vs. held-out set
 
 Every case has a `set` field: `dev` or `heldout`. The distinction matters and was
