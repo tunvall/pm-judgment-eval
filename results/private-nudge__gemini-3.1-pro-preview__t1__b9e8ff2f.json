@@ -1,0 +1,18 @@
+{
+  "run_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f",
+  "timestamp": "2026-09-08T12:59:27.366707+00:00",
+  "git_commit": "fa57db3908a1d2840c8e392c6915a435170f9737",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "trial": 1,
+  "model_provider": "gemini",
+  "model_name": "gemini-3.1-pro-preview",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 225,
+  "output_tokens": 475,
+  "latency_ms": 15543,
+  "prompt": "# Public pressure or a private nudge on a slipping deliverable\n\nA peer's committed design deliverable has been slipping for a couple of weeks.\nThere's no hard deadline behind it; the broader team's timeline has flexibility.\nYou know the peer is currently under pressure from other, unrelated work. You're\nconsidering how to follow up: raising it in a team-wide public channel would\nlikely apply useful pressure and create a forcing function, since the original\ncommitment was made publicly. A private direct message would be lower-key but\nmight take longer to produce results.\n\nHow do you follow up, and why?\n\nConstraints:\n- No hard deadline exists for the deliverable itself.\n- The peer is known to be dealing with pressure from other work.",
+  "response": "**Decision:**\nI would follow up with a private direct message (or a quick 1-on-1 chat). \n\n**Why:**\nThis decision comes down to balancing business urgency with team trust and psychological safety. Given the constraints, a private nudge is the optimal choice for the following reasons:\n\n**1. Proportionality to the business need**\nPublic pressure is a blunt instrument. It can be a useful forcing function when a critical, hard deadline is at risk of blocking the entire team. However, because there is no hard deadline and the broader timeline is flexible, applying public pressure is disproportionate to the actual urgency of the deliverable. There is no business justification to use a high-stress tactic for a low-stress timeline.\n\n**2. Preserving trust and psychological safety**\nYou already know this peer is under pressure from unrelated work. Calling them out in a public channel\u2014even politely\u2014when they are overwhelmed is likely to be perceived as public shaming or throwing them under the bus. This degrades trust, damages your long-term working relationship, and reduces psychological safety within the team. \"Praise in public, hold accountable in private\" is a standard heuristic for a reason. \n\n**3. Fact-finding over enforcing**\nA private message allows for a collaborative conversation rather than a confrontation. It allows you to gauge their actual capacity without making them feel defensive. The goal isn't just to get the deliverable; it's to get a reliable, realistic update. \n\n**How to execute this:**\nI would message them privately, acknowledge their heavy workload, and offer to collaboratively renegotiate the commitment. For example: \n*\"Hey, I know you're swamped with [unrelated work] right now. Since our timeline on [the design deliverable] has some flexibility, I wanted to check in. What does a realistic timeline look like for you to wrap this up without burning out?\"*\n\nOnce a new, realistic timeline is agreed upon privately, you can ask *them* to update the team in the public channel (e.g., *\"Could you drop a quick note in the channel so the rest of the team can adjust their pacing?\"*). This gives the team the necessary visibility while allowing the peer to save face and maintain ownership of their commitment."
+}

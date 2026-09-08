@@ -75,7 +75,34 @@ def call_openai(model, system_prompt, user_prompt, temperature=None, max_tokens=
     )
 
 
+def call_gemini(model, system_prompt, user_prompt, temperature=None, max_tokens=4096):
+    import os
+
+    from google import genai
+    from google.genai import types
+
+    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    config_kwargs = dict(system_instruction=system_prompt, max_output_tokens=max_tokens)
+    if temperature is not None:
+        config_kwargs["temperature"] = temperature
+
+    start = time.monotonic()
+    response = client.models.generate_content(
+        model=model,
+        contents=user_prompt,
+        config=types.GenerateContentConfig(**config_kwargs),
+    )
+    latency_ms = int((time.monotonic() - start) * 1000)
+    return ModelResponse(
+        text=response.text,
+        input_tokens=response.usage_metadata.prompt_token_count,
+        output_tokens=response.usage_metadata.candidates_token_count,
+        latency_ms=latency_ms,
+    )
+
+
 PROVIDERS = {
     "anthropic": call_anthropic,
     "openai": call_openai,
+    "gemini": call_gemini,
 }
