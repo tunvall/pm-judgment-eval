@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__t1__def09891__judge-gemini-3.1-pro-preview__379a082d",
+  "run_id": "terminology-never-landed__claude-sonnet-5__t1__def09891",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:42:43.970323+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the situation as a 'governance problem wearing a naming costume' and notes that picking another name without fixing the underlying process will just lead to a fourth reopening."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests assigning a 'single decision owner with cross-family authority' (DRI) and establishes a rule to ship the final name and 'treat further churn as a documented backlog item, not a blocker.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response notes that each reviewer is currently 'applying their own bar' and creates a rule that 'a name can only be reopened by an objection that violates the pre-agreed criteria, not a newly-invented one.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly acknowledges that 'the API field is locked and out of scope,' using this to justify lowering the expectations for the name itself and relying on tooltips to carry explanatory nuance."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate avoids just proposing another name ad hoc, instead outlining a new process that requires securing 'sign-off on the model before touching language' and testing candidates against all three historical failure modes simultaneously."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly frames the situation as a 'governance problem wearing a naming costume' and notes that picking another name without fixing the underlying process will just lead to a fourth reopening.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests assigning a 'single decision owner with cross-family authority' (DRI) and establishes a rule to ship the final name and 'treat further churn as a documented backlog item, not a blocker.'\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response notes that each reviewer is currently 'applying their own bar' and creates a rule that 'a name can only be reopened by an objection that violates the pre-agreed criteria, not a newly-invented one.'\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly acknowledges that 'the API field is locked and out of scope,' using this to justify lowering the expectations for the name itself and relying on tooltips to carry explanatory nuance.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids just proposing another name ad hoc, instead outlining a new process that requires securing 'sign-off on the model before touching language' and testing candidates against all three historical failure modes simultaneously.\"\n    }\n  ]\n}"
+}

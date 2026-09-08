@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873__judge-gemini-3.1-pro-preview__4a8eb2fe",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:43:40.036214+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that 'this is no longer a naming problem; it is a stakeholder management and UX problem,' correctly identifying the failure to converge as the core issue."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate proposes a binding decision framework that explicitly accepts an imperfect name ('the least worst name') and locks the decision so the product can actually ship."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recognizes the diminishing returns of re-litigation by pointing out that stakeholders are waiting for an impossibly 'perfect' name that generates zero confusion, and frames user research as risk-mitigation rather than an open door for endless vetoes."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly addresses the API constraint, dedicating a section to evaluating the locked API name as the primary candidate to prevent permanent friction between the UI and API."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly outlines a new strategy by moving the burden of explanation from the name itself to supporting UX copy, explicitly stating how this solves the user confusion that doomed the first round."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that 'this is no longer a naming problem; it is a stakeholder management and UX problem,' correctly identifying the failure to converge as the core issue.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proposes a binding decision framework that explicitly accepts an imperfect name ('the least worst name') and locks the decision so the product can actually ship.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes the diminishing returns of re-litigation by pointing out that stakeholders are waiting for an impossibly 'perfect' name that generates zero confusion, and frames user research as risk-mitigation rather than an open door for endless vetoes.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly addresses the API constraint, dedicating a section to evaluating the locked API name as the primary candidate to prevent permanent friction between the UI and API.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly outlines a new strategy by moving the burden of explanation from the name itself to supporting UX copy, explicitly stating how this solves the user confusion that doomed the first round.\"\n    }\n  ]\n}\n```"
+}

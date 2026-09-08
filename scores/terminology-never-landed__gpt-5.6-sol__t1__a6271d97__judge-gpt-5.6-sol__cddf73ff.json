@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97__judge-gpt-5.6-sol__cddf73ff",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:38:55.291501+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the fourth round as a \u201cdecision-closure and terminology-system exercise, not another open-ended naming brainstorm,\u201d and interprets the three reversals as evidence that no perfect name is likely to emerge."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes an accountable decision-maker, predefined criteria, a decision record, and a threshold requiring new evidence of material harm before reopening. It also commits to choosing the lowest-risk option despite imperfect consensus and notes that continued searching creates \u201creal consistency and delivery costs.\u201d"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The reopening rule distinguishes substantive new evidence, such as customers making wrong decisions, from \u201ca new reviewer preference or another candidate with different weaknesses,\u201d directly separating material concerns from diminishing-returns re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the API field as immutable and calls for both a \u201cclear mapping to the immutable API field\u201d and documentation of the mapping, rather than suggesting any architectural or field-name change."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than proposing another isolated label, it introduces agreed product semantics, weighted criteria, task-based comprehension testing, family-wide terminology, and closure governance. It specifically explains that testing complete presentations and customer comprehension\u2014rather than naming preferences\u2014avoids reproducing the ambiguous evidence and ad hoc review pattern of prior rounds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly reframes the fourth round as a \u201cdecision-closure and terminology-system exercise, not another open-ended naming brainstorm,\u201d and interprets the three reversals as evidence that no perfect name is likely to emerge.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"It proposes an accountable decision-maker, predefined criteria, a decision record, and a threshold requiring new evidence of material harm before reopening. It also commits to choosing the lowest-risk option despite imperfect consensus and notes that continued searching creates \u201creal consistency and delivery costs.\u201d\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The reopening rule distinguishes substantive new evidence, such as customers making wrong decisions, from \u201ca new reviewer preference or another candidate with different weaknesses,\u201d directly separating material concerns from diminishing-returns re-litigation.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats the API field as immutable and calls for both a \u201cclear mapping to the immutable API field\u201d and documentation of the mapping, rather than suggesting any architectural or field-name change.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"Rather than proposing another isolated label, it introduces agreed product semantics, weighted criteria, task-based comprehension testing, family-wide terminology, and closure governance. It specifically explains that testing complete presentations and customer comprehension\u2014rather than naming preferences\u2014avoids reproducing the ambiguous evidence and ad hoc review pattern of prior rounds.\"\n    }\n  ]\n}"
+}

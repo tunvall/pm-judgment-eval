@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__judge-gemini-3.1-pro-preview__62a2db64",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:45:16.575481+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate immediately makes a clear decision, stating, \"I would order an immediate rollback of the new release\"."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response evaluates the \"blast radius\" of the bug versus the rollback, but it does not explicitly discuss the reversibility of a rollback compared to the uncertainty or risk of betting on an unvalidated fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly addresses this trade-off, noting that walking back an announcement is a \"temporary PR bruise\" that is vastly preferable to \"knowingly leaving the core platform degraded for days just to save face.\""
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate successfully avoids the trap of a fast fix by explicitly instructing engineering to \"take the necessary several days to build and rigorously test the proper fix.\""
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete 4-step action plan that details internal support updates, specific external communication phrasing, and scheduling a post-mortem."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate immediately makes a clear decision, stating, \\\"I would order an immediate rollback of the new release\\\".\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response evaluates the \\\"blast radius\\\" of the bug versus the rollback, but it does not explicitly discuss the reversibility of a rollback compared to the uncertainty or risk of betting on an unvalidated fast fix.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly addresses this trade-off, noting that walking back an announcement is a \\\"temporary PR bruise\\\" that is vastly preferable to \\\"knowingly leaving the core platform degraded for days just to save face.\\\"\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate successfully avoids the trap of a fast fix by explicitly instructing engineering to \\\"take the necessary several days to build and rigorously test the proper fix.\\\"\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete 4-step action plan that details internal support updates, specific external communication phrasing, and scheduling a post-mortem.\"\n    }\n  ]\n}"
+}

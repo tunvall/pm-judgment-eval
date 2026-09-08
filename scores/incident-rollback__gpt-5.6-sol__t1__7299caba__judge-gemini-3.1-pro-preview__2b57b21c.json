@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__judge-gemini-3.1-pro-preview__2b57b21c",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:44:45.660159+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately makes a clear and decisive call in the very first sentence, stating 'I would immediately roll back\u2014or feature-flag off\u2014the new integration'."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly identifies that 'Rollback is also the most reversible decision' and contrasts this with the irreversible nature of customer actions resulting from incorrect signals."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly addresses this tradeoff, noting that 'A public commitment is important, but it does not outweigh the correctness of production risk signals' which would cause compounding harm over several days."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly includes a step to 'Avoid attempting an expedited, inadequately tested code fix in production,' favoring a proper fix over several days."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides detailed steps beyond the immediate containment, including addressing generated alerts, communicating transparently with customers, and planning a safe relaunch."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response immediately makes a clear and decisive call in the very first sentence, stating 'I would immediately roll back\u2014or feature-flag off\u2014the new integration'.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly identifies that 'Rollback is also the most reversible decision' and contrasts this with the irreversible nature of customer actions resulting from incorrect signals.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses this tradeoff, noting that 'A public commitment is important, but it does not outweigh the correctness of production risk signals' which would cause compounding harm over several days.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly includes a step to 'Avoid attempting an expedited, inadequately tested code fix in production,' favoring a proper fix over several days.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides detailed steps beyond the immediate containment, including addressing generated alerts, communicating transparently with customers, and planning a safe relaunch.\"\n    }\n  ]\n}"
+}

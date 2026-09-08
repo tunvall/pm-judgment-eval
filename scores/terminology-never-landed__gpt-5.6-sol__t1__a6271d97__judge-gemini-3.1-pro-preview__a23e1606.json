@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97__judge-gemini-3.1-pro-preview__a23e1606",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:43:12.222233+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \"Three reversals suggest there is no self-evidently perfect name\" and frames the fourth round as a \"decision-closure... exercise, not another open-ended naming brainstorm.\""
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate recommends a concrete mechanism by naming \"one accountable decision-maker\" and explicitly notes that continuing to search for a perfect name \"imposes real consistency and delivery costs.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response suggests establishing a \"reopening threshold\" that requires \"new evidence of material harm\" rather than \"merely a new reviewer preference or another candidate with different weaknesses.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response factors in the locked API field, including \"clear mapping to the immutable API field\" as a decision criterion and requiring the final record to document this mapping."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate avoids repeating past mistakes by shifting the strategy to creating criteria before considering candidates and testing \"comprehension, not naming preference.\""
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that \\\"Three reversals suggest there is no self-evidently perfect name\\\" and frames the fourth round as a \\\"decision-closure... exercise, not another open-ended naming brainstorm.\\\"\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recommends a concrete mechanism by naming \\\"one accountable decision-maker\\\" and explicitly notes that continuing to search for a perfect name \\\"imposes real consistency and delivery costs.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response suggests establishing a \\\"reopening threshold\\\" that requires \\\"new evidence of material harm\\\" rather than \\\"merely a new reviewer preference or another candidate with different weaknesses.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response factors in the locked API field, including \\\"clear mapping to the immutable API field\\\" as a decision criterion and requiring the final record to document this mapping.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids repeating past mistakes by shifting the strategy to creating criteria before considering candidates and testing \\\"comprehension, not naming preference.\\\"\"\n    }\n  ]\n}\n```"
+}

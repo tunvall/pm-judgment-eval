@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-gemini-3.1-pro-preview__5963c12f",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:44:26.866185+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response starts decisively with \"Decision: Roll back the new integration immediately,\" making a clear and specific call rather than hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly addresses reversibility, noting that \"Rollback is reversible \u2014 we can re-launch once fixed\" while leaving the bug live is \"not obviously reversible in terms of customer trust.\""
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the compounding \"active harm\" of continued incorrect signals against the \"reputational/scheduling friction on a newly announced feature\" from undoing the public commitment."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate rejects rushing a patch, acknowledging that the proper fix takes days and stating that \"rollback is a known, bounded action \u2014 not a gamble.\""
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response includes a six-step concrete plan outlining actions beyond just stopping the bleeding, such as drafting a \"customer-facing status update\" and opening a \"follow-up track for engineering to build the proper fix.\""
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response starts decisively with \\\"Decision: Roll back the new integration immediately,\\\" making a clear and specific call rather than hedging.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly addresses reversibility, noting that \\\"Rollback is reversible \\u2014 we can re-launch once fixed\\\" while leaving the bug live is \\\"not obviously reversible in terms of customer trust.\\\"\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly weighs the compounding \\\"active harm\\\" of continued incorrect signals against the \\\"reputational/scheduling friction on a newly announced feature\\\" from undoing the public commitment.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects rushing a patch, acknowledging that the proper fix takes days and stating that \\\"rollback is a known, bounded action \\u2014 not a gamble.\\\"\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response includes a six-step concrete plan outlining actions beyond just stopping the bleeding, such as drafting a \\\"customer-facing status update\\\" and opening a \\\"follow-up track for engineering to build the proper fix.\\\"\"\n    }\n  ]\n}"
+}

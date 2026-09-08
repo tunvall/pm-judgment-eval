@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__alignment-gpt-5.6-sol__52dcf3f7",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:40:15.215880+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose an immediate full rollback or equivalent feature-flag disablement, matching the historical decision to roll back the new integration within two hours. The candidate also proposed transparent incident communications and a post-mortem, consistent with the historical follow-up writeup to affected accounts.",
+  "raw_judge_response": "{\"alignment\":\"aligned\",\"justification\":\"The candidate chose an immediate full rollback or equivalent feature-flag disablement, matching the historical decision to roll back the new integration within two hours. The candidate also proposed transparent incident communications and a post-mortem, consistent with the historical follow-up writeup to affected accounts.\"}"
+}

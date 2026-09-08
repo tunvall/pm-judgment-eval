@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da__alignment-gemini-3.1-pro-preview__2053cfd4",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:47:04.043197+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "Both the candidate and the historical decision chose to extend the older platform for the immediate product launch while deferring the full migration to the newer platform as a separate, dedicated effort.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"Both the candidate and the historical decision chose to extend the older platform for the immediate product launch while deferring the full migration to the newer platform as a separate, dedicated effort.\"\n}\n```"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__alignment-gpt-5.6-sol__177944a4",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:40:27.712147+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to extend the older platform for the launch and scope migration to the newer platform as a separate, realistically timed project. This essentially matches the historical decision not to rush the strategic migration into the launch timeline.",
+  "raw_judge_response": "{\"alignment\":\"aligned\",\"justification\":\"The candidate chose to extend the older platform for the launch and scope migration to the newer platform as a separate, realistically timed project. This essentially matches the historical decision not to rush the strategic migration into the launch timeline.\"}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da__judge-gemini-3.1-pro-preview__543aad82",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:46:37.516080+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that extending the older platform should be presented 'not as a rejection of the new platform, but as a deliberate de-risking strategy,' successfully separating the launch timeline from the overall strategy."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate rejects the 'optimistic timeline' as a trap, grounds their decision in the realistic estimate that leaves 'no schedule margin,' and plans to share the technical reality to reset expectations."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not mention the risk of creating an inconsistent customer experience or the operational burden of maintaining two separate systems for the broader product suite."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly recognizes the optics of the decision, noting that communication is critical 'to ensure you aren't viewed as rejecting company strategy,' and outlines a specific plan to frame it as risk management."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a definitive path ('extend the older platform') rather than just listing tradeoffs, and includes concrete next steps for communicating the decision and sharing technical discovery."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that extending the older platform should be presented 'not as a rejection of the new platform, but as a deliberate de-risking strategy,' successfully separating the launch timeline from the overall strategy.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects the 'optimistic timeline' as a trap, grounds their decision in the realistic estimate that leaves 'no schedule margin,' and plans to share the technical reality to reset expectations.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response does not mention the risk of creating an inconsistent customer experience or the operational burden of maintaining two separate systems for the broader product suite.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly recognizes the optics of the decision, noting that communication is critical 'to ensure you aren't viewed as rejecting company strategy,' and outlines a specific plan to frame it as risk management.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response commits to a definitive path ('extend the older platform') rather than just listing tradeoffs, and includes concrete next steps for communicating the decision and sharing technical discovery.\"\n    }\n  ]\n}"
+}

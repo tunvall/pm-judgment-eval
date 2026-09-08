@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873__judge-gpt-5.6-sol__320bad22",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:39:21.488509+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the situation as \u201cno longer a naming problem\u201d and focuses on the repeated search for a perfect, confusion-free name as the underlying failure to converge."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes gathering the core veto-holders, choosing the \u201cleast worst\u201d option, and locking the decision against reopening except for catastrophic legal or compliance issues. It also identifies delay as costly by emphasizing the need to commit so \u201cthe product can actually ship.\u201d"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects zero-confusion research as an unrealistic standard and limits future reopening to catastrophic legal or compliance concerns, thereby distinguishing material new risks from diminishing-returns re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly accounts for the immutable API field by evaluating it as the primary naming anchor and proposing a plain-English translation rather than reopening the technical identifier. It also incorporates the product-family constraint by restricting options to the shared lexicon."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than conducting another ad hoc naming exercise, it proposes a binding framework, family-wide terminology constraints, API alignment, and supporting UX copy to carry explanatory detail. It also changes research from searching for a perfectly clear name to testing whether specific confusion can be mitigated."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes the situation as \u201cno longer a naming problem\u201d and focuses on the repeated search for a perfect, confusion-free name as the underlying failure to converge.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes gathering the core veto-holders, choosing the \u201cleast worst\u201d option, and locking the decision against reopening except for catastrophic legal or compliance issues. It also identifies delay as costly by emphasizing the need to commit so \u201cthe product can actually ship.\u201d\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response rejects zero-confusion research as an unrealistic standard and limits future reopening to catastrophic legal or compliance concerns, thereby distinguishing material new risks from diminishing-returns re-litigation.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It directly accounts for the immutable API field by evaluating it as the primary naming anchor and proposing a plain-English translation rather than reopening the technical identifier. It also incorporates the product-family constraint by restricting options to the shared lexicon.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than conducting another ad hoc naming exercise, it proposes a binding framework, family-wide terminology constraints, API alignment, and supporting UX copy to carry explanatory detail. It also changes research from searching for a perfectly clear name to testing whether specific confusion can be mitigated.\"}]}"
+}

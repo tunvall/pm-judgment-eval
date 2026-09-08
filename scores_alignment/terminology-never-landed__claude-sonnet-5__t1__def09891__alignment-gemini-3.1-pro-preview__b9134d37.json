@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__t1__def09891__alignment-gemini-3.1-pro-preview__b9134d37",
+  "run_id": "terminology-never-landed__claude-sonnet-5__t1__def09891",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:42:58.038503+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate chose to halt name generation to fix the underlying governance issues, establish a clear conceptual model, and assign a single decision owner to force closure. In contrast, the historical decision did not implement these structural changes, and the customer-facing naming simply remained open through a fourth round.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate chose to halt name generation to fix the underlying governance issues, establish a clear conceptual model, and assign a single decision owner to force closure. In contrast, the historical decision did not implement these structural changes, and the customer-facing naming simply remained open through a fourth round.\"\n}\n```"
+}

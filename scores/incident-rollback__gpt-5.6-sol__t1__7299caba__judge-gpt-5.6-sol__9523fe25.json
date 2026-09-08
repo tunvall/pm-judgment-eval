@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__judge-gpt-5.6-sol__9523fe25",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:39:55.683788+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately makes a clear call to \u201croll back\u2014or feature-flag off\u2014the new integration\u201d and restore the last known-good behavior."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly identifies rollback as reversible because the launch can be restored after testing, while noting that continued incorrect signals may trigger customer actions that cannot easily be undone; it also rejects an inadequately tested expedited fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the public commitment against accumulating hourly harm, concluding that launch momentum does not outweigh incorrect production risk signals, support burden, and reputational damage."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly says to \u201cavoid attempting an expedited, inadequately tested code fix in production\u201d and instead calls for the properly scoped fix to be implemented and validated over several days."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides detailed follow-through: validate recovery, remediate already-generated alerts, communicate with customers and stakeholders, add regression and canary testing, and relaunch only after validation and incident review."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response immediately makes a clear call to \u201croll back\u2014or feature-flag off\u2014the new integration\u201d and restore the last known-good behavior.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"met\",\"justification\":\"It explicitly identifies rollback as reversible because the launch can be restored after testing, while noting that continued incorrect signals may trigger customer actions that cannot easily be undone; it also rejects an inadequately tested expedited fix.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response directly weighs the public commitment against accumulating hourly harm, concluding that launch momentum does not outweigh incorrect production risk signals, support burden, and reputational damage.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"It explicitly says to \u201cavoid attempting an expedited, inadequately tested code fix in production\u201d and instead calls for the properly scoped fix to be implemented and validated over several days.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"It provides detailed follow-through: validate recovery, remediate already-generated alerts, communicate with customers and stakeholders, add regression and canary testing, and relaunch only after validation and incident review.\"}]}"
+}

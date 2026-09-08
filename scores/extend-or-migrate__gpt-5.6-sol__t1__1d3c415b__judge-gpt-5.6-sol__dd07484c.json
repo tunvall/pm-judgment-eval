@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b__judge-gpt-5.6-sol__dd07484c",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:40:32.399617+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly separates the strategic destination from launch sequencing: \u201cthe new platform remains the destination,\u201d while arguing that this launch should not sit on the migration\u2019s critical path."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly says the technically derived estimate should drive the plan and rejects the circulated timeline because the realistic estimate is roughly twice as long and leaves no schedule margin."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response notes that platform mismatches may create customer-experience risks and proposes migrating notification traffic as a separate effort, but it does not directly explain that moving only this product would leave two live systems producing an inconsistent customer experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly frames the recommendation as \u201ca risk-adjusted sequencing choice, not resistance to company strategy\u201d and offers leadership explicit alternatives: delay launch, reduce scope, or accept higher risk."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes a specific recommendation to use the proven older platform for this launch while immediately starting a separately funded migration with ownership, milestones, parity criteria, and an exit target."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response clearly separates the strategic destination from launch sequencing: \u201cthe new platform remains the destination,\u201d while arguing that this launch should not sit on the migration\u2019s critical path.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It explicitly says the technically derived estimate should drive the plan and rejects the circulated timeline because the realistic estimate is roughly twice as long and leaves no schedule margin.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"partially_met\",\"justification\":\"The response notes that platform mismatches may create customer-experience risks and proposes migrating notification traffic as a separate effort, but it does not directly explain that moving only this product would leave two live systems producing an inconsistent customer experience.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly frames the recommendation as \u201ca risk-adjusted sequencing choice, not resistance to company strategy\u201d and offers leadership explicit alternatives: delay launch, reduce scope, or accept higher risk.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It makes a specific recommendation to use the proven older platform for this launch while immediately starting a separately funded migration with ownership, milestones, parity criteria, and an exit target.\"}]}"
+}

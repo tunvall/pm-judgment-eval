@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-gemini-3.1-pro-preview__169c93bf",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:45:51.583844+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that 'The disagreement is about sequencing, not direction' and points out that choosing the old platform for this launch 'doesn't contradict that strategy.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate firmly rejects the circulating estimate, stating it 'is not a competing opinion I should split the difference with; it's simply wrong' and relies on the '2x gap with zero schedule margin' from the technical review."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not mention the risk of an inconsistent customer experience resulting from running two systems in parallel; it only mentions the technical debt of adding 'one more thing to retire later.'"
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the optics of the decision by noting the need 'To make the deferral credible and not just an evergreen excuse to avoid the newer platform,' addressing the potential perception of resisting company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a clear, specific recommendation to 'Extend the older platform for this launch, and decouple the platform migration' along with tactical steps like building behind a clean internal interface."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that 'The disagreement is about sequencing, not direction' and points out that choosing the old platform for this launch 'doesn't contradict that strategy.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate firmly rejects the circulating estimate, stating it 'is not a competing opinion I should split the difference with; it's simply wrong' and relies on the '2x gap with zero schedule margin' from the technical review.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response does not mention the risk of an inconsistent customer experience resulting from running two systems in parallel; it only mentions the technical debt of adding 'one more thing to retire later.'\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the optics of the decision by noting the need 'To make the deferral credible and not just an evergreen excuse to avoid the newer platform,' addressing the potential perception of resisting company direction.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a clear, specific recommendation to 'Extend the older platform for this launch, and decouple the platform migration' along with tactical steps like building behind a clean internal interface.\"\n    }\n  ]\n}\n```"
+}

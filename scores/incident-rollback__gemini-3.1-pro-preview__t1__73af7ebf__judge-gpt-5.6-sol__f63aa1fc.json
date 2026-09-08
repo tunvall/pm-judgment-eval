@@ -1,0 +1,51 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__judge-gpt-5.6-sol__f63aa1fc",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:40:05.203698+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately commits to an \u201cimmediate rollback\u201d or feature-flag disablement and explicitly says it cannot wait for consensus during the declared incident."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It frames rollback as restoring the previously stable state and says announcements can be walked back, but it does not explicitly contrast that reversibility with the uncertainty and downside of attempting an unvalidated fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly weighs hourly incorrect signals, support load, trust damage, and possible churn against the \u201ctemporary PR bruise\u201d of reversing a publicly announced launch."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than proposing a rushed patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix after rollback."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides concrete follow-through: equip Support and Customer Success, notify affected and launch-expecting customers, build and test the proper fix, resume rollout on a communicated timeline, and conduct a post-mortem."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response immediately commits to an \u201cimmediate rollback\u201d or feature-flag disablement and explicitly says it cannot wait for consensus during the declared incident.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"partially_met\",\"justification\":\"It frames rollback as restoring the previously stable state and says announcements can be walked back, but it does not explicitly contrast that reversibility with the uncertainty and downside of attempting an unvalidated fast fix.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"It directly weighs hourly incorrect signals, support load, trust damage, and possible churn against the \u201ctemporary PR bruise\u201d of reversing a publicly announced launch.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"Rather than proposing a rushed patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix after rollback.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"The response provides concrete follow-through: equip Support and Customer Success, notify affected and launch-expecting customers, build and test the proper fix, resume rollout on a communicated timeline, and conduct a post-mortem.\"}]}"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97__alignment-gpt-5.6-sol__6cc6322f",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__t1__a6271d97",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:39:12.795731+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate would use the fourth round to select and stabilize a customer-facing term, with an explicit threshold preventing routine reopening. Historically, the customer-facing name remained open through the fourth round, continuing the prior pattern rather than achieving the proposed closure.",
+  "raw_judge_response": "{\"alignment\":\"diverged\",\"justification\":\"The candidate would use the fourth round to select and stabilize a customer-facing term, with an explicit threshold preventing routine reopening. Historically, the customer-facing name remained open through the fourth round, continuing the prior pattern rather than achieving the proposed closure.\"}"
+}

@@ -1,0 +1,51 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-gpt-5.6-sol__38f8f008",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:40:18.660260+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says, \u201cThe disagreement is about sequencing, not direction,\u201d affirming the newer platform as the eventual destination while arguing that this launch should not force the migration."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It relies on the technically derived \u201c2x gap with zero schedule margin\u201d and rejects the informal estimate as ignoring structural mismatches in routing, verification, destinations, and rendering."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not identify that migrating only this product would leave two active notification systems and potentially create an inconsistent customer experience; it focuses instead on schedule and integration risks."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the perception that using the old platform contradicts strategy, arguing that deferral is about sequencing and proposing explicit leadership agreement that migration is \u201cdeferred, not cancelled.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the old platform for launch, placing notification calls behind an abstraction, documenting gaps, and separately scoping the full migration with a realistic timeline."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says, \u201cThe disagreement is about sequencing, not direction,\u201d affirming the newer platform as the eventual destination while arguing that this launch should not force the migration.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It relies on the technically derived \u201c2x gap with zero schedule margin\u201d and rejects the informal estimate as ignoring structural mismatches in routing, verification, destinations, and rendering.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"The response does not identify that migrating only this product would leave two active notification systems and potentially create an inconsistent customer experience; it focuses instead on schedule and integration risks.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly addresses the perception that using the old platform contradicts strategy, arguing that deferral is about sequencing and proposing explicit leadership agreement that migration is \u201cdeferred, not cancelled.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends extending the old platform for launch, placing notification calls behind an abstraction, documenting gaps, and separately scoping the full migration with a realistic timeline.\"}]}"
+}

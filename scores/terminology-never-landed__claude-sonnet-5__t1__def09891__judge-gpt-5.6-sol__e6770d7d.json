@@ -1,0 +1,51 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__t1__def09891__judge-gpt-5.6-sol__e6770d7d",
+  "run_id": "terminology-never-landed__claude-sonnet-5__t1__def09891",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:38:34.869053+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses that \u201cthis isn't a naming problem, it's a governance problem\u201d and explains that shifting objections, unstable acceptance criteria, and absent closure authority are driving the repeated failures."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a cross-family decision owner, pre-agreed criteria for valid reopening, final DRI sign-off, and treating later churn as backlog rather than a blocker. It also recognizes the cost of continued cycling by warning that the current process will produce a fifth reopening and more churn."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response distinguishes objections that violate agreed criteria from \u201cnewly-invented\u201d bars and allows reopening only for the former. It also investigates whether there is a real unresolved conceptual disagreement before treating subsequent objections as grounds to restart."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly states that \u201cthe API field is locked and out of scope\u201d and therefore focuses on customer-facing terminology, family consistency, and supplemental UI copy rather than reopening the architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than offering another ad hoc name, it first establishes a shared conceptual model and simultaneous acceptance criteria, then tests candidates against all three historical failure modes. It directly contrasts this with the failed pattern of proposing a name and discovering a new bar afterward."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly diagnoses that \u201cthis isn't a naming problem, it's a governance problem\u201d and explains that shifting objections, unstable acceptance criteria, and absent closure authority are driving the repeated failures.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a cross-family decision owner, pre-agreed criteria for valid reopening, final DRI sign-off, and treating later churn as backlog rather than a blocker. It also recognizes the cost of continued cycling by warning that the current process will produce a fifth reopening and more churn.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response distinguishes objections that violate agreed criteria from \u201cnewly-invented\u201d bars and allows reopening only for the former. It also investigates whether there is a real unresolved conceptual disagreement before treating subsequent objections as grounds to restart.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It explicitly states that \u201cthe API field is locked and out of scope\u201d and therefore focuses on customer-facing terminology, family consistency, and supplemental UI copy rather than reopening the architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than offering another ad hoc name, it first establishes a shared conceptual model and simultaneous acceptance criteria, then tests candidates against all three historical failure modes. It directly contrasts this with the failed pattern of proposing a name and discovering a new bar afterward.\"}]}"
+}

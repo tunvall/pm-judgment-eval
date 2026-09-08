@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__alignment-gemini-3.1-pro-preview__3e6033a0",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:46:07.897438+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "Both the candidate and the historical decision chose to extend the older platform for the immediate launch to mitigate schedule risk. Furthermore, both decoupled the full migration to the newer platform into a separate, dedicated project rather than forcing it into the current launch timeline.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"Both the candidate and the historical decision chose to extend the older platform for the immediate launch to mitigate schedule risk. Furthermore, both decoupled the full migration to the newer platform into a separate, dedicated project rather than forcing it into the current launch timeline.\"\n}\n```"
+}

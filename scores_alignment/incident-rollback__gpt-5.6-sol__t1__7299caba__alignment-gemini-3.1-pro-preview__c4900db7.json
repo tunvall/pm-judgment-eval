@@ -1,0 +1,14 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__alignment-gemini-3.1-pro-preview__c4900db7",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:45:01.734651+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's decision to immediately roll back the new integration and communicate transparently matches the historical decision exactly. Both prioritize stopping the impact on existing customers over maintaining the newly announced feature.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's decision to immediately roll back the new integration and communicate transparently matches the historical decision exactly. Both prioritize stopping the impact on existing customers over maintaining the newly announced feature.\"\n}\n```"
+}

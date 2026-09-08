@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873__alignment-gpt-5.6-sol__edacdfbd",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__t1__0d4f7873",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:39:34.815486+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate proposes making the fourth round binding and permanently locking a customer-facing name except for catastrophic issues. Historically, the customer-facing naming decision remained open through the fourth round, with no prior decision surviving the next review cycle.",
+  "raw_judge_response": "{\"alignment\":\"diverged\",\"justification\":\"The candidate proposes making the fourth round binding and permanently locking a customer-facing name except for catastrophic issues. Historically, the customer-facing naming decision remained open through the fourth round, with no prior decision surviving the next review cycle.\"}"
+}

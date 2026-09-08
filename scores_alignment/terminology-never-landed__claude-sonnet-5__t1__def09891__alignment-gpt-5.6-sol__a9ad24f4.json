@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__t1__def09891__alignment-gpt-5.6-sol__a9ad24f4",
+  "run_id": "terminology-never-landed__claude-sonnet-5__t1__def09891",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T15:38:46.577429+00:00",
+  "git_commit": "202d692f3489c763f1991aea9bda54842113a7aa",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate, like the historical decision, keeps the customer-facing name open for a fourth round while accepting that the API field is fixed. However, the candidate adds a governance process intended to select and permanently close on a name, whereas historically the customer-facing naming remained open through the fourth round.",
+  "raw_judge_response": "{\"alignment\":\"partially_aligned\",\"justification\":\"The candidate, like the historical decision, keeps the customer-facing name open for a fourth round while accepting that the API field is fixed. However, the candidate adds a governance process intended to select and permanently close on a name, whereas historically the customer-facing naming remained open through the fourth round.\"}"
+}
