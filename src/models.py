@@ -50,7 +50,11 @@ def call_openai(model, system_prompt, user_prompt, temperature=None, max_tokens=
     client = openai.OpenAI()  # reads OPENAI_API_KEY from env
     kwargs = dict(
         model=model,
-        max_tokens=max_tokens,
+        # Current-generation models reject max_tokens outright ("unsupported
+        # parameter"), a real change from earlier Chat Completions behavior,
+        # discovered live rather than read in advance. max_completion_tokens
+        # is the current name.
+        max_completion_tokens=max_tokens,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},

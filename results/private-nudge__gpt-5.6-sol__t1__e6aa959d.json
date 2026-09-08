@@ -1,0 +1,18 @@
+{
+  "run_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d",
+  "timestamp": "2026-09-08T12:39:41.612758+00:00",
+  "git_commit": "7a592ca7b7a494549aeabefc2524b2ff857df6bb",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "trial": 1,
+  "model_provider": "openai",
+  "model_name": "gpt-5.6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 218,
+  "output_tokens": 364,
+  "latency_ms": 12864,
+  "prompt": "# Public pressure or a private nudge on a slipping deliverable\n\nA peer's committed design deliverable has been slipping for a couple of weeks.\nThere's no hard deadline behind it; the broader team's timeline has flexibility.\nYou know the peer is currently under pressure from other, unrelated work. You're\nconsidering how to follow up: raising it in a team-wide public channel would\nlikely apply useful pressure and create a forcing function, since the original\ncommitment was made publicly. A private direct message would be lower-key but\nmight take longer to produce results.\n\nHow do you follow up, and why?\n\nConstraints:\n- No hard deadline exists for the deliverable itself.\n- The peer is known to be dealing with pressure from other work.",
+  "response": "I\u2019d start with a private, empathetic message rather than use the team channel as a pressure mechanism.\n\nFor example:\n\n> \u201cHey\u2014checking in on the design deliverable. I know you\u2019ve had other work competing for attention. Is it still the right priority, and is anything blocking it? Since the broader timeline is flexible, can we agree on a realistic next step or revised date? I\u2019m happy to help reduce scope or unblock it.\u201d\n\nThis approach:\n\n- Gets the real status and surfaces blockers or priority conflicts.\n- Recognizes that the delay may be a capacity problem, not an accountability problem.\n- Creates concrete accountability through an agreed next step, without adding avoidable social pressure.\n- Avoids pushing the peer to rush quality or conceal problems when there is no hard deadline.\n\nBecause the original commitment was public, I would make the resulting status visible\u2014but neutrally and preferably with their agreement. For example: \u201cWe\u2019ve reprioritized this behind X; the revised target is Y.\u201d That keeps the team informed without turning the update into public shaming.\n\nIf the peer repeatedly misses the newly agreed checkpoints or does not respond, I\u2019d escalate visibility proportionately by discussing priorities and dependencies with the relevant lead. I still would not use a public channel merely as a forcing function; public escalation should serve coordination and decision-making, not pressure for its own sake."
+}
