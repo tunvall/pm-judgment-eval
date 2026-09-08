@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t1__40d39ea4__judge-claude-sonnet-5__ca770852",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t1__40d39ea4",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T18:22:14.045825+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The decision is not which platform should win long term\u2014that is settled. It is whether this launch should carry the cost and risk of accelerating the migration,' cleanly separating the two questions."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its recommendation in the technically-derived estimate ('roughly twice the circulated estimate') and explicitly frames the optimistic timeline as 'conditional\u2014not as an equivalent estimate we can choose because it is more attractive.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response mentions rework and prolonged legacy maintenance as costs of extending the old platform, but never discusses the risk of running two inconsistent systems (this product vs. others already on the newer platform) or an inconsistent customer experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proactively addresses optics by instructing to 'Agree with the relevant product and platform leaders that this is launch sequencing, not a reversal of platform strategy,' directly countering the perception of resisting company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation ('extend the older platform for this launch...') and lays out a concrete four-step execution plan including naming a migration owner and setting acceptance criteria."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The decision is not which platform should win long term\u2014that is settled. It is whether this launch should carry the cost and risk of accelerating the migration,' cleanly separating the two questions.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response grounds its recommendation in the technically-derived estimate ('roughly twice the circulated estimate') and explicitly frames the optimistic timeline as 'conditional\u2014not as an equivalent estimate we can choose because it is more attractive.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response mentions rework and prolonged legacy maintenance as costs of extending the old platform, but never discusses the risk of running two inconsistent systems (this product vs. others already on the newer platform) or an inconsistent customer experience.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response proactively addresses optics by instructing to 'Agree with the relevant product and platform leaders that this is launch sequencing, not a reversal of platform strategy,' directly countering the perception of resisting company direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation ('extend the older platform for this launch...') and lays out a concrete four-step execution plan including naming a migration owner and setting acceptance criteria.\"}\n  ]\n}"
+}

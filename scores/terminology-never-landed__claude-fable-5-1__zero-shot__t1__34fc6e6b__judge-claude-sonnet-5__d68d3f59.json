@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b__judge-claude-sonnet-5__d68d3f59",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T18:20:47.263884+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the issue as 'a process failure presenting as a naming failure' rather than a search for a better label, diagnosing why any candidate can be defeated under the current process."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes naming a decider ('I'd propose myself with the design lead as a required approver'), setting a closing condition and date, and explicitly states the cost of continued indecision now exceeds the cost of an imperfect name."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response calls each prior objection 'valid' and frames the recurring issue as conflicting criteria rather than assessing whether some objections were diminishing-returns re-litigation, though it does propose a forward-looking rule that reopening should only occur on 'new information... not a new opinion'."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The API field lock is explicitly listed as a hard constraint ('doesn't fight the locked API field') that shapes the criteria doc used to evaluate candidates."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly argues against inventing a fourth new name, favoring reuse of a prior candidate ('Strongly consider reusing a prior candidate rather than inventing a fourth') paired with new mechanisms like decoupling name from explanation and comparative research to differ from prior ad hoc attempts."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the issue as 'a process failure presenting as a naming failure' rather than a search for a better label, diagnosing why any candidate can be defeated under the current process.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes naming a decider ('I'd propose myself with the design lead as a required approver'), setting a closing condition and date, and explicitly states the cost of continued indecision now exceeds the cost of an imperfect name.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"The response calls each prior objection 'valid' and frames the recurring issue as conflicting criteria rather than assessing whether some objections were diminishing-returns re-litigation, though it does propose a forward-looking rule that reopening should only occur on 'new information... not a new opinion'.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The API field lock is explicitly listed as a hard constraint ('doesn't fight the locked API field') that shapes the criteria doc used to evaluate candidates.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response explicitly argues against inventing a fourth new name, favoring reuse of a prior candidate ('Strongly consider reusing a prior candidate rather than inventing a fourth') paired with new mechanisms like decoupling name from explanation and comparative research to differ from prior ad hoc attempts.\"}\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a__judge-claude-sonnet-5__52b4d33a",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T18:21:03.898862+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the task as fixing 'the naming rules and who can settle them, not start with another list of names,' and notes the pattern of the team 'discovering\u2014or reweighting\u2014constraints after each selection,' identifying the cyclical failure itself as the problem."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes an accountable decision-maker, upfront participation from family-consistency reviewers, 'a deadline and a tie-breaking rule,' and explicit criteria for what would justify reopening, which together function as a concrete mechanism to end the cycle."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats prior objections as giving 'useful constraints' but sets the evaluation priority as 'consequential misunderstanding... not whether a name attracts any criticism,' distinguishing substantive confusion from mere reviewer preference or re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly states it would 'treat that field as a fixed implementation constraint\u2014not require the customer-facing label to reproduce it,' directly incorporating the locked API name into the recommendation rather than ignoring it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response contrasts its approach with prior rounds by synthesizing existing research 'rather than commission another open-ended naming study' and by establishing decision rights and tie-breaking rules before evaluating candidates, explicitly differentiating it from the ad hoc pattern that failed three times."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the task as fixing 'the naming rules and who can settle them, not start with another list of names,' and notes the pattern of the team 'discovering\u2014or reweighting\u2014constraints after each selection,' identifying the cyclical failure itself as the problem.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes an accountable decision-maker, upfront participation from family-consistency reviewers, 'a deadline and a tie-breaking rule,' and explicit criteria for what would justify reopening, which together function as a concrete mechanism to end the cycle.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response treats prior objections as giving 'useful constraints' but sets the evaluation priority as 'consequential misunderstanding... not whether a name attracts any criticism,' distinguishing substantive confusion from mere reviewer preference or re-litigation.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"It explicitly states it would 'treat that field as a fixed implementation constraint\u2014not require the customer-facing label to reproduce it,' directly incorporating the locked API name into the recommendation rather than ignoring it.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response contrasts its approach with prior rounds by synthesizing existing research 'rather than commission another open-ended naming study' and by establishing decision rights and tie-breaking rules before evaluating candidates, explicitly differentiating it from the ad hoc pattern that failed three times.\"}\n  ]\n}"
+}

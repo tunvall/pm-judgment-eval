@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a__alignment-claude-sonnet-5__6c8f20dd",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T18:21:21.416285+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome was that no decision survived and the naming remained unresolved into a fourth round, whereas the candidate proposes a structured process explicitly designed to produce a durable, committed decision this round (fixed decision rights, criteria, and a tie-breaking rule to prevent further reopening). This is a substantively different trajectory than the repeated pattern of overturned decisions.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome was that no decision survived and the naming remained unresolved into a fourth round, whereas the candidate proposes a structured process explicitly designed to produce a durable, committed decision this round (fixed decision rights, criteria, and a tie-breaking rule to prevent further reopening). This is a substantively different trajectory than the repeated pattern of overturned decisions.\"\n}\n```"
+}

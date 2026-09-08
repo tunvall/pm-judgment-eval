@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6__judge-claude-sonnet-5__25f6c576",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T18:21:55.642792+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly treats the new platform as the agreed long-term direction ('a direction everyone actually agrees on') while separating that from whether this launch should be the vehicle, proposing to 'reset the migration plan as a separate, properly scoped effort.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its recommendation in the technically-derived estimate ('Your realistic estimate already consumes the entire window') and explicitly flags the circulated timeline as wrong: 'The informal optimistic timeline is wrong, and other teams will burn on it too.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response discusses migration debt growing from 'N things' to 'N+1 things' and briefly floats checking if 'some narrow subset of notifications fits the new platform,' but it does not address the specific risk of an inconsistent customer-facing experience from running two systems in parallel."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses optics by recommending explicit sign-off and framing it as 'we're extending the old platform for launch, and here's our committed migration plan,' not 'we're skipping the migration,' and argues a rushed migration would hurt the strategy more."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation ('Extend the older platform for this launch...') with concrete follow-up actions like committing to a migration date/owner and publishing the gap analysis, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly treats the new platform as the agreed long-term direction ('a direction everyone actually agrees on') while separating that from whether this launch should be the vehicle, proposing to 'reset the migration plan as a separate, properly scoped effort.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response grounds its recommendation in the technically-derived estimate ('Your realistic estimate already consumes the entire window') and explicitly flags the circulated timeline as wrong: 'The informal optimistic timeline is wrong, and other teams will burn on it too.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response discusses migration debt growing from 'N things' to 'N+1 things' and briefly floats checking if 'some narrow subset of notifications fits the new platform,' but it does not address the specific risk of an inconsistent customer-facing experience from running two systems in parallel.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly addresses optics by recommending explicit sign-off and framing it as 'we're extending the old platform for launch, and here's our committed migration plan,' not 'we're skipping the migration,' and argues a rushed migration would hurt the strategy more.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation ('Extend the older platform for this launch...') with concrete follow-up actions like committing to a migration date/owner and publishing the gap analysis, rather than just listing tradeoffs.\"}\n  ]\n}"
+}

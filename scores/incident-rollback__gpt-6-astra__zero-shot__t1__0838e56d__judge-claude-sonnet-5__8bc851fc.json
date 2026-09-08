@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d__judge-claude-sonnet-5__8bc851fc",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T18:21:38.496550+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with a clear, unambiguous decision: 'I would roll back the new integration launch now rather than leave existing customers exposed,' made without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response labels rollback as a 'visible, reversible delay' and states it 'would not substitute an untested patch for a safe rollback,' acknowledging the fast-fix path's riskiness, but it never fully contrasts the specific danger of betting on an unvalidated fix (e.g., it could fail or make things worse) against rollback's reversibility in a symmetric way."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the tradeoff as 'ongoing damage to the reliability of an established product' versus the discomfort of the public announcement, concluding 'it does not justify continuing to send incorrect risk signals.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly states engineering should 'confirm that the mitigation actually removes the faulty logic' and 'I would not substitute an untested patch for a safe rollback,' explicitly rejecting reliance on an unvalidated fast fix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, the response lays out verification of recovery, customer communication, and a post-stabilization plan including 'properly scoped fix, regression tests... and a staged relaunch with monitoring and explicit rollback criteria.'"
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with a clear, unambiguous decision: 'I would roll back the new integration launch now rather than leave existing customers exposed,' made without waiting for the manager.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response labels rollback as a 'visible, reversible delay' and states it 'would not substitute an untested patch for a safe rollback,' acknowledging the fast-fix path's riskiness, but it never fully contrasts the specific danger of betting on an unvalidated fix (e.g., it could fail or make things worse) against rollback's reversibility in a symmetric way.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the tradeoff as 'ongoing damage to the reliability of an established product' versus the discomfort of the public announcement, concluding 'it does not justify continuing to send incorrect risk signals.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response directly states engineering should 'confirm that the mitigation actually removes the faulty logic' and 'I would not substitute an untested patch for a safe rollback,' explicitly rejecting reliance on an unvalidated fast fix.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, the response lays out verification of recovery, customer communication, and a post-stabilization plan including 'properly scoped fix, regression tests... and a staged relaunch with monitoring and explicit rollback criteria.'\"}\n  ]\n}"
+}

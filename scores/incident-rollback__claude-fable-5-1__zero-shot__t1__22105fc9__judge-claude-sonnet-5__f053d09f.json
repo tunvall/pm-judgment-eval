@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t1__22105fc9__judge-claude-sonnet-5__f053d09f",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t1__22105fc9",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-08T18:21:24.896720+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'roll back (or feature-flag off) the new integration now. Don't wait for the multi-day fix, and don't wait for my manager.'"
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames rollback as the known-safe state ('The rollback path is the one we already know is safe\u2014it's the state we were in this morning') and contrasts it against the risk of pushing a fast patch, stating 'A rushed change to calibration logic during an active incident is how you turn one high-sev into two.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs 'a broken promise about timing to a small new cohort' against 'a broken promise about correctness to the entire installed base,' concluding 'That's not a close call.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly states 'What I would not do: try to hack a partial patch into production in the next few hours to keep the launch alive,' rejecting an unvalidated quick fix in favor of rollback plus a proper multi-day fix later."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, the response lays out communication to affected customers and to the new-integration customers, a verification check for mitigation, and a 're-launch bar' with regression tests and staged rollout for reintroducing the feature."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'roll back (or feature-flag off) the new integration now. Don't wait for the multi-day fix, and don't wait for my manager.'\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames rollback as the known-safe state ('The rollback path is the one we already know is safe\u2014it's the state we were in this morning') and contrasts it against the risk of pushing a fast patch, stating 'A rushed change to calibration logic during an active incident is how you turn one high-sev into two.'\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly weighs 'a broken promise about timing to a small new cohort' against 'a broken promise about correctness to the entire installed base,' concluding 'That's not a close call.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'What I would not do: try to hack a partial patch into production in the next few hours to keep the launch alive,' rejecting an unvalidated quick fix in favor of rollback plus a proper multi-day fix later.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, the response lays out communication to affected customers and to the new-integration customers, a verification check for mitigation, and a 're-launch bar' with regression tests and staged rollout for reintroducing the feature.\"}\n  ]\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6__alignment-claude-sonnet-5__329a4ce3",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6",
+  "case_id": "extend-or-migrate",
+  "case_version": 1,
+  "timestamp": "2026-09-08T18:22:11.386063+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's decision to extend the older platform for the launch and defer the full migration as a separate, deliberately scheduled effort matches the historical decision exactly, including framing the migration as still aligned with company strategy but not rushed to fit the launch window.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's decision to extend the older platform for the launch and defer the full migration as a separate, deliberately scheduled effort matches the historical decision exactly, including framing the migration as still aligned with company strategy but not rushed to fit the launch window.\"\n}"
+}

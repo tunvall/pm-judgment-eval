@@ -1,0 +1,14 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b__alignment-claude-sonnet-5__4cdb865c",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "timestamp": "2026-09-08T18:21:00.056567+00:00",
+  "git_commit": "ea92c94c99a641aca805a04664d78e08ba3d5258",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome is that naming remained unresolved and open through a fourth round with no durable decision, whereas the candidate proposes a concrete process (criteria alignment, decoupling explanation from name, comparative research, reusing a prior candidate, and a named decider with a closing condition) explicitly aimed at ending the cycle and making a final decision this round. The candidate's approach is designed to break the pattern, which contradicts the historical continuation of the unresolved loop.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome is that naming remained unresolved and open through a fourth round with no durable decision, whereas the candidate proposes a concrete process (criteria alignment, decoupling explanation from name, comparative research, reusing a prior candidate, and a named decider with a closing condition) explicitly aimed at ending the cycle and making a final decision this round. The candidate's approach is designed to break the pattern, which contradicts the historical continuation of the unresolved loop.\"\n}\n```"
+}
