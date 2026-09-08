@@ -1,0 +1,14 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8__alignment-claude-sonnet-5__94bd3dc6",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:02:56.747092+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's final decision is to reframe the value proposition around precision (with speed secondary), keeping the existing architecture and updating the go-to-market narrative accordingly, which matches the historical decision to pivot to a precision narrative on the same technical foundation. The candidate adds validation steps before finalizing, but the core outcome\u2014precision-led repositioning without a rebuild\u2014aligns with what actually happened.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's final decision is to reframe the value proposition around precision (with speed secondary), keeping the existing architecture and updating the go-to-market narrative accordingly, which matches the historical decision to pivot to a precision narrative on the same technical foundation. The candidate adds validation steps before finalizing, but the core outcome\u2014precision-led repositioning without a rebuild\u2014aligns with what actually happened.\"\n}"
+}

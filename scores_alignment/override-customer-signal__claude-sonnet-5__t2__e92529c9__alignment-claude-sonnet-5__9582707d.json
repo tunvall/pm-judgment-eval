@@ -1,0 +1,14 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9__alignment-claude-sonnet-5__9582707d",
+  "run_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:01:17.259597+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate decided not to block launch, treating full alert configurability as fast-follow while shipping the cheap threshold mitigation and surfacing/documenting the existing undocumented suppress capability before launch\u2014matching the historical decision's exact approach of fast-follow plus surfaced suppress feature plus cheap mitigation.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate decided not to block launch, treating full alert configurability as fast-follow while shipping the cheap threshold mitigation and surfacing/documenting the existing undocumented suppress capability before launch\u2014matching the historical decision's exact approach of fast-follow plus surfaced suppress feature plus cheap mitigation.\"\n}\n```"
+}

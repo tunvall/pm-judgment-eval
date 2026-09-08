@@ -1,0 +1,14 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8__alignment-claude-sonnet-5__53a1dc6b",
+  "run_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8",
+  "case_id": "override-customer-signal",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:01:13.581155+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate explicitly chose fast-follow over blocking, and proposed surfacing/documenting the hidden suppress feature plus the threshold-tuning mitigation to ship alongside launch \u2014 matching the historical decision's core actions. The candidate additionally suggested confirming with the reviewer/customers, which is an extra step but doesn't change the substantive alignment on the fast-follow decision and mitigation package.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate explicitly chose fast-follow over blocking, and proposed surfacing/documenting the hidden suppress feature plus the threshold-tuning mitigation to ship alongside launch \u2014 matching the historical decision's core actions. The candidate additionally suggested confirming with the reviewer/customers, which is an extra step but doesn't change the substantive alignment on the fast-follow decision and mitigation package.\"\n}\n```"
+}

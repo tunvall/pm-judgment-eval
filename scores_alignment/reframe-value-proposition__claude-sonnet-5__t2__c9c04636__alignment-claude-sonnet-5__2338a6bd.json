@@ -1,0 +1,14 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636__alignment-claude-sonnet-5__2338a6bd",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:01:27.258089+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's decision to reposition the product's narrative around precision (using false-positive/complaint data) while retaining and validating the existing fast pipeline architecture, then revising the GTM narrative accordingly, matches the historical decision to reframe around precision on the same technical foundation with a rewritten narrative.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's decision to reposition the product's narrative around precision (using false-positive/complaint data) while retaining and validating the existing fast pipeline architecture, then revising the GTM narrative accordingly, matches the historical decision to reframe around precision on the same technical foundation with a rewritten narrative.\"\n}\n```"
+}

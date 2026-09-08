@@ -1,0 +1,14 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf__alignment-claude-sonnet-5__2c5f60b6",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:01:39.529082+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate agrees the flawed platform-departure framing can't be used and shares the historical concern about misleading executives, but its primary decision is to reframe/re-test and likely keep a scoped-down version of the finding with caveats, whereas the historical decision was to kill the finding entirely and rebuild the section using different data.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate agrees the flawed platform-departure framing can't be used and shares the historical concern about misleading executives, but its primary decision is to reframe/re-test and likely keep a scoped-down version of the finding with caveats, whereas the historical decision was to kill the finding entirely and rebuild the section using different data.\"\n}"
+}

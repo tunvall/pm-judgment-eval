@@ -1,0 +1,14 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d__alignment-claude-sonnet-5__cf490282",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 1,
+  "timestamp": "2026-09-08T12:01:33.509041+00:00",
+  "git_commit": "38ab5e17ee48b54945ec6821d7b377c4f77737d8",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's default plan is to re-run the analysis and, if the signal holds even narrowly, keep and reframe the finding with caveats/disclosure to the audience\u2014only killing it if the effect disappears. The historical decision was to kill the finding outright and rebuild the section using other data, a more decisive removal than the candidate's conditional, caveat-friendly approach.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's default plan is to re-run the analysis and, if the signal holds even narrowly, keep and reframe the finding with caveats/disclosure to the audience\u2014only killing it if the effect disappears. The historical decision was to kill the finding outright and rebuild the section using other data, a more decisive removal than the candidate's conditional, caveat-friendly approach.\"\n}"
+}
