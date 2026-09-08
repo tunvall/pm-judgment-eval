@@ -1,0 +1,14 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t1__9ee49137__alignment-claude-sonnet-5__fce2e64a",
+  "run_id": "private-nudge__claude-sonnet-5__t1__9ee49137",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T11:58:03.997046+00:00",
+  "git_commit": "5ed33f2b26add327989268b0e86235385a584da0",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to send a private DM to check in on status/timeline rather than raising it publicly, matching the historical decision to privately ask about expected completion date rather than using the public channel.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to send a private DM to check in on status/timeline rather than raising it publicly, matching the historical decision to privately ask about expected completion date rather than using the public channel.\"\n}"
+}
