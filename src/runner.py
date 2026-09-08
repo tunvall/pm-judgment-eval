@@ -15,8 +15,16 @@ from pathlib import Path
 from src.case_loader import build_candidate_prompt, load_case
 from src.models import PROVIDERS
 
-SYSTEM_PROMPT_PATH = Path("prompts/candidate/system-prompt-v1.md")
-SYSTEM_PROMPT_VERSION = "v1"
+LAYERS = {
+    "zero-shot": {
+        "path": Path("prompts/candidate/system-prompt-v1.md"),
+        "version": "v1",
+    },
+    "structured": {
+        "path": Path("prompts/candidate/system-prompt-structured-v1.md"),
+        "version": "structured-v1",
+    },
+}
 
 # Forced identical across providers for candidate calls, so "randomness level" is a
 # controlled variable in cross-model comparisons, not just the request shape. See
@@ -33,10 +41,12 @@ def get_git_commit():
         return None
 
 
-def run(case_path, provider, model, trial=1, temperature=DEFAULT_TEMPERATURE, max_tokens=DEFAULT_MAX_TOKENS):
+def run(case_path, provider, model, trial=1, temperature=DEFAULT_TEMPERATURE, max_tokens=DEFAULT_MAX_TOKENS,
+        layer="zero-shot"):
     case = load_case(case_path)
     user_prompt = build_candidate_prompt(case)
-    system_prompt = SYSTEM_PROMPT_PATH.read_text()
+    layer_spec = LAYERS[layer]
+    system_prompt = layer_spec["path"].read_text()
 
     call_fn = PROVIDERS[provider]
     response = call_fn(
@@ -44,7 +54,7 @@ def run(case_path, provider, model, trial=1, temperature=DEFAULT_TEMPERATURE, ma
         temperature=temperature, max_tokens=max_tokens,
     )
 
-    run_id = "{}__{}__t{}__{}".format(case["id"], model, trial, uuid.uuid4().hex[:8])
+    run_id = "{}__{}__{}__t{}__{}".format(case["id"], model, layer, trial, uuid.uuid4().hex[:8])
 
     record = {
         "run_id": run_id,
@@ -53,11 +63,12 @@ def run(case_path, provider, model, trial=1, temperature=DEFAULT_TEMPERATURE, ma
         "case_id": case["id"],
         "case_version": case["version"],
         "trial": trial,
+        "layer": layer,
         "model_provider": provider,
         "model_name": model,
         "temperature": temperature,
         "max_tokens": max_tokens,
-        "system_prompt_version": SYSTEM_PROMPT_VERSION,
+        "system_prompt_version": layer_spec["version"],
         "input_tokens": response.input_tokens,
         "output_tokens": response.output_tokens,
         "latency_ms": response.latency_ms,
@@ -82,9 +93,11 @@ def main():
     parser.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE,
                          help="Forced identical across providers for fair comparison; override only for debugging.")
     parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+    parser.add_argument("--layer", default="zero-shot", choices=list(LAYERS.keys()))
     args = parser.parse_args()
 
-    record, out_path = run(args.case, args.provider, args.model, args.trial, args.temperature, args.max_tokens)
+    record, out_path = run(args.case, args.provider, args.model, args.trial, args.temperature,
+                            args.max_tokens, args.layer)
     print("Saved: {}".format(out_path))
     print("Input tokens: {}  Output tokens: {}  Latency: {}ms".format(
         record["input_tokens"], record["output_tokens"], record["latency_ms"]

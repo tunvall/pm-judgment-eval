@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t1__9ee49137__judge-gemini-3.1-pro-preview__3b2f821d",
+  "run_id": "private-nudge__claude-sonnet-5__t1__9ee49137",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T13:38:31.259538+00:00",
+  "git_commit": "0b685b939b7c66c2d14cea7d480196c4c8535a6c",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states, \"No hard deadline means no urgency justifies public pressure,\" recognizing that the lack of a strict timeline directly reduces the need for aggressive pressure."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly names the relationship cost, noting that a public ping in this context could read as \"public shaming\" and that using public pressure unnecessarily is \"spending trust you don't need to spend.\""
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively pushes against using a public nudge as a default, stating that \"public visibility should be reserved as an escalation path\" and dismissing compliance obtained merely through \"social pressure.\""
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recommends a specific action (\"I'd send a private DM first\") and provides the exact phrasing they would use to follow up with their peer."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states, \\\"No hard deadline means no urgency justifies public pressure,\\\" recognizing that the lack of a strict timeline directly reduces the need for aggressive pressure.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly names the relationship cost, noting that a public ping in this context could read as \\\"public shaming\\\" and that using public pressure unnecessarily is \\\"spending trust you don't need to spend.\\\"\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively pushes against using a public nudge as a default, stating that \\\"public visibility should be reserved as an escalation path\\\" and dismissing compliance obtained merely through \\\"social pressure.\\\"\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recommends a specific action (\\\"I'd send a private DM first\\\") and provides the exact phrasing they would use to follow up with their peer.\"\n    }\n  ]\n}"
+}

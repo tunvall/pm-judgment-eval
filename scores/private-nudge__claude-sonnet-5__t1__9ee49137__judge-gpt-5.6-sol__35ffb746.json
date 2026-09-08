@@ -1,0 +1,44 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t1__9ee49137__judge-gpt-5.6-sol__35ffb746",
+  "run_id": "private-nudge__claude-sonnet-5__t1__9ee49137",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T13:32:11.061074+00:00",
+  "git_commit": "0b685b939b7c66c2d14cea7d480196c4c8535a6c",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says, \u201cNo hard deadline means no urgency justifies public pressure,\u201d and notes that nothing breaks if the work slips a few more days, appropriately calibrating pressure to the soft timeline."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly identifies public escalation as \u201cspending trust,\u201d potentially reading as \u201cpublic shaming,\u201d and damaging trust beyond this deliverable, making the relational and reputational cost central to the decision."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends a private message despite the public commitment and reserves public visibility for later dependency planning or failed private follow-up, rather than treating the original public commitment as sufficient grounds for a callout."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends sending a private DM first and supplies concrete wording that asks about ownership, blockers, help, and recalibrating the timeline, along with explicit conditions for later escalation."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says, \u201cNo hard deadline means no urgency justifies public pressure,\u201d and notes that nothing breaks if the work slips a few more days, appropriately calibrating pressure to the soft timeline.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It directly identifies public escalation as \u201cspending trust,\u201d potentially reading as \u201cpublic shaming,\u201d and damaging trust beyond this deliverable, making the relational and reputational cost central to the decision.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"The response recommends a private message despite the public commitment and reserves public visibility for later dependency planning or failed private follow-up, rather than treating the original public commitment as sufficient grounds for a callout.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It clearly recommends sending a private DM first and supplies concrete wording that asks about ownership, blockers, help, and recalibrating the timeline, along with explicit conditions for later escalation.\"}]}"
+}

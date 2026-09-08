@@ -1,0 +1,14 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t1__9ee49137__alignment-gpt-5.6-sol__f7aad2f6",
+  "run_id": "private-nudge__claude-sonnet-5__t1__9ee49137",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-08T13:39:06.727801+00:00",
+  "git_commit": "0b685b939b7c66c2d14cea7d480196c4c8535a6c",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to send a private direct message first, checking on status and recalibrating the timeline. This matches the historical decision to privately ask about the expected completion date rather than raise the issue publicly.",
+  "raw_judge_response": "{\"alignment\":\"aligned\",\"justification\":\"The candidate chose to send a private direct message first, checking on status and recalibrating the timeline. This matches the historical decision to privately ask about the expected completion date rather than raise the issue publicly.\"}"
+}
