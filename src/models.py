@@ -44,6 +44,34 @@ def call_anthropic(model, system_prompt, user_prompt, temperature=None, max_toke
     )
 
 
+def call_openai(model, system_prompt, user_prompt, temperature=None, max_tokens=4096):
+    import openai
+
+    client = openai.OpenAI()  # reads OPENAI_API_KEY from env
+    kwargs = dict(
+        model=model,
+        max_tokens=max_tokens,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+    if temperature is not None:
+        kwargs["temperature"] = temperature
+
+    start = time.monotonic()
+    response = client.chat.completions.create(**kwargs)
+    latency_ms = int((time.monotonic() - start) * 1000)
+    text = response.choices[0].message.content
+    return ModelResponse(
+        text=text,
+        input_tokens=response.usage.prompt_tokens,
+        output_tokens=response.usage.completion_tokens,
+        latency_ms=latency_ms,
+    )
+
+
 PROVIDERS = {
     "anthropic": call_anthropic,
+    "openai": call_openai,
 }

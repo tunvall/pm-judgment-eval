@@ -18,6 +18,13 @@ from src.models import PROVIDERS
 SYSTEM_PROMPT_PATH = Path("prompts/candidate/system-prompt-v1.md")
 SYSTEM_PROMPT_VERSION = "v1"
 
+# Forced identical across providers for candidate calls, so "randomness level" is a
+# controlled variable in cross-model comparisons, not just the request shape. See
+# docs/methodology.md for why this was made an explicit decision rather than left
+# as each provider's undocumented default.
+DEFAULT_TEMPERATURE = 1.0
+DEFAULT_MAX_TOKENS = 4096
+
 
 def get_git_commit():
     try:
@@ -26,13 +33,16 @@ def get_git_commit():
         return None
 
 
-def run(case_path, provider, model, trial=1, temperature=None):
+def run(case_path, provider, model, trial=1, temperature=DEFAULT_TEMPERATURE, max_tokens=DEFAULT_MAX_TOKENS):
     case = load_case(case_path)
     user_prompt = build_candidate_prompt(case)
     system_prompt = SYSTEM_PROMPT_PATH.read_text()
 
     call_fn = PROVIDERS[provider]
-    response = call_fn(model=model, system_prompt=system_prompt, user_prompt=user_prompt, temperature=temperature)
+    response = call_fn(
+        model=model, system_prompt=system_prompt, user_prompt=user_prompt,
+        temperature=temperature, max_tokens=max_tokens,
+    )
 
     run_id = "{}__{}__t{}__{}".format(case["id"], model, trial, uuid.uuid4().hex[:8])
 
@@ -46,6 +56,7 @@ def run(case_path, provider, model, trial=1, temperature=None):
         "model_provider": provider,
         "model_name": model,
         "temperature": temperature,
+        "max_tokens": max_tokens,
         "system_prompt_version": SYSTEM_PROMPT_VERSION,
         "input_tokens": response.input_tokens,
         "output_tokens": response.output_tokens,
@@ -68,11 +79,12 @@ def main():
     parser.add_argument("--provider", default="anthropic", choices=list(PROVIDERS.keys()))
     parser.add_argument("--model", required=True, help="Exact pinned model version string, never an alias")
     parser.add_argument("--trial", type=int, default=1)
-    parser.add_argument("--temperature", type=float, default=None,
-                         help="Omit to use the API's own default; some model versions reject temperature=0.")
+    parser.add_argument("--temperature", type=float, default=DEFAULT_TEMPERATURE,
+                         help="Forced identical across providers for fair comparison; override only for debugging.")
+    parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     args = parser.parse_args()
 
-    record, out_path = run(args.case, args.provider, args.model, args.trial, args.temperature)
+    record, out_path = run(args.case, args.provider, args.model, args.trial, args.temperature, args.max_tokens)
     print("Saved: {}".format(out_path))
     print("Input tokens: {}  Output tokens: {}  Latency: {}ms".format(
         record["input_tokens"], record["output_tokens"], record["latency_ms"]
