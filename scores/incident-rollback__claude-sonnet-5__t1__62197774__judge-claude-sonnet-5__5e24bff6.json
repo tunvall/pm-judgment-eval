@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-claude-sonnet-5__5e24bff6",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:41:25.727493+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' with no hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'Rollback is reversible \u2014 we can re-launch once fixed. Leaving it live while incorrect signals continue is not obviously reversible in terms of customer trust and support load,' directly contrasting the reversibility of rollback against continuing to run with the bug/fast-fix path."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs 'Every hour of delay compounds support burden and erodes trust' against the reputational cost of walking back the announcement, concluding 'Undoing a commitment temporarily is recoverable; sustained incorrect risk signals causing customer-facing errors is an active harm that compounds every hour.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects optimizing for the days-long proper fix in the incident window, stating 'A \"proper, well-tested fix\" taking days is the wrong thing to optimize for right now.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lists concrete follow-ups beyond the immediate rollback, including customer-facing status updates, escalating to the manager, and opening 'a follow-up track for engineering to build the proper fix and a re-launch plan.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' with no hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'Rollback is reversible \u2014 we can re-launch once fixed. Leaving it live while incorrect signals continue is not obviously reversible in terms of customer trust and support load,' directly contrasting the reversibility of rollback against continuing to run with the bug/fast-fix path.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly weighs 'Every hour of delay compounds support burden and erodes trust' against the reputational cost of walking back the announcement, concluding 'Undoing a commitment temporarily is recoverable; sustained incorrect risk signals causing customer-facing errors is an active harm that compounds every hour.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects optimizing for the days-long proper fix in the incident window, stating 'A \\\"proper, well-tested fix\\\" taking days is the wrong thing to optimize for right now.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lists concrete follow-ups beyond the immediate rollback, including customer-facing status updates, escalating to the manager, and opening 'a follow-up track for engineering to build the proper fix and a re-launch plan.'\"}\n  ]\n}"
+}

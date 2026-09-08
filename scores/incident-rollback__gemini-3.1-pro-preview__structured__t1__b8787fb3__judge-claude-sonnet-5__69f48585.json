@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3__judge-claude-sonnet-5__69f48585",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:46:01.676873+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives an unambiguous recommendation: 'I would immediately order a rollback of the new integration launch,' with high stated confidence and no hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response treats rollback as quick and restoring a 'known-good state' and separately flags the rapid hotfix as risking 'compounding the incident by introducing new, uncalibrated bugs... potentially prolonging the outage,' but it never explicitly frames this as a reversible-vs-hard-to-undo contrast between the two paths."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The tradeoffs section and recommendation explicitly balance 'immense damage to existing customer trust' and support overhead from continued incorrect signals against the 'PR and marketing momentum' and optics of retracting a public launch commitment."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly considers the rapid hotfix option and rejects it, noting it 'risks compounding the incident by introducing new, uncalibrated bugs into a sensitive risk-decisioning system,' rather than defaulting to pushing it forward."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'Next steps' section goes beyond the immediate rollback to include monitoring, informing Support/Marketing/GTM with scripts, updating the public status page, and eventually kicking off the proper fix and relaunch workstream."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives an unambiguous recommendation: 'I would immediately order a rollback of the new integration launch,' with high stated confidence and no hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response treats rollback as quick and restoring a 'known-good state' and separately flags the rapid hotfix as risking 'compounding the incident by introducing new, uncalibrated bugs... potentially prolonging the outage,' but it never explicitly frames this as a reversible-vs-hard-to-undo contrast between the two paths.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The tradeoffs section and recommendation explicitly balance 'immense damage to existing customer trust' and support overhead from continued incorrect signals against the 'PR and marketing momentum' and optics of retracting a public launch commitment.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly considers the rapid hotfix option and rejects it, noting it 'risks compounding the incident by introducing new, uncalibrated bugs into a sensitive risk-decisioning system,' rather than defaulting to pushing it forward.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The 'Next steps' section goes beyond the immediate rollback to include monitoring, informing Support/Marketing/GTM with scripts, updating the public status page, and eventually kicking off the proper fix and relaunch workstream.\"}\n  ]\n}"
+}

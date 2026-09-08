@@ -34,7 +34,14 @@ def score_run(run_path, judge_provider, judge_model, temperature=None, max_retri
         "score_id": score_id,
         "run_id": run_record["run_id"],
         "case_id": run_record["case_id"],
-        "case_version": run_record["case_version"],
+        # The rubric actually applied, not the case version the candidate saw.
+        # These can legitimately differ: a rubric-only revision (like
+        # incident-rollback v1 -> v2) doesn't change the scenario/question the
+        # candidate answered, only how the answer gets graded. Re-scoring an
+        # old run under a revised rubric is valid; silently stamping the old
+        # case_version on the new score would hide which rubric produced it.
+        "case_version": case["version"],
+        "candidate_case_version": run_record["case_version"],
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "git_commit": get_git_commit(),
         "judge_provider": judge_provider,

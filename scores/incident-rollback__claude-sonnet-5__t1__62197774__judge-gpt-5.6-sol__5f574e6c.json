@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-gpt-5.6-sol__5f574e6c",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:41:38.793028+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately commits: \u201cRoll back the new integration immediately,\u201d specifically directing engineering to disable it via feature flag or deploy revert."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It explicitly identifies rollback as a \u201cknown, bounded,\u201d reversible action and contrasts it with ongoing customer harm that is not reversible in trust terms. However, it does not specifically contrast rollback with the uncertainty and difficulty of unwinding an unvalidated fast-fix attempt."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs compounding incorrect alerts, support burden, and trust erosion against the \u201creputational/scheduling friction\u201d of pausing a publicly announced feature, concluding the former is substantially more serious."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly prioritizes rollback over attempting an immediate code fix and assigns the \u201cproper, well-tested fix\u201d to a several-day follow-up before relaunch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond rollback, it proposes verifying recovery, notifying affected and new-integration customers, asynchronously escalating to the manager, building the proper fix, planning relaunch, and conducting a retrospective."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response immediately commits: \u201cRoll back the new integration immediately,\u201d specifically directing engineering to disable it via feature flag or deploy revert.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"partially_met\",\"justification\":\"It explicitly identifies rollback as a \u201cknown, bounded,\u201d reversible action and contrasts it with ongoing customer harm that is not reversible in trust terms. However, it does not specifically contrast rollback with the uncertainty and difficulty of unwinding an unvalidated fast-fix attempt.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response directly weighs compounding incorrect alerts, support burden, and trust erosion against the \u201creputational/scheduling friction\u201d of pausing a publicly announced feature, concluding the former is substantially more serious.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"It explicitly prioritizes rollback over attempting an immediate code fix and assigns the \u201cproper, well-tested fix\u201d to a several-day follow-up before relaunch.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"Beyond rollback, it proposes verifying recovery, notifying affected and new-integration customers, asynchronously escalating to the manager, building the proper fix, planning relaunch, and conducting a retrospective.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-gemini-3.1-pro-preview__37e8d879",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:41:49.225462+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly and immediately decides to \"roll back (disable/feature-flag off) the new integration launch right now\" in the very first sentence."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response correctly identifies that \"rollback is reversible\" and defaults to this lower-risk action. However, it contrasts this with the irreversibility of customer trust if left live, rather than explicitly contrasting it against the specific risk of attempting an unvalidated fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate directly weighs the compounding harm of \"every hour of delay\" for established customers against the \"reputational/scheduling friction\" of walking back the newly announced launch commitment."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response completely avoids betting on a rushed fix, noting that rollback is a \"known, bounded action \u2014 not a gamble\" and treating the multi-day proper fix as a separate follow-up project."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a detailed 6-step list of concrete actions for the two-hour window, including communicating with both affected customer segments and establishing a path to build the proper fix and relaunch."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly and immediately decides to \\\"roll back (disable/feature-flag off) the new integration launch right now\\\" in the very first sentence.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response correctly identifies that \\\"rollback is reversible\\\" and defaults to this lower-risk action. However, it contrasts this with the irreversibility of customer trust if left live, rather than explicitly contrasting it against the specific risk of attempting an unvalidated fast fix.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly weighs the compounding harm of \\\"every hour of delay\\\" for established customers against the \\\"reputational/scheduling friction\\\" of walking back the newly announced launch commitment.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response completely avoids betting on a rushed fix, noting that rollback is a \\\"known, bounded action \u2014 not a gamble\\\" and treating the multi-day proper fix as a separate follow-up project.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a detailed 6-step list of concrete actions for the two-hour window, including communicating with both affected customer segments and establishing a path to build the proper fix and relaunch.\"\n    }\n  ]\n}"
+}

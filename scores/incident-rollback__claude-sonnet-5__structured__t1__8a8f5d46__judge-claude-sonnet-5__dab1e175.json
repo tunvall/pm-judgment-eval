@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__judge-claude-sonnet-5__dab1e175",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:45:31.259886+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, unambiguous call: 'Pull the new integration launch back (full or effectively full rollback) immediately,' rather than leaving the choice open."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts full rollback ('Highest certainty of stopping harm... Reversible reputational cost, but bounded and manageable') against targeted mitigation, noting 'quick confidence here is exactly what a rushed incident is bad at delivering' and warning against 'hand-tune a fast scoped fix under time pressure' due to risk of 'a second bad deploy'."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states to 'Prioritize stopping harm to the larger, already-supported customer base over preserving the optics of a just-announced feature' and concludes 'the blast radius... outweighs the cost of a delayed/paused new integration.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects hand-tuning a quick scoped fix under incident pressure, citing risk of 'a second bad deploy,' and instead treats the several-days fix as the only 'proper' fix while using rollback as the interim measure."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, the response lays out a numbered next-steps list including verification of incorrect-signal rates, internal/external communications, keeping the incident open until baseline is confirmed, and a post-incident review plus a relaunch framing ('Frame it as a pause, not a cancellation')."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, unambiguous call: 'Pull the new integration launch back (full or effectively full rollback) immediately,' rather than leaving the choice open.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts full rollback ('Highest certainty of stopping harm... Reversible reputational cost, but bounded and manageable') against targeted mitigation, noting 'quick confidence here is exactly what a rushed incident is bad at delivering' and warning against 'hand-tune a fast scoped fix under time pressure' due to risk of 'a second bad deploy'.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly states to 'Prioritize stopping harm to the larger, already-supported customer base over preserving the optics of a just-announced feature' and concludes 'the blast radius... outweighs the cost of a delayed/paused new integration.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects hand-tuning a quick scoped fix under incident pressure, citing risk of 'a second bad deploy,' and instead treats the several-days fix as the only 'proper' fix while using rollback as the interim measure.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, the response lays out a numbered next-steps list including verification of incorrect-signal rates, internal/external communications, keeping the incident open until baseline is confirmed, and a post-incident review plus a relaunch framing ('Frame it as a pause, not a cancellation').\"}\n  ]\n}"
+}

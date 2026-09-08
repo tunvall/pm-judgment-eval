@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__judge-gpt-5.6-sol__feb13797",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:43:14.606109+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately commits to an \u201cimmediate rollback\u201d or feature-flag disablement and emphasizes that the decision cannot wait for further permission or consensus."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It recognizes rollback as recoverable by describing the rollout as \u201cpaused\u201d with a later resumption and says announcements \u201ccan be walked back.\u201d However, it does not explicitly contrast rollback\u2019s reversibility with the uncertainty and difficulty of recovering from an unvalidated fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly compares the accumulating customer harm, support burden, and trust damage against the \u201ctemporary PR bruise\u201d of retracting a publicly announced launch."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than advocating a rushed patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix in staging after rollback."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides specific follow-up actions, including communications for impacted and launch-expecting customers, a tested-fix and relaunch path, and a blameless post-mortem."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response immediately commits to an \u201cimmediate rollback\u201d or feature-flag disablement and emphasizes that the decision cannot wait for further permission or consensus.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"partially_met\",\"justification\":\"It recognizes rollback as recoverable by describing the rollout as \u201cpaused\u201d with a later resumption and says announcements \u201ccan be walked back.\u201d However, it does not explicitly contrast rollback\u2019s reversibility with the uncertainty and difficulty of recovering from an unvalidated fast fix.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response directly compares the accumulating customer harm, support burden, and trust damage against the \u201ctemporary PR bruise\u201d of retracting a publicly announced launch.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"Rather than advocating a rushed patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix in staging after rollback.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"It provides specific follow-up actions, including communications for impacted and launch-expecting customers, a tested-fix and relaunch path, and a blameless post-mortem.\"}]}"
+}

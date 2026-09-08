@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__judge-gemini-3.1-pro-preview__d485b8de",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:42:41.244570+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately and clearly states a decision in the very first sentence: 'I would immediately roll back\u2014or feature-flag off\u2014the new integration'."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response notes that 'Rollback is also the most reversible decision', but it contrasts this reversibility with the irreversibility of bad customer actions caused by incorrect signals, rather than explicitly contrasting it against the risk of an unvalidated fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly balances these factors, stating that 'A public commitment is important, but it does not outweigh the correctness of production risk signals' and noting how mistaken alerts compound customer impact."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response specifically avoids a rushed patch, instructing the team to 'Avoid attempting an expedited, inadequately tested code fix in production' in favor of taking several days for a proper fix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines comprehensive next steps beyond the immediate rollback, including addressing already-generated alerts, communicating transparently with customers, and establishing a plan to 'Build and relaunch safely'."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response immediately and clearly states a decision in the very first sentence: 'I would immediately roll back\u2014or feature-flag off\u2014the new integration'.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response notes that 'Rollback is also the most reversible decision', but it contrasts this reversibility with the irreversibility of bad customer actions caused by incorrect signals, rather than explicitly contrasting it against the risk of an unvalidated fast fix.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly balances these factors, stating that 'A public commitment is important, but it does not outweigh the correctness of production risk signals' and noting how mistaken alerts compound customer impact.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response specifically avoids a rushed patch, instructing the team to 'Avoid attempting an expedited, inadequately tested code fix in production' in favor of taking several days for a proper fix.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines comprehensive next steps beyond the immediate rollback, including addressing already-generated alerts, communicating transparently with customers, and establishing a plan to 'Build and relaunch safely'.\"\n    }\n  ]\n}"
+}

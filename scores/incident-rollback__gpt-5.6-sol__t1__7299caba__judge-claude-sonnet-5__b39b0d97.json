@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__t1__7299caba__judge-claude-sonnet-5__b39b0d97",
+  "run_id": "incident-rollback__gpt-5.6-sol__t1__7299caba",
+  "case_id": "incident-rollback",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-08T16:42:12.230517+00:00",
+  "git_commit": "b02157931911af1d0d147779518cf718fa2de534",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with a clear, immediate decision: 'I would immediately roll back\u2014or feature-flag off\u2014the new integration and restore the last known-good signal-calibration behavior,' with no hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response states 'Rollback is also the most reversible decision: we can restore the launch after a tested fix' and separately advises to 'Avoid attempting an expedited, inadequately tested code fix in production,' explicitly flagging the fast-fix path as risky compared to the reversible rollback."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the two costs: 'A public commitment is important, but it does not outweigh the correctness of production risk signals... Continuing to generate mistaken alerts for several days... would compound customer impact, support burden, and ultimately reputational damage.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly instructs to 'Avoid attempting an expedited, inadequately tested code fix in production,' explicitly rejecting the fast-fix gamble."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, the response lays out follow-up steps including addressing already-generated alerts, communicating with customers, and a 'Build and relaunch safely' phase with regression tests and staged rollout before relaunch."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with a clear, immediate decision: 'I would immediately roll back\u2014or feature-flag off\u2014the new integration and restore the last known-good signal-calibration behavior,' with no hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response states 'Rollback is also the most reversible decision: we can restore the launch after a tested fix' and separately advises to 'Avoid attempting an expedited, inadequately tested code fix in production,' explicitly flagging the fast-fix path as risky compared to the reversible rollback.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly weighs the two costs: 'A public commitment is important, but it does not outweigh the correctness of production risk signals... Continuing to generate mistaken alerts for several days... would compound customer impact, support burden, and ultimately reputational damage.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response directly instructs to 'Avoid attempting an expedited, inadequately tested code fix in production,' explicitly rejecting the fast-fix gamble.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, the response lays out follow-up steps including addressing already-generated alerts, communicating with customers, and a 'Build and relaunch safely' phase with regression tests and staged rollout before relaunch.\"}\n  ]\n}"
+}

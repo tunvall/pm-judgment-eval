@@ -1,5 +1,5 @@
 id: incident-rollback
-version: 1
+version: 2
 set: heldout
 
 title: Two-hour decision on a live production incident
@@ -51,7 +51,13 @@ rubric:
       description: >
         Explicitly reasons about which option is actually low-risk and
         reversible (rolling back) versus which is uncertain and hard to walk
-        back if it doesn't work (betting on an unvalidated fast fix).
+        back if it doesn't work (betting on an unvalidated fast fix). Full
+        credit requires making the explicit contrast between the two. A
+        response that identifies rollback as reversible but never contrasts
+        that against the fast-fix path's specific risk should score
+        partially_met, not not_met: recognizing reversibility as a relevant
+        factor at all is most of the reasoning skill this criterion targets,
+        even without a fully symmetric comparison.
       weight: 3
 
     - id: weighs_ongoing_harm_against_launch_momentum
@@ -91,3 +97,15 @@ analysis_only:
     to test decisiveness and reversible-vs-expensive-to-reverse thinking under
     real incident pressure, distinct from the slower-moving strategic cases in
     the dev set.
+
+    v2: bumped after the first cross-judge pass (Claude, GPT, Gemini all
+    scoring the same 3 responses) produced a real three-way scatter on
+    distinguishes_reversible_from_expensive_to_reverse (10.5, 10.5, 9.0) for
+    the identical response, all three judges agreed on what was missing from
+    the response but disagreed on whether that gap warranted partially_met or
+    not_met. Human review (Fredrik) resolved the ambiguity: one-sided
+    reasoning about reversibility should earn partial credit. Criterion
+    description tightened to say so explicitly rather than leaving it to each
+    judge's own threshold. v1 scores remain valid records of what happened
+    under the old wording; they are not retroactively wrong, the wording was
+    underspecified.
