@@ -46,3 +46,21 @@ Also worth naming directly, even though it's not one of the template's fields: t
 project is really trying to measure how well a model performs product judgment the
 way an experienced product manager at a large tech company would, out of the box,
 with no special tuning, not "AI product management" as some abstract general skill.
+
+### Why I didn't build a ground truth answer key
+
+I didn't build a traditional ground truth, a single correct answer to check
+candidate responses against, because the project's own methodology rejected that
+back in the first design review: scoring against "what actually happened" or "what
+I would have decided" would just measure agreement with me, not reasoning quality.
+Reasonable people can reach different, equally defensible conclusions from the same
+information. The rubric is the closest thing to a standard I built instead, criteria
+for what good reasoning looks like on a given case, not a specific answer to match.
+The historical decision and outcome are recorded but deliberately walled off from
+scoring, kept only for checking the rubric itself for hindsight bias, not for
+grading candidates.
+
+The one place something like actual ground truth does exist is much narrower: the
+adversarial fixture, a hand-written answer where I know in advance it should score
+badly. That's there to test whether the judge works at all, not to test whether a
+candidate model's product decision was "right."

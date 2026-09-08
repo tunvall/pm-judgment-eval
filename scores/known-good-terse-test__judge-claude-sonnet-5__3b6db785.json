@@ -1,0 +1,44 @@
+{
+  "score_id": "known-good-terse-test__judge-claude-sonnet-5__3b6db785",
+  "run_id": "known-good-terse-test",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "timestamp": "2026-09-07T23:45:04.566720+00:00",
+  "git_commit": "c8bf7d353f8ffccd6bf4884132b969c586a4b8a1",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'No hard deadline exists, so there's no real urgency that justifies public pressure,' directly linking the absence of a hard deadline to reduced pressure warranted."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names relationship trust as a real cost: 'A public callout costs relationship trust for no real gain here, and that trust matters more than a few days of forcing-function speed.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly rejects the public-commitment-justifies-public-pressure logic: 'The fact that the commitment was made publicly doesn't make a public nudge the right tool by default, it's just one option, and not the best one.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete plan: 'I'd message them directly, ask for a status update, and only escalate publicly if it drags on with no response,' rather than stopping at an abstract principle."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'No hard deadline exists, so there's no real urgency that justifies public pressure,' directly linking the absence of a hard deadline to reduced pressure warranted.\"},\n  {\"id\": \"weighs_relationship_cost_explicitly\", \"justification\": \"It names relationship trust as a real cost: 'A public callout costs relationship trust for no real gain here, and that trust matters more than a few days of forcing-function speed.'\", \"verdict\": \"met\"},\n  {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response directly rejects the public-commitment-justifies-public-pressure logic: 'The fact that the commitment was made publicly doesn't make a public nudge the right tool by default, it's just one option, and not the best one.'\"},\n  {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"It gives a concrete plan: 'I'd message them directly, ask for a status update, and only escalate publicly if it drags on with no response,' rather than stopping at an abstract principle.\"}\n]}"
+}

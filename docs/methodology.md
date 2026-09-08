@@ -87,10 +87,22 @@ case, run through `src/score.py` the same way a real result would be. First run:
 2.5/10 versus 10/10 for the real candidate outputs on that case, with justifications
 that correctly identified the specific hedging pattern (never naming the actual
 deadline fact, never committing to an action, listing the public-channel option
-without scrutinizing it). This is evidence the rubric can discriminate; it is not
-evidence that self-preference bias is absent, since the same model was both
-candidate and judge for this check. That question stays open until a second model
-exists to judge with (Phase 5).
+without scrutinizing it).
+
+That check only tests one direction: does the judge punish an obviously weak
+answer. It doesn't test whether the judge is actually scoring reasoning, or just
+pattern-matching on the candidate model's typical writing style. All real v0
+outputs came from the same model, so they share a style (long, structured, bold
+headers, self-explaining). `tests/fixtures/known-good-terse-test.json` is a
+hand-written answer to the same case, deliberately terse and blunt, no headers, no
+elaboration, but substantively hitting every rubric criterion. It also scored
+10/10, with justifications quoting the terse phrasing directly rather than
+defaulting to boilerplate. Together, both fixtures are evidence the rubric can
+discriminate on substance in both directions, rewarding a good answer regardless of
+style and punishing a bad one regardless of length. Neither fixture is evidence
+that self-preference bias is absent, since the same model was candidate and judge
+for both. That question stays open until a second model exists to judge with
+(Phase 5).
 
 ## A note on where the sanitization/NDA process lives
 
