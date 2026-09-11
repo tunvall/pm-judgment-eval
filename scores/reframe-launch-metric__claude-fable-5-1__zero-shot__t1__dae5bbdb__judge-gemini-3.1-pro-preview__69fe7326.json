@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb__judge-gemini-3.1-pro-preview__69fe7326",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:46:58.907178+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly recognizes this, stating: 'We already have one instance where mapping accuracy looked fine and the launch got paused... That's direct evidence the old metric fails as a proxy for what we care about.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response actively rejects sunk cost reasoning, noting that the past year of investment and infrastructure 'are sunk costs \u2014 they argue for reusing the infrastructure, not for letting it choose the success criterion.'"
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate clearly addresses the missing data problem by stating, 'I can't judge a launch on a metric I can't measure,' and provides a plan to source ground truth or slip the schedule/launch narrowly if it isn't ready."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses on using the new metric to judge the current launch's success, but it does not explicitly reason that the chosen primary metric will shape the team's ongoing optimization behavior going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a very concrete recommendation, making the customer-facing metric primary while retaining the mapping-accuracy metric as a diagnostic layer to explain estimate errors."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly recognizes this, stating: 'We already have one instance where mapping accuracy looked fine and the launch got paused... That's direct evidence the old metric fails as a proxy for what we care about.'\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively rejects sunk cost reasoning, noting that the past year of investment and infrastructure 'are sunk costs \u2014 they argue for reusing the infrastructure, not for letting it choose the success criterion.'\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly addresses the missing data problem by stating, 'I can't judge a launch on a metric I can't measure,' and provides a plan to source ground truth or slip the schedule/launch narrowly if it isn't ready.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses on using the new metric to judge the current launch's success, but it does not explicitly reason that the chosen primary metric will shape the team's ongoing optimization behavior going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a very concrete recommendation, making the customer-facing metric primary while retaining the mapping-accuracy metric as a diagnostic layer to explain estimate errors.\"\n    }\n  ]\n}\n```"
+}

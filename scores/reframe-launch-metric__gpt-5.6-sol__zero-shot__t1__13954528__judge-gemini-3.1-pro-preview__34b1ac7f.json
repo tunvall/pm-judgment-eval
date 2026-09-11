@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528__judge-gemini-3.1-pro-preview__34b1ac7f",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:56:14.912639+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that the earlier paused launch proves mapping accuracy is not a validated proxy for customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly states that a year of investment and existing infrastructure are relevant to transition cost, but should not dictate which metric is valid."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the lack of ground truth data, proposing steps to source it and suggesting the release be treated as a pilot or delayed until credible data exists."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response briefly notes that 'continuing to optimize and judge launches' on the old metric would compound past mistakes, but it does not deeply reason about how the primary metric actively shapes future team behavior."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete recommendation to make the customer-relevant outcome the primary metric while explicitly retaining mapping accuracy as a guardrail and diagnostic tool."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that the earlier paused launch proves mapping accuracy is not a validated proxy for customer value.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly states that a year of investment and existing infrastructure are relevant to transition cost, but should not dictate which metric is valid.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the lack of ground truth data, proposing steps to source it and suggesting the release be treated as a pilot or delayed until credible data exists.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response briefly notes that 'continuing to optimize and judge launches' on the old metric would compound past mistakes, but it does not deeply reason about how the primary metric actively shapes future team behavior.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete recommendation to make the customer-relevant outcome the primary metric while explicitly retaining mapping accuracy as a guardrail and diagnostic tool.\"\n    }\n  ]\n}"
+}

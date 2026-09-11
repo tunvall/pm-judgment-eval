@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc__judge-gpt-5.6-sol__feb08fdc",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:43:09.201813+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the delay cost\u2014\u201ca few uncomfortable conversations and some lost momentum\u201d\u2014with the asymmetric risk of the category judging the company on \u201cour weakest work.\u201d It grounds that risk in the workshop\u2019s top-ranked accuracy concern and the commentator\u2019s demonstrated likelihood of amplifying criticism."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the skip-level director\u2019s prior rejection as one of \u201cthree independent signals\u201d that collectively settle the decision, and recommends escalating immediately to that director with a clear recommendation."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the commitment against product credibility and concludes that preserving the calendar would not justify an indefensible launch. It proposes converting the conference appearance into a transparent preview rather than treating the promised launch date as immutable."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It evaluates the narrower estimation scope\u2014\u201cseventy-percent-plus precision on a small slice,\u201d with low recall and no newer-workload approach\u2014and rejects it as misleading rather than assuming the only alternatives are the proposed identifier or total absence from the conference."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete month-long plan: escalate immediately, replace the launch with a methodology preview, use the identifier internally and with design partners for labeled data, and set a new launch date tied to coverage and accuracy thresholds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts the delay cost\u2014\u201ca few uncomfortable conversations and some lost momentum\u201d\u2014with the asymmetric risk of the category judging the company on \u201cour weakest work.\u201d It grounds that risk in the workshop\u2019s top-ranked accuracy concern and the commentator\u2019s demonstrated likelihood of amplifying criticism.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It treats the skip-level director\u2019s prior rejection as one of \u201cthree independent signals\u201d that collectively settle the decision, and recommends escalating immediately to that director with a clear recommendation.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response directly weighs the commitment against product credibility and concludes that preserving the calendar would not justify an indefensible launch. It proposes converting the conference appearance into a transparent preview rather than treating the promised launch date as immutable.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"met\",\"justification\":\"It evaluates the narrower estimation scope\u2014\u201cseventy-percent-plus precision on a small slice,\u201d with low recall and no newer-workload approach\u2014and rejects it as misleading rather than assuming the only alternatives are the proposed identifier or total absence from the conference.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response gives a concrete month-long plan: escalate immediately, replace the launch with a methodology preview, use the identifier internally and with design partners for labeled data, and set a new launch date tied to coverage and accuracy thresholds.\"}]}"
+}

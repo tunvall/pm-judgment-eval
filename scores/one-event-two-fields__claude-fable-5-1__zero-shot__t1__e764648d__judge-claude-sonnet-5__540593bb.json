@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t1__e764648d__judge-claude-sonnet-5__540593bb",
+  "run_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t1__e764648d",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:50:03.817846+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates goal from mechanism, stating 'the constraints actually disagree about mechanism, not about goal' and framing customer research as validating the unified-view goal without endorsing option one's overwrite mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It gives a detailed account of why overwriting is risky ('the failure mode is quiet, distributed, and discovered months later'), and even commits to an explicit contract that the original field will never be mutated."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly calls out that two linked records push dedup burden onto consumers and 'the ones that don't will fire twice,' directly factoring this into rejecting option two."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits clearly to option three with specifics: one event/lifecycle established by the fast pipeline, a new named field for the precise estimate, alerting keyed to the event, plus a derived 'current best estimate' field and status indicator."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly engages the reviewer with 'I agree with your goal completely, and I'm proposing a different mechanism,' and offers concrete accommodations (derived field, documentation framing) rather than dismissing the concern."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates goal from mechanism, stating 'the constraints actually disagree about mechanism, not about goal' and framing customer research as validating the unified-view goal without endorsing option one's overwrite mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It gives a detailed account of why overwriting is risky ('the failure mode is quiet, distributed, and discovered months later'), and even commits to an explicit contract that the original field will never be mutated.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly calls out that two linked records push dedup burden onto consumers and 'the ones that don't will fire twice,' directly factoring this into rejecting option two.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"It commits clearly to option three with specifics: one event/lifecycle established by the fast pipeline, a new named field for the precise estimate, alerting keyed to the event, plus a derived 'current best estimate' field and status indicator.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"The response directly engages the reviewer with 'I agree with your goal completely, and I'm proposing a different mechanism,' and offers concrete accommodations (derived field, documentation framing) rather than dismissing the concern.\"}\n  ]\n}"
+}

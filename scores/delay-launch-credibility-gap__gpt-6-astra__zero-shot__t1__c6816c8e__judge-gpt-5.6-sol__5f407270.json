@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t1__c6816c8e__judge-gpt-5.6-sol__5f407270",
+  "run_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t1__c6816c8e",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:46:25.811799+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the \u201creal cost\u201d of changing the public commitment with the \u201cdeeper loss of trust\u201d from failing the audience\u2019s top credibility test. It specifically uses both the workshop ranking and the commentator\u2019s track record, appropriately treating the latter as a warning and practitioner evidence as stronger."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It emphasizes that the skip-level director \u201calready rejected an even narrower release for the same underlying concern\u201d and concludes that another reduced-scope version cannot be treated as implicitly approved."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response acknowledges and owns the cost of changing the public commitment but recommends delaying because the product\u2019s core estimation claim remains indefensible, using the conference for honest engagement instead."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It considers reduced scope through a separately approved research preview or limited pilot and notes the prior rejection of an even narrower release. However, it does not directly evaluate whether any launch limited to existing transaction types could meet defensible precision and recall thresholds; it mainly concludes the currently described subset has low recall."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: escalate a decision memo within days, define evidence-based launch gates, time-box feasibility and evaluation work, test a limited pilot, and promptly reset expectations with customers, partners, and conference stakeholders."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts the \u201creal cost\u201d of changing the public commitment with the \u201cdeeper loss of trust\u201d from failing the audience\u2019s top credibility test. It specifically uses both the workshop ranking and the commentator\u2019s track record, appropriately treating the latter as a warning and practitioner evidence as stronger.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It emphasizes that the skip-level director \u201calready rejected an even narrower release for the same underlying concern\u201d and concludes that another reduced-scope version cannot be treated as implicitly approved.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response acknowledges and owns the cost of changing the public commitment but recommends delaying because the product\u2019s core estimation claim remains indefensible, using the conference for honest engagement instead.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It considers reduced scope through a separately approved research preview or limited pilot and notes the prior rejection of an even narrower release. However, it does not directly evaluate whether any launch limited to existing transaction types could meet defensible precision and recall thresholds; it mainly concludes the currently described subset has low recall.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: escalate a decision memo within days, define evidence-based launch gates, time-box feasibility and evaluation work, test a limited pilot, and promptly reset expectations with customers, partners, and conference stakeholders.\"}]}"
+}

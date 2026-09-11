@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa__judge-gpt-5.6-sol__25409dfa",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:52:27.260972+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response separates the validated goal\u2014\"a single event that gets smarter over time\"\u2014from the backend mechanism, arguing that a two-field model can provide the unified experience without overwriting the existing field."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly rejects silent semantic mutation because \"millions of existing records and downstream external systems\" rely on the field's exact meaning, citing risks to automation, integrations, and trust."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response identifies that two records would make customers deal with separate alerts for one real-world event and recommends a single lifecycle to eliminate duplicate alerts."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to Option 3: one event and lifecycle, retaining the original field unchanged while adding a distinct field for the later, more precise estimate."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It acknowledges the reviewer's customer-simplicity objective and proposes delivering that simplicity in the UI through the best available estimate, while using two backend fields to preserve API contracts."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response separates the validated goal\u2014\\\"a single event that gets smarter over time\\\"\u2014from the backend mechanism, arguing that a two-field model can provide the unified experience without overwriting the existing field.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly rejects silent semantic mutation because \\\"millions of existing records and downstream external systems\\\" rely on the field's exact meaning, citing risks to automation, integrations, and trust.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies that two records would make customers deal with separate alerts for one real-world event and recommends a single lifecycle to eliminate duplicate alerts.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"It commits to Option 3: one event and lifecycle, retaining the original field unchanged while adding a distinct field for the later, more precise estimate.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"It acknowledges the reviewer's customer-simplicity objective and proposes delivering that simplicity in the UI through the best available estimate, while using two backend fields to preserve API contracts.\"\n    }\n  ]\n}"
+}

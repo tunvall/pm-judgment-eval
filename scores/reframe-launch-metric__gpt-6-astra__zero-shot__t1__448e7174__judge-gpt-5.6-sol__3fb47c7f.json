@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t1__448e7174__judge-gpt-5.6-sol__3fb47c7f",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t1__448e7174",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:56:55.480878+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly treats the earlier paused launch as evidence that \u201cgood mapping accuracy is insufficient\u201d and distinguishes component-level mapping performance from whether the product delivers customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly says the team\u2019s year of investment \u201cshould influence how we transition, not determine what success means,\u201d while preserving the existing infrastructure as a diagnostic and regression tool."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges, \u201cI would not claim we can evaluate that new criterion yet,\u201d then proposes sourcing representative ground truth, testing label feasibility, building a held-out set, and limiting release to a controlled pilot or delaying it meanwhile."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It notes that another year optimizing mapping accuracy would not close the customer-value gap and proposes learning which mapping errors materially affect outcomes so engineering effort is directed toward consequential errors rather than all categorization errors equally."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly makes customer-outcome accuracy primary, retains mapping accuracy as a diagnostic and regression guardrail, and provides a concrete staged transition involving metric definition, ground-truth collection, dual measurement, and evidence-gated release scope."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly treats the earlier paused launch as evidence that \u201cgood mapping accuracy is insufficient\u201d and distinguishes component-level mapping performance from whether the product delivers customer value.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It explicitly says the team\u2019s year of investment \u201cshould influence how we transition, not determine what success means,\u201d while preserving the existing infrastructure as a diagnostic and regression tool.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response acknowledges, \u201cI would not claim we can evaluate that new criterion yet,\u201d then proposes sourcing representative ground truth, testing label feasibility, building a held-out set, and limiting release to a controlled pilot or delaying it meanwhile.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"met\",\"justification\":\"It notes that another year optimizing mapping accuracy would not close the customer-value gap and proposes learning which mapping errors materially affect outcomes so engineering effort is directed toward consequential errors rather than all categorization errors equally.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly makes customer-outcome accuracy primary, retains mapping accuracy as a diagnostic and regression guardrail, and provides a concrete staged transition involving metric definition, ground-truth collection, dual measurement, and evidence-gated release scope.\"}]}"
+}

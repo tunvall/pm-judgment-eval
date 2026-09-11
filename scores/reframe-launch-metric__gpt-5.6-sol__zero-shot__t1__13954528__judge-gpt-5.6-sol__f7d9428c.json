@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528__judge-gpt-5.6-sol__f7d9428c",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:56:05.716767+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly cites the earlier paused launch as evidence that mapping accuracy \"is not a sufficiently validated proxy for customer value\" and proposes measuring its actual correlation with customer outcomes."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly states that the year of investment affects transition cost but not metric validity, while proposing to repurpose the existing pipelines and expertise rather than using them to justify the old metric's primacy."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats ground-truth acquisition as launch-critical, specifies representative sourcing and held-out evaluation, and recommends a pilot, narrowed release, or delay until credible customer-outcome data exists."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It reasons that continuing to \"optimize and judge launches\" on mapping accuracy would compound the prior mistake and calls for correcting the metric hierarchy so optimization centers on customer tolerances and outcome error."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly makes customer-outcome error or calibration primary, retains mapping accuracy as a guardrail and diagnostic, and provides a concrete staged transition involving data sourcing, dual measurement, and launch gating."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly cites the earlier paused launch as evidence that mapping accuracy \\\"is not a sufficiently validated proxy for customer value\\\" and proposes measuring its actual correlation with customer outcomes.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly states that the year of investment affects transition cost but not metric validity, while proposing to repurpose the existing pipelines and expertise rather than using them to justify the old metric's primacy.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats ground-truth acquisition as launch-critical, specifies representative sourcing and held-out evaluation, and recommends a pilot, narrowed release, or delay until credible customer-outcome data exists.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"met\",\n      \"justification\": \"It reasons that continuing to \\\"optimize and judge launches\\\" on mapping accuracy would compound the prior mistake and calls for correcting the metric hierarchy so optimization centers on customer tolerances and outcome error.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It clearly makes customer-outcome error or calibration primary, retains mapping accuracy as a guardrail and diagnostic, and provides a concrete staged transition involving data sourcing, dual measurement, and launch gating.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf__judge-claude-sonnet-5__f58a0a6c",
+  "run_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:45:34.479348+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the stakeholder's point as evidence 'the engineering metric has a known blind spot that has already cost the org a launch,' rather than a reason to trust the old metric going forward."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly rejects sunk-cost logic, stating that keeping the old metric 'because the infrastructure is convenient would be choosing measurement comfort over the thing the product actually needs to do,' and frames repurposing the old work rather than defending it."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats 'no ground truth exists yet' as 'a real constraint, not a rhetorical objection' and proposes sourcing a fast, imperfect proxy sample before launch rather than assuming a clean switch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It gestures at behavior-shaping by noting the explicit bar 'gives the engineering team a target they can actually build toward,' but the framing is mostly scoped to 'this launch' judgment rather than explicitly discussing how the primary metric will steer ongoing optimization beyond this one decision."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific, sequenced plan\u2014customer-outcome metric as primary via proxy ground truth, engineering metric retained as diagnostic, parallel run for one cycle\u2014rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly reframes the stakeholder's point as evidence 'the engineering metric has a known blind spot that has already cost the org a launch,' rather than a reason to trust the old metric going forward.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects sunk-cost logic, stating that keeping the old metric 'because the infrastructure is convenient would be choosing measurement comfort over the thing the product actually needs to do,' and frames repurposing the old work rather than defending it.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response treats 'no ground truth exists yet' as 'a real constraint, not a rhetorical objection' and proposes sourcing a fast, imperfect proxy sample before launch rather than assuming a clean switch.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"It gestures at behavior-shaping by noting the explicit bar 'gives the engineering team a target they can actually build toward,' but the framing is mostly scoped to 'this launch' judgment rather than explicitly discussing how the primary metric will steer ongoing optimization beyond this one decision.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific, sequenced plan\u2014customer-outcome metric as primary via proxy ground truth, engineering metric retained as diagnostic, parallel run for one cycle\u2014rather than just listing tradeoffs.\"}\n  ]\n}"
+}

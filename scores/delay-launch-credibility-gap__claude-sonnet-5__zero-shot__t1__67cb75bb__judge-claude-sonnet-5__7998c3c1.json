@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb__judge-claude-sonnet-5__7998c3c1",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:41:20.358056+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly cites the workshop ranking ('Not a top-five concern. The top one') and frames the commentator risk as 'a proxy for a real market risk, not just PR risk,' directly weighing these against the cost of delay/half-measures rather than treating credibility vaguely."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the director's prior rejection as concrete precedent: 'That's not a hypothetical risk \u2014 it's a precedent from someone with authority over this exact call,' and uses it to argue the middle-ground option is 'repeating a decision that's already been made once and reversed.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Rather than assuming the date is fixed, the response recommends going to leadership 'now \u2014 not at week 4 \u2014 and reframe the commitment,' explicitly pausing the 'full product launch' framing based on the severity of the credibility gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly proposes shipping 'the deterministic model, clearly scoped to the transaction types where it has 70%+ precision, presented as a targeted capability,' treating this narrower option as a real alternative to both the middle-ground proposal and full delay."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out concrete next steps: pausing the 'full product launch' framing, shipping the scoped deterministic model, publicly stating the newer workload class as a roadmap item with milestones, and reframing the conference narrative proactively rather than giving a bare verdict."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly cites the workshop ranking ('Not a top-five concern. The top one') and frames the commentator risk as 'a proxy for a real market risk, not just PR risk,' directly weighing these against the cost of delay/half-measures rather than treating credibility vaguely.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response treats the director's prior rejection as concrete precedent: 'That's not a hypothetical risk \u2014 it's a precedent from someone with authority over this exact call,' and uses it to argue the middle-ground option is 'repeating a decision that's already been made once and reversed.'\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"Rather than assuming the date is fixed, the response recommends going to leadership 'now \u2014 not at week 4 \u2014 and reframe the commitment,' explicitly pausing the 'full product launch' framing based on the severity of the credibility gap.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"met\", \"justification\": \"The response explicitly proposes shipping 'the deterministic model, clearly scoped to the transaction types where it has 70%+ precision, presented as a targeted capability,' treating this narrower option as a real alternative to both the middle-ground proposal and full delay.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out concrete next steps: pausing the 'full product launch' framing, shipping the scoped deterministic model, publicly stating the newer workload class as a roadmap item with milestones, and reframing the conference narrative proactively rather than giving a bare verdict.\"}\n  ]\n}"
+}

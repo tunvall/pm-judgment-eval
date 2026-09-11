@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb__judge-gpt-5.6-sol__826f24ef",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:41:33.447891+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the cost of narrowing the public commitment with the greater risk of being \u201cpublicly dismantled,\u201d grounding that judgment in both the commentator\u2019s known behavior and the workshop ranking the gap as the top credibility concern."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It calls the skip-level rejection \u201ca precedent from someone with authority over this exact call\u201d and repeatedly treats it as one of the two strongest signals that the proposed half-measure will not be accepted."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response acknowledges \u201ca public commitment on the books\u201d and the discomfort of narrowing it, but concludes that proactively reframing the conference appearance is less costly than shipping an indefensible product."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It proposes a targeted launch limited to the deterministic model\u2019s supported transaction types, but calls that scope defensible based mainly on 70%+ precision despite explicitly acknowledging that recall is low. It does not establish that both precision and recall clear an appropriate bar for even this narrower launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It gives concrete communication steps\u2014escalate immediately, pause the full-product framing, disclose limitations, and retain the conference slot\u2014but the technical follow-through is only a placeholder roadmap promise (\u201cbuilding X, expect Y by Z\u201d), without a specific month-ahead work or validation plan for closing the accuracy gap."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts the cost of narrowing the public commitment with the greater risk of being \u201cpublicly dismantled,\u201d grounding that judgment in both the commentator\u2019s known behavior and the workshop ranking the gap as the top credibility concern.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It calls the skip-level rejection \u201ca precedent from someone with authority over this exact call\u201d and repeatedly treats it as one of the two strongest signals that the proposed half-measure will not be accepted.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response acknowledges \u201ca public commitment on the books\u201d and the discomfort of narrowing it, but concludes that proactively reframing the conference appearance is less costly than shipping an indefensible product.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It proposes a targeted launch limited to the deterministic model\u2019s supported transaction types, but calls that scope defensible based mainly on 70%+ precision despite explicitly acknowledging that recall is low. It does not establish that both precision and recall clear an appropriate bar for even this narrower launch.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"partially_met\",\"justification\":\"It gives concrete communication steps\u2014escalate immediately, pause the full-product framing, disclose limitations, and retain the conference slot\u2014but the technical follow-through is only a placeholder roadmap promise (\u201cbuilding X, expect Y by Z\u201d), without a specific month-ahead work or validation plan for closing the accuracy gap.\"}]}"
+}

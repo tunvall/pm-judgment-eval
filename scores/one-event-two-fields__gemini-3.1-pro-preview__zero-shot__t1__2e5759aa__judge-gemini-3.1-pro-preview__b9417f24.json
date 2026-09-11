@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa__judge-gemini-3.1-pro-preview__b9417f24",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:52:37.980334+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly distinguishes the two by noting the reviewer is \"confusing the backend data model with the frontend user interface\" and explaining how the simple UI experience goal can be supported by a different backend mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response rejects Option 1 because it \"introduces a massive risk: silent data mutation\" and notes that changing the underlying meaning mid-lifecycle risks breaking downstream integrations that rely on the exact semantics."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate rejects Option 2 because forcing users to link two separate alerts causes \"duplicate alerts\" which lead to alert fatigue, directly factoring this risk into the recommendation."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate commits to a concrete recommendation upfront: \"Keep a single event with one lifecycle and add a second field specifically for the newer, more precise estimate, leaving the original field's meaning untouched.\""
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the reviewer's instinct for customer simplicity, validating it by promising to \"build the exact unified, simple user experience you are advocating for\" while explaining why a different backend mechanism is necessary."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly distinguishes the two by noting the reviewer is \\\"confusing the backend data model with the frontend user interface\\\" and explaining how the simple UI experience goal can be supported by a different backend mechanism.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects Option 1 because it \\\"introduces a massive risk: silent data mutation\\\" and notes that changing the underlying meaning mid-lifecycle risks breaking downstream integrations that rely on the exact semantics.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects Option 2 because forcing users to link two separate alerts causes \\\"duplicate alerts\\\" which lead to alert fatigue, directly factoring this risk into the recommendation.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate commits to a concrete recommendation upfront: \\\"Keep a single event with one lifecycle and add a second field specifically for the newer, more precise estimate, leaving the original field's meaning untouched.\\\"\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses the reviewer's instinct for customer simplicity, validating it by promising to \\\"build the exact unified, simple user experience you are advocating for\\\" while explaining why a different backend mechanism is necessary.\"\n    }\n  ]\n}"
+}

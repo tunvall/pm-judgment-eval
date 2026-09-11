@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa__judge-claude-sonnet-5__e5603306",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t1__2e5759aa",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:45:19.507165+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the reviewer's underlying goal (customer simplicity, achievable via UI) from their proposed mechanism (single overwritten field), stating they are 'confusing the backend data model with the frontend user interface' and that the same experience can be delivered without adopting Option 1's mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly flags 'silent data mutation' risk to 'millions of existing records and downstream external systems' and states 'A field's semantic contract with an API consumer should never change silently,' weighing this against the simpler mental model."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response notes Option 2 'fundamentally fails the user experience test' due to duplicate alerts causing 'alert fatigue, a primary churn driver,' and uses this to justify avoiding linked dual records."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to Option 3\u2014'a single event with one lifecycle and add a second field specifically for the newer, more precise estimate'\u2014rather than leaving the choice abstract."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than dismissing the reviewer, the response reframes their instinct as valid for the UI layer and proposes explicit framing to bring them on board: 'We are going to build the exact unified, simple user experience you are advocating for... but to ensure we don't break our customers' existing API integrations, we have to support that simple UI with a two-field data model on the backend.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the reviewer's underlying goal (customer simplicity, achievable via UI) from their proposed mechanism (single overwritten field), stating they are 'confusing the backend data model with the frontend user interface' and that the same experience can be delivered without adopting Option 1's mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"The response explicitly flags 'silent data mutation' risk to 'millions of existing records and downstream external systems' and states 'A field's semantic contract with an API consumer should never change silently,' weighing this against the simpler mental model.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response notes Option 2 'fundamentally fails the user experience test' due to duplicate alerts causing 'alert fatigue, a primary churn driver,' and uses this to justify avoiding linked dual records.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits clearly to Option 3\u2014'a single event with one lifecycle and add a second field specifically for the newer, more precise estimate'\u2014rather than leaving the choice abstract.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"Rather than dismissing the reviewer, the response reframes their instinct as valid for the UI layer and proposes explicit framing to bring them on board: 'We are going to build the exact unified, simple user experience you are advocating for... but to ensure we don't break our customers' existing API integrations, we have to support that simple UI with a two-field data model on the backend.'\"}\n  ]\n}"
+}

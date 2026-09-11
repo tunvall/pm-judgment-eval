@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd__judge-gemini-3.1-pro-preview__4d8acfbe",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:45:15.687622+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the credibility risk against the cost of delaying, noting that breaking a public date is 'painful, but a transparent delay is recoverable,' whereas shipping an indefensible accuracy story 'can permanently damage customer trust,' citing both the practitioner workshop ranking and the commentator's potential criticism."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly cites the prior internal decision, noting that 'the skip-level director has already rejected an even narrower launch on the same basis' and treating it as a 'substantive reason not to launch.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response tackles the conference date head-on, correctly framing it by stating that 'the conference commitment matters, but it is a sunk commitment\u2014not evidence that the product is ready.'"
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response treats the decision as a binary choice between substituting the middle-ground version or pausing the launch entirely. It does not explore whether a launch strictly limited to the subset of transactions with >70% precision could serve as a viable alternative."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a detailed five-step action plan that includes calling a go/no-go review, pivoting the conference presence to a 'technical preview' or progress update, and establishing evidence-based launch gates."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs the credibility risk against the cost of delaying, noting that breaking a public date is 'painful, but a transparent delay is recoverable,' whereas shipping an indefensible accuracy story 'can permanently damage customer trust,' citing both the practitioner workshop ranking and the commentator's potential criticism.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly cites the prior internal decision, noting that 'the skip-level director has already rejected an even narrower launch on the same basis' and treating it as a 'substantive reason not to launch.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response tackles the conference date head-on, correctly framing it by stating that 'the conference commitment matters, but it is a sunk commitment\u2014not evidence that the product is ready.'\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response treats the decision as a binary choice between substituting the middle-ground version or pausing the launch entirely. It does not explore whether a launch strictly limited to the subset of transactions with >70% precision could serve as a viable alternative.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a detailed five-step action plan that includes calling a go/no-go review, pivoting the conference presence to a 'technical preview' or progress update, and establishing evidence-based launch gates.\"\n    }\n  ]\n}\n```"
+}

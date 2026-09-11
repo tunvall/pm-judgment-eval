@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0__judge-claude-sonnet-5__d21e9881",
+  "run_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:49:12.731582+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'the research validates the goal, not the mechanism' and frames the core tension as distinguishing customer goal from proposed mechanism throughout."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly argues that overwriting breaks 'the implicit contract' relied on by 'millions of existing records and external integrations' and describes the failure mode of consumers acting on a value whose meaning shifted underneath them, going beyond just citing simplicity."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects Option Two because 'duplicate records for one event means downstream systems either have to know to de-duplicate... or customers see the same incident twice,' directly factoring this into the recommendation."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to Option Three and even adds concrete implementation details like naming fields 'precise_estimate' vs 'estimate' and documenting field lifecycle behavior."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response engages the reviewer's instinct directly, acknowledging 'the reviewer's instinct toward simplicity is right as a goal' while explaining why the mechanism fails, and proposes a specific reframing conversation rather than dismissing the reviewer outright."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'the research validates the goal, not the mechanism' and frames the core tension as distinguishing customer goal from proposed mechanism throughout.\"}, {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It explicitly argues that overwriting breaks 'the implicit contract' relied on by 'millions of existing records and external integrations' and describes the failure mode of consumers acting on a value whose meaning shifted underneath them, going beyond just citing simplicity.\"}, {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects Option Two because 'duplicate records for one event means downstream systems either have to know to de-duplicate... or customers see the same incident twice,' directly factoring this into the recommendation.\"}, {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits clearly to Option Three and even adds concrete implementation details like naming fields 'precise_estimate' vs 'estimate' and documenting field lifecycle behavior.\"}, {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"The response engages the reviewer's instinct directly, acknowledging 'the reviewer's instinct toward simplicity is right as a goal' while explaining why the mechanism fails, and proposes a specific reframing conversation rather than dismissing the reviewer outright.\"}]}"
+}

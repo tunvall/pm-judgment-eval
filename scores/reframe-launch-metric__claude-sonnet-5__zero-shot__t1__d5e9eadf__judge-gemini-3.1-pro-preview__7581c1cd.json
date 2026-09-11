@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf__judge-gemini-3.1-pro-preview__7581c1cd",
+  "run_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:45:59.157108+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response correctly identifies that the mapping-accuracy metric had a 'known blind spot' because it 'looked fine on paper' but failed to translate to customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate refuses to stick with the engineering metric just because 'the infrastructure is convenient,' explicitly avoiding the trap of making the team 'defend a sunk cost.'"
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the lack of ground truth data as a 'real constraint' and proposes manually sourcing a small, high-fidelity sample to use as a proxy in the interim."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes that changing the metric changes team behavior by noting it 'gives the engineering team a target they can actually build toward \u2014 same rigor, different destination.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a clear and concrete recommendation: make customer outcome the primary metric using a fast proxy, while retaining the engineering metric as a 'diagnostic/guardrail.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies that the mapping-accuracy metric had a 'known blind spot' because it 'looked fine on paper' but failed to translate to customer value.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate refuses to stick with the engineering metric just because 'the infrastructure is convenient,' explicitly avoiding the trap of making the team 'defend a sunk cost.'\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats the lack of ground truth data as a 'real constraint' and proposes manually sourcing a small, high-fidelity sample to use as a proxy in the interim.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes that changing the metric changes team behavior by noting it 'gives the engineering team a target they can actually build toward \u2014 same rigor, different destination.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a clear and concrete recommendation: make customer outcome the primary metric using a fast proxy, while retaining the engineering metric as a 'diagnostic/guardrail.'\"\n    }\n  ]\n}"
+}

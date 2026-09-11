@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528__alignment-claude-sonnet-5__6d0e7ed3",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t1__13954528",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:49:08.251881+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate made the customer-facing outcome metric primary and demoted mapping accuracy to a secondary guardrail/diagnostic, matching the historical decision to make the customer-facing metric primary while retaining the old metric as an internal diagnostic.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate made the customer-facing outcome metric primary and demoted mapping accuracy to a secondary guardrail/diagnostic, matching the historical decision to make the customer-facing metric primary while retaining the old metric as an internal diagnostic.\"\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf__judge-gpt-5.6-sol__937e4ff8",
+  "run_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t1__d5e9eadf",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:45:49.501594+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly cites that mapping accuracy \u201clooked fine on paper\u201d but failed to translate to customer value, calling this a \u201cknown blind spot\u201d and evidence for changing the primary metric."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly rejects retaining the old metric merely because its infrastructure is convenient, while sensibly repurposing that investment for diagnostics, regression testing, and guardrails."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that it cannot cleanly switch to a metric with no ground truth and proposes fast-sourcing a small set of real outcomes, then parallel-running both metrics during the transition."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explains that making the customer outcome bar concrete gives engineering \u201ca target they can actually build toward\u2014same rigor, different destination,\u201d recognizing that the primary metric directs future team effort."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends customer-facing outcome accuracy as primary using fast-sourced proxy ground truth, while retaining mapping accuracy as a diagnostic and guardrail through a timeboxed parallel run."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly cites that mapping accuracy \u201clooked fine on paper\u201d but failed to translate to customer value, calling this a \u201cknown blind spot\u201d and evidence for changing the primary metric.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It explicitly rejects retaining the old metric merely because its infrastructure is convenient, while sensibly repurposing that investment for diagnostics, regression testing, and guardrails.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response acknowledges that it cannot cleanly switch to a metric with no ground truth and proposes fast-sourcing a small set of real outcomes, then parallel-running both metrics during the transition.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"met\",\"justification\":\"It explains that making the customer outcome bar concrete gives engineering \u201ca target they can actually build toward\u2014same rigor, different destination,\u201d recognizing that the primary metric directs future team effort.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends customer-facing outcome accuracy as primary using fast-sourced proxy ground truth, while retaining mapping accuracy as a diagnostic and guardrail through a timeboxed parallel run.\"}]}"
+}

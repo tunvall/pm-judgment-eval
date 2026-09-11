@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd__judge-claude-sonnet-5__926e6ee0",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:44:29.605226+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the low precision/recall and 'no estimation capability for the newer transaction class' to the workshop's top-ranked credibility criterion, and explicitly frames the commentator's opinion as merely 'corroborating evidence at most' rather than the deciding factor, showing a real weighing of specific evidence."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly lists 'the skip-level director has already rejected an even narrower launch on the same basis' as one of the 'substantive reasons not to launch,' treating it as real organizational signal rather than an isolated data point."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response states the conference commitment 'is a sunk commitment\u2014not evidence that the product is ready' and recommends breaking the date, explicitly weighing commitment against the severity of the accuracy gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response acknowledges the existing 70%+ precision subset but dismisses it quickly ('applies to a small, selectively covered subset; low recall means that number does not represent the overall workload') without seriously exploring a scoped launch limited to that subset as a middle option distinct from full delay or the scope-only proposal."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete plan\u2014calling a go/no-go review with a decision memo, reshaping the conference presence into an honest progress update, setting evidence-based launch gates, and using the remaining month for validation and recovery planning\u2014well beyond a one-word verdict."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the low precision/recall and 'no estimation capability for the newer transaction class' to the workshop's top-ranked credibility criterion, and explicitly frames the commentator's opinion as merely 'corroborating evidence at most' rather than the deciding factor, showing a real weighing of specific evidence.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response explicitly lists 'the skip-level director has already rejected an even narrower launch on the same basis' as one of the 'substantive reasons not to launch,' treating it as real organizational signal rather than an isolated data point.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response states the conference commitment 'is a sunk commitment\u2014not evidence that the product is ready' and recommends breaking the date, explicitly weighing commitment against the severity of the accuracy gap.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response acknowledges the existing 70%+ precision subset but dismisses it quickly ('applies to a small, selectively covered subset; low recall means that number does not represent the overall workload') without seriously exploring a scoped launch limited to that subset as a middle option distinct from full delay or the scope-only proposal.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete plan\u2014calling a go/no-go review with a decision memo, reshaping the conference presence into an honest progress update, setting evidence-based launch gates, and using the remaining month for validation and recovery planning\u2014well beyond a one-word verdict.\"}\n  ]\n}"
+}

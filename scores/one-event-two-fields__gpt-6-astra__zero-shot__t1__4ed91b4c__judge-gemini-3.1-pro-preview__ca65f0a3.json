@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-astra__zero-shot__t1__4ed91b4c__judge-gemini-3.1-pro-preview__ca65f0a3",
+  "run_id": "one-event-two-fields__gpt-6-astra__zero-shot__t1__4ed91b4c",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:51:44.746815+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly separates the experience goal from the implementation, stating with the reviewer they would 'align on the goal while distinguishing it from the mechanism: the research validates a unified experience, not overwriting a field.'"
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate recognizes the risk to integrations, noting that 'silently substituting a different estimate could change downstream behavior even if the field\u2019s type stays the same.'"
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects the two-record approach because it 'introduces deduplication work and duplicate-alert risk, contrary to the customer preference.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate commits to a concrete recommendation ('one event with one lifecycle and two explicitly defined fields') and details a specific three-step sequence for how the fields are populated over time."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response addresses the reviewer's desire for customer simplicity by explaining how the UI 'can still be simple: one event page, one alert lifecycle' even if the underlying API preserves two distinct values."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly separates the experience goal from the implementation, stating with the reviewer they would 'align on the goal while distinguishing it from the mechanism: the research validates a unified experience, not overwriting a field.'\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the risk to integrations, noting that 'silently substituting a different estimate could change downstream behavior even if the field\u2019s type stays the same.'\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects the two-record approach because it 'introduces deduplication work and duplicate-alert risk, contrary to the customer preference.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate commits to a concrete recommendation ('one event with one lifecycle and two explicitly defined fields') and details a specific three-step sequence for how the fields are populated over time.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response addresses the reviewer's desire for customer simplicity by explaining how the UI 'can still be simple: one event page, one alert lifecycle' even if the underlying API preserves two distinct values.\"\n    }\n  ]\n}"
+}

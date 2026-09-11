@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t1__e764648d__judge-gpt-5.6-sol__e87ac884",
+  "run_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t1__e764648d",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:50:12.524653+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the validated goal from the proposed implementation: \u201cI agree with your goal completely, and I'm proposing a different mechanism to reach it,\u201d and suggests a presentation/API-layer unified estimate instead."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly characterizes overwriting as a \u201csilent semantic break\u201d affecting millions of records and potentially unknown consumers with thresholds, models, or reports, explaining why apparent simplicity does not justify changing the field's meaning."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explains that two linked records force every consumer to deduplicate and that integrations which fail to do so \u201cwill fire twice,\u201d directly contradicting the no-duplicate-alert customer preference."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly chooses option three: one event identity and lifecycle established by the fast pipeline, an unchanged original field, and a separately named precise-estimate field populated later."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response validates the reviewer's customer-simplicity instinct, then offers concrete alternative mechanisms\u2014a derived \u201ccurrent best estimate\u201d in the presentation/API layer and clear initial/refined labeling\u2014to achieve that goal without breaking stored semantics."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the validated goal from the proposed implementation: \u201cI agree with your goal completely, and I'm proposing a different mechanism to reach it,\u201d and suggests a presentation/API-layer unified estimate instead.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It directly characterizes overwriting as a \u201csilent semantic break\u201d affecting millions of records and potentially unknown consumers with thresholds, models, or reports, explaining why apparent simplicity does not justify changing the field's meaning.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"It explains that two linked records force every consumer to deduplicate and that integrations which fail to do so \u201cwill fire twice,\u201d directly contradicting the no-duplicate-alert customer preference.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It clearly chooses option three: one event identity and lifecycle established by the fast pipeline, an unchanged original field, and a separately named precise-estimate field populated later.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"The response validates the reviewer's customer-simplicity instinct, then offers concrete alternative mechanisms\u2014a derived \u201ccurrent best estimate\u201d in the presentation/API layer and clear initial/refined labeling\u2014to achieve that goal without breaking stored semantics.\"}]}"
+}

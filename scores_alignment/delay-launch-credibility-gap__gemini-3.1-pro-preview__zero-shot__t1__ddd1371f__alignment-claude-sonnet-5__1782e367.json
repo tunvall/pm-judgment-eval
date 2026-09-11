@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f__alignment-claude-sonnet-5__1782e367",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:48:50.801919+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate agrees to pause shipping the middle-ground identify-without-estimating version as GA, matching the historical rejection of that approach. However, unlike the historical decision to fully retarget a later event, the candidate still uses the conference slot to publicly announce a 'Technology Preview'/beta program, keeping some public deliverable tied to the original date rather than skipping the conference entirely.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate agrees to pause shipping the middle-ground identify-without-estimating version as GA, matching the historical rejection of that approach. However, unlike the historical decision to fully retarget a later event, the candidate still uses the conference slot to publicly announce a 'Technology Preview'/beta program, keeping some public deliverable tied to the original date rather than skipping the conference entirely.\"\n}"
+}

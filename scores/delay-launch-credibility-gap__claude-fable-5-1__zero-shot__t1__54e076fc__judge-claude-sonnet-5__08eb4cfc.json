@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc__judge-claude-sonnet-5__08eb4cfc",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:42:54.649944+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly cites the workshop ranking, the commentator's track record, and the skip-level precedent as three converging signals, and weighs them against the cost of delay ('a few uncomfortable conversations and some lost momentum')."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the skip-level director's earlier rejection as one of three convergent signals ('my own leadership... all converge on the same objection') and plans to escalate directly to that same director rather than dismissing the precedent."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response reframes the commitment itself ('The commitment we made was to launch something credible. Keeping the date while breaking the credibility isn't honoring the commitment') and explicitly argues the date should move rather than be treated as fixed."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response does examine launching just the deterministic subset ('70%+ precision on a small slice... low recall') and reasons through why it thinks that would still mislead users via extrapolated confidence, but it doesn't seriously explore whether a scoped launch restricted only to the well-covered transaction types (excluding the newer workloads entirely) could clear a defensible bar\u2014it moves quickly to rejecting any numeric launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete four-part plan: escalate now with a clear recommendation, repurpose the conference slot as a methodology preview, use the identifier internally with design partners to build labeled data, and set a new launch date tied to a measurable accuracy bar."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly cites the workshop ranking, the commentator's track record, and the skip-level precedent as three converging signals, and weighs them against the cost of delay ('a few uncomfortable conversations and some lost momentum').\"}, {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"It treats the skip-level director's earlier rejection as one of three convergent signals ('my own leadership... all converge on the same objection') and plans to escalate directly to that same director rather than dismissing the precedent.\"}, {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response reframes the commitment itself ('The commitment we made was to launch something credible. Keeping the date while breaking the credibility isn't honoring the commitment') and explicitly argues the date should move rather than be treated as fixed.\"}, {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response does examine launching just the deterministic subset ('70%+ precision on a small slice... low recall') and reasons through why it thinks that would still mislead users via extrapolated confidence, but it doesn't seriously explore whether a scoped launch restricted only to the well-covered transaction types (excluding the newer workloads entirely) could clear a defensible bar\u2014it moves quickly to rejecting any numeric launch.\"}, {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete four-part plan: escalate now with a clear recommendation, repurpose the conference slot as a methodology preview, use the identifier internally with design partners to build labeled data, and set a new launch date tied to a measurable accuracy bar.\"}]}"
+}

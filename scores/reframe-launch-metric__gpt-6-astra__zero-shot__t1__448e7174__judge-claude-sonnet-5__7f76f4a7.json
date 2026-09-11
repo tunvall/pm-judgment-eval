@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t1__448e7174__judge-claude-sonnet-5__7f76f4a7",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t1__448e7174",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:46:18.443425+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The earlier paused launch is a warning\u2014not proof\u2014that good mapping accuracy is insufficient' and rejects the assumption that continued optimization on the old metric would resolve the gap, directly engaging with the evidence that a good-looking metric failed to predict customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates investment from decision criteria: 'their investment should influence how we transition, not determine what success means,' and frames the old metric as retained for diagnostic value rather than kept primary because of the year spent on it."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response dedicates a full step to making 'ground-truth collection a launch dependency' with a feasibility milestone, and explicitly states readiness is 'unproven' and release scope should be bounded 'until outcome data exists.'"
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response gestures at this by noting 'another year of optimization against [the old metric] would not resolve that gap' and framing the change as 'extending the quality model from component correctness to customer usefulness,' but it never explicitly connects primary-metric choice to what the team will optimize for going forward beyond this launch's scoring."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation\u2014customer-facing metric as primary, mapping accuracy as diagnostic guardrail\u2014with a concrete four-step transition plan including a bounded validation pilot before general availability."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The earlier paused launch is a warning\u2014not proof\u2014that good mapping accuracy is insufficient' and rejects the assumption that continued optimization on the old metric would resolve the gap, directly engaging with the evidence that a good-looking metric failed to predict customer value.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates investment from decision criteria: 'their investment should influence how we transition, not determine what success means,' and frames the old metric as retained for diagnostic value rather than kept primary because of the year spent on it.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response dedicates a full step to making 'ground-truth collection a launch dependency' with a feasibility milestone, and explicitly states readiness is 'unproven' and release scope should be bounded 'until outcome data exists.'\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at this by noting 'another year of optimization against [the old metric] would not resolve that gap' and framing the change as 'extending the quality model from component correctness to customer usefulness,' but it never explicitly connects primary-metric choice to what the team will optimize for going forward beyond this launch's scoring.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation\u2014customer-facing metric as primary, mapping accuracy as diagnostic guardrail\u2014with a concrete four-step transition plan including a bounded validation pilot before general availability.\"}\n  ]\n}"
+}

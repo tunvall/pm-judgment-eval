@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd__alignment-claude-sonnet-5__34ff93b6",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:45:47.628864+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommended pausing the launch rather than shipping the scope-only middle-ground version, citing credibility risk and the need to use remaining time for real validation/progress\u2014closely matching the historical decision to pause entirely and retarget a later event instead of shipping the partial solution.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommended pausing the launch rather than shipping the scope-only middle-ground version, citing credibility risk and the need to use remaining time for real validation/progress\u2014closely matching the historical decision to pause entirely and retarget a later event instead of shipping the partial solution.\"\n}"
+}

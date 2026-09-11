@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0__judge-gpt-5.6-sol__9407de08",
+  "run_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:49:19.446538+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes \u201cthe customer goal (one event, one alert, no confusion)\u201d from \u201cthe proposed mechanism (overwrite the field)\u201d and states that the research validates only the former."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It emphasizes that millions of records and integrations rely on the field\u2019s current semantics and explains that overwriting would create a timing-dependent meaning that silently breaks the existing contract."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects linked duplicate records because downstream systems may not understand the linkage or deduplicate, causing customers to see two alerts for one incident."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to Option Three: one event and lifecycle, an unchanged original field, and a separately named refined field such as `precise_estimate` that is populated later."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It validates the reviewer\u2019s customer-simplicity goal while arguing that overwriting merely hides complexity, then offers a mechanism that delivers the same unified experience without breaking integrations."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly distinguishes \u201cthe customer goal (one event, one alert, no confusion)\u201d from \u201cthe proposed mechanism (overwrite the field)\u201d and states that the research validates only the former.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"It emphasizes that millions of records and integrations rely on the field\u2019s current semantics and explains that overwriting would create a timing-dependent meaning that silently breaks the existing contract.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects linked duplicate records because downstream systems may not understand the linkage or deduplicate, causing customers to see two alerts for one incident.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"It commits to Option Three: one event and lifecycle, an unchanged original field, and a separately named refined field such as `precise_estimate` that is populated later.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"It validates the reviewer\u2019s customer-simplicity goal while arguing that overwriting merely hides complexity, then offers a mechanism that delivers the same unified experience without breaking integrations.\"\n    }\n  ]\n}"
+}

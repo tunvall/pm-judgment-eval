@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t1__842962f7__alignment-claude-sonnet-5__6795303b",
+  "run_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t1__842962f7",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:48:31.176103+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's Plan B\u2014adding a narrowly scoped, one-sentence disclosure to the paid-path documentation before launch\u2014matches the historical decision, but the candidate ranks this as a fallback rather than the primary choice, preferring instead to launch without disclosure and absorb costs temporarily (Plan A) as the 'optimal solution.' This makes the match partial rather than exact.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's Plan B\u2014adding a narrowly scoped, one-sentence disclosure to the paid-path documentation before launch\u2014matches the historical decision, but the candidate ranks this as a fallback rather than the primary choice, preferring instead to launch without disclosure and absorb costs temporarily (Plan A) as the 'optimal solution.' This makes the match partial rather than exact.\"\n}"
+}

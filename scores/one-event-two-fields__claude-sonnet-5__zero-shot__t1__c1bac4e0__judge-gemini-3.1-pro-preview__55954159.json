@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0__judge-gemini-3.1-pro-preview__55954159",
+  "run_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t1__c1bac4e0",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:49:27.457120+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states, 'The core tension here is between two things that look similar but aren't: the *customer goal*... and the *proposed mechanism*... The research validates the goal, not the mechanism.'"
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate rightly rejects Option One because it would 'silently redefine what the field means' and 'break the implicit contract' that millions of existing records and external integrations rely on."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects Option Two because creating two records 'means downstream systems either have to know to de-duplicate... or customers see the same incident twice,' which fails the user-facing requirement."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate firmly recommends Option Three, specifying a 'single event, single lifecycle, additional field for the refined estimate' and ensuring the original field is never redefined."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response validates the reviewer's underlying instinct ('The reviewer's instinct toward simplicity is right as a goal') and proposes reframing the conversation to align on the shared goal while rejecting the specific mechanism."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states, 'The core tension here is between two things that look similar but aren't: the *customer goal*... and the *proposed mechanism*... The research validates the goal, not the mechanism.'\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rightly rejects Option One because it would 'silently redefine what the field means' and 'break the implicit contract' that millions of existing records and external integrations rely on.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects Option Two because creating two records 'means downstream systems either have to know to de-duplicate... or customers see the same incident twice,' which fails the user-facing requirement.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate firmly recommends Option Three, specifying a 'single event, single lifecycle, additional field for the refined estimate' and ensuring the original field is never redefined.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response validates the reviewer's underlying instinct ('The reviewer's instinct toward simplicity is right as a goal') and proposes reframing the conversation to align on the shared goal while rejecting the specific mechanism.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc__judge-gemini-3.1-pro-preview__95f8a5d5",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:43:24.351032+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the high cost of launching an indefensible product where 'the category forms its opinion of us on our weakest work' against the minor cost of 'a few uncomfortable conversations.' It directly cites both the practitioner workshop ranking and the commentator's track record as concrete evidence of this credibility risk."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response correctly identifies that 'the skip-level director already declined a narrower version for that reason' and treats this precedent as a definitive signal from leadership rather than a data point to ignore."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly rejects the idea that the commitment mandates launching a flawed product, concluding that 'Keeping the date while breaking the credibility isn't honoring the commitment; it's honoring the calendar.'"
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively evaluates whether to ship a version based only on the subset of workable transactions, but rejects it because low recall and silence on newer transactions would cause users to 'extrapolate the confidence to the whole product' and view it as unreliable."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response offers a detailed four-step action plan, including escalating to leadership, converting the conference commitment into an honest 'methodology preview,' using the engineering proposal internally to build labeled data, and setting a new metric-driven launch date."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly contrasts the high cost of launching an indefensible product where 'the category forms its opinion of us on our weakest work' against the minor cost of 'a few uncomfortable conversations.' It directly cites both the practitioner workshop ranking and the commentator's track record as concrete evidence of this credibility risk.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies that 'the skip-level director already declined a narrower version for that reason' and treats this precedent as a definitive signal from leadership rather than a data point to ignore.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly rejects the idea that the commitment mandates launching a flawed product, concluding that 'Keeping the date while breaking the credibility isn't honoring the commitment; it's honoring the calendar.'\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively evaluates whether to ship a version based only on the subset of workable transactions, but rejects it because low recall and silence on newer transactions would cause users to 'extrapolate the confidence to the whole product' and view it as unreliable.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response offers a detailed four-step action plan, including escalating to leadership, converting the conference commitment into an honest 'methodology preview,' using the engineering proposal internally to build labeled data, and setting a new metric-driven launch date.\"\n    }\n  ]\n}\n```"
+}

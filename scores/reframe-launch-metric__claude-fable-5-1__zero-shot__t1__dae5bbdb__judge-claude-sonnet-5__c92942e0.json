@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb__judge-claude-sonnet-5__c92942e0",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:46:34.070556+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly treats the earlier pause as 'direct evidence the old metric fails as a proxy for what we care about' and argues judging this launch on it again would be 'repeating a known error with a known outcome.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly labels the year of investment and infrastructure as 'sunk costs' that 'argue for reusing the infrastructure, not for letting it choose the success criterion,' directly refusing to let past effort dictate the primary metric."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats sourcing ground truth as 'a gating workstream' and lays out a concrete interim plan (small hand-audited sample, cheapest authoritative source, provisional narrow launch with instrumentation) rather than assuming an immediate clean switch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response reframes the old team's work as 'promoted to the explanatory layer' and discusses reporting both metrics going forward, which implies future behavior shaping, but it never explicitly states the general principle that whichever metric is primary will shape what the team optimizes for beyond this single launch's scoring."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific primary metric (customer-facing outcome) with the old metric retained as diagnostic, and lays out a numbered transition plan (define metric, source ground truth, reuse infrastructure, gate launch) rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly treats the earlier pause as 'direct evidence the old metric fails as a proxy for what we care about' and argues judging this launch on it again would be 'repeating a known error with a known outcome.'\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly labels the year of investment and infrastructure as 'sunk costs' that 'argue for reusing the infrastructure, not for letting it choose the success criterion,' directly refusing to let past effort dictate the primary metric.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response treats sourcing ground truth as 'a gating workstream' and lays out a concrete interim plan (small hand-audited sample, cheapest authoritative source, provisional narrow launch with instrumentation) rather than assuming an immediate clean switch.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response reframes the old team's work as 'promoted to the explanatory layer' and discusses reporting both metrics going forward, which implies future behavior shaping, but it never explicitly states the general principle that whichever metric is primary will shape what the team optimizes for beyond this single launch's scoring.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific primary metric (customer-facing outcome) with the old metric retained as diagnostic, and lays out a numbered transition plan (define metric, source ground truth, reuse infrastructure, gate launch) rather than just listing tradeoffs.\"}\n  ]\n}"
+}

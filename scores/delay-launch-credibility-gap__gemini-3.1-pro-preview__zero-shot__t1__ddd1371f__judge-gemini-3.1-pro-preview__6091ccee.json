@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f__judge-gemini-3.1-pro-preview__6091ccee",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:48:31.404406+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs credibility against delay, noting that getting 'publicly eviscerated by a major industry voice on launch day' is worse than being 'criticized for being late' and cites the workshop's finding on newer workloads."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes the skip-level director's previous veto of a narrow version, stating that pushing a flawed version forward 'ignores a direct internal mandate on product quality' and using it to align on risk tolerance."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response concludes that a public commitment does not justify a flawed GA launch, opting to 'pause the General Availability (GA) launch' because doing otherwise would be 'product suicide'."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The candidate does not explore whether launching only the subset of transactions with >70% precision could form a defensible narrower GA scope, instead jumping straight to a beta for the entire product."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a very concrete next step, including specific messaging for pivoting the conference commitment to a 'Technology Preview' and repurposing the engineering build to gather beta tester data."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs credibility against delay, noting that getting 'publicly eviscerated by a major industry voice on launch day' is worse than being 'criticized for being late' and cites the workshop's finding on newer workloads.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the skip-level director's previous veto of a narrow version, stating that pushing a flawed version forward 'ignores a direct internal mandate on product quality' and using it to align on risk tolerance.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response concludes that a public commitment does not justify a flawed GA launch, opting to 'pause the General Availability (GA) launch' because doing otherwise would be 'product suicide'.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The candidate does not explore whether launching only the subset of transactions with >70% precision could form a defensible narrower GA scope, instead jumping straight to a beta for the entire product.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a very concrete next step, including specific messaging for pivoting the conference commitment to a 'Technology Preview' and repurposing the engineering build to gather beta tester data.\"\n    }\n  ]\n}\n```"
+}

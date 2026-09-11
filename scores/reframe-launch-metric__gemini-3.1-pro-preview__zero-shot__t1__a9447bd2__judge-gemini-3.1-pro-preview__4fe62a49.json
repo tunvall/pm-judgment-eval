@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t1__a9447bd2__judge-gemini-3.1-pro-preview__4fe62a49",
+  "run_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t1__a9447bd2",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:57:57.576467+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly highlights the senior engineer's warning, noting that \"optimizing solely for the engineering metric has already caused a previous launch to fail\" and risks building something \"perfectly engineered but completely useless to the customer.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate avoids the sunk cost fallacy by deciding to make the new customer-facing metric primary, while safely downgrading the heavily-invested engineering metric to a \"diagnostic\" health check rather than keeping it as the success measure."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the lack of ground-truth data by proposing a \"Private Beta / Early Adopter launch\" specifically designed to manually partner with customers and source this missing data in the interim."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that metrics drive team focus by noting that past optimization for the engineering metric caused failures, and explicitly planning for the team to transition \"their optimization efforts toward the customer-facing metric incrementally.\""
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a very concrete, actionable recommendation: making the customer-facing metric primary for overall success, while using the existing engineering-facing metric as a release gate for a beta launch."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly highlights the senior engineer's warning, noting that \\\"optimizing solely for the engineering metric has already caused a previous launch to fail\\\" and risks building something \\\"perfectly engineered but completely useless to the customer.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids the sunk cost fallacy by deciding to make the new customer-facing metric primary, while safely downgrading the heavily-invested engineering metric to a \\\"diagnostic\\\" health check rather than keeping it as the success measure.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses the lack of ground-truth data by proposing a \\\"Private Beta / Early Adopter launch\\\" specifically designed to manually partner with customers and source this missing data in the interim.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges that metrics drive team focus by noting that past optimization for the engineering metric caused failures, and explicitly planning for the team to transition \\\"their optimization efforts toward the customer-facing metric incrementally.\\\"\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a very concrete, actionable recommendation: making the customer-facing metric primary for overall success, while using the existing engineering-facing metric as a release gate for a beta launch.\"\n    }\n  ]\n}\n```"
+}

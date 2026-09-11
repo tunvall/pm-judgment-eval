@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f__judge-gpt-5.6-sol__e5100d1c",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t1__ddd1371f",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:48:15.182929+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts conference-delay criticism with the reputational cost of launching a half-measure, citing both the workshop\u2019s ranking of newer-workload accuracy and the commentator\u2019s history of attacking such launches: \u201cIt is better to be criticized for being late than to be branded as \u2018snake oil\u2019 or useless.\u201d"
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the skip-level director\u2019s earlier veto as a direct indication of leadership\u2019s quality bar and risk tolerance, and proposes taking the pivot plan back to that director immediately."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response refuses to let the conference date force an indefensible GA launch, instead preserving a conference presence through a technology preview and design-partner program."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "It does not assess whether a public launch restricted to transaction types with sufficiently defensible precision and recall could work; it moves directly from rejecting the middle-ground build to pausing GA and offering a closed beta."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete plan: halt GA, announce a private beta or technology preview, use the identification build as beta infrastructure, gather design-partner data to develop and validate quantitative models, and align the messaging with the skip-level director."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts conference-delay criticism with the reputational cost of launching a half-measure, citing both the workshop\u2019s ranking of newer-workload accuracy and the commentator\u2019s history of attacking such launches: \u201cIt is better to be criticized for being late than to be branded as \u2018snake oil\u2019 or useless.\u201d\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It treats the skip-level director\u2019s earlier veto as a direct indication of leadership\u2019s quality bar and risk tolerance, and proposes taking the pivot plan back to that director immediately.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response refuses to let the conference date force an indefensible GA launch, instead preserving a conference presence through a technology preview and design-partner program.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"not_met\",\"justification\":\"It does not assess whether a public launch restricted to transaction types with sufficiently defensible precision and recall could work; it moves directly from rejecting the middle-ground build to pausing GA and offering a closed beta.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete plan: halt GA, announce a private beta or technology preview, use the identification build as beta infrastructure, gather design-partner data to develop and validate quantitative models, and align the messaging with the skip-level director.\"}]}"
+}

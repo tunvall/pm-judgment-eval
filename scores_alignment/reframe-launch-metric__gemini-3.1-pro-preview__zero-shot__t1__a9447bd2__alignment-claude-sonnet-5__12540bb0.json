@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t1__a9447bd2__alignment-claude-sonnet-5__12540bb0",
+  "run_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t1__a9447bd2",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:50:24.323722+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate makes the customer-facing outcome metric the primary success measure and explicitly re-frames the old engineering metric as a secondary 'diagnostic' rather than a success target, matching the historical decision. The added transition mechanics (beta gating, data sourcing) are elaboration, not a divergence from the core metric prioritization.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate makes the customer-facing outcome metric the primary success measure and explicitly re-frames the old engineering metric as a secondary 'diagnostic' rather than a success target, matching the historical decision. The added transition mechanics (beta gating, data sourcing) are elaboration, not a divergence from the core metric prioritization.\"\n}\n```"
+}

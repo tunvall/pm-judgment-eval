@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t1__c6816c8e__judge-claude-sonnet-5__33e73faf",
+  "run_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t1__c6816c8e",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:46:10.792360+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the commentator's likely reaction ('a reputational warning, not the deciding factor') against the workshop-ranked accuracy concern ('the customer evidence is the stronger reason to stop'), using the specific evidence given rather than a vague notion of credibility."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly invokes the prior rejection as binding context: 'Given the previous rejection, I would not treat another reduced-scope version as implicitly approved,' treating it as real organizational signal rather than a discardable data point."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response recommends pausing the launch and resetting the commitment despite the public promise, arguing 'meeting the date with a product that fails the audience's most important credibility test risks a deeper loss of trust,' explicitly subordinating the date to defensibility."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response gestures at a narrower option ('a separately approved research preview or limited pilot' for identification-only) but frames it mainly as a fallback research artifact rather than seriously evaluating a launch scoped to the transaction types where the 70% precision approach already applies, and explicitly resists repeating any 'reduced-scope version.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete sequence: escalate with a decision memo within days, define evidence-based launch criteria, time-box feasibility work on new workloads during the month, and reset the conference commitment with clear customer/partner communication."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly weighs the commentator's likely reaction ('a reputational warning, not the deciding factor') against the workshop-ranked accuracy concern ('the customer evidence is the stronger reason to stop'), using the specific evidence given rather than a vague notion of credibility.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response explicitly invokes the prior rejection as binding context: 'Given the previous rejection, I would not treat another reduced-scope version as implicitly approved,' treating it as real organizational signal rather than a discardable data point.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response recommends pausing the launch and resetting the commitment despite the public promise, arguing 'meeting the date with a product that fails the audience's most important credibility test risks a deeper loss of trust,' explicitly subordinating the date to defensibility.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at a narrower option ('a separately approved research preview or limited pilot' for identification-only) but frames it mainly as a fallback research artifact rather than seriously evaluating a launch scoped to the transaction types where the 70% precision approach already applies, and explicitly resists repeating any 'reduced-scope version.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete sequence: escalate with a decision memo within days, define evidence-based launch criteria, time-box feasibility work on new workloads during the month, and reset the conference commitment with clear customer/partner communication.\"}\n  ]\n}"
+}

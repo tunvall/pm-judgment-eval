@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc__alignment-claude-sonnet-5__1fd017fd",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t1__54e076fc",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:43:42.380876+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's decision \u2014 pause the estimation launch, reject the middle-ground identify-without-estimate version, and reset the conference commitment to use the extra time on the harder accuracy problem \u2014 matches the historical decision to pause the launch entirely and retarget a later event for the same credibility reasons. Both explicitly weigh public criticism of a partial solution as costlier than missing the date.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's decision \\u2014 pause the estimation launch, reject the middle-ground identify-without-estimate version, and reset the conference commitment to use the extra time on the harder accuracy problem \\u2014 matches the historical decision to pause the launch entirely and retarget a later event for the same credibility reasons. Both explicitly weigh public criticism of a partial solution as costlier than missing the date.\"\n}"
+}

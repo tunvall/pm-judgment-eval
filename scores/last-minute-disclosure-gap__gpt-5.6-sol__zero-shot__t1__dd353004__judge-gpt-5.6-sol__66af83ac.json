@@ -1,0 +1,52 @@
+{
+  "score_id": "last-minute-disclosure-gap__gpt-5.6-sol__zero-shot__t1__dd353004__judge-gpt-5.6-sol__66af83ac",
+  "run_id": "last-minute-disclosure-gap__gpt-5.6-sol__zero-shot__t1__dd353004",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:53:21.690087+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the paid path\u2019s \u201clow frequency...reduces exposure but does not eliminate the disclosure or customer-trust problem,\u201d and identifies legal, support, reputational, and trust harms from unexpected billing."
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It calls for disclosure \u201cat the point the paid path can occur\u201d and for describing any limitation accurately, rather than applying an undifferentiated warning that implies the common free path is charged."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The ordered plan shows some balancing by first trying to preserve launch while eliminating exposure, then delaying only if that fails. However, it largely labels the committed date and finalized materials as \u201csunk costs\u201d without explicitly examining the concrete costs of delay, so the tradeoff is not fully developed."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Before recommending delay, it proposes disabling only the paid-service path via a server-side flag, failing closed, or absorbing the charges so the free-path functionality can still launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides an actionable one-day go/no-go process involving legal, engineering, billing, documentation, support, and the launch owner, with specific changes, testing, telemetry, renewed legal approval, and clear conditions for postponement."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_dismiss_minority_path_risk\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the paid path\u2019s \u201clow frequency...reduces exposure but does not eliminate the disclosure or customer-trust problem,\u201d and identifies legal, support, reputational, and trust harms from unexpected billing.\"},{\"id\":\"avoids_overcorrecting_into_inaccurate_disclosure\",\"verdict\":\"met\",\"justification\":\"It calls for disclosure \u201cat the point the paid path can occur\u201d and for describing any limitation accurately, rather than applying an undifferentiated warning that implies the common free path is charged.\"},{\"id\":\"weighs_launch_delay_against_disclosure_gap\",\"verdict\":\"partially_met\",\"justification\":\"The ordered plan shows some balancing by first trying to preserve launch while eliminating exposure, then delaying only if that fails. However, it largely labels the committed date and finalized materials as \u201csunk costs\u201d without explicitly examining the concrete costs of delay, so the tradeoff is not fully developed.\"},{\"id\":\"considers_narrowly_scoped_fix_before_binary_choice\",\"verdict\":\"met\",\"justification\":\"Before recommending delay, it proposes disabling only the paid-service path via a server-side flag, failing closed, or absorbing the charges so the free-path functionality can still launch.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides an actionable one-day go/no-go process involving legal, engineering, billing, documentation, support, and the launch owner, with specific changes, testing, telemetry, renewed legal approval, and clear conditions for postponement.\"}]}"
+}

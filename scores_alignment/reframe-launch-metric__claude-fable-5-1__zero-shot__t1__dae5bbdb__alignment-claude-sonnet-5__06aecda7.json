@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb__alignment-claude-sonnet-5__06aecda7",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t1__dae5bbdb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:47:19.373528+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate made the customer-facing outcome metric primary for judging the launch, exactly matching the historical decision, and retained the mapping-accuracy metric as a secondary diagnostic tool rather than the launch criterion, consistent with the historical approach.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate made the customer-facing outcome metric primary for judging the launch, exactly matching the historical decision, and retained the mapping-accuracy metric as a secondary diagnostic tool rather than the launch criterion, consistent with the historical approach.\"\n}\n```"
+}

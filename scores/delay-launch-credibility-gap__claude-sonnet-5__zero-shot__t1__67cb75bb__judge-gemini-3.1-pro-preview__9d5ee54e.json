@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb__judge-gemini-3.1-pro-preview__9d5ee54e",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t1__67cb75bb",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:41:58.135479+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs credibility risk against a delay, noting that getting 'publicly dismantled at the conference does more damage to the launch narrative than a delay would' while citing both the commentator risk and the practitioner workshop ranking as concrete evidence."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the skip-level director's prior rejection as a definitive signal, stating 'That's not a hypothetical risk \u2014 it's a precedent from someone with authority over this exact call.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response acknowledges the public commitment but chooses to renegotiate it, advising to 'reframe the commitment' and pointing out that 'getting publicly dismantled at the conference does more damage' than adjusting the launch."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proposes shipping 'what's actually defensible: the deterministic model, clearly scoped to the transaction types where it has 70%+ precision, presented as a targeted capability.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response offers a detailed action plan, including going to the leadership chain to reframe the commitment, shipping the defensible deterministic model, and publicly announcing the newer workload class as a concrete roadmap item."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs credibility risk against a delay, noting that getting 'publicly dismantled at the conference does more damage to the launch narrative than a delay would' while citing both the commentator risk and the practitioner workshop ranking as concrete evidence.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats the skip-level director's prior rejection as a definitive signal, stating 'That's not a hypothetical risk \u2014 it's a precedent from someone with authority over this exact call.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the public commitment but chooses to renegotiate it, advising to 'reframe the commitment' and pointing out that 'getting publicly dismantled at the conference does more damage' than adjusting the launch.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response proposes shipping 'what's actually defensible: the deterministic model, clearly scoped to the transaction types where it has 70%+ precision, presented as a targeted capability.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response offers a detailed action plan, including going to the leadership chain to reframe the commitment, shipping the defensible deterministic model, and publicly announcing the newer workload class as a concrete roadmap item.\"\n    }\n  ]\n}"
+}

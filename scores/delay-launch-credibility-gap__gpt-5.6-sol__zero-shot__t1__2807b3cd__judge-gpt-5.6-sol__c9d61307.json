@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd__judge-gpt-5.6-sol__c9d61307",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t1__2807b3cd",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T10:44:47.380269+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly contrasts a \u201cpainful\u201d but \u201crecoverable\u201d delay with potentially permanent damage to customer trust, grounding that judgment in the workshop ranking and the commentator\u2019s track record as corroborating evidence."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It identifies the skip-level director\u2019s prior rejection as a \u201csubstantive\u201d reason not to launch and proposes involving that director in an immediate go/no-go review rather than treating the precedent as incidental."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the conference commitment \u201cmatters\u201d but is \u201cnot evidence that the product is ready,\u201d and recommends postponing availability while preserving an honest conference presence."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It notes that the existing estimator covers only a small subset with low recall and that an even narrower launch was previously rejected, which helps explain why narrowing may not be defensible. However, it does not explicitly assess whether a clearly bounded numeric-estimation launch for transaction types meeting defined precision and recall thresholds could be viable."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: call an immediate go/no-go review, communicate a transparent postponement, use the conference for a preview, define evidence-based launch gates, and spend the remaining month on validation and recovery planning."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly contrasts a \u201cpainful\u201d but \u201crecoverable\u201d delay with potentially permanent damage to customer trust, grounding that judgment in the workshop ranking and the commentator\u2019s track record as corroborating evidence.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It identifies the skip-level director\u2019s prior rejection as a \u201csubstantive\u201d reason not to launch and proposes involving that director in an immediate go/no-go review rather than treating the precedent as incidental.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the conference commitment \u201cmatters\u201d but is \u201cnot evidence that the product is ready,\u201d and recommends postponing availability while preserving an honest conference presence.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It notes that the existing estimator covers only a small subset with low recall and that an even narrower launch was previously rejected, which helps explain why narrowing may not be defensible. However, it does not explicitly assess whether a clearly bounded numeric-estimation launch for transaction types meeting defined precision and recall thresholds could be viable.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: call an immediate go/no-go review, communicate a transparent postponement, use the conference for a preview, define evidence-based launch gates, and spend the remaining month on validation and recovery planning.\"}]}"
+}

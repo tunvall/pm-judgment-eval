@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t1__8a9fc4eb__alignment-claude-sonnet-5__6fce3ef5",
+  "run_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t1__8a9fc4eb",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-11T12:50:02.932855+00:00",
+  "git_commit": "42edce612d3a897db7671a0910cc6ec52fb16472",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The historical decision was to ship on time with narrowly scoped disclosure language added for the rare paid-path scenario. The candidate's primary preference is to gate/disable the paid path technically (avoiding the need for disclosure) and only falls back to a 'minimal viable disclosure fix' as a parallel/secondary option, so while targeted disclosure language does appear in the plan, it's not the candidate's leading solution as it was historically.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The historical decision was to ship on time with narrowly scoped disclosure language added for the rare paid-path scenario. The candidate's primary preference is to gate/disable the paid path technically (avoiding the need for disclosure) and only falls back to a 'minimal viable disclosure fix' as a parallel/secondary option, so while targeted disclosure language does appear in the plan, it's not the candidate's leading solution as it was historically.\"\n}"
+}
