@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8__judge-gpt-5.6-sol__87a6c971",
+  "run_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:58:16.480368+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response calls the signal \u201cvalid and urgent\u201d but weighs it against the multi-quarter delay, existing functionality, and low-cost mitigation rather than accepting the blocker framing automatically."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes surfacing and hardening the undocumented suppress capability its first pre-launch action and explains that this directly addresses the repeated-alert complaint."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the underlying need\u2014\u201ccontrol over alert fatigue\u201d\u2014from the proposed solution of \u201cfull configurability,\u201d then assesses suppress functionality and threshold tuning as partial alternatives."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It acknowledges that mitigations may still be insufficient and that proceeding could create a customer-trust tradeoff, but it does not explicitly identify the scaling risk that fast-follow could prove wrong in hindsight if adoption and alert volume are high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends fast-follow rather than blocking, with a concrete plan to expose suppression, tune thresholds, commit to a dated roadmap, and revalidate the package with customers before launch."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response calls the signal \u201cvalid and urgent\u201d but weighs it against the multi-quarter delay, existing functionality, and low-cost mitigation rather than accepting the blocker framing automatically.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It makes surfacing and hardening the undocumented suppress capability its first pre-launch action and explains that this directly addresses the repeated-alert complaint.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the underlying need\u2014\u201ccontrol over alert fatigue\u201d\u2014from the proposed solution of \u201cfull configurability,\u201d then assesses suppress functionality and threshold tuning as partial alternatives.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It acknowledges that mitigations may still be insufficient and that proceeding could create a customer-trust tradeoff, but it does not explicitly identify the scaling risk that fast-follow could prove wrong in hindsight if adoption and alert volume are high.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends fast-follow rather than blocking, with a concrete plan to expose suppression, tune thresholds, commit to a dated roadmap, and revalidate the package with customers before launch.\"}]}"
+}

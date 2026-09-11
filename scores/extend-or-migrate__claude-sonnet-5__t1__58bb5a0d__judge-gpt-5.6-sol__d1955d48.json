@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-gpt-5.6-sol__d1955d48",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:08:19.559064+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says, \u201cThe disagreement is about sequencing, not direction,\u201d and separates agreement on the newer platform as the eventual destination from using this launch deadline to force migration now."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It relies on the technically derived \u201c2x gap with zero schedule margin\u201d and rejects the informal estimate because it ignores structural mismatches in routing, verification, destinations, and templates."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response recognizes added retirement work and migration debt, but it does not identify or weigh the inconsistent customer experience that could result from different products using different notification platforms during the interim."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the likely perception that deferral contradicts company strategy, arguing that the choice is about sequencing and proposing explicit leadership agreement that migration is \u201cdeferred, not cancelled.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the older platform for launch while separately scoping the migration, and adds concrete steps such as documenting mismatches, creating an abstraction layer, refining the estimate, and setting a target window."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says, \u201cThe disagreement is about sequencing, not direction,\u201d and separates agreement on the newer platform as the eventual destination from using this launch deadline to force migration now.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It relies on the technically derived \u201c2x gap with zero schedule margin\u201d and rejects the informal estimate because it ignores structural mismatches in routing, verification, destinations, and templates.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"The response recognizes added retirement work and migration debt, but it does not identify or weigh the inconsistent customer experience that could result from different products using different notification platforms during the interim.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly addresses the likely perception that deferral contradicts company strategy, arguing that the choice is about sequencing and proposing explicit leadership agreement that migration is \u201cdeferred, not cancelled.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends extending the older platform for launch while separately scoping the migration, and adds concrete steps such as documenting mismatches, creating an abstraction layer, refining the estimate, and setting a target window.\"}]}"
+}

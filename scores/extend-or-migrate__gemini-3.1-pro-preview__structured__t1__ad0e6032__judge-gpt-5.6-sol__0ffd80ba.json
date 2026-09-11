@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032__judge-gpt-5.6-sol__0ffd80ba",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:03:31.158554+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly supports the newer platform as the eventual destination while recommending the older platform only for this launch, describing the migration as \"honored, just deferred.\""
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It rejects the optimistic timeline based on the technical review, emphasizing that the routing, verification, destination, and templating mismatches double the estimate and leave \"zero schedule margin.\""
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses technical debt and duplicated work, but it does not identify or weigh the inconsistent customer experience that can result while different products or notification flows remain on different platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly names \"Strategic Misalignment/Optics,\" notes that leadership may see the choice as resisting company strategy, and proposes addressing this through transparent technical evidence and a firm migration commitment."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the older platform for this launch and provides concrete next steps: communicate the findings, execute the extension, and place the holistic migration on a future-quarter roadmap."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly supports the newer platform as the eventual destination while recommending the older platform only for this launch, describing the migration as \\\"honored, just deferred.\\\"\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"It rejects the optimistic timeline based on the technical review, emphasizing that the routing, verification, destination, and templating mismatches double the estimate and leave \\\"zero schedule margin.\\\"\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses technical debt and duplicated work, but it does not identify or weigh the inconsistent customer experience that can result while different products or notification flows remain on different platforms.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly names \\\"Strategic Misalignment/Optics,\\\" notes that leadership may see the choice as resisting company strategy, and proposes addressing this through transparent technical evidence and a firm migration commitment.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It clearly recommends extending the older platform for this launch and provides concrete next steps: communicate the findings, execute the extension, and place the holistic migration on a future-quarter roadmap.\"\n    }\n  ]\n}"
+}

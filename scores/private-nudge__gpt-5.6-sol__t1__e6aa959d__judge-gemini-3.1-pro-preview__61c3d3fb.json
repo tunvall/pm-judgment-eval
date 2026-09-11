@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d__judge-gemini-3.1-pro-preview__61c3d3fb",
+  "run_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:00:34.914132+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly links the lack of a hard deadline to the appropriate level of pressure, noting that the private approach avoids pushing the peer to rush when 'there is no hard deadline.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate names the social and reputational costs of public escalation, specifically aiming to avoid 'avoidable social pressure' and 'public shaming.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively rejects using the public nature of the commitment as an excuse for a visible forcing function, stating, 'I still would not use a public channel merely as a forcing function.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends a highly specific action by providing an exact script for a 'private, empathetic message' to send to the peer."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly links the lack of a hard deadline to the appropriate level of pressure, noting that the private approach avoids pushing the peer to rush when 'there is no hard deadline.'\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate names the social and reputational costs of public escalation, specifically aiming to avoid 'avoidable social pressure' and 'public shaming.'\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively rejects using the public nature of the commitment as an excuse for a visible forcing function, stating, 'I still would not use a public channel merely as a forcing function.'\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends a highly specific action by providing an exact script for a 'private, empathetic message' to send to the peer.\"\n    }\n  ]\n}"
+}

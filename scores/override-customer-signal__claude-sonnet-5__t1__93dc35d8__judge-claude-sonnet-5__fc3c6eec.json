@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8__judge-claude-sonnet-5__fc3c6eec",
+  "run_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:12:55.864232+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly treats the signal as valid but not decisive, stating it will 'respond to the underlying need... rather than the specific ask' and weighing the asymmetric cost of blocking against a broader customer base."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes surfacing the undocumented suppress capability its top action item, calling it 'the highest-leverage move available' that 'directly answers' the customer complaint."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates need from solution: 'The signal is about pain, not about a specific solution... The customers didn't say you must ship a full configuration framework \u2014 they said don't make us live with unmanageable alert volume.'"
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response builds in a validation step and escalation path if the mitigation isn't enough, but it never explicitly names the risk that shipping fast-follow could look like the wrong call in hindsight if adoption/complaints turn out high \u2014 the risk discussion focuses on process/negotiation rather than outcome risk."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific plan: surface the suppress feature, ship threshold tuning, communicate a dated roadmap, and re-confirm with the reviewer/focus group before finalizing, rather than just weighing pros and cons."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly treats the signal as valid but not decisive, stating it will 'respond to the underlying need... rather than the specific ask' and weighing the asymmetric cost of blocking against a broader customer base.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response makes surfacing the undocumented suppress capability its top action item, calling it 'the highest-leverage move available' that 'directly answers' the customer complaint.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates need from solution: 'The signal is about pain, not about a specific solution... The customers didn't say you must ship a full configuration framework \u2014 they said don't make us live with unmanageable alert volume.'\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response builds in a validation step and escalation path if the mitigation isn't enough, but it never explicitly names the risk that shipping fast-follow could look like the wrong call in hindsight if adoption/complaints turn out high \u2014 the risk discussion focuses on process/negotiation rather than outcome risk.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific plan: surface the suppress feature, ship threshold tuning, communicate a dated roadmap, and re-confirm with the reviewer/focus group before finalizing, rather than just weighing pros and cons.\"}\n  ]\n}"
+}

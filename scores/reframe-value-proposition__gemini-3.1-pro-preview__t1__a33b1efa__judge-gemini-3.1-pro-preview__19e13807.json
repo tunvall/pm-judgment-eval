@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__gemini-3.1-pro-preview__t1__a33b1efa__judge-gemini-3.1-pro-preview__19e13807",
+  "run_id": "reframe-value-proposition__gemini-3.1-pro-preview__t1__a33b1efa",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:48:58.265055+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response identifies the customer complaint data as a 'massive, validated pain point' and asserts that solving this actual customer problem is paramount, independent of the leadership announcement."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly notes that 'the 1+ year of engineering investment isn't wasted; it is simply being repositioned,' effectively separating the useful technical architecture from the flawed go-to-market story."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively chooses to halt the already-approved GTM strategy and explicitly states that it avoids the Sunk Cost Fallacy."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate engages directly with the peer's argument, stating they would 'admit they were right about precision being the ultimate differentiator, and ask to collaborate.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete and definitive recommendation to reframe the product ('Pivot the Value Proposition and GTM Narrative immediately') rather than merely listing potential options."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies the customer complaint data as a 'massive, validated pain point' and asserts that solving this actual customer problem is paramount, independent of the leadership announcement.\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly notes that 'the 1+ year of engineering investment isn't wasted; it is simply being repositioned,' effectively separating the useful technical architecture from the flawed go-to-market story.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively chooses to halt the already-approved GTM strategy and explicitly states that it avoids the Sunk Cost Fallacy.\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate engages directly with the peer's argument, stating they would 'admit they were right about precision being the ultimate differentiator, and ask to collaborate.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete and definitive recommendation to reframe the product ('Pivot the Value Proposition and GTM Narrative immediately') rather than merely listing potential options.\"\n    }\n  ]\n}"
+}

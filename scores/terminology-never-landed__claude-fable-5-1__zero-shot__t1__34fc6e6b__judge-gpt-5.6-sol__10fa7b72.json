@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b__judge-gpt-5.6-sol__10fa7b72",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:59:05.685264+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses \u201ca process failure presenting as a naming failure\u201d and says the recurring issue is that \u201cany name can be defeated,\u201d rather than treating round four as another search for the perfect label."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a named decider, required approver, deadline, agreed closing condition, and reopening only for genuinely new information. It also explicitly states that the costs of another cycle now exceed the cost of accepting a slightly imperfect name."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that prior objections were valid but creates a rule that the decision may reopen only for \u201cnew information\u2026not on a new opinion,\u201d using pre-ranked criteria to prevent lower-priority tradeoffs from triggering repeated re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the locked API field and product-family consistency as hard constraints, proposing a customer-facing name that \u201cdoesn't fight the locked API field\u201d rather than attempting to reopen the underlying architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than inventing another ad hoc candidate, it proposes ranked criteria, contextual explanatory copy, comparative testing, and reuse of a prior option where appropriate. It clearly explains that this differs from prior isolated validation because it selects the least-confusing acceptable option under agreed decision rules."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly diagnoses \u201ca process failure presenting as a naming failure\u201d and says the recurring issue is that \u201cany name can be defeated,\u201d rather than treating round four as another search for the perfect label.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a named decider, required approver, deadline, agreed closing condition, and reopening only for genuinely new information. It also explicitly states that the costs of another cycle now exceed the cost of accepting a slightly imperfect name.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response acknowledges that prior objections were valid but creates a rule that the decision may reopen only for \u201cnew information\u2026not on a new opinion,\u201d using pre-ranked criteria to prevent lower-priority tradeoffs from triggering repeated re-litigation.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It treats the locked API field and product-family consistency as hard constraints, proposing a customer-facing name that \u201cdoesn't fight the locked API field\u201d rather than attempting to reopen the underlying architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than inventing another ad hoc candidate, it proposes ranked criteria, contextual explanatory copy, comparative testing, and reuse of a prior option where appropriate. It clearly explains that this differs from prior isolated validation because it selects the least-confusing acceptable option under agreed decision rules.\"}]}"
+}

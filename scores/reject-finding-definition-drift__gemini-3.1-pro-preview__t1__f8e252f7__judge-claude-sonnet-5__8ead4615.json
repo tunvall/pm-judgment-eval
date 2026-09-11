@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7__judge-claude-sonnet-5__8ead4615",
+  "run_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:06:59.851506+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes 'product churn' from 'platform churn,' noting that leaving the mislabeling in creates a 'false equivalence' with real strategic implications, not just a technicality."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than relying on a footnote alone, the response rescopes the core claim itself ('rewrite the finding to reflect the truth') and explicitly reasons that this is necessary because literate executives could otherwise 'independently notice the same issue,' turning the document's credibility into 'a trap' if not corrected at the claim level."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The rationale section explicitly states 'Credibility is a PM's most valuable asset' and describes how a caught error would shift the conversation from strategy to 'analytical rigor,' directly weighing this against the value of the finding."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response states 'Under no circumstances would I leave the misleading claim in the document,' showing no reliance on the fact that analysis/drafting work was already sunk."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Gives concrete next steps: rewrite the claim to reference product churn, timebox 1-2 hours to attempt pulling real platform-level data, and reframe the surrounding narrative with specific example language about LTV and stickiness."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_definitional_mismatch_as_material\", \"verdict\": \"met\", \"justification\": \"The response explicitly distinguishes 'product churn' from 'platform churn,' noting that leaving the mislabeling in creates a 'false equivalence' with real strategic implications, not just a technicality.\"},\n    {\"id\": \"rejects_caveat_as_sufficient_fix\", \"verdict\": \"met\", \"justification\": \"Rather than relying on a footnote alone, the response rescopes the core claim itself ('rewrite the finding to reflect the truth') and explicitly reasons that this is necessary because literate executives could otherwise 'independently notice the same issue,' turning the document's credibility into 'a trap' if not corrected at the claim level.\"},\n    {\"id\": \"weighs_credibility_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"The rationale section explicitly states 'Credibility is a PM's most valuable asset' and describes how a caught error would shift the conversation from strategy to 'analytical rigor,' directly weighing this against the value of the finding.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response states 'Under no circumstances would I leave the misleading claim in the document,' showing no reliance on the fact that analysis/drafting work was already sunk.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Gives concrete next steps: rewrite the claim to reference product churn, timebox 1-2 hours to attempt pulling real platform-level data, and reframe the surrounding narrative with specific example language about LTV and stickiness.\"}\n  ]\n}"
+}

@@ -1,0 +1,104 @@
+id: reframe-launch-metric
+version: 1
+set: heldout
+
+title: Reframing which metric a launch gets judged on
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - evidence
+  - conviction
+
+difficulty: medium
+
+scenario: |
+  You are a product manager for a risk-exposure estimation product. It has been
+  measured internally on an engineering-facing metric: how precisely the system
+  maps raw transaction data onto its internal categorization scheme. You want to
+  reframe which metric this launch actually gets judged on, toward how close the
+  estimate comes to the number that matters to the customer, a customer-facing
+  outcome metric instead.
+
+  A senior engineering stakeholder points out that the old, engineering-facing
+  metric likely contributed to a different, earlier launch being paused: a
+  mapping-accuracy number that looked fine on paper hadn't translated into
+  something customers actually found useful. The existing evaluation
+  infrastructure is built entirely around the old metric, and switching primary
+  metrics would mean sourcing new ground-truth data reflecting real
+  customer-facing outcomes, which you don't yet have. The team that built the
+  current metric and its supporting infrastructure has invested roughly a year
+  optimizing against it.
+
+question: |
+  Which metric do you make primary for this launch, and how do you handle the
+  transition?
+
+constraints:
+  - No ground-truth data for the proposed customer-facing metric exists yet; it
+    would need to be sourced from scratch.
+  - Existing evaluation infrastructure is built entirely around the current
+    engineering-facing metric.
+  - The team that built the current metric and its infrastructure has invested
+    roughly a year optimizing against it.
+
+rubric:
+  criteria:
+    - id: distinguishes_metric_looks_good_from_correlates_with_customer_value
+      description: >
+        Recognizes the specific evidence that a metric performing well on paper
+        (accurate categorization mapping) previously failed to correlate with
+        customer-perceived value, and treats this as directly relevant rather
+        than assuming past mapping-accuracy performance predicts customer
+        outcomes going forward.
+      weight: 3
+
+    - id: avoids_sunk_cost_reasoning
+      description: >
+        Does not argue for keeping the engineering-facing metric primary solely
+        because of the infrastructure and time already invested in it.
+      weight: 3
+
+    - id: accounts_for_measurement_gap_before_committing
+      description: >
+        Explicitly addresses that no ground-truth data yet exists for the
+        proposed new primary metric, and what happens in the interim, rather
+        than treating the switch as immediately clean.
+      weight: 2
+
+    - id: recognizes_primary_metric_shapes_behavior
+      description: >
+        Explicitly reasons that whichever metric is primary will shape what the
+        team actually optimizes for going forward, not only how this one launch
+        gets scored retrospectively.
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a concrete recommendation, which metric is primary and how the
+        other is retained or used, rather than only listing the tradeoffs
+        between them.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Made the customer-facing outcome metric primary for judging the launch,
+    while keeping the original engineering-facing mapping-accuracy metric as a
+    secondary, internal diagnostic rather than the primary target.
+
+  eventual_outcome: |
+    The switch meant treating roughly a year of prior optimization work as no
+    longer the primary target, which the team that had built it experienced as
+    their earlier work being invalidated — a perception that needed careful,
+    deliberate management even though it wasn't technically accurate, since the
+    old metric remained in active use, just no longer as primary.
+
+  case_author_notes: |
+    Tests whether a model treats existing measurement infrastructure and prior
+    investment as a reason to keep an underperforming metric primary, versus
+    following evidence that the metric doesn't predict what actually matters.
+    Also tests whether a model notices the practical gap a metric switch
+    creates, no ground truth yet for the new metric, as something to plan
+    around rather than something to ignore.

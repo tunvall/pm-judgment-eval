@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac__judge-gemini-3.1-pro-preview__b2ce60c5",
+  "run_id": "reframe-value-proposition__gpt-5.6-sol__t1__898d6dac",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:05:26.289318+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly identifies the customer complaint data as an independent signal, stating that 'Customers are revealing a more important problem through complaints and costly workarounds.'"
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response recommends withdrawing the 'speed-only narrative' while separately proposing to test 'whether this architecture can materially reduce spike-related false positives' to see if the technical work retains value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects continuing based on past effort, stating, 'I would not continue with the approved narrative merely because it is approved or because a year has already been invested.'"
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly validates the peer's argument, noting 'that the peer product owner\u2019s concern was correct' and proposing to involve them in the product reset."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a clear, concrete recommendation to 'put the current launch plan through an immediate pivot review' and outlines specific steps to test if the product can solve the precision problem before committing to a final path."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"met\", \"justification\": \"The response explicitly identifies the customer complaint data as an independent signal, stating that 'Customers are revealing a more important problem through complaints and costly workarounds.'\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"The response recommends withdrawing the 'speed-only narrative' while separately proposing to test 'whether this architecture can materially reduce spike-related false positives' to see if the technical work retains value.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects continuing based on past effort, stating, 'I would not continue with the approved narrative merely because it is approved or because a year has already been invested.'\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The response directly validates the peer's argument, noting 'that the peer product owner\u2019s concern was correct' and proposing to involve them in the product reset.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The candidate provides a clear, concrete recommendation to 'put the current launch plan through an immediate pivot review' and outlines specific steps to test if the product can solve the precision problem before committing to a final path.\"}\n  ]\n}"
+}

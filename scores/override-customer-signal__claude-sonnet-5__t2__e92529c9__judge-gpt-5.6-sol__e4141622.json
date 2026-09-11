@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9__judge-gpt-5.6-sol__e4141622",
+  "run_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:59:29.903206+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the focus-group feedback as strong adoption-risk evidence while explicitly rejecting the idea that an \u201cexplicit customer ask\u201d must dictate the product solution or launch decision."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It calls the existing suppress feature \u201cthe key move\u201d and proposes verifying compatibility, improving discoverability, testing it, and documenting it before launch."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response separates the underlying need\u2014relief from unmanageable alert noise\u2014from the full configurability request, arguing that threshold guidance and a surfaced suppress control can address the core pain while rerouting and custom thresholds follow later."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It identifies adoption risk and acknowledges that launching with a broken or narrow suppression feature could leave the complaint \u201cunmitigated,\u201d but it does not explicitly state that unexpectedly high adoption or alert volume could make the fast-follow decision look wrong in hindsight even if the interim controls work."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends launching on schedule with pre-launch threshold guidance and a hardened, discoverable suppression control, followed by dated commitments for routing and threshold configurability."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the focus-group feedback as strong adoption-risk evidence while explicitly rejecting the idea that an \u201cexplicit customer ask\u201d must dictate the product solution or launch decision.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It calls the existing suppress feature \u201cthe key move\u201d and proposes verifying compatibility, improving discoverability, testing it, and documenting it before launch.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response separates the underlying need\u2014relief from unmanageable alert noise\u2014from the full configurability request, arguing that threshold guidance and a surfaced suppress control can address the core pain while rerouting and custom thresholds follow later.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It identifies adoption risk and acknowledges that launching with a broken or narrow suppression feature could leave the complaint \u201cunmitigated,\u201d but it does not explicitly state that unexpectedly high adoption or alert volume could make the fast-follow decision look wrong in hindsight even if the interim controls work.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends launching on schedule with pre-launch threshold guidance and a hardened, discoverable suppression control, followed by dated commitments for routing and threshold configurability.\"}]}"
+}

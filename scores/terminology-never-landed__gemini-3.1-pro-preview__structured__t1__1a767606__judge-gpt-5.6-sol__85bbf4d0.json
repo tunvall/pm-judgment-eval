@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606__judge-gpt-5.6-sol__85bbf4d0",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:56:54.639824+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \u201cthe problem is no longer about finding the right words; it is a governance and decision-making failure,\u201d identifying the repeated review loop as the core issue."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a locked rubric, a synchronous selection meeting, permanent commitment to the highest-scoring option, and executive escalation as a tie-breaker. It also explicitly accepts that every name will have flaws and notes that continued churn delays launch or burns unnecessary cycles."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the substantive concerns behind prior objections but argues that allowing a veto whenever anyone finds any flaw creates diminishing-return re-litigation. Its stack-ranking rubric would force reviewers to compare the importance of objections rather than treating each as an automatic veto."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The locked API name is included in the proposed decision one-pager and evaluation constraints, while the recommendation remains focused on selecting a customer-facing label rather than reopening the API architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than simply proposing another ad hoc name, the response recommends agreeing on criteria and tolerated tradeoffs before evaluating options. It clearly explains that this differs from prior rounds by changing the governance process and preventing reviewers from introducing new standards after selection."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly states that \u201cthe problem is no longer about finding the right words; it is a governance and decision-making failure,\u201d identifying the repeated review loop as the core issue.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a locked rubric, a synchronous selection meeting, permanent commitment to the highest-scoring option, and executive escalation as a tie-breaker. It also explicitly accepts that every name will have flaws and notes that continued churn delays launch or burns unnecessary cycles.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response acknowledges the substantive concerns behind prior objections but argues that allowing a veto whenever anyone finds any flaw creates diminishing-return re-litigation. Its stack-ranking rubric would force reviewers to compare the importance of objections rather than treating each as an automatic veto.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"The locked API name is included in the proposed decision one-pager and evaluation constraints, while the recommendation remains focused on selecting a customer-facing label rather than reopening the API architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than simply proposing another ad hoc name, the response recommends agreeing on criteria and tolerated tradeoffs before evaluating options. It clearly explains that this differs from prior rounds by changing the governance process and preventing reviewers from introducing new standards after selection.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8__judge-gemini-3.1-pro-preview__68009c0a",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:04:46.115728+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \"The pattern suggests we have been finding genuine weaknesses in each name without establishing that its replacement is better\" and focuses on fixing the process rather than just finding a better word."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests identifying \"One accountable decision-maker,\" accepting an imperfect name if evidence is mixed by documenting \"its known limitations,\" and establishing \"explicit reopening conditions\" to end the cycle."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response distinguishes between a \"demonstrated misunderstanding from a terminology preference\" and notes that future reopening would require evidence of consequential misunderstanding rather than \"merely a new reviewer preferring another word.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly acknowledges that \"The API field name is a fixed implementation constraint, not something to reopen\" and proposes creating a \"stable mapping\" between the API and customer-facing terminology."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recognizes that a \"fourth candidate subjected to the same process is likely to meet the same fate\" and changes the approach by setting criteria upfront, identifying decision-makers early, and separating the label from explanatory copy."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that \\\"The pattern suggests we have been finding genuine weaknesses in each name without establishing that its replacement is better\\\" and focuses on fixing the process rather than just finding a better word.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests identifying \\\"One accountable decision-maker,\\\" accepting an imperfect name if evidence is mixed by documenting \\\"its known limitations,\\\" and establishing \\\"explicit reopening conditions\\\" to end the cycle.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response distinguishes between a \\\"demonstrated misunderstanding from a terminology preference\\\" and notes that future reopening would require evidence of consequential misunderstanding rather than \\\"merely a new reviewer preferring another word.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly acknowledges that \\\"The API field name is a fixed implementation constraint, not something to reopen\\\" and proposes creating a \\\"stable mapping\\\" between the API and customer-facing terminology.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes that a \\\"fourth candidate subjected to the same process is likely to meet the same fate\\\" and changes the approach by setting criteria upfront, identifying decision-makers early, and separating the label from explanatory copy.\"\n    }\n  ]\n}"
+}

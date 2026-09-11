@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601__judge-gpt-5.6-sol__3d8d820c",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:58:42.171612+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly identifies a broken review process in which stakeholders act as \u201cserial vetoes,\u201d and recommends changing \u201cthe process, the criteria, and the scope\u201d rather than merely generating another name."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a single synchronous decision meeting, recorded agreement, and a \u201cdisagree and commit\u201d rule that permits reopening only when new data emerges. It also identifies the cost of delay through the need to \u201cunblock the launch\u201d and \u201cship on time.\u201d"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response preserves room for genuinely new evidence\u2014asking whether \u201cnew data emerged that makes this mitigation impossible\u201d\u2014while treating repeated objections to already-documented trade-offs as closed re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly anchors the recommendation to the immutable API field, suggesting that the customer-facing name be weighted toward a human-readable version while avoiding any proposal to change the field itself. It also includes product-family alignment as a pass/fail evaluation criterion and brings family stakeholders into the decision."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than conducting a fourth ad hoc naming exercise, it proposes a materially different framework: evaluate known flaws and mitigations, pair the name with explanatory UI copy, gather all veto-holders at once, and explicitly accept the least-bad trade-off."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly identifies a broken review process in which stakeholders act as \u201cserial vetoes,\u201d and recommends changing \u201cthe process, the criteria, and the scope\u201d rather than merely generating another name.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a single synchronous decision meeting, recorded agreement, and a \u201cdisagree and commit\u201d rule that permits reopening only when new data emerges. It also identifies the cost of delay through the need to \u201cunblock the launch\u201d and \u201cship on time.\u201d\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response preserves room for genuinely new evidence\u2014asking whether \u201cnew data emerged that makes this mitigation impossible\u201d\u2014while treating repeated objections to already-documented trade-offs as closed re-litigation.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It directly anchors the recommendation to the immutable API field, suggesting that the customer-facing name be weighted toward a human-readable version while avoiding any proposal to change the field itself. It also includes product-family alignment as a pass/fail evaluation criterion and brings family stakeholders into the decision.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than conducting a fourth ad hoc naming exercise, it proposes a materially different framework: evaluate known flaws and mitigations, pair the name with explanatory UI copy, gather all veto-holders at once, and explicitly accept the least-bad trade-off.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606__judge-gemini-3.1-pro-preview__06358eba",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__structured__t1__1a767606",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:57:07.647994+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \"the problem is no longer about finding the right words; it is a governance and decision-making failure,\" showing clear recognition of the broader pattern."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate proposes forcing stakeholders to accept an imperfect name by aligning on a rubric where they choose \"the tradeoff that does the least harm,\" and acknowledges the cost of indecision by noting the product launch is likely \"burning unnecessary cycles.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response identifies that reviewers are introducing \"new subjective criteria\" without weighing tradeoffs and recognizes that treating every spotted flaw as a valid veto is what causes the deadlock."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The locked API field is prominently listed in the evidence and constraints to be communicated in the one-pager, and the response never suggests reopening the architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly advises to \"Stop pitching names\" and states that continuing to brainstorm and test new names \"is a definition of insanity,\" instead proposing a completely new governance process."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that \\\"the problem is no longer about finding the right words; it is a governance and decision-making failure,\\\" showing clear recognition of the broader pattern.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proposes forcing stakeholders to accept an imperfect name by aligning on a rubric where they choose \\\"the tradeoff that does the least harm,\\\" and acknowledges the cost of indecision by noting the product launch is likely \\\"burning unnecessary cycles.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies that reviewers are introducing \\\"new subjective criteria\\\" without weighing tradeoffs and recognizes that treating every spotted flaw as a valid veto is what causes the deadlock.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The locked API field is prominently listed in the evidence and constraints to be communicated in the one-pager, and the response never suggests reopening the architecture.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly advises to \\\"Stop pitching names\\\" and states that continuing to brainstorm and test new names \\\"is a definition of insanity,\\\" instead proposing a completely new governance process.\"\n    }\n  ]\n}\n```"
+}

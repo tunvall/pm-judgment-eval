@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-gpt-5.6-sol__d8be7588",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:05:26.439887+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately commits to \u201croll back (disable/feature-flag off) the new integration launch right now\u201d and reinforces this with a concrete first action to direct engineering to disable or revert it."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly identifies rollback as reversible because the integration can be relaunched after a proper fix, while contrasting that with customer trust damage and support load from leaving the issue live, which are \u201cnot obviously reversible.\u201d"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs compounding incorrect signals, support burden, and trust erosion against the reputational and scheduling cost of pausing a publicly announced feature, concluding that the latter is temporary and recoverable."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not propose rushing a speculative fix; instead, it characterizes rollback as a \u201cknown, bounded action\u201d and reserves the several-day, well-tested fix for a follow-up relaunch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond rollback, it specifies verifying recovery, notifying affected and integration customers, asynchronously escalating to the manager, and opening a proper-fix, relaunch, and retrospective track."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response immediately commits to \u201croll back (disable/feature-flag off) the new integration launch right now\u201d and reinforces this with a concrete first action to direct engineering to disable or revert it.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly identifies rollback as reversible because the integration can be relaunched after a proper fix, while contrasting that with customer trust damage and support load from leaving the issue live, which are \u201cnot obviously reversible.\u201d\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly weighs compounding incorrect signals, support burden, and trust erosion against the reputational and scheduling cost of pausing a publicly announced feature, concluding that the latter is temporary and recoverable.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"It does not propose rushing a speculative fix; instead, it characterizes rollback as a \u201cknown, bounded action\u201d and reserves the several-day, well-tested fix for a follow-up relaunch.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"Beyond rollback, it specifies verifying recovery, notifying affected and integration customers, asynchronously escalating to the manager, and opening a proper-fix, relaunch, and retrospective track.\"\n    }\n  ]\n}"
+}

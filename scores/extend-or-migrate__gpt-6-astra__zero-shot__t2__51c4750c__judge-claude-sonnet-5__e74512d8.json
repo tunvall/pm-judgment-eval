@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c__judge-claude-sonnet-5__e74512d8",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:07:49.403251+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The decision is not whether to follow the company's platform strategy. It is whether to put a broader migration on the critical path for this launch,' cleanly separating the two questions."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It grounds the recommendation in the technically-derived estimate, stating 'Treating the optimistic timeline as the plan would mean accepting delivery risk without evidence that the underlying gaps can be closed faster.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response only notes that extending the old platform 'creates some additional work on a retiring platform,' which is a cost/debt framing, but it never discusses the risk of inconsistent customer experience across products from having some traffic on the old platform and some on the new."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly frames the recommendation as 'preserving the strategic destination while declining to make this launch depend on an inadequately buffered migration,' and invites leadership to make an explicit trade-off decision rather than assume the optimistic timeline, addressing the optics of appearing to resist company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation (extend the old platform, treat migration as a separate owned effort) and lays out three concrete execution safeguards, including assigning an owner and setting a planning milestone."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The decision is not whether to follow the company's platform strategy. It is whether to put a broader migration on the critical path for this launch,' cleanly separating the two questions.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"It grounds the recommendation in the technically-derived estimate, stating 'Treating the optimistic timeline as the plan would mean accepting delivery risk without evidence that the underlying gaps can be closed faster.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response only notes that extending the old platform 'creates some additional work on a retiring platform,' which is a cost/debt framing, but it never discusses the risk of inconsistent customer experience across products from having some traffic on the old platform and some on the new.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"It directly frames the recommendation as 'preserving the strategic destination while declining to make this launch depend on an inadequately buffered migration,' and invites leadership to make an explicit trade-off decision rather than assume the optimistic timeline, addressing the optics of appearing to resist company direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation (extend the old platform, treat migration as a separate owned effort) and lays out three concrete execution safeguards, including assigning an owner and setting a planning milestone.\"}\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__judge-gemini-3.1-pro-preview__ff1c9c01",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:08:17.934077+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a definitive and clear call in its recommendation section, stating to \"Pull the new integration launch back (full or effectively full rollback) immediately, as an interim measure.\""
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response explicitly notes that rolling back carries a \"Reversible reputational cost\" for its chosen option, but it does not symmetrically compare reversibility against all the alternative paths."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs these two costs, concluding that \"The blast radius (existing customers, unrelated transaction types) outweighs the cost of a delayed/paused new integration.\""
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response correctly avoids relying on a fast fix, warning that \"Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy\" and that quick confidence is unlikely."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response includes a robust list of next steps after the immediate action, including internal/external communications, monitoring baseline signal rates, and scheduling a post-incident review."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a definitive and clear call in its recommendation section, stating to \\\"Pull the new integration launch back (full or effectively full rollback) immediately, as an interim measure.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response explicitly notes that rolling back carries a \\\"Reversible reputational cost\\\" for its chosen option, but it does not symmetrically compare reversibility against all the alternative paths.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs these two costs, concluding that \\\"The blast radius (existing customers, unrelated transaction types) outweighs the cost of a delayed/paused new integration.\\\"\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly avoids relying on a fast fix, warning that \\\"Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy\\\" and that quick confidence is unlikely.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response includes a robust list of next steps after the immediate action, including internal/external communications, monitoring baseline signal rates, and scheduling a post-incident review.\"\n    }\n  ]\n}"
+}

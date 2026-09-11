@@ -1,6 +1,6 @@
 id: extend-or-migrate
-version: 1
-set: heldout
+version: 2
+set: dev
 
 title: Extend the old platform, or accelerate a company-wide migration
 
@@ -70,10 +70,14 @@ rubric:
 
     - id: identifies_risk_of_partial_migration
       description: >
-        Recognizes that migrating only this one product while leaving the rest
-        on the old platform creates two systems with an inconsistent customer
-        experience, rather than treating a partial migration as a clean,
-        low-risk hedge.
+        Recognizes that mismatched platform coverage across products, however
+        it arises from the chosen path, creates a period of inconsistent
+        customer experience, and reasons about how serious that risk actually
+        is rather than assuming any path is automatically risk-free. Full
+        credit does not require recommending against acceleration, only naming
+        and weighing this specific risk, even if the conclusion is that
+        accelerating is still worth it (e.g., paired with a plan to close the
+        gap quickly).
       weight: 2
 
     - id: anticipates_pushback_and_addresses_it
@@ -106,3 +110,23 @@ analysis_only:
     top-down strategy (accelerate the migration for this launch) while
     explicitly endorsing the strategy itself, and honest timeline arithmetic
     against an optimistic estimate already in circulation.
+
+    v2 (2026-09-10): identifies_risk_of_partial_migration reworded after
+    external methodology review (Gemini) argued it implicitly penalized
+    recommending acceleration. The edit's own rationale came from reading the
+    rubric's wording logic alone (Gemini worked from a bundle that excluded
+    all results/scores directories, so it never saw this case's real output).
+
+    Reclassified dev (2026-09-10, was heldout): correcting an error made
+    while writing this note originally — 19 real scored records already
+    exist for this case across all 5 candidate models, cross-judged by
+    Claude/GPT/Gemini, contrary to what was first written here. Some of that
+    data (aggregate score percentages, not per-criterion reasoning) had
+    already been reviewed in a separate self-preference-bias check before
+    this rubric edit was made. That's not clean enough to certify zero
+    influence on the edit, so per the same bright-line standard applied to
+    incident-rollback (any exposure to real output moves a case to dev,
+    regardless of whether that exposure demonstrably caused the change), this
+    case is reclassified rather than asserted clean. A genuinely fresh,
+    untouched case is needed to rebuild the held-out set, which is now down
+    to a single case (terminology-never-landed).

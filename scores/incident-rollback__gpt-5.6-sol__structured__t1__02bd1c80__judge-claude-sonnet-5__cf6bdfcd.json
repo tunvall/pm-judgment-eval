@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80__judge-claude-sonnet-5__cf6bdfcd",
+  "run_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:06:02.731629+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives an unambiguous recommendation: \"Immediately roll back the new integration launch to the last known good state,\" with a stated fallback only if a faster verified kill switch exists."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It frames rollback as \"temporary, transparent withdrawal\" with an explicit path to relaunch once the fix is validated, and contrasts this against the hotfix option which \"could worsen the incident,\" explicitly weighing ease of undoing rollback versus riskier alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states \"The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers,\" explicitly weighing the two costs against each other."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects rushing a hotfix, noting \"a rushed and inadequately tested calibration change could worsen the incident\" and states \"I would not delay mitigation to invent or test a novel partial workaround.\""
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response includes a ten-item next-steps list covering communication to support and customers, proactive correction for affected customers, building the permanent fix, and setting relaunch criteria."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives an unambiguous recommendation: \\\"Immediately roll back the new integration launch to the last known good state,\\\" with a stated fallback only if a faster verified kill switch exists.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It frames rollback as \\\"temporary, transparent withdrawal\\\" with an explicit path to relaunch once the fix is validated, and contrasts this against the hotfix option which \\\"could worsen the incident,\\\" explicitly weighing ease of undoing rollback versus riskier alternatives.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly states \\\"The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers,\\\" explicitly weighing the two costs against each other.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects rushing a hotfix, noting \\\"a rushed and inadequately tested calibration change could worsen the incident\\\" and states \\\"I would not delay mitigation to invent or test a novel partial workaround.\\\"\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response includes a ten-item next-steps list covering communication to support and customers, proactive correction for affected customers, building the permanent fix, and setting relaunch criteria.\"}\n  ]\n}"
+}

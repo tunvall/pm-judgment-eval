@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8__judge-gemini-3.1-pro-preview__b08db478",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:53:34.158412+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response identifies the false-positive complaint data and customer workarounds as \"revealed preference\" and a \"more durable problem to own,\" using this data as the primary driver for a pivot rather than just reacting to the engineering leadership's announcement."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly separates the two, noting the need to test whether the \"existing architecture\" has the \"structural potential\" to solve the false positive problem before simply rewriting the go-to-market narrative."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses this by stating \"Treat the year of engineering investment as sunk\" and explicitly refuses to keep the product alive merely out of loyalty to the original pitch."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate acknowledges that the peer PO has \"been right for months,\" suggesting the credible move is to admit this directly and loop the peer into the redesign of the roadmap."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a clear, actionable plan to validate the architecture's precision with existing customers, and commits to either reframing the product or folding it into the primary pipeline depending on the validation results."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies the false-positive complaint data and customer workarounds as \\\"revealed preference\\\" and a \\\"more durable problem to own,\\\" using this data as the primary driver for a pivot rather than just reacting to the engineering leadership's announcement.\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly separates the two, noting the need to test whether the \\\"existing architecture\\\" has the \\\"structural potential\\\" to solve the false positive problem before simply rewriting the go-to-market narrative.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses this by stating \\\"Treat the year of engineering investment as sunk\\\" and explicitly refuses to keep the product alive merely out of loyalty to the original pitch.\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate acknowledges that the peer PO has \\\"been right for months,\\\" suggesting the credible move is to admit this directly and loop the peer into the redesign of the roadmap.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a clear, actionable plan to validate the architecture's precision with existing customers, and commits to either reframing the product or folding it into the primary pipeline depending on the validation results.\"\n    }\n  ]\n}"
+}

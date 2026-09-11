@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__judge-claude-sonnet-5__5af8b702",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:05:02.869535+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits explicitly: 'Pull the new integration launch back (full or effectively full rollback) immediately, as an interim measure,' rather than leaving the choice open."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names the reversibility of its chosen path directly ('Reversible reputational cost, but bounded and manageable') and contrasts it with the targeted mitigation option's risk of an incomplete/entangled fix, and separately flags in Risks that the rollback itself might not be as clean as expected."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'the blast radius (existing customers, unrelated transaction types) outweighs the cost of a delayed/paused new integration' after laying out compounding hourly harm versus public-commitment cost."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It rejects the scoped/targeted quick fix as too risky under time pressure, noting 'Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy' and that 'quick confidence... is exactly what a rushed incident is bad at delivering.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a detailed next-steps sequence including engineering verification, real-time monitoring, internal/external communications framing the pause and relaunch timeline, and a post-incident review with manager follow-up."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response commits explicitly: 'Pull the new integration launch back (full or effectively full rollback) immediately, as an interim measure,' rather than leaving the choice open.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It names the reversibility of its chosen path directly ('Reversible reputational cost, but bounded and manageable') and contrasts it with the targeted mitigation option's risk of an incomplete/entangled fix, and separately flags in Risks that the rollback itself might not be as clean as expected.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'the blast radius (existing customers, unrelated transaction types) outweighs the cost of a delayed/paused new integration' after laying out compounding hourly harm versus public-commitment cost.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It rejects the scoped/targeted quick fix as too risky under time pressure, noting 'Precision fixes to entangled logic under incident conditions carry meaningful risk of a second bad deploy' and that 'quick confidence... is exactly what a rushed incident is bad at delivering.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a detailed next-steps sequence including engineering verification, real-time monitoring, internal/external communications framing the pause and relaunch timeline, and a post-incident review with manager follow-up.\"}\n  ]\n}"
+}

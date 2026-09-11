@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe__judge-claude-sonnet-5__c8fd653e",
+  "run_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:04:05.453595+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the absence of a hard deadline to the unnecessary use of pressure: 'there's no hard deadline and the team timeline has slack, so there's nothing to force.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names the cost directly as 'spending real capital \u2014 my peer's trust, and the team's sense of whether it's safe to commit to things' and later calls relationship damage 'durable.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly rejects the public-commitment-justifies-public-pressure logic, noting 'The public-channel option uses leverage I don't need' and that it risks 'publicly scoring a point off a colleague who's already drowning.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Gives a concrete, structured plan: private DM acknowledging workload, asking for a realistic date and how to help, then having the peer post the revised timeline publicly, with a fallback escalation plan if it stalls."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the absence of a hard deadline to the unnecessary use of pressure: 'there's no hard deadline and the team timeline has slack, so there's nothing to force.'\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names the cost directly as 'spending real capital \u2014 my peer's trust, and the team's sense of whether it's safe to commit to things' and later calls relationship damage 'durable.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response directly rejects the public-commitment-justifies-public-pressure logic, noting 'The public-channel option uses leverage I don't need' and that it risks 'publicly scoring a point off a colleague who's already drowning.'\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"Gives a concrete, structured plan: private DM acknowledging workload, asking for a realistic date and how to help, then having the peer post the revised timeline publicly, with a fallback escalation plan if it stalls.\"}\n  ]\n}"
+}

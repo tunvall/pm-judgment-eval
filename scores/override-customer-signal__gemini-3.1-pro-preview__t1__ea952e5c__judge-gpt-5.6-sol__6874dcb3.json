@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c__judge-gpt-5.6-sol__6874dcb3",
+  "run_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:01:39.020774+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the customer signal as important but not dispositive, weighing it against the multi-quarter delay and concluding that immediate mitigations can address the pain without blocking launch."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes surfacing the hidden suppress-from-notification capability the first part of its launch plan and explains how a visible \u201cMute this\u201d control could address repeated alerts."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes the proposed \u201cfull alert management framework\u201d from the underlying need of reducing \u201calert fatigue and unmanageable noise,\u201d then evaluates suppression and higher thresholds as cheaper ways to meet that need."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "Although it describes the danger of launching with no mitigation, it does not acknowledge that its own hybrid/fast-follow approach could still prove insufficient under high adoption, especially given the lack of rerouting and comprehensive threshold controls."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends launching on schedule or after a minor delay, after surfacing suppression and guiding users toward quieter thresholds, while roadmapping the full framework."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the customer signal as important but not dispositive, weighing it against the multi-quarter delay and concluding that immediate mitigations can address the pain without blocking launch.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It makes surfacing the hidden suppress-from-notification capability the first part of its launch plan and explains how a visible \u201cMute this\u201d control could address repeated alerts.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response explicitly distinguishes the proposed \u201cfull alert management framework\u201d from the underlying need of reducing \u201calert fatigue and unmanageable noise,\u201d then evaluates suppression and higher thresholds as cheaper ways to meet that need.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"not_met\",\"justification\":\"Although it describes the danger of launching with no mitigation, it does not acknowledge that its own hybrid/fast-follow approach could still prove insufficient under high adoption, especially given the lack of rerouting and comprehensive threshold controls.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends launching on schedule or after a minor delay, after surfacing suppression and guiding users toward quieter thresholds, while roadmapping the full framework.\"}]}"
+}

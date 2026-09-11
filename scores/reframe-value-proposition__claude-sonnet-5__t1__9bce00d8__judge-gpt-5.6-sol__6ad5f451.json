@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8__judge-gpt-5.6-sol__6ad5f451",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t1__9bce00d8",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:53:26.268646+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response says the complaint and workaround data \u201chas already made the decision\u201d and treats customers\u2019 willingness to engineer filters as revealed preference, making clear that this evidence independently warrants reframing rather than merely reacting to leadership\u2019s roadmap."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly separates replacing the expiring speed narrative from assessing whether the usage-based architecture can support a genuine precision advantage, and proposes retaining or integrating the technical asset depending on validation."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly states that the year of investment should be treated as sunk and that the product should survive only if the architecture remains useful for the new direction."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It acknowledges that the peer \u201chas been right for months,\u201d accepts responsibility for previously dismissing the argument, and proposes involving the peer in redesigning the roadmap."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to abandoning the speed-led positioning, validating precision on promotional and seasonal spikes with metrics and customer design partners, then reframing if validated or folding the signal into the primary pipeline if not."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_independent_evidence\",\"verdict\":\"met\",\"justification\":\"The response says the complaint and workaround data \u201chas already made the decision\u201d and treats customers\u2019 willingness to engineer filters as revealed preference, making clear that this evidence independently warrants reframing rather than merely reacting to leadership\u2019s roadmap.\"},{\"id\":\"distinguishes_narrative_from_architecture\",\"verdict\":\"met\",\"justification\":\"It explicitly separates replacing the expiring speed narrative from assessing whether the usage-based architecture can support a genuine precision advantage, and proposes retaining or integrating the technical asset depending on validation.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"The response directly states that the year of investment should be treated as sunk and that the product should survive only if the architecture remains useful for the new direction.\"},{\"id\":\"takes_dissenting_view_seriously\",\"verdict\":\"met\",\"justification\":\"It acknowledges that the peer \u201chas been right for months,\u201d accepts responsibility for previously dismissing the argument, and proposes involving the peer in redesigning the roadmap.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It commits to abandoning the speed-led positioning, validating precision on promotional and seasonal spikes with metrics and customer design partners, then reframing if validated or folding the signal into the primary pipeline if not.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f__judge-claude-sonnet-5__bab3da30",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T18:05:50.208365+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'roll the new integration back now, and treat it as a pause of the launch rather than a cancellation,' with no hedging on the core call."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly names the reversibility tradeoff of its chosen path ('Rollback returns us to a known-good state we ran yesterday; that's the lowest-variance move') and contrasts it with the riskier, unvalidated hotfix alternative ('Untested hotfixes on a live high-sev incident are how you turn one incident into two')."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The 'Why rollback wins' section directly weighs compounding customer harm from wrong signals against the cost of walking back a public announcement, concluding 'Delaying a new capability by a week is a communications problem. Corrupting a capability people already rely on is a product-integrity problem.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly cautions against defaulting to a fast fix, stating 'the default is rollback, and I'd hold that line unless engineering is genuinely confident, not hopeful,' explicitly flagging the risk of an unvalidated hotfix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a detailed post-decision sequence including verification, remediation of already-fired alerts, a staged communication plan for customers/support/leadership, and a re-launch path conditioned on a regression suite and staged rollout."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'roll the new integration back now, and treat it as a pause of the launch rather than a cancellation,' with no hedging on the core call.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly names the reversibility tradeoff of its chosen path ('Rollback returns us to a known-good state we ran yesterday; that's the lowest-variance move') and contrasts it with the riskier, unvalidated hotfix alternative ('Untested hotfixes on a live high-sev incident are how you turn one incident into two').\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The 'Why rollback wins' section directly weighs compounding customer harm from wrong signals against the cost of walking back a public announcement, concluding 'Delaying a new capability by a week is a communications problem. Corrupting a capability people already rely on is a product-integrity problem.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly cautions against defaulting to a fast fix, stating 'the default is rollback, and I'd hold that line unless engineering is genuinely confident, not hopeful,' explicitly flagging the risk of an unvalidated hotfix.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a detailed post-decision sequence including verification, remediation of already-fired alerts, a staged communication plan for customers/support/leadership, and a re-launch path conditioned on a regression suite and staged rollout.\"}\n  ]\n}"
+}

@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f__judge-gemini-3.1-pro-preview__f1158b13",
+  "run_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:49:15.681996+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \"because there is no hard deadline and the broader timeline is flexible, applying public pressure is disproportionate to the actual urgency.\""
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly names the relationship cost, stating that a public nudge \"degrades trust, damages your long-term working relationship, and reduces psychological safety within the team.\""
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively advises against the public forcing function, arguing that it is a \"blunt instrument\" and a \"high-stress tactic\" unjustified by the circumstances."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends a specific approach by suggesting a private direct message and even provides a concrete script to collaboratively renegotiate the timeline."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that \\\"because there is no hard deadline and the broader timeline is flexible, applying public pressure is disproportionate to the actual urgency.\\\"\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly names the relationship cost, stating that a public nudge \\\"degrades trust, damages your long-term working relationship, and reduces psychological safety within the team.\\\"\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively advises against the public forcing function, arguing that it is a \\\"blunt instrument\\\" and a \\\"high-stress tactic\\\" unjustified by the circumstances.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends a specific approach by suggesting a private direct message and even provides a concrete script to collaboratively renegotiate the timeline.\"\n    }\n  ]\n}"
+}

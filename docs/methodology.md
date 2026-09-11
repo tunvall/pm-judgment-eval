@@ -68,6 +68,7 @@ A core design goal is that testing a newly-released model against the existing r
 - **Results are append-only.** The results store is keyed by `case_id × model × trial × run_id`. Testing a new model means running only that model against the frozen case set and appending — never re-running models already on the board. The reporting step recomputes the comparison from whatever is currently in the store, so it can be rerun at any time to pick up newly-added models.
 - **Model versions are pinned exactly**, never referenced by a rolling alias like "latest" — providers update what an alias points to without warning, which would silently break reproducibility for exactly this workflow. The exact pinned model ID is recorded in run metadata (`model_version_if_known`).
 - **The judge is the fragile point in this chain.** Upgrading the judge model invalidates comparability between scores produced under the old judge and the new one, since the standard being applied changed, not just the model being tested. Judge changes should be rare and deliberate: bump `judge_prompt_version` when it happens, and re-judge a sample of already-scored models under the new judge to see how much rankings shift, following the same judge-reliability check already described for LLM-as-judge generally.
+- **`case_version` only invalidates reasoning scores, not alignment scores** (fixed 2026-09-10, `src/report.py`). A version bump has so far only ever meant "the rubric criteria changed" — the scenario and `analysis_only.historical_decision`, the only two things the alignment judge sees, have never changed after a case shipped. `report.py`'s staleness filter originally applied the same `case_version` check to both score types, which would have wrongly discarded valid alignment judgments every time a rubric-only fix bumped the version. If a case's scenario or historical decision is ever edited in place, this assumption breaks and alignment scores would need their own staleness signal, not `case_version`.
 
 ## Truncation is a fairness risk, not just a data-quality one
 
@@ -150,11 +151,51 @@ about model behavior should be drawn primarily from held-out results; dev-set
 results are useful for continuity and sanity-checking but should be reported
 separately, never blended into the same leaderboard.
 
+Bright-line rule (adopted 2026-09-10, after external methodology review;
+sharpened same day after nearly over-applying it): held-out status is about
+whether the rubric was finalized before anyone saw real output on that case,
+not about whether output is ever looked at, period. The instant a case's
+rubric is edited *in response to* having seen a candidate response, judge
+score, or aggregate statistic from that case, it becomes dev permanently —
+intent doesn't matter, and versioning doesn't restore held-out status, only
+a genuinely untouched replacement case does. But **running the frozen
+rubric against real models and reporting the results is the intended use of
+a held-out set, not a violation of it** — Phase 6 of SPEC.md (dimension-level
+comparison, case disagreement analysis) cannot happen any other way. The
+question to ask before reclassifying a case is narrow: did output influence
+the rubric, or did the rubric produce the output and then get reported on?
+Only the first is contamination.
+
+**Current state (2026-09-10): 5 held-out cases.** `incident-rollback` and
+`extend-or-migrate` were both reclassified to dev the same day, after
+external review (ChatGPT + Gemini) surfaced that each had been exposed to
+real output *before a rubric edit* — see each case file's own notes for
+specifics. `terminology-never-landed`'s own results were subsequently viewed
+and reported on (the same day, building the Phase 6 comparison table) with
+no rubric edit made or planned — under the sharpened rule above, that's the
+intended use of a held-out case, not contamination, and it remains genuinely
+held-out. Four genuinely fresh cases were added the same day from an
+existing pre-sanitized shortlist that had never been converted to the case
+schema before, each cleared against the `nda-and-sanitization.md` checklist
+by Fredrik personally before being written up: `delay-launch-credibility-gap`,
+`one-event-two-fields`, `last-minute-disclosure-gap`, `reframe-launch-metric`.
+None have ever been run against any model — no candidate response or judge
+score exists for any of them as of this writing, making them the cleanest
+cases in the entire set.
+
 ## Iteration sequencing across vendors
 
 Case set, rubric, and judge get iterated against a single model family first (not the full vendor set) — cheaper and faster to develop against one API while the schema and rubric are still unstable. Only once the rubric and judge are stable does the frozen v1 dataset run against the broader vendor set (Phase 5).
 
 Risk to watch during iteration: developing the rubric primarily against one vendor's outputs risks shaping it — not around the "correct" answer (that risk is already handled by the hindsight-bias process above), but around that vendor's typical response *style* — its structure, hedging patterns, verbosity — in ways that could unfairly penalize a differently-shaped but equally valid response from another vendor. Before calling the rubric final, sanity-check 2-3 cases against a second model (a spot check, not a full run) specifically to confirm the rubric doesn't silently reward or punish stylistic patterns rather than reasoning quality.
+
+**Format-sensitivity spot-check, run 2026-09-10** (prompted by external review claiming the structured system prompt's explicit headers — Objective, Alternatives, Tradeoffs, etc. — could specifically favor Claude's RLHF-trained decomposition style over other vendors' more concise defaults): compared zero-shot vs. structured-prompt scores for every candidate model, across all 3 judges, on the cases where both formats exist (`incident-rollback`, `extend-or-migrate`, `terminology-never-landed`). The claimed pattern didn't show up. What showed up instead: **the effect is judge-driven, not candidate-vendor-driven.** Claude-as-judge mildly rewards structure for nearly every candidate, Claude included, but *not* Gemini candidates (which score slightly lower structured). Gemini-as-judge penalizes structure for every candidate uniformly, including its own. GPT-as-judge is roughly neutral, mildly favoring GPT and Gemini candidates over Claude's. No judge shows the specific "structure favors Claude candidates" pattern the review predicted. Caveat: n=3-4 per structured cell, three cases only — informative, not conclusive. Real takeaway: judges appear to have their own stylistic preferences independent of who they're judging, which is a different (and arguably more useful) thing to know than a vendor-favoritism finding would have been, and worth extending to more cases before treating as settled.
+
+## Known gap: temperature sensitivity across vendors is untested (2026-09-10)
+
+External review (Gemini) claimed the fixed `DEFAULT_TEMPERATURE = 1.0` in `src/runner.py`, applied identically across all three vendors, actually treats them unequally in practice — the claim being that GPT and Gemini models degrade in structural coherence at T=1.0 relative to lower temperatures, while Claude doesn't, so a literal shared value isn't the same as fair treatment. This is a real, checkable claim, and it hasn't been checked: every single response in this dataset, across every model and every case, was generated at exactly T=1.0. Zero temperature variation exists anywhere in the data to compare against.
+
+This wasn't run for the same reason the blind-PM validation wasn't run yet: doing it properly needs multiple trials per temperature per model (T=1.0 already has real run-to-run variance baked in, so a single T=0.4 vs. T=1.0 comparison per model couldn't distinguish a temperature effect from ordinary noise), which makes it a real cost commitment rather than a quick spot-check, and it isn't blocking any current claim. Until this runs, temperature should be treated as a plausible but unverified fairness risk, not a resolved one, and no comparative model claim from this project should be read as controlling for it.
 
 ## Judge validation: does the rubric actually discriminate
 
@@ -184,6 +225,37 @@ style and punishing a bad one regardless of length. Neither fixture is evidence
 that self-preference bias is absent, since the same model was candidate and judge
 for both. That question stays open until a second model exists to judge with
 (Phase 5).
+
+## Known gap: rubric construct validity is unvalidated (2026-09-10)
+
+Every rubric in this project was written by one person (Fredrik), who in
+every case already knew the historical decision before writing the grading
+criteria. The hindsight-bias process above guards against smuggling in the
+specific *answer*, but it can't rule out smuggling in the *author's own
+reasoning style* — the particular things one experienced PM happens to
+weigh, dressed up as "what good judgment looks like" in general. External
+methodology review (ChatGPT + Gemini) surfaced this as the single largest
+open weakness in the project, larger than any judge or model-selection
+concern.
+
+The proposed check: give sealed cases (scenario + question only, no rubric,
+no historical decision, no model answers) to 2-3 PMs who have never seen
+this project, and see whether they independently converge on the same
+criteria already encoded in the rubrics. Materials for this are fully built
+and ready to run — `docs/blind-pm-validation/` (sealed packets for all 7
+dev-set cases, a response template, a comparison worksheet auto-generated
+from the real rubric criteria, and run instructions).
+
+**This has not been run.** As of 2026-09-10, recruiting outside PMs wasn't
+practical, so this remains a documented gap rather than a completed
+validation step. Concretely, that means: every rubric criterion in this
+project should be read as "one experienced PM's view of what good reasoning
+looks like here," not as an independently validated standard. Any claim
+this project makes about a model's "judgment" inherits that caveat until
+the experiment actually runs. Re-run this check before treating rubric
+criteria as more than one person's informed opinion, and before publishing
+any comparative model claim that leans on rubric weighting rather than raw
+per-criterion pass/fail.
 
 ## A note on where the sanitization/NDA process lives
 

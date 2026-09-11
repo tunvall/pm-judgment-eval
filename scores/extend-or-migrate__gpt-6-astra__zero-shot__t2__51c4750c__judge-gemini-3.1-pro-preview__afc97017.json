@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c__judge-gemini-3.1-pro-preview__afc97017",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t2__51c4750c",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:53:09.871991+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two issues, stating, \"The decision is not whether to follow the company\u2019s platform strategy. It is whether to put a broader migration on the critical path for this launch.\""
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its decision in the pessimistic estimate, noting that the \"technically derived estimate is roughly twice the circulated estimate\" and rejecting the optimistic timeline as an unacceptable delivery risk."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses the technical debt and bounded cost of extending the old platform, but does not mention the risk of inconsistent customer experience caused by mismatched platform coverage across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response anticipates leadership pushback regarding the company direction by explicitly framing the communication to show they are \"preserving the strategic destination\" and noting that if leadership wants to accelerate anyway, they must adjust launch scope or timing."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a very clear and specific recommendation to \"extend the older platform for this launch\" along with three actionable safeguards and next steps for executing the decision."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the two issues, stating, \\\"The decision is not whether to follow the company\u2019s platform strategy. It is whether to put a broader migration on the critical path for this launch.\\\"\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response grounds its decision in the pessimistic estimate, noting that the \\\"technically derived estimate is roughly twice the circulated estimate\\\" and rejecting the optimistic timeline as an unacceptable delivery risk.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses the technical debt and bounded cost of extending the old platform, but does not mention the risk of inconsistent customer experience caused by mismatched platform coverage across products.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response anticipates leadership pushback regarding the company direction by explicitly framing the communication to show they are \\\"preserving the strategic destination\\\" and noting that if leadership wants to accelerate anyway, they must adjust launch scope or timing.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response gives a very clear and specific recommendation to \\\"extend the older platform for this launch\\\" along with three actionable safeguards and next steps for executing the decision.\"\n    }\n  ]\n}"
+}

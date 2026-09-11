@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c__judge-gemini-3.1-pro-preview__3dd8844e",
+  "run_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:47:34.009486+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly identifies the meta-problem, stating that \"the actual decision to be made in round four is different: how do we make a naming decision that stays decided.\""
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate acknowledges the \"real cost (engineering rework, delayed launch, support/documentation churn) to continued delay\" and proposes naming a \"single decision-owner with authority to close the round\" and setting an explicit bar for reopening."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recognizes that aiming for zero confusion is a trap (\"'confusion exists' cannot be the bar for reopening\") and distinguishes valid new usage data from a \"renewed aesthetic objection.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly accounts for the fixed API field name, concluding that \"internal/external consistency is not and never will be an available design constraint\" and appropriately drops that axis from consideration."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response dismisses running the process like the first three rounds because \"expecting a different result is not credible,\" instead demanding that stakeholders agree on ranked criteria before any wording is proposed."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly identifies the meta-problem, stating that \\\"the actual decision to be made in round four is different: how do we make a naming decision that stays decided.\\\"\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate acknowledges the \\\"real cost (engineering rework, delayed launch, support/documentation churn) to continued delay\\\" and proposes naming a \\\"single decision-owner with authority to close the round\\\" and setting an explicit bar for reopening.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes that aiming for zero confusion is a trap (\\\"'confusion exists' cannot be the bar for reopening\\\") and distinguishes valid new usage data from a \\\"renewed aesthetic objection.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly accounts for the fixed API field name, concluding that \\\"internal/external consistency is not and never will be an available design constraint\\\" and appropriately drops that axis from consideration.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response dismisses running the process like the first three rounds because \\\"expecting a different result is not credible,\\\" instead demanding that stakeholders agree on ranked criteria before any wording is proposed.\"\n    }\n  ]\n}"
+}

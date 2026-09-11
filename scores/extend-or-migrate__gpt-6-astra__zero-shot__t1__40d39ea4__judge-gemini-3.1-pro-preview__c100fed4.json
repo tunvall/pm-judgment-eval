@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__zero-shot__t1__40d39ea4__judge-gemini-3.1-pro-preview__c100fed4",
+  "run_id": "extend-or-migrate__gpt-6-astra__zero-shot__t1__40d39ea4",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:51:03.989141+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that the long-term platform decision is settled and accurately reframes the problem as whether this specific launch should bear the cost and risk of the migration."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate grounds their decision on the technically derived estimate that 'consumes the entire launch window' and advises openly reconciling this discrepancy with stakeholders."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response acknowledges the technical rework and maintenance costs of extending the old platform, it fails to identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate anticipates optics issues by planning to explicitly align with leaders that the decision is 'launch sequencing, not a reversal of platform strategy,' directly addressing the potential perception of misalignment."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a clear, actionable recommendation to extend the older platform for the current launch, supported by four specific execution steps to manage the tradeoffs."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that the long-term platform decision is settled and accurately reframes the problem as whether this specific launch should bear the cost and risk of the migration.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate grounds their decision on the technically derived estimate that 'consumes the entire launch window' and advises openly reconciling this discrepancy with stakeholders.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response acknowledges the technical rework and maintenance costs of extending the old platform, it fails to identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate anticipates optics issues by planning to explicitly align with leaders that the decision is 'launch sequencing, not a reversal of platform strategy,' directly addressing the potential perception of misalignment.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a clear, actionable recommendation to extend the older platform for the current launch, supported by four specific execution steps to manage the tradeoffs.\"\n    }\n  ]\n}"
+}

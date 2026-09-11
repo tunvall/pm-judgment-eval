@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3__judge-gemini-3.1-pro-preview__2c35f6e9",
+  "run_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:55:46.966541+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats the signal as strong but explicitly states not to equate \\\"customers asked for full configurability\\\" with \\\"we must build the entire architectural framework first,\\\" weighing the signal against the possibility of a lighter mitigation.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly incorporates the undocumented feature into its proposed minimum package, noting the need to \\\"make the existing suppress-from-notification capability prominent, understandable, and documented.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states it would \\\"separate the customer outcome required for launch from the eventual comprehensive solution\\\" and focuses on testing if a simpler solution provides enough control.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response proposes a staged rollout and rollback limits to mitigate risk, it does not explicitly flag the specific risk that a fast-follow could look wrong in hindsight if adoption is high.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete, actionable plan with a clear \\\"decision rule\\\" on whether to treat the full framework as a fast-follow or block broad availability based on customer validation.\"\n    }\n  ]\n}\n```",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the signal as strong but explicitly states not to equate \"customers asked for full configurability\" with \"we must build the entire architectural framework first,\" weighing the signal against the possibility of a lighter mitigation."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly incorporates the undocumented feature into its proposed minimum package, noting the need to \"make the existing suppress-from-notification capability prominent, understandable, and documented.\""
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it would \"separate the customer outcome required for launch from the eventual comprehensive solution\" and focuses on testing if a simpler solution provides enough control."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response proposes a staged rollout and rollback limits to mitigate risk, it does not explicitly flag the specific risk that a fast-follow could look wrong in hindsight if adoption is high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete, actionable plan with a clear \"decision rule\" on whether to treat the full framework as a fast-follow or block broad availability based on customer validation."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0
+}

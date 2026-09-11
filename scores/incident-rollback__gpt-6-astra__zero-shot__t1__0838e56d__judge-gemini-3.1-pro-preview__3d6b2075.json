@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d__judge-gemini-3.1-pro-preview__3d6b2075",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T16:54:00.979991+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate clearly and immediately commits to a decision in the first sentence, stating 'I would roll back the new integration launch now' without waiting for their manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly evaluates the reversibility of its chosen path, framing the rollback as a 'visible, reversible delay to a new capability' versus 'ongoing damage' to reliability."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate directly weighs these factors, noting that while the public announcement 'makes rollback uncomfortable,' the 'commitment to reliable risk signals outweighs the commitment to today\u2019s launch date.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively avoids the trap of a rushed fix by explicitly stating, 'I would not substitute an untested patch for a safe rollback.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate outlines clear subsequent steps, including communicating with both sets of affected customers, correcting past alerts, and planning a 'staged relaunch' with a properly scoped fix."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly and immediately commits to a decision in the first sentence, stating 'I would roll back the new integration launch now' without waiting for their manager.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly evaluates the reversibility of its chosen path, framing the rollback as a 'visible, reversible delay to a new capability' versus 'ongoing damage' to reliability.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly weighs these factors, noting that while the public announcement 'makes rollback uncomfortable,' the 'commitment to reliable risk signals outweighs the commitment to today\u2019s launch date.'\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively avoids the trap of a rushed fix by explicitly stating, 'I would not substitute an untested patch for a safe rollback.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate outlines clear subsequent steps, including communicating with both sets of affected customers, correcting past alerts, and planning a 'staged relaunch' with a properly scoped fix.\"\n    }\n  ]\n}"
+}

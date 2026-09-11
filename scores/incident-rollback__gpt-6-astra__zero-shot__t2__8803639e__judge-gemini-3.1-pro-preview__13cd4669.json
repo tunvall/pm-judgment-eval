@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e__judge-gemini-3.1-pro-preview__13cd4669",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T17:09:39.489286+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately and definitively commits to an action by stating, \"I would roll back the launch now, in coordination with engineering.\""
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The candidate explicitly identifies reversibility as a factor for its chosen path, noting the tradeoff involves a \"reversible launch setback,\" but it does not fully compare this reversibility against other alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly addresses this tradeoff, explicitly concluding that \"The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions.\""
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly rejects betting on an unvalidated solution, stating, \"I would not delay containment to attempt a rushed version of the multi-day fix.\""
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a thorough list of actions following the immediate decision, including how to \"Communicate clearly\" with stakeholders and customers, \"Address the impact already incurred,\" and requirements to meet \"Before relaunch.\""
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response immediately and definitively commits to an action by stating, \\\"I would roll back the launch now, in coordination with engineering.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The candidate explicitly identifies reversibility as a factor for its chosen path, noting the tradeoff involves a \\\"reversible launch setback,\\\" but it does not fully compare this reversibility against other alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses this tradeoff, explicitly concluding that \\\"The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions.\\\"\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly rejects betting on an unvalidated solution, stating, \\\"I would not delay containment to attempt a rushed version of the multi-day fix.\\\"\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a thorough list of actions following the immediate decision, including how to \\\"Communicate clearly\\\" with stakeholders and customers, \\\"Address the impact already incurred,\\\" and requirements to meet \\\"Before relaunch.\\\"\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287__judge-gemini-3.1-pro-preview__d8c7d819",
+  "run_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:50:08.427149+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly links the lack of a hard deadline to the level of pressure needed, stating that 'with no hard deadline... public pressure would be disproportionate.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response decides against public escalation but cites operational impacts (displacing other work, forcing unrealistic commitments) rather than explicitly naming relationship or reputational costs."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response avoids defaulting to a public nudge, specifically noting that doing so would be using the public audience 'as leverage' despite the original commitment being public."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends a very specific action, including drafting the exact wording for a private direct message to reset the commitment."
+    }
+  ],
+  "weighted_total": 7.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly links the lack of a hard deadline to the level of pressure needed, stating that 'with no hard deadline... public pressure would be disproportionate.'\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response decides against public escalation but cites operational impacts (displacing other work, forcing unrealistic commitments) rather than explicitly naming relationship or reputational costs.\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response avoids defaulting to a public nudge, specifically noting that doing so would be using the public audience 'as leverage' despite the original commitment being public.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends a very specific action, including drafting the exact wording for a private direct message to reset the commitment.\"\n    }\n  ]\n}"
+}

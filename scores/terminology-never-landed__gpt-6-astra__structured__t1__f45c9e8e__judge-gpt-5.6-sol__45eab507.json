@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e__judge-gpt-5.6-sol__45eab507",
+  "run_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:01:18.756495+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly identifies that \u201cdecisions have not survived subsequent reviews\u201d and frames this as \u201ca decision-governance problem as well as a wording problem,\u201d making convergence the central issue."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes an accountable decision owner, a decision date, and a strict reopening rule, while directing the team to accept the least misleading family-consistent option if no candidate materially wins. It also recognizes that reopening carries coordination and implementation costs."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response separates factual accuracy and consequential customer misunderstanding from \u201cstylistic preferences,\u201d and says to reopen only for material new evidence or changed constraints rather than any newly identified imperfection."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It repeatedly preserves the immutable API field, recommending that the team \u201ckeep the API field unchanged and document its mapping to the customer-facing name\u201d rather than reopening architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than inventing another ad hoc label, it recommends a bounded, criteria-led process with upfront cross-product alignment, a small contextual shortlist, consistent testing, a decision owner, and closure rules\u2014explicitly contrasting this with the failed open-ended naming rounds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly identifies that \u201cdecisions have not survived subsequent reviews\u201d and frames this as \u201ca decision-governance problem as well as a wording problem,\u201d making convergence the central issue.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"It proposes an accountable decision owner, a decision date, and a strict reopening rule, while directing the team to accept the least misleading family-consistent option if no candidate materially wins. It also recognizes that reopening carries coordination and implementation costs.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response separates factual accuracy and consequential customer misunderstanding from \u201cstylistic preferences,\u201d and says to reopen only for material new evidence or changed constraints rather than any newly identified imperfection.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"It repeatedly preserves the immutable API field, recommending that the team \u201ckeep the API field unchanged and document its mapping to the customer-facing name\u201d rather than reopening architecture.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"Rather than inventing another ad hoc label, it recommends a bounded, criteria-led process with upfront cross-product alignment, a small contextual shortlist, consistent testing, a decision owner, and closure rules\u2014explicitly contrasting this with the failed open-ended naming rounds.\"\n    }\n  ]\n}"
+}

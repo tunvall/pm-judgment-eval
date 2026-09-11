@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189__judge-gemini-3.1-pro-preview__11fc67eb",
+  "run_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:06:24.318006+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly separates the two, stating that choosing the old platform is a 'sequencing decision' and that 'the dispute is only about whether this launch is the forcing function for that migration.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The recommendation is firmly grounded in the pessimistic estimate, noting that 'compressing a 2x-realistic estimate to fit a fixed launch date virtually guarantees either a slipped launch or a launch with silent gaps.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response identifies risks like duplicated effort and work becoming semi-permanent, it does not mention the specific risk of inconsistent customer experience resulting from fragmented platform coverage across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly names 'Perception/strategic friction' as a risk, acknowledging that the decision 'can look like working against company strategy,' and suggests mitigating this by communicating it upfront as a sequencing decision."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation to 'Extend the old platform for this launch' and provides concrete next steps like gaining stakeholder sign-off and designing an internal abstraction layer."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly separates the two, stating that choosing the old platform is a 'sequencing decision' and that 'the dispute is only about whether this launch is the forcing function for that migration.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The recommendation is firmly grounded in the pessimistic estimate, noting that 'compressing a 2x-realistic estimate to fit a fixed launch date virtually guarantees either a slipped launch or a launch with silent gaps.'\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response identifies risks like duplicated effort and work becoming semi-permanent, it does not mention the specific risk of inconsistent customer experience resulting from fragmented platform coverage across products.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly names 'Perception/strategic friction' as a risk, acknowledging that the decision 'can look like working against company strategy,' and suggests mitigating this by communicating it upfront as a sequencing decision.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response commits to a clear recommendation to 'Extend the old platform for this launch' and provides concrete next steps like gaining stakeholder sign-off and designing an internal abstraction layer.\"\n    }\n  ]\n}\n```"
+}

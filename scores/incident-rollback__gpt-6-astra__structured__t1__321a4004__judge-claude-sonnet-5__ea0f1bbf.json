@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004__judge-claude-sonnet-5__ea0f1bbf",
+  "run_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T18:04:28.953990+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to 'Initiate rollback now, with engineering executing and verifying it,' and explicitly bounds the alternative (targeted disable) rather than leaving the decision open-ended."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It flags that rollback itself may not fully undo the harm ('Reverting code might not undo affected configuration or calibration state. Verify behavior, not merely deployment completion') and contrasts this with emergency patching's regression risk and the ongoing-harm cost of leaving the launch live, addressing how easily each path could be undone or verified."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states 'A public commitment matters, but it does not justify continuing a known production defect,' and its tradeoffs section explicitly notes that leaving the launch live 'knowingly extends confirmed harm for days.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects defaulting to an emergency patch, noting it 'introduces regression risk under pressure' and that 'the stated testing timeline argues against treating it as the default containment strategy.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lists concrete follow-up steps beyond containment, including customer/support communication, verifying recovery, assessing residual signal harm, and a staged relaunch plan with regression tests."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response commits to 'Initiate rollback now, with engineering executing and verifying it,' and explicitly bounds the alternative (targeted disable) rather than leaving the decision open-ended.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It flags that rollback itself may not fully undo the harm ('Reverting code might not undo affected configuration or calibration state. Verify behavior, not merely deployment completion') and contrasts this with emergency patching's regression risk and the ongoing-harm cost of leaving the launch live, addressing how easily each path could be undone or verified.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"weight_note\": \"\", \"verdict\": \"met\", \"justification\": \"The response directly states 'A public commitment matters, but it does not justify continuing a known production defect,' and its tradeoffs section explicitly notes that leaving the launch live 'knowingly extends confirmed harm for days.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects defaulting to an emergency patch, noting it 'introduces regression risk under pressure' and that 'the stated testing timeline argues against treating it as the default containment strategy.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"The response lists concrete follow-up steps beyond containment, including customer/support communication, verifying recovery, assessing residual signal harm, and a staged relaunch plan with regression tests.\"}\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b__judge-gemini-3.1-pro-preview__71490975",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t1__34fc6e6b",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:59:14.937414+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states that \"the problem is not that we haven't found the right name\" but rather a flawed process where any name can be defeated."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response suggests naming a decider with a strict deadline and explicitly notes that the cost of another cycle \"now exceeds the cost of a slightly imperfect name.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes that \"any label for a nuanced concept confuses someone\" and proposes that the decision should only be reopened on genuinely new information, not just a \"new opinion.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly incorporates the fixed architecture, listing \"doesn't fight the locked API field\" as a hard constraint that must be agreed upon before evaluating names."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response refuses to just look for a new name, instead proposing to change the decision process, establish ranked criteria, and even reuse a past candidate to avoid \"a new set of unfamiliar objections.\""
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states that \\\"the problem is not that we haven't found the right name\\\" but rather a flawed process where any name can be defeated.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response suggests naming a decider with a strict deadline and explicitly notes that the cost of another cycle \\\"now exceeds the cost of a slightly imperfect name.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes that \\\"any label for a nuanced concept confuses someone\\\" and proposes that the decision should only be reopened on genuinely new information, not just a \\\"new opinion.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly incorporates the fixed architecture, listing \\\"doesn't fight the locked API field\\\" as a hard constraint that must be agreed upon before evaluating names.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response refuses to just look for a new name, instead proposing to change the decision process, establish ranked criteria, and even reuse a past candidate to avoid \\\"a new set of unfamiliar objections.\\\"\"\n    }\n  ]\n}"
+}

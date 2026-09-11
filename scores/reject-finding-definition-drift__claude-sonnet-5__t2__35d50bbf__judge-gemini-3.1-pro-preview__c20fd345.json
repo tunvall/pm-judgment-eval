@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf__judge-gemini-3.1-pro-preview__c20fd345",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:10:23.893892+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that the distinction is not \"just a wording tweak\" because it \"changes the business stakes of the claim,\" recognizing the material difference between product-level and platform-level departure."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate reframes the core claim and pairs it with a caveat/footnote explaining the definitional distinction, reasoning that this approach \"signals rigor rather than sloppiness\" to reviewers familiar with the underlying tables."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly addresses credibility, weighing the \"asymmetric cost of an executive-level misstatement versus a slightly less punchy slide\" and noting that being caught live would \"undermine trust in the whole document.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate does not try to salvage the original claim because it was already drafted; instead, they are willing to accept a \"slightly less punchy slide\" and explicitly state they will \"either find a different piece of evidence or soften the claim\" rather than keep the flawed narrative."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a highly concrete action plan: relabel the metric to reflect \"single-product disengagement,\" attempt to quickly re-run the analysis with the correct churn definition, and rebuild the narrative around the rescoped claim."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that the distinction is not \\\"just a wording tweak\\\" because it \\\"changes the business stakes of the claim,\\\" recognizing the material difference between product-level and platform-level departure.\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate reframes the core claim and pairs it with a caveat/footnote explaining the definitional distinction, reasoning that this approach \\\"signals rigor rather than sloppiness\\\" to reviewers familiar with the underlying tables.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses credibility, weighing the \\\"asymmetric cost of an executive-level misstatement versus a slightly less punchy slide\\\" and noting that being caught live would \\\"undermine trust in the whole document.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate does not try to salvage the original claim because it was already drafted; instead, they are willing to accept a \\\"slightly less punchy slide\\\" and explicitly state they will \\\"either find a different piece of evidence or soften the claim\\\" rather than keep the flawed narrative.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a highly concrete action plan: relabel the metric to reflect \\\"single-product disengagement,\\\" attempt to quickly re-run the analysis with the correct churn definition, and rebuild the narrative around the rescoped claim.\"\n    }\n  ]\n}\n```"
+}

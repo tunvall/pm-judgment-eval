@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3__judge-gpt-5.6-sol__618a5f96",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__structured__t1__b8787fb3",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:59:58.979149+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes an unambiguous call: \u201cimmediately order a rollback of the new integration launch,\u201d with Engineering authorized to execute it at once."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It frames rollback as a return to a known-good state followed by a properly tested relaunch, while contrasting that reversible pause with the \u201cpotentially irreversible damage to customer trust\u201d from leaving the regression live. It also acknowledges that rollback may require remediation if it is not completely clean."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs lost PR and marketing momentum and an embarrassing retraction against mistaken alerts, support burden, operational harm, and degraded trust accruing over several days, concluding that the latter is substantially worse."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It considers but rejects a rapid untested hotfix because it could introduce \u201cnew, uncalibrated bugs,\u201d prolong the outage, or create silent failures in a sensitive risk-decisioning system."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond rollback, it specifies production monitoring, internal and customer-facing communications, a status-page update, support scripts, and a workstream to build, test, and safely relaunch the integration."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response makes an unambiguous call: \u201cimmediately order a rollback of the new integration launch,\u201d with Engineering authorized to execute it at once.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"met\",\"justification\":\"It frames rollback as a return to a known-good state followed by a properly tested relaunch, while contrasting that reversible pause with the \u201cpotentially irreversible damage to customer trust\u201d from leaving the regression live. It also acknowledges that rollback may require remediation if it is not completely clean.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response explicitly weighs lost PR and marketing momentum and an embarrassing retraction against mistaken alerts, support burden, operational harm, and degraded trust accruing over several days, concluding that the latter is substantially worse.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"It considers but rejects a rapid untested hotfix because it could introduce \u201cnew, uncalibrated bugs,\u201d prolong the outage, or create silent failures in a sensitive risk-decisioning system.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"Beyond rollback, it specifies production monitoring, internal and customer-facing communications, a status-page update, support scripts, and a workstream to build, test, and safely relaunch the integration.\"}]}"
+}

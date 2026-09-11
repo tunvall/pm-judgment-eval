@@ -1,5 +1,5 @@
 id: override-customer-signal
-version: 1
+version: 2
 set: dev
 
 title: Override an explicit customer signal on a launch blocker
@@ -58,15 +58,23 @@ rubric:
     - id: identifies_existing_capability_as_relevant
       description: >
         Notices that the undocumented suppress capability is directly relevant to
-        addressing the underlying complaint, rather than only proposing new
-        engineering work.
+        the underlying complaint and factors it into the recommendation, whether
+        that means using it as an interim mitigation, citing it as a reason a
+        fast-follow is lower-risk than it looks, or explicitly explaining why it's
+        insufficient on its own and a fuller fix is still warranted. Full credit
+        does not require using the capability as the solution, only reasoning
+        about its relevance rather than ignoring it.
       weight: 2
 
     - id: distinguishes_need_from_stated_solution
       description: >
-        Recognizes that the customer's underlying need (some control over alert
-        volume) may be addressable short of the full configurability framework they
-        referenced.
+        Explicitly separates the customer's underlying need (some control over
+        alert volume) from the specific solution they proposed (the full
+        configurability framework), and reasons about whether cheaper options meet
+        that need or whether the full framework is actually required. Full credit
+        does not require concluding that a cheaper option suffices, only showing
+        this separation and reasoning explicitly, even if the conclusion is that
+        only the full framework actually addresses the need.
       weight: 3
 
     - id: flags_residual_risk_explicitly
@@ -101,3 +109,12 @@ analysis_only:
     other information suggests the underlying need can be met more cheaply, and
     whether that override comes with honest risk acknowledgment rather than false
     confidence.
+
+    v2 (2026-09-10): two criteria reworded after external methodology review
+    (ChatGPT + Gemini, independently) flagged that identifies_existing_capability_as_relevant
+    and distinguishes_need_from_stated_solution effectively required reaching the
+    historical fast-follow conclusion to score full credit, rather than rewarding
+    the reasoning process regardless of which way it concluded. Both criteria now
+    explicitly credit the separation/analysis itself, not the specific conclusion
+    reached. v1 scores remain valid records of what happened under the old
+    wording.

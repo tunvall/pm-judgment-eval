@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe__judge-gpt-5.6-sol__c3d68a6e",
+  "run_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:03:50.809509+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says that because \u201cthere's no hard deadline and the team timeline has slack,\u201d there is no need for an immediate forcing function and a modest delay has little cost."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies concrete costs of public escalation, including spending the peer\u2019s trust, damaging psychological safety around commitments, and creating durable relationship damage."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects public commitment as sufficient grounds for an initial public nudge, instead proposing that the peer personally post a revised public timeline after a private conversation."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends a private DM that acknowledges workload, establishes a realistic date, offers help or scope reduction, and agrees on a new date, followed by a peer-authored public update and a factual public check-in only if the revised commitment also stalls."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says that because \u201cthere's no hard deadline and the team timeline has slack,\u201d there is no need for an immediate forcing function and a modest delay has little cost.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It identifies concrete costs of public escalation, including spending the peer\u2019s trust, damaging psychological safety around commitments, and creating durable relationship damage.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"The response rejects public commitment as sufficient grounds for an initial public nudge, instead proposing that the peer personally post a revised public timeline after a private conversation.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends a private DM that acknowledges workload, establishes a realistic date, offers help or scope reduction, and agrees on a new date, followed by a peer-authored public update and a factual public check-in only if the revised commitment also stalls.\"}]}"
+}

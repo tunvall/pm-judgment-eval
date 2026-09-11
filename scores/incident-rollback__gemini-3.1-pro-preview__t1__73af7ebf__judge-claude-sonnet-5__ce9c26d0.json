@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__judge-claude-sonnet-5__ce9c26d0",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:02:51.695056+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would order an immediate rollback of the new release (or disable it via feature flags, if applicable)' rather than laying out options to weigh."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the tradeoff as 'Announcements can be walked back; broken trust is harder to repair,' directly comparing the reversibility of the rollback/announcement delay against the harder-to-undo cost of leaving the bug live for days."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response weighs 'a several-day resolution timeline is unsustainable' and accumulating support/trust damage against the 'politically uncomfortable and embarrassing' cost of walking back the public announcement, concluding the former outweighs the latter."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than pushing engineering for a rushed patch, it explicitly instructs them to 'take the necessary several days to build and rigorously test the proper fix in a staging environment,' avoiding reliance on an unvalidated quick fix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, it lays out customer/support communications, a staged re-launch message ('We expect to resume the rollout in X days'), and a blameless post-mortem as follow-on steps."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would order an immediate rollback of the new release (or disable it via feature flags, if applicable)' rather than laying out options to weigh.\"},\n  {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the tradeoff as 'Announcements can be walked back; broken trust is harder to repair,' directly comparing the reversibility of the rollback/announcement delay against the harder-to-undo cost of leaving the bug live for days.\"},\n  {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response weighs 'a several-day resolution timeline is unsustainable' and accumulating support/trust damage against the 'politically uncomfortable and embarrassing' cost of walking back the public announcement, concluding the former outweighs the latter.\"},\n  {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"Rather than pushing engineering for a rushed patch, it explicitly instructs them to 'take the necessary several days to build and rigorously test the proper fix in a staging environment,' avoiding reliance on an unvalidated quick fix.\"},\n  {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, it lays out customer/support communications, a staged re-launch message ('We expect to resume the rollout in X days'), and a blameless post-mortem as follow-on steps.\"}\n]}"
+}

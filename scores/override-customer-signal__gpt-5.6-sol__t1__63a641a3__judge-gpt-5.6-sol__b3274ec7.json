@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3__judge-gpt-5.6-sol__b3274ec7",
+  "run_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:55:36.206928+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the customer signal as strong evidence but not dispositive, proposing validation of a minimum package rather than automatically building the full multi-quarter framework."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly incorporates the existing suppress-from-notification capability, recommending that it be made prominent, documented, and verified against the recurring-alert use case."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the \u201ccustomer outcome required for launch\u201d from the comprehensive framework and evaluates whether prominent suppression plus higher threshold guidance can provide sufficient immediate control."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It acknowledges residual risk through instrumentation, staged rollout, and rollback if alert volume or complaints exceed limits. However, it does not explicitly articulate the specific hindsight risk that high adoption could magnify the consequences of deferring full management controls."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: ship a minimum control package, validate it with customers, proceed with a staged launch only if validated, and otherwise block broad availability while potentially running an opt-in beta."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the customer signal as strong evidence but not dispositive, proposing validation of a minimum package rather than automatically building the full multi-quarter framework.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It directly incorporates the existing suppress-from-notification capability, recommending that it be made prominent, documented, and verified against the recurring-alert use case.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the \u201ccustomer outcome required for launch\u201d from the comprehensive framework and evaluates whether prominent suppression plus higher threshold guidance can provide sufficient immediate control.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It acknowledges residual risk through instrumentation, staged rollout, and rollback if alert volume or complaints exceed limits. However, it does not explicitly articulate the specific hindsight risk that high adoption could magnify the consequences of deferring full management controls.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: ship a minimum control package, validate it with customers, proceed with a staged launch only if validated, and otherwise block broad availability while potentially running an opt-in beta.\"}]}"
+}

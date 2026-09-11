@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287__judge-claude-sonnet-5__8f95272b",
+  "run_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:50:19.061949+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that 'with no hard deadline and known competing pressure, public pressure would be disproportionate,' directly linking the absence of a hard deadline to a lower-pressure approach."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response gestures at social cost by noting it wants to avoid 'using the audience as leverage' and worries about pushing the peer into an unrealistic commitment, but it never explicitly names relationship trust or reputational damage as a cost being weighed\u2014it's implied rather than stated."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate rejects the public-pressure default outright, reasoning that it 'would be disproportionate' and could backfire by displacing more important work, rather than treating the public commitment as automatic justification."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete private message script, proposes a checkpoint/reset plan, and outlines an escalation path if the revised plan slips, rather than staying at the level of abstract principle."
+    }
+  ],
+  "weighted_total": 8.5,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states that 'with no hard deadline and known competing pressure, public pressure would be disproportionate,' directly linking the absence of a hard deadline to a lower-pressure approach.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at social cost by noting it wants to avoid 'using the audience as leverage' and worries about pushing the peer into an unrealistic commitment, but it never explicitly names relationship trust or reputational damage as a cost being weighed\u2014it's implied rather than stated.\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The candidate rejects the public-pressure default outright, reasoning that it 'would be disproportionate' and could backfire by displacing more important work, rather than treating the public commitment as automatic justification.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete private message script, proposes a checkpoint/reset plan, and outlines an escalation path if the revised plan slips, rather than staying at the level of abstract principle.\"}\n  ]\n}"
+}

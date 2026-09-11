@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t2__205ff1d9__judge-claude-sonnet-5__d0485025",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t2__205ff1d9",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T18:04:11.071338+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with a clear, unambiguous decision: 'I would order an immediate rollback of the new launch,' with no hedging or listing of unresolved options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response implies the rollback is temporary and undoable ('rollout has been temporarily paused,' 'we will notify them when it is re-enabled,' 'customers will ultimately forgive a delayed integration'), suggesting reversibility of the chosen path, but it never explicitly frames this as a reversibility tradeoff versus the fast-fix alternative."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly contrasts the two costs: 'rolling back a publicly announced feature is embarrassing' versus 'leaving core functionality broken for existing customers for several days is catastrophic,' and later states 'PR embarrassment is temporary; breaking your core product is a fundamental failure of reliability.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects pushing a rushed fix, instead giving engineering 'the several days they need to build, thoroughly test, and QA the proper scoping fix without the pressure of a live, high-severity incident.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, the response lays out a full follow-up plan: support scripts for both customer groups, a public status page update, engineering time to build the proper fix, and a leadership briefing including 'the estimated timeline for the re-launch.'"
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with a clear, unambiguous decision: 'I would order an immediate rollback of the new launch,' with no hedging or listing of unresolved options.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response implies the rollback is temporary and undoable ('rollout has been temporarily paused,' 'we will notify them when it is re-enabled,' 'customers will ultimately forgive a delayed integration'), suggesting reversibility of the chosen path, but it never explicitly frames this as a reversibility tradeoff versus the fast-fix alternative.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly contrasts the two costs: 'rolling back a publicly announced feature is embarrassing' versus 'leaving core functionality broken for existing customers for several days is catastrophic,' and later states 'PR embarrassment is temporary; breaking your core product is a fundamental failure of reliability.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects pushing a rushed fix, instead giving engineering 'the several days they need to build, thoroughly test, and QA the proper scoping fix without the pressure of a live, high-severity incident.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, the response lays out a full follow-up plan: support scripts for both customer groups, a public status page update, engineering time to build the proper fix, and a leadership briefing including 'the estimated timeline for the re-launch.'\"}\n  ]\n}"
+}

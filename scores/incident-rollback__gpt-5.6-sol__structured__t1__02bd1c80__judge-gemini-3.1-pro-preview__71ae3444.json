@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80__judge-gemini-3.1-pro-preview__71ae3444",
+  "run_id": "incident-rollback__gpt-5.6-sol__structured__t1__02bd1c80",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:07:49.408999+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a clear and decisive call by stating in the recommendation to 'Immediately roll back the new integration launch to the last known good state.'"
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response recognizes the reversibility of its chosen path by framing the rollback as a 'temporary, transparent withdrawal' that will be relaunched later, but it lacks a fully symmetric comparison of reversibility across all the alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly tackles this tradeoff, arguing that 'The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects the fast fix option, noting that a 'rushed and inadequately tested calibration change could worsen the incident or create new false positives or negatives.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a comprehensive 10-point 'Next steps' list that includes external communication, identifying affected customers, and a clear path toward building and testing the permanent fix for relaunch."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a clear and decisive call by stating in the recommendation to 'Immediately roll back the new integration launch to the last known good state.'\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response recognizes the reversibility of its chosen path by framing the rollback as a 'temporary, transparent withdrawal' that will be relaunched later, but it lacks a fully symmetric comparison of reversibility across all the alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly tackles this tradeoff, arguing that 'The public announcement is a real cost, but it does not outweigh ongoing incorrect risk signals to existing customers.'\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects the fast fix option, noting that a 'rushed and inadequately tested calibration change could worsen the incident or create new false positives or negatives.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a comprehensive 10-point 'Next steps' list that includes external communication, identifying affected customers, and a clear path toward building and testing the permanent fix for relaunch.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d__judge-gpt-5.6-sol__ed3057e3",
+  "run_id": "private-nudge__gpt-5.6-sol__t1__e6aa959d",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:00:29.389068+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly uses the flexible timeline and lack of a hard deadline to justify avoiding unnecessary pressure, noting that public pressure could cause rushed work or concealed problems."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies \u201cavoidable social pressure\u201d and \u201cpublic shaming\u201d as concrete costs of a public nudge, favoring a private, empathetic approach instead."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Although it acknowledges that the original commitment was public, it recommends only a neutral status update and states that a public channel should not be used \u201cmerely as a forcing function.\u201d"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends starting with a private message, provides sample wording, and proposes agreeing on a realistic next step or revised date, followed by proportionate escalation only if new checkpoints are repeatedly missed."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly uses the flexible timeline and lack of a hard deadline to justify avoiding unnecessary pressure, noting that public pressure could cause rushed work or concealed problems.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It identifies \u201cavoidable social pressure\u201d and \u201cpublic shaming\u201d as concrete costs of a public nudge, favoring a private, empathetic approach instead.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"Although it acknowledges that the original commitment was public, it recommends only a neutral status update and states that a public channel should not be used \u201cmerely as a forcing function.\u201d\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends starting with a private message, provides sample wording, and proposes agreeing on a realistic next step or revised date, followed by proportionate escalation only if new checkpoints are repeatedly missed.\"}]}"
+}

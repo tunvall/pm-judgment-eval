@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7__judge-gpt-5.6-sol__f194a32e",
+  "run_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:51:17.949316+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes \u201cproduct churn\u201d from \u201cfull platform churn\u201d and acknowledges that product churn \u201cis not as severe,\u201d requiring the strategic narrative and potentially the strategy itself to change."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not rely on a footnote alone: it recommends prominently correcting the main claim to product departure, then using a note to define the data precisely. It explicitly connects this approach to the knowledgeable audience, explaining that leaving the false equivalence would invite a credibility-damaging challenge."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the weaker but accurate product-churn argument against the risk that an executive catches the inflated claim and shifts attention from the strategy to the PM\u2019s analytical rigor, potentially discrediting the whole document."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Although the finding is already drafted, the response insists it must be rewritten or replaced and states, \u201cUnder no circumstances would I leave the misleading claim in the document.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It proposes a concrete plan: immediately relabel and reframe the finding, timebox 1\u20132 hours to query actual platform churn, and use the revised product-churn narrative if the correct analysis is unavailable or unsupportive."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response clearly distinguishes \u201cproduct churn\u201d from \u201cfull platform churn\u201d and acknowledges that product churn \u201cis not as severe,\u201d requiring the strategic narrative and potentially the strategy itself to change.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"It does not rely on a footnote alone: it recommends prominently correcting the main claim to product departure, then using a note to define the data precisely. It explicitly connects this approach to the knowledgeable audience, explaining that leaving the false equivalence would invite a credibility-damaging challenge.\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly weighs the weaker but accurate product-churn argument against the risk that an executive catches the inflated claim and shifts attention from the strategy to the PM\u2019s analytical rigor, potentially discrediting the whole document.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"Although the finding is already drafted, the response insists it must be rewritten or replaced and states, \u201cUnder no circumstances would I leave the misleading claim in the document.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It proposes a concrete plan: immediately relabel and reframe the finding, timebox 1\u20132 hours to query actual platform churn, and use the revised product-churn narrative if the correct analysis is unavailable or unsupportive.\"}]}"
+}

@@ -52,6 +52,19 @@ def build_report():
         # the outdated score so it doesn't sit next to the current one.
         return score.get("case_version") == current
 
+    def is_current_alignment(score):
+        # Deliberately NOT filtered by case_version, unlike reasoning scores.
+        # case_version bumps in this project have so far only ever meant "the
+        # rubric criteria changed" (see each case's case_author_notes) — the
+        # scenario and analysis_only.historical_decision, the only two things
+        # the alignment judge actually sees, have never changed. Applying the
+        # rubric-staleness filter here would wrongly discard perfectly valid
+        # alignment judgments just because an unrelated rubric edit bumped the
+        # version number. If a case's scenario/historical_decision ever does
+        # change in place, this assumption breaks and alignment scores would
+        # need their own staleness signal, not this one.
+        return True
+
     reasoning_scores = defaultdict(list)
     for s in load_json_dir("scores"):
         if s.get("failed"):
@@ -69,7 +82,7 @@ def build_report():
             continue
         if s.get("run_id") not in runs:
             continue
-        if not is_current(s):
+        if not is_current_alignment(s):
             stale_filtered += 1
             continue
         alignment_scores[s["run_id"]].append(s)

@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636__judge-gemini-3.1-pro-preview__7222385f",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:57:28.606304+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states to 'Treat the complaint data as the real signal, not a distraction from the roadmap,' identifying the customer feedback on false positives as the core driver for the product's new direction."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate perfectly separates the two, noting that 'A year of engineering investment justifies protecting the underlying capability, not the narrative built on top of it.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively rejects sunk cost logic, arguing that 'Continuing to execute against an approved narrative that's about to be neutralized isn't discipline, it's inertia.'"
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate engages with the peer's argument about precision by proposing to empirically test if the current architecture can actually support a precision-based narrative."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a highly concrete, sequenced recommendation to validate the product's precision against the complaint data and subsequently reframe the go-to-market narrative."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states to 'Treat the complaint data as the real signal, not a distraction from the roadmap,' identifying the customer feedback on false positives as the core driver for the product's new direction.\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate perfectly separates the two, noting that 'A year of engineering investment justifies protecting the underlying capability, not the narrative built on top of it.'\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively rejects sunk cost logic, arguing that 'Continuing to execute against an approved narrative that's about to be neutralized isn't discipline, it's inertia.'\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate engages with the peer's argument about precision by proposing to empirically test if the current architecture can actually support a precision-based narrative.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a highly concrete, sequenced recommendation to validate the product's precision against the complaint data and subsequently reframe the go-to-market narrative.\"\n    }\n  ]\n}"
+}

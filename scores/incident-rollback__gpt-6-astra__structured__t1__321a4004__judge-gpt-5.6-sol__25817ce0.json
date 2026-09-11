@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004__judge-gpt-5.6-sol__25817ce0",
+  "run_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T16:46:11.835441+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly calls to \u201cinitiate rollback now,\u201d allowing a targeted disable only if engineering can promptly prove it is equally safe, complete, and fast."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It frames rollback as a temporary withdrawal that restores prior behavior and can be followed by a validated relaunch, while noting that continued faulty signals may already have prompted customer actions requiring separate remediation. It also contrasts this with the regression risk of an emergency patch and the compounding harm of leaving the launch live."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly acknowledges that withdrawal has \u201ca real customer-trust cost\u201d but concludes that preserving a public commitment does not justify extending confirmed customer harm and support burden for days."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It rejects emergency patching as the default because it would accept reduced validation and introduce regression risk, especially given that the proper tested fix requires several days."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a detailed recovery path: verify containment, notify customer-facing teams, identify and remediate affected signals, build regression tests, and relaunch through staged exposure and monitoring."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly calls to \u201cinitiate rollback now,\u201d allowing a targeted disable only if engineering can promptly prove it is equally safe, complete, and fast.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"It frames rollback as a temporary withdrawal that restores prior behavior and can be followed by a validated relaunch, while noting that continued faulty signals may already have prompted customer actions requiring separate remediation. It also contrasts this with the regression risk of an emergency patch and the compounding harm of leaving the launch live.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly acknowledges that withdrawal has \u201ca real customer-trust cost\u201d but concludes that preserving a public commitment does not justify extending confirmed customer harm and support burden for days.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"It rejects emergency patching as the default because it would accept reduced validation and introduce regression risk, especially given that the proper tested fix requires several days.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It provides a detailed recovery path: verify containment, notify customer-facing teams, identify and remediate affected signals, build regression tests, and relaunch through staged exposure and monitoring.\"\n    }\n  ]\n}"
+}

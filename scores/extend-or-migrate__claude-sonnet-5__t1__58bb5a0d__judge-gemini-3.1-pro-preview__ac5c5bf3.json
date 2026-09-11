@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-gemini-3.1-pro-preview__ac5c5bf3",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:08:29.013896+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the long-term architecture agreement from the sequencing of this specific migration, noting that \"Choosing to extend the old platform for this one launch doesn't contradict that strategy.\""
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate firmly relies on their own technically-derived estimate, stating that the informally circulated estimate \"is simply wrong\" and grounding the decision in the structural mismatches found."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses technical debt and schedule risks but does not identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that deferring might be seen as an \"evergreen excuse to avoid the newer platform\" and addresses this by outlining steps to make the deferral credible and secure explicit agreement."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a decisive recommendation to \"Extend the older platform for this launch\" rather than just listing tradeoffs, and outlines concrete next steps like building behind a clean interface."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the long-term architecture agreement from the sequencing of this specific migration, noting that \\\"Choosing to extend the old platform for this one launch doesn't contradict that strategy.\\\"\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate firmly relies on their own technically-derived estimate, stating that the informally circulated estimate \\\"is simply wrong\\\" and grounding the decision in the structural mismatches found.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses technical debt and schedule risks but does not identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage across products.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges that deferring might be seen as an \\\"evergreen excuse to avoid the newer platform\\\" and addresses this by outlining steps to make the deferral credible and secure explicit agreement.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a decisive recommendation to \\\"Extend the older platform for this launch\\\" rather than just listing tradeoffs, and outlines concrete next steps like building behind a clean interface.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0__judge-claude-sonnet-5__12d2794e",
+  "run_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:09:49.394904+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response opens with 'The decision is about sequencing, not direction. Everyone agrees the newer platform is the destination,' and explicitly frames the choice as which platform should be the vehicle for this launch rather than a dispute over long-term strategy."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The recommendation is built on 'A zero-margin schedule built on an estimate that already doubled once is not a plan; it's a hope,' explicitly rejecting the optimistic circulated timeline in favor of the technically-derived one, and even proposes correcting the record with the doubled estimate."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly weighs split-platform risk in option 4 ('creates a split-brain operational picture for one product... two on-call stories') and reasons that the chosen path (keeping everything on the old platform) avoids this inconsistency, showing it was actively considered rather than assumed away."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response names 'Political perception. Choosing the legacy platform can be read as not buying into the strategy,' and gives a concrete mitigation ('frame it explicitly as sequencing, present the technical review, and show the migration commitment')."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific option ('Take option 3: extend the older platform... build the extension behind a clear interface... pair that with an explicit, dated migration plan') and lists six concrete, actionable next steps rather than leaving the tradeoff unresolved."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response opens with 'The decision is about sequencing, not direction. Everyone agrees the newer platform is the destination,' and explicitly frames the choice as which platform should be the vehicle for this launch rather than a dispute over long-term strategy.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The recommendation is built on 'A zero-margin schedule built on an estimate that already doubled once is not a plan; it's a hope,' explicitly rejecting the optimistic circulated timeline in favor of the technically-derived one, and even proposes correcting the record with the doubled estimate.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"met\", \"justification\": \"The response explicitly weighs split-platform risk in option 4 ('creates a split-brain operational picture for one product... two on-call stories') and reasons that the chosen path (keeping everything on the old platform) avoids this inconsistency, showing it was actively considered rather than assumed away.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response names 'Political perception. Choosing the legacy platform can be read as not buying into the strategy,' and gives a concrete mitigation ('frame it explicitly as sequencing, present the technical review, and show the migration commitment').\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific option ('Take option 3: extend the older platform... build the extension behind a clear interface... pair that with an explicit, dated migration plan') and lists six concrete, actionable next steps rather than leaving the tradeoff unresolved.\"}\n  ]\n}"
+}

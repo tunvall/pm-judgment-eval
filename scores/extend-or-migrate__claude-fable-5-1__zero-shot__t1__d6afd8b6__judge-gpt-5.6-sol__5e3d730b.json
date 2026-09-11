@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6__judge-gpt-5.6-sol__5e3d730b",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:09:49.736534+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly supports the long-term strategy while separating it from the launch decision: \u201cA forced migration done badly hurts the strategy more than a deferred one,\u201d followed by a separate post-launch migration plan."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It relies on the technically derived estimate and known structural gaps, stating that the realistic estimate \u201calready consumes the entire window\u201d and directly calling the informal optimistic timeline wrong."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses the risk of a rushed or \u201chalf-correct migration,\u201d but it does not identify or weigh the inconsistent customer experience that can result from different products remaining on different notification platforms during the transition."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the appearance of resisting strategy by recommending explicit sign-off and framing the decision as \u201cwe're extending the old platform for launch, and here's our committed migration plan,\u201d rather than skipping migration."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the older platform for this launch, then specifies concrete follow-ups including an abstraction layer, publishing the gap analysis, assigning a migration owner and date, and securing sign-off."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly supports the long-term strategy while separating it from the launch decision: \u201cA forced migration done badly hurts the strategy more than a deferred one,\u201d followed by a separate post-launch migration plan.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"It relies on the technically derived estimate and known structural gaps, stating that the realistic estimate \u201calready consumes the entire window\u201d and directly calling the informal optimistic timeline wrong.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses the risk of a rushed or \u201chalf-correct migration,\u201d but it does not identify or weigh the inconsistent customer experience that can result from different products remaining on different notification platforms during the transition.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"It directly addresses the appearance of resisting strategy by recommending explicit sign-off and framing the decision as \u201cwe're extending the old platform for launch, and here's our committed migration plan,\u201d rather than skipping migration.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It clearly recommends extending the older platform for this launch, then specifies concrete follow-ups including an abstraction layer, publishing the gap analysis, assigning a migration owner and date, and securing sign-off.\"\n    }\n  ]\n}"
+}

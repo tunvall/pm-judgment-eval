@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806__judge-gpt-5.6-sol__94f7c49f",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:08:33.795656+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the problem is not finding \u201cthe right word\u201d but \u201can optimization against a moving target,\u201d and reframes round four as primarily a process decision rather than another isolated naming exercise."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes an explicit decision owner, agreed criteria, a time box, a decision record, and a rule requiring new objections to demonstrate inferiority to a specific alternative. It also identifies concrete churn costs across docs, SDKs, marketing, partner teams, and organizational confidence."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response distinguishes actionable objections from merely observing that every option has a flaw, requiring post-deadline objections to show the choice is worse on agreed criteria. This directly guards against diminishing-returns re-litigation while preserving a path for substantive evidence."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the API field as fixed, suggesting its existing name only as a possible customer-facing candidate or tiebreaker because developers already see it, rather than proposing an architectural rename. It also elevates product-family consistency into the pre-agreed hard constraints and seeks family-level authority."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly predicts that repeating \u201cgenerate candidates, test them, pick one, send it to review\u201d will fail because the process is unchanged. Instead of inventing another ad hoc candidate, it proposes a controlled comparative study of known options, ranked criteria, supporting descriptor copy, and a closure mechanism."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the problem is not finding \u201cthe right word\u201d but \u201can optimization against a moving target,\u201d and reframes round four as primarily a process decision rather than another isolated naming exercise.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes an explicit decision owner, agreed criteria, a time box, a decision record, and a rule requiring new objections to demonstrate inferiority to a specific alternative. It also identifies concrete churn costs across docs, SDKs, marketing, partner teams, and organizational confidence.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response distinguishes actionable objections from merely observing that every option has a flaw, requiring post-deadline objections to show the choice is worse on agreed criteria. This directly guards against diminishing-returns re-litigation while preserving a path for substantive evidence.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It treats the API field as fixed, suggesting its existing name only as a possible customer-facing candidate or tiebreaker because developers already see it, rather than proposing an architectural rename. It also elevates product-family consistency into the pre-agreed hard constraints and seeks family-level authority.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"The response explicitly predicts that repeating \u201cgenerate candidates, test them, pick one, send it to review\u201d will fail because the process is unchanged. Instead of inventing another ad hoc candidate, it proposes a controlled comparative study of known options, ranked criteria, supporting descriptor copy, and a closure mechanism.\"}]}"
+}

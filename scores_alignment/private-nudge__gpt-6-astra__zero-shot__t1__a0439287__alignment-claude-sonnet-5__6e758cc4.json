@@ -1,0 +1,15 @@
+{
+  "score_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287__alignment-claude-sonnet-5__6e758cc4",
+  "run_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:14:30.524046+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to follow up with a private direct message first, matching the historical decision to send a private DM rather than raising it publicly, with public escalation only as a fallback if needed.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to follow up with a private direct message first, matching the historical decision to send a private DM rather than raising it publicly, with public escalation only as a fallback if needed.\"\n}"
+}

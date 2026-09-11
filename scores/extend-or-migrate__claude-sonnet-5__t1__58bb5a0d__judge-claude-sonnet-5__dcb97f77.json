@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d__judge-claude-sonnet-5__dcb97f77",
+  "run_id": "extend-or-migrate__claude-sonnet-5__t1__58bb5a0d",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:08:03.166598+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the issue as sequencing not direction: 'The disagreement is about sequencing, not direction... Conflating we agree on the long-term architecture with therefore we must migrate now, under this deadline is the actual mistake being pressured into.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly rejects the circulated estimate, stating it 'is not a competing opinion I should split the difference with; it's simply wrong, and I have the technical review to show why,' and bases the decision on the doubled, technically-derived estimate."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response weighs risks of a rushed migration (schedule and reliability risk) and notes extending the old platform 'adds one more thing to retire later,' but it never explicitly names or weighs the risk of inconsistent customer experience arising from products being split across two platforms during the deferral period."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'What I'd avoid' section and the explicit commitment not to 'kick the can forever' (documenting mismatches for the platform owner, scoping a real migration project, getting explicit sign-off that it's deferred not cancelled) directly preempts the charge that this recommendation is resisting the company's stated strategic direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, committed recommendation ('ship on the old platform, keep the interface migration-friendly, and treat the platform move as a real project with real scoping') along with concrete follow-up actions, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the issue as sequencing not direction: 'The disagreement is about sequencing, not direction... Conflating we agree on the long-term architecture with therefore we must migrate now, under this deadline is the actual mistake being pressured into.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects the circulated estimate, stating it 'is not a competing opinion I should split the difference with; it's simply wrong, and I have the technical review to show why,' and bases the decision on the doubled, technically-derived estimate.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response weighs risks of a rushed migration (schedule and reliability risk) and notes extending the old platform 'adds one more thing to retire later,' but it never explicitly names or weighs the risk of inconsistent customer experience arising from products being split across two platforms during the deferral period.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The 'What I'd avoid' section and the explicit commitment not to 'kick the can forever' (documenting mismatches for the platform owner, scoping a real migration project, getting explicit sign-off that it's deferred not cancelled) directly preempts the charge that this recommendation is resisting the company's stated strategic direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, committed recommendation ('ship on the old platform, keep the interface migration-friendly, and treat the platform move as a real project with real scoping') along with concrete follow-up actions, rather than just listing tradeoffs.\"}\n  ]\n}"
+}

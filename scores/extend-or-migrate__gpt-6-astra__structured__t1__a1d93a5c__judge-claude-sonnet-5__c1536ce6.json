@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__structured__t1__a1d93a5c__judge-claude-sonnet-5__c1536ce6",
+  "run_id": "extend-or-migrate__gpt-6-astra__structured__t1__a1d93a5c",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:08:55.853339+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response opens by framing the decision as 'whether to make migration to the newer notification platform a dependency of this launch\u2014not whether to adopt that platform eventually,' and later reiterates 'This is a sequencing decision consistent with the company's strategy, not a rejection of it.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The recommendation explicitly states 'The technically grounded estimate\u2014not the optimistic circulated timeline\u2014should drive the decision,' directly grounding the choice in the pessimistic technical estimate over the informally circulated one."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response names related risks (legacy dependence, 'duplicate work,' 'temporary becomes permanent') and briefly notes for the narrow-integration alternative that 'operating across two platforms may add complexity,' but it never explicitly frames or weighs the risk of inconsistent customer experience arising from mismatched platform coverage across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response anticipates the optics concern directly by stating the recommendation is 'a sequencing decision consistent with the company's strategy, not a rejection of it,' and commits to documenting the extension as temporary with a migration owner and milestones to reinforce that framing."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, specific recommendation ('Extend the older platform for this bounded launch need and decouple the full migration from the launch') along with a concrete five-step action plan, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response opens by framing the decision as 'whether to make migration to the newer notification platform a dependency of this launch\u2014not whether to adopt that platform eventually,' and later reiterates 'This is a sequencing decision consistent with the company's strategy, not a rejection of it.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The recommendation explicitly states 'The technically grounded estimate\u2014not the optimistic circulated timeline\u2014should drive the decision,' directly grounding the choice in the pessimistic technical estimate over the informally circulated one.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response names related risks (legacy dependence, 'duplicate work,' 'temporary becomes permanent') and briefly notes for the narrow-integration alternative that 'operating across two platforms may add complexity,' but it never explicitly frames or weighs the risk of inconsistent customer experience arising from mismatched platform coverage across products.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response anticipates the optics concern directly by stating the recommendation is 'a sequencing decision consistent with the company's strategy, not a rejection of it,' and commits to documenting the extension as temporary with a migration owner and milestones to reinforce that framing.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, specific recommendation ('Extend the older platform for this bounded launch need and decouple the full migration from the launch') along with a concrete five-step action plan, rather than just listing tradeoffs.\"}\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t2__01fcac7b__judge-gemini-3.1-pro-preview__ef80f3a8",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t2__01fcac7b",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:54:43.887650+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states that 'The strategic question and the launch question are different questions' and notes that while nobody disputes the long-term destination, it is valid to dispute the vehicle for getting there.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response grounds its decision in the pessimistic estimate, noting that a realistic estimate consuming the entire window means the plan is 'already late,' and advises correcting the record on the circulating timeline.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the risk of inconsistent customer experience, noting that a partial greenfield launch on the new platform would 'make two tiers of the same product behave inconsistently for the same customers.'\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response addresses the optics of the decision by clarifying upfront that 'Nobody disputes the destination' and providing steps to ensure the choice isn't perceived as merely 'kicking the can' or ignoring company direction.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a clear, specific recommendation to 'extend the older platform for this launch' and follows up with concrete, numbered next steps to execute the decision.\"\n    }\n  ]\n}\n```",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states that 'The strategic question and the launch question are different questions' and notes that while nobody disputes the long-term destination, it is valid to dispute the vehicle for getting there."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its decision in the pessimistic estimate, noting that a realistic estimate consuming the entire window means the plan is 'already late,' and advises correcting the record on the circulating timeline."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes the risk of inconsistent customer experience, noting that a partial greenfield launch on the new platform would 'make two tiers of the same product behave inconsistently for the same customers.'"
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response addresses the optics of the decision by clarifying upfront that 'Nobody disputes the destination' and providing steps to ensure the choice isn't perceived as merely 'kicking the can' or ignoring company direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a clear, specific recommendation to 'extend the older platform for this launch' and follows up with concrete, numbered next steps to execute the decision."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0
+}

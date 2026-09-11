@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004__judge-gemini-3.1-pro-preview__95da6fa5",
+  "run_id": "incident-rollback__gpt-6-astra__structured__t1__321a4004",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T16:46:24.942315+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly commits to an immediate action, stating 'Initiate rollback now' and explicitly choosing to own the decision without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "While the response discusses executing a technical 'rollback' of the code, it never explicitly reasons about the reversibility of its chosen decision (e.g., how easily a rollback could be undone if it turns out to be wrong) compared to other options."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs these factors, concluding that 'A public commitment matters, but it does not justify continuing a known production defect that harms customers outside the launch\u2019s intended scope.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the danger of an unvalidated quick fix by noting that 'Emergency patching... introduces regression risk under pressure' and should not be the default containment strategy given the stated testing timeline."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response includes a detailed 'Next steps' section that covers notifying support teams, verifying system behavior, communicating with affected customers, and building a scoped fix for an eventual relaunch."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly commits to an immediate action, stating 'Initiate rollback now' and explicitly choosing to own the decision without waiting for the manager.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response discusses executing a technical 'rollback' of the code, it never explicitly reasons about the reversibility of its chosen decision (e.g., how easily a rollback could be undone if it turns out to be wrong) compared to other options.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs these factors, concluding that 'A public commitment matters, but it does not justify continuing a known production defect that harms customers outside the launch\u2019s intended scope.'\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the danger of an unvalidated quick fix by noting that 'Emergency patching... introduces regression risk under pressure' and should not be the default containment strategy given the stated testing timeline.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response includes a detailed 'Next steps' section that covers notifying support teams, verifying system behavior, communicating with affected customers, and building a scoped fix for an eventual relaunch.\"\n    }\n  ]\n}\n```"
+}

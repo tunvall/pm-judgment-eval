@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8__judge-gpt-5.6-sol__1242033d",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t2__890e45f8",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:04:33.323962+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes round four as deciding \u201cthe product-family naming rule and how it will be finalized,\u201d noting that another candidate subjected to the same process would likely suffer the same fate."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes one accountable decision-maker, predefined approvals, explicit acceptance of a viable but imperfect option when evidence is mixed, and strict reopening conditions. This creates a concrete path to closure rather than allowing continued review to remain the default."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response would distinguish \u201ca demonstrated misunderstanding from a terminology preference\u201d and only reopen for consequential customer confusion, material product changes, or family-wide terminology changes\u2014not a reviewer merely preferring another word."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the API field name as \u201ca fixed implementation constraint, not something to reopen\u201d and recommends maintaining a stable documented mapping between that field and customer-facing terminology."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than offering another isolated word, it proposes criteria and authority upfront, a small set of complete naming treatments tested in realistic contexts, and validation across the product family. It explicitly explains that this process differs from another open-ended candidate review that would likely repeat prior failures."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes round four as deciding \u201cthe product-family naming rule and how it will be finalized,\u201d noting that another candidate subjected to the same process would likely suffer the same fate.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes one accountable decision-maker, predefined approvals, explicit acceptance of a viable but imperfect option when evidence is mixed, and strict reopening conditions. This creates a concrete path to closure rather than allowing continued review to remain the default.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response would distinguish \u201ca demonstrated misunderstanding from a terminology preference\u201d and only reopen for consequential customer confusion, material product changes, or family-wide terminology changes\u2014not a reviewer merely preferring another word.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It treats the API field name as \u201ca fixed implementation constraint, not something to reopen\u201d and recommends maintaining a stable documented mapping between that field and customer-facing terminology.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than offering another isolated word, it proposes criteria and authority upfront, a small set of complete naming treatments tested in realistic contexts, and validation across the product family. It explicitly explains that this process differs from another open-ended candidate review that would likely repeat prior failures.\"}]}"
+}

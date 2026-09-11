@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d__judge-gpt-5.6-sol__62830af1",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:57:48.929496+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \u201cthe primary problem is no longer generating names\u201d but instead concerns decision criteria, explanatory content, and durable governance. It frames the fourth round as a response to the repeated failure to converge rather than as another isolated naming exercise."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a bounded process with a final accountable decision-maker, ranked criteria, a reopening threshold, and selection of the best option even if none is perfect. It also recognizes the cost of indecision, noting that delay blocks product progress and makes naming perfection more important than customer value."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The proposed reopening rule permits changes for materially new customer evidence, legal or regulatory issues, or a family-wide taxonomy change, while excluding reopening merely because \u201ca reviewer prefers another imperfect option.\u201d It also asks reviewers to distinguish disqualifying concerns from ordinary imperfections."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the API field as immutable and recommends explicitly mapping the selected customer-facing label to that field in documentation, SDKs, support, and migration materials. It does not propose reopening or renaming the underlying API architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than repeating an open-ended naming exercise, it proposes a constrained naming architecture\u2014an established family term plus a customer-observable timing qualifier\u2014paired with common test scenarios, pre-agreed criteria, supporting copy, and governance. It explicitly explains why prior semantic approaches are excluded and why this process differs from the previous ad hoc rounds."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that \u201cthe primary problem is no longer generating names\u201d but instead concerns decision criteria, explanatory content, and durable governance. It frames the fourth round as a response to the repeated failure to converge rather than as another isolated naming exercise.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"It proposes a bounded process with a final accountable decision-maker, ranked criteria, a reopening threshold, and selection of the best option even if none is perfect. It also recognizes the cost of indecision, noting that delay blocks product progress and makes naming perfection more important than customer value.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The proposed reopening rule permits changes for materially new customer evidence, legal or regulatory issues, or a family-wide taxonomy change, while excluding reopening merely because \u201ca reviewer prefers another imperfect option.\u201d It also asks reviewers to distinguish disqualifying concerns from ordinary imperfections.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response treats the API field as immutable and recommends explicitly mapping the selected customer-facing label to that field in documentation, SDKs, support, and migration materials. It does not propose reopening or renaming the underlying API architecture.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"Rather than repeating an open-ended naming exercise, it proposes a constrained naming architecture\u2014an established family term plus a customer-observable timing qualifier\u2014paired with common test scenarios, pre-agreed criteria, supporting copy, and governance. It explicitly explains why prior semantic approaches are excluded and why this process differs from the previous ad hoc rounds.\"\n    }\n  ]\n}"
+}

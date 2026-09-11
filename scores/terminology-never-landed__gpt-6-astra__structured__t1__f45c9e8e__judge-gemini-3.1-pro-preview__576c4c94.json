@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e__judge-gemini-3.1-pro-preview__576c4c94",
+  "run_id": "terminology-never-landed__gpt-6-astra__structured__t1__f45c9e8e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:01:27.956088+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that previous decisions have not survived subsequent reviews, pointing to a 'decision-governance problem as well as a wording problem.'"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests naming a decision owner, setting a decision date, establishing a reopening rule, and explicitly acknowledging that further reopening has coordination costs and that 'the goal is not a name that nobody can criticize.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends setting a reopening rule based only on 'material new evidence or changed product constraints\u2014not simply because another reviewer finds an imperfection,' and distinguishing 'meaningful improvements from preferences.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recognizes that 'the API field is immutable' and explicitly plans to 'keep the API field unchanged and document its mapping to the customer-facing name.'"
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate rejects running another open-ended naming round, noting it 'repeats the process that has already failed,' and instead shifts the focus to making round four about the 'naming framework and how the choice will be finalized.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that previous decisions have not survived subsequent reviews, pointing to a 'decision-governance problem as well as a wording problem.'\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests naming a decision owner, setting a decision date, establishing a reopening rule, and explicitly acknowledging that further reopening has coordination costs and that 'the goal is not a name that nobody can criticize.'\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends setting a reopening rule based only on 'material new evidence or changed product constraints\u2014not simply because another reviewer finds an imperfection,' and distinguishing 'meaningful improvements from preferences.'\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes that 'the API field is immutable' and explicitly plans to 'keep the API field unchanged and document its mapping to the customer-facing name.'\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects running another open-ended naming round, noting it 'repeats the process that has already failed,' and instead shifts the focus to making round four about the 'naming framework and how the choice will be finalized.'\"\n    }\n  ]\n}"
+}

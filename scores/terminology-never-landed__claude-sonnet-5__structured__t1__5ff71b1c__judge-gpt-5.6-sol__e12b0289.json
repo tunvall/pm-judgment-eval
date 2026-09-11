@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c__judge-gpt-5.6-sol__e12b0289",
+  "run_id": "terminology-never-landed__claude-sonnet-5__structured__t1__5ff71b1c",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:47:26.664641+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the task from picking a name to deciding \u201chow do we make a naming decision that stays decided,\u201d identifying unstable decision rights and criteria as the structural failure."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a single authorized decision owner, a time-boxed process, an executive tie-breaker, and a documented reopening threshold, while explicitly acknowledging delay, rework, and documentation churn as costs. It also accepts that the chosen name need only clear an agreed bar rather than eliminate all confusion."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the prior objections as substantively legitimate but distinguishes them from future \u201crenewed aesthetic objection,\u201d proposing that reopening require new quantitative usage or support data."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recognizes that the API field is permanently fixed and recommends dropping internal/external naming consistency as a decision axis rather than reopening the architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects running round four like the prior rounds and explains how the new attempt differs: align all stakeholders on ranked criteria first, incorporate all three prior objections into one rubric, favor an established family-wide pattern, and test only against the documented bar."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes the task from picking a name to deciding \u201chow do we make a naming decision that stays decided,\u201d identifying unstable decision rights and criteria as the structural failure.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a single authorized decision owner, a time-boxed process, an executive tie-breaker, and a documented reopening threshold, while explicitly acknowledging delay, rework, and documentation churn as costs. It also accepts that the chosen name need only clear an agreed bar rather than eliminate all confusion.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response treats the prior objections as substantively legitimate but distinguishes them from future \u201crenewed aesthetic objection,\u201d proposing that reopening require new quantitative usage or support data.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It recognizes that the API field is permanently fixed and recommends dropping internal/external naming consistency as a decision axis rather than reopening the architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"It explicitly rejects running round four like the prior rounds and explains how the new attempt differs: align all stakeholders on ranked criteria first, incorporate all three prior objections into one rubric, favor an established family-wide pattern, and test only against the documented bar.\"}]}"
+}

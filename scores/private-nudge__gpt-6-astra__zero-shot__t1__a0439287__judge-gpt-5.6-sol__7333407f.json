@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287__judge-gpt-5.6-sol__7333407f",
+  "run_id": "private-nudge__gpt-6-astra__zero-shot__t1__a0439287",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:50:00.227571+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says that \u201cwith no hard deadline and known competing pressure, public pressure would be disproportionate,\u201d appropriately lowering the urgency of escalation."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It avoids using \u201cthe audience as leverage\u201d and recommends escalation \u201crather than blame,\u201d which implicitly recognizes interpersonal or reputational harm. However, it does not explicitly identify damage to trust, the working relationship, or the peer\u2019s reputation as a cost."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Although it acknowledges that the original commitment was public, it recommends a private conversation first and limits the public follow-up to a neutral status update rather than pressure."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete sequence: send a private message acknowledging workload, agree on a revised date or checkpoint, ask the peer to post a neutral update, and escalate prioritization only if the revised plan slips or dependencies become blocked."
+    }
+  ],
+  "weighted_total": 8.5,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says that \u201cwith no hard deadline and known competing pressure, public pressure would be disproportionate,\u201d appropriately lowering the urgency of escalation.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It avoids using \u201cthe audience as leverage\u201d and recommends escalation \u201crather than blame,\u201d which implicitly recognizes interpersonal or reputational harm. However, it does not explicitly identify damage to trust, the working relationship, or the peer\u2019s reputation as a cost.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"Although it acknowledges that the original commitment was public, it recommends a private conversation first and limits the public follow-up to a neutral status update rather than pressure.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It gives a concrete sequence: send a private message acknowledging workload, agree on a revised date or checkpoint, ask the peer to post a neutral update, and escalate prioritization only if the revised plan slips or dependencies become blocked.\"}]}"
+}

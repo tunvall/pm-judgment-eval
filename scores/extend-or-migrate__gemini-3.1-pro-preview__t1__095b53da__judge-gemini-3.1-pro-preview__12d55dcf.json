@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da__judge-gemini-3.1-pro-preview__12d55dcf",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:09:36.281625+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly separates the two concepts, stating the decision should be presented \"not as a rejection of the new platform, but as a deliberate de-risking strategy for the new tier launch.\""
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response grounds its decision entirely in the technically-derived estimate, noting that the informally circulated timeline is a \"trap\" and that zero schedule margin guarantees delay."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not mention the risk of mismatched platform coverage across products or how it might create a period of inconsistent customer experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly acknowledges the optics risk, noting that communication is critical to \"ensure you aren't viewed as rejecting company strategy,\" and proposes framing it as risk management."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a clear, definitive recommendation to \"extend the older platform\" rather than just weighing tradeoffs, and includes concrete execution and communication steps."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly separates the two concepts, stating the decision should be presented \\\"not as a rejection of the new platform, but as a deliberate de-risking strategy for the new tier launch.\\\"\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response grounds its decision entirely in the technically-derived estimate, noting that the informally circulated timeline is a \\\"trap\\\" and that zero schedule margin guarantees delay.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response does not mention the risk of mismatched platform coverage across products or how it might create a period of inconsistent customer experience.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly acknowledges the optics risk, noting that communication is critical to \\\"ensure you aren't viewed as rejecting company strategy,\\\" and proposes framing it as risk management.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a clear, definitive recommendation to \\\"extend the older platform\\\" rather than just weighing tradeoffs, and includes concrete execution and communication steps.\"\n    }\n  ]\n}"
+}

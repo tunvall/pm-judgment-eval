@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da__judge-gpt-5.6-sol__a9550253",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:09:28.963057+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the launch decision from the long-term strategy: it recommends extending the old platform \u201cfor this specific launch\u201d while scheduling migration to the designated newer platform as a subsequent initiative."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It relies on the technically derived estimate and zero schedule margin, while directly calling the informally circulated timeline a \u201cfalse sense of security\u201d that does not account for the discovered architectural mismatches."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response acknowledges throwaway work and the need for eventual migration, but it does not identify or weigh the inconsistent customer experience that could result from different products or tiers operating on different notification platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly anticipates being \u201cviewed as rejecting company strategy\u201d and proposes framing the choice as launch risk management while explicitly reaffirming commitment to the newer platform."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes a clear recommendation to extend the proven older platform for launch, communicate the technical findings immediately, and place the full migration into a future-quarter backlog."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the launch decision from the long-term strategy: it recommends extending the old platform \u201cfor this specific launch\u201d while scheduling migration to the designated newer platform as a subsequent initiative.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It relies on the technically derived estimate and zero schedule margin, while directly calling the informally circulated timeline a \u201cfalse sense of security\u201d that does not account for the discovered architectural mismatches.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"The response acknowledges throwaway work and the need for eventual migration, but it does not identify or weigh the inconsistent customer experience that could result from different products or tiers operating on different notification platforms.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly anticipates being \u201cviewed as rejecting company strategy\u201d and proposes framing the choice as launch risk management while explicitly reaffirming commitment to the newer platform.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It makes a clear recommendation to extend the proven older platform for launch, communicate the technical findings immediately, and place the full migration into a future-quarter backlog.\"}]}"
+}

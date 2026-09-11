@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t1__22105fc9__judge-gemini-3.1-pro-preview__29d75658",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t1__22105fc9",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T16:49:31.753782+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a clear, immediate call at the very beginning: 'Decision: roll back (or feature-flag off) the new integration now.'"
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response recognizes reversibility as a relevant factor for its chosen mitigation, noting that a feature flag is 'easier to re-enable' than a full revert, but does not fully compare reversibility against other alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs these factors, noting that continuing means a 'broken promise about correctness to the entire installed base' versus a 'broken promise about timing to a small new cohort.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects a fast fix, stating that trying to 'hack a partial patch into production' during an active incident is 'how you turn one high-sev into two.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines specific next steps after the immediate decision, including communication plans for affected customers and setting a 're-launch bar' for the proper fix."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a clear, immediate call at the very beginning: 'Decision: roll back (or feature-flag off) the new integration now.'\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response recognizes reversibility as a relevant factor for its chosen mitigation, noting that a feature flag is 'easier to re-enable' than a full revert, but does not fully compare reversibility against other alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs these factors, noting that continuing means a 'broken promise about correctness to the entire installed base' versus a 'broken promise about timing to a small new cohort.'\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects a fast fix, stating that trying to 'hack a partial patch into production' during an active incident is 'how you turn one high-sev into two.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines specific next steps after the immediate decision, including communication plans for affected customers and setting a 're-launch bar' for the proper fix.\"\n    }\n  ]\n}\n```"
+}

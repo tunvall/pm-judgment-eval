@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806__judge-gemini-3.1-pro-preview__83dbe853",
+  "run_id": "terminology-never-landed__claude-fable-5-1__zero-shot__t2__1e5a7806",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:08:41.525662+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \"the problem isn't that we haven't found the right word yet\" but rather an \"optimization against a moving target,\" treating round four primarily as a \"process decision.\""
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests establishing a \"named owner,\" a \"time box,\" and a strict \"reopening rule,\" while explicitly acknowledging that \"the cost of continued churn is real and mostly invisible.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response limits endless re-litigation by acknowledging that \"everything has a flaw\" and requiring future objections to prove a name is \"worse on the agreed criteria than a specific alternative, not merely that it has a flaw.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly factors in the locked API field name, noting that it should be evaluated as a candidate itself and acts as a \"strong tiebreaker\" since \"developers will see it anyway and alignment has real value.\""
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate refuses to generate a new name because a fresh candidate would just have an \"unknown failure mode,\" explicitly choosing to re-evaluate the \"existing candidates rather than inventing a fourth.\""
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that \\\"the problem isn't that we haven't found the right word yet\\\" but rather an \\\"optimization against a moving target,\\\" treating round four primarily as a \\\"process decision.\\\"\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests establishing a \\\"named owner,\\\" a \\\"time box,\\\" and a strict \\\"reopening rule,\\\" while explicitly acknowledging that \\\"the cost of continued churn is real and mostly invisible.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response limits endless re-litigation by acknowledging that \\\"everything has a flaw\\\" and requiring future objections to prove a name is \\\"worse on the agreed criteria than a specific alternative, not merely that it has a flaw.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly factors in the locked API field name, noting that it should be evaluated as a candidate itself and acts as a \\\"strong tiebreaker\\\" since \\\"developers will see it anyway and alignment has real value.\\\"\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate refuses to generate a new name because a fresh candidate would just have an \\\"unknown failure mode,\\\" explicitly choosing to re-evaluate the \\\"existing candidates rather than inventing a fourth.\\\"\"\n    }\n  ]\n}"
+}

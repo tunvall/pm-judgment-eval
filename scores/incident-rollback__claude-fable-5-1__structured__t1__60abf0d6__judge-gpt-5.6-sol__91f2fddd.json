@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6__judge-gpt-5.6-sol__91f2fddd",
+  "run_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T17:08:53.649846+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly directs the team to disable the inclusion logic if a verified isolating flag is confirmed within 30 minutes, otherwise to execute a full rollback. The hard time box and explicit default prevent indecision during the active incident."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It characterizes disablement or rollback as a \u201ccheap and reversible mitigation\u201d that returns production to a known-good state and allows a properly tested relaunch, contrasting this with a rushed hotfix\u2019s unknown, potentially compounding harm. It also checks for non-revertable schema or configuration changes before rollback and provides a fallback between the two mitigation mechanisms."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts confirmed harm accruing every hour across existing customers with the bounded communications and early-adopter cost of pausing a feature launched only hours earlier. It concludes that leaving core risk signals wrong for days would cause greater customer and reputational damage than retracting the announcement."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It rejects an emergency hotfix because engineering has said a proper fix takes days and a minimally tested calibration patch could turn the incident into \u201ca second high-sev.\u201d The recommendation instead uses a verified flag or rollback while the proper fix is developed and tested."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a detailed sequence after mitigation: verify live traffic, update the incident channel and status page, brief support, notify affected customers, remediate already-fired signals, conduct a post-incident review, and relaunch with regression tests and staged monitoring."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response clearly directs the team to disable the inclusion logic if a verified isolating flag is confirmed within 30 minutes, otherwise to execute a full rollback. The hard time box and explicit default prevent indecision during the active incident.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"met\",\"justification\":\"It characterizes disablement or rollback as a \u201ccheap and reversible mitigation\u201d that returns production to a known-good state and allows a properly tested relaunch, contrasting this with a rushed hotfix\u2019s unknown, potentially compounding harm. It also checks for non-revertable schema or configuration changes before rollback and provides a fallback between the two mitigation mechanisms.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts confirmed harm accruing every hour across existing customers with the bounded communications and early-adopter cost of pausing a feature launched only hours earlier. It concludes that leaving core risk signals wrong for days would cause greater customer and reputational damage than retracting the announcement.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"It rejects an emergency hotfix because engineering has said a proper fix takes days and a minimally tested calibration patch could turn the incident into \u201ca second high-sev.\u201d The recommendation instead uses a verified flag or rollback while the proper fix is developed and tested.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"The response provides a detailed sequence after mitigation: verify live traffic, update the incident channel and status page, brief support, notify affected customers, remediate already-fired signals, conduct a post-incident review, and relaunch with regression tests and staged monitoring.\"}]}"
+}

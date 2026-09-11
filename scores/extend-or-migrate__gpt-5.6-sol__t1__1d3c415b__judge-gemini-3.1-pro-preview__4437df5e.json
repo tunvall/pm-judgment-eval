@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b__judge-gemini-3.1-pro-preview__4437df5e",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:11:48.446056+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the launch from the migration, stating that using the older platform 'does not change the strategic destination\u2014it separates two outcomes that have different risk profiles.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly relies on the technical review over the optimistic timeline, noting that 'the technically derived estimate should drive the plan' since the realistic estimate is 'roughly twice the circulated timeline.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response mentions 'customer-experience risks' due to technical differences between the platforms, it fails to recognize the specific risk of an inconsistent customer experience across products caused by running both platforms simultaneously during a partial migration."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the optics of the recommendation, stating that they would communicate the decision 'as a risk-adjusted sequencing choice, not resistance to company strategy.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a definitive recommendation to 'use the older platform for this launch and run migration to the newer platform as a separate, explicitly funded effort,' along with actionable guardrails."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the launch from the migration, stating that using the older platform 'does not change the strategic destination\u2014it separates two outcomes that have different risk profiles.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly relies on the technical review over the optimistic timeline, noting that 'the technically derived estimate should drive the plan' since the realistic estimate is 'roughly twice the circulated timeline.'\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response mentions 'customer-experience risks' due to technical differences between the platforms, it fails to recognize the specific risk of an inconsistent customer experience across products caused by running both platforms simultaneously during a partial migration.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses the optics of the recommendation, stating that they would communicate the decision 'as a risk-adjusted sequencing choice, not resistance to company strategy.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a definitive recommendation to 'use the older platform for this launch and run migration to the newer platform as a separate, explicitly funded effort,' along with actionable guardrails.\"\n    }\n  ]\n}"
+}

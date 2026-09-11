@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd__judge-gpt-5.6-sol__88cd5b41",
+  "run_id": "reject-finding-definition-drift__gpt-5.6-sol__t1__a6d3e7cd",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:04:58.674931+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly states that stopping use of Product X does not support a claim about leaving the platform and removes all platform-departure or churn language based on that analysis."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly says that \u201ca caveat would not cure misleading headline language,\u201d while allowing the result only if it is prominently reframed as product-level disengagement with precise limitations. It also notes that data-literate reviewers are likely to discover the mismatch."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs a weaker immediate narrative against the \u201csubstantial credibility and decision-quality risk\u201d of overstating the business consequence, emphasizing that knowledgeable reviewers may catch the issue."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Despite the finding already being drafted, it recommends correcting the draft immediately and removing the finding entirely if the narrower result is not independently relevant."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides concrete document options: rerun with a true platform-departure label, precisely rescope the claim to Product X disengagement, or remove the finding and present the broader proposition as an unvalidated hypothesis."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly states that stopping use of Product X does not support a claim about leaving the platform and removes all platform-departure or churn language based on that analysis.\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly says that \u201ca caveat would not cure misleading headline language,\u201d while allowing the result only if it is prominently reframed as product-level disengagement with precise limitations. It also notes that data-literate reviewers are likely to discover the mismatch.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly weighs a weaker immediate narrative against the \u201csubstantial credibility and decision-quality risk\u201d of overstating the business consequence, emphasizing that knowledgeable reviewers may catch the issue.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"Despite the finding already being drafted, it recommends correcting the draft immediately and removing the finding entirely if the narrower result is not independently relevant.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It provides concrete document options: rerun with a true platform-departure label, precisely rescope the claim to Product X disengagement, or remove the finding and present the broader proposition as an unvalidated hypothesis.\"\n    }\n  ]\n}"
+}

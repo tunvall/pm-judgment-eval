@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d__judge-gemini-3.1-pro-preview__e99ca044",
+  "run_id": "terminology-never-landed__gpt-5.6-sol__structured__t1__ee47611d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:58:03.095732+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly recognizes the pattern by stating that the \"primary problem is no longer generating names\" but instead establishing decision criteria and durable governance to stop the cycle."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate proposes designating a \"final accountable decision-maker,\" establishing a strict reopening rule, and points out the cost of indecision by noting that delaying makes \"naming perfection more important than delivering customer value.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response effectively addresses this by proposing a reopening rule that permits changes only for \"materially new customer evidence... not because a reviewer prefers another imperfect option,\" filtering out preference-based relitigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response factors in the locked API constraint, determining that \"customer-facing terminology must be mapped to it rather than aligned by renaming it\" and including this mapping in the next steps."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate avoids repeating past mistakes by structuring the next attempt as a \"bounded decision process\" rather than a brainstorm, and explicitly shortlisting candidates that exclude the exact terminology (estimates, finality, processing methods) that failed before."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly recognizes the pattern by stating that the \\\"primary problem is no longer generating names\\\" but instead establishing decision criteria and durable governance to stop the cycle.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proposes designating a \\\"final accountable decision-maker,\\\" establishing a strict reopening rule, and points out the cost of indecision by noting that delaying makes \\\"naming perfection more important than delivering customer value.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response effectively addresses this by proposing a reopening rule that permits changes only for \\\"materially new customer evidence... not because a reviewer prefers another imperfect option,\\\" filtering out preference-based relitigation.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response factors in the locked API constraint, determining that \\\"customer-facing terminology must be mapped to it rather than aligned by renaming it\\\" and including this mapping in the next steps.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids repeating past mistakes by structuring the next attempt as a \\\"bounded decision process\\\" rather than a brainstorm, and explicitly shortlisting candidates that exclude the exact terminology (estimates, finality, processing methods) that failed before.\"\n    }\n  ]\n}\n```"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c__judge-claude-sonnet-5__379b6a24",
+  "run_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:12:39.875490+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response says the customer signal is 'absolutely correct' yet still declines to build the full framework before launch, implicitly treating the blocker claim as negotiable, but it never explicitly discusses weighing the credibility or completeness of the signal against other evidence\u2014it simply reframes it as pain vs. solution."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly builds its solution around 'surfacing the hidden suppression feature' as the core interim mitigation, directly using the undocumented capability as part of the launch plan."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates need from solution: 'we have to translate their proposed solution (a full alert management framework) into their actual pain point (alert fatigue and unmanageable noise),' and argues cheaper options can address the pain without the full build."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response frames the hybrid approach as effectively solving the problem ('turns a liability into a customer trust win') without acknowledging any residual risk that the mute/threshold fixes might prove inadequate compared to the full framework customers actually asked for, or that this could look wrong in hindsight."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete, numbered action plan (surface suppression feature, implement threshold mitigation, launch on schedule, communicate roadmap) rather than just listing pros and cons."
+    }
+  ],
+  "weighted_total": 8.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"partially_met\", \"justification\": \"The response says the customer signal is 'absolutely correct' yet still declines to build the full framework before launch, implicitly treating the blocker claim as negotiable, but it never explicitly discusses weighing the credibility or completeness of the signal against other evidence\u2014it simply reframes it as pain vs. solution.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response explicitly builds its solution around 'surfacing the hidden suppression feature' as the core interim mitigation, directly using the undocumented capability as part of the launch plan.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates need from solution: 'we have to translate their proposed solution (a full alert management framework) into their actual pain point (alert fatigue and unmanageable noise),' and argues cheaper options can address the pain without the full build.\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"not_met\", \"justification\": \"The response frames the hybrid approach as effectively solving the problem ('turns a liability into a customer trust win') without acknowledging any residual risk that the mute/threshold fixes might prove inadequate compared to the full framework customers actually asked for, or that this could look wrong in hindsight.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete, numbered action plan (surface suppression feature, implement threshold mitigation, launch on schedule, communicate roadmap) rather than just listing pros and cons.\"}\n  ]\n}"
+}

@@ -1,0 +1,102 @@
+id: last-minute-disclosure-gap
+version: 1
+set: heldout
+
+title: A billing-disclosure gap found the day before launch
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - calibration
+  - tradeoff
+
+difficulty: medium
+
+scenario: |
+  You are a product manager the day before a committed launch. While doing a
+  final check, you proactively raise a question with product legal counsel:
+  since the feature you're launching calls another internal paid service in
+  certain scenarios, do customers need to be told they might incur a separate
+  charge?
+
+  Legal responds quickly: yes, this is a real gap that should have been caught
+  earlier, and there may not be enough time left to fix it properly. All
+  customer-facing materials are already drafted, reviewed, and finalized, and
+  none of them mention the possible charge. In the scenario that actually
+  triggers the paid service, the charge applies; in the far more common
+  scenario, the feature uses a free internal path instead. Legal had already
+  signed off on the launch, and the docs were already finalized, before this
+  gap surfaced.
+
+question: |
+  What do you do, and why?
+
+constraints:
+  - About one day remains before the committed launch date.
+  - All customer-facing materials are already drafted, reviewed, and finalized
+    with no mention of the possible charge.
+  - The paid-service path triggers only in a less-common scenario; the default,
+    far more common path is free.
+
+rubric:
+  criteria:
+    - id: does_not_dismiss_minority_path_risk
+      description: >
+        Recognizes that even though the paid-service trigger is uncommon, it
+        represents a real, identifiable customer harm (an undisclosed charge)
+        that isn't neutralized just because most customers won't encounter it.
+      weight: 3
+
+    - id: avoids_overcorrecting_into_inaccurate_disclosure
+      description: >
+        If proposing added disclosure, considers whether it accurately reflects
+        which customers are actually affected, rather than defaulting to a
+        blanket warning that would misrepresent the common, free-path case.
+      weight: 2
+
+    - id: weighs_launch_delay_against_disclosure_gap
+      description: >
+        Explicitly weighs the cost of delaying an already-finalized,
+        legal-approved launch against the cost of shipping with a known,
+        undisclosed-charge gap, rather than treating either the deadline or the
+        gap as automatically decisive on its own.
+      weight: 3
+
+    - id: considers_narrowly_scoped_fix_before_binary_choice
+      description: >
+        Checks whether a smaller, faster fix scoped specifically to the
+        affected path is feasible before assuming the only real options are a
+        full pause-and-re-review or shipping with no change at all.
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a specific, actionable plan (what changes, what review is still
+        needed, on what timeline), not just a general principle about
+        disclosure being important.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Added narrowly scoped disclosure language specific to the less-common,
+    paid-service-triggering scenario, clearly distinguishing it from the
+    default free path, rather than pausing the launch for a full re-review or
+    shipping with no disclosure change at all.
+
+  eventual_outcome: |
+    Legal cleared the narrowly-scoped language quickly once it was drafted, and
+    the launch happened on schedule. The team also flagged that the same kind
+    of gap — a feature silently calling a paid internal service in some
+    scenarios — likely existed elsewhere in the company wherever a similar
+    pattern occurred, beyond just this one feature.
+
+  case_author_notes: |
+    Tests whether a model treats a rare-but-real disclosure gap as something to
+    fix precisely, rather than either ignoring it because it's rare or
+    overcorrecting into an inaccurate blanket warning because more disclosure
+    feels safer by default. Also tests whether a launch commitment with legal
+    already signed off and docs already finalized gets treated as harder to
+    reopen than it actually is, versus recognizing that a narrowly scoped fix
+    can resolve the specific gap without requiring a full re-review.

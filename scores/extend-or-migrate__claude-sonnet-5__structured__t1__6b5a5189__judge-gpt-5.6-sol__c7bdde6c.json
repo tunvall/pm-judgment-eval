@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189__judge-gpt-5.6-sol__c7bdde6c",
+  "run_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:06:15.015807+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the new platform is the \u201cundisputed long-term direction\u201d and frames using the old platform as \u201ca sequencing decision,\u201d not a rejection of strategy."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It bases the recommendation on the technically derived estimate of roughly twice the circulated timeline and argues that the four structural mismatches show \u201cthe optimistic timeline was wrong.\u201d"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "Although it discusses temporary dual-platform dependency, duplicate work, and the risk that migration is deferred indefinitely, it does not identify or weigh the inconsistent customer experience caused by different products using platforms with differing verification, destination, routing, or rendering behavior."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly notes that extending a retiring platform may \u201clook like working against company strategy\u201d and proposes addressing this by framing it as time-boxed sequencing with a committed follow-on migration plan."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the old platform for launch, isolating notification calls behind an interface, and immediately assigning an owner and target date for the subsequent migration."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the new platform is the \u201cundisputed long-term direction\u201d and frames using the old platform as \u201ca sequencing decision,\u201d not a rejection of strategy.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It bases the recommendation on the technically derived estimate of roughly twice the circulated timeline and argues that the four structural mismatches show \u201cthe optimistic timeline was wrong.\u201d\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"Although it discusses temporary dual-platform dependency, duplicate work, and the risk that migration is deferred indefinitely, it does not identify or weigh the inconsistent customer experience caused by different products using platforms with differing verification, destination, routing, or rendering behavior.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It explicitly notes that extending a retiring platform may \u201clook like working against company strategy\u201d and proposes addressing this by framing it as time-boxed sequencing with a committed follow-on migration plan.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends extending the old platform for launch, isolating notification calls behind an interface, and immediately assigning an owner and target date for the subsequent migration.\"}]}"
+}

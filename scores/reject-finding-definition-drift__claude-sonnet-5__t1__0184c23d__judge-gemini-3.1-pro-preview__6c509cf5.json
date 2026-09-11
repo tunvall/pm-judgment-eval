@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d__judge-gemini-3.1-pro-preview__6c509cf5",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:46:58.810296+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response recognizes the mismatch as a core issue, noting that \"the persuasive power of the original framing came partly from conflating two different things \u2014 losing a customer entirely vs. losing one product's usage.\""
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly rejects \"treating this as a wording fix\" and reasons that proactively using a footnote to explain the correction is necessary to prevent knowledgeable reviewers from \"catching the mismatch live and undermining trust.\""
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs credibility against persuasiveness, arguing that a \"weaker but accurate argument is more defensible than a strong but wrong one\" because having the error discovered would \"damage credibility not just for this finding but for the whole document.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate refuses to let the upcoming deadline or prior drafting work dictate keeping the finding, stating that \"timeline pressure is a reason to start the correction now, not a reason to skip it.\""
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides concrete next steps, recommending that the product manager re-run the query with the accurate definition and then rebuild the document's language around the actual results, such as rescoping the claim to focus only on product abandonment."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes the mismatch as a core issue, noting that \\\"the persuasive power of the original framing came partly from conflating two different things \u2014 losing a customer entirely vs. losing one product's usage.\\\"\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly rejects \\\"treating this as a wording fix\\\" and reasons that proactively using a footnote to explain the correction is necessary to prevent knowledgeable reviewers from \\\"catching the mismatch live and undermining trust.\\\"\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs credibility against persuasiveness, arguing that a \\\"weaker but accurate argument is more defensible than a strong but wrong one\\\" because having the error discovered would \\\"damage credibility not just for this finding but for the whole document.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate refuses to let the upcoming deadline or prior drafting work dictate keeping the finding, stating that \\\"timeline pressure is a reason to start the correction now, not a reason to skip it.\\\"\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides concrete next steps, recommending that the product manager re-run the query with the accurate definition and then rebuild the document's language around the actual results, such as rescoping the claim to focus only on product abandonment.\"\n    }\n  ]\n}"
+}

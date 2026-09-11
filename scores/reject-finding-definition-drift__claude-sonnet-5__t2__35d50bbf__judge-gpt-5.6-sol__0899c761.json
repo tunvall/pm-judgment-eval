@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf__judge-gpt-5.6-sol__0899c761",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t2__35d50bbf",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:10:15.416091+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes abandoning one product from leaving the platform and states that this \u201cchanges the business stakes of the claim,\u201d requiring adjustment of the surrounding argument rather than a wording tweak."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not rely on a caveat alone: it first recommends precise relabeling, re-analysis, and narrative revision, then uses disclosure to document the distinction. It explicitly connects this approach to the knowledgeable audience, noting that otherwise someone may \u201ccatch it live and undermine trust.\u201d"
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs a weaker but accurate document against the credibility and decision-making costs of an inflated claim, calling an executive-level misstatement asymmetrically worse and especially likely to \u201cblow up in the room\u201d with an informed audience."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends changing or removing the strong framing despite the existing draft and short timeline, explicitly rejecting distortion merely \u201cto keep the narrative intact.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives concrete document actions: reframe the finding as product disengagement, spend a day testing a true platform-churn label, rebuild or soften the argument based on the result, and present the finding as preliminary and product-level if validation cannot finish."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response clearly distinguishes abandoning one product from leaving the platform and states that this \u201cchanges the business stakes of the claim,\u201d requiring adjustment of the surrounding argument rather than a wording tweak.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"It does not rely on a caveat alone: it first recommends precise relabeling, re-analysis, and narrative revision, then uses disclosure to document the distinction. It explicitly connects this approach to the knowledgeable audience, noting that otherwise someone may \u201ccatch it live and undermine trust.\u201d\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly weighs a weaker but accurate document against the credibility and decision-making costs of an inflated claim, calling an executive-level misstatement asymmetrically worse and especially likely to \u201cblow up in the room\u201d with an informed audience.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It recommends changing or removing the strong framing despite the existing draft and short timeline, explicitly rejecting distortion merely \u201cto keep the narrative intact.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives concrete document actions: reframe the finding as product disengagement, spend a day testing a true platform-churn label, rebuild or soften the argument based on the result, and present the finding as preliminary and product-level if validation cannot finish.\"}]}"
+}

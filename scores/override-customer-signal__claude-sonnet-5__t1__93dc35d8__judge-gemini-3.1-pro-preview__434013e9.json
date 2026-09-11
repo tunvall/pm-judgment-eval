@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8__judge-gemini-3.1-pro-preview__434013e9",
+  "run_id": "override-customer-signal__claude-sonnet-5__t1__93dc35d8",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:58:25.995707+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate appropriately weighs the feedback against other factors, noting that \"Blocking optimizes for a vocal, present focus group over the much larger population who benefit from timely access\" rather than accepting the blocker uncritically."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response identifies surfacing and hardening the undocumented suppress capability as \"the highest-leverage move available\" to immediately address the complaint with near-zero engineering cost."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states they would \"respond to the underlying need (control over alert fatigue) rather than the specific ask (full configurability)\" and reasons that partial mitigations address this pain."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not mention the residual risk that the fast-follow approach could look wrong in hindsight if product adoption is high and causes overwhelming alert volume."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete recommendation (\"Fast-follow, not launch blocker\") and outlines a clear, actionable three-step plan to implement mitigations and communicate with customers."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate appropriately weighs the feedback against other factors, noting that \\\"Blocking optimizes for a vocal, present focus group over the much larger population who benefit from timely access\\\" rather than accepting the blocker uncritically.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies surfacing and hardening the undocumented suppress capability as \\\"the highest-leverage move available\\\" to immediately address the complaint with near-zero engineering cost.\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states they would \\\"respond to the underlying need (control over alert fatigue) rather than the specific ask (full configurability)\\\" and reasons that partial mitigations address this pain.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response does not mention the residual risk that the fast-follow approach could look wrong in hindsight if product adoption is high and causes overwhelming alert volume.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete recommendation (\\\"Fast-follow, not launch blocker\\\") and outlines a clear, actionable three-step plan to implement mitigations and communicate with customers.\"\n    }\n  ]\n}\n```"
+}

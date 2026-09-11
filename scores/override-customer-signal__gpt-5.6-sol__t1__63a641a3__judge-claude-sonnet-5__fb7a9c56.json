@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3__judge-claude-sonnet-5__fb7a9c56",
+  "run_id": "override-customer-signal__gpt-5.6-sol__t1__63a641a3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:12:21.972313+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it would 'not assume that the only acceptable response is the full multi-quarter framework' and builds a validation loop back to customers rather than simply deferring to 'customer said blocker, so block the full ask.'"
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly incorporates the undocumented suppress feature into its minimum package, stating it should be made 'prominent, understandable, and documented' and verified against the 'same alert every day for weeks' complaint."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates 'the customer outcome required for launch' from 'the eventual comprehensive solution' and frames the key question as whether a minimal package meets the underlying need rather than assuming the full framework is required."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response builds in mitigations like a 'staged rollout with the ability to pause or roll back if alert volume or complaints exceed agreed limits,' which implicitly acknowledges risk, but it never explicitly names the risk that treating this as fast-follow could look wrong in hindsight if adoption/volume is worse than expected."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete decision rule (validate the minimum package with customers, then either proceed with staged launch + fast-follow or block broad availability) rather than just listing pros and cons."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it would 'not assume that the only acceptable response is the full multi-quarter framework' and builds a validation loop back to customers rather than simply deferring to 'customer said blocker, so block the full ask.'\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response directly incorporates the undocumented suppress feature into its minimum package, stating it should be made 'prominent, understandable, and documented' and verified against the 'same alert every day for weeks' complaint.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates 'the customer outcome required for launch' from 'the eventual comprehensive solution' and frames the key question as whether a minimal package meets the underlying need rather than assuming the full framework is required.\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response builds in mitigations like a 'staged rollout with the ability to pause or roll back if alert volume or complaints exceed agreed limits,' which implicitly acknowledges risk, but it never explicitly names the risk that treating this as fast-follow could look wrong in hindsight if adoption/volume is worse than expected.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete decision rule (validate the minimum package with customers, then either proceed with staged launch + fast-follow or block broad availability) rather than just listing pros and cons.\"}\n  ]\n}"
+}

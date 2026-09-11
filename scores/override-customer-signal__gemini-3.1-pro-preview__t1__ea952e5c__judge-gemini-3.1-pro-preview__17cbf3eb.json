@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c__judge-gemini-3.1-pro-preview__17cbf3eb",
+  "run_id": "override-customer-signal__gemini-3.1-pro-preview__t1__ea952e5c",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:01:47.017630+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response recognizes the strong customer signal but does not uncritically defer to it, arguing that 'we have to translate their proposed solution... into their actual pain point' instead of blindly blocking the launch for a multi-quarter build."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate spots the hidden suppression feature and factors it centrally into their recommendation, suggesting the team allocate resources to 'surface the rudimentary suppression feature' to solve the immediate pain."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two, noting that customers are experts in their 'actual pain point (alert fatigue)' rather than the 'proposed solution (a full alert management framework)' they explicitly asked for."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response identifies the danger of a pure 'as-is' launch, it presents its own mitigated fast-follow plan as a risk-free 'customer trust win' that 'solves the root customer pain immediately.' It fails to flag any residual risk that this interim approach might still fall short in hindsight."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete, actionable four-step plan, recommending to 'unblock the launch by combining the existing hidden capability with the design mitigation' while roadmapping the full framework for later."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recognizes the strong customer signal but does not uncritically defer to it, arguing that 'we have to translate their proposed solution... into their actual pain point' instead of blindly blocking the launch for a multi-quarter build.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate spots the hidden suppression feature and factors it centrally into their recommendation, suggesting the team allocate resources to 'surface the rudimentary suppression feature' to solve the immediate pain.\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the two, noting that customers are experts in their 'actual pain point (alert fatigue)' rather than the 'proposed solution (a full alert management framework)' they explicitly asked for.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response identifies the danger of a pure 'as-is' launch, it presents its own mitigated fast-follow plan as a risk-free 'customer trust win' that 'solves the root customer pain immediately.' It fails to flag any residual risk that this interim approach might still fall short in hindsight.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete, actionable four-step plan, recommending to 'unblock the launch by combining the existing hidden capability with the design mitigation' while roadmapping the full framework for later.\"\n    }\n  ]\n}\n```"
+}

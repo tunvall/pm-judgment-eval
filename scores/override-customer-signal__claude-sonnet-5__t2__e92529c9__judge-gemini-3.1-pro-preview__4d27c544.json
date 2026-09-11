@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9__judge-gemini-3.1-pro-preview__4d27c544",
+  "run_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:59:40.343446+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that it avoids the trap of treating an explicit customer ask as synonymous with a launch blocker, recognizing that determining the product bar is a judgment call for the PM rather than something the focus group dictates."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate identifies the undocumented suppress capability as 'the most important discovery in this scenario' and plans to surface, document, and polish it as a key pre-launch mitigation."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response successfully separates the 'real substance of the signal (don't ship more noise without relief)' from the 'most expensive interpretation of the ask (full framework)', reasoning that cheaper alternatives can sufficiently meet the underlying need for launch."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response does not acknowledge the residual risk that the fast-follow approach might look wrong in hindsight if adoption is high; it only flags the operational risk that their proposed mitigation (the existing suppress feature) might be too broken to use."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a highly concrete recommendation to proceed with the launch on schedule, paired with a detailed step-by-step plan for pre-launch mitigations and a dated fast-follow commitment."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that it avoids the trap of treating an explicit customer ask as synonymous with a launch blocker, recognizing that determining the product bar is a judgment call for the PM rather than something the focus group dictates.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate identifies the undocumented suppress capability as 'the most important discovery in this scenario' and plans to surface, document, and polish it as a key pre-launch mitigation.\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response successfully separates the 'real substance of the signal (don't ship more noise without relief)' from the 'most expensive interpretation of the ask (full framework)', reasoning that cheaper alternatives can sufficiently meet the underlying need for launch.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response does not acknowledge the residual risk that the fast-follow approach might look wrong in hindsight if adoption is high; it only flags the operational risk that their proposed mitigation (the existing suppress feature) might be too broken to use.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a highly concrete recommendation to proceed with the launch on schedule, paired with a detailed step-by-step plan for pre-launch mitigations and a dated fast-follow commitment.\"\n    }\n  ]\n}\n```"
+}

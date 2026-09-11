@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601__judge-gemini-3.1-pro-preview__e6890079",
+  "run_id": "terminology-never-landed__gemini-3.1-pro-preview__zero-shot__t2__38bbe601",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:58:51.291690+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly calls out that the 'review process is broken\u2014stakeholders are acting as serial vetoes' and identifies the root cause as stakeholders seeking an impossible perfection, showing it understands the systemic pattern of failure."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response suggests forcing the acceptance of an imperfect name ('we are not picking a perfect name; we are choosing which user confusion we are most willing to manage') and getting stakeholders in a room to 'Disagree and Commit'."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes the re-litigation as an unending search for perfection ('every option will fail under scrutiny') and sets a high bar for future objections by asking if 'new data emerged' before allowing a reopen."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response dedicates a specific section to the locked API constraint, advising to 'Heavily weight the UX name toward a human-readable version of the locked API field name' to create alignment."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response details exactly how this round will differ from previous ones by shifting the burden of explanation to UI copy and changing the evaluation framework to explicitly choosing known trade-offs."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly calls out that the 'review process is broken\u2014stakeholders are acting as serial vetoes' and identifies the root cause as stakeholders seeking an impossible perfection, showing it understands the systemic pattern of failure.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response suggests forcing the acceptance of an imperfect name ('we are not picking a perfect name; we are choosing which user confusion we are most willing to manage') and getting stakeholders in a room to 'Disagree and Commit'.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the re-litigation as an unending search for perfection ('every option will fail under scrutiny') and sets a high bar for future objections by asking if 'new data emerged' before allowing a reopen.\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response dedicates a specific section to the locked API constraint, advising to 'Heavily weight the UX name toward a human-readable version of the locked API field name' to create alignment.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response details exactly how this round will differ from previous ones by shifting the burden of explanation to UI copy and changing the evaluation framework to explicitly choosing known trade-offs.\"\n    }\n  ]\n}"
+}

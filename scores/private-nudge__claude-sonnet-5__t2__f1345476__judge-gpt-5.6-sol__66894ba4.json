@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t2__f1345476__judge-gpt-5.6-sol__66894ba4",
+  "run_id": "private-nudge__claude-sonnet-5__t2__f1345476",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:06:37.656388+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \u201cthere's no hard deadline\u201d and concludes that the flexible timeline means there is no need to manufacture urgency through a forcing function."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies concrete reputational and relational costs: public pressure would add \u201creputational anxiety\u201d and could make teammates less willing to commit publicly or surface slippage early."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Despite acknowledging that public pressure can work, the response rejects it here because the speed benefit is unnecessary and does not treat the original public commitment as sufficient reason for a public callout."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly recommends sending a private DM and even supplies a concrete check-in asking about status, blockers, reprioritization, and help, followed by a defined escalation path if clarity or movement does not result."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that \u201cthere's no hard deadline\u201d and concludes that the flexible timeline means there is no need to manufacture urgency through a forcing function.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"It identifies concrete reputational and relational costs: public pressure would add \u201creputational anxiety\u201d and could make teammates less willing to commit publicly or surface slippage early.\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"Despite acknowledging that public pressure can work, the response rejects it here because the speed benefit is unnecessary and does not treat the original public commitment as sufficient reason for a public callout.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly recommends sending a private DM and even supplies a concrete check-in asking about status, blockers, reprioritization, and help, followed by a defined escalation path if clarity or movement does not result.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6__judge-claude-sonnet-5__80f4a276",
+  "run_id": "extend-or-migrate__claude-fable-5-1__zero-shot__t1__d6afd8b6",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:10:02.070923+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two questions, e.g. 'Don't make a product launch carry a platform migration's risk... These are two different pieces of work,' and frames the plan as advancing the strategy deliberately rather than disputing it."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It leans directly on the technically-derived estimate, stating 'Zero margin on a launch with four known structural gaps is not a plan, it's a bet against the odds' and explicitly calls the circulating timeline 'wrong.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It acknowledges migration-related risk ('a forced migration done badly hurts the strategy more than a deferred one'), but this focuses on execution risk rather than the specific risk of inconsistent customer experience from products sitting on mismatched platforms simultaneously."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response anticipates the optics concern by instructing to 'Get explicit sign-off... Frame it as we're extending the old platform for launch, and here's our committed migration plan, not we're skipping the migration,' directly addressing how the recommendation could be perceived as resisting strategy."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, committed recommendation ('extend now, migrate deliberately') along with concrete implementation steps like building behind an abstraction, publishing the gap analysis, and committing to a migration date."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the two questions, e.g. 'Don't make a product launch carry a platform migration's risk... These are two different pieces of work,' and frames the plan as advancing the strategy deliberately rather than disputing it.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"It leans directly on the technically-derived estimate, stating 'Zero margin on a launch with four known structural gaps is not a plan, it's a bet against the odds' and explicitly calls the circulating timeline 'wrong.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"It acknowledges migration-related risk ('a forced migration done badly hurts the strategy more than a deferred one'), but this focuses on execution risk rather than the specific risk of inconsistent customer experience from products sitting on mismatched platforms simultaneously.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response anticipates the optics concern by instructing to 'Get explicit sign-off... Frame it as we're extending the old platform for launch, and here's our committed migration plan, not we're skipping the migration,' directly addressing how the recommendation could be perceived as resisting strategy.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, committed recommendation ('extend now, migrate deliberately') along with concrete implementation steps like building behind an abstraction, publishing the gap analysis, and committing to a migration date.\"}\n  ]\n}"
+}

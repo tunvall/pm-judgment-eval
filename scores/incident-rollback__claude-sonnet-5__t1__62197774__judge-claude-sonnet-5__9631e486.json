@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__t1__62197774__judge-claude-sonnet-5__9631e486",
+  "run_id": "incident-rollback__claude-sonnet-5__t1__62197774",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:05:15.391638+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' with no hedging on the core call."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly states 'Rollback is reversible \u2014 we can re-launch once fixed' and contrasts this with leaving the bug live being 'not obviously reversible in terms of customer trust and support load,' directly comparing reversibility of the chosen path against the alternative."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The 'Severity comparison isn't close' section explicitly weighs 'every hour of delay compounds support burden and erodes trust' against 'reputational/scheduling friction on a newly announced feature,' concluding the former outweighs the latter."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects pursuing the fast/proper fix in the incident window, stating 'A proper, well-tested fix taking days is the wrong thing to optimize for right now' and 'I don't need the elegant fix in the next two hours.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, it lists concrete follow-ups including customer-facing status updates, a note reaffirming the integration commitment with a timeline, manager escalation, and 'a follow-up track for engineering to build the proper fix and a re-launch plan.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back (disable/feature-flag off) the new integration launch right now,' with no hedging on the core call.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It explicitly states 'Rollback is reversible \u2014 we can re-launch once fixed' and contrasts this with leaving the bug live being 'not obviously reversible in terms of customer trust and support load,' directly comparing reversibility of the chosen path against the alternative.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The 'Severity comparison isn't close' section explicitly weighs 'every hour of delay compounds support burden and erodes trust' against 'reputational/scheduling friction on a newly announced feature,' concluding the former outweighs the latter.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects pursuing the fast/proper fix in the incident window, stating 'A proper, well-tested fix taking days is the wrong thing to optimize for right now' and 'I don't need the elegant fix in the next two hours.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, it lists concrete follow-ups including customer-facing status updates, a note reaffirming the integration commitment with a timeline, manager escalation, and 'a follow-up track for engineering to build the proper fix and a re-launch plan.'\"}\n  ]\n}"
+}

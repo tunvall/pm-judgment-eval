@@ -1,0 +1,15 @@
+{
+  "score_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe__alignment-claude-sonnet-5__514e35dd",
+  "run_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:14:33.232263+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to send a private DM first, asking for a realistic completion date, explicitly rejecting the public-channel option as unnecessary given no hard deadline\u2014matching the historical decision to follow up privately rather than publicly.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to send a private DM first, asking for a realistic completion date, explicitly rejecting the public-channel option as unnecessary given no hard deadline\u2014matching the historical decision to follow up privately rather than publicly.\"\n}\n```"
+}

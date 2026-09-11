@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189__judge-claude-sonnet-5__b91163f5",
+  "run_id": "extend-or-migrate__claude-sonnet-5__structured__t1__6b5a5189",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:11:03.725060+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states the new platform is 'the undisputed long-term direction' and frames the extend-old-platform choice as 'a sequencing decision' rather than a rejection of strategy, noting 'the dispute is only about whether this launch is the forcing function for that migration.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly grounds its recommendation in the technically-derived 2x estimate, arguing 'the mismatches identified... aren't scope creep \u2014 they're evidence that the optimistic timeline was wrong, not that the team should try harder to hit it.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response names risks like 'old-platform work becomes semi-permanent' and 'duplicate engineering effort,' but these are framed as engineering/organizational risks rather than the specific risk of inconsistent customer experience from products living on mismatched platforms, which is only implicitly touched on."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly flags 'Perception/strategic friction \u2014 extending a platform marked for retirement can look like working against company strategy' and proposes mitigating it by framing the choice as sequencing and getting stakeholder sign-off up front."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation ('Extend the old platform for this launch... treat the full migration as a separate, deliberately scoped project') along with five concrete, actionable next steps."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states the new platform is 'the undisputed long-term direction' and frames the extend-old-platform choice as 'a sequencing decision' rather than a rejection of strategy, noting 'the dispute is only about whether this launch is the forcing function for that migration.'\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly grounds its recommendation in the technically-derived 2x estimate, arguing 'the mismatches identified... aren't scope creep \u2014 they're evidence that the optimistic timeline was wrong, not that the team should try harder to hit it.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response names risks like 'old-platform work becomes semi-permanent' and 'duplicate engineering effort,' but these are framed as engineering/organizational risks rather than the specific risk of inconsistent customer experience from products living on mismatched platforms, which is only implicitly touched on.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response explicitly flags 'Perception/strategic friction \u2014 extending a platform marked for retirement can look like working against company strategy' and proposes mitigating it by framing the choice as sequencing and getting stakeholder sign-off up front.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation ('Extend the old platform for this launch... treat the full migration as a separate, deliberately scoped project') along with five concrete, actionable next steps.\"}\n  ]\n}"
+}

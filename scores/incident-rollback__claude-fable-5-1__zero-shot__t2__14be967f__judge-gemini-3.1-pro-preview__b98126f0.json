@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f__judge-gemini-3.1-pro-preview__b98126f0",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T17:00:54.437306+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response begins immediately with a clear, specific call: 'Decision: roll the new integration back now,' fully committing to an action rather than just listing options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response discusses variance, returning to a known-good state, and the complexity of executing the rollback, but never explicitly addresses the reversibility of its recommended decision or how easily it could be undone if wrong."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs these factors, noting that damage to existing customers 'compounds every hour' and contrasting this 'product-integrity problem' with the 'communications problem' of walking back the announced launch."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the danger of an unvalidated fix by stating 'untested hotfixes on a live high-sev incident are how you turn one incident into two' and defaults to a rollback unless engineering can prove a fast fix is trivially safe."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines comprehensive next steps, including communication strategies for different customer cohorts and specific requirements for a future relaunch ('After the fire's out')."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response begins immediately with a clear, specific call: 'Decision: roll the new integration back now,' fully committing to an action rather than just listing options.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses variance, returning to a known-good state, and the complexity of executing the rollback, but never explicitly addresses the reversibility of its recommended decision or how easily it could be undone if wrong.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs these factors, noting that damage to existing customers 'compounds every hour' and contrasting this 'product-integrity problem' with the 'communications problem' of walking back the announced launch.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the danger of an unvalidated fix by stating 'untested hotfixes on a live high-sev incident are how you turn one incident into two' and defaults to a rollback unless engineering can prove a fast fix is trivially safe.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines comprehensive next steps, including communication strategies for different customer cohorts and specific requirements for a future relaunch ('After the fire's out').\"\n    }\n  ]\n}\n```"
+}

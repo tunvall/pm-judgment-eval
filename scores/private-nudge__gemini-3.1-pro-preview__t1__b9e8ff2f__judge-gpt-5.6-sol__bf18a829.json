@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f__judge-gpt-5.6-sol__bf18a829",
+  "run_id": "private-nudge__gemini-3.1-pro-preview__t1__b9e8ff2f",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:49:11.510712+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \u201cthere is no hard deadline and the broader timeline is flexible,\u201d concluding that public pressure would be disproportionate to the actual urgency."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies concrete costs of public escalation, stating that it could be perceived as public shaming and would \u201cdegrade trust, damage[] your long-term working relationship, and reduce[] psychological safety.\u201d"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects public pressure despite the public commitment, characterizing it as a blunt instrument warranted mainly when a critical hard deadline is at risk rather than as automatically fair game."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends a private DM or quick one-on-one, provides sample wording, and proposes agreeing on a realistic timeline before asking the peer to post their own update publicly."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly notes that \u201cthere is no hard deadline and the broader timeline is flexible,\u201d concluding that public pressure would be disproportionate to the actual urgency.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It identifies concrete costs of public escalation, stating that it could be perceived as public shaming and would \u201cdegrade trust, damage[] your long-term working relationship, and reduce[] psychological safety.\u201d\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"The response rejects public pressure despite the public commitment, characterizing it as a blunt instrument warranted mainly when a critical hard deadline is at risk rather than as automatically fair game.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends a private DM or quick one-on-one, provides sample wording, and proposes agreeing on a realistic timeline before asking the peer to post their own update publicly.\"}]}"
+}

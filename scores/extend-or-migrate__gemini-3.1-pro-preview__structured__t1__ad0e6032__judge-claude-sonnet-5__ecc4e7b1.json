@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032__judge-claude-sonnet-5__ecc4e7b1",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:08:42.817668+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response repeatedly frames the long-term strategy as settled ('the architectural strategy is honored, just deferred') while treating the launch timeline as the separate, narrower question being decided."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly relies on the technically-derived estimate, noting 'An estimate that consumes 100% of the schedule buffer is virtually guaranteed to slip,' rejecting the optimistic circulating timeline as the basis for the decision."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response names technical debt and 'Strategic Misalignment/Optics' as risks but never discusses the specific risk of inconsistent customer experience arising from running two platforms in parallel across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly flags that 'Leadership or the team owning the new platform may view this as resisting company strategy' and proposes mitigating this through clear communication and a firm migration commitment."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation (Alternative 1) and lays out concrete next steps including communicating the decision, sharing feedback with the platform team, executing the launch, and scheduling the future migration."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response repeatedly frames the long-term strategy as settled ('the architectural strategy is honored, just deferred') while treating the launch timeline as the separate, narrower question being decided.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly relies on the technically-derived estimate, noting 'An estimate that consumes 100% of the schedule buffer is virtually guaranteed to slip,' rejecting the optimistic circulating timeline as the basis for the decision.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response names technical debt and 'Strategic Misalignment/Optics' as risks but never discusses the specific risk of inconsistent customer experience arising from running two platforms in parallel across products.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response explicitly flags that 'Leadership or the team owning the new platform may view this as resisting company strategy' and proposes mitigating this through clear communication and a firm migration commitment.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation (Alternative 1) and lays out concrete next steps including communicating the decision, sharing feedback with the platform team, executing the launch, and scheduling the future migration.\"}\n  ]\n}"
+}

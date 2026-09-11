@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d__judge-gpt-5.6-sol__20337d0d",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T16:53:53.198692+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately commits: \u201cI would roll back the new integration launch now\u201d and explicitly says it would not wait for the unavailable manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It characterizes rollback as a \u201cvisible, reversible delay\u201d and pairs it with a path to a properly tested, staged relaunch, contrasting that containment with continued production harm and an unsafe untested patch."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the uncomfortable public rollback against continuing to send incorrect signals, concluding that \u201cthe commitment to reliable risk signals outweighs the commitment to today\u2019s launch date.\u201d"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly states, \u201cI would not substitute an untested patch for a safe rollback,\u201d while reserving a narrower disablement only for a mechanism engineering can confirm reliably restores prior calibration."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond containment, it specifies recovery validation, identification and communication to impacted customers, correction of erroneous alerts, regression testing, and a staged relaunch with monitoring and rollback criteria."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response immediately commits: \u201cI would roll back the new integration launch now\u201d and explicitly says it would not wait for the unavailable manager.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"It characterizes rollback as a \u201cvisible, reversible delay\u201d and pairs it with a path to a properly tested, staged relaunch, contrasting that containment with continued production harm and an unsafe untested patch.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly weighs the uncomfortable public rollback against continuing to send incorrect signals, concluding that \u201cthe commitment to reliable risk signals outweighs the commitment to today\u2019s launch date.\u201d\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly states, \u201cI would not substitute an untested patch for a safe rollback,\u201d while reserving a narrower disablement only for a mechanism engineering can confirm reliably restores prior calibration.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"Beyond containment, it specifies recovery validation, identification and communication to impacted customers, correction of erroneous alerts, regression testing, and a staged relaunch with monitoring and rollback criteria.\"\n    }\n  ]\n}"
+}

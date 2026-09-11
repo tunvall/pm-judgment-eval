@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118__judge-gpt-5.6-sol__06a2757c",
+  "run_id": "terminology-never-landed__claude-fable-5-1__structured__t1__83e37118",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:48:26.634436+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the issue as \u201chow to make a naming decision that stays made\u201d and concludes that the failures were \u201cone bad process applied three times,\u201d directly identifying non-convergence as the core problem."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a single decision owner, pre-agreed acceptance criteria, a tie-breaking default, a decision record, and a reopening rule limited to new evidence of material customer harm. It also identifies ongoing costs such as review time, customer confusion, and loss of team credibility."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the prior tone, glossary, and technical-accuracy objections as substantively different, while drawing a boundary against reopening based merely on \u201cpreference or new reviewer.\u201d This preserves room for genuinely new evidence without treating every later objection as equally dispositive."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It repeatedly treats the API field as a hard constraint, requiring the customer-facing term to \u201cmap to the locked API field\u201d and suggesting a human-readable form rather than any architectural or field-name change."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than simply proposing a fourth ad hoc name, it changes the process by fixing criteria and decision rights before candidates are shown, then comparing a small set head-to-head under one study. It explicitly contrasts this with repeating the prior loop, which it calls \u201cnear-certain to fail the same way.\u201d"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes the issue as \u201chow to make a naming decision that stays made\u201d and concludes that the failures were \u201cone bad process applied three times,\u201d directly identifying non-convergence as the core problem.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a single decision owner, pre-agreed acceptance criteria, a tie-breaking default, a decision record, and a reopening rule limited to new evidence of material customer harm. It also identifies ongoing costs such as review time, customer confusion, and loss of team credibility.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response treats the prior tone, glossary, and technical-accuracy objections as substantively different, while drawing a boundary against reopening based merely on \u201cpreference or new reviewer.\u201d This preserves room for genuinely new evidence without treating every later objection as equally dispositive.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It repeatedly treats the API field as a hard constraint, requiring the customer-facing term to \u201cmap to the locked API field\u201d and suggesting a human-readable form rather than any architectural or field-name change.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than simply proposing a fourth ad hoc name, it changes the process by fixing criteria and decision rights before candidates are shown, then comparing a small set head-to-head under one study. It explicitly contrasts this with repeating the prior loop, which it calls \u201cnear-certain to fail the same way.\u201d\"}]}"
+}

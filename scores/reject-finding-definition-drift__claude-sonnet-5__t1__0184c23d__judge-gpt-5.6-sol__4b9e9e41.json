@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d__judge-gpt-5.6-sol__4b9e9e41",
+  "run_id": "reject-finding-definition-drift__claude-sonnet-5__t1__0184c23d",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:46:48.127946+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes \u201closing a customer entirely\u201d from \u201closing one product\u2019s usage\u201d and says the original framing would overstate the business risk, treating the mismatch as substantive rather than technical."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It says to \u201cstop treating this as a wording fix\u201d and recommends corrected analysis and precise re-scoping before adding any footnote or verbal disclosure. It also explains that proactive disclosure is needed because knowledgeable reviewers could catch the mismatch and undermine trust."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs \u201ca weaker but accurate argument\u201d against \u201ca strong but wrong one,\u201d noting that discovery could damage credibility for the entire document, especially with a data-fluent audience."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It refuses to retain the platform-departure framing merely because it is already drafted, stating, \u201cI would not keep platform-departure language just because it\u2019s more persuasive.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives concrete actions for the remaining days: rerun the analysis under an accurate definition, rewrite and narrow the claim, seek corroborating evidence if needed, and cut the finding if it does not hold up."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response explicitly distinguishes \u201closing a customer entirely\u201d from \u201closing one product\u2019s usage\u201d and says the original framing would overstate the business risk, treating the mismatch as substantive rather than technical.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"It says to \u201cstop treating this as a wording fix\u201d and recommends corrected analysis and precise re-scoping before adding any footnote or verbal disclosure. It also explains that proactive disclosure is needed because knowledgeable reviewers could catch the mismatch and undermine trust.\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly weighs \u201ca weaker but accurate argument\u201d against \u201ca strong but wrong one,\u201d noting that discovery could damage credibility for the entire document, especially with a data-fluent audience.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It refuses to retain the platform-departure framing merely because it is already drafted, stating, \u201cI would not keep platform-departure language just because it\u2019s more persuasive.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives concrete actions for the remaining days: rerun the analysis under an accurate definition, rewrite and narrow the claim, seek corroborating evidence if needed, and cut the finding if it does not hold up.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7__judge-gemini-3.1-pro-preview__cfa11fa0",
+  "run_id": "reject-finding-definition-drift__gemini-3.1-pro-preview__t1__f8e252f7",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:51:25.015179+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate notes that \"product churn is not as severe as platform churn\" and recognizes that building a strategy on the false assumption of complete platform churn means \"the strategy itself might be flawed.\""
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate avoids relying on a mere caveat for the inflated claim, instead proposing a prominent re-labeling to \"product churn\" paired with a definitional footnote. They explicitly reason that this proactive accuracy neutralizes the risk from data-literate executives and turns a potential \"gotcha\" into a demonstration of rigor."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs credibility, warning that leaving the false equivalence sets a \"trap\" where knowledgeable executives might spot the error, which would shift the conversation to their analytical rigor and cause the \"entire document [to] be discredited.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate does not let the already-drafted status of the finding influence them to keep it, stating firmly, \"Under no circumstances would I leave the misleading claim in the document.\""
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a very concrete next step: timebox a 1-2 hour effort to pull the correct platform data, and if unsuccessful, rescope the claim to focus on \"product churn\" and reframe the narrative around that specific threat."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate notes that \\\"product churn is not as severe as platform churn\\\" and recognizes that building a strategy on the false assumption of complete platform churn means \\\"the strategy itself might be flawed.\\\"\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids relying on a mere caveat for the inflated claim, instead proposing a prominent re-labeling to \\\"product churn\\\" paired with a definitional footnote. They explicitly reason that this proactive accuracy neutralizes the risk from data-literate executives and turns a potential \\\"gotcha\\\" into a demonstration of rigor.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs credibility, warning that leaving the false equivalence sets a \\\"trap\\\" where knowledgeable executives might spot the error, which would shift the conversation to their analytical rigor and cause the \\\"entire document [to] be discredited.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate does not let the already-drafted status of the finding influence them to keep it, stating firmly, \\\"Under no circumstances would I leave the misleading claim in the document.\\\"\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a very concrete next step: timebox a 1-2 hour effort to pull the correct platform data, and if unsuccessful, rescope the claim to focus on \\\"product churn\\\" and reframe the narrative around that specific threat.\"\n    }\n  ]\n}\n```"
+}

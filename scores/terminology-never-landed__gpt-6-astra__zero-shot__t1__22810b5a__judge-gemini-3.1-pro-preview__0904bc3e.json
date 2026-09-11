@@ -1,0 +1,52 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a__judge-gemini-3.1-pro-preview__0904bc3e",
+  "run_id": "terminology-never-landed__gpt-6-astra__zero-shot__t1__22810b5a",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:04:21.233998+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly identifies the repeated failure as the core issue, noting that \"the pattern suggests that the team is discovering\u2014or reweighting\u2014constraints after each selection\" and that another candidate reviewed the same way will meet the same fate."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate proposes several concrete mechanisms to force a decision, including identifying an \"accountable decision-maker,\" setting a \"deadline and a tie-breaking rule,\" and explicitly accepting \"that every option may have drawbacks.\""
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response draws a clear line between meaningful objections and bikeshedding by stating the priority is \"consequential misunderstanding, not whether a name attracts any criticism\" and refusing to reopen for \"another reviewer\u2019s preference.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly acknowledges the API field constraint, stating they would treat it as a \"fixed implementation constraint\" and handle the discrepancy via documentation mapping rather than trying to change the API."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines a fundamentally different approach for the fourth round by establishing rules, decision rights, and a decision brief before looking at candidates, noting \"this is about ensuring the same decision is not repeatedly made under different, unstated rules.\""
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly identifies the repeated failure as the core issue, noting that \\\"the pattern suggests that the team is discovering\u2014or reweighting\u2014constraints after each selection\\\" and that another candidate reviewed the same way will meet the same fate.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proposes several concrete mechanisms to force a decision, including identifying an \\\"accountable decision-maker,\\\" setting a \\\"deadline and a tie-breaking rule,\\\" and explicitly accepting \\\"that every option may have drawbacks.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response draws a clear line between meaningful objections and bikeshedding by stating the priority is \\\"consequential misunderstanding, not whether a name attracts any criticism\\\" and refusing to reopen for \\\"another reviewer\u2019s preference.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly acknowledges the API field constraint, stating they would treat it as a \\\"fixed implementation constraint\\\" and handle the discrepancy via documentation mapping rather than trying to change the API.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines a fundamentally different approach for the fourth round by establishing rules, decision rights, and a decision brief before looking at candidates, noting \\\"this is about ensuring the same decision is not repeatedly made under different, unstated rules.\\\"\"\n    }\n  ]\n}\n```"
+}

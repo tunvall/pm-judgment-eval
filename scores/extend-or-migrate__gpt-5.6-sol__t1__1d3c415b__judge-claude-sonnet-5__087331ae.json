@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b__judge-claude-sonnet-5__087331ae",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:11:16.953935+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'This does not change the strategic destination\u2014it separates two outcomes that have different risk profiles,' clearly separating the long-term platform destination from the question of whether this launch should be the migration vehicle."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says 'The technically derived estimate should drive the plan' and argues committing to the new platform would be 'betting that several known gaps will not cause delays,' directly rejecting the optimistic circulated timeline."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It names correctness, compliance, and customer-experience risks tied to the platform gaps and includes guardrails against the bridge becoming permanent, but it doesn't explicitly reason about the specific risk of inconsistent notification behavior across products during a mixed-platform state\u2014the risk discussion is framed mainly around gap-driven delivery failure rather than cross-product inconsistency."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses optics, stating it would 'communicate the decision as a risk-adjusted sequencing choice, not resistance to company strategy' and offers leadership an explicit trade-off if they still want acceleration."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation ('use the older platform for this launch and run migration... as a separate, explicitly funded effort') with concrete guardrails like parity/exit criteria and an abstraction layer, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'This does not change the strategic destination\u2014it separates two outcomes that have different risk profiles,' clearly separating the long-term platform destination from the question of whether this launch should be the migration vehicle.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly says 'The technically derived estimate should drive the plan' and argues committing to the new platform would be 'betting that several known gaps will not cause delays,' directly rejecting the optimistic circulated timeline.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"It names correctness, compliance, and customer-experience risks tied to the platform gaps and includes guardrails against the bridge becoming permanent, but it doesn't explicitly reason about the specific risk of inconsistent notification behavior across products during a mixed-platform state\u2014the risk discussion is framed mainly around gap-driven delivery failure rather than cross-product inconsistency.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly addresses optics, stating it would 'communicate the decision as a risk-adjusted sequencing choice, not resistance to company strategy' and offers leadership an explicit trade-off if they still want acceleration.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation ('use the older platform for this launch and run migration... as a separate, explicitly funded effort') with concrete guardrails like parity/exit criteria and an abstraction layer, rather than just listing tradeoffs.\"}\n  ]\n}"
+}

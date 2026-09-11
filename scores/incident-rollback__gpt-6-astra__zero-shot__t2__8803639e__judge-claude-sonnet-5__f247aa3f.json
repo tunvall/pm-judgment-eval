@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e__judge-claude-sonnet-5__f247aa3f",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t2__8803639e",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T18:03:44.836169+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back the launch now, in coordination with engineering, rather than leave incorrect risk signals in production for several days,' made without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response explicitly labels its chosen path as a 'visible, reversible launch setback' versus ongoing harm, but it does not symmetrically discuss the reversibility of the fast-fix alternative it declined ('I would not delay containment to attempt a rushed version of the multi-day fix') beyond noting it would take too long."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the two costs: 'The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions... A temporary delay to new coverage is preferable to undermining trust in the reliability of existing coverage.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects rushing the multi-day fix: 'I would not delay containment to attempt a rushed version of the multi-day fix,' acknowledging that approach would be unvalidated and risky."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, the response lays out communication to customers/support, addressing already-incurred impact, and a 'Before relaunch' section requiring a tested fix, regression tests, and controlled rollout before returning to the launch."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back the launch now, in coordination with engineering, rather than leave incorrect risk signals in production for several days,' made without waiting for the manager.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"The response explicitly labels its chosen path as a 'visible, reversible launch setback' versus ongoing harm, but it does not symmetrically discuss the reversibility of the fast-fix alternative it declined ('I would not delay containment to attempt a rushed version of the multi-day fix') beyond noting it would take too long.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response directly weighs the two costs: 'The public announcement makes rollback costly, but it does not justify continued, known harm to unrelated transactions... A temporary delay to new coverage is preferable to undermining trust in the reliability of existing coverage.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects rushing the multi-day fix: 'I would not delay containment to attempt a rushed version of the multi-day fix,' acknowledging that approach would be unvalidated and risky.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, the response lays out communication to customers/support, addressing already-incurred impact, and a 'Before relaunch' section requiring a tested fix, regression tests, and controlled rollout before returning to the launch.\"}\n  ]\n}"
+}

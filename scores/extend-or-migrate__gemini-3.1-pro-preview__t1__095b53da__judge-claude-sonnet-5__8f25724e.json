@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da__judge-claude-sonnet-5__8f25724e",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__t1__095b53da",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:09:14.806880+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames its recommendation as 'not a rejection of the new platform' but a de-risking strategy for this launch specifically, keeping the long-term destination intact while separating out the timeline question."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response leads with 'the realistic estimate for the new platform leaves no schedule margin' and calls the circulated optimistic timeline 'a trap' that creates 'a false sense of security,' explicitly favoring the pessimistic technically-derived estimate."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response only mentions 'a small amount of throwaway work' as a cost of using the old platform but never discusses the risk of running mismatched notification systems across products (old platform for the new tier vs. new platform as company destination) creating an inconsistent customer or engineering experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly says 'the communication of this decision is critical to ensure you aren't viewed as rejecting company strategy' and proposes framing it as risk management rather than a rejection of direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific decision ('extend the older platform') and lays out concrete execution steps such as communicating findings, framing as risk management, and adding the migration to a future backlog."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames its recommendation as 'not a rejection of the new platform' but a de-risking strategy for this launch specifically, keeping the long-term destination intact while separating out the timeline question.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response leads with 'the realistic estimate for the new platform leaves no schedule margin' and calls the circulated optimistic timeline 'a trap' that creates 'a false sense of security,' explicitly favoring the pessimistic technically-derived estimate.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response only mentions 'a small amount of throwaway work' as a cost of using the old platform but never discusses the risk of running mismatched notification systems across products (old platform for the new tier vs. new platform as company destination) creating an inconsistent customer or engineering experience.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response explicitly says 'the communication of this decision is critical to ensure you aren't viewed as rejecting company strategy' and proposes framing it as risk management rather than a rejection of direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific decision ('extend the older platform') and lays out concrete execution steps such as communicating findings, framing as risk management, and adding the migration to a future backlog.\"}\n  ]\n}"
+}

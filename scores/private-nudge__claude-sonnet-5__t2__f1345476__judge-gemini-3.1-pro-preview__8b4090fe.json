@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__claude-sonnet-5__t2__f1345476__judge-gemini-3.1-pro-preview__8b4090fe",
+  "run_id": "private-nudge__claude-sonnet-5__t2__f1345476",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:06:44.494734+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \"forcing functions are for when timing genuinely matters,\" recognizing that the flexible timeline means there is no need to manufacture urgency."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly identifies that a public callout adds \"reputational anxiety\" and describes this as a \"real cost I'd be knowingly imposing\" on the stressed peer."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response deliberately rejects the public nudge, arguing instead that public pressure is a \"tool with side effects\" that should be reserved for cases with real stakes."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response recommends a very specific action\u2014sending a private DM\u2014and even provides an example script (\"hey, saw this has been moving slower than planned...\") for the check-in."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that \\\"forcing functions are for when timing genuinely matters,\\\" recognizing that the flexible timeline means there is no need to manufacture urgency.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly identifies that a public callout adds \\\"reputational anxiety\\\" and describes this as a \\\"real cost I'd be knowingly imposing\\\" on the stressed peer.\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response deliberately rejects the public nudge, arguing instead that public pressure is a \\\"tool with side effects\\\" that should be reserved for cases with real stakes.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends a very specific action\u2014sending a private DM\u2014and even provides an example script (\\\"hey, saw this has been moving slower than planned...\\\") for the check-in.\"\n    }\n  ]\n}"
+}

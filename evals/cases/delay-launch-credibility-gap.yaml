@@ -1,0 +1,113 @@
+id: delay-launch-credibility-gap
+version: 1
+set: heldout
+
+title: Pause a committed launch when the accuracy story isn't defensible
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - conviction
+  - tradeoff
+  - calibration
+
+difficulty: hard
+
+scenario: |
+  You are a product manager for a predictive risk-exposure estimation product, on
+  the hook for a launch tied to a major industry conference. Your deterministic
+  estimation approach works reasonably well for a subset of transaction types,
+  a bit better than 70% precision, but recall is low: it only covers a small
+  fraction of the full range of transaction types your product needs to handle.
+  For a newer class of workloads, you have no estimation approach at all yet.
+
+  A senior engineering leader has proposed a middle-ground launch: ship a version
+  that identifies which transactions are in scope for risk exposure, without
+  producing a confident numeric estimate for them. Another stakeholder flags that
+  a well-known industry commentator, with a track record of publicly criticizing
+  half-measures, would likely deride a version that identifies risk without
+  quantifying it. A recent practitioner workshop ranked accuracy on the newer
+  transaction types as the single most important credibility question for
+  products like yours. A skip-level director previously declined to approve an
+  even narrower version of this product for the same reason.
+
+  You have about a month left before the committed conference date.
+
+question: |
+  What do you do, and why?
+
+constraints:
+  - A public commitment to launch at the conference has already been made.
+  - A skip-level director previously declined an even narrower version of this
+    product for the same underlying credibility concern.
+  - A recent practitioner workshop ranked this exact accuracy gap as the top
+    credibility question for products in this space.
+
+rubric:
+  criteria:
+    - id: weighs_credibility_risk_explicitly
+      description: >
+        Explicitly weighs the reputational/credibility risk of shipping a
+        partial solution (identifying risk without quantifying it) against the
+        cost of delaying the launch, using the specific evidence given (the
+        commentator's track record, the workshop ranking) rather than treating
+        credibility as a vague, unquantified concern.
+      weight: 3
+
+    - id: treats_prior_precedent_as_real_signal
+      description: >
+        Notices that a skip-level director already declined a narrower version
+        of this product for the same reason, and treats that as real evidence
+        about what the organization will actually accept, not just an isolated
+        data point to set aside.
+      weight: 2
+
+    - id: does_not_treat_public_commitment_as_automatically_binding
+      description: >
+        Weighs the conference commitment against the actual severity of the
+        credibility gap rather than assuming the date must be hit regardless of
+        whether the launch is technically defensible.
+      weight: 3
+
+    - id: considers_narrower_defensible_scope
+      description: >
+        Checks whether a more narrowly scoped launch, limited to the transaction
+        types where precision and recall already clear a defensible bar, is a
+        real option before accepting the choice as only "ship the middle-ground
+        version" versus "delay entirely."
+      weight: 2
+
+    - id: proposes_realistic_next_step
+      description: >
+        Gives a concrete recommendation with a plan for what happens next (what
+        work happens in the meantime, how the commitment gets communicated),
+        not just a one-word verdict of "ship" or "delay."
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Paused the launch entirely and retargeted a later industry event, rather
+    than shipping the middle-ground identify-without-estimating version,
+    reasoning that public criticism of a visibly partial solution would cost
+    more credibility than missing the date, and that the additional time was
+    better spent making real progress on the harder estimation problem.
+
+  eventual_outcome: |
+    The extra time did produce real technical progress, including a shift in
+    the underlying estimation approach. By the time the team scoped the
+    replacement launch months later, though, feasibility was again unresolved
+    and the technical approach was still in flux. The pause was the right call;
+    the replacement effort wasn't obviously any safer or more resolved than the
+    original one had been.
+
+  case_author_notes: |
+    Tests whether a model treats a public, conference-tied commitment as a hard
+    constraint to be met regardless of readiness, versus something worth
+    renegotiating when the credibility risk is real and specifically evidenced
+    (a named commentator pattern, a workshop ranking, prior precedent from a
+    skip-level rejection). Also tests whether a model interrogates the binary
+    framing it's handed (middle-ground vs. full launch) rather than accepting
+    it uncritically, and whether it stays honest that a good decision here
+    doesn't guarantee a clean resolution next time around.

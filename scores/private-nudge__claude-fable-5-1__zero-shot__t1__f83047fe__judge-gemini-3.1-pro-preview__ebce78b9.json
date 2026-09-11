@@ -1,0 +1,45 @@
+{
+  "score_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe__judge-gemini-3.1-pro-preview__ebce78b9",
+  "run_id": "private-nudge__claude-fable-5-1__zero-shot__t1__f83047fe",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:03:57.792237+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that because there is no hard deadline and the team has slack, there is 'nothing to force' and no need to buy speed they don't require."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs the cost of public escalation, stating they would be spending 'real capital \u2014 my peer's trust' and noting that 'the relationship damage from going public first is durable.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects using the initial public commitment as an excuse to apply public pressure, arguing that doing so 'uses leverage I don't need' and instead suggests the peer should update the public channel themselves."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines a highly specific action plan, starting with a 'Private DM first' and providing bulleted points on exactly what to ask and say in that DM."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that because there is no hard deadline and the team has slack, there is 'nothing to force' and no need to buy speed they don't require.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs the cost of public escalation, stating they would be spending 'real capital \u2014 my peer's trust' and noting that 'the relationship damage from going public first is durable.'\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects using the initial public commitment as an excuse to apply public pressure, arguing that doing so 'uses leverage I don't need' and instead suggests the peer should update the public channel themselves.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines a highly specific action plan, starting with a 'Private DM first' and providing bulleted points on exactly what to ask and say in that DM.\"\n    }\n  ]\n}"
+}

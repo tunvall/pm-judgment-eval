@@ -1,6 +1,6 @@
 id: incident-rollback
-version: 2
-set: heldout
+version: 3
+set: dev
 
 title: Two-hour decision on a live production incident
 
@@ -49,15 +49,17 @@ rubric:
 
     - id: distinguishes_reversible_from_expensive_to_reverse
       description: >
-        Explicitly reasons about which option is actually low-risk and
-        reversible (rolling back) versus which is uncertain and hard to walk
-        back if it doesn't work (betting on an unvalidated fast fix). Full
-        credit requires making the explicit contrast between the two. A
-        response that identifies rollback as reversible but never contrasts
-        that against the fast-fix path's specific risk should score
-        partially_met, not not_met: recognizing reversibility as a relevant
-        factor at all is most of the reasoning skill this criterion targets,
-        even without a fully symmetric comparison.
+        Explicitly reasons about the reversibility of whichever option it
+        recommends (full rollback, a fast fix, a mitigation that avoids both,
+        or something else) versus the alternatives it didn't pick. Full credit
+        requires naming the actual reversibility tradeoff of the chosen path,
+        not asserting that a decision was made without addressing how easily
+        it could be undone if wrong. A response that names reversibility as a
+        relevant factor for its own chosen option, without a fully symmetric
+        comparison against every alternative, should score partially_met, not
+        not_met: recognizing reversibility as a relevant factor at all is most
+        of the reasoning skill this criterion targets, even without a fully
+        symmetric comparison.
       weight: 3
 
     - id: weighs_ongoing_harm_against_launch_momentum
@@ -109,3 +111,20 @@ analysis_only:
     judge's own threshold. v1 scores remain valid records of what happened
     under the old wording; they are not retroactively wrong, the wording was
     underspecified.
+
+    Reclassified dev (2026-09-10, was heldout): the v2 revision above was
+    made after viewing real candidate/judge output, which by definition
+    disqualifies this case from held-out status per docs/methodology.md
+    ("never viewed against any model's real output before being finalized").
+    Caught via external methodology review (ChatGPT + Gemini, cross-checked
+    against this file). A fresh, untouched case should replace this one in
+    the held-out set rather than counting this case toward it.
+
+    v3 (2026-09-10): distinguishes_reversible_from_expensive_to_reverse
+    reworded after the same external review flagged it as implicitly
+    requiring the historical rollback conclusion for full credit. Broadened
+    to reward reasoning about the reversibility of whatever option the
+    response actually recommends, so a genuinely reversible alternative (e.g.
+    muting affected signals without a full rollback) can score on its own
+    merits rather than only being measured against the rollback/fast-fix
+    framing. v1/v2 scores remain valid records under the prior wording.

@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0__judge-gemini-3.1-pro-preview__938c12bd",
+  "run_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:05:50.315989+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly states that 'The decision is about sequencing, not direction' and emphasizes that choosing the older platform for this launch is not a strategic disagreement."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate firmly grounds the recommendation in the doubled estimate, noting that a 'zero-margin schedule built on an estimate that already doubled once is not a plan' and proposes correcting the record with stakeholders."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response notes that running two platforms creates a 'split-brain operational picture' for on-call teams, it fails to recognize or weigh how mismatched platform coverage across products would create a period of inconsistent customer experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response identifies 'Political perception' as a risk, acknowledging that the choice 'can be read as not buying into the strategy,' and suggests mitigating this by framing the decision explicitly around sequencing and presenting the technical review."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a clear, specific recommendation to extend the older platform behind an abstraction layer (Option 3), followed by a concrete and actionable list of next steps to execute the plan."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly states that 'The decision is about sequencing, not direction' and emphasizes that choosing the older platform for this launch is not a strategic disagreement.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate firmly grounds the recommendation in the doubled estimate, noting that a 'zero-margin schedule built on an estimate that already doubled once is not a plan' and proposes correcting the record with stakeholders.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response notes that running two platforms creates a 'split-brain operational picture' for on-call teams, it fails to recognize or weigh how mismatched platform coverage across products would create a period of inconsistent customer experience.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies 'Political perception' as a risk, acknowledging that the choice 'can be read as not buying into the strategy,' and suggests mitigating this by framing the decision explicitly around sequencing and presenting the technical review.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a clear, specific recommendation to extend the older platform behind an abstraction layer (Option 3), followed by a concrete and actionable list of next steps to execute the plan.\"\n    }\n  ]\n}\n```"
+}

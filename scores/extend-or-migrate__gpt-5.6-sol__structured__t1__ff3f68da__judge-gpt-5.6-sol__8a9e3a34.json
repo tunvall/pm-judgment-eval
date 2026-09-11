@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__structured__t1__ff3f68da__judge-gpt-5.6-sol__8a9e3a34",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__structured__t1__ff3f68da",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:06:54.321511+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \u201cthe decisive factor is not disagreement with the long-term strategy; it is execution risk,\u201d separating the agreed destination from whether this launch should carry the migration."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It bases the recommendation on the technically derived estimate that \u201cleaves no margin\u201d and says relying on the optimistic timeline would ignore known technical evidence. It also proposes publishing the realistic estimate as the planning baseline."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response notes that a hybrid or transitional state can create \u201ctwo behavior sets,\u201d customer-visible changes in routing, verification, destinations, and rendering, plus testing and support complexity. It weighs this as moderate if short-lived but significant if migration drifts, and proposes mappings and contract tests as mitigation."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly counters the likely perception of resisting company strategy by framing the recommendation as a bounded tactical extension that preserves a separately staffed migration commitment. It further recommends explicit approval, ownership, milestones, and a stop-date for old-platform additions."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly recommends extending the older platform for launch and planning migration as a separately staffed follow-up. It provides concrete immediate actions, including validating old-platform coverage, confirming retirement timing, narrowing scope, and creating a staffed migration plan."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly states that \u201cthe decisive factor is not disagreement with the long-term strategy; it is execution risk,\u201d separating the agreed destination from whether this launch should carry the migration.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It bases the recommendation on the technically derived estimate that \u201cleaves no margin\u201d and says relying on the optimistic timeline would ignore known technical evidence. It also proposes publishing the realistic estimate as the planning baseline.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"met\",\"justification\":\"The response notes that a hybrid or transitional state can create \u201ctwo behavior sets,\u201d customer-visible changes in routing, verification, destinations, and rendering, plus testing and support complexity. It weighs this as moderate if short-lived but significant if migration drifts, and proposes mappings and contract tests as mitigation.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly counters the likely perception of resisting company strategy by framing the recommendation as a bounded tactical extension that preserves a separately staffed migration commitment. It further recommends explicit approval, ownership, milestones, and a stop-date for old-platform additions.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response clearly recommends extending the older platform for launch and planning migration as a separately staffed follow-up. It provides concrete immediate actions, including validating old-platform coverage, confirming retirement timing, narrowing scope, and creating a staffed migration plan.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f__judge-gpt-5.6-sol__aefc78de",
+  "run_id": "incident-rollback__claude-fable-5-1__zero-shot__t2__14be967f",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T17:00:43.516195+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response immediately makes a specific call: \u201croll the new integration back now,\u201d with rollback remaining the default unless an unusually safe, testable fence exists."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It frames rollback as a reversible \u201cpause\u201d that restores a known-good state and provides a concrete path to relaunch after testing, while contrasting this with an untested hotfix that could worsen the incident. It also checks whether rollback itself is operationally clean, including flags, redeployment, migrations, or state complications."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts incorrect alerts and lost trust that \u201ccompounds every hour\u201d with the publicly announced launch, characterizing the latter as a manageable delay and communications problem rather than justification for continuing customer harm."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It allows consideration only of a \u201ctrivially safe\u201d fence that can be tested quickly, but explicitly keeps rollback as the default unless engineering is \u201cgenuinely confident, not hopeful,\u201d warning that untested hotfixes can create another incident."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out detailed follow-through: verify recovery through metrics, identify and remediate erroneous alerts, communicate with support and customers, document the decision, build regression coverage, and relaunch through a staged flag only after a tested fix."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response immediately makes a specific call: \u201croll the new integration back now,\u201d with rollback remaining the default unless an unusually safe, testable fence exists.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"met\",\"justification\":\"It frames rollback as a reversible \u201cpause\u201d that restores a known-good state and provides a concrete path to relaunch after testing, while contrasting this with an untested hotfix that could worsen the incident. It also checks whether rollback itself is operationally clean, including flags, redeployment, migrations, or state complications.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts incorrect alerts and lost trust that \u201ccompounds every hour\u201d with the publicly announced launch, characterizing the latter as a manageable delay and communications problem rather than justification for continuing customer harm.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"It allows consideration only of a \u201ctrivially safe\u201d fence that can be tested quickly, but explicitly keeps rollback as the default unless engineering is \u201cgenuinely confident, not hopeful,\u201d warning that untested hotfixes can create another incident.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"The response lays out detailed follow-through: verify recovery through metrics, identify and remediate erroneous alerts, communicate with support and customers, document the decision, build regression coverage, and relaunch through a staged flag only after a tested fix.\"}]}"
+}

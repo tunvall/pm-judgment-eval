@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032__judge-gemini-3.1-pro-preview__27105aed",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__structured__t1__ad0e6032",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:03:38.285040+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly separates the two issues, committing to the long-term strategy while arguing this specific launch shouldn't be the vehicle, stating that the architectural strategy is 'honored, just deferred.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate rejects the informally circulated optimistic timeline, grounding their recommendation in the technical reality that the realistic estimate consumes 100% of the schedule buffer."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses technical debt and optics, but does not identify or discuss the risk of an inconsistent customer experience resulting from having different products on different notification platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly names 'Strategic Misalignment/Optics' as a risk, acknowledging that leadership might view the decision as 'resisting company strategy,' and proposes clear communication to mitigate this."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a firm, clear recommendation ('Alternative 1: Extend the old platform for this launch') rather than just listing tradeoffs, and outlines actionable next steps."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly separates the two issues, committing to the long-term strategy while arguing this specific launch shouldn't be the vehicle, stating that the architectural strategy is 'honored, just deferred.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects the informally circulated optimistic timeline, grounding their recommendation in the technical reality that the realistic estimate consumes 100% of the schedule buffer.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response discusses technical debt and optics, but does not identify or discuss the risk of an inconsistent customer experience resulting from having different products on different notification platforms.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly names 'Strategic Misalignment/Optics' as a risk, acknowledging that leadership might view the decision as 'resisting company strategy,' and proposes clear communication to mitigate this.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a firm, clear recommendation ('Alternative 1: Extend the old platform for this launch') rather than just listing tradeoffs, and outlines actionable next steps.\"\n    }\n  ]\n}"
+}

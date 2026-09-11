@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf__judge-gpt-5.6-sol__eb44d259",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__t1__73af7ebf",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:03:04.702196+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes an immediate, unambiguous call to \u201corder an immediate rollback\u201d or disable the release via feature flags, explicitly noting that the incident lead cannot wait for permission."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It frames the rollback as a temporary pause that can be reversed through a tested relaunch in several days, while contrasting that reversible \u201cPR bruise\u201d with customer trust damage that is \u201charder to repair.\u201d"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the embarrassment of walking back a public announcement against mistaken signals, accumulating support tickets, SLA breaches, churn, and loss of trust, concluding that continued production harm is substantially worse."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than proposing an improvised patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix in staging after rollback."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a detailed follow-through plan: equip Support and Customer Success, notify impacted and launch-expecting customers, build and test the proper fix, resume rollout afterward, and conduct a blameless post-mortem."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response makes an immediate, unambiguous call to \u201corder an immediate rollback\u201d or disable the release via feature flags, explicitly noting that the incident lead cannot wait for permission.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"met\",\"justification\":\"It frames the rollback as a temporary pause that can be reversed through a tested relaunch in several days, while contrasting that reversible \u201cPR bruise\u201d with customer trust damage that is \u201charder to repair.\u201d\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"The response directly weighs the embarrassment of walking back a public announcement against mistaken signals, accumulating support tickets, SLA breaches, churn, and loss of trust, concluding that continued production harm is substantially worse.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"Rather than proposing an improvised patch, it directs engineering to spend the necessary several days building and rigorously testing the proper fix in staging after rollback.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a detailed follow-through plan: equip Support and Customer Success, notify impacted and launch-expecting customers, build and test the proper fix, resume rollout afterward, and conduct a blameless post-mortem.\"}]}"
+}

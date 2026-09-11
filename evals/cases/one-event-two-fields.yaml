@@ -1,0 +1,111 @@
+id: one-event-two-fields
+version: 1
+set: heldout
+
+title: One flagged event, two output fields as pipelines converge
+
+source:
+  type: historical
+  sanitized: true
+
+dimensions:
+  - evidence
+  - tradeoff
+
+difficulty: medium
+
+scenario: |
+  You are a product manager for a risk-detection system fed by two pipelines
+  covering the same underlying events: one fast but rougher, one slower but more
+  precise. You need to decide how a flagged event should be represented in your
+  data model as both pipelines' outputs become available over time, at different
+  points after the event first fires.
+
+  Three options are on the table. One: a single field, overwritten as the more
+  precise estimate arrives later. This matches a simple mental model, but risks
+  silently changing the meaning of a field that external systems already read
+  under its current, well-defined semantics. Two: two separate records for the
+  same underlying event, linked by a pointer. This preserves the existing
+  field's meaning untouched, but risks producing duplicate alerts for what is
+  actually one incident. Three: keep a single event with one lifecycle, and add
+  a second field specifically for the newer, more precise estimate, leaving the
+  original field's meaning untouched.
+
+  A senior design reviewer is pushing for something closer to the first option,
+  from a customer-simplicity instinct. Customer research shows customers want a
+  single, unified view of an event with no duplicate alerts, which supports the
+  reviewer's underlying goal but doesn't specifically validate their proposed
+  mechanism over the others.
+
+question: |
+  What data representation do you choose, and why?
+
+constraints:
+  - Millions of existing records and external integrations depend on the
+    current field's exact, well-defined meaning.
+  - Customer research shows a clear preference for a single unified view of an
+    event with no duplicate alerts.
+  - A senior design reviewer favors a mechanism resembling the single-overwritten-field
+    option.
+
+rubric:
+  criteria:
+    - id: distinguishes_experience_goal_from_mechanism
+      description: >
+        Recognizes that the customer research validates the underlying goal
+        (one unified view, no duplicate alerts) without necessarily validating
+        the reviewer's specific proposed mechanism for achieving it, rather than
+        treating "customers want X" as automatically endorsing any option that
+        claims to deliver X.
+      weight: 3
+
+    - id: protects_existing_field_semantics
+      description: >
+        Explicitly weighs the risk of silently changing an existing, well-defined
+        field's meaning against integrations that can't be fully enumerated in
+        advance, rather than treating a simpler mental model as sufficient
+        justification on its own.
+      weight: 3
+
+    - id: avoids_duplicate_alert_risk
+      description: >
+        Recognizes that representing the same underlying event as two separate
+        linked records risks duplicate alerts for one incident, and factors that
+        into the recommendation.
+      weight: 2
+
+    - id: proposes_concrete_data_model
+      description: >
+        Gives a specific, concrete recommendation for how the event and its
+        field(s) should be structured, rather than restating the three options
+        abstractly without committing to one.
+      weight: 2
+
+    - id: engages_reviewer_disagreement_on_merits
+      description: >
+        Directly addresses the senior reviewer's competing instinct (customer
+        simplicity) on its merits, rather than dismissing it outright even while
+        recommending a different mechanism.
+      weight: 2
+
+analysis_only:
+  historical_decision: |
+    Kept a single event with one lifecycle, and added a second field for the
+    newer, more precise estimate, rather than overwriting the original field or
+    creating a second linked record — leaving the original field's existing
+    meaning completely untouched.
+
+  eventual_outcome: |
+    The team committed to this approach before fully validating that downstream
+    notification infrastructure could actually support two fields on one event
+    — a calculated bet that could have forced rework if it hadn't held. It did
+    hold, and the same data shape also survived a later, unrelated repositioning
+    of the product's value proposition, because the shape itself didn't depend
+    on which framing of the product ultimately won.
+
+  case_author_notes: |
+    Tests whether a model treats supportive customer research as validating a
+    specific proposed mechanism versus only the underlying goal behind it, and
+    whether it weighs an existing field's implicit contract with unknown
+    downstream consumers as a real constraint even when nobody can name the
+    exact systems that would break.

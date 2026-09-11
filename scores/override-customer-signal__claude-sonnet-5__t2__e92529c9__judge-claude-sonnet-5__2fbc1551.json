@@ -1,0 +1,52 @@
+{
+  "score_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9__judge-claude-sonnet-5__2fbc1551",
+  "run_id": "override-customer-signal__claude-sonnet-5__t2__e92529c9",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:12:09.264939+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it 'avoids the trap of treating \"explicit customer ask\" and \"launch blocker\" as synonymous' and treats the signal as a serious risk to weigh against timeline value rather than an automatic mandate."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response calls surfacing the undocumented suppress capability 'the key move' and 'the most important discovery in this scenario,' using it as the core interim solution."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly separates 'the underlying complaint' (noise/no relief) from the 'full configurability' ask, stating it responds to 'the real substance of the signal... without accepting the most expensive interpretation of the ask (full framework) as the only valid response.'"
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It names a contingency risk ('if we find the existing suppress feature is too broken to expose... that's the one thing that would make me reconsider slipping the date') but does not explicitly discuss the risk of the fast-follow decision looking wrong in hindsight if adoption/backlash is high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear decision ('Ship the launch on schedule') with a concrete five-step plan including immediate mitigations, a dated fast-follow commitment, and communication back to the focus group."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it 'avoids the trap of treating \\\"explicit customer ask\\\" and \\\"launch blocker\\\" as synonymous' and treats the signal as a serious risk to weigh against timeline value rather than an automatic mandate.\"}, {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response calls surfacing the undocumented suppress capability 'the key move' and 'the most important discovery in this scenario,' using it as the core interim solution.\"}, {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"It explicitly separates 'the underlying complaint' (noise/no relief) from the 'full configurability' ask, stating it responds to 'the real substance of the signal... without accepting the most expensive interpretation of the ask (full framework) as the only valid response.'\"}, {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"It names a contingency risk ('if we find the existing suppress feature is too broken to expose... that's the one thing that would make me reconsider slipping the date') but does not explicitly discuss the risk of the fast-follow decision looking wrong in hindsight if adoption/backlash is high.\"}, {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear decision ('Ship the launch on schedule') with a concrete five-step plan including immediate mitigations, a dated fast-follow commitment, and communication back to the focus group.\"}]}"
+}

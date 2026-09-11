@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0__judge-gpt-5.6-sol__fd7632c0",
+  "run_id": "extend-or-migrate__claude-fable-5-1__structured__t1__f98806a0",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:05:40.488570+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states, \"The decision is about sequencing, not direction,\" and distinguishes the agreed long-term destination from whether this launch should be the migration vehicle."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It bases the recommendation on the technically derived estimate being roughly double the circulated timeline with zero margin, and proposes circulating the review so the optimistic figure is no longer used for planning."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It recognizes that putting only the new tier on the new platform would create a \"split-brain\" product with two debugging and on-call paths, and notes destination and rendering inconsistencies. However, it focuses mainly on operational complexity rather than explicitly weighing the resulting inconsistent customer experience across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly acknowledges the political risk that extending the legacy platform \"can look like resisting company strategy\" and recommends framing the choice as sequencing, presenting the technical evidence, and showing a dated migration commitment."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends extending the older platform behind an interface for this launch while immediately committing to an owned, dated post-launch migration plan, followed by concrete validation and communication steps."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly states, \\\"The decision is about sequencing, not direction,\\\" and distinguishes the agreed long-term destination from whether this launch should be the migration vehicle.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It bases the recommendation on the technically derived estimate being roughly double the circulated timeline with zero margin, and proposes circulating the review so the optimistic figure is no longer used for planning.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"partially_met\",\"justification\":\"It recognizes that putting only the new tier on the new platform would create a \\\"split-brain\\\" product with two debugging and on-call paths, and notes destination and rendering inconsistencies. However, it focuses mainly on operational complexity rather than explicitly weighing the resulting inconsistent customer experience across products.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"The response directly acknowledges the political risk that extending the legacy platform \\\"can look like resisting company strategy\\\" and recommends framing the choice as sequencing, presenting the technical evidence, and showing a dated migration commitment.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends extending the older platform behind an interface for this launch while immediately committing to an owned, dated post-launch migration plan, followed by concrete validation and communication steps.\"}]}"
+}

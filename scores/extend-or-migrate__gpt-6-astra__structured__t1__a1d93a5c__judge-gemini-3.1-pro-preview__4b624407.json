@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-astra__structured__t1__a1d93a5c__judge-gemini-3.1-pro-preview__4b624407",
+  "run_id": "extend-or-migrate__gpt-6-astra__structured__t1__a1d93a5c",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:50:39.135040+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states the objective is to decide on this launch's dependency, 'not whether to adopt that platform eventually,' and frames the choice as 'a sequencing decision consistent with the company\u2019s strategy, not a rejection of it.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly decides that 'The technically grounded estimate\u2014not the optimistic circulated timeline\u2014should drive the decision' and uses the resulting lack of schedule margin as the primary reason for its recommendation."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response identifies risks like duplicate work and a temporary solution becoming permanent, it fails to mention the risk of inconsistent customer experience caused by having products split across two different platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It acknowledges the optics by clarifying 'This is a sequencing decision... not a rejection of it' and addresses potential pushback by planning to agree with platform owners on a concrete migration milestone and owner."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a specific recommendation to extend the older platform and follows it up with five actionable next steps to align stakeholders and execute the plan."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states the objective is to decide on this launch's dependency, 'not whether to adopt that platform eventually,' and frames the choice as 'a sequencing decision consistent with the company\u2019s strategy, not a rejection of it.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly decides that 'The technically grounded estimate\u2014not the optimistic circulated timeline\u2014should drive the decision' and uses the resulting lack of schedule margin as the primary reason for its recommendation.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response identifies risks like duplicate work and a temporary solution becoming permanent, it fails to mention the risk of inconsistent customer experience caused by having products split across two different platforms.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"It acknowledges the optics by clarifying 'This is a sequencing decision... not a rejection of it' and addresses potential pushback by planning to agree with platform owners on a concrete migration milestone and owner.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a specific recommendation to extend the older platform and follows it up with five actionable next steps to align stakeholders and execute the plan.\"\n    }\n  ]\n}"
+}

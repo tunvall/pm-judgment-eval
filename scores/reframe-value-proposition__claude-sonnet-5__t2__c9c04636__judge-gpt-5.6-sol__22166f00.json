@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636__judge-gpt-5.6-sol__22166f00",
+  "run_id": "reframe-value-proposition__claude-sonnet-5__t2__c9c04636",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T16:57:19.208255+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly calls the complaint data \u201cthe real signal\u201d and treats customers\u2019 costly workarounds as direct evidence of an unmet precision need, rather than relying only on the consolidation roadmap."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It clearly states that prior investment may justify \u201cprotecting the underlying capability, not the narrative built on top of it,\u201d and proposes testing whether the existing architecture can support precision before changing positioning or engineering scope."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects continuing merely because the narrative is approved or a year has been invested, calling that \u201cinertia\u201d and conditioning further investment on a time-boxed validation sprint."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It substantively adopts the peer\u2019s core precision thesis while testing it against false-positive cases and customer workarounds, rather than dismissing it because it had previously been rejected."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to reframing the product around being \u201cfast enough, but trustworthy,\u201d with concrete next steps: benchmark precision, interview workaround-building customers, revise the GTM narrative, and time-box any engineering pivot."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_independent_evidence\",\"verdict\":\"met\",\"justification\":\"The response explicitly calls the complaint data \u201cthe real signal\u201d and treats customers\u2019 costly workarounds as direct evidence of an unmet precision need, rather than relying only on the consolidation roadmap.\"},{\"id\":\"distinguishes_narrative_from_architecture\",\"verdict\":\"met\",\"justification\":\"It clearly states that prior investment may justify \u201cprotecting the underlying capability, not the narrative built on top of it,\u201d and proposes testing whether the existing architecture can support precision before changing positioning or engineering scope.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"The response rejects continuing merely because the narrative is approved or a year has been invested, calling that \u201cinertia\u201d and conditioning further investment on a time-boxed validation sprint.\"},{\"id\":\"takes_dissenting_view_seriously\",\"verdict\":\"met\",\"justification\":\"It substantively adopts the peer\u2019s core precision thesis while testing it against false-positive cases and customer workarounds, rather than dismissing it because it had previously been rejected.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It commits to reframing the product around being \u201cfast enough, but trustworthy,\u201d with concrete next steps: benchmark precision, interview workaround-building customers, revise the GTM narrative, and time-box any engineering pivot.\"}]}"
+}

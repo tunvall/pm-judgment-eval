@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6__judge-gemini-3.1-pro-preview__d73b2f7d",
+  "run_id": "incident-rollback__claude-fable-5-1__structured__t1__60abf0d6",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T17:09:06.635444+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a clear and specific call to use a feature flag if confirmed within 30 minutes, or default to a full rollback."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response identifies its recommended mitigation as 'cheap and reversible' and contrasts it with the compounding harm of a hotfix, but does not symmetrically evaluate reversibility across all alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly contrasts the cost of not rolling back (core product being wrong for the installed base for days) against the cost of rollback (a communications problem regarding the launch announcement)."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects an emergency hotfix by noting that rushing a patch when a proper fix takes days is 'exactly how a high-sev becomes a second high-sev'."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The 'Next steps' section details immediate, short-term, and multi-day actions, including briefing support, communicating with customers, and establishing a relaunch plan."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a clear and specific call to use a feature flag if confirmed within 30 minutes, or default to a full rollback.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response identifies its recommended mitigation as 'cheap and reversible' and contrasts it with the compounding harm of a hotfix, but does not symmetrically evaluate reversibility across all alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly contrasts the cost of not rolling back (core product being wrong for the installed base for days) against the cost of rollback (a communications problem regarding the launch announcement).\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects an emergency hotfix by noting that rushing a patch when a proper fix takes days is 'exactly how a high-sev becomes a second high-sev'.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The 'Next steps' section details immediate, short-term, and multi-day actions, including briefing support, communicating with customers, and establishing a relaunch plan.\"\n    }\n  ]\n}"
+}

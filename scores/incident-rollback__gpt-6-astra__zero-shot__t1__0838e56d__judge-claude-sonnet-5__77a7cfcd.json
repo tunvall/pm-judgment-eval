@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d__judge-claude-sonnet-5__77a7cfcd",
+  "run_id": "incident-rollback__gpt-6-astra__zero-shot__t1__0838e56d",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-10T18:04:50.407315+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back the new integration launch now rather than leave existing customers exposed while a multi-day fix is built,' made without waiting for manager approval."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the tradeoff as 'a visible, reversible delay to a new capability' versus 'ongoing damage to the reliability of an established product,' naming reversibility as the key property of the chosen rollback path."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly states 'The public announcement makes rollback uncomfortable, but it does not justify continuing to send incorrect risk signals' and closes with 'The commitment to reliable risk signals outweighs the commitment to today's launch date,' explicitly weighing the two costs."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects relying on an unproven patch: 'I would not substitute an untested patch for a safe rollback,' and requires engineering to confirm any mitigation actually removes the faulty logic rather than assuming a quick fix will hold."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, it lays out customer/support communication, verification of recovery, and a longer-term plan to 'prioritize the properly scoped fix, regression tests... and a staged relaunch with monitoring and explicit rollback criteria.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back the new integration launch now rather than leave existing customers exposed while a multi-day fix is built,' made without waiting for manager approval.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the tradeoff as 'a visible, reversible delay to a new capability' versus 'ongoing damage to the reliability of an established product,' naming reversibility as the key property of the chosen rollback path.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"It directly states 'The public announcement makes rollback uncomfortable, but it does not justify continuing to send incorrect risk signals' and closes with 'The commitment to reliable risk signals outweighs the commitment to today's launch date,' explicitly weighing the two costs.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects relying on an unproven patch: 'I would not substitute an untested patch for a safe rollback,' and requires engineering to confirm any mitigation actually removes the faulty logic rather than assuming a quick fix will hold.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, it lays out customer/support communication, verification of recovery, and a longer-term plan to 'prioritize the properly scoped fix, regression tests... and a staged relaunch with monitoring and explicit rollback criteria.'\"}\n  ]\n}"
+}

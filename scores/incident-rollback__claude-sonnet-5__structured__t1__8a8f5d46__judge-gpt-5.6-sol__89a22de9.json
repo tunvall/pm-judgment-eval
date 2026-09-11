@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46__judge-gpt-5.6-sol__89a22de9",
+  "run_id": "incident-rollback__claude-sonnet-5__structured__t1__8a8f5d46",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T17:08:06.803639+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly recommends: \u201cPull the new integration launch back ... immediately\u201d and specifies reverting or disabling its inclusion logic rather than attempting a rushed scoped fix."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It treats rollback as an interim, reversible pause followed by a verified relaunch, while characterizing the reputational cost as \u201cbounded and manageable.\u201d It contrasts this with a rushed targeted fix that could be incomplete or introduce a second bad deploy."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly prioritizes stopping compounding harm to existing customers over \u201cpreserving the optics of a just-announced feature,\u201d while acknowledging the external credibility cost of walking back the public announcement."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It rejects hand-tuning a fast scoped fix under incident pressure, noting that such a mitigation may be incomplete or introduce new bugs because \u201cquick confidence\u201d is difficult during a rushed incident."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a detailed follow-through plan: verify and execute the rollback, monitor signal rates to baseline, communicate with support and customers, keep the incident open through validation, build the proper fix, and conduct a post-incident review before relaunch."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly recommends: \u201cPull the new integration launch back ... immediately\u201d and specifies reverting or disabling its inclusion logic rather than attempting a rushed scoped fix.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"met\",\n      \"justification\": \"It treats rollback as an interim, reversible pause followed by a verified relaunch, while characterizing the reputational cost as \u201cbounded and manageable.\u201d It contrasts this with a rushed targeted fix that could be incomplete or introduce a second bad deploy.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly prioritizes stopping compounding harm to existing customers over \u201cpreserving the optics of a just-announced feature,\u201d while acknowledging the external credibility cost of walking back the public announcement.\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"It rejects hand-tuning a fast scoped fix under incident pressure, noting that such a mitigation may be incomplete or introduce new bugs because \u201cquick confidence\u201d is difficult during a rushed incident.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a detailed follow-through plan: verify and execute the rollback, monitor signal rates to baseline, communicate with support and customers, keep the incident open through validation, build the proper fix, and conduct a post-incident review before relaunch.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b__judge-gpt-5.6-sol__a5a30cd1",
+  "run_id": "extend-or-migrate__gpt-5.6-sol__t1__1d3c415b",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-10T18:11:32.788344+00:00",
+  "git_commit": "89e4eba05a7c71127c6dd37284f935e12cdc3425",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates launching reliably from migrating correctly, stating that using the older platform now \u201cdoes not change the strategic destination\u201d and that the launch should not sit on the migration\u2019s critical path."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It clearly says \u201cthe technically derived estimate should drive the plan\u201d and rejects the circulated timeline because the realistic estimate is roughly twice as long and leaves no schedule margin."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses general correctness and customer-experience risks from the platforms\u2019 semantic differences, but it does not specifically recognize or weigh the inconsistent customer experience created by having products temporarily split across the old and new platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the likely perception of resisting strategy by framing the recommendation as \u201ca risk-adjusted sequencing choice, not resistance to company strategy,\u201d and offers explicit alternatives if leadership insists on the new platform."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes a concrete recommendation to use the older platform for this launch while immediately starting a separately funded migration, with owners, milestones, parity criteria, and a bounded temporary bridge."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates launching reliably from migrating correctly, stating that using the older platform now \u201cdoes not change the strategic destination\u201d and that the launch should not sit on the migration\u2019s critical path.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It clearly says \u201cthe technically derived estimate should drive the plan\u201d and rejects the circulated timeline because the realistic estimate is roughly twice as long and leaves no schedule margin.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"The response discusses general correctness and customer-experience risks from the platforms\u2019 semantic differences, but it does not specifically recognize or weigh the inconsistent customer experience created by having products temporarily split across the old and new platforms.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It directly addresses the likely perception of resisting strategy by framing the recommendation as \u201ca risk-adjusted sequencing choice, not resistance to company strategy,\u201d and offers explicit alternatives if leadership insists on the new platform.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It makes a concrete recommendation to use the older platform for this launch while immediately starting a separately funded migration, with owners, milestones, parity criteria, and a bounded temporary bridge.\"}]}"
+}
