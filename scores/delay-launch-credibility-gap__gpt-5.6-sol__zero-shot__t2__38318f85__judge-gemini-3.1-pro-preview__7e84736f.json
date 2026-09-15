@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85__judge-gemini-3.1-pro-preview__7e84736f",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:28:27.071918+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs the cost of missing the public date against the risk of undermining trust, specifically citing the practitioner feedback as the core evidence while intentionally deprioritizing the commentator's reaction."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly cites the skip-level director's previous rejection of a narrower version as a deciding factor and valid internal precedent for not proceeding with the launch."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly states that the public commitment is a 'sunk commitment' and argues that enduring a 'painful' missed date is preferable to launching a product that damages trust."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the candidate notes that the 70% precision only applies to a limited subset, they do not actively evaluate whether launching just that subset could be a viable option before moving to an outright no-go."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a highly concrete action plan, detailing what to do this week (freeze claims, write a memo, hold a review, reset comms) and how to repurpose the remaining month and conference presence."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs the cost of missing the public date against the risk of undermining trust, specifically citing the practitioner feedback as the core evidence while intentionally deprioritizing the commentator's reaction.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly cites the skip-level director's previous rejection of a narrower version as a deciding factor and valid internal precedent for not proceeding with the launch.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly states that the public commitment is a 'sunk commitment' and argues that enduring a 'painful' missed date is preferable to launching a product that damages trust.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the candidate notes that the 70% precision only applies to a limited subset, they do not actively evaluate whether launching just that subset could be a viable option before moving to an outright no-go.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a highly concrete action plan, detailing what to do this week (freeze claims, write a memo, hold a review, reset comms) and how to repurpose the remaining month and conference presence.\"\n    }\n  ]\n}\n```"
+}

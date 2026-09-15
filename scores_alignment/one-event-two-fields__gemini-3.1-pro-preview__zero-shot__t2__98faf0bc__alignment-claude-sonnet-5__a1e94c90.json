@@ -1,0 +1,15 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc__alignment-claude-sonnet-5__a1e94c90",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:36:06.391219+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate explicitly chose Option 3\u2014single event lifecycle with a second field for the precise estimate, leaving the original field untouched\u2014matching the historical decision exactly.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate explicitly chose Option 3\u2014single event lifecycle with a second field for the precise estimate, leaving the original field untouched\u2014matching the historical decision exactly.\"\n}"
+}

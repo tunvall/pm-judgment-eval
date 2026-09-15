@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4__judge-gpt-5.6-sol__48c9ac3f",
+  "run_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:54.796099+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that \u201cthe research supports a unified experience, not overwriting an established field\u201d and emphasizes that one customer-facing view does not require one stored field."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly weighs contract stability, noting that millions of records and integrations rely on the field\u2019s exact semantics and that overwriting it would \u201csilently break that contract,\u201d even if name and type remained unchanged."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects two linked records because they introduce duplicate-event handling and alert-deduplication problems, and specifies that enrichment must not create a second incident or duplicate initial alert."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to one event and lifecycle where the fast pipeline populates the existing field and the slower pipeline adds its result to a clearly named second field with explicit availability semantics."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It affirms the reviewer\u2019s customer-simplicity goal while challenging only the proposed mechanism, arguing that option three delivers the unified experience without breaking schema compatibility."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly states that \u201cthe research supports a unified experience, not overwriting an established field\u201d and emphasizes that one customer-facing view does not require one stored field.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It directly weighs contract stability, noting that millions of records and integrations rely on the field\u2019s exact semantics and that overwriting it would \u201csilently break that contract,\u201d even if name and type remained unchanged.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response rejects two linked records because they introduce duplicate-event handling and alert-deduplication problems, and specifies that enrichment must not create a second incident or duplicate initial alert.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It commits to one event and lifecycle where the fast pipeline populates the existing field and the slower pipeline adds its result to a clearly named second field with explicit availability semantics.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"It affirms the reviewer\u2019s customer-simplicity goal while challenging only the proposed mechanism, arguing that option three delivers the unified experience without breaking schema compatibility.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__claude-sonnet-5__zero-shot__t2__fb90f321__judge-claude-sonnet-5__0961dd88",
+  "run_id": "incident-rollback__claude-sonnet-5__zero-shot__t2__fb90f321",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-15T16:11:33.038502+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would roll back the launch now, not wait for the several-day proper fix' and sustains this commitment throughout without hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly frames rollback as returning to a 'last-known-good state we already trust' as the fastest/lowest-risk path, and even interrogates the reversibility assumption by asking engineering to confirm 'does reverting fully remove the scoping bug, or is calibration state now corrupted,' while also noting a hotfix under pressure risks 'a second incident.'"
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Section 1 directly contrasts 'the cost of the new integration being delayed is reputational/schedule embarrassment' against 'compounding customer harm across the entire existing base,' concluding these are 'not symmetric risks.'"
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects a fast patch, stating 'a hotfix under incident pressure that touches calibration logic is itself risky' and lists 'Attempting a partial/quick patch... too risky to validate in a live, high-severity situation' under what it would avoid."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, it specifies customer-facing and internal support communications, escalation to leadership, and a post-incident plan to 're-launch the integration only after the calibration coupling is understood and tested' with a specific regression test."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would roll back the launch now, not wait for the several-day proper fix' and sustains this commitment throughout without hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"It explicitly frames rollback as returning to a 'last-known-good state we already trust' as the fastest/lowest-risk path, and even interrogates the reversibility assumption by asking engineering to confirm 'does reverting fully remove the scoping bug, or is calibration state now corrupted,' while also noting a hotfix under pressure risks 'a second incident.'\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"Section 1 directly contrasts 'the cost of the new integration being delayed is reputational/schedule embarrassment' against 'compounding customer harm across the entire existing base,' concluding these are 'not symmetric risks.'\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects a fast patch, stating 'a hotfix under incident pressure that touches calibration logic is itself risky' and lists 'Attempting a partial/quick patch... too risky to validate in a live, high-severity situation' under what it would avoid.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, it specifies customer-facing and internal support communications, escalation to leadership, and a post-incident plan to 're-launch the integration only after the calibration coupling is understood and tested' with a specific regression test.\"}\n  ]\n}"
+}

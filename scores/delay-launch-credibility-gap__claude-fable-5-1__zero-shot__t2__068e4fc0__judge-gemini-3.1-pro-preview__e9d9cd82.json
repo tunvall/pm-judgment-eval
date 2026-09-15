@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0__judge-gemini-3.1-pro-preview__e9d9cd82",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:27:13.144797+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs credibility against the delay, noting that 'a slipped date is recoverable' but 'a launch that gets publicly picked apart' is not, while citing both the practitioner workshop and the commentator risk."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response highlights that the skip-level director previously declined a narrower version, stating that pushing the middle ground is 'a bet that the org will approve out of deadline pressure, not conviction.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response refuses to launch just to meet the commitment, stating 'I would not launch the product at the conference' and arguing that a late launch is better than shipping a product that damages trust."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly considers shipping just the covered subset under 'What would change my mind,' but correctly rejects it because the covered subset is only a 'small fraction of transaction types' and the newer workloads are a 'top practitioner concern.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a highly detailed next-step plan, including converting the conference slot into a transparent talk on methodology, announcing an early-access program, and redefining the launch trigger based on measurable accuracy."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs credibility against the delay, noting that 'a slipped date is recoverable' but 'a launch that gets publicly picked apart' is not, while citing both the practitioner workshop and the commentator risk.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response highlights that the skip-level director previously declined a narrower version, stating that pushing the middle ground is 'a bet that the org will approve out of deadline pressure, not conviction.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response refuses to launch just to meet the commitment, stating 'I would not launch the product at the conference' and arguing that a late launch is better than shipping a product that damages trust.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly considers shipping just the covered subset under 'What would change my mind,' but correctly rejects it because the covered subset is only a 'small fraction of transaction types' and the newer workloads are a 'top practitioner concern.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a highly detailed next-step plan, including converting the conference slot into a transparent talk on methodology, announcing an early-access program, and redefining the launch trigger based on measurable accuracy.\"\n    }\n  ]\n}"
+}

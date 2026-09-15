@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb__judge-gemini-3.1-pro-preview__99a95bed",
+  "run_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:47:31.284451+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly applies the lesson from the past failure, stating that \"a perfectly mapped system is useless if it doesn't solve the customer's actual math problem,\" directly addressing the disconnect between mapping accuracy and customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Although the response mentions honoring \"the sunk cost of the engineering team\" to preserve morale and infrastructure, it avoids using this as a justification to keep the engineering-facing metric primary, instead demoting it to a diagnostic input."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly addresses the lack of ground-truth data and proposes a concrete interim step: launching a Closed Beta to \"actively mine the missing ground-truth data\" from engaged customers before moving to General Availability."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The candidate discusses how the metrics will be used to measure success and act as release gates, but does not explicitly mention that the choice of primary metric will dictate what the team focuses on optimizing going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate commits to a concrete plan, making the customer-facing metric the ultimate primary metric while clearly outlining how the engineering metric will be retained as an \"operational release gate.\""
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly applies the lesson from the past failure, stating that \\\"a perfectly mapped system is useless if it doesn't solve the customer's actual math problem,\\\" directly addressing the disconnect between mapping accuracy and customer value.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"Although the response mentions honoring \\\"the sunk cost of the engineering team\\\" to preserve morale and infrastructure, it avoids using this as a justification to keep the engineering-facing metric primary, instead demoting it to a diagnostic input.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly addresses the lack of ground-truth data and proposes a concrete interim step: launching a Closed Beta to \\\"actively mine the missing ground-truth data\\\" from engaged customers before moving to General Availability.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The candidate discusses how the metrics will be used to measure success and act as release gates, but does not explicitly mention that the choice of primary metric will dictate what the team focuses on optimizing going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate commits to a concrete plan, making the customer-facing metric the ultimate primary metric while clearly outlining how the engineering metric will be retained as an \\\"operational release gate.\\\"\"\n    }\n  ]\n}"
+}

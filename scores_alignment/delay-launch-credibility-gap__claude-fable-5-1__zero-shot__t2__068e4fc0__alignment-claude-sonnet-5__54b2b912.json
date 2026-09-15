@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0__alignment-claude-sonnet-5__54b2b912",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:27:24.357204+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate decided to pause the launch entirely, reject the middle-ground identify-without-estimating version, and use the time to make real progress on the accuracy gap\u2014matching the historical decision's reasoning and outcome almost exactly, including the same rationale about credibility cost outweighing a missed date.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate decided to pause the launch entirely, reject the middle-ground identify-without-estimating version, and use the time to make real progress on the accuracy gap\u2014matching the historical decision's reasoning and outcome almost exactly, including the same rationale about credibility cost outweighing a missed date.\"\n}\n```"
+}

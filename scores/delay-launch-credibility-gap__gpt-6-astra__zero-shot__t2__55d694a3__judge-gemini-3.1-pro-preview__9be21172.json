@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3__judge-gemini-3.1-pro-preview__9be21172",
+  "run_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:29:52.197154+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs the credibility risk against the schedule, noting that practitioners ranked accuracy as their 'top credibility question' and warning that shipping the partial version would risk turning 'a schedule problem into a trust problem.'\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate treats the precedent as a firm blocker, stating the director 'has already rejected a narrower release for the same underlying concern' and ensuring any proposed compromise 'cannot bypass the prior decision.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly rejects letting the deadline force a bad launch, stating that while the public commitment makes delay costly, 'it does not make an unsupported product claim defensible.'\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response jumps straight to pausing the launch without evaluating whether a narrowly scoped release\u2014limited only to the subset of transactions with >70% precision\u2014could be a viable, defensible option.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a very concrete action plan, including a decision memo for leadership, transparent renegotiation of the conference deliverable, and parallel engineering work to define 'evidence-based release gates.'\"\n    }\n  ]\n}\n```",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the credibility risk against the schedule, noting that practitioners ranked accuracy as their 'top credibility question' and warning that shipping the partial version would risk turning 'a schedule problem into a trust problem.'"
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate treats the precedent as a firm blocker, stating the director 'has already rejected a narrower release for the same underlying concern' and ensuring any proposed compromise 'cannot bypass the prior decision.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly rejects letting the deadline force a bad launch, stating that while the public commitment makes delay costly, 'it does not make an unsupported product claim defensible.'"
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response jumps straight to pausing the launch without evaluating whether a narrowly scoped release\u2014limited only to the subset of transactions with >70% precision\u2014could be a viable, defensible option."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a very concrete action plan, including a decision memo for leadership, transparent renegotiation of the conference deliverable, and parallel engineering work to define 'evidence-based release gates.'"
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0
+}

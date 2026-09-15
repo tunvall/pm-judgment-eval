@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc__judge-gemini-3.1-pro-preview__bffd1d2e",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:35:54.502780+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response correctly points out that the reviewer is 'conflating the data model with the presentation layer' and explains how the goal of user simplicity can be met via the UI without adopting the reviewer's flawed data mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly addresses the risk of altering existing semantics, noting that silently mutating data can 'break downstream automated logic' and emphasizes that Option 3 ensures zero disruption to existing integrations."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects Option 2 because it 'treats one real-world incident as two system events,' which would force customers and systems to handle de-duplication of alerts."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly commits to a specific data model: 'Keep a single event with one lifecycle, and add a second field specifically for the newer, more precise estimate.'"
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response validates the reviewer's 'customer-simplicity instinct' and proposes a concrete compromise where the UI presents the single, unified value the reviewer wants while the backend maintains the dual fields."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly points out that the reviewer is 'conflating the data model with the presentation layer' and explains how the goal of user simplicity can be met via the UI without adopting the reviewer's flawed data mechanism.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly addresses the risk of altering existing semantics, noting that silently mutating data can 'break downstream automated logic' and emphasizes that Option 3 ensures zero disruption to existing integrations.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects Option 2 because it 'treats one real-world incident as two system events,' which would force customers and systems to handle de-duplication of alerts.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly commits to a specific data model: 'Keep a single event with one lifecycle, and add a second field specifically for the newer, more precise estimate.'\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response validates the reviewer's 'customer-simplicity instinct' and proposes a concrete compromise where the UI presents the single, unified value the reviewer wants while the backend maintains the dual fields.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253__judge-gemini-3.1-pro-preview__69cb66f6",
+  "run_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:33:37.786145+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly separates the goal from the mechanism, noting that while the reviewer and research agree on the goal of a unified view, \"it just doesn't follow that overwriting the field is the way to deliver it.\""
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly articulates the danger of silently changing the field's meaning, explaining that downstream integrators would experience \"silent, hard to diagnose\" breakages without a schema change to warn them."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate rejects the second option specifically because it \"fractures the thing customers care about most\" and risks duplicate alerts by pushing the reconciliation burden onto consumers."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear, specific recommendation upfront: \"one event, one lifecycle, a second field for the more precise estimate, and the original field left exactly as it is.\""
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate acknowledges the reviewer's simplicity instinct as \"legitimate... at the presentation layer\" and proposes addressing it by surfacing a single 'best available' value in the UI and high-level API."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly separates the goal from the mechanism, noting that while the reviewer and research agree on the goal of a unified view, \\\"it just doesn't follow that overwriting the field is the way to deliver it.\\\"\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly articulates the danger of silently changing the field's meaning, explaining that downstream integrators would experience \\\"silent, hard to diagnose\\\" breakages without a schema change to warn them.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects the second option specifically because it \\\"fractures the thing customers care about most\\\" and risks duplicate alerts by pushing the reconciliation burden onto consumers.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response commits to a clear, specific recommendation upfront: \\\"one event, one lifecycle, a second field for the more precise estimate, and the original field left exactly as it is.\\\"\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate acknowledges the reviewer's simplicity instinct as \\\"legitimate... at the presentation layer\\\" and proposes addressing it by surfacing a single 'best available' value in the UI and high-level API.\"\n    }\n  ]\n}\n```"
+}

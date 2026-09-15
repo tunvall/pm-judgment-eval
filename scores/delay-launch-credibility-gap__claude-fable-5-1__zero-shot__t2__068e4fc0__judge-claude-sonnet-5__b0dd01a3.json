@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0__judge-claude-sonnet-5__b0dd01a3",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:26:54.020899+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the workshop ranking ('the practitioner workshop said accuracy on the newer transaction types is *the* credibility question') and the commentator risk to the decision, and weighs them against the delay cost via the 'asymmetry' argument ('a slipped date is recoverable... a launch that gets publicly picked apart... attaches to the product's name')."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The director's prior decline is treated as substantive organizational evidence, not noise: 'Re-litigating that with a slightly different shape is a bet that the org will approve out of deadline pressure, not conviction.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response chooses to pause the launch and explicitly accepts the cost of missing the date ('Internal embarrassment... I'd own that explicitly'), treating the commitment as negotiable given the credibility gap rather than fixed."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It floats a scoped early-access program 'for the covered transaction types' and explicitly states a condition under which it would ship the covered subset ('If the deterministic subset represented the majority of what real users actually need... I'd ship the covered subset with hard scope labeling'), showing the narrower-launch option was genuinely considered and rejected only because of the stated facts."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out concrete next steps: escalate to the executive within days, repurpose the conference slot into a transparent talk plus early-access program, redefine the launch trigger as a measurable accuracy bar, and spend the month working on the newer-workload gap."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the workshop ranking ('the practitioner workshop said accuracy on the newer transaction types is *the* credibility question') and the commentator risk to the decision, and weighs them against the delay cost via the 'asymmetry' argument ('a slipped date is recoverable... a launch that gets publicly picked apart... attaches to the product's name').\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The director's prior decline is treated as substantive organizational evidence, not noise: 'Re-litigating that with a slightly different shape is a bet that the org will approve out of deadline pressure, not conviction.'\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response chooses to pause the launch and explicitly accepts the cost of missing the date ('Internal embarrassment... I'd own that explicitly'), treating the commitment as negotiable given the credibility gap rather than fixed.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"met\", \"justification\": \"It floats a scoped early-access program 'for the covered transaction types' and explicitly states a condition under which it would ship the covered subset ('If the deterministic subset represented the majority of what real users actually need... I'd ship the covered subset with hard scope labeling'), showing the narrower-launch option was genuinely considered and rejected only because of the stated facts.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out concrete next steps: escalate to the executive within days, repurpose the conference slot into a transparent talk plus early-access program, redefine the launch trigger as a measurable accuracy bar, and spend the month working on the newer-workload gap.\"}\n  ]\n}"
+}

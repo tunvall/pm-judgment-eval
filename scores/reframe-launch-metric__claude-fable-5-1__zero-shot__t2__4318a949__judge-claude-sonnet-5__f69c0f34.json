@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949__judge-claude-sonnet-5__f69c0f34",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:43:49.476091+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'We already have direct evidence that mapping accuracy doesn't do that \u2014 a prior launch cleared it and still got paused because the output wasn't useful,' directly treating this as central evidence rather than assuming past performance predicts future value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly names the investment as a sunk cost: 'they're sunk costs; they're arguments for reusing the work, not for keeping the wrong target,' explicitly refusing to let past investment dictate the primary metric."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response reframes the ground-truth gap as something that 'cuts the other way' and lays out concrete sourcing options (customer reconciliation, back-tests, expert labeling) plus an interim plan of using a small stratified sample before launch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response gestures at this idea by noting the old metric 'did its job during the build phase, when there was no customer signal to optimize against' and by building outcome-metric collection into ongoing infrastructure for future launches, but it never explicitly states that whichever metric is primary will shape what the team optimizes toward going forward beyond this one launch's judgment."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear recommendation (customer-facing metric primary, mapping accuracy as guardrail/diagnostic) with a concrete phased timeline (now/before launch/post-launch) rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'We already have direct evidence that mapping accuracy doesn't do that \u2014 a prior launch cleared it and still got paused because the output wasn't useful,' directly treating this as central evidence rather than assuming past performance predicts future value.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response directly names the investment as a sunk cost: 'they're sunk costs; they're arguments for reusing the work, not for keeping the wrong target,' explicitly refusing to let past investment dictate the primary metric.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response reframes the ground-truth gap as something that 'cuts the other way' and lays out concrete sourcing options (customer reconciliation, back-tests, expert labeling) plus an interim plan of using a small stratified sample before launch.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at this idea by noting the old metric 'did its job during the build phase, when there was no customer signal to optimize against' and by building outcome-metric collection into ongoing infrastructure for future launches, but it never explicitly states that whichever metric is primary will shape what the team optimizes toward going forward beyond this one launch's judgment.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear recommendation (customer-facing metric primary, mapping accuracy as guardrail/diagnostic) with a concrete phased timeline (now/before launch/post-launch) rather than just listing tradeoffs.\"}\n  ]\n}"
+}

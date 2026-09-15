@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85__alignment-claude-sonnet-5__542d2be7",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:28:53.988473+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate recommends a no-go on the committed launch, rejecting the identify-without-estimating middle ground, and instead using the time to make real progress on the estimation problem and retarget a later, evidence-based release\u2014matching the historical decision to pause entirely and push to a later event.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate recommends a no-go on the committed launch, rejecting the identify-without-estimating middle ground, and instead using the time to make real progress on the estimation problem and retarget a later, evidence-based release\u2014matching the historical decision to pause entirely and push to a later event.\"\n}\n```"
+}

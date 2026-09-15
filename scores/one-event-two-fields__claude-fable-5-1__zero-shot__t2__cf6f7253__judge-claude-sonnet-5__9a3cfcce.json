@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253__judge-claude-sonnet-5__9a3cfcce",
+  "run_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:33:19.433344+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates goal from mechanism, stating 'The reviewer's instinct is right about what customers want; it just doesn't follow that overwriting the field is the way to deliver it,' showing the research validates the goal but not the specific mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It argues overwriting creates 'silent breakage' for integrators who 'built thresholds, dedup logic, or downstream decisions on the current semantics,' explicitly weighing the risk against unenumerable integrations rather than accepting simplicity at face value."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response states option two 'fractur[es] the thing customers care about most' and that 'Duplicate alerts are the one outcome the research explicitly says to avoid,' directly factoring this into rejecting option two."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific structure: 'one event, one lifecycle, a second field for the more precise estimate,' plus details like exposing 'a status, a timestamp' for the lifecycle transition."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the reviewer's concern as 'legitimate... even if not at the data-model layer' and proposes concrete accommodations like surfacing a 'best available' value in the UI/API, rather than dismissing the reviewer outright."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates goal from mechanism, stating 'The reviewer's instinct is right about what customers want; it just doesn't follow that overwriting the field is the way to deliver it,' showing the research validates the goal but not the specific mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It argues overwriting creates 'silent breakage' for integrators who 'built thresholds, dedup logic, or downstream decisions on the current semantics,' explicitly weighing the risk against unenumerable integrations rather than accepting simplicity at face value.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response states option two 'fractur[es] the thing customers care about most' and that 'Duplicate alerts are the one outcome the research explicitly says to avoid,' directly factoring this into rejecting option two.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific structure: 'one event, one lifecycle, a second field for the more precise estimate,' plus details like exposing 'a status, a timestamp' for the lifecycle transition.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"It treats the reviewer's concern as 'legitimate... even if not at the data-model layer' and proposes concrete accommodations like surfacing a 'best available' value in the UI/API, rather than dismissing the reviewer outright.\"}\n  ]\n}"
+}

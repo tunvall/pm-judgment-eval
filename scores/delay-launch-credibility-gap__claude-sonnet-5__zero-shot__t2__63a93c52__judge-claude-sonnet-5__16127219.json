@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52__judge-claude-sonnet-5__16127219",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:25:24.661563+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly cites the commentator's track record and the workshop ranking as converging evidence, arguing 'this is a near-certain hit' rather than a vague risk, and weighs the asymmetric cost of public credibility damage against the cost of delay."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the skip-level's prior rejection as direct precedent ('their prior no is directly relevant precedent, not something to route around') and builds a plan to get explicit sign-off from that same director before proceeding."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response reframes the commitment explicitly: 'A public commitment to appear at the conference is not the same as a public commitment to ship a specific, fully-quantified product,' and treats sunk-cost framing as something to explicitly avoid."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proposes presenting 'the 70%-precision/low-recall capability honestly, for the subset where it actually works' as the production-ready piece, explicitly considering a scoped launch rather than only choosing between the middle-ground version or full delay."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete month-long plan (re-scope messaging, label new workloads as beta/research, reframe conference as roadmap disclosure, get skip-level sign-off) rather than a bare verdict."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly cites the commentator's track record and the workshop ranking as converging evidence, arguing 'this is a near-certain hit' rather than a vague risk, and weighs the asymmetric cost of public credibility damage against the cost of delay.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response treats the skip-level's prior rejection as direct precedent ('their prior no is directly relevant precedent, not something to route around') and builds a plan to get explicit sign-off from that same director before proceeding.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response reframes the commitment explicitly: 'A public commitment to appear at the conference is not the same as a public commitment to ship a specific, fully-quantified product,' and treats sunk-cost framing as something to explicitly avoid.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"met\", \"justification\": \"The response proposes presenting 'the 70%-precision/low-recall capability honestly, for the subset where it actually works' as the production-ready piece, explicitly considering a scoped launch rather than only choosing between the middle-ground version or full delay.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete month-long plan (re-scope messaging, label new workloads as beta/research, reframe conference as roadmap disclosure, get skip-level sign-off) rather than a bare verdict.\"}\n  ]\n}"
+}

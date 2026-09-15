@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786__judge-gpt-5.6-sol__9c7242df",
+  "run_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:17.503920+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says it would \u201calign on the goal rather than the exact mechanism,\u201d recognizing that research supports a unified event experience but not necessarily field overwriting."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It preserves the existing field\u2019s exact semantics and explains that overwriting would create mixed provenance and potentially break millions of records, queries, integrations, reproducibility, and auditing."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects two linked records because they model one incident as two events and are \u201ca likely source of duplicate alerts,\u201d while attaching both outputs to one event ID."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to one event and lifecycle with `initial_estimate`, nullable `refined_estimate`, and provenance timestamps/statuses, plus an optional explicitly documented `best_available_estimate`."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It validates the reviewer\u2019s customer-simplicity goal\u2014\u201cthe product should feel like one unified event\u201d\u2014and argues that option three achieves that goal without silently breaking the data contract."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly says it would \u201calign on the goal rather than the exact mechanism,\u201d recognizing that research supports a unified event experience but not necessarily field overwriting.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It preserves the existing field\u2019s exact semantics and explains that overwriting would create mixed provenance and potentially break millions of records, queries, integrations, reproducibility, and auditing.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response rejects two linked records because they model one incident as two events and are \u201ca likely source of duplicate alerts,\u201d while attaching both outputs to one event ID.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It commits to one event and lifecycle with `initial_estimate`, nullable `refined_estimate`, and provenance timestamps/statuses, plus an optional explicitly documented `best_available_estimate`.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"It validates the reviewer\u2019s customer-simplicity goal\u2014\u201cthe product should feel like one unified event\u201d\u2014and argues that option three achieves that goal without silently breaking the data contract.\"}]}"
+}

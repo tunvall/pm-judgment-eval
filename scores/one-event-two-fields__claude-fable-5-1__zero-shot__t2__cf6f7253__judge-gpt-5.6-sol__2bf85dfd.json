@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253__judge-gpt-5.6-sol__2bf85dfd",
+  "run_id": "one-event-two-fields__claude-fable-5-1__zero-shot__t2__cf6f7253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:33:27.601790+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says, \u201cThe customer research and the reviewer agree on the goal\u201d but that \u201cit just doesn't follow that overwriting the field is the way to deliver it,\u201d clearly separating the desired experience from the proposed mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It emphasizes that millions of records and integrations rely on the field\u2019s current meaning and explains that overwriting would silently turn it into \u201cfast estimate, unless the slow pipeline has finished,\u201d potentially breaking thresholds, deduplication, and downstream decisions without a schema warning."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects option two because it fractures one event into multiple records and notes that duplicate alerts are exactly what research says to avoid; it also observes that pointer-based linking shifts reconciliation onto consumers, some of whom will not perform it."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to option three: one event and lifecycle, the original field unchanged, and a second field for the precise estimate, optionally accompanied by a status or timestamp indicating arrival."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response validates the reviewer\u2019s customer-simplicity instinct as legitimate and proposes a single customer-facing \u201cbest available\u201d value, while arguing that this unified presentation should not require silently changing the underlying field contract."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly says, \u201cThe customer research and the reviewer agree on the goal\u201d but that \u201cit just doesn't follow that overwriting the field is the way to deliver it,\u201d clearly separating the desired experience from the proposed mechanism.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It emphasizes that millions of records and integrations rely on the field\u2019s current meaning and explains that overwriting would silently turn it into \u201cfast estimate, unless the slow pipeline has finished,\u201d potentially breaking thresholds, deduplication, and downstream decisions without a schema warning.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response rejects option two because it fractures one event into multiple records and notes that duplicate alerts are exactly what research says to avoid; it also observes that pointer-based linking shifts reconciliation onto consumers, some of whom will not perform it.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It commits to option three: one event and lifecycle, the original field unchanged, and a second field for the precise estimate, optionally accompanied by a status or timestamp indicating arrival.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"The response validates the reviewer\u2019s customer-simplicity instinct as legitimate and proposes a single customer-facing \u201cbest available\u201d value, while arguing that this unified presentation should not require silently changing the underlying field contract.\"}]}"
+}

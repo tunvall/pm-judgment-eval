@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52__alignment-claude-sonnet-5__c961eb3f",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:26:02.062440+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both reject shipping the 'identify without quantifying' middle-ground and prioritize credibility over the deadline, matching the core reasoning. However, the candidate still plans to show up at the conference with a scoped preview/roadmap disclosure, whereas the historical decision was a full pause with retargeting to a later event and using the time for actual estimation progress rather than narrative reframing.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both reject shipping the 'identify without quantifying' middle-ground and prioritize credibility over the deadline, matching the core reasoning. However, the candidate still plans to show up at the conference with a scoped preview/roadmap disclosure, whereas the historical decision was a full pause with retargeting to a later event and using the time for actual estimation progress rather than narrative reframing.\"\n}"
+}

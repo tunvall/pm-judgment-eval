@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t2__42cccff8__judge-gemini-3.1-pro-preview__b9550a81",
+  "run_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t2__42cccff8",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:32:41.922848+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that the tension is between the reviewer's goal and their proposed mechanism, noting that they are separable and \"the research only supports the goal, not the mechanism.\""
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly weighs the risk to existing integrations, warning that overwriting the field means it \"silently answers a different question depending on when you read it\" and would break downstream systems."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response correctly identifies that Option Two \"reintroduces the exact failure mode the research says customers hate \u2014 duplicate alerts for one incident.\""
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate firmly commits to Option Three, recommending a single event with a single lifecycle and an additive new field for the refined estimate."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response addresses the reviewer's underlying desire for simplicity by suggesting that UI simplification can be solved \"at the presentation layer\" without compromising the underlying data model guarantees."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that the tension is between the reviewer's goal and their proposed mechanism, noting that they are separable and \\\"the research only supports the goal, not the mechanism.\\\"\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly weighs the risk to existing integrations, warning that overwriting the field means it \\\"silently answers a different question depending on when you read it\\\" and would break downstream systems.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies that Option Two \\\"reintroduces the exact failure mode the research says customers hate \u2014 duplicate alerts for one incident.\\\"\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate firmly commits to Option Three, recommending a single event with a single lifecycle and an additive new field for the refined estimate.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response addresses the reviewer's underlying desire for simplicity by suggesting that UI simplification can be solved \\\"at the presentation layer\\\" without compromising the underlying data model guarantees.\"\n    }\n  ]\n}"
+}

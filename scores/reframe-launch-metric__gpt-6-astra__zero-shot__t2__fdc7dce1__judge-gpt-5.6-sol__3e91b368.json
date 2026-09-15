@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1__judge-gpt-5.6-sol__3e91b368",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:46:05.476675+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says that \u201ca strong mapping score does not establish that the estimate is useful\u201d and treats the earlier paused launch as a warning about this disconnect."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It recognizes that the year of investment should be reused where valuable but states that it \u201cshould not determine what counts as customer success.\u201d"
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly acknowledges that credible ground truth does not yet exist, proposes a time-boxed sourcing and validation plan, and labels interim performance \u201ccustomer performance unvalidated\u201d while limiting release to a bounded pilot or shadow evaluation."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "Although the response distinguishes the metric that should determine success from the metric currently measurable, it does not explicitly explain that making a metric primary will shape the team\u2019s future optimization behavior and priorities."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly makes customer-outcome accuracy primary, retains mapping accuracy for regression detection and debugging, and provides concrete transition steps including ground-truth sourcing, dual evaluation, and delaying or narrowing launch if validation is unavailable."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response explicitly says that \u201ca strong mapping score does not establish that the estimate is useful\u201d and treats the earlier paused launch as a warning about this disconnect.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It recognizes that the year of investment should be reused where valuable but states that it \u201cshould not determine what counts as customer success.\u201d\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response directly acknowledges that credible ground truth does not yet exist, proposes a time-boxed sourcing and validation plan, and labels interim performance \u201ccustomer performance unvalidated\u201d while limiting release to a bounded pilot or shadow evaluation.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"not_met\",\"justification\":\"Although the response distinguishes the metric that should determine success from the metric currently measurable, it does not explicitly explain that making a metric primary will shape the team\u2019s future optimization behavior and priorities.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly makes customer-outcome accuracy primary, retains mapping accuracy for regression detection and debugging, and provides concrete transition steps including ground-truth sourcing, dual evaluation, and delaying or narrowing launch if validation is unavailable.\"}]}"
+}

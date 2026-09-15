@@ -1,0 +1,52 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t2__8bca1865__judge-gpt-5.6-sol__3520b5d3",
+  "run_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t2__8bca1865",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:36:41.107779+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly rejects launching silently merely because the path is rare, noting that affected customers face a real surprise charge and may feel misled."
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It proposes a notice or confirmation specifically \u201cat the trigger point\u201d for the paid path, accurately targeting affected customers rather than warning all users as though the common path were paid."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response calls for determining what a proper fix versus launching costs and frames escalation as a tradeoff between the existing launch commitment and customer-trust/compliance exposure. It then recommends the less disruptive alternatives of a targeted fix or scoped launch rather than treating a full delay as automatic."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It evaluates multiple narrow remedies before a broad delay, including a one-line point-of-action notice, runtime confirmation, and gating only the paid path while launching the free path."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response specifies convening legal, engineering, and the launch owner \u201cwithin the hour,\u201d targeting a trigger-point confirmation by the next-day launch, and otherwise gating the paid path for a fast-follow release after disclosure review."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_dismiss_minority_path_risk\",\"verdict\":\"met\",\"justification\":\"The response explicitly rejects launching silently merely because the path is rare, noting that affected customers face a real surprise charge and may feel misled.\"},{\"id\":\"avoids_overcorrecting_into_inaccurate_disclosure\",\"verdict\":\"met\",\"justification\":\"It proposes a notice or confirmation specifically \u201cat the trigger point\u201d for the paid path, accurately targeting affected customers rather than warning all users as though the common path were paid.\"},{\"id\":\"weighs_launch_delay_against_disclosure_gap\",\"verdict\":\"met\",\"justification\":\"The response calls for determining what a proper fix versus launching costs and frames escalation as a tradeoff between the existing launch commitment and customer-trust/compliance exposure. It then recommends the less disruptive alternatives of a targeted fix or scoped launch rather than treating a full delay as automatic.\"},{\"id\":\"considers_narrowly_scoped_fix_before_binary_choice\",\"verdict\":\"met\",\"justification\":\"It evaluates multiple narrow remedies before a broad delay, including a one-line point-of-action notice, runtime confirmation, and gating only the paid path while launching the free path.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response specifies convening legal, engineering, and the launch owner \u201cwithin the hour,\u201d targeting a trigger-point confirmation by the next-day launch, and otherwise gating the paid path for a fast-follow release after disclosure review.\"}]}"
+}

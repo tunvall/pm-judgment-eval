@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t2__8bca1865__alignment-claude-sonnet-5__9b8fc69c",
+  "run_id": "last-minute-disclosure-gap__claude-sonnet-5__zero-shot__t2__8bca1865",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:37:26.816034+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's default recommendation\u2014adding a lightweight in-product disclosure/notice at the trigger point without delaying launch\u2014matches the spirit of the historical decision to add narrowly scoped disclosure language rather than delay or ship silently. However, the candidate frames this as one option among several (including gating off the paid path or a scoped delay) and emphasizes escalation and further investigation before committing, whereas the historical decision directly and specifically implemented targeted disclosure language as the resolution.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's default recommendation\u2014adding a lightweight in-product disclosure/notice at the trigger point without delaying launch\u2014matches the spirit of the historical decision to add narrowly scoped disclosure language rather than delay or ship silently. However, the candidate frames this as one option among several (including gating off the paid path or a scoped delay) and emphasizes escalation and further investigation before committing, whereas the historical decision directly and specifically implemented targeted disclosure language as the resolution.\"\n}\n```"
+}

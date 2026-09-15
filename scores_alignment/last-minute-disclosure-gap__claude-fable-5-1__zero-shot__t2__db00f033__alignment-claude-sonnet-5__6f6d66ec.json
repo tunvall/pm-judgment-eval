@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-fable-5-1__zero-shot__t2__db00f033__alignment-claude-sonnet-5__6f6d66ec",
+  "run_id": "last-minute-disclosure-gap__claude-fable-5-1__zero-shot__t2__db00f033",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:38:39.696491+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's primary and preferred path is to add narrowly scoped disclosure language (a clear sentence about the paid path) while keeping the free-path framing intact, and to launch on schedule if legal approves this minimal fix\u2014matching the historical outcome of adding targeted disclosure rather than a full re-review or no change. The candidate also lists delay/gating as fallback options, but the first and central proposed action mirrors the historical decision.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's primary and preferred path is to add narrowly scoped disclosure language (a clear sentence about the paid path) while keeping the free-path framing intact, and to launch on schedule if legal approves this minimal fix\u2014matching the historical outcome of adding targeted disclosure rather than a full re-review or no change. The candidate also lists delay/gating as fallback options, but the first and central proposed action mirrors the historical decision.\"\n}\n```"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb__judge-gpt-5.6-sol__2a53d022",
+  "run_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:47:18.475443+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly invokes the paused launch to argue that accurate internal mapping can still be \u201cuseless if it doesn't solve the customer's actual math problem,\u201d clearly distinguishing technical accuracy from customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Although it acknowledges the year of investment, it does not use that investment to preserve the old metric as the ultimate primary metric; instead, it retains the infrastructure for regression testing and reframes mapping accuracy as an input/diagnostic and release gate."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly states that the lack of ground truth prevents immediately measuring success and proposes a closed beta in which cooperative customers provide actual risk numbers before a GA decision."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response assigns distinct roles to the metrics and makes customer-outcome accuracy the GA gate, which would influence team behavior, but it does not explicitly explain that naming a primary metric determines what the team will optimize going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete phased recommendation: use mapping accuracy to gate the beta, collect customer ground truth during that beta, make outcome accuracy primary for GA, and retain the old metric for diagnostics and regression testing."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly invokes the paused launch to argue that accurate internal mapping can still be \u201cuseless if it doesn't solve the customer's actual math problem,\u201d clearly distinguishing technical accuracy from customer value.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"Although it acknowledges the year of investment, it does not use that investment to preserve the old metric as the ultimate primary metric; instead, it retains the infrastructure for regression testing and reframes mapping accuracy as an input/diagnostic and release gate.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"It explicitly states that the lack of ground truth prevents immediately measuring success and proposes a closed beta in which cooperative customers provide actual risk numbers before a GA decision.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"partially_met\",\"justification\":\"The response assigns distinct roles to the metrics and makes customer-outcome accuracy the GA gate, which would influence team behavior, but it does not explicitly explain that naming a primary metric determines what the team will optimize going forward.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete phased recommendation: use mapping accuracy to gate the beta, collect customer ground truth during that beta, make outcome accuracy primary for GA, and retain the old metric for diagnostics and regression testing.\"}]}"
+}

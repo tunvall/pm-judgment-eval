@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85__judge-claude-sonnet-5__cad51973",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:27:53.250681+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly invokes the workshop ranking and the commentator's critique, then weighs them against the missed-date cost, concluding 'A missed public date is painful; launching something that undermines trust... is harder to recover from,' while noting the commentator's reaction 'is not the deciding factor' compared to the more concrete workshop/practitioner evidence."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lists 'The skip-level director has already rejected a narrower version for the same reason' as one of the core reasons the launch lacks a defensible accuracy story, and plans to escalate directly to that director, treating the precedent as substantive organizational signal rather than an isolated data point."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states 'The public commitment is a real cost, but it is a sunk commitment\u2014not evidence that the product is ready,' explicitly subordinating the date to the actual state of the accuracy story."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response floats identification-only as a possible future 'separately positioned product' and mentions private design-partner previews, but it never evaluates launching production capability limited to the transaction subset where precision/recall already clear a bar as a real alternative\u2014its framing is essentially launch-vs-delay-everything rather than a scoped subset launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete week-by-week and month-long plan: freezing launch claims, writing a decision memo with specific metrics, holding a go/no-go review with named stakeholders, resetting conference messaging, and running a validation sprint with acceptance criteria\u2014well beyond a one-word verdict."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly invokes the workshop ranking and the commentator's critique, then weighs them against the missed-date cost, concluding 'A missed public date is painful; launching something that undermines trust... is harder to recover from,' while noting the commentator's reaction 'is not the deciding factor' compared to the more concrete workshop/practitioner evidence.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response lists 'The skip-level director has already rejected a narrower version for the same reason' as one of the core reasons the launch lacks a defensible accuracy story, and plans to escalate directly to that director, treating the precedent as substantive organizational signal rather than an isolated data point.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response directly states 'The public commitment is a real cost, but it is a sunk commitment\u2014not evidence that the product is ready,' explicitly subordinating the date to the actual state of the accuracy story.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response floats identification-only as a possible future 'separately positioned product' and mentions private design-partner previews, but it never evaluates launching production capability limited to the transaction subset where precision/recall already clear a bar as a real alternative\u2014its framing is essentially launch-vs-delay-everything rather than a scoped subset launch.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete week-by-week and month-long plan: freezing launch claims, writing a decision memo with specific metrics, holding a go/no-go review with named stakeholders, resetting conference messaging, and running a validation sprint with acceptance criteria\u2014well beyond a one-word verdict.\"}\n  ]\n}"
+}

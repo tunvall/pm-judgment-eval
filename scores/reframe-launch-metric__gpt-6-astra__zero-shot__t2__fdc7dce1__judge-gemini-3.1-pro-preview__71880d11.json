@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1__judge-gemini-3.1-pro-preview__71880d11",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:46:17.658255+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response correctly identifies the disconnect, noting that a 'strong mapping score does not establish that the estimate is useful' and treats the earlier paused launch as a warning of this."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states that 'the year of investment deserves recognition and reuse, but it should not determine what counts as customer success,' thereby rejecting sunk cost logic."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response addresses the missing data by making 'ground-truth sourcing a launch dependency' and noting that until it exists, the status is 'customer performance unvalidated.'"
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response discusses not making retrospective changes to goalposts and not judging past work retroactively, it does not explicitly reason that the new primary metric will shape what the team actively optimizes for going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly commits to a path: 'make customer-outcome accuracy the primary success metric for this launch, and retain mapping accuracy as a diagnostic metric.'"
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies the disconnect, noting that a 'strong mapping score does not establish that the estimate is useful' and treats the earlier paused launch as a warning of this.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states that 'the year of investment deserves recognition and reuse, but it should not determine what counts as customer success,' thereby rejecting sunk cost logic.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response addresses the missing data by making 'ground-truth sourcing a launch dependency' and noting that until it exists, the status is 'customer performance unvalidated.'\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response discusses not making retrospective changes to goalposts and not judging past work retroactively, it does not explicitly reason that the new primary metric will shape what the team actively optimizes for going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly commits to a path: 'make customer-outcome accuracy the primary success metric for this launch, and retain mapping accuracy as a diagnostic metric.'\"\n    }\n  ]\n}"
+}

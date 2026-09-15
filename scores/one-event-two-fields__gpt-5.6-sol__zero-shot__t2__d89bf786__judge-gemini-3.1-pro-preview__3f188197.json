@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786__judge-gemini-3.1-pro-preview__3f188197",
+  "run_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:22.219608+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes between the reviewer's goal and mechanism, stating it would \"align on the goal rather than the exact mechanism: the product should feel like one unified event.\""
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate rejects option one because it \"turns a stable field into a time-dependent field,\" explicitly noting the risk of \"breaking integrations\" and \"customer expectations about the existing contract\" without a schema signal."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects option two because modeling one incident as two events would be \"the opposite of the research finding and a likely source of duplicate alerts.\""
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a specific schema design, recommending explicit fields like `initial_estimate`, `refined_estimate`, and a derived `best_available_estimate`."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response engages the reviewer's desire for simplicity by agreeing on the goal of a \"unified event\" and suggesting that the \"UI and new APIs can make the pipeline distinction unobtrusive\" to satisfy that instinct."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly distinguishes between the reviewer's goal and mechanism, stating it would \\\"align on the goal rather than the exact mechanism: the product should feel like one unified event.\\\"\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects option one because it \\\"turns a stable field into a time-dependent field,\\\" explicitly noting the risk of \\\"breaking integrations\\\" and \\\"customer expectations about the existing contract\\\" without a schema signal.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects option two because modeling one incident as two events would be \\\"the opposite of the research finding and a likely source of duplicate alerts.\\\"\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a specific schema design, recommending explicit fields like `initial_estimate`, `refined_estimate`, and a derived `best_available_estimate`.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response engages the reviewer's desire for simplicity by agreeing on the goal of a \\\"unified event\\\" and suggesting that the \\\"UI and new APIs can make the pipeline distinction unobtrusive\\\" to satisfy that instinct.\"\n    }\n  ]\n}\n```"
+}

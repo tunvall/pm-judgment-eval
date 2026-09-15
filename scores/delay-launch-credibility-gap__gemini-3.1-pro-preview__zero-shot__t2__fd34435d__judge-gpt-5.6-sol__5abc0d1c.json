@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d__judge-gpt-5.6-sol__5abc0d1c",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:31:32.209404+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly contrasts preserving the conference commitment through a reframed announcement with the reputational damage of shipping a half-measure, citing both the workshop\u2019s ranking of new-workload accuracy and the commentator\u2019s likely criticism."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It calls the skip-level director\u2019s earlier rejection a \"clear standard set by leadership\" and predicts that ignoring it would likely lead to an eleventh-hour veto, treating the precedent as actionable organizational evidence."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Rather than treating the commitment as requiring a GA product, the response recommends preserving the conference presence while changing the announcement to a strategic vision and early-access program because the current product is not defensible."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response proposes demonstrating the deterministic approach on the subset where it works, but it does not assess whether both precision and recall on that subset clear an explicit defensibility bar or consider releasing that subset as a genuinely narrower product launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete month-ahead plan: reject the middle-ground release, obtain skip-level alignment, redirect marketing, sales, and PR, demonstrate the validated foundation, and recruit design partners while engineering develops estimation for newer workloads."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly contrasts preserving the conference commitment through a reframed announcement with the reputational damage of shipping a half-measure, citing both the workshop\u2019s ranking of new-workload accuracy and the commentator\u2019s likely criticism.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It calls the skip-level director\u2019s earlier rejection a \\\"clear standard set by leadership\\\" and predicts that ignoring it would likely lead to an eleventh-hour veto, treating the precedent as actionable organizational evidence.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"Rather than treating the commitment as requiring a GA product, the response recommends preserving the conference presence while changing the announcement to a strategic vision and early-access program because the current product is not defensible.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"The response proposes demonstrating the deterministic approach on the subset where it works, but it does not assess whether both precision and recall on that subset clear an explicit defensibility bar or consider releasing that subset as a genuinely narrower product launch.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete month-ahead plan: reject the middle-ground release, obtain skip-level alignment, redirect marketing, sales, and PR, demonstrate the validated foundation, and recruit design partners while engineering develops estimation for newer workloads.\"}]}"
+}

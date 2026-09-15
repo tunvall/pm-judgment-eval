@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t4__61fbbd72__judge-claude-sonnet-5__6569bff0",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t4__61fbbd72",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-15T16:13:22.540215+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous decision: 'I would immediately roll back the launch' and gives Engineering 'the immediate green light to revert,' with no hedging."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It notes rollback restores the system to a known 'previous stable state' and contrasts this with a rushed hotfix that 'could easily trigger a secondary incident,' implicitly weighing reversibility, but it never explicitly frames the tradeoff in terms of how easily each option could be undone if wrong, nor symmetrically compares all alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'Every hour this continues, we permanently erode trust' and weighs this against 'the disappointment of customers having to wait a few extra days for a new integration,' concluding the impact is asymmetric."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly rejects the fast-fix path, stating 'Attempting a rushed, untested \"hotfix\" on risk-signal calibration logic is incredibly dangerous and could easily trigger a secondary incident.'"
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, it lays out an action plan including support triage messaging, a public status-page update on the integration delay, and initiating the proper multi-day fix plus a post-mortem."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous decision: 'I would immediately roll back the launch' and gives Engineering 'the immediate green light to revert,' with no hedging.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"It notes rollback restores the system to a known 'previous stable state' and contrasts this with a rushed hotfix that 'could easily trigger a secondary incident,' implicitly weighing reversibility, but it never explicitly frames the tradeoff in terms of how easily each option could be undone if wrong, nor symmetrically compares all alternatives.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'Every hour this continues, we permanently erode trust' and weighs this against 'the disappointment of customers having to wait a few extra days for a new integration,' concluding the impact is asymmetric.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It explicitly rejects the fast-fix path, stating 'Attempting a rushed, untested \\\"hotfix\\\" on risk-signal calibration logic is incredibly dangerous and could easily trigger a secondary incident.'\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, it lays out an action plan including support triage messaging, a public status-page update on the integration delay, and initiating the proper multi-day fix plus a post-mortem.\"}\n  ]\n}"
+}

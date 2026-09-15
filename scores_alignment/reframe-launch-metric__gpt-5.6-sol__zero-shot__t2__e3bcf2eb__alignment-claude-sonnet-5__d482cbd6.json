@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb__alignment-claude-sonnet-5__d482cbd6",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:45:27.577736+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate makes the customer-facing outcome metric primary for judging launch success and retains mapping accuracy only as a secondary guardrail/diagnostic, matching the historical decision's structure exactly.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate makes the customer-facing outcome metric primary for judging launch success and retains mapping accuracy only as a secondary guardrail/diagnostic, matching the historical decision's structure exactly.\"\n}\n```"
+}

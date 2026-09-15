@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb__judge-gpt-5.6-sol__d2bb46cb",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:45:00.958405+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly states that the earlier paused launch shows mapping accuracy \u201cis not a validated proxy for customer value,\u201d so good mapping performance cannot establish customer usefulness."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly calls the prior year of investment a sunk cost and argues that while the infrastructure remains useful, the investment does not make the old metric decision-relevant."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that the customer-facing metric \u201cis not yet measurable\u201d and proposes a limited beta/data-collection phase, paired ground-truth collection, and only an explicitly labeled pilot until sufficient evidence exists."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response distinguishes the primary criterion from guardrails and proposes redesigning the engineering metric around consequential errors, implying an effect on future optimization. However, it never explicitly explains that designating a metric as primary will direct team incentives and optimization behavior going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends customer-outcome accuracy as primary, retains mapping accuracy as a guardrail and diagnostic, and gives a concrete transition plan involving metric definition, ground-truth collection, precommitted thresholds, dual reporting, and gated release."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly states that the earlier paused launch shows mapping accuracy \u201cis not a validated proxy for customer value,\u201d so good mapping performance cannot establish customer usefulness.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It explicitly calls the prior year of investment a sunk cost and argues that while the infrastructure remains useful, the investment does not make the old metric decision-relevant.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response acknowledges that the customer-facing metric \u201cis not yet measurable\u201d and proposes a limited beta/data-collection phase, paired ground-truth collection, and only an explicitly labeled pilot until sufficient evidence exists.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"partially_met\",\"justification\":\"The response distinguishes the primary criterion from guardrails and proposes redesigning the engineering metric around consequential errors, implying an effect on future optimization. However, it never explicitly explains that designating a metric as primary will direct team incentives and optimization behavior going forward.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends customer-outcome accuracy as primary, retains mapping accuracy as a guardrail and diagnostic, and gives a concrete transition plan involving metric definition, ground-truth collection, precommitted thresholds, dual reporting, and gated release.\"}]}"
+}

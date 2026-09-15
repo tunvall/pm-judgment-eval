@@ -1,0 +1,52 @@
+{
+  "score_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce__judge-gemini-3.1-pro-preview__df0fb4be",
+  "run_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:41:49.015534+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly rejects launching as-is, stating that \"passing a hidden cost to the user is unacceptable\" and refusing to \"launch with surprise billing\" despite the scenario being uncommon."
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "In Plan B, the candidate proposes a targeted disclaimer that specifically flags the charge only for the affected path (\"Using [Feature] in [Scenario]... incurs standard usage charges\"), avoiding a blanket warning."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly contrasts the two costs, concluding that while \"missing a committed launch date hurts,\" it is ultimately outweighed because \"betraying the customer's wallet hurts worse.\""
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate proposes three targeted fixes\u2014eating the cost for a grace period, adding a web-only disclaimer, or disabling just the affected path\u2014before treating a full delay as the only remaining option."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines a clear, actionable immediate step: calling a 15-minute sync with specific stakeholders (Engineering Lead, PMM, Legal) to choose and execute one of the proposed targeted fixes."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_dismiss_minority_path_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects launching as-is, stating that \\\"passing a hidden cost to the user is unacceptable\\\" and refusing to \\\"launch with surprise billing\\\" despite the scenario being uncommon.\"\n    },\n    {\n      \"id\": \"avoids_overcorrecting_into_inaccurate_disclosure\",\n      \"verdict\": \"met\",\n      \"justification\": \"In Plan B, the candidate proposes a targeted disclaimer that specifically flags the charge only for the affected path (\\\"Using [Feature] in [Scenario]... incurs standard usage charges\\\"), avoiding a blanket warning.\"\n    },\n    {\n      \"id\": \"weighs_launch_delay_against_disclosure_gap\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly contrasts the two costs, concluding that while \\\"missing a committed launch date hurts,\\\" it is ultimately outweighed because \\\"betraying the customer's wallet hurts worse.\\\"\"\n    },\n    {\n      \"id\": \"considers_narrowly_scoped_fix_before_binary_choice\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proposes three targeted fixes\u2014eating the cost for a grace period, adding a web-only disclaimer, or disabling just the affected path\u2014before treating a full delay as the only remaining option.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines a clear, actionable immediate step: calling a 15-minute sync with specific stakeholders (Engineering Lead, PMM, Legal) to choose and execute one of the proposed targeted fixes.\"\n    }\n  ]\n}"
+}

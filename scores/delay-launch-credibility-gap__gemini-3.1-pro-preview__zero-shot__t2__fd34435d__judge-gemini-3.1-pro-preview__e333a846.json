@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d__judge-gemini-3.1-pro-preview__e333a846",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:31:47.495920+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly cites both the practitioner workshop and the industry commentator, arguing that shipping a half-measure would give the commentator 'the exact ammunition they need to destroy the product's reputation on day one'."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response takes the skip-level director's previous veto seriously, noting that pushing a compromised product 'ignores the clear standard set by leadership' and would likely result in an 11th-hour veto."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate refuses to ship a GA product just to hit the date, stating they will fulfill the public presence at the conference by 'controlling the narrative' and launching an Early Access program instead."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recognizes the subset of workloads with high precision and decides to 'demonstrate our high-precision deterministic approach' for those, rather than attempting a full GA release or ignoring that working subset entirely."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a very clear and concrete next step: pitching the Early Access pivot to the skip-level director and immediately repositioning the Marketing and GTM messaging for the remaining 30 days."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly cites both the practitioner workshop and the industry commentator, arguing that shipping a half-measure would give the commentator 'the exact ammunition they need to destroy the product's reputation on day one'.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response takes the skip-level director's previous veto seriously, noting that pushing a compromised product 'ignores the clear standard set by leadership' and would likely result in an 11th-hour veto.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate refuses to ship a GA product just to hit the date, stating they will fulfill the public presence at the conference by 'controlling the narrative' and launching an Early Access program instead.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the subset of workloads with high precision and decides to 'demonstrate our high-precision deterministic approach' for those, rather than attempting a full GA release or ignoring that working subset entirely.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a very clear and concrete next step: pitching the Early Access pivot to the skip-level director and immediately repositioning the Marketing and GTM messaging for the remaining 30 days.\"\n    }\n  ]\n}\n```"
+}

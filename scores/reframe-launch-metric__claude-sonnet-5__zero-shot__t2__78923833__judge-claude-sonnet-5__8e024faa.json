@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t2__78923833__judge-claude-sonnet-5__8e024faa",
+  "run_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t2__78923833",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:42:28.496695+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the engineer's point as evidence for switching, stating 'the mapping-accuracy metric already has a documented failure mode \u2014 it looked good and still produced a paused launch,' and treats this as decisive rather than assuming past accuracy predicts future customer outcomes."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly rejects sunk-cost reasoning with the line '\"We have good tooling for X\" is not a reason to keep judging launches on X if X doesn't predict what we actually care about,' and it does not let the year of investment dictate keeping the old metric primary."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly addresses the ground-truth gap with concrete interim steps (backfilling from past outcomes, a prospective shadow period, minimum sample size/confidence bar) rather than treating the switch as immediately clean."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response focuses mainly on which metric gates this launch and how the old metric becomes a diagnostic, but doesn't explicitly discuss how making the outcome metric primary will redirect the team's ongoing optimization behavior going forward beyond this single launch decision."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, concrete recommendation with an explicit bottom line: customer-facing outcome accuracy as primary/gating, mapping precision retained as secondary diagnostic, plus a staged plan for sourcing ground truth and setting a launch bar."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes the engineer's point as evidence for switching, stating 'the mapping-accuracy metric already has a documented failure mode \u2014 it looked good and still produced a paused launch,' and treats this as decisive rather than assuming past accuracy predicts future customer outcomes.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"The response directly rejects sunk-cost reasoning with the line '\\\"We have good tooling for X\\\" is not a reason to keep judging launches on X if X doesn't predict what we actually care about,' and it does not let the year of investment dictate keeping the old metric primary.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response explicitly addresses the ground-truth gap with concrete interim steps (backfilling from past outcomes, a prospective shadow period, minimum sample size/confidence bar) rather than treating the switch as immediately clean.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"partially_met\",\"justification\":\"The response focuses mainly on which metric gates this launch and how the old metric becomes a diagnostic, but doesn't explicitly discuss how making the outcome metric primary will redirect the team's ongoing optimization behavior going forward beyond this single launch decision.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response gives a clear, concrete recommendation with an explicit bottom line: customer-facing outcome accuracy as primary/gating, mapping precision retained as secondary diagnostic, plus a staged plan for sourcing ground truth and setting a launch bar.\"}]}"
+}

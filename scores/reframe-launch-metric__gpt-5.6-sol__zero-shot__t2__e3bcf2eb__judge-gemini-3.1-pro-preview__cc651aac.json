@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb__judge-gemini-3.1-pro-preview__cc651aac",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:45:11.916841+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that the earlier paused launch is evidence that the old metric \"is not a validated proxy for customer value.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate specifically names the year of investment as a \"sunk cost\" and refuses to keep the engineering metric primary just because of that prior effort."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the new metric is \"not yet measurable\" and proposes a data-collection beta phase to source ground truth before declaring the launch successful."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses on how the metric will be used to evaluate this specific launch's success, without explicitly reasoning about how the primary metric shapes what the team will actually optimize for in their future work."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, concrete recommendation to make the customer-relevant metric primary, while explicitly stating that the old mapping-accuracy metric should be retained as a \"guardrail and diagnostic\" tool."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that the earlier paused launch is evidence that the old metric \\\"is not a validated proxy for customer value.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate specifically names the year of investment as a \\\"sunk cost\\\" and refuses to keep the engineering metric primary just because of that prior effort.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the new metric is \\\"not yet measurable\\\" and proposes a data-collection beta phase to source ground truth before declaring the launch successful.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses on how the metric will be used to evaluate this specific launch's success, without explicitly reasoning about how the primary metric shapes what the team will actually optimize for in their future work.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response gives a clear, concrete recommendation to make the customer-relevant metric primary, while explicitly stating that the old mapping-accuracy metric should be retained as a \\\"guardrail and diagnostic\\\" tool.\"\n    }\n  ]\n}"
+}

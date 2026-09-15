@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t2__78923833__judge-gemini-3.1-pro-preview__a3f78b9e",
+  "run_id": "reframe-launch-metric__claude-sonnet-5__zero-shot__t2__78923833",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:42:48.029662+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response correctly identifies that the old metric 'looked good and still produced a paused launch,' treating this past failure to correlate with value as the strongest argument for switching."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly rejects sunk cost reasoning, stating that having good tooling is not a reason to keep a bad metric and that the 'one-year sunk investment' does not get veto power."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly addresses the lack of ground truth and proposes concrete interim steps, such as pulling a sample of past transactions or running a 'prospective shadow period' to build a usable dataset."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses on how the metrics will be used for launch gating, evaluating, and building new data pipelines, but does not explicitly discuss how the choice of primary metric will shape the team's future optimization behavior for the product itself."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete recommendation to make the customer-facing outcome metric primary for launch gating, while retaining the old mapping precision metric as a secondary diagnostic tool."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies that the old metric 'looked good and still produced a paused launch,' treating this past failure to correlate with value as the strongest argument for switching.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly rejects sunk cost reasoning, stating that having good tooling is not a reason to keep a bad metric and that the 'one-year sunk investment' does not get veto power.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly addresses the lack of ground truth and proposes concrete interim steps, such as pulling a sample of past transactions or running a 'prospective shadow period' to build a usable dataset.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses on how the metrics will be used for launch gating, evaluating, and building new data pipelines, but does not explicitly discuss how the choice of primary metric will shape the team's future optimization behavior for the product itself.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete recommendation to make the customer-facing outcome metric primary for launch gating, while retaining the old mapping precision metric as a secondary diagnostic tool.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__gpt-6-astra__zero-shot__t2__a1877b6f__alignment-claude-sonnet-5__5eaaee32",
+  "run_id": "last-minute-disclosure-gap__gpt-6-astra__zero-shot__t2__a1877b6f",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:40:58.867506+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's primary recommended action\u2014add targeted disclosure language distinguishing the free default path from the less-common paid-service path, get it reviewed, and launch on time\u2014matches the historical decision of adding narrowly scoped disclosure rather than pausing or shipping unchanged. The candidate's fallback options (gating, delay) are contingencies not actually needed historically, but the stated preferred path aligns.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's primary recommended action\u2014add targeted disclosure language distinguishing the free default path from the less-common paid-service path, get it reviewed, and launch on time\u2014matches the historical decision of adding narrowly scoped disclosure rather than pausing or shipping unchanged. The candidate's fallback options (gating, delay) are contingencies not actually needed historically, but the stated preferred path aligns.\"\n}"
+}

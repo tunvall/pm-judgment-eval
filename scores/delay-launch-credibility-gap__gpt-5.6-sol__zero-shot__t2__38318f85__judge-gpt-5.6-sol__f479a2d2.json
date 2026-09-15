@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85__judge-gpt-5.6-sol__f479a2d2",
+  "run_id": "delay-launch-credibility-gap__gpt-5.6-sol__zero-shot__t2__38318f85",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:28:08.392063+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the pain of missing the public date with the harder-to-recover loss of trust from shipping, while citing the workshop\u2019s ranking of the gap as the top credibility issue and the commentator\u2019s likely substantive criticism."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It emphasizes that \u201cthe skip-level director has already rejected a narrower version for the same reason\u201d and uses that prior rejection as a central basis for the no-go recommendation and escalation plan."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response calls the public commitment \u201ca real cost\u201d but correctly distinguishes it from evidence of readiness, recommending a pause and repurposing the conference as a preview rather than launching regardless."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It proposes measuring precision, recall, and coverage by transaction type and allows a no-go exception if evidence thresholds are met, but it never directly evaluates a launch explicitly limited to transaction types that already clear defensible precision and recall bars."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: freeze claims, prepare an evidence memo, hold a go/no-go review, reset conference communications, conduct a validation sprint, recruit design partners, and use the conference for a clearly labeled preview."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts the pain of missing the public date with the harder-to-recover loss of trust from shipping, while citing the workshop\u2019s ranking of the gap as the top credibility issue and the commentator\u2019s likely substantive criticism.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It emphasizes that \u201cthe skip-level director has already rejected a narrower version for the same reason\u201d and uses that prior rejection as a central basis for the no-go recommendation and escalation plan.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response calls the public commitment \u201ca real cost\u201d but correctly distinguishes it from evidence of readiness, recommending a pause and repurposing the conference as a preview rather than launching regardless.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It proposes measuring precision, recall, and coverage by transaction type and allows a no-go exception if evidence thresholds are met, but it never directly evaluates a launch explicitly limited to transaction types that already clear defensible precision and recall bars.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: freeze claims, prepare an evidence memo, hold a go/no-go review, reset conference communications, conduct a validation sprint, recruit design partners, and use the conference for a clearly labeled preview.\"}]}"
+}

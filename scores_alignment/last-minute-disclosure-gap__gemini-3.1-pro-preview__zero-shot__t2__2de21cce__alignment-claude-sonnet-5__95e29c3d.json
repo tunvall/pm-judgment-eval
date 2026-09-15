@@ -1,0 +1,15 @@
+{
+  "score_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce__alignment-claude-sonnet-5__95e29c3d",
+  "run_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:42:02.458181+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's Plan B (adding a targeted, legally-approved disclosure sentence for the specific paid scenario while launching on time) closely matches the historical narrowly-scoped disclosure decision, but the candidate ranks this as only a fallback after preferring to suppress/absorb the billing cost entirely (Plan A), which is a different primary approach than what actually happened.",
+  "raw_judge_response": "{\n  \"alignation\": \"partially_aligned\",\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's Plan B (adding a targeted, legally-approved disclosure sentence for the specific paid scenario while launching on time) closely matches the historical narrowly-scoped disclosure decision, but the candidate ranks this as only a fallback after preferring to suppress/absorb the billing cost entirely (Plan A), which is a different primary approach than what actually happened.\"\n}"
+}

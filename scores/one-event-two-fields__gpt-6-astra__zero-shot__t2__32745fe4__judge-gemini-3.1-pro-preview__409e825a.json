@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4__judge-gemini-3.1-pro-preview__409e825a",
+  "run_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:59.361780+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that 'One customer-facing view does not require one stored field' and notes that 'the research supports a unified experience, not overwriting an established field.'"
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate recognizes the danger to external integrations, stating that overwriting the estimate 'would silently break that contract, even if its name and type stayed the same.'"
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects the linked-records option because it would 'unnecessarily introduce duplicate-event handling and alert-deduplication problems.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate clearly commits to 'one event with one lifecycle, adding a second field' and provides a step-by-step breakdown of how the fields will be populated over time."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response addresses the reviewer's instinct directly, proposing to 'affirm the goal and challenge the mechanism' by delivering the desired simple, unified UI through the chosen data model without resorting to overwriting."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that 'One customer-facing view does not require one stored field' and notes that 'the research supports a unified experience, not overwriting an established field.'\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recognizes the danger to external integrations, stating that overwriting the estimate 'would silently break that contract, even if its name and type stayed the same.'\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects the linked-records option because it would 'unnecessarily introduce duplicate-event handling and alert-deduplication problems.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly commits to 'one event with one lifecycle, adding a second field' and provides a step-by-step breakdown of how the fields will be populated over time.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response addresses the reviewer's instinct directly, proposing to 'affirm the goal and challenge the mechanism' by delivering the desired simple, unified UI through the chosen data model without resorting to overwriting.\"\n    }\n  ]\n}"
+}

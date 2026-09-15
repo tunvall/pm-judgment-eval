@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52__judge-gpt-5.6-sol__ae900759",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:25:33.773385+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly contrasts the internal and public cost of re-scoping with the harder-to-reverse reputational damage of launching a half-measure, specifically citing the workshop\u2019s top-ranked concern and the commentator\u2019s history of attacking such gaps."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It repeatedly treats the skip-level\u2019s prior rejection as directly relevant organizational precedent, stating that repeating an already rejected approach because of calendar pressure would be \u201cwishful thinking\u201d and requiring explicit sign-off on any new scope."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response calls the conference date \u201ca constraint I should manage, not a constraint that overrides accuracy\u201d and recommends renegotiating the public framing rather than shipping an indefensible product solely to meet the commitment."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It proposes a narrowly bounded preview for the subset where the deterministic approach \u201cactually works,\u201d but it does not establish that recall\u2014or even roughly 70% precision\u2014meets a defensible launch bar; the scenario explicitly says recall remains low."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete month-long plan: return to leadership immediately, bound and label current capability honestly, avoid unsupported claims for new workloads, reframe the conference appearance, and obtain explicit skip-level approval."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly contrasts the internal and public cost of re-scoping with the harder-to-reverse reputational damage of launching a half-measure, specifically citing the workshop\u2019s top-ranked concern and the commentator\u2019s history of attacking such gaps.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It repeatedly treats the skip-level\u2019s prior rejection as directly relevant organizational precedent, stating that repeating an already rejected approach because of calendar pressure would be \u201cwishful thinking\u201d and requiring explicit sign-off on any new scope.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response calls the conference date \u201ca constraint I should manage, not a constraint that overrides accuracy\u201d and recommends renegotiating the public framing rather than shipping an indefensible product solely to meet the commitment.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It proposes a narrowly bounded preview for the subset where the deterministic approach \u201cactually works,\u201d but it does not establish that recall\u2014or even roughly 70% precision\u2014meets a defensible launch bar; the scenario explicitly says recall remains low.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete month-long plan: return to leadership immediately, bound and label current capability honestly, avoid unsupported claims for new workloads, reframe the conference appearance, and obtain explicit skip-level approval.\"}]}"
+}

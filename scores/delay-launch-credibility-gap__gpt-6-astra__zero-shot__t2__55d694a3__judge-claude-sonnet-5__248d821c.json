@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3__judge-claude-sonnet-5__248d821c",
+  "run_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:29:18.567177+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly compares evidence sources, stating 'The strongest evidence is not the commentator's likely reaction... it is that practitioners ranked accuracy... as their top credibility question,' and later notes 'The public commitment makes delay costly, but it does not make an unsupported product claim defensible,' directly weighing credibility risk against delay cost using the given evidence."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the prior rejection as binding evidence, noting 'the director has already rejected a narrower release for the same underlying concern. We have no new evidence that resolves that concern,' and insists the compromise 'cannot bypass the prior decision.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly subordinates the conference deadline to the credibility evidence, stating 'A public deadline deserves serious effort and clear communication. It does not outweigh direct evidence that the launch would fail the market's most important credibility test.'"
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses a 'research preview' or discussing findings as alternatives but never examines whether shipping quantified estimates limited to the subset of transaction types where precision/recall already clear a bar is a viable narrower launch option."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete plan: a decision memo to leadership within days, renegotiating the conference deliverable transparently, and using the remaining month to reduce uncertainty via defined release gates, rather than giving only a one-word verdict."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly compares evidence sources, stating 'The strongest evidence is not the commentator's likely reaction... it is that practitioners ranked accuracy... as their top credibility question,' and later notes 'The public commitment makes delay costly, but it does not make an unsupported product claim defensible,' directly weighing credibility risk against delay cost using the given evidence.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response treats the prior rejection as binding evidence, noting 'the director has already rejected a narrower release for the same underlying concern. We have no new evidence that resolves that concern,' and insists the compromise 'cannot bypass the prior decision.'\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly subordinates the conference deadline to the credibility evidence, stating 'A public deadline deserves serious effort and clear communication. It does not outweigh direct evidence that the launch would fail the market's most important credibility test.'\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"not_met\", \"justification\": \"The response discusses a 'research preview' or discussing findings as alternatives but never examines whether shipping quantified estimates limited to the subset of transaction types where precision/recall already clear a bar is a viable narrower launch option.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete plan: a decision memo to leadership within days, renegotiating the conference deliverable transparently, and using the remaining month to reduce uncertainty via defined release gates, rather than giving only a one-word verdict.\"}\n  ]\n}"
+}

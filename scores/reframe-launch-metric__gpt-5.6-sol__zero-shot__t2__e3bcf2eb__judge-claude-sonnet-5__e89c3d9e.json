@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb__judge-claude-sonnet-5__e89c3d9e",
+  "run_id": "reframe-launch-metric__gpt-5.6-sol__zero-shot__t2__e3bcf2eb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:44:50.141767+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The earlier paused launch is evidence that mapping accuracy is not a validated proxy for customer value,' directly treating the prior failure as relevant evidence rather than assuming past accuracy predicts future customer outcomes."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly names the year of investment as a sunk cost and rejects it as a reason to keep the old metric primary: 'the year already invested is a sunk cost; preserving that metric as primary would repeat the failure mode already observed.'"
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the absence of ground truth by proposing a 'limited beta or data-collection phase' to source it and stating 'do not characterize the launch as validated or successful' until then, and even suggests gating broad release on pilot status if timing doesn't allow collection."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response touches on future-facing effects by suggesting the mapping metric could be 'reweighted or redesigned into a useful leading indicator' and framing the change as an 'evolution,' but it never explicitly states that whichever metric is primary will shape what the team optimizes toward going forward, beyond scoring this one launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific recommendation ('closeness to the customer-relevant risk number' as primary, mapping accuracy as guardrail) and lays out a concrete numbered transition plan rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [\n  {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The earlier paused launch is evidence that mapping accuracy is not a validated proxy for customer value,' directly treating the prior failure as relevant evidence rather than assuming past accuracy predicts future customer outcomes.\"},\n  {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly names the year of investment as a sunk cost and rejects it as a reason to keep the old metric primary: 'the year already invested is a sunk cost; preserving that metric as primary would repeat the failure mode already observed.'\"},\n  {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response directly addresses the absence of ground truth by proposing a 'limited beta or data-collection phase' to source it and stating 'do not characterize the launch as validated or successful' until then, and even suggests gating broad release on pilot status if timing doesn't allow collection.\"},\n  {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response touches on future-facing effects by suggesting the mapping metric could be 'reweighted or redesigned into a useful leading indicator' and framing the change as an 'evolution,' but it never explicitly states that whichever metric is primary will shape what the team optimizes toward going forward, beyond scoring this one launch.\"},\n  {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific recommendation ('closeness to the customer-relevant risk number' as primary, mapping accuracy as guardrail) and lays out a concrete numbered transition plan rather than just listing tradeoffs.\"}\n]}"
+}

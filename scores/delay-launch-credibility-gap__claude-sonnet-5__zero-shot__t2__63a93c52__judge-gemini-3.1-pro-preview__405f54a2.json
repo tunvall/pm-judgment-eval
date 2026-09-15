@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52__judge-gemini-3.1-pro-preview__405f54a2",
+  "run_id": "delay-launch-credibility-gap__claude-sonnet-5__zero-shot__t2__63a93c52",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:25:48.601572+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly cites both the workshop ranking and the commentator's track record, arguing that a public 'this doesn't actually work' moment represents an asymmetric and hard-to-undo credibility damage compared to an internal stumble."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response notes that the skip-level director's previous rejection is 'directly relevant precedent, not something to route around,' recognizing that hoping calendar pressure changes a previously rejected decision is 'wishful thinking.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states that 'The conference date is a constraint I should manage, not a constraint that overrides accuracy,' and notes that a commitment to show up isn't a commitment to overclaim."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recommends a narrower option: 'Present the 70%-precision/low-recall capability honestly, for the subset where it actually works,' explicitly framing it to cover only that defined slice."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a clear, actionable four-step plan for the remaining month, detailing how to adjust the conference messaging and explicitly planning to get sign-off on this new narrative from the skip-level director."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly cites both the workshop ranking and the commentator's track record, arguing that a public 'this doesn't actually work' moment represents an asymmetric and hard-to-undo credibility damage compared to an internal stumble.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response notes that the skip-level director's previous rejection is 'directly relevant precedent, not something to route around,' recognizing that hoping calendar pressure changes a previously rejected decision is 'wishful thinking.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states that 'The conference date is a constraint I should manage, not a constraint that overrides accuracy,' and notes that a commitment to show up isn't a commitment to overclaim.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recommends a narrower option: 'Present the 70%-precision/low-recall capability honestly, for the subset where it actually works,' explicitly framing it to cover only that defined slice.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a clear, actionable four-step plan for the remaining month, detailing how to adjust the conference messaging and explicitly planning to get sign-off on this new narrative from the skip-level director.\"\n    }\n  ]\n}"
+}

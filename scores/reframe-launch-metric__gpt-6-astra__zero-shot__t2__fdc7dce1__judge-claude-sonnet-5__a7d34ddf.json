@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1__judge-claude-sonnet-5__a7d34ddf",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:45:51.067701+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'a strong mapping score does not establish that the estimate is useful' and ties this directly to the earlier paused launch as 'a warning about that disconnect,' treating the evidence as relevant while being careful not to overstate causation."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates investment from validity: 'The year of investment deserves recognition and reuse, but it should not determine what counts as customer success.'"
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes ground-truth sourcing a named 'launch dependency' with an owner and timeline, and specifies an interim status of 'customer performance unvalidated' with only a bounded pilot allowed until evidence exists."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response discusses fairness to the team and not retroactively judging past work against a new target, and states the launch 'needs to answer a different customer question,' but it does not explicitly reason about how designating a primary metric will steer the team's future optimization efforts going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to making customer-outcome accuracy primary and mapping accuracy diagnostic, and lays out a concrete five-step transition plan rather than only listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'a strong mapping score does not establish that the estimate is useful' and ties this directly to the earlier paused launch as 'a warning about that disconnect,' treating the evidence as relevant while being careful not to overstate causation.\"}, {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates investment from validity: 'The year of investment deserves recognition and reuse, but it should not determine what counts as customer success.'\"}, {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response makes ground-truth sourcing a named 'launch dependency' with an owner and timeline, and specifies an interim status of 'customer performance unvalidated' with only a bounded pilot allowed until evidence exists.\"}, {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response discusses fairness to the team and not retroactively judging past work against a new target, and states the launch 'needs to answer a different customer question,' but it does not explicitly reason about how designating a primary metric will steer the team's future optimization efforts going forward.\"}, {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits clearly to making customer-outcome accuracy primary and mapping accuracy diagnostic, and lays out a concrete five-step transition plan rather than only listing tradeoffs.\"}]}"
+}

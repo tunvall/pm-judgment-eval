@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc__judge-claude-sonnet-5__bea17946",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:35:32.370599+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the reviewer's underlying goal ('customer-simplicity instinct') from their proposed mechanism, stating they are 'conflating the data model with the presentation layer' and that the same goal can be met without adopting Option 1."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly argues that overwriting the field 'can break downstream automated logic, trigger false positives/negatives, and destroy data lineage,' treating the millions of unspecified integrations as a serious risk rather than a minor concern."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly notes that Option 2 'treats one real-world incident as two system events' and 'places the burden on the customer... to de-duplicate alerts,' factoring this into rejecting that option."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to Option 3\u2014'a single event with one lifecycle' plus a second field for the precise estimate\u2014and even specifies how the two fields would be surfaced (API/database vs. UI treatment)."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than dismissing the reviewer, the response calls their instinct 'valid' and proposes a UI-level compromise (e.g., 'computing...' indicator resolving to the precise estimate) that honors the simplicity goal while keeping the underlying data model intact."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the reviewer's underlying goal ('customer-simplicity instinct') from their proposed mechanism, stating they are 'conflating the data model with the presentation layer' and that the same goal can be met without adopting Option 1.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It explicitly argues that overwriting the field 'can break downstream automated logic, trigger false positives/negatives, and destroy data lineage,' treating the millions of unspecified integrations as a serious risk rather than a minor concern.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response directly notes that Option 2 'treats one real-world incident as two system events' and 'places the burden on the customer... to de-duplicate alerts,' factoring this into rejecting that option.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits clearly to Option 3\u2014'a single event with one lifecycle' plus a second field for the precise estimate\u2014and even specifies how the two fields would be surfaced (API/database vs. UI treatment).\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"Rather than dismissing the reviewer, the response calls their instinct 'valid' and proposes a UI-level compromise (e.g., 'computing...' indicator resolving to the precise estimate) that honors the simplicity goal while keeping the underlying data model intact.\"}\n  ]\n}"
+}

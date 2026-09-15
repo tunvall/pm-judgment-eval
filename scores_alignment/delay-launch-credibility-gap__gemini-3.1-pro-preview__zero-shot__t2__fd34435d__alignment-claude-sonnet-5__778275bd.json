@@ -1,0 +1,15 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d__alignment-claude-sonnet-5__778275bd",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:32:08.340847+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both reject the middle-ground identify-without-estimating launch and prioritize credibility over hitting the date. However, the candidate proposes still doing a conference presence (pivoted to a 'Strategic Vision & Early Access Program' announcement) rather than the historical decision to pause the launch entirely and retarget a later event, which is a meaningful difference in scope.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both reject the middle-ground identify-without-estimating launch and prioritize credibility over hitting the date. However, the candidate proposes still doing a conference presence (pivoted to a 'Strategic Vision & Early Access Program' announcement) rather than the historical decision to pause the launch entirely and retarget a later event, which is a meaningful difference in scope.\"\n}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t3__45a0b8b4__judge-claude-sonnet-5__72525786",
+  "run_id": "incident-rollback__gemini-3.1-pro-preview__zero-shot__t3__45a0b8b4",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-15T16:12:43.776538+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with an unambiguous call: 'I would immediately order a rollback of the new integration launch (or disable it via feature flags, if available)' rather than listing options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It notes the rollback can be done 'via feature flags' and frames the pause as temporary ('We have temporarily paused the rollout... expect it to be available in the coming days'), implying reversibility, but it never explicitly contrasts this with how hard/easy a fast-fix-forward approach would be to undo if wrong, so the tradeoff isn't fully spelled out."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the compounding cost of leaving the incident open ('the compounding cost of false alerts over 72+ hours will overwhelm... support team') against the cost of walking back the announcement, calling the latter 'a temporary PR embarrassment' versus 'a catastrophic business risk' from breaking the core product."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects pushing a rushed fix, stating engineering needs 'the several days they need to build, properly test, and QA the scoping fix without the immense pressure of an ongoing Sev-1,' choosing rollback instead of an unvalidated quick patch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the rollback, it lays out a support script for affected customers, external comms about the pause and expected timeline, giving engineering time to fix properly, and a post-mortem to prevent recurrence."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with an unambiguous call: 'I would immediately order a rollback of the new integration launch (or disable it via feature flags, if available)' rather than listing options.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"It notes the rollback can be done 'via feature flags' and frames the pause as temporary ('We have temporarily paused the rollout... expect it to be available in the coming days'), implying reversibility, but it never explicitly contrasts this with how hard/easy a fast-fix-forward approach would be to undo if wrong, so the tradeoff isn't fully spelled out.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly weighs the compounding cost of leaving the incident open ('the compounding cost of false alerts over 72+ hours will overwhelm... support team') against the cost of walking back the announcement, calling the latter 'a temporary PR embarrassment' versus 'a catastrophic business risk' from breaking the core product.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects pushing a rushed fix, stating engineering needs 'the several days they need to build, properly test, and QA the scoping fix without the immense pressure of an ongoing Sev-1,' choosing rollback instead of an unvalidated quick patch.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the rollback, it lays out a support script for affected customers, external comms about the pause and expected timeline, giving engineering time to fix properly, and a post-mortem to prevent recurrence.\"}\n  ]\n}"
+}

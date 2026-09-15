@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t4__7d2ed5e0__judge-claude-sonnet-5__6a5c57a8",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t4__7d2ed5e0",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-15T16:14:31.015772+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'we are fully aligned with the long-term strategy, but that the new platform is not yet mature enough to support our specific use case without jeopardizing the business goal,' clearly separating the destination question from the launch-timing question."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response asserts 'an estimate with zero schedule margin is a guaranteed delay' and plans to 'prove that the informally circulated timeline is a dangerous fiction,' grounding the decision in the technically-derived estimate over the optimistic one."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response names the risk of technical debt/throwaway work from extending the old platform ('cost of throwaway work is an acceptable insurance premium') but never discusses the resulting inconsistency of having the main alerting product and the new risk-guardrails tier on different platforms simultaneously, which is the specific customer-experience risk the criterion targets."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly names the political risk ('leadership might view it as defying the company-wide strategy or taking the lazy way out') and lays out a communication plan to address it, including reframing the choice as risk management."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a clear decision (extend the older platform for launch) and lays out concrete follow-up actions, including socializing findings and scoping the migration as a 'fast-follow initiative.'"
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'we are fully aligned with the long-term strategy, but that the new platform is not yet mature enough to support our specific use case without jeopardizing the business goal,' clearly separating the destination question from the launch-timing question.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response asserts 'an estimate with zero schedule margin is a guaranteed delay' and plans to 'prove that the informally circulated timeline is a dangerous fiction,' grounding the decision in the technically-derived estimate over the optimistic one.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response names the risk of technical debt/throwaway work from extending the old platform ('cost of throwaway work is an acceptable insurance premium') but never discusses the resulting inconsistency of having the main alerting product and the new risk-guardrails tier on different platforms simultaneously, which is the specific customer-experience risk the criterion targets.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly names the political risk ('leadership might view it as defying the company-wide strategy or taking the lazy way out') and lays out a communication plan to address it, including reframing the choice as risk management.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a clear decision (extend the older platform for launch) and lays out concrete follow-up actions, including socializing findings and scoping the migration as a 'fast-follow initiative.'\"}\n  ]\n}"
+}

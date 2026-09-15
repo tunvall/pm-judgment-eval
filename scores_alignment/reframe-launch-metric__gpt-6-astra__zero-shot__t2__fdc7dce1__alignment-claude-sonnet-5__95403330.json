@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1__alignment-claude-sonnet-5__95403330",
+  "run_id": "reframe-launch-metric__gpt-6-astra__zero-shot__t2__fdc7dce1",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:46:37.211090+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate explicitly makes customer-outcome accuracy the primary metric while retaining mapping accuracy as a diagnostic/secondary metric, matching the historical decision exactly in structure and framing.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate explicitly makes customer-outcome accuracy the primary metric while retaining mapping accuracy as a diagnostic/secondary metric, matching the historical decision exactly in structure and framing.\"\n}"
+}

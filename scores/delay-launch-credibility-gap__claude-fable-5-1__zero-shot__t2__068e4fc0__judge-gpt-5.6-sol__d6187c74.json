@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0__judge-gpt-5.6-sol__d6187c74",
+  "run_id": "delay-launch-credibility-gap__claude-fable-5-1__zero-shot__t2__068e4fc0",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:27:05.276757+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts recoverable delay costs with lasting reputational harm and grounds that judgment in both the workshop\u2019s ranking of newer-workload accuracy as \u201cthe credibility question\u201d and the commentator\u2019s likely justified criticism of an identify-without-quantify product."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the skip-level rejection as strong organizational evidence, stating that proposing a slightly different narrow version would amount to betting on approval through \u201cdeadline pressure, not conviction.\u201d"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Despite the public commitment, it recommends pausing the launch and converting the conference slot into a transparent non-launch presence because a slipped date is less damaging than an indefensible accuracy story."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response considers a covered-subset launch and explains its decision rule: it would ship that scope if it represented most day-one user needs, but concludes that roughly 70% precision, low recall, a small covered fraction, and the top practitioner concern make it currently indefensible."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: escalate the pause within days, repurpose the conference talk, offer scoped early access, establish measurable precision-and-coverage launch gates with external validation, and spend the remaining month addressing the newer-workload gap."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly contrasts recoverable delay costs with lasting reputational harm and grounds that judgment in both the workshop\u2019s ranking of newer-workload accuracy as \u201cthe credibility question\u201d and the commentator\u2019s likely justified criticism of an identify-without-quantify product.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It treats the skip-level rejection as strong organizational evidence, stating that proposing a slightly different narrow version would amount to betting on approval through \u201cdeadline pressure, not conviction.\u201d\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"Despite the public commitment, it recommends pausing the launch and converting the conference slot into a transparent non-launch presence because a slipped date is less damaging than an indefensible accuracy story.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"met\",\"justification\":\"The response considers a covered-subset launch and explains its decision rule: it would ship that scope if it represented most day-one user needs, but concludes that roughly 70% precision, low recall, a small covered fraction, and the top practitioner concern make it currently indefensible.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: escalate the pause within days, repurpose the conference talk, offer scoped early access, establish measurable precision-and-coverage launch gates with external validation, and spend the remaining month addressing the newer-workload gap.\"}]}"
+}

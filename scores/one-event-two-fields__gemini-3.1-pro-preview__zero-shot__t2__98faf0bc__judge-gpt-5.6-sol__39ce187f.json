@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc__judge-gpt-5.6-sol__39ce187f",
+  "run_id": "one-event-two-fields__gemini-3.1-pro-preview__zero-shot__t2__98faf0bc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:35:46.192081+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the reviewer's valid customer-simplicity goal from the proposed storage mechanism, stating that the reviewer is conflating the data model with the presentation layer. It explains that Option 3 can deliver a single updating UI value without overwriting the existing field."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies the exact meaning relied upon by millions of records and external integrations as the most rigid constraint, and warns that silent mutation could break downstream logic and data lineage. The recommendation leaves the original field untouched."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects two linked records because they represent one incident as two system events and force customers and integrations to deduplicate alerts. It recommends one event lifecycle and one alert."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly commits to Option 3: one event with one lifecycle, the original fast-estimate field preserved, and a second field populated with the later precise estimate."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that the reviewer's customer-simplicity instinct is valid rather than dismissing it. It then offers a concrete alternative\u2014showing one value that updates in the UI\u2014while preserving two distinct fields in the underlying model."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the reviewer's valid customer-simplicity goal from the proposed storage mechanism, stating that the reviewer is conflating the data model with the presentation layer. It explains that Option 3 can deliver a single updating UI value without overwriting the existing field.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"It identifies the exact meaning relied upon by millions of records and external integrations as the most rigid constraint, and warns that silent mutation could break downstream logic and data lineage. The recommendation leaves the original field untouched.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects two linked records because they represent one incident as two system events and force customers and integrations to deduplicate alerts. It recommends one event lifecycle and one alert.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"It clearly commits to Option 3: one event with one lifecycle, the original fast-estimate field preserved, and a second field populated with the later precise estimate.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges that the reviewer's customer-simplicity instinct is valid rather than dismissing it. It then offers a concrete alternative\u2014showing one value that updates in the UI\u2014while preserving two distinct fields in the underlying model.\"\n    }\n  ]\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "score_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb__alignment-claude-sonnet-5__51dfc710",
+  "run_id": "reframe-launch-metric__gemini-3.1-pro-preview__zero-shot__t2__db0088fb",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:47:47.371718+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate makes the customer-facing outcome metric the ultimate/primary success measure while retaining the engineering-facing metric as a secondary diagnostic/gating tool, matching the historical decision's core structure of primary customer metric with the old metric demoted to internal diagnostic.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate makes the customer-facing outcome metric the ultimate/primary success measure while retaining the engineering-facing metric as a secondary diagnostic/gating tool, matching the historical decision's core structure of primary customer metric with the old metric demoted to internal diagnostic.\"\n}\n```"
+}

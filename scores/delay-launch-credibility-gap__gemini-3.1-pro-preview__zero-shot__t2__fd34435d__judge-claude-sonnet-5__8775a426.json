@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d__judge-claude-sonnet-5__8775a426",
+  "run_id": "delay-launch-credibility-gap__gemini-3.1-pro-preview__zero-shot__t2__fd34435d",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:31:18.399334+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the decision to the specific evidence given, noting that launching without quantification would be 'handing the industry commentator the exact ammunition they need' and that the workshop 'explicitly stated that accuracy on new workloads is the top credibility metric.'"
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the skip-level's prior decision as binding organizational signal, stating 'The skip-level director has already set the precedent' and framing the pitch to them as 'You were right to block the narrower version previously to protect our credibility.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Rather than assuming the GA date must be hit regardless of defensibility, the response reframes the conference deliverable entirely ('pivot the conference launch from a GA Release to a Strategic Vision & Early Access Program') based on the severity of the credibility gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response mentions using the high-precision subset as a 'foundation' showcase within the Early Access pitch, but it never seriously evaluates actually shipping a real, narrowly-scoped GA product limited to the transaction types that clear a defensible bar as an alternative to the EAP framing."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out concrete near-term actions: rejecting the middle-ground proposal, pivoting messaging, seeking alignment with the skip-level director with a specific talking point, and redirecting marketing/GTM over the remaining 30 days."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the decision to the specific evidence given, noting that launching without quantification would be 'handing the industry commentator the exact ammunition they need' and that the workshop 'explicitly stated that accuracy on new workloads is the top credibility metric.'\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response treats the skip-level's prior decision as binding organizational signal, stating 'The skip-level director has already set the precedent' and framing the pitch to them as 'You were right to block the narrower version previously to protect our credibility.'\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"Rather than assuming the GA date must be hit regardless of defensibility, the response reframes the conference deliverable entirely ('pivot the conference launch from a GA Release to a Strategic Vision & Early Access Program') based on the severity of the credibility gap.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response mentions using the high-precision subset as a 'foundation' showcase within the Early Access pitch, but it never seriously evaluates actually shipping a real, narrowly-scoped GA product limited to the transaction types that clear a defensible bar as an alternative to the EAP framing.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out concrete near-term actions: rejecting the middle-ground proposal, pivoting messaging, seeking alignment with the skip-level director with a specific talking point, and redirecting marketing/GTM over the remaining 30 days.\"}\n  ]\n}"
+}

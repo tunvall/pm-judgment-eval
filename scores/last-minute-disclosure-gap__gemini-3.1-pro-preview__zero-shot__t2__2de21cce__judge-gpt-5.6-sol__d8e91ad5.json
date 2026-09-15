@@ -1,0 +1,52 @@
+{
+  "score_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce__judge-gpt-5.6-sol__d8e91ad5",
+  "run_id": "last-minute-disclosure-gap__gemini-3.1-pro-preview__zero-shot__t2__2de21cce",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:41:41.290761+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly treats the uncommon path as serious customer harm, stating that launching with \u201csurprise billing\u201d is unacceptable and could damage trust and invite regulatory scrutiny."
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The proposed disclosure is narrowly accurate\u2014\u201cUsing [Feature] in [Scenario] utilizes [Internal Service] and incurs standard usage charges\u201d\u2014rather than implying that the common free path is charged."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly compares the harms: \u201cMissing a committed launch date hurts, but betraying the customer's wallet hurts worse,\u201d while preserving delay as a last resort after exploring ways to protect customers and launch on time."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Before delaying, it proposes multiple scoped remedies for the affected path: temporarily absorbing the charge, adding a targeted sentence, or disabling only the paid scenario."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response specifies an immediate 15-minute meeting with Engineering, PMM/Docs, and Legal, an ordered decision tree, same-day legal approval and publication where possible, and 14\u201330-day or next-week follow-up timelines."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_dismiss_minority_path_risk\",\"verdict\":\"met\",\"justification\":\"The response explicitly treats the uncommon path as serious customer harm, stating that launching with \u201csurprise billing\u201d is unacceptable and could damage trust and invite regulatory scrutiny.\"},{\"id\":\"avoids_overcorrecting_into_inaccurate_disclosure\",\"verdict\":\"met\",\"justification\":\"The proposed disclosure is narrowly accurate\u2014\u201cUsing [Feature] in [Scenario] utilizes [Internal Service] and incurs standard usage charges\u201d\u2014rather than implying that the common free path is charged.\"},{\"id\":\"weighs_launch_delay_against_disclosure_gap\",\"verdict\":\"met\",\"justification\":\"It directly compares the harms: \u201cMissing a committed launch date hurts, but betraying the customer's wallet hurts worse,\u201d while preserving delay as a last resort after exploring ways to protect customers and launch on time.\"},{\"id\":\"considers_narrowly_scoped_fix_before_binary_choice\",\"verdict\":\"met\",\"justification\":\"Before delaying, it proposes multiple scoped remedies for the affected path: temporarily absorbing the charge, adding a targeted sentence, or disabling only the paid scenario.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response specifies an immediate 15-minute meeting with Engineering, PMM/Docs, and Legal, an ordered decision tree, same-day legal approval and publication where possible, and 14\u201330-day or next-week follow-up timelines.\"}]}"
+}

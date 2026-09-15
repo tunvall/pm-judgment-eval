@@ -1,0 +1,52 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3__judge-gpt-5.6-sol__28e38910",
+  "run_id": "delay-launch-credibility-gap__gpt-6-astra__zero-shot__t2__55d694a3",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:29:37.375398+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the costly delay with the risk of turning \u201ca schedule problem into a trust problem,\u201d and cites the workshop\u2019s top-ranked credibility concern. It acknowledges the commentator\u2019s likely reaction but does not specifically use the commentator\u2019s track record as evidence in the weighing."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It emphasizes that \u201cthe director has already rejected a narrower release for the same underlying concern\u201d and argues that the proposed compromise requires explicit approval rather than bypassing that precedent."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response states that the public commitment makes delay costly but \u201cdoes not make an unsupported product claim defensible,\u201d and firmly recommends pausing rather than shipping merely to hit the date."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It allows for a clearly labeled preview or demonstration with disclosed supported scope and limitations, but it does not directly evaluate whether a production launch restricted to transaction types meeting defensible precision and recall gates is viable. Its main alternatives remain pause, preview, or withdrawal."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete plan: seek an immediate leadership decision with a data-backed memo, renegotiate and communicate the conference deliverable, spend the month validating newer workloads and defining release gates, and schedule a dated reassessment."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"The response explicitly contrasts the costly delay with the risk of turning \u201ca schedule problem into a trust problem,\u201d and cites the workshop\u2019s top-ranked credibility concern. It acknowledges the commentator\u2019s likely reaction but does not specifically use the commentator\u2019s track record as evidence in the weighing.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It emphasizes that \u201cthe director has already rejected a narrower release for the same underlying concern\u201d and argues that the proposed compromise requires explicit approval rather than bypassing that precedent.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response states that the public commitment makes delay costly but \u201cdoes not make an unsupported product claim defensible,\u201d and firmly recommends pausing rather than shipping merely to hit the date.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"partially_met\",\"justification\":\"It allows for a clearly labeled preview or demonstration with disclosed supported scope and limitations, but it does not directly evaluate whether a production launch restricted to transaction types meeting defensible precision and recall gates is viable. Its main alternatives remain pause, preview, or withdrawal.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It provides a concrete plan: seek an immediate leadership decision with a data-backed memo, renegotiate and communicate the conference deliverable, spend the month validating newer workloads and defining release gates, and schedule a dated reassessment.\"}]}"
+}

@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786__judge-claude-sonnet-5__7fc2401b",
+  "run_id": "one-event-two-fields__gpt-5.6-sol__zero-shot__t2__d89bf786",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:06.343333+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it would 'align on the goal rather than the exact mechanism' with the reviewer, showing it separates the validated customer goal (unified experience, no duplicates) from any specific mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It argues that overwriting 'turns a stable field into a time-dependent field with mixed provenance' and that 'the same query could return a different kind of estimate later without any schema signal, breaking integrations, reproducibility, auditing,' directly weighing the risk against a simpler mental model."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects option two because it 'preserves semantics at the cost of modeling one real-world incident as two events... a likely source of duplicate alerts,' and factors this into ruling it out."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a specific schema with named fields like `initial_estimate`, `refined_estimate` (nullable), provenance timestamps, and an optional `best_available_estimate` derived field, rather than staying abstract."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response engages the reviewer's instinct directly, agreeing on the simplicity goal ('the product should feel like one unified event') and proposing that UI/new APIs can deliver that simplicity while keeping the underlying model safe, rather than dismissing the reviewer."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\": [{\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it would 'align on the goal rather than the exact mechanism' with the reviewer, showing it separates the validated customer goal (unified experience, no duplicates) from any specific mechanism.\"}, {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It argues that overwriting 'turns a stable field into a time-dependent field with mixed provenance' and that 'the same query could return a different kind of estimate later without any schema signal, breaking integrations, reproducibility, auditing,' directly weighing the risk against a simpler mental model.\"}, {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects option two because it 'preserves semantics at the cost of modeling one real-world incident as two events... a likely source of duplicate alerts,' and factors this into ruling it out.\"}, {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"It gives a specific schema with named fields like `initial_estimate`, `refined_estimate` (nullable), provenance timestamps, and an optional `best_available_estimate` derived field, rather than staying abstract.\"}, {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"The response engages the reviewer's instinct directly, agreeing on the simplicity goal ('the product should feel like one unified event') and proposing that UI/new APIs can deliver that simplicity while keeping the underlying model safe, rather than dismissing the reviewer.\"}]}"
+}

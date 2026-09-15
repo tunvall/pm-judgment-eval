@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t2__42cccff8__judge-claude-sonnet-5__4951e208",
+  "run_id": "one-event-two-fields__claude-sonnet-5__zero-shot__t2__42cccff8",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:32:27.846346+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates 'the reviewer's *goal* (simplicity...) and their *proposed mechanism* (overwriting a field...)' and states 'the research only supports the goal, not the mechanism.'"
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It argues the field is 'load-bearing for millions of existing records and external integrations' and that overwriting means 'any downstream system that filtered, alerted, or joined on that field's current semantics is now wrong in ways that are invisible until someone audits a discrepancy,' explicitly weighing risk against unenumerable dependents rather than just asserting simplicity."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly flags that Option Two 'reintroduces the exact failure mode the research says customers hate \u2014 duplicate alerts for one incident,' and uses this to reject the two-record approach."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to 'Option Three \u2014 single event, single lifecycle, additional field for the refined estimate,' specifying the original field stays untouched while a new additive field carries the precise estimate."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the reviewer with a proposed conversation ('The research backs the outcome you're after... What it doesn't do is repurpose a field...') and even offers a presentation-layer compromise to honor the reviewer's simplicity instinct without adopting the risky mechanism."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates 'the reviewer's *goal* (simplicity...) and their *proposed mechanism* (overwriting a field...)' and states 'the research only supports the goal, not the mechanism.'\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It argues the field is 'load-bearing for millions of existing records and external integrations' and that overwriting means 'any downstream system that filtered, alerted, or joined on that field's current semantics is now wrong in ways that are invisible until someone audits a discrepancy,' explicitly weighing risk against unenumerable dependents rather than just asserting simplicity.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly flags that Option Two 'reintroduces the exact failure mode the research says customers hate \u2014 duplicate alerts for one incident,' and uses this to reject the two-record approach.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits clearly to 'Option Three \u2014 single event, single lifecycle, additional field for the refined estimate,' specifying the original field stays untouched while a new additive field carries the precise estimate.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"It directly addresses the reviewer with a proposed conversation ('The research backs the outcome you're after... What it doesn't do is repurpose a field...') and even offers a presentation-layer compromise to honor the reviewer's simplicity instinct without adopting the risky mechanism.\"}\n  ]\n}"
+}

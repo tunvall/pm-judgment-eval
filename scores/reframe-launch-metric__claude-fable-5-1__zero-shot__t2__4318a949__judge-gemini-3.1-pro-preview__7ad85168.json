@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949__judge-gemini-3.1-pro-preview__7ad85168",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:44:09.858227+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that the prior launch \"cleared [the old metric] and still got paused because the output wasn't useful,\" recognizing that the proxy failed to correlate with customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly identifies the year of investment and existing infrastructure as \"sunk costs\" and argues they are \"not for keeping the wrong target.\""
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges the lack of ground-truth data, argues it is a gap that must be closed regardless, and outlines specific interim steps to source a small sample of customer accounts for the launch call."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses heavily on using metrics as launch gates and post-launch guardrails, but it does not explicitly reason that selecting the primary metric will shape what the team optimizes for going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a very clear recommendation to make the customer-facing metric primary while repurposing the old metric into specific, concrete roles as a \"diagnostic\" and a \"non-regression guardrail.\""
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that the prior launch \\\"cleared [the old metric] and still got paused because the output wasn't useful,\\\" recognizing that the proxy failed to correlate with customer value.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly identifies the year of investment and existing infrastructure as \\\"sunk costs\\\" and argues they are \\\"not for keeping the wrong target.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the lack of ground-truth data, argues it is a gap that must be closed regardless, and outlines specific interim steps to source a small sample of customer accounts for the launch call.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses heavily on using metrics as launch gates and post-launch guardrails, but it does not explicitly reason that selecting the primary metric will shape what the team optimizes for going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a very clear recommendation to make the customer-facing metric primary while repurposing the old metric into specific, concrete roles as a \\\"diagnostic\\\" and a \\\"non-regression guardrail.\\\"\"\n    }\n  ]\n}\n```"
+}

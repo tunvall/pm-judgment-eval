@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__claude-sonnet-5__zero-shot__t2__4d41deda__judge-claude-sonnet-5__36ffcac7",
+  "run_id": "extend-or-migrate__claude-sonnet-5__zero-shot__t2__4d41deda",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-15T16:12:04.122140+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates 'the strategic call (new platform is the long-term destination) is settled and I'm not relitigating it' from 'the tactical call (does this launch need to be the forcing function for my team's full migration)', naming this decoupling as the core judgment."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly grounds its recommendation in the technically-derived 2x estimate, calling the circulated timeline 'optimistic-case, no-gaps' and stating 'Committing a launch date to that plan is committing to slip a launch.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses the risk that the extension 'becomes permanent by neglect' and the risk of an unbounded/unknown migration cost, but never addresses the specific risk of inconsistent customer experience arising from different products running on different notification platforms simultaneously."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proactively plans to 'Flag clearly to stakeholders why I'm not taking the accelerated path: not because the new platform is wrong, but because the timeline being circulated for it is not credible,' directly addressing the optics of appearing to resist company strategy."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete, itemized action plan: 'Ship the launch on the extended old platform,' document the technical mismatches for the migration roadmap owner, and 'Get explicit agreement in writing' that the extension is a bridge with its own tracked migration timeline."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates 'the strategic call (new platform is the long-term destination) is settled and I'm not relitigating it' from 'the tactical call (does this launch need to be the forcing function for my team's full migration)', naming this decoupling as the core judgment.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly grounds its recommendation in the technically-derived 2x estimate, calling the circulated timeline 'optimistic-case, no-gaps' and stating 'Committing a launch date to that plan is committing to slip a launch.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response discusses the risk that the extension 'becomes permanent by neglect' and the risk of an unbounded/unknown migration cost, but never addresses the specific risk of inconsistent customer experience arising from different products running on different notification platforms simultaneously.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response proactively plans to 'Flag clearly to stakeholders why I'm not taking the accelerated path: not because the new platform is wrong, but because the timeline being circulated for it is not credible,' directly addressing the optics of appearing to resist company strategy.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete, itemized action plan: 'Ship the launch on the extended old platform,' document the technical mismatches for the migration roadmap owner, and 'Get explicit agreement in writing' that the extension is a bridge with its own tracked migration timeline.\"}\n  ]\n}"
+}

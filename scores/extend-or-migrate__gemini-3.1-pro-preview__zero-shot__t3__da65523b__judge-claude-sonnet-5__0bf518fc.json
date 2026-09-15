@@ -1,0 +1,52 @@
+{
+  "score_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t3__da65523b__judge-claude-sonnet-5__0bf518fc",
+  "run_id": "extend-or-migrate__gemini-3.1-pro-preview__zero-shot__t3__da65523b",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-15T16:13:59.369982+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly frames the choice as 'a tactical move to protect the launch date' rather than a rejection of the newer platform's status as long-term direction, and commits to the migration on a later roadmap."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly rejects the circulated optimistic timeline, calling it a 'political risk' and stating 'an estimate with \"no schedule margin\" is a project that will be late,' grounding its decision in the technically-derived estimate."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response discusses isolating 'product risk from infrastructure risk' and treats old-platform work as low-cost technical debt, but never names or weighs the risk of inconsistent customer experience arising from running notification traffic across two platforms simultaneously."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses optics, stating steps 'to ensure this decision doesn't look like I am simply ignoring company strategy' and proposing to frame the choice as tactical rather than a rejection of the strategic direction."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear decision ('extend the older platform for this specific launch') along with concrete next steps: communicate findings, frame the decision, and add the migration to a future roadmap quarter."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly frames the choice as 'a tactical move to protect the launch date' rather than a rejection of the newer platform's status as long-term direction, and commits to the migration on a later roadmap.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly rejects the circulated optimistic timeline, calling it a 'political risk' and stating 'an estimate with \\\"no schedule margin\\\" is a project that will be late,' grounding its decision in the technically-derived estimate.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"not_met\", \"justification\": \"The response discusses isolating 'product risk from infrastructure risk' and treats old-platform work as low-cost technical debt, but never names or weighs the risk of inconsistent customer experience arising from running notification traffic across two platforms simultaneously.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly addresses optics, stating steps 'to ensure this decision doesn't look like I am simply ignoring company strategy' and proposing to frame the choice as tactical rather than a rejection of the strategic direction.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear decision ('extend the older platform for this specific launch') along with concrete next steps: communicate findings, frame the decision, and add the migration to a future roadmap quarter.\"}\n  ]\n}"
+}

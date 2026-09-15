@@ -1,0 +1,52 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4__judge-claude-sonnet-5__eb7c9980",
+  "run_id": "one-event-two-fields__gpt-6-astra__zero-shot__t2__32745fe4",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:34:45.858542+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it would 'affirm the goal and challenge the mechanism: the research supports a unified experience, not overwriting an established field,' directly separating the validated goal from the reviewer's specific proposed mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly notes that 'millions of records and external integrations rely on the existing field's exact semantics' and that overwriting 'would silently break that contract, even if its name and type stayed the same,' weighing this against the simpler mental model."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response flags that two linked records would 'unnecessarily introduce duplicate-event handling and alert-deduplication problems' and specifies that 'Enrichment does not create a second incident or a duplicate initial alert.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to a specific structure: single event/lifecycle, fast pipeline populates the existing field, slower pipeline updates a clearly named new field, with explicit availability semantics, rather than restating options abstractly."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the reviewer's instinct, agreeing with the underlying goal ('affirm the goal') while explaining on the merits why the overwrite mechanism is inappropriate, and proposes validating the presentation with customers rather than dismissing the reviewer outright."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it would 'affirm the goal and challenge the mechanism: the research supports a unified experience, not overwriting an established field,' directly separating the validated goal from the reviewer's specific proposed mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It explicitly notes that 'millions of records and external integrations rely on the existing field's exact semantics' and that overwriting 'would silently break that contract, even if its name and type stayed the same,' weighing this against the simpler mental model.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response flags that two linked records would 'unnecessarily introduce duplicate-event handling and alert-deduplication problems' and specifies that 'Enrichment does not create a second incident or a duplicate initial alert.'\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"It commits to a specific structure: single event/lifecycle, fast pipeline populates the existing field, slower pipeline updates a clearly named new field, with explicit availability semantics, rather than restating options abstractly.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"The response directly addresses the reviewer's instinct, agreeing with the underlying goal ('affirm the goal') while explaining on the merits why the overwrite mechanism is inappropriate, and proposes validating the presentation with customers rather than dismissing the reviewer outright.\"}\n  ]\n}"
+}

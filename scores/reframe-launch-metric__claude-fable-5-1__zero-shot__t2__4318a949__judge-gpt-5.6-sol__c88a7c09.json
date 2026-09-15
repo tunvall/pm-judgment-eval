@@ -1,0 +1,52 @@
+{
+  "score_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949__judge-gpt-5.6-sol__c88a7c09",
+  "run_id": "reframe-launch-metric__claude-fable-5-1__zero-shot__t2__4318a949",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-15T15:44:01.759317+00:00",
+  "git_commit": "62b5df24db2d69986aeaa80bee87d6ec755cad99",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly cites that \u201ca prior launch cleared [mapping accuracy] and still got paused because the output wasn't useful,\u201d concluding that the proxy has already failed to predict customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly identifies the year of investment and existing infrastructure as sunk costs and argues they justify reusing the work diagnostically, not retaining the engineering metric as the primary target."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response squarely addresses the absence of ground truth, proposes several concrete sources and an interim expert-reconciled metric where outcomes lag, and recommends delaying launch if usable ground truth cannot be sourced in time."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It frames the primary metric as the team\u2019s optimization \u201ctarget\u201d and contrasts optimizing against the old proxy with having a customer signal to optimize against, showing that metric choice will direct future work rather than merely score the launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends customer-facing estimate error as the primary launch gate, retains mapping accuracy as a diagnostic and non-regression guardrail, and lays out concrete pre-launch and post-launch transition steps."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly cites that \u201ca prior launch cleared [mapping accuracy] and still got paused because the output wasn't useful,\u201d concluding that the proxy has already failed to predict customer value.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It explicitly identifies the year of investment and existing infrastructure as sunk costs and argues they justify reusing the work diagnostically, not retaining the engineering metric as the primary target.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response squarely addresses the absence of ground truth, proposes several concrete sources and an interim expert-reconciled metric where outcomes lag, and recommends delaying launch if usable ground truth cannot be sourced in time.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"met\",\"justification\":\"It frames the primary metric as the team\u2019s optimization \u201ctarget\u201d and contrasts optimizing against the old proxy with having a customer signal to optimize against, showing that metric choice will direct future work rather than merely score the launch.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends customer-facing estimate error as the primary launch gate, retains mapping accuracy as a diagnostic and non-regression guardrail, and lays out concrete pre-launch and post-launch transition steps.\"}]}"
+}
