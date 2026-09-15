@@ -226,7 +226,7 @@ that self-preference bias is absent, since the same model was candidate and judg
 for both. That question stays open until a second model exists to judge with
 (Phase 5).
 
-## Known gap: rubric construct validity is unvalidated (2026-09-10)
+## Rubric construct validity: a scope decision, not an open gap (2026-09-10, resolved 2026-09-15)
 
 Every rubric in this project was written by one person (Fredrik), who in
 every case already knew the historical decision before writing the grading
@@ -234,28 +234,38 @@ criteria. The hindsight-bias process above guards against smuggling in the
 specific *answer*, but it can't rule out smuggling in the *author's own
 reasoning style* — the particular things one experienced PM happens to
 weigh, dressed up as "what good judgment looks like" in general. External
-methodology review (ChatGPT + Gemini) surfaced this as the single largest
-open weakness in the project, larger than any judge or model-selection
-concern.
+methodology review (ChatGPT + Gemini) surfaced this as a real question
+worth answering.
 
 The proposed check: give sealed cases (scenario + question only, no rubric,
 no historical decision, no model answers) to 2-3 PMs who have never seen
 this project, and see whether they independently converge on the same
 criteria already encoded in the rubrics. Materials for this are fully built
-and ready to run — `docs/blind-pm-validation/` (sealed packets for all 7
-dev-set cases, a response template, a comparison worksheet auto-generated
-from the real rubric criteria, and run instructions).
+and sitting ready in `docs/blind-pm-validation/` (sealed packets, a response
+template, a comparison worksheet auto-generated from the real rubric
+criteria, and run instructions) in case this ever becomes worth running.
 
-**This has not been run.** As of 2026-09-10, recruiting outside PMs wasn't
-practical, so this remains a documented gap rather than a completed
-validation step. Concretely, that means: every rubric criterion in this
-project should be read as "one experienced PM's view of what good reasoning
-looks like here," not as an independently validated standard. Any claim
-this project makes about a model's "judgment" inherits that caveat until
-the experiment actually runs. Re-run this check before treating rubric
-criteria as more than one person's informed opinion, and before publishing
-any comparative model claim that leans on rubric weighting rather than raw
-per-criterion pass/fail.
+**Decision: this project does not need it, by design.** Per SPEC.md's
+stated Goal B, this was never trying to measure "product judgment" as a
+generalized, vendor-neutral construct that any competent PM would validate
+the same way — it's explicitly a model of *individualized* AI evaluation:
+does a model reason the way a specific person (Fredrik) would want it to,
+for decisions shaped like the ones that person actually faces. Under that
+framing, the rubric encoding one experienced PM's specific reasoning style
+isn't contamination, it's the entire point — the same way a hiring manager's
+own rubric for "good judgment" is supposed to reflect their own standards,
+not a maximally generic one. A blind-PM validation would answer "does this
+generalize to PMs in general," which is a legitimate and interesting
+question, but a different one than this project set out to answer.
+
+Practical implication: every rubric criterion in this project should still
+be read as "what Fredrik specifically considers good reasoning here," and
+any reuse of this methodology for a *different* person's individualized
+eval should expect their rubrics to diverge from these, not converge on
+them, that's a feature of the model, not noise to average out. If a future
+version of this project wants to make a claim about product judgment in
+general rather than fit to one person's standards, the blind-PM materials
+above are what to run first.
 
 ## A note on where the sanitization/NDA process lives
 

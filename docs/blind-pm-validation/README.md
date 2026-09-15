@@ -12,9 +12,19 @@ like" in general.
 
 This experiment checks that directly: do independent PMs, who've never seen
 the rubric, the historical decision, or any model's answer, converge on
-roughly the same criteria on their own? If yes, the rubrics have real
-construct validity. If no, that's not a failure — it's a finding, and it
-changes what the project can honestly claim to measure.
+roughly the same criteria on their own? If yes, the rubrics generalize
+beyond one person's standards. If no, that's not a failure — it's a
+finding, and it changes what the project can honestly claim to measure.
+
+**Not required for this project's actual goal** (see `docs/methodology.md`,
+"Rubric construct validity: a scope decision, not an open gap"). This
+project is explicitly an *individualized* eval — does a model reason the
+way Fredrik specifically wants it to, not a generalized, vendor-neutral
+"product judgment" standard. Rubrics reflecting one person's reasoning
+style is the design, not contamination of it. This experiment answers a
+different, also-legitimate question (does this generalize to PMs in
+general) — worth running if that question ever becomes relevant, not a
+prerequisite for anything this project currently claims.
 
 ## What's in this folder
 
