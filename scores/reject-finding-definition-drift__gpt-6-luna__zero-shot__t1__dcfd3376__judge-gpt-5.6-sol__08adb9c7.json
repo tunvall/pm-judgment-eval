@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376__judge-gpt-5.6-sol__08adb9c7",
+  "run_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:27:48.109683+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes discontinuing one product from leaving the broader platform and states that the product-level result cannot support a platform-departure claim."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than relying on a footnote, it proposes prominently rescoping the claim in the main text and removing the finding entirely if the argument specifically requires platform departure. It also ties this approach to the fact that knowledgeable reviewers may recognize the underlying data definition."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response accepts the possibility of removing a useful finding and filling the gap with a new analysis or an open question because overstating it \u201ccould undermine trust in the broader strategy,\u201d especially among reviewers familiar with the data."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not treat the completed analysis or drafted language as a reason to retain the inflated claim; it recommends correcting or removing it before review."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives concrete document actions: verify the definition, relabel the result as product-level if still relevant, remove it if platform departure is essential, and run a platform-wide analysis if reliable data can be checked in time."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response clearly distinguishes discontinuing one product from leaving the broader platform and states that the product-level result cannot support a platform-departure claim.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"Rather than relying on a footnote, it proposes prominently rescoping the claim in the main text and removing the finding entirely if the argument specifically requires platform departure. It also ties this approach to the fact that knowledgeable reviewers may recognize the underlying data definition.\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response accepts the possibility of removing a useful finding and filling the gap with a new analysis or an open question because overstating it \u201ccould undermine trust in the broader strategy,\u201d especially among reviewers familiar with the data.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It does not treat the completed analysis or drafted language as a reason to retain the inflated claim; it recommends correcting or removing it before review.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives concrete document actions: verify the definition, relabel the result as product-level if still relevant, remove it if platform departure is essential, and run a platform-wide analysis if reliable data can be checked in time.\"}]}",
+  "input_tokens": 1382,
+  "output_tokens": 473
+}

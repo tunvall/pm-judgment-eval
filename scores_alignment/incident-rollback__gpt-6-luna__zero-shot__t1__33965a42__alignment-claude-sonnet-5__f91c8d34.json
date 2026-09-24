@@ -1,0 +1,17 @@
+{
+  "score_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42__alignment-claude-sonnet-5__f91c8d34",
+  "run_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:45:50.533429+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to contain the incident by disabling/rolling back the new integration path immediately rather than waiting days for a full fix, matching the historical full rollback decision. Both prioritize stopping unrelated customer harm over honoring the public launch commitment, followed by transparent customer communication.",
+  "raw_judge_response": "{\"alignment\": \"aligned\", \"justification\": \"The candidate chose to contain the incident by disabling/rolling back the new integration path immediately rather than waiting days for a full fix, matching the historical full rollback decision. Both prioritize stopping unrelated customer harm over honoring the public launch commitment, followed by transparent customer communication.\"}",
+  "input_tokens": 1323,
+  "output_tokens": 113
+}

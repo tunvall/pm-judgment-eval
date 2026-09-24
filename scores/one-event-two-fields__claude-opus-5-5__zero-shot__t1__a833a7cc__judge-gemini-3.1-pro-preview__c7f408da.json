@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc__judge-gemini-3.1-pro-preview__c7f408da",
+  "run_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:35:01.359447+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly notes that they would agree with the reviewer's goal while pointing out that \"the research doesn't specify a mechanism.\" They separate the goal of a unified view from the storage contract mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response rejects Option One because overwriting the field causes \"silent semantic drift\" where \"downstream consumers get no error\" but silently start computing on different data."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate correctly identifies that Option Two \"creates duplicate alerts unless every consumer correctly dedupes via the pointer,\" and rejects it for violating the customer research directly."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits clearly to Option Three (one event, two fields) and provides specific implementation details, such as naming the new field `precise_estimate` and defining explicit null states."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate validates the reviewer's instinct for simplicity (\"The reviewer is right about the goal\") and addresses it constructively by proposing to deliver that simplicity in the presentation layer (UI/API) instead of the data model."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly notes that they would agree with the reviewer's goal while pointing out that \\\"the research doesn't specify a mechanism.\\\" They separate the goal of a unified view from the storage contract mechanism.\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects Option One because overwriting the field causes \\\"silent semantic drift\\\" where \\\"downstream consumers get no error\\\" but silently start computing on different data.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate correctly identifies that Option Two \\\"creates duplicate alerts unless every consumer correctly dedupes via the pointer,\\\" and rejects it for violating the customer research directly.\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response commits clearly to Option Three (one event, two fields) and provides specific implementation details, such as naming the new field `precise_estimate` and defining explicit null states.\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate validates the reviewer's instinct for simplicity (\\\"The reviewer is right about the goal\\\") and addresses it constructively by proposing to deliver that simplicity in the presentation layer (UI/API) instead of the data model.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1933,
+  "output_tokens": 397
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6__judge-gemini-3.1-pro-preview__3d1b8edd",
+  "run_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:38:11.145068+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly states that \"The newer platform is the right destination, but making this launch depend on a full migration would put the date at risk,\" successfully separating the strategic direction from the timeline constraints of the current launch."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate rejects the optimistic timeline, noting it \"assumes away real differences,\" and bases their recommendation on the fact that \"The technically derived estimate leaves no schedule margin.\""
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response mentions the risk of creating a permanent technical dependency, but fails to identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate addresses the optics of going against the company-wide strategy by explicitly stating they would \"make that trade-off visible rather than describe the extension as a change in platform strategy\" and review the risks with stakeholders."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, specific recommendation to \"extend the older platform for this launch\" while planning the full migration as a \"separate, explicitly owned effort.\""
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly states that \\\"The newer platform is the right destination, but making this launch depend on a full migration would put the date at risk,\\\" successfully separating the strategic direction from the timeline constraints of the current launch.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate rejects the optimistic timeline, noting it \\\"assumes away real differences,\\\" and bases their recommendation on the fact that \\\"The technically derived estimate leaves no schedule margin.\\\"\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response mentions the risk of creating a permanent technical dependency, but fails to identify or weigh the risk of an inconsistent customer experience caused by mismatched platform coverage.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate addresses the optics of going against the company-wide strategy by explicitly stating they would \\\"make that trade-off visible rather than describe the extension as a change in platform strategy\\\" and review the risks with stakeholders.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response gives a clear, specific recommendation to \\\"extend the older platform for this launch\\\" while planning the full migration as a \\\"separate, explicitly owned effort.\\\"\"\n    }\n  ]\n}",
+  "input_tokens": 1367,
+  "output_tokens": 403
+}

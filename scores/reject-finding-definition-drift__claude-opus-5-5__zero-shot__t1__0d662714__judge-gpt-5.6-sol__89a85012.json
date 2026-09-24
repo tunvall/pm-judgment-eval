@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714__judge-gpt-5.6-sol__89a85012",
+  "run_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:25:56.770467+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that the mismatch \u201cis not a wording nuance\u201d and explains that product discontinuation may reflect migration within the platform rather than lost revenue or a lost customer relationship."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not treat a footnote as an automatic cure: it requires accurate relabeling, explicitly says the finding does not establish platform loss, and prioritizes a re-cut using true platform-departure criteria. It also explains that knowledgeable reviewers could otherwise interpret the mismatch as carelessness or spin."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly weighs the weaker argument against credibility damage, saying that being caught could make \u201cevery other number in the document\u201d and the PM\u2019s judgment suspect, while concluding that a weaker document that survives scrutiny is preferable."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Although the finding is already drafted, the response is willing to cut or demote it if the corrected analysis weakens or eliminates the result. Its reason for retaining a narrowed version is the signal\u2019s possible product-level value, not the work already invested."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete plan to re-run the analysis across fully departed, product-churned, and retained accounts, then specifies what should go into the document under each possible result. It also proposes narrowing the recommendation or rebuilding the argument if the corrected evidence is insufficient."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response explicitly states that the mismatch \u201cis not a wording nuance\u201d and explains that product discontinuation may reflect migration within the platform rather than lost revenue or a lost customer relationship.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"It does not treat a footnote as an automatic cure: it requires accurate relabeling, explicitly says the finding does not establish platform loss, and prioritizes a re-cut using true platform-departure criteria. It also explains that knowledgeable reviewers could otherwise interpret the mismatch as carelessness or spin.\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response directly weighs the weaker argument against credibility damage, saying that being caught could make \u201cevery other number in the document\u201d and the PM\u2019s judgment suspect, while concluding that a weaker document that survives scrutiny is preferable.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"Although the finding is already drafted, the response is willing to cut or demote it if the corrected analysis weakens or eliminates the result. Its reason for retaining a narrowed version is the signal\u2019s possible product-level value, not the work already invested.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete plan to re-run the analysis across fully departed, product-churned, and retained accounts, then specifies what should go into the document under each possible result. It also proposes narrowing the recommendation or rebuilding the argument if the corrected evidence is insufficient.\"}]}",
+  "input_tokens": 2098,
+  "output_tokens": 436
+}

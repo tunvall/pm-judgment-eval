@@ -1,0 +1,17 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76__alignment-claude-sonnet-5__954e635a",
+  "run_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:20:34.885087+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's decision to reframe the product around precision/false-positive reduction while keeping the existing architecture and revising the go-to-market narrative matches the historical decision closely, though the candidate adds a conditional validation step before committing.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's decision to reframe the product around precision/false-positive reduction while keeping the existing architecture and revising the go-to-market narrative matches the historical decision closely, though the candidate adds a conditional validation step before committing.\"\n}",
+  "input_tokens": 1662,
+  "output_tokens": 98
+}

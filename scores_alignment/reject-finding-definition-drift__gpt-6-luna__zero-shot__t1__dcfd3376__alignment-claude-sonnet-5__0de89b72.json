@@ -1,0 +1,17 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376__alignment-claude-sonnet-5__0de89b72",
+  "run_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:28:18.913811+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's primary recommendation is to reframe the finding with an accurate, narrower product-level caveat rather than remove it outright, only removing it as a conditional fallback if the argument strictly requires platform-departure framing. The historical decision was to kill the finding entirely and rebuild the section with other data, which is a stronger action than the candidate's default caveat-and-keep approach.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's primary recommendation is to reframe the finding with an accurate, narrower product-level caveat rather than remove it outright, only removing it as a conditional fallback if the argument strictly requires platform-departure framing. The historical decision was to kill the finding entirely and rebuild the section with other data, which is a stronger action than the candidate's default caveat-and-keep approach.\"\n}",
+  "input_tokens": 1475,
+  "output_tokens": 282
+}

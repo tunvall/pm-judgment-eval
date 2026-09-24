@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3__judge-gemini-3.1-pro-preview__8248cd36",
+  "run_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:31:51.944324+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states they will treat the signal as binding on the problem but not the solution size, overriding the literal request while still solving the customer's pain. They effectively weigh the cost of a multi-quarter delay against the focus group's demands."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes leveraging the existing, undocumented suppress capability the first step of their pre-launch plan. They correctly identify that making it findable directly addresses the specific customer complaint about having no way to stop daily repeat alerts."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly separates the need from the solution by stating that the 'need behind the request is narrower than the full framework.' They reason that exposing the simple suppress feature and setting conservative defaults meets this underlying need without requiring a multi-quarter build."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate acknowledges the fast-follow approach is not risk-free by proposing to gate the rollout to control noise and testing the waters first. They also establish post-launch kill criteria if metrics show 'volume or complaints exceeding pre-agreed thresholds,' showing they recognize the risk of the interim solution proving insufficient."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete recommendation to launch on schedule with a 'minimum credible alert-management floor' rather than blocking on full configurability. It outlines a clear, actionable plan broken down into pre-launch, launch, and post-launch steps."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states they will treat the signal as binding on the problem but not the solution size, overriding the literal request while still solving the customer's pain. They effectively weigh the cost of a multi-quarter delay against the focus group's demands.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes leveraging the existing, undocumented suppress capability the first step of their pre-launch plan. They correctly identify that making it findable directly addresses the specific customer complaint about having no way to stop daily repeat alerts.\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly separates the need from the solution by stating that the 'need behind the request is narrower than the full framework.' They reason that exposing the simple suppress feature and setting conservative defaults meets this underlying need without requiring a multi-quarter build.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate acknowledges the fast-follow approach is not risk-free by proposing to gate the rollout to control noise and testing the waters first. They also establish post-launch kill criteria if metrics show 'volume or complaints exceeding pre-agreed thresholds,' showing they recognize the risk of the interim solution proving insufficient.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete recommendation to launch on schedule with a 'minimum credible alert-management floor' rather than blocking on full configurability. It outlines a clear, actionable plan broken down into pre-launch, launch, and post-launch steps.\"\n    }\n  ]\n}",
+  "input_tokens": 2045,
+  "output_tokens": 464
+}

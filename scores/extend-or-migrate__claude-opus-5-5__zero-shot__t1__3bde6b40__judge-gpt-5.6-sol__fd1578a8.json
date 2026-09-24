@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__claude-opus-5-5__zero-shot__t1__3bde6b40__judge-gpt-5.6-sol__fd1578a8",
+  "run_id": "extend-or-migrate__claude-opus-5-5__zero-shot__t1__3bde6b40",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:37:14.173024+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the decisions: \u201cThe newer platform is the right destination\u201d but \u201cthe wrong critical path for this launch date,\u201d while reaffirming commitment to the long-term migration."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It relies on the technically derived estimate of roughly twice the circulated timeline and argues that a plan with \u201czero margin\u201d is not credible, even proposing to correct the optimistic estimate directly."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response warns of a \u201crushed, half-migrated integration\u201d and possible feature loss or behavioral differences, but it does not clearly analyze the specific customer-experience inconsistency that can arise when different products remain on different platforms during a staged migration."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly addresses the likely perception of resistance by framing the choice as \u201csupporting the strategy, not resisting it,\u201d and supplies a concrete leadership message reaffirming commitment to migration."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a specific recommendation to extend the old platform for the launch while making migration a separately owned, scheduled project, with an abstraction layer, scoped workstreams, and limits on further legacy expansion."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the decisions: \u201cThe newer platform is the right destination\u201d but \u201cthe wrong critical path for this launch date,\u201d while reaffirming commitment to the long-term migration.\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"It relies on the technically derived estimate of roughly twice the circulated timeline and argues that a plan with \u201czero margin\u201d is not credible, even proposing to correct the optimistic estimate directly.\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response warns of a \u201crushed, half-migrated integration\u201d and possible feature loss or behavioral differences, but it does not clearly analyze the specific customer-experience inconsistency that can arise when different products remain on different platforms during a staged migration.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"It directly addresses the likely perception of resistance by framing the choice as \u201csupporting the strategy, not resisting it,\u201d and supplies a concrete leadership message reaffirming commitment to migration.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It gives a specific recommendation to extend the old platform for the launch while making migration a separately owned, scheduled project, with an abstraction layer, scoped workstreams, and limits on further legacy expansion.\"\n    }\n  ]\n}",
+  "input_tokens": 1992,
+  "output_tokens": 658
+}

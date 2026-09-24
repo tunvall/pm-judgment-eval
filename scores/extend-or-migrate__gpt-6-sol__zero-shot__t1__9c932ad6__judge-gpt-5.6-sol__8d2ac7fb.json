@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6__judge-gpt-5.6-sol__8d2ac7fb",
+  "run_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:38:03.407404+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the newer platform is \u201cthe right destination\u201d while arguing that this launch should not depend on the full migration, clearly separating strategic direction from launch timing."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It rejects the optimistic timeline because it \u201cassumes away\u201d specific technical differences and bases the recommendation on the technically derived estimate that leaves no schedule margin."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response notes the danger of a temporary old-platform dependency becoming permanent, but it does not identify or weigh the inconsistent customer experience created by having products or tiers on different notification platforms."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It addresses the likely perception of resisting strategy by proposing to make the trade-off visible and explicitly frame the extension as a launch decision, \u201crather than describe the extension as a change in platform strategy.\u201d"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete recommendation to extend the older platform for this launch, limit the extension to the tier\u2019s needs, and assign an owner, scope, and target plan for the subsequent migration and retirement."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the newer platform is \u201cthe right destination\u201d while arguing that this launch should not depend on the full migration, clearly separating strategic direction from launch timing.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It rejects the optimistic timeline because it \u201cassumes away\u201d specific technical differences and bases the recommendation on the technically derived estimate that leaves no schedule margin.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"The response notes the danger of a temporary old-platform dependency becoming permanent, but it does not identify or weigh the inconsistent customer experience created by having products or tiers on different notification platforms.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"It addresses the likely perception of resisting strategy by proposing to make the trade-off visible and explicitly frame the extension as a launch decision, \u201crather than describe the extension as a change in platform strategy.\u201d\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete recommendation to extend the older platform for this launch, limit the extension to the tier\u2019s needs, and assign an owner, scope, and target plan for the subsequent migration and retirement.\"}]}",
+  "input_tokens": 1315,
+  "output_tokens": 453
+}

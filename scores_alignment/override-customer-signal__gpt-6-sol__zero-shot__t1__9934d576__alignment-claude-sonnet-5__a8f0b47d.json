@@ -1,0 +1,17 @@
+{
+  "score_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576__alignment-claude-sonnet-5__a8f0b47d",
+  "run_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:33:08.115293+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate takes many of the same concrete actions as history (surface the undocumented suppression control, apply the threshold mitigation, and use a phased/opt-in rollout), but explicitly rejects labeling this a 'fast-follow' and instead frames it as a conditional gate requiring customer validation before launching broadly. The historical decision was a clear, upfront classification as fast-follow with an early-access group to catch friction, whereas the candidate keeps the blocker/fast-follow question open pending testing.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate takes many of the same concrete actions as history (surface the undocumented suppression control, apply the threshold mitigation, and use a phased/opt-in rollout), but explicitly rejects labeling this a 'fast-follow' and instead frames it as a conditional gate requiring customer validation before launching broadly. The historical decision was a clear, upfront classification as fast-follow with an early-access group to catch friction, whereas the candidate keeps the blocker/fast-follow question open pending testing.\"\n}",
+  "input_tokens": 1558,
+  "output_tokens": 465
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9",
+  "timestamp": "2026-09-24T12:40:44.138437+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 399,
+  "output_tokens": 396,
+  "latency_ms": 11355,
+  "prompt": "# A naming decision keeps getting reopened and never lands\n\nYou are a product manager. The customer-facing name for a new fast-turnaround\nrisk score at your company has been reopened at least three times over the life\nof the product, and no name has survived past the review cycle in which it was\nchosen.\n\nRound one settled on language describing the score as an early estimate;\nreviewers later objected that this made the score sound experimental without\nexplaining why the number differed from the fully-processed version. Round two\ntried distinguishing an estimated score from a final one; a senior design\nreviewer objected that this fragmented terminology already used consistently\nelsewhere in the product family. Round three tried distinguishing the score by\nits underlying processing method; this was immediately re-litigated because\nevery version of the score technically qualified under that same description.\n\nYou are now heading into a fourth round. Every prior round had customer research\nshowing a different way the current candidate name confused people, and no\ncandidate has ever been unambiguously better than the alternatives it replaced.\nThe underlying API field name was locked early on for backward-compatibility\nreasons and can no longer change regardless of what customer-facing name is\nchosen. The naming also needs to stay consistent across a family of related\nproducts, which adds reviewers and constraints beyond just this one team.\n\nHow do you approach this fourth round, and why?\n\nConstraints:\n- The underlying API field name is already locked and cannot change.\n- The naming must stay consistent across a family of related products.\n- Three previous rounds have each been overturned in the following review cycle.",
+  "response": "I would make the fourth round a decision about **how the score is explained across the product family**, not another contest to find a perfect standalone name. The previous rounds show that each label fixes one misunderstanding while creating another.\n\nFirst, I\u2019d bring the product-family reviewers, design, and customer-facing teams together to agree on what customers must understand: what this score represents, how it relates to the fully processed score, and what its name must *not* imply. I\u2019d document the known objections to the first three approaches so they are constraints, not surprises at the next review.\n\nThen I\u2019d test a small number of complete customer-facing treatments\u2014name **plus** any short description, UI context, or documentation needed to make the distinction clear. I\u2019d judge them against customer comprehension and consistency across the family, not whether any reviewer finds a word imperfect. The locked API field would remain unchanged, with its mapping to the customer-facing term documented.\n\nBefore choosing, I\u2019d agree with the cross-product decision-makers on who approves the choice, when the decision closes, and what evidence would justify reopening it\u2014for example, a material customer misunderstanding, not a newly expressed preference. I\u2019d record the chosen trade-offs and ship on a set date.\n\nThe goal is not to declare the fourth name unambiguously best; the evidence so far suggests there may be no such name. It is to choose a sufficiently clear, consistent treatment, make its limitations explicit, and stop resetting the decision without new evidence."
+}

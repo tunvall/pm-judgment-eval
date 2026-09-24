@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d__judge-claude-sonnet-5__86451bbe",
+  "run_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:41:34.573812+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses that 'each round has allowed each round to optimize for one concern, then be overturned when a different concern appears,' framing the recurring failure itself as the problem rather than treating round four as an isolated naming task."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a decision rule and single accountable decision-maker chosen 'before seeing results,' explicitly rejecting the wait for a 'perfect' or 'unambiguously better' name, and adds a freeze with a narrow reopening rule to stop future re-litigation."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The narrow reopening rule ('material new evidence... not simply a new preference') implicitly separates legitimate from frivolous objections, but the response doesn't explicitly evaluate whether the three past objections were genuinely new concerns versus diminishing-returns re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly states 'the locked API field remains unchanged' and calls for documenting the mapping between that field and the customer-facing label, rather than proposing anything requiring backend changes."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens by rejecting the prior pattern outright\u2014'I would not start the fourth round by generating another list of names'\u2014and instead front-loads family alignment and comprehension testing before any candidate is chosen, explicitly distinguishing this approach from the three ad hoc attempts."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly diagnoses that 'each round has allowed each round to optimize for one concern, then be overturned when a different concern appears,' framing the recurring failure itself as the problem rather than treating round four as an isolated naming task.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes a decision rule and single accountable decision-maker chosen 'before seeing results,' explicitly rejecting the wait for a 'perfect' or 'unambiguously better' name, and adds a freeze with a narrow reopening rule to stop future re-litigation.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"partially_met\", \"justification\": \"The narrow reopening rule ('material new evidence... not simply a new preference') implicitly separates legitimate from frivolous objections, but the response doesn't explicitly evaluate whether the three past objections were genuinely new concerns versus diminishing-returns re-litigation.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'the locked API field remains unchanged' and calls for documenting the mapping between that field and the customer-facing label, rather than proposing anything requiring backend changes.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response opens by rejecting the prior pattern outright\u2014'I would not start the fourth round by generating another list of names'\u2014and instead front-loads family alignment and comprehension testing before any candidate is chosen, explicitly distinguishing this approach from the three ad hoc attempts.\"}\n  ]\n}",
+  "input_tokens": 2359,
+  "output_tokens": 1245
+}

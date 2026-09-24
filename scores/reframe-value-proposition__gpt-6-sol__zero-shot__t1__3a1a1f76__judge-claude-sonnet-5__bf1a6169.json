@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76__judge-claude-sonnet-5__bf1a6169",
+  "run_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:19:41.723074+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response treats the complaint data as 'a different, costly problem' alongside the roadmap change, but never explicitly states that this evidence alone would have justified reconsideration even absent the engineering announcement."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates testing whether 'our architecture can solve that problem' from revising 'the approved go-to-market narrative,' treating them as distinct questions rather than assuming a flawed narrative invalidates the underlying work."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It states directly that 'The year of investment and the approved narrative are reasons to manage the transition carefully, not reasons to defend the old thesis,' explicitly rejecting sunk-cost justification."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response incorporates the peer's precision argument into a concrete evaluation plan and explicitly says 'I would also acknowledge that my peer identified this risk earlier and bring them into the reassessment.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete evidence-based plan: test false positives/fraud caught/review-queue impact, then either reframe the product around precision or 'stop or fold the work into the primary pipeline' if improvement isn't demonstrated."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"partially_met\", \"justification\": \"The response treats the complaint data as 'a different, costly problem' alongside the roadmap change, but never explicitly states that this evidence alone would have justified reconsideration even absent the engineering announcement.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates testing whether 'our architecture can solve that problem' from revising 'the approved go-to-market narrative,' treating them as distinct questions rather than assuming a flawed narrative invalidates the underlying work.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"It states directly that 'The year of investment and the approved narrative are reasons to manage the transition carefully, not reasons to defend the old thesis,' explicitly rejecting sunk-cost justification.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"The response incorporates the peer's precision argument into a concrete evaluation plan and explicitly says 'I would also acknowledge that my peer identified this risk earlier and bring them into the reassessment.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete evidence-based plan: test false positives/fraud caught/review-queue impact, then either reframe the product around precision or 'stop or fold the work into the primary pipeline' if improvement isn't demonstrated.\"}\n  ]\n}",
+  "input_tokens": 2106,
+  "output_tokens": 1334
+}

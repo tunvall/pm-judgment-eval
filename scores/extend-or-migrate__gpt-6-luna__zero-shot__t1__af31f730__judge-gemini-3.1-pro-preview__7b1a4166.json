@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730__judge-gemini-3.1-pro-preview__7b1a4166",
+  "run_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:38:55.495720+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two concepts, stating that 'The newer platform remains the right destination' while arguing that the immediate 'launch decision should use the technically grounded estimate' and be treated as a 'bridge, not a change in direction.'"
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate directly relies on the pessimistic estimate, explicitly rejecting the circulated one by stating the launch should use the 'technically grounded estimate, not the optimistic one' because the real mismatches make it 'roughly twice as long.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses entirely on schedule risk, technical mismatches, and retirement difficulty; it never identifies or weighs the risk that a partial migration creates an inconsistent customer experience across products."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate proactively manages the optics of defying company strategy by explicitly framing the move as 'a bridge, not a change in direction' and outlining deliberate tradeoffs 'if leadership wants the launch to use the newer platform.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a definitive and clear recommendation to 'make the small, bounded extension to the older platform for this launch' and follows up with concrete next steps to manage the eventual migration."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_direction_from_this_launchs_timeline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly separates the two concepts, stating that 'The newer platform remains the right destination' while arguing that the immediate 'launch decision should use the technically grounded estimate' and be treated as a 'bridge, not a change in direction.'\"\n    },\n    {\n      \"id\": \"uses_own_realistic_estimate_over_circulating_one\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly relies on the pessimistic estimate, explicitly rejecting the circulated one by stating the launch should use the 'technically grounded estimate, not the optimistic one' because the real mismatches make it 'roughly twice as long.'\"\n    },\n    {\n      \"id\": \"identifies_risk_of_partial_migration\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses entirely on schedule risk, technical mismatches, and retirement difficulty; it never identifies or weighs the risk that a partial migration creates an inconsistent customer experience across products.\"\n    },\n    {\n      \"id\": \"anticipates_pushback_and_addresses_it\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate proactively manages the optics of defying company strategy by explicitly framing the move as 'a bridge, not a change in direction' and outlining deliberate tradeoffs 'if leadership wants the launch to use the newer platform.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a definitive and clear recommendation to 'make the small, bounded extension to the older platform for this launch' and follows up with concrete next steps to manage the eventual migration.\"\n    }\n  ]\n}",
+  "input_tokens": 1479,
+  "output_tokens": 424
+}

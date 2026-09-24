@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb__judge-claude-sonnet-5__f8c02918",
+  "run_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:44.826853+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the lack of urgency to the absence of a hard deadline: 'A forcing function is useful when slippage causes real damage. The timeline is flexible, so the gain from speeding things up is small.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names a concrete relationship cost: public callout risks the peer concluding 'you'll embarrass them when they're struggling,' creating 'a lasting trust cost with a peer, where you have no authority and depend on goodwill.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses and rejects the 'public commitment justifies public correction' logic, arguing the correction 'should come from them, on their terms, not from me calling them out.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a private DM with a drafted message text, plus a concrete graduated escalation plan (second private nudge, neutral team forum framing, then talking to a prioritizer) if slippage continues."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the lack of urgency to the absence of a hard deadline: 'A forcing function is useful when slippage causes real damage. The timeline is flexible, so the gain from speeding things up is small.'\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names a concrete relationship cost: public callout risks the peer concluding 'you'll embarrass them when they're struggling,' creating 'a lasting trust cost with a peer, where you have no authority and depend on goodwill.'\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response directly addresses and rejects the 'public commitment justifies public correction' logic, arguing the correction 'should come from them, on their terms, not from me calling them out.'\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The response commits to a private DM with a drafted message text, plus a concrete graduated escalation plan (second private nudge, neutral team forum framing, then talking to a prioritizer) if slippage continues.\"}\n  ]\n}",
+  "input_tokens": 1987,
+  "output_tokens": 707
+}

@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb__judge-gpt-5.6-sol__e7d5c5e0",
+  "run_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:52.607829+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that there is \u201cNo hard deadline\u201d and argues that, because the timeline is flexible, the benefit of accelerating the work is small and a slower private approach is acceptable."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies public pressure as carrying a \u201clasting trust cost,\u201d including the risk that the peer feels embarrassed while struggling, and directly weighs that against the limited benefit of faster delivery."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects public commitment as sufficient grounds for public pressure, instead saying the public correction should come from the peer \u201con their terms, not from me calling them out.\u201d"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends a private message framed around replanning, supplies concrete draft wording, offers help and scope reduction, and outlines a graduated follow-up path if the delay continues."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly notes that there is \u201cNo hard deadline\u201d and argues that, because the timeline is flexible, the benefit of accelerating the work is small and a slower private approach is acceptable.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It identifies public pressure as carrying a \u201clasting trust cost,\u201d including the risk that the peer feels embarrassed while struggling, and directly weighs that against the limited benefit of faster delivery.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"The response rejects public commitment as sufficient grounds for public pressure, instead saying the public correction should come from the peer \u201con their terms, not from me calling them out.\u201d\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends a private message framed around replanning, supplies concrete draft wording, offers help and scope reduction, and outlines a graduated follow-up path if the delay continues.\"}]}",
+  "input_tokens": 1328,
+  "output_tokens": 226
+}

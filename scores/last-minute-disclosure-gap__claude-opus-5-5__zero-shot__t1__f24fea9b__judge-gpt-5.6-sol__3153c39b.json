@@ -1,0 +1,54 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b__judge-gpt-5.6-sol__3153c39b",
+  "run_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:28:54.261539+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states that an undisclosed charge creates refunds, support, regulatory, and trust risks, and that \"It was rare\" does not help affected customers."
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It proposes scenario-specific language\u2014\"In [scenario X]\"\u2014and an in-product notice shown when the paid path triggers, rather than implying that the common free path incurs charges."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response rejects both shipping as-is and reflexively delaying, balancing the committed date and valid free path against the customer and legal consequences of a known surprise charge."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Before considering a full delay, it proposes a targeted disclosure reviewed as a limited delta or, alternatively, feature-flagging only the paid scenario while launching the free path."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides a concrete 24-hour plan: draft precise language, add it to relevant surfaces, seek focused legal approval, gate the paid path if needed, escalate with an end-of-day decision deadline, and delay only if neither mitigation is feasible."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_dismiss_minority_path_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly states that an undisclosed charge creates refunds, support, regulatory, and trust risks, and that \\\"It was rare\\\" does not help affected customers.\"\n    },\n    {\n      \"id\": \"avoids_overcorrecting_into_inaccurate_disclosure\",\n      \"verdict\": \"met\",\n      \"justification\": \"It proposes scenario-specific language\u2014\\\"In [scenario X]\\\"\u2014and an in-product notice shown when the paid path triggers, rather than implying that the common free path incurs charges.\"\n    },\n    {\n      \"id\": \"weighs_launch_delay_against_disclosure_gap\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects both shipping as-is and reflexively delaying, balancing the committed date and valid free path against the customer and legal consequences of a known surprise charge.\"\n    },\n    {\n      \"id\": \"considers_narrowly_scoped_fix_before_binary_choice\",\n      \"verdict\": \"met\",\n      \"justification\": \"Before considering a full delay, it proposes a targeted disclosure reviewed as a limited delta or, alternatively, feature-flagging only the paid scenario while launching the free path.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It provides a concrete 24-hour plan: draft precise language, add it to relevant surfaces, seek focused legal approval, gate the paid path if needed, escalate with an end-of-day decision deadline, and delay only if neither mitigation is feasible.\"\n    }\n  ]\n}",
+  "input_tokens": 1735,
+  "output_tokens": 453
+}

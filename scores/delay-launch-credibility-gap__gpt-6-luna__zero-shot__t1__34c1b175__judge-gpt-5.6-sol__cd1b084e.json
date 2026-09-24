@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175__judge-gpt-5.6-sol__cd1b084e",
+  "run_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:09.224226+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs that a missed conference launch is \u201cpainful\u201d against the greater risk of damaging trust, grounding the credibility concern in the workshop\u2019s top-ranked accuracy question and the commentator\u2019s likely criticism rather than treating it abstractly."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the director\u2019s prior rejection as substantive organizational evidence, noting that the director \u201calready declined a narrower version for the same reason\u201d and requiring any bounded release to be brought back for approval."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response recommends pausing the launch despite the commitment and converting the conference appearance into a candid progress update, explicitly concluding that the credibility gap outweighs the cost of missing the launch."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It evaluates the current narrower capability and finds it inadequate because it covers only a small fraction with slightly above 70% precision, while leaving open a \u201cgenuinely useful, bounded release\u201d if it can satisfy explicit accuracy and coverage gates."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete plan: inform leadership immediately, replace the launch with a transparent progress update, establish validation and coverage gates with engineering and practitioners, and reassess on a defined schedule before seeking approval."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs that a missed conference launch is \u201cpainful\u201d against the greater risk of damaging trust, grounding the credibility concern in the workshop\u2019s top-ranked accuracy question and the commentator\u2019s likely criticism rather than treating it abstractly.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"It treats the director\u2019s prior rejection as substantive organizational evidence, noting that the director \u201calready declined a narrower version for the same reason\u201d and requiring any bounded release to be brought back for approval.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response recommends pausing the launch despite the commitment and converting the conference appearance into a candid progress update, explicitly concluding that the credibility gap outweighs the cost of missing the launch.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"It evaluates the current narrower capability and finds it inadequate because it covers only a small fraction with slightly above 70% precision, while leaving open a \u201cgenuinely useful, bounded release\u201d if it can satisfy explicit accuracy and coverage gates.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete plan: inform leadership immediately, replace the launch with a transparent progress update, establish validation and coverage gates with engineering and practitioners, and reassess on a defined schedule before seeking approval.\"\n    }\n  ]\n}",
+  "input_tokens": 1462,
+  "output_tokens": 695
+}

@@ -1,0 +1,17 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9__alignment-claude-sonnet-5__72260cb9",
+  "run_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:41:12.974342+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome shows the naming process continued to churn through a fourth round with no closure mechanism established, while the candidate proposes a structural fix (fixed decision rights, explicit reopening criteria, a firm ship date) intended to actually stop the cycle rather than repeat it.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome shows the naming process continued to churn through a fourth round with no closure mechanism established, while the candidate proposes a structural fix (fixed decision rights, explicit reopening criteria, a firm ship date) intended to actually stop the cycle rather than repeat it.\"\n}\n```",
+  "input_tokens": 1537,
+  "output_tokens": 120
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3__judge-gemini-3.1-pro-preview__c7c61e74",
+  "run_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:34:03.290265+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response acknowledges the customer signal but refuses to uncritically defer to it, choosing to weigh the blocker against the multi-quarter timeline and noting, 'This respects the explicit signal without committing to a multi-quarter platform before launch.'"
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly incorporates the undocumented feature into its strategy, stating it would start by 'investigating the existing suppress-from-notification capability and making it genuinely discoverable and easy to use.'"
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate separates the core need from the proposed solution, recommending to 'deliver and validate the minimum usable alert controls' rather than 'block the launch on the full alert-management framework.'"
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response rejects the fast-follow approach, it does not explicitly name the residual risk that a fast-follow could look wrong in hindsight if adoption is high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete, actionable plan to surface the existing feature, pair it with threshold guidance, and test this 'minimum usable' version with the focus group before deciding on general availability."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges the customer signal but refuses to uncritically defer to it, choosing to weigh the blocker against the multi-quarter timeline and noting, 'This respects the explicit signal without committing to a multi-quarter platform before launch.'\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly incorporates the undocumented feature into its strategy, stating it would start by 'investigating the existing suppress-from-notification capability and making it genuinely discoverable and easy to use.'\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate separates the core need from the proposed solution, recommending to 'deliver and validate the minimum usable alert controls' rather than 'block the launch on the full alert-management framework.'\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response rejects the fast-follow approach, it does not explicitly name the residual risk that a fast-follow could look wrong in hindsight if adoption is high.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete, actionable plan to surface the existing feature, pair it with threshold guidance, and test this 'minimum usable' version with the focus group before deciding on general availability.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1544,
+  "output_tokens": 407
+}

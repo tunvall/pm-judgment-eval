@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86__judge-gemini-3.1-pro-preview__d5472d64",
+  "run_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:27:02.793248+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes the concepts, noting that the data only shows stopping use of one product, which 'does not establish that the signal is associated with leaving the platform.'"
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response suggests precisely relabeling the finding if product discontinuation is relevant, but it does not explicitly weigh whether a caveat or footnote would neutralize the credibility risk with a technically literate audience."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs the risks, stating that 'Keeping the stronger wording would mislead reviewers and put the rest of the argument at risk' and concluding that a 'gap in the argument is better than a persuasive claim built on the wrong definition.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response ignores the sunk cost of the drafting work, recommending to 'remove the platform-departure claim from the draft immediately' rather than trying to salvage it just because it's already written."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete action plan for the document: attempt to rerun the query with the correct definition, and if that fails, either explicitly reframe the metric around product discontinuation or remove it and revise the argument."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly distinguishes the concepts, noting that the data only shows stopping use of one product, which 'does not establish that the signal is associated with leaving the platform.'\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response suggests precisely relabeling the finding if product discontinuation is relevant, but it does not explicitly weigh whether a caveat or footnote would neutralize the credibility risk with a technically literate audience.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs the risks, stating that 'Keeping the stronger wording would mislead reviewers and put the rest of the argument at risk' and concluding that a 'gap in the argument is better than a persuasive claim built on the wrong definition.'\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response ignores the sunk cost of the drafting work, recommending to 'remove the platform-departure claim from the draft immediately' rather than trying to salvage it just because it's already written.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete action plan for the document: attempt to rerun the query with the correct definition, and if that fails, either explicitly reframe the metric around product discontinuation or remove it and revise the argument.\"\n    }\n  ]\n}",
+  "input_tokens": 1366,
+  "output_tokens": 412
+}

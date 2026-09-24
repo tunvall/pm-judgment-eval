@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc__judge-gpt-5.6-sol__3387a04b",
+  "run_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:34:55.322362+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the reviewer is right about the unified-view goal while noting that \u201cthe research doesn't specify a mechanism,\u201d and proposes delivering that experience through the presentation layer rather than overwriting storage semantics."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly identifies overwrite as silent semantic drift for \u201cmillions of records and external integrations,\u201d explaining concrete downstream risks such as threshold misbehavior, lost comparability, and lost provenance."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response states that two linked records can create duplicate alerts unless every consumer deduplicates correctly, and recommends one event, one lifecycle, and no new alert when refinement arrives."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to Option Three: a single event with the original field unchanged, a new source-specific `precise_estimate` field, an optional timestamp, and a clearly labeled derived `best_estimate` for convenience."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It validates the reviewer's customer-simplicity instinct\u2014\u201cThe reviewer is right about the goal\u201d\u2014then substantively redirects that simplicity to the UI and customer-facing API while preserving stable raw fields underneath."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the reviewer is right about the unified-view goal while noting that \u201cthe research doesn't specify a mechanism,\u201d and proposes delivering that experience through the presentation layer rather than overwriting storage semantics.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It directly identifies overwrite as silent semantic drift for \u201cmillions of records and external integrations,\u201d explaining concrete downstream risks such as threshold misbehavior, lost comparability, and lost provenance.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response states that two linked records can create duplicate alerts unless every consumer deduplicates correctly, and recommends one event, one lifecycle, and no new alert when refinement arrives.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It commits to Option Three: a single event with the original field unchanged, a new source-specific `precise_estimate` field, an optional timestamp, and a clearly labeled derived `best_estimate` for convenience.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"It validates the reviewer's customer-simplicity instinct\u2014\u201cThe reviewer is right about the goal\u201d\u2014then substantively redirects that simplicity to the UI and customer-facing API while preserving stable raw fields underneath.\"}]}",
+  "input_tokens": 1848,
+  "output_tokens": 300
+}

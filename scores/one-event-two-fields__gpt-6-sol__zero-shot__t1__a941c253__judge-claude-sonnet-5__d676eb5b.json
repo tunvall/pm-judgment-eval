@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253__judge-claude-sonnet-5__d676eb5b",
+  "run_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:35:25.140304+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The reviewer's simplicity goal is right, but a single overwritten field is not required to achieve it,' separating the validated goal from the proposed mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It notes the existing field 'keeps its current meaning' and warns that overwriting would make its meaning change over time 'potentially without consumers realizing it,' tying this to protecting millions of records and integrations."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly flags that the two-linked-records option 'would preserve semantics but introduce the duplicate-alert problem customers want to avoid.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to a specific structure: 'one event with one alert lifecycle and two explicitly defined fields,' with the original field unchanged and a new field for the precise estimate, plus guidance on provenance/availability."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response acknowledges the reviewer's goal is 'right' and reframes rather than dismisses it, but the engagement is brief and doesn't deeply explore why the reviewer might have favored the mechanism itself beyond simplicity."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The reviewer's simplicity goal is right, but a single overwritten field is not required to achieve it,' separating the validated goal from the proposed mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"It notes the existing field 'keeps its current meaning' and warns that overwriting would make its meaning change over time 'potentially without consumers realizing it,' tying this to protecting millions of records and integrations.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly flags that the two-linked-records option 'would preserve semantics but introduce the duplicate-alert problem customers want to avoid.'\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"It commits to a specific structure: 'one event with one alert lifecycle and two explicitly defined fields,' with the original field unchanged and a new field for the precise estimate, plus guidance on provenance/availability.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"partially_met\", \"justification\": \"The response acknowledges the reviewer's goal is 'right' and reframes rather than dismisses it, but the engagement is brief and doesn't deeply explore why the reviewer might have favored the mechanism itself beyond simplicity.\"}\n  ]\n}",
+  "input_tokens": 1913,
+  "output_tokens": 1040
+}

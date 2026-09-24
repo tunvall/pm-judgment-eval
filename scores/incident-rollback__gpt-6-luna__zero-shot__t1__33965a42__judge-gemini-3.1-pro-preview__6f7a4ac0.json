@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42__judge-gemini-3.1-pro-preview__6f7a4ac0",
+  "run_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T13:20:08.879356+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a clear, immediate call to \"contain the incident now\" by either disabling the inclusion path or rolling back, rather than just listing options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response mentions \"temporarily withdrawing\" the integration and a \"temporary pause,\" but does not explicitly name or reason about reversibility as a decision-making factor for its chosen path or the alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly weighs these factors, stating that the \"public announcement matters for customer trust, but it does not justify continuing a production issue that is harming unrelated customers.\""
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects waiting on untested code by explicitly stating it \"would not wait several days for a fully tested permanent fix,\" opting instead for a known-safe rollback or feature disablement."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It provides clear next steps beyond the immediate technical action, such as identifying impacted customers, communicating with them, and providing a \"factual update on the new integration\u2019s temporary availability.\""
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response makes a clear, immediate call to \\\"contain the incident now\\\" by either disabling the inclusion path or rolling back, rather than just listing options.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response mentions \\\"temporarily withdrawing\\\" the integration and a \\\"temporary pause,\\\" but does not explicitly name or reason about reversibility as a decision-making factor for its chosen path or the alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"It explicitly weighs these factors, stating that the \\\"public announcement matters for customer trust, but it does not justify continuing a production issue that is harming unrelated customers.\\\"\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects waiting on untested code by explicitly stating it \\\"would not wait several days for a fully tested permanent fix,\\\" opting instead for a known-safe rollback or feature disablement.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It provides clear next steps beyond the immediate technical action, such as identifying impacted customers, communicating with them, and providing a \\\"factual update on the new integration\u2019s temporary availability.\\\"\"\n    }\n  ]\n}",
+  "input_tokens": 1316,
+  "output_tokens": 396
+}

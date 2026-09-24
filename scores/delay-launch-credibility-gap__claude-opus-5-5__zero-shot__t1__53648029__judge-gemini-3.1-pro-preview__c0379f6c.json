@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029__judge-gemini-3.1-pro-preview__c0379f6c",
+  "run_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:19:01.783450+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the credibility risk using the given evidence, stating that a 'clean delay is recoverable' while a 'launch widely described as a half-measure sets the product's reputation,' specifically citing the commentator risk and the workshop ranking."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly references the skip-level director's prior rejection, stating that shipping now would 'override that judgment or quietly work around it, and neither is legitimate.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response argues that 'changing what we show is a small, one-time cost' compared to the growing cost of 'shipping something that fails the credibility test,' effectively weighing the public commitment against the credibility gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response considers whether the current subset is defensible for a narrow launch, noting that while 70% precision is respectable, the 'low recall means the product is silent or wrong on most of what customers will throw at it,' rendering it non-viable."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines a detailed month-long plan, specifying how to align stakeholders in week 1, measure actual capabilities in weeks 1-2, and build a conference story around a transparent preview in weeks 2-4."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs the credibility risk using the given evidence, stating that a 'clean delay is recoverable' while a 'launch widely described as a half-measure sets the product's reputation,' specifically citing the commentator risk and the workshop ranking.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly references the skip-level director's prior rejection, stating that shipping now would 'override that judgment or quietly work around it, and neither is legitimate.'\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response argues that 'changing what we show is a small, one-time cost' compared to the growing cost of 'shipping something that fails the credibility test,' effectively weighing the public commitment against the credibility gap.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response considers whether the current subset is defensible for a narrow launch, noting that while 70% precision is respectable, the 'low recall means the product is silent or wrong on most of what customers will throw at it,' rendering it non-viable.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines a detailed month-long plan, specifying how to align stakeholders in week 1, measure actual capabilities in weeks 1-2, and build a conference story around a transparent preview in weeks 2-4.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 2030,
+  "output_tokens": 444
+}

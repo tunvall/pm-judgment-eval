@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714__judge-claude-sonnet-5__150b8492",
+  "run_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:25:42.549049+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'Mislabeling is not a wording nuance. It inflates the business consequence,' distinguishing product-level churn from platform departure and its differing business implications."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than defaulting to a caveat, the plan prioritizes re-cutting the data against a true platform-departure definition first, using the caveat language only as a fallback if 'Can't re-cut in time,' showing reasoning that a caveat alone may not resolve the underlying issue for a literate audience."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The section 'Getting caught is worse than the gap' explicitly reasons that if a reviewer catches the mislabeling, 'every other number in the document becomes suspect, and so does my judgment,' weighing this against the cost of a weaker argument."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response never justifies keeping the finding because work was already done; instead it says 'I accept' a weaker argument if the re-cut doesn't hold up, prioritizing accuracy over preserving prior effort."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Provides a concrete day-by-day plan (re-cut data, stress-test analysis, rewrite based on findings) with a decision table mapping outcomes to specific document changes, going well beyond 'just flag it as a concern.'"
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_definitional_mismatch_as_material\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'Mislabeling is not a wording nuance. It inflates the business consequence,' distinguishing product-level churn from platform departure and its differing business implications.\"},\n    {\"id\": \"rejects_caveat_as_sufficient_fix\", \"verdict\": \"met\", \"justification\": \"Rather than defaulting to a caveat, the plan prioritizes re-cutting the data against a true platform-departure definition first, using the caveat language only as a fallback if 'Can't re-cut in time,' showing reasoning that a caveat alone may not resolve the underlying issue for a literate audience.\"},\n    {\"id\": \"weighs_credibility_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"The section 'Getting caught is worse than the gap' explicitly reasons that if a reviewer catches the mislabeling, 'every other number in the document becomes suspect, and so does my judgment,' weighing this against the cost of a weaker argument.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response never justifies keeping the finding because work was already done; instead it says 'I accept' a weaker argument if the re-cut doesn't hold up, prioritizing accuracy over preserving prior effort.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"Provides a concrete day-by-day plan (re-cut data, stress-test analysis, rewrite based on findings) with a decision table mapping outcomes to specific document changes, going well beyond 'just flag it as a concern.'\"}\n  ]\n}",
+  "input_tokens": 3137,
+  "output_tokens": 1290
+}

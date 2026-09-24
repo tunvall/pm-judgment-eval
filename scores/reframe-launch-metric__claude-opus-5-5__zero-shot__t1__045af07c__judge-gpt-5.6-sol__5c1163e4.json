@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c__judge-gpt-5.6-sol__5c1163e4",
+  "run_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:22:40.906886+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly cites the prior failure: \u201ca good mapping-accuracy number did not translate into customer value,\u201d and calls mapping accuracy \u201ca proxy with a known validity gap.\u201d It also proposes testing how well it actually predicts outcome error rather than assuming it does."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly states that the year of investment is sunk and that existing infrastructure affects \u201ccost and sequencing,\u201d not which metric should define success. It also preserves useful infrastructure without using that investment to justify keeping the old metric primary."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response acknowledges that outcome ground truth does not exist and proposes concrete sources for a minimum viable dataset, including historical outcomes, design partners, and expert reconstruction. For the interim, it recommends a limited beta if ground truth is not ready and rejects broad launch based only on mapping accuracy."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response distinguishes mapping accuracy as a diagnostic from customer outcome as \u201cthe goal\u201d and says the team must change \u201cwhat we're aiming at.\u201d Its promise not to judge the team retroactively against a metric they were not told to optimize further recognizes that metric choice directs optimization behavior."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends estimate error versus customer-relevant ground truth as the primary launch gate, while retaining mapping accuracy as a non-regression guardrail and debugging diagnostic. The staged plan to bootstrap data, validate proxy correlation, and use a limited beta if necessary is concrete and feasible."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly cites the prior failure: \u201ca good mapping-accuracy number did not translate into customer value,\u201d and calls mapping accuracy \u201ca proxy with a known validity gap.\u201d It also proposes testing how well it actually predicts outcome error rather than assuming it does.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It explicitly states that the year of investment is sunk and that existing infrastructure affects \u201ccost and sequencing,\u201d not which metric should define success. It also preserves useful infrastructure without using that investment to justify keeping the old metric primary.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response acknowledges that outcome ground truth does not exist and proposes concrete sources for a minimum viable dataset, including historical outcomes, design partners, and expert reconstruction. For the interim, it recommends a limited beta if ground truth is not ready and rejects broad launch based only on mapping accuracy.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"met\",\"justification\":\"The response distinguishes mapping accuracy as a diagnostic from customer outcome as \u201cthe goal\u201d and says the team must change \u201cwhat we're aiming at.\u201d Its promise not to judge the team retroactively against a metric they were not told to optimize further recognizes that metric choice directs optimization behavior.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends estimate error versus customer-relevant ground truth as the primary launch gate, while retaining mapping accuracy as a non-regression guardrail and debugging diagnostic. The staged plan to bootstrap data, validate proxy correlation, and use a limited beta if necessary is concrete and feasible.\"}]}",
+  "input_tokens": 1904,
+  "output_tokens": 473
+}

@@ -1,0 +1,17 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea__alignment-claude-sonnet-5__83985187",
+  "run_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:21:38.470968+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate decided to pivot the product's value proposition from speed to precision/trustworthiness while retaining the existing architecture and revising the go-to-market narrative, closely matching the historical decision to reframe around precision on the same technical foundation.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate decided to pivot the product's value proposition from speed to precision/trustworthiness while retaining the existing architecture and revising the go-to-market narrative, closely matching the historical decision to reframe around precision on the same technical foundation.\"\n}\n```",
+  "input_tokens": 1821,
+  "output_tokens": 107
+}

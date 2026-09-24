@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-luna__zero-shot__t1__d0e9f4fa__judge-gpt-5.6-sol__560c9255",
+  "run_id": "one-event-two-fields__gpt-6-luna__zero-shot__t1__d0e9f4fa",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:36:24.299731+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the research supports \u201ca unified view and no duplicate alerts\u201d but \u201cdoesn\u2019t show that overwriting is the right way,\u201d clearly separating the customer goal from the proposed mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It recommends keeping \u201cthe existing field\u2019s meaning unchanged so current integrations continue to work\u201d and rejects silently changing its semantics, directly addressing compatibility risk."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proposes a stable event identity so the later result updates the same event \u201crather than creating a second alert,\u201d and notes that option 3 avoids duplicate records for one incident."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to one event with one lifecycle, the unchanged existing estimate field, and a separate field populated by the later precise pipeline; it also suggests a separately named, documented \u201cbest available\u201d field if needed."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It accepts the reviewer\u2019s customer-simplicity objective by preserving one unified event and explains why option 3 achieves that goal without the integration-breaking semantics of overwriting."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the research supports \u201ca unified view and no duplicate alerts\u201d but \u201cdoesn\u2019t show that overwriting is the right way,\u201d clearly separating the customer goal from the proposed mechanism.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It recommends keeping \u201cthe existing field\u2019s meaning unchanged so current integrations continue to work\u201d and rejects silently changing its semantics, directly addressing compatibility risk.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response proposes a stable event identity so the later result updates the same event \u201crather than creating a second alert,\u201d and notes that option 3 avoids duplicate records for one incident.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It commits to one event with one lifecycle, the unchanged existing estimate field, and a separate field populated by the later precise pipeline; it also suggests a separately named, documented \u201cbest available\u201d field if needed.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"It accepts the reviewer\u2019s customer-simplicity objective by preserving one unified event and explains why option 3 achieves that goal without the integration-breaking semantics of overwriting.\"}]}",
+  "input_tokens": 1260,
+  "output_tokens": 285
+}

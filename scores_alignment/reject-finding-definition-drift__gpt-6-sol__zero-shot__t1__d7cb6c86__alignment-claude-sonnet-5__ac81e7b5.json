@@ -1,0 +1,17 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86__alignment-claude-sonnet-5__ac81e7b5",
+  "run_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:27:17.251085+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both remove the misleading platform-departure framing and rebuild the argument using other data, matching the historical decision's core action. However, the candidate leaves open a conditional path to keep a relabeled product-discontinuation version of the finding, whereas the historical decision killed the finding entirely rather than retaining it in any form.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both remove the misleading platform-departure framing and rebuild the argument using other data, matching the historical decision's core action. However, the candidate leaves open a conditional path to keep a relabeled product-discontinuation version of the finding, whereas the historical decision killed the finding entirely rather than retaining it in any form.\"\n}",
+  "input_tokens": 1372,
+  "output_tokens": 328
+}

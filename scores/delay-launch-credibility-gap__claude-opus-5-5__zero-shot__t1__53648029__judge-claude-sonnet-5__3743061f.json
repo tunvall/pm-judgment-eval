@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029__judge-claude-sonnet-5__3743061f",
+  "run_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:46:22.022544+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly ties the commentator's predictable criticism and the workshop's top-ranked accuracy concern to a cost comparison: 'A clean delay is recoverable. A launch widely described as a half-measure sets the product's reputation.'"
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly treats the skip-level director's prior rejection as unchanged evidence ('Nothing about the underlying accuracy has changed since') and plans to bring the recommendation to that director first, framed as validating their earlier call."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "A dedicated section 'Why the public commitment doesn't override this' weighs the commitment against actual severity of the credibility gap, concluding 'Changing what we show is a small, one-time cost' versus a larger recurring cost of shipping an indefensible claim."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response measures per-transaction-type precision/recall and floats a future narrow triage product under 'What would change my mind,' but it never explicitly evaluates launching a scoped GA limited to the subset of transaction types where the deterministic approach already clears ~70% precision as a concrete alternative to delay."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a detailed week-by-week plan (stakeholder alignment order, measurement work, design-partner recruitment, conference framing) rather than a bare verdict, including what happens at the conference and criteria for eventual GA."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response directly ties the commentator's predictable criticism and the workshop's top-ranked accuracy concern to a cost comparison: 'A clean delay is recoverable. A launch widely described as a half-measure sets the product's reputation.'\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"It explicitly treats the skip-level director's prior rejection as unchanged evidence ('Nothing about the underlying accuracy has changed since') and plans to bring the recommendation to that director first, framed as validating their earlier call.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"A dedicated section 'Why the public commitment doesn't override this' weighs the commitment against actual severity of the credibility gap, concluding 'Changing what we show is a small, one-time cost' versus a larger recurring cost of shipping an indefensible claim.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response measures per-transaction-type precision/recall and floats a future narrow triage product under 'What would change my mind,' but it never explicitly evaluates launching a scoped GA limited to the subset of transaction types where the deterministic approach already clears ~70% precision as a concrete alternative to delay.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a detailed week-by-week plan (stakeholder alignment order, measurement work, design-partner recruitment, conference framing) rather than a bare verdict, including what happens at the conference and criteria for eventual GA.\"}\n  ]\n}",
+  "input_tokens": 2935,
+  "output_tokens": 1302
+}

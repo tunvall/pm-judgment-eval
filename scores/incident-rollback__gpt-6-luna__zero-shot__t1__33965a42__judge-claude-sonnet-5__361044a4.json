@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42__judge-claude-sonnet-5__361044a4",
+  "run_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:45:06.188343+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with a clear, decisive call: 'contain the incident now, even if that means temporarily withdrawing the newly announced integration,' rather than laying out undecided options."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It frames the chosen path as a 'temporary pause' and says to 'avoid promising a relaunch date until the fix is tested,' implicitly treating the withdrawal as reversible, but it doesn't explicitly contrast this reversibility against the alternative of pushing forward with an unvalidated fast fix or leaving the incident running."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The public announcement matters for customer trust, but it does not justify continuing a production issue that is harming unrelated customers,' directly weighing ongoing harm against the launch commitment."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It only allows disabling the inclusion path 'if that is confirmed to stop the faulty calibration' and specifies escalating to a broader rollback 'if the mitigation cannot be verified or does not stop the impact,' avoiding a blind bet on an unvalidated fix."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate mitigation, it lays out monitoring, scoping impacted customers, preparing support guidance, communicating with affected customers, and giving a factual (non-committal) update on relaunch timing."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with a clear, decisive call: 'contain the incident now, even if that means temporarily withdrawing the newly announced integration,' rather than laying out undecided options.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"It frames the chosen path as a 'temporary pause' and says to 'avoid promising a relaunch date until the fix is tested,' implicitly treating the withdrawal as reversible, but it doesn't explicitly contrast this reversibility against the alternative of pushing forward with an unvalidated fast fix or leaving the incident running.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The public announcement matters for customer trust, but it does not justify continuing a production issue that is harming unrelated customers,' directly weighing ongoing harm against the launch commitment.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"It only allows disabling the inclusion path 'if that is confirmed to stop the faulty calibration' and specifies escalating to a broader rollback 'if the mitigation cannot be verified or does not stop the impact,' avoiding a blind bet on an unvalidated fix.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate mitigation, it lays out monitoring, scoping impacted customers, preparing support guidance, communicating with affected customers, and giving a factual (non-committal) update on relaunch timing.\"}\n  ]\n}",
+  "input_tokens": 1982,
+  "output_tokens": 1204
+}

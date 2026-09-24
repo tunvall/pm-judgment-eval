@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9__judge-gpt-5.6-sol__62ed9398",
+  "run_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:40:54.245117+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly reframes the issue as a failure of the naming process, noting that \u201ceach label fixes one misunderstanding while creating another\u201d and arguing against \u201canother contest to find a perfect standalone name.\u201d"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a named approval owner, a closing point, evidence-based reopening criteria, recorded trade-offs, and a fixed ship date. It also explicitly accepts a \u201csufficiently clear\u201d rather than unambiguously best solution and treats continued resetting as something that must stop."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response distinguishes a \u201cmaterial customer misunderstanding\u201d that could justify reopening from \u201ca newly expressed preference,\u201d so objections are not treated as equally decisive by default."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It states that \u201cthe locked API field would remain unchanged\u201d and recommends documenting its mapping to the customer-facing term, avoiding any dependence on changing the underlying architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than proposing another isolated label, it would test complete treatments\u2014name plus description, UI context, or documentation\u2014against agreed comprehension and product-family consistency criteria, while carrying prior objections forward as explicit constraints."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly reframes the issue as a failure of the naming process, noting that \u201ceach label fixes one misunderstanding while creating another\u201d and arguing against \u201canother contest to find a perfect standalone name.\u201d\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a named approval owner, a closing point, evidence-based reopening criteria, recorded trade-offs, and a fixed ship date. It also explicitly accepts a \u201csufficiently clear\u201d rather than unambiguously best solution and treats continued resetting as something that must stop.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response distinguishes a \u201cmaterial customer misunderstanding\u201d that could justify reopening from \u201ca newly expressed preference,\u201d so objections are not treated as equally decisive by default.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It states that \u201cthe locked API field would remain unchanged\u201d and recommends documenting its mapping to the customer-facing term, avoiding any dependence on changing the underlying architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than proposing another isolated label, it would test complete treatments\u2014name plus description, UI context, or documentation\u2014against agreed comprehension and product-family consistency criteria, while carrying prior objections forward as explicit constraints.\"}]}",
+  "input_tokens": 1338,
+  "output_tokens": 434
+}

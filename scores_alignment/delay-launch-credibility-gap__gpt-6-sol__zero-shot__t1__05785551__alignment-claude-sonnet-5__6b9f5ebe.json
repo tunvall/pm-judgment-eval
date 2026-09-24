@@ -1,0 +1,17 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551__alignment-claude-sonnet-5__6b9f5ebe",
+  "run_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:19:19.871095+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to pause the actual product launch and reject the middle-ground detection-only version, citing the same reasoning as the historical decision (reputational risk of a partial solution outweighs the cost of missing the date) and using the extra time to make real progress on the estimation problem. The minor difference\u2014candidate still attends the conference to explain status rather than fully retargeting a later event\u2014is a small framing variation, not a substantive divergence.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to pause the actual product launch and reject the middle-ground detection-only version, citing the same reasoning as the historical decision (reputational risk of a partial solution outweighs the cost of missing the date) and using the extra time to make real progress on the estimation problem. The minor difference\u2014candidate still attends the conference to explain status rather than fully retargeting a later event\u2014is a small framing variation, not a substantive divergence.\"\n}",
+  "input_tokens": 1595,
+  "output_tokens": 402
+}

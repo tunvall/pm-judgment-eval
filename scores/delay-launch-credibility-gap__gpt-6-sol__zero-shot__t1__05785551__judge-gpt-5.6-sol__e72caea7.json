@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551__judge-gpt-5.6-sol__e72caea7",
+  "run_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:48:28.264902+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the cost of missing the public commitment against the greater trust cost of an indefensible launch, citing both the commentator\u2019s likely reaction and practitioner feedback identifying newer transaction accuracy as critical."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the prior rejection as directly applicable, stating that the detection-only proposal \u201cdoes not resolve the reason the narrower version was previously declined,\u201d and recommends involving the skip-level director immediately."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It recommends pausing the product launch despite the conference commitment, while preserving the conference as a status-and-next-steps communication milestone, because shipping would cost more trust than delaying."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The proposed month-long evaluation measures accuracy and coverage by transaction type and asks whether any customer-valuable use case is genuinely supportable under explicit launch criteria. It also allows a clearly labeled prototype or limited design-partner offering rather than presenting that scope as the promised estimation launch."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete plan: notify leadership now, evaluate representative data by transaction type, set explicit launch criteria, potentially run a limited prototype, and candidly communicate the GA delay and remediation plan at the conference."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"weighs_credibility_risk_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly weighs the cost of missing the public commitment against the greater trust cost of an indefensible launch, citing both the commentator\u2019s likely reaction and practitioner feedback identifying newer transaction accuracy as critical.\"},{\"id\":\"treats_prior_precedent_as_real_signal\",\"verdict\":\"met\",\"justification\":\"It treats the prior rejection as directly applicable, stating that the detection-only proposal \u201cdoes not resolve the reason the narrower version was previously declined,\u201d and recommends involving the skip-level director immediately.\"},{\"id\":\"does_not_treat_public_commitment_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"It recommends pausing the product launch despite the conference commitment, while preserving the conference as a status-and-next-steps communication milestone, because shipping would cost more trust than delaying.\"},{\"id\":\"considers_narrower_defensible_scope\",\"verdict\":\"met\",\"justification\":\"The proposed month-long evaluation measures accuracy and coverage by transaction type and asks whether any customer-valuable use case is genuinely supportable under explicit launch criteria. It also allows a clearly labeled prototype or limited design-partner offering rather than presenting that scope as the promised estimation launch.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response provides a concrete plan: notify leadership now, evaluate representative data by transaction type, set explicit launch criteria, potentially run a limited prototype, and candidly communicate the GA delay and remediation plan at the conference.\"}]}",
+  "input_tokens": 1402,
+  "output_tokens": 616
+}

@@ -1,0 +1,17 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d__alignment-claude-sonnet-5__ca317ff7",
+  "run_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:42:14.538182+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The historical outcome was that naming remained unresolved and open into a fourth round with no stable process established, whereas the candidate proposes a structured process reform (criteria-setting, family alignment, bounded testing, decision-freezing rule) intended to actually land a durable decision. The candidate's approach implies achieving closure this round, which diverges from the historical pattern of continued instability and reopening.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The historical outcome was that naming remained unresolved and open into a fourth round with no stable process established, whereas the candidate proposes a structured process reform (criteria-setting, family alignment, bounded testing, decision-freezing rule) intended to actually land a durable decision. The candidate's approach implies achieving closure this round, which diverges from the historical pattern of continued instability and reopening.\"\n}\n```",
+  "input_tokens": 1869,
+  "output_tokens": 154
+}

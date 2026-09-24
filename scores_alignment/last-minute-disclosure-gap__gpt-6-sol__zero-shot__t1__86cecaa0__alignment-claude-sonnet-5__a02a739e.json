@@ -1,0 +1,17 @@
+{
+  "score_id": "last-minute-disclosure-gap__gpt-6-sol__zero-shot__t1__86cecaa0__alignment-claude-sonnet-5__a02a739e",
+  "run_id": "last-minute-disclosure-gap__gpt-6-sol__zero-shot__t1__86cecaa0",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:30:13.751048+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "The candidate's primary emphasis is on treating this as a launch blocker requiring cross-functional decision and possibly delaying launch, whereas the historical decision was to proceed with launch by adding narrowly scoped disclosure language for the paid-service scenario without pausing. The candidate does list 'disclose the charge properly' as an option, which overlaps with the historical resolution, but frames delay/blocking as the default stance rather than the chosen quick-fix path actually taken.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"The candidate's primary emphasis is on treating this as a launch blocker requiring cross-functional decision and possibly delaying launch, whereas the historical decision was to proceed with launch by adding narrowly scoped disclosure language for the paid-service scenario without pausing. The candidate does list 'disclose the charge properly' as an option, which overlaps with the historical resolution, but frames delay/blocking as the default stance rather than the chosen quick-fix path actually taken.\"\n}\n```",
+  "input_tokens": 1320,
+  "output_tokens": 186
+}

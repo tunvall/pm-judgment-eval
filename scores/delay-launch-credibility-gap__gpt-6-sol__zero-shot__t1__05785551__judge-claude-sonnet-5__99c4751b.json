@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551__judge-claude-sonnet-5__99c4751b",
+  "run_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:48:02.689765+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the commentator's reputational risk with the practitioner workshop ranking and prior decline, concluding the latter are 'stronger reasons' not to ship, and separately weighs the cost of missing the commitment against the cost of shipping an indefensible answer."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly states the detection-only proposal 'does not resolve the reason the narrower version was previously declined,' treating the skip-level's earlier rejection as unresolved organizational evidence rather than a one-off."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response decides to pause the launch itself while repurposing the conference slot for a status update, explicitly stating 'missing a public commitment is costly' but that shipping an indefensible answer 'would cost more trust,' showing the commitment is not treated as automatically overriding the accuracy gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The plan to 'measure accuracy and coverage by transaction type... establish whether any customer-valuable use case is genuinely supportable' gestures toward scoping by transaction type, but the response never explicitly proposes launching only on the subset where precision/recall already clear a bar, treating detection-only as a limited prototype instead."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete month-long plan (accuracy/coverage evaluation, explicit launch criteria, possible design-partner prototype) and a specific communication plan for the conference itself, rather than stopping at a bare verdict."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts the commentator's reputational risk with the practitioner workshop ranking and prior decline, concluding the latter are 'stronger reasons' not to ship, and separately weighs the cost of missing the commitment against the cost of shipping an indefensible answer.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response directly states the detection-only proposal 'does not resolve the reason the narrower version was previously declined,' treating the skip-level's earlier rejection as unresolved organizational evidence rather than a one-off.\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response decides to pause the launch itself while repurposing the conference slot for a status update, explicitly stating 'missing a public commitment is costly' but that shipping an indefensible answer 'would cost more trust,' showing the commitment is not treated as automatically overriding the accuracy gap.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The plan to 'measure accuracy and coverage by transaction type... establish whether any customer-valuable use case is genuinely supportable' gestures toward scoping by transaction type, but the response never explicitly proposes launching only on the subset where precision/recall already clear a bar, treating detection-only as a limited prototype instead.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete month-long plan (accuracy/coverage evaluation, explicit launch criteria, possible design-partner prototype) and a specific communication plan for the conference itself, rather than stopping at a bare verdict.\"}\n  ]\n}",
+  "input_tokens": 2129,
+  "output_tokens": 1468
+}

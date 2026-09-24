@@ -1,0 +1,17 @@
+{
+  "score_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1__alignment-claude-sonnet-5__357c960f",
+  "run_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:33.510894+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to send a private direct message first rather than raising the issue publicly, matching the historical decision to privately ask about the expected completion date.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to send a private direct message first rather than raising the issue publicly, matching the historical decision to privately ask about the expected completion date.\"\n}",
+  "input_tokens": 945,
+  "output_tokens": 70
+}

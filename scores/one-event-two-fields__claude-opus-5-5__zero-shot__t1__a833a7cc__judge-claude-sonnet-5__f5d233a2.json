@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc__judge-claude-sonnet-5__f5d233a2",
+  "run_id": "one-event-two-fields__claude-opus-5-5__zero-shot__t1__a833a7cc",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:34:45.890222+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states research backs the goal but 'the research doesn't specify a mechanism,' separating the validated goal (unified view) from the reviewer's proposed overwrite mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Gives a detailed account of how overwriting causes 'silent semantic drift,' loss of provenance, and broken threshold tuning for existing integrations, treating this as a decisive risk rather than a minor concern."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Explicitly states Option Two 'violates the customer research directly' by creating duplicate alerts unless every consumer dedupes correctly, and further ensures the chosen design has 'no new alert on refinement.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Provides a specific structure: single event, new field named e.g. precise_estimate with a timestamp field, explicit null-state handling, and a clearly labeled derived best_estimate field for API consumers."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Directly engages the reviewer by affirming 'The reviewer is right about the goal' while arguing the simplicity 'belongs in the presentation layer, not in the storage contract,' rather than dismissing the concern."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states research backs the goal but 'the research doesn't specify a mechanism,' separating the validated goal (unified view) from the reviewer's proposed overwrite mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"met\", \"justification\": \"Gives a detailed account of how overwriting causes 'silent semantic drift,' loss of provenance, and broken threshold tuning for existing integrations, treating this as a decisive risk rather than a minor concern.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"Explicitly states Option Two 'violates the customer research directly' by creating duplicate alerts unless every consumer dedupes correctly, and further ensures the chosen design has 'no new alert on refinement.'\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"Provides a specific structure: single event, new field named e.g. precise_estimate with a timestamp field, explicit null-state handling, and a clearly labeled derived best_estimate field for API consumers.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"met\", \"justification\": \"Directly engages the reviewer by affirming 'The reviewer is right about the goal' while arguing the simplicity 'belongs in the presentation layer, not in the storage contract,' rather than dismissing the concern.\"}\n  ]\n}",
+  "input_tokens": 2873,
+  "output_tokens": 860
+}

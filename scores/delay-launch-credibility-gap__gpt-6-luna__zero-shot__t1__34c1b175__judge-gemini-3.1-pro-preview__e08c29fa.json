@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175__judge-gemini-3.1-pro-preview__e08c29fa",
+  "run_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:19.954880+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs credibility risk against the pain of delaying the launch, using the practitioner workshop ranking to justify the decision while explicitly evaluating and dismissing the commentator's reaction as less important."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly cites the director's previous rejection of a narrower version as a deciding factor and warns against assuming that relabeling a rejected version would make it acceptable."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response chooses to pause the launch, actively acknowledging that a 'missed conference launch is painful' but prioritizing the avoidance of damaged trust."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate evaluates the narrower scope (the subset with ~70% precision) but determines it is not defensible, noting that 'the evidence does not support a credible launch story' given the low precision and prior leadership rejection."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines concrete next steps, including converting the conference commitment into a 'candid progress update' and setting explicit launch gates and validation requirements before doing more work."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs credibility risk against the pain of delaying the launch, using the practitioner workshop ranking to justify the decision while explicitly evaluating and dismissing the commentator's reaction as less important.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly cites the director's previous rejection of a narrower version as a deciding factor and warns against assuming that relabeling a rejected version would make it acceptable.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response chooses to pause the launch, actively acknowledging that a 'missed conference launch is painful' but prioritizing the avoidance of damaged trust.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate evaluates the narrower scope (the subset with ~70% precision) but determines it is not defensible, noting that 'the evidence does not support a credible launch story' given the low precision and prior leadership rejection.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines concrete next steps, including converting the conference commitment into a 'candid progress update' and setting explicit launch gates and validation requirements before doing more work.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1523,
+  "output_tokens": 396
+}

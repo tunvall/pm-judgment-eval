@@ -1,0 +1,17 @@
+{
+  "score_id": "last-minute-disclosure-gap__gpt-6-luna__zero-shot__t1__8d9b84ea__alignment-claude-sonnet-5__cf63d4f8",
+  "run_id": "last-minute-disclosure-gap__gpt-6-luna__zero-shot__t1__8d9b84ea",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:31:05.526288+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both the candidate and the historical decision prioritize adding a targeted disclosure for the paid-path scenario rather than shipping unchanged. However, the candidate frames this as one option among a fallback hierarchy including disabling the paid path or delaying launch entirely, whereas the historical decision straightforwardly implemented the narrow disclosure fix without considering delay or feature removal.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both the candidate and the historical decision prioritize adding a targeted disclosure for the paid-path scenario rather than shipping unchanged. However, the candidate frames this as one option among a fallback hierarchy including disabling the paid path or delaying launch entirely, whereas the historical decision straightforwardly implemented the narrow disclosure fix without considering delay or feature removal.\"\n}\n```",
+  "input_tokens": 1330,
+  "output_tokens": 156
+}

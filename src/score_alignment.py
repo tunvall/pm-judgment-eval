@@ -62,7 +62,8 @@ def score_alignment(run_path, judge_provider, judge_model, temperature=None, max
             continue
 
         record = dict(base_record, alignment=parsed["alignment"],
-                      justification=parsed.get("justification", ""), raw_judge_response=judge_response.text)
+                      justification=parsed.get("justification", ""), raw_judge_response=judge_response.text,
+                      input_tokens=judge_response.input_tokens, output_tokens=judge_response.output_tokens)
         out_path = scores_dir / "{}.json".format(score_id)
         out_path.write_text(json.dumps(record, indent=2))
         return record, out_path

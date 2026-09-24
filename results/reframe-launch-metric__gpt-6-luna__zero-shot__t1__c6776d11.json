@@ -1,0 +1,19 @@
+{
+  "run_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11",
+  "timestamp": "2026-09-24T12:24:16.615683+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-luna",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 350,
+  "output_tokens": 936,
+  "latency_ms": 14193,
+  "prompt": "# Reframing which metric a launch gets judged on\n\nYou are a product manager for a risk-exposure estimation product. It has been\nmeasured internally on an engineering-facing metric: how precisely the system\nmaps raw transaction data onto its internal categorization scheme. You want to\nreframe which metric this launch actually gets judged on, toward how close the\nestimate comes to the number that matters to the customer, a customer-facing\noutcome metric instead.\n\nA senior engineering stakeholder points out that the old, engineering-facing\nmetric likely contributed to a different, earlier launch being paused: a\nmapping-accuracy number that looked fine on paper hadn't translated into\nsomething customers actually found useful. The existing evaluation\ninfrastructure is built entirely around the old metric, and switching primary\nmetrics would mean sourcing new ground-truth data reflecting real\ncustomer-facing outcomes, which you don't yet have. The team that built the\ncurrent metric and its supporting infrastructure has invested roughly a year\noptimizing against it.\n\nWhich metric do you make primary for this launch, and how do you handle the\ntransition?\n\nConstraints:\n- No ground-truth data for the proposed customer-facing metric exists yet; it would need to be sourced from scratch.\n- Existing evaluation infrastructure is built entirely around the current engineering-facing metric.\n- The team that built the current metric and its infrastructure has invested roughly a year optimizing against it.",
+  "response": "I\u2019d make **closeness to the customer-relevant exposure number** the primary success metric. Mapping accuracy is useful, but it is an intermediate measure: a system can map transactions consistently to its own categories and still produce an estimate customers cannot use. The earlier launch is a reason to test that gap, not proof that the existing metric is worthless.\n\nBut I would **not claim the launch is successful based only on mapping accuracy** while the customer-outcome metric has no ground truth. I\u2019d separate the product decision from what we can currently measure:\n\n- **Define the outcome measure with customers**\u2014including the reference number, relevant time window, and what error is acceptable. Source and adjudicate a representative set of real-world examples; the reference may be noisy, so document its limitations.\n- **Use mapping accuracy as a diagnostic and guardrail**, and run it alongside the new measure where possible. Preserve the existing infrastructure and the team\u2019s year of work; it can help explain why an outcome estimate is wrong.\n- **Until there is enough outcome data, limit any release to a clearly bounded learning pilot**, if the risk is acceptable. Be explicit that it is not yet validated for broad use, and use the pilot to collect outcome evidence. If that evidence cannot be collected safely or credibly, delay broad launch.\n- **Set the broader-launch gate in advance**: acceptable customer-outcome performance, plus relevant safety and operational guardrails. Don\u2019t use the old metric as a substitute if the new metric is unavailable.\n\nThat makes the customer outcome the standard the product ultimately has to meet, without pretending we can measure it today or discarding useful engineering work."
+}

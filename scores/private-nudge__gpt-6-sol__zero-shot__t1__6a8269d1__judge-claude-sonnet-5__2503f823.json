@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1__judge-claude-sonnet-5__2503f823",
+  "run_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:08.336875+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'there's no hard deadline...using a public channel mainly to create pressure would be disproportionate,' directly linking the absence of a hard deadline to reduced justification for pressure."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response implies a relationship consideration by wanting to 'give the peer a chance to share that update themselves, or agree on a neutral one together,' but it never explicitly names the relationship or reputational damage that public escalation could cause\u2014it's implied rather than stated as a cost being weighed."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly rejects the public-commitment-justifies-public-pressure logic, calling a purely pressure-driven public channel use 'disproportionate' given the lack of a hard deadline and the peer's other pressures."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a concrete plan: message privately first, ask specific questions about status and capacity, agree on a next step/revised date, and only then consider a jointly-agreed team update."
+    }
+  ],
+  "weighted_total": 8.5,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'there's no hard deadline...using a public channel mainly to create pressure would be disproportionate,' directly linking the absence of a hard deadline to reduced justification for pressure.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response implies a relationship consideration by wanting to 'give the peer a chance to share that update themselves, or agree on a neutral one together,' but it never explicitly names the relationship or reputational damage that public escalation could cause\u2014it's implied rather than stated as a cost being weighed.\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response directly rejects the public-commitment-justifies-public-pressure logic, calling a purely pressure-driven public channel use 'disproportionate' given the lack of a hard deadline and the peer's other pressures.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The response commits to a concrete plan: message privately first, ask specific questions about status and capacity, agree on a next step/revised date, and only then consider a jointly-agreed team update.\"}\n  ]\n}",
+  "input_tokens": 1299,
+  "output_tokens": 762
+}

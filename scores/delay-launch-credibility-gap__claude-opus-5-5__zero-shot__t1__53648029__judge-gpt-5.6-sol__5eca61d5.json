@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029__judge-gpt-5.6-sol__5eca61d5",
+  "run_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:46:51.879406+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts the recoverable cost of delay with the lasting reputational cost of a half-measure, citing both the commentator's predictable criticism and the workshop's ranking of newer-transaction accuracy as the top credibility question."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It treats the director's prior rejection as consequential organizational evidence: \u201cNothing about the underlying accuracy has changed since,\u201d so shipping would improperly override or work around that judgment."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response acknowledges that the commitment is real but argues that changing the conference deliverable is a bounded cost, whereas shipping an indefensible product creates compounding credibility damage."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It proposes showing measured results \u201cwhere we're strong\u201d and considers a narrowly positioned triage tool, but it does not directly evaluate a launch limited to transaction types for which both estimator precision and recall meet a defensible threshold."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete month-long plan: align with the director and stakeholders, measure estimator and classifier performance, recruit design partners, replace GA with a transparent preview, and communicate explicit evaluation methods and GA thresholds."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly contrasts the recoverable cost of delay with the lasting reputational cost of a half-measure, citing both the commentator's predictable criticism and the workshop's ranking of newer-transaction accuracy as the top credibility question.\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"It treats the director's prior rejection as consequential organizational evidence: \u201cNothing about the underlying accuracy has changed since,\u201d so shipping would improperly override or work around that judgment.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response acknowledges that the commitment is real but argues that changing the conference deliverable is a bounded cost, whereas shipping an indefensible product creates compounding credibility damage.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"It proposes showing measured results \u201cwhere we're strong\u201d and considers a narrowly positioned triage tool, but it does not directly evaluate a launch limited to transaction types for which both estimator precision and recall meet a defensible threshold.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"It gives a concrete month-long plan: align with the director and stakeholders, measure estimator and classifier performance, recruit design partners, replace GA with a transparent preview, and communicate explicit evaluation methods and GA thresholds.\"\n    }\n  ]\n}",
+  "input_tokens": 1927,
+  "output_tokens": 570
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175__judge-claude-sonnet-5__fcbeb42f",
+  "run_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:16:54.435833+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly ties the workshop ranking ('practitioners ranked it as the top credibility question') and weighs it against launch pressure ('A missed conference launch is painful, but a public launch whose accuracy story cannot withstand the obvious first question risks damaging trust'), though it explicitly downplays the commentator's reaction as 'not the deciding factor' rather than weighing it directly."
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response treats the director's prior rejection as real evidence, stating 'the director has already declined a narrower version for the same reason' and later warns not to 'assume relabeling the rejected narrow version makes it acceptable.'"
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly recommends pausing the launch and reframing the conference commitment as 'a candid progress update' rather than treating the date as fixed, directly weighing the commitment against the credibility gap."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response mentions setting future 'launch gates' requiring 'representative validation across the transaction types we intend to support,' but never explicitly evaluates whether launching just the existing well-covered subset (70% precision transaction types) could itself be a defensible narrower launch now, instead moving straight to a full pause."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives concrete next steps: reframe the conference appearance as a progress update, set explicit validation/accuracy gates with engineering and practitioners, and reassess on a defined schedule before any future launch."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"weighs_credibility_risk_explicitly\", \"verdict\": \"met\", \"justification\": \"The response explicitly ties the workshop ranking ('practitioners ranked it as the top credibility question') and weighs it against launch pressure ('A missed conference launch is painful, but a public launch whose accuracy story cannot withstand the obvious first question risks damaging trust'), though it explicitly downplays the commentator's reaction as 'not the deciding factor' rather than weighing it directly.\"},\n    {\"id\": \"treats_prior_precedent_as_real_signal\", \"verdict\": \"met\", \"justification\": \"The response treats the director's prior rejection as real evidence, stating 'the director has already declined a narrower version for the same reason' and later warns not to 'assume relabeling the rejected narrow version makes it acceptable.'\"},\n    {\"id\": \"does_not_treat_public_commitment_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly recommends pausing the launch and reframing the conference commitment as 'a candid progress update' rather than treating the date as fixed, directly weighing the commitment against the credibility gap.\"},\n    {\"id\": \"considers_narrower_defensible_scope\", \"verdict\": \"partially_met\", \"justification\": \"The response mentions setting future 'launch gates' requiring 'representative validation across the transaction types we intend to support,' but never explicitly evaluates whether launching just the existing well-covered subset (70% precision transaction types) could itself be a defensible narrower launch now, instead moving straight to a full pause.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives concrete next steps: reframe the conference appearance as a progress update, set explicit validation/accuracy gates with engineering and practitioners, and reassess on a defined schedule before any future launch.\"}\n  ]\n}",
+  "input_tokens": 2240,
+  "output_tokens": 1498
+}

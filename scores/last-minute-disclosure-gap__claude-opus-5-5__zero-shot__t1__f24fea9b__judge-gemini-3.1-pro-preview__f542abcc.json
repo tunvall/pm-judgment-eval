@@ -1,0 +1,54 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b__judge-gemini-3.1-pro-preview__f542abcc",
+  "run_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:29:02.860467+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly recognizes the risk, noting that an undisclosed charge cannot be quietly patched later and stating that \"'It was rare' doesn't help the customers it happened to.\""
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proposes targeted disclosure that specifies exactly when the charge applies (\"In [scenario X]...\"), and suggests an in-product notice specifically \"at the moment the paid path would trigger\" rather than a blanket warning."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly contrasts \"Why not launch as-is\" with \"Why not automatically delay everything,\" weighing the costs of an undisclosed charge against the importance of a committed launch date."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response refuses to choose between just shipping or delaying, instead proposing narrowly scoped fixes like a \"minimal targeted disclosure\" (Track A) or gating the specific paid-path scenario behind a feature flag (Track B)."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a highly specific, actionable plan for the next 24 hours, including drafting 1-2 specific sentences for legal to review, setting up a feature flag fallback, and escalating to stakeholders."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_dismiss_minority_path_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly recognizes the risk, noting that an undisclosed charge cannot be quietly patched later and stating that \\\"'It was rare' doesn't help the customers it happened to.\\\"\"\n    },\n    {\n      \"id\": \"avoids_overcorrecting_into_inaccurate_disclosure\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response proposes targeted disclosure that specifies exactly when the charge applies (\\\"In [scenario X]...\\\"), and suggests an in-product notice specifically \\\"at the moment the paid path would trigger\\\" rather than a blanket warning.\"\n    },\n    {\n      \"id\": \"weighs_launch_delay_against_disclosure_gap\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly contrasts \\\"Why not launch as-is\\\" with \\\"Why not automatically delay everything,\\\" weighing the costs of an undisclosed charge against the importance of a committed launch date.\"\n    },\n    {\n      \"id\": \"considers_narrowly_scoped_fix_before_binary_choice\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response refuses to choose between just shipping or delaying, instead proposing narrowly scoped fixes like a \\\"minimal targeted disclosure\\\" (Track A) or gating the specific paid-path scenario behind a feature flag (Track B).\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a highly specific, actionable plan for the next 24 hours, including drafting 1-2 specific sentences for legal to review, setting up a feature flag fallback, and escalating to stakeholders.\"\n    }\n  ]\n}",
+  "input_tokens": 1830,
+  "output_tokens": 420
+}

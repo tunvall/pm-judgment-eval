@@ -1,0 +1,17 @@
+{
+  "score_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc__alignment-claude-sonnet-5__69d93725",
+  "run_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:19:24.728674+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's core decision matches the historical outcome: reframe the value proposition from speed to precision, keep the existing architecture, and rewrite the go-to-market narrative. The candidate adds process steps (validation sprint, possible merge into primary pipeline) not mentioned in the historical decision, but the central pivot to precision-based positioning on the same technical foundation aligns closely.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's core decision matches the historical outcome: reframe the value proposition from speed to precision, keep the existing architecture, and rewrite the go-to-market narrative. The candidate adds process steps (validation sprint, possible merge into primary pipeline) not mentioned in the historical decision, but the central pivot to precision-based positioning on the same technical foundation aligns closely.\"\n}",
+  "input_tokens": 2899,
+  "output_tokens": 148
+}

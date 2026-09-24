@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb__judge-gemini-3.1-pro-preview__72c42e4d",
+  "run_id": "private-nudge__claude-opus-5-5__zero-shot__t1__93099fbb",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:57.848865+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that because there is no hard deadline and the timeline is flexible, the gain from speeding things up is small and does not justify a strong forcing function."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly names the relationship cost, stating that a public call-out creates 'a lasting trust cost with a peer, where you have no authority and depend on goodwill.'"
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects the idea of a public nudge, arguing that while the original commitment was public and the correction should be too, it should come from the peer on their own terms rather than through a public call-out."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a specific, actionable communication approach, including a direct quote of what the private message would say to offer help and reset expectations."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that because there is no hard deadline and the timeline is flexible, the gain from speeding things up is small and does not justify a strong forcing function.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly names the relationship cost, stating that a public call-out creates 'a lasting trust cost with a peer, where you have no authority and depend on goodwill.'\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects the idea of a public nudge, arguing that while the original commitment was public and the correction should be too, it should come from the peer on their own terms rather than through a public call-out.\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a specific, actionable communication approach, including a direct quote of what the private message would say to offer help and reset expectations.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1413,
+  "output_tokens": 314
+}

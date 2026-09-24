@@ -1,0 +1,17 @@
+{
+  "score_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3__alignment-claude-sonnet-5__83340550",
+  "run_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:34:20.753819+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "partially_aligned",
+  "justification": "Both use the same building blocks (making the hidden suppress feature discoverable, threshold guidance) rather than building the full framework, but the candidate rejects thresholds as a substitute and imposes a validation gate that could delay GA, whereas the historical decision explicitly called it a fast-follow and launched with an early-access group to surface friction post-launch rather than pre-launch validation.",
+  "raw_judge_response": "{\n  \"alignment\": \"partially_aligned\",\n  \"justification\": \"Both use the same building blocks (making the hidden suppress feature discoverable, threshold guidance) rather than building the full framework, but the candidate rejects thresholds as a substitute and imposes a validation gate that could delay GA, whereas the historical decision explicitly called it a fast-follow and launched with an early-access group to surface friction post-launch rather than pre-launch validation.\"\n}",
+  "input_tokens": 1652,
+  "output_tokens": 612
+}

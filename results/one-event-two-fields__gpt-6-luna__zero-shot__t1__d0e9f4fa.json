@@ -1,0 +1,19 @@
+{
+  "run_id": "one-event-two-fields__gpt-6-luna__zero-shot__t1__d0e9f4fa",
+  "timestamp": "2026-09-24T12:36:11.359114+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-luna",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 413,
+  "output_tokens": 889,
+  "latency_ms": 10090,
+  "prompt": "# One flagged event, two output fields as pipelines converge\n\nYou are a product manager for a risk-detection system fed by two pipelines\ncovering the same underlying events: one fast but rougher, one slower but more\nprecise. You need to decide how a flagged event should be represented in your\ndata model as both pipelines' outputs become available over time, at different\npoints after the event first fires.\n\nThree options are on the table. One: a single field, overwritten as the more\nprecise estimate arrives later. This matches a simple mental model, but risks\nsilently changing the meaning of a field that external systems already read\nunder its current, well-defined semantics. Two: two separate records for the\nsame underlying event, linked by a pointer. This preserves the existing\nfield's meaning untouched, but risks producing duplicate alerts for what is\nactually one incident. Three: keep a single event with one lifecycle, and add\na second field specifically for the newer, more precise estimate, leaving the\noriginal field's meaning untouched.\n\nA senior design reviewer is pushing for something closer to the first option,\nfrom a customer-simplicity instinct. Customer research shows customers want a\nsingle, unified view of an event with no duplicate alerts, which supports the\nreviewer's underlying goal but doesn't specifically validate their proposed\nmechanism over the others.\n\nWhat data representation do you choose, and why?\n\nConstraints:\n- Millions of existing records and external integrations depend on the current field's exact, well-defined meaning.\n- Customer research shows a clear preference for a single unified view of an event with no duplicate alerts.\n- A senior design reviewer favors a mechanism resembling the single-overwritten-field option.",
+  "response": "I\u2019d choose **one event with one lifecycle and two explicitly defined estimate fields**.\n\nKeep the existing field\u2019s meaning unchanged so current integrations continue to work. Add a separate field for the later, more precise estimate, populated when that pipeline\u2019s result arrives. Give the event a stable identity so the later result updates the same event rather than creating a second alert.\n\nThat separates the **data contract** from the **customer experience**: the UI can show one event and, when available, lead with the more precise estimate. If downstream consumers need a \u201cbest available\u201d value, expose it as a separately named, documented field\u2014not by silently changing the existing field\u2019s semantics.\n\nThe research supports a unified view and no duplicate alerts, but it doesn\u2019t show that overwriting is the right way to achieve them. Option 3 meets that customer goal while avoiding both a breaking change to existing integrations and duplicate records for one incident."
+}

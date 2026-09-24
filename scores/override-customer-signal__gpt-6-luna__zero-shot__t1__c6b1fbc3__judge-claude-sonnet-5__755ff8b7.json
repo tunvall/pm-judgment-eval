@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3__judge-claude-sonnet-5__755ff8b7",
+  "run_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:33:30.476884+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly declines to block on the full multi-quarter framework while still taking the signal seriously, saying it will 'respect the explicit signal without committing to a multi-quarter platform before launch,' showing it weighs the signal against timeline rather than deferring to it uncritically."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly incorporates the undocumented suppress capability into its plan, proposing to 'investigate the existing suppress-from-notification capability and make it genuinely discoverable and easy to use' as part of the minimum viable gate."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response separates the underlying need (ability to manage alert volume) from the proposed full framework, explicitly cautioning 'we shouldn't claim they meet the request without checking what they actually let customers do,' and treats cheaper options (suppress feature, threshold guidance, small reroute change) as candidates to be validated rather than assumed sufficient."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response builds a validation step to mitigate risk of being wrong, and separately flags a risk with thresholds reducing detection sensitivity, but it never explicitly names the risk that a fast-follow/limited approach could look wrong in hindsight if adoption or complaint volume turns out high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete gating plan: ship a minimum usable control set, test with the focus-group participants, and either delay GA or do a limited opt-in rollout if the minimum isn't sufficient, rather than just listing pros and cons."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly declines to block on the full multi-quarter framework while still taking the signal seriously, saying it will 'respect the explicit signal without committing to a multi-quarter platform before launch,' showing it weighs the signal against timeline rather than deferring to it uncritically.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response directly incorporates the undocumented suppress capability into its plan, proposing to 'investigate the existing suppress-from-notification capability and make it genuinely discoverable and easy to use' as part of the minimum viable gate.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response separates the underlying need (ability to manage alert volume) from the proposed full framework, explicitly cautioning 'we shouldn't claim they meet the request without checking what they actually let customers do,' and treats cheaper options (suppress feature, threshold guidance, small reroute change) as candidates to be validated rather than assumed sufficient.\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response builds a validation step to mitigate risk of being wrong, and separately flags a risk with thresholds reducing detection sensitivity, but it never explicitly names the risk that a fast-follow/limited approach could look wrong in hindsight if adoption or complaint volume turns out high.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete gating plan: ship a minimum usable control set, test with the focus-group participants, and either delay GA or do a limited opt-in rollout if the minimum isn't sufficient, rather than just listing pros and cons.\"}\n  ]\n}",
+  "input_tokens": 2271,
+  "output_tokens": 1384
+}

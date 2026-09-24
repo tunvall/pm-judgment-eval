@@ -64,7 +64,8 @@ def score_run(run_path, judge_provider, judge_model, temperature=None, max_retri
             continue
 
         record = dict(base_record, criteria=scored_criteria, weighted_total=weighted_sum,
-                      max_possible=max_possible, raw_judge_response=judge_response.text)
+                      max_possible=max_possible, raw_judge_response=judge_response.text,
+                      input_tokens=judge_response.input_tokens, output_tokens=judge_response.output_tokens)
         out_path = scores_dir / "{}.json".format(score_id)
         out_path.write_text(json.dumps(record, indent=2))
         return record, out_path

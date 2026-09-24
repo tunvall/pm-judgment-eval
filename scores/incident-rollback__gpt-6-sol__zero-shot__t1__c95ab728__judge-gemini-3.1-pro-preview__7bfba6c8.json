@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728__judge-gemini-3.1-pro-preview__7bfba6c8",
+  "run_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:43:48.754482+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly and immediately decides on an action, stating, \"I would direct engineering to disable the new integration\u2019s inclusion logic or roll back the launch,\" and commits to making the call without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "While the response describes the rollback as a \"temporary reversal\" of the feature, it does not explicitly reason about the reversibility of the decision itself or weigh the reversibility tradeoff of this path against other alternatives."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly balances these two competing factors, noting that \"The public announcement matters, but it does not outweigh ongoing incorrect alerts for existing customers.\""
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response avoids the trap of requesting a rushed patch, explicitly stating it would not leave signals firing while waiting for a proper fix and opting for a rollback instead."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides clear steps following the immediate action, including verifying the mitigation, monitoring for errors, and coordinating customer communications and support."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"commits_to_a_specific_action_quickly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly and immediately decides on an action, stating, \\\"I would direct engineering to disable the new integration\u2019s inclusion logic or roll back the launch,\\\" and commits to making the call without waiting for the manager.\"\n    },\n    {\n      \"id\": \"distinguishes_reversible_from_expensive_to_reverse\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response describes the rollback as a \\\"temporary reversal\\\" of the feature, it does not explicitly reason about the reversibility of the decision itself or weigh the reversibility tradeoff of this path against other alternatives.\"\n    },\n    {\n      \"id\": \"weighs_ongoing_harm_against_launch_momentum\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly balances these two competing factors, noting that \\\"The public announcement matters, but it does not outweigh ongoing incorrect alerts for existing customers.\\\"\"\n    },\n    {\n      \"id\": \"avoids_betting_on_unvalidated_fast_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response avoids the trap of requesting a rushed patch, explicitly stating it would not leave signals firing while waiting for a proper fix and opting for a rollback instead.\"\n    },\n    {\n      \"id\": \"proposes_concrete_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides clear steps following the immediate action, including verifying the mitigation, monitoring for errors, and coordinating customer communications and support.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1276,
+  "output_tokens": 397
+}

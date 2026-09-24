@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397__judge-gemini-3.1-pro-preview__a02e18d3",
+  "run_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:23:46.599200+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \"mapping accuracy can look good while the product still fails customers,\" drawing directly on the warning from the earlier paused launch."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate successfully avoids sunk cost fallacy by making the new metric primary, while reframing the team's past year of investment as an \"asset\" for the new evaluation work rather than a reason to retain the old metric as primary."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly acknowledges the measurement gap by stating \"we have no ground truth for it\" today, and proposes a \"limited, explicitly unvalidated rollout\" as an interim step until the evaluation is built."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses heavily on how the launch will be evaluated and judged retrospectively, but it does not explicitly reason about how the choice of primary metric will shape what the engineering team optimizes for going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete recommendation to make the customer outcome metric the primary success criterion while keeping the existing metric as a \"guardrail\" to catch regressions."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that \\\"mapping accuracy can look good while the product still fails customers,\\\" drawing directly on the warning from the earlier paused launch.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate successfully avoids sunk cost fallacy by making the new metric primary, while reframing the team's past year of investment as an \\\"asset\\\" for the new evaluation work rather than a reason to retain the old metric as primary.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly acknowledges the measurement gap by stating \\\"we have no ground truth for it\\\" today, and proposes a \\\"limited, explicitly unvalidated rollout\\\" as an interim step until the evaluation is built.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses heavily on how the launch will be evaluated and judged retrospectively, but it does not explicitly reason about how the choice of primary metric will shape what the engineering team optimizes for going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete recommendation to make the customer outcome metric the primary success criterion while keeping the existing metric as a \\\"guardrail\\\" to catch regressions.\"\n    }\n  ]\n}",
+  "input_tokens": 1303,
+  "output_tokens": 409
+}

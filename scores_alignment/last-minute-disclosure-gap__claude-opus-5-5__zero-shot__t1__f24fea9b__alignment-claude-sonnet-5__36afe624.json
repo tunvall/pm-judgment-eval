@@ -1,0 +1,17 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b__alignment-claude-sonnet-5__36afe624",
+  "run_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:29:14.821881+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate's primary preferred path (Track A) is to add narrowly scoped disclosure language specifically for the paid-service scenario while keeping the free-path materials unchanged, matching the historical decision of a targeted disclosure fix rather than a full re-review or shipping unchanged. The candidate does include a fallback gating option, but explicitly states Track A (matching the historical outcome) is preferred.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate's primary preferred path (Track A) is to add narrowly scoped disclosure language specifically for the paid-service scenario while keeping the free-path materials unchanged, matching the historical decision of a targeted disclosure fix rather than a full re-review or shipping unchanged. The candidate does include a fallback gating option, but explicitly states Track A (matching the historical outcome) is preferred.\"\n}",
+  "input_tokens": 2125,
+  "output_tokens": 155
+}

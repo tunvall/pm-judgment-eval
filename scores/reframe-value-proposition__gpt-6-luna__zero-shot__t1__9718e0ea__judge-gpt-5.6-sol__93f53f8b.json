@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea__judge-gpt-5.6-sol__93f53f8b",
+  "run_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:21:06.408167+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the complaint data and customer-built filters as \u201cpromising evidence of an unmet need\u201d that warrants redirecting the work, while appropriately noting that this evidence does not yet prove the team can solve the problem."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly recommends changing the speed-led positioning while evaluating whether \u201cthe existing architecture can support the validated precision use case or should be integrated with the primary pipeline,\u201d preserving potentially useful technical work without preserving the old story."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly states, \u201cThe investment already made is a cost, not a reason to keep the product unchanged,\u201d and recommends stopping or integrating the product if validation fails."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It adopts the peer\u2019s precision argument on its merits and says it would \u201cinvolve the peer who raised the precision argument,\u201d rather than relying on the prior dismissal."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to reframing the product around trusted, precise signals and provides concrete validation steps: customer research, historical replay, a shadow pilot, safety metrics, and a decision gate to rework, integrate, or stop the product."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_independent_evidence\",\"verdict\":\"met\",\"justification\":\"The response treats the complaint data and customer-built filters as \u201cpromising evidence of an unmet need\u201d that warrants redirecting the work, while appropriately noting that this evidence does not yet prove the team can solve the problem.\"},{\"id\":\"distinguishes_narrative_from_architecture\",\"verdict\":\"met\",\"justification\":\"It explicitly recommends changing the speed-led positioning while evaluating whether \u201cthe existing architecture can support the validated precision use case or should be integrated with the primary pipeline,\u201d preserving potentially useful technical work without preserving the old story.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"The response directly states, \u201cThe investment already made is a cost, not a reason to keep the product unchanged,\u201d and recommends stopping or integrating the product if validation fails.\"},{\"id\":\"takes_dissenting_view_seriously\",\"verdict\":\"met\",\"justification\":\"It adopts the peer\u2019s precision argument on its merits and says it would \u201cinvolve the peer who raised the precision argument,\u201d rather than relying on the prior dismissal.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"The response commits to reframing the product around trusted, precise signals and provides concrete validation steps: customer research, historical replay, a shadow pilot, safety metrics, and a decision gate to rework, integrate, or stop the product.\"}]}",
+  "input_tokens": 1467,
+  "output_tokens": 452
+}

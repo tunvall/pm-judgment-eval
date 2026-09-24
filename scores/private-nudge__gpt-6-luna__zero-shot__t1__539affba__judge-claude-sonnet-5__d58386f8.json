@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba__judge-claude-sonnet-5__d58386f8",
+  "run_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:37.172076+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes 'There's no hard deadline, the broader timeline is flexible' and uses this as a reason to favor a lower-pressure private check-in rather than public escalation."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It names the real cost directly: a public callout 'may also embarrass them or make a workload issue feel like a performance issue,' treating this as a genuine downside to weigh, not just a hypothetical aside."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects using the public channel as a forcing function despite acknowledging it 'could create urgency,' choosing instead to start privately, so it does not treat the public commitment as sufficient license for public pressure."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete scripted message ('Hey, I wanted to check in on the design deliverable...') and a follow-up plan for sharing status in the team channel without singling the peer out, rather than staying abstract."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_hard_from_soft_deadline\", \"verdict\": \"met\", \"justification\": \"The response explicitly notes 'There's no hard deadline, the broader timeline is flexible' and uses this as a reason to favor a lower-pressure private check-in rather than public escalation.\"},\n    {\"id\": \"weighs_relationship_cost_explicitly\", \"verdict\": \"met\", \"justification\": \"It names the real cost directly: a public callout 'may also embarrass them or make a workload issue feel like a performance issue,' treating this as a genuine downside to weigh, not just a hypothetical aside.\"},\n    {\"id\": \"avoids_defaulting_to_visible_forcing_function\", \"verdict\": \"met\", \"justification\": \"The response rejects using the public channel as a forcing function despite acknowledging it 'could create urgency,' choosing instead to start privately, so it does not treat the public commitment as sufficient license for public pressure.\"},\n    {\"id\": \"proposes_specific_action\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete scripted message ('Hey, I wanted to check in on the design deliverable...') and a follow-up plan for sharing status in the team channel without singling the peer out, rather than staying abstract.\"}\n  ]\n}",
+  "input_tokens": 1387,
+  "output_tokens": 677
+}

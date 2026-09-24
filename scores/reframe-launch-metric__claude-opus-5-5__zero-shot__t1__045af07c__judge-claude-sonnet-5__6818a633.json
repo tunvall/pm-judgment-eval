@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c__judge-claude-sonnet-5__6818a633",
+  "run_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:22:07.986411+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'We have direct internal evidence that a good mapping-accuracy number did not translate into customer value, and a launch was paused for it,' treating this as the strongest argument for the reframe rather than assuming past mapping performance predicts future outcomes."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly separates investment from correctness: 'The year of investment is sunk... It's relevant to how we treat the team, not to which metric predicts launch success,' explicitly refusing to let sunk cost dictate the metric choice."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response proposes a concrete bootstrap plan ('Bootstrap a minimum viable ground-truth set, fast') and an interim fallback ('launch as a limited beta with design partners... Do not ship broadly on the strength of mapping accuracy alone') rather than treating the switch as immediately clean."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response touches on this via reframing the old metric as 'moved from the goal to the key diagnostic' and noting the team won't be judged against a metric 'they weren't told to optimize,' but it doesn't explicitly reason about how the choice of primary metric will drive future engineering optimization decisions beyond this launch's scoring."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, concrete recommendation ('Make the customer-facing outcome metric primary, and demote mapping accuracy to a diagnostic') with a staged transition plan, gating criteria, and fallback options, rather than merely listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'We have direct internal evidence that a good mapping-accuracy number did not translate into customer value, and a launch was paused for it,' treating this as the strongest argument for the reframe rather than assuming past mapping performance predicts future outcomes.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response directly separates investment from correctness: 'The year of investment is sunk... It's relevant to how we treat the team, not to which metric predicts launch success,' explicitly refusing to let sunk cost dictate the metric choice.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response proposes a concrete bootstrap plan ('Bootstrap a minimum viable ground-truth set, fast') and an interim fallback ('launch as a limited beta with design partners... Do not ship broadly on the strength of mapping accuracy alone') rather than treating the switch as immediately clean.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response touches on this via reframing the old metric as 'moved from the goal to the key diagnostic' and noting the team won't be judged against a metric 'they weren't told to optimize,' but it doesn't explicitly reason about how the choice of primary metric will drive future engineering optimization decisions beyond this launch's scoring.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, concrete recommendation ('Make the customer-facing outcome metric primary, and demote mapping accuracy to a diagnostic') with a staged transition plan, gating criteria, and fallback options, rather than merely listing tradeoffs.\"}\n  ]\n}",
+  "input_tokens": 3083,
+  "output_tokens": 1198
+}

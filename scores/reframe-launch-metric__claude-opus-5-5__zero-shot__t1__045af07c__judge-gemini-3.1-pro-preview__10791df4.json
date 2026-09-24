@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c__judge-gemini-3.1-pro-preview__10791df4",
+  "run_id": "reframe-launch-metric__claude-opus-5-5__zero-shot__t1__045af07c",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:22:49.867261+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly highlights that 'a good mapping-accuracy number did not translate into customer value,' treating this past failure as the strongest argument for changing the metric."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly states that 'The year of investment is sunk' and argues that it is irrelevant to which metric actually predicts launch success."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses the lack of ground truth by proposing to 'Bootstrap a minimum viable ground-truth set' through historical cases or partners, and includes a contingency for a limited beta if the data isn't ready by launch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The response focuses heavily on using the metric to accurately evaluate the launch itself (the 'launch gate' and predicting 'launch success'), but lacks explicit reasoning about how the new metric will shape the team's ongoing optimization behavior going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a clear, concrete recommendation to make the customer-facing outcome metric primary while demoting mapping accuracy to a 'guardrail/diagnostic' role."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly highlights that 'a good mapping-accuracy number did not translate into customer value,' treating this past failure as the strongest argument for changing the metric.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly states that 'The year of investment is sunk' and argues that it is irrelevant to which metric actually predicts launch success.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly addresses the lack of ground truth by proposing to 'Bootstrap a minimum viable ground-truth set' through historical cases or partners, and includes a contingency for a limited beta if the data isn't ready by launch.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response focuses heavily on using the metric to accurately evaluate the launch itself (the 'launch gate' and predicting 'launch success'), but lacks explicit reasoning about how the new metric will shape the team's ongoing optimization behavior going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a clear, concrete recommendation to make the customer-facing outcome metric primary while demoting mapping accuracy to a 'guardrail/diagnostic' role.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 2005,
+  "output_tokens": 409
+}

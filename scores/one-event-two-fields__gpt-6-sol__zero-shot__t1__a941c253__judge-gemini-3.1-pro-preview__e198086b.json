@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253__judge-gemini-3.1-pro-preview__e198086b",
+  "run_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:35:47.861851+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response successfully separates the goal from the mechanism by stating, 'The reviewer\u2019s simplicity goal is right, but a single overwritten field is not required to achieve it.'"
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly warns against overwriting the existing field because it would 'make its meaning change over time, potentially without consumers realizing it,' thereby protecting current integrations."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects the linked-records option because it would 'introduce the duplicate-alert problem customers want to avoid.'"
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate commits to a clear structural recommendation, choosing 'one event with one alert lifecycle and two explicitly defined fields.'"
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response validates the reviewer's underlying instinct by acknowledging their 'simplicity goal is right' and proposes handling that simplicity via presentation in the product UI."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_experience_goal_from_mechanism\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response successfully separates the goal from the mechanism by stating, 'The reviewer\u2019s simplicity goal is right, but a single overwritten field is not required to achieve it.'\"\n    },\n    {\n      \"id\": \"protects_existing_field_semantics\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly warns against overwriting the existing field because it would 'make its meaning change over time, potentially without consumers realizing it,' thereby protecting current integrations.\"\n    },\n    {\n      \"id\": \"avoids_duplicate_alert_risk\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response rejects the linked-records option because it would 'introduce the duplicate-alert problem customers want to avoid.'\"\n    },\n    {\n      \"id\": \"proposes_concrete_data_model\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate commits to a clear structural recommendation, choosing 'one event with one alert lifecycle and two explicitly defined fields.'\"\n    },\n    {\n      \"id\": \"engages_reviewer_disagreement_on_merits\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response validates the reviewer's underlying instinct by acknowledging their 'simplicity goal is right' and proposes handling that simplicity via presentation in the product UI.\"\n    }\n  ]\n}",
+  "input_tokens": 1295,
+  "output_tokens": 346
+}

@@ -1,0 +1,17 @@
+{
+  "score_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3__alignment-claude-sonnet-5__446bffe0",
+  "run_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:32:13.032362+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate explicitly does not block launch, treats configurability as a fast-follow, surfaces the existing undocumented suppress capability, and applies the cheap threshold-guidance mitigation\u2014matching the historical decision closely, including a staged/gated rollout resembling the early-access group approach.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate explicitly does not block launch, treats configurability as a fast-follow, surfaces the existing undocumented suppress capability, and applies the cheap threshold-guidance mitigation\u2014matching the historical decision closely, including a staged/gated rollout resembling the early-access group approach.\"\n}",
+  "input_tokens": 2368,
+  "output_tokens": 118
+}

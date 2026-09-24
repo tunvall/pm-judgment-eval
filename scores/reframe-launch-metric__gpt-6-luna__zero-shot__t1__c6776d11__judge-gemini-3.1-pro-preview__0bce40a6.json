@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11__judge-gemini-3.1-pro-preview__0bce40a6",
+  "run_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:24:58.746585+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that 'a system can map transactions consistently to its own categories and still produce an estimate customers cannot use,' recognizing the gap demonstrated by the earlier launch."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response changes the primary metric to the customer outcome and only retains the old metric as a diagnostic, explicitly avoiding making it primary just because of the team's 'year of work' and existing infrastructure."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly addresses the lack of ground truth, recommending a 'clearly bounded learning pilot' to collect outcome data in the interim before a broad launch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "While the response sets the new metric as the standard for launch gating, it does not explicitly discuss how the choice of primary metric will shape the team's behavior or what they optimize for going forward."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete recommendation to make the customer-relevant exposure number primary, while explicitly retaining the old mapping accuracy metric as a 'diagnostic and guardrail.'"
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly notes that 'a system can map transactions consistently to its own categories and still produce an estimate customers cannot use,' recognizing the gap demonstrated by the earlier launch.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response changes the primary metric to the customer outcome and only retains the old metric as a diagnostic, explicitly avoiding making it primary just because of the team's 'year of work' and existing infrastructure.\"\n    },\n    {\n      \"id\": \"accounts_for_measurement_gap_before_committing\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly addresses the lack of ground truth, recommending a 'clearly bounded learning pilot' to collect outcome data in the interim before a broad launch.\"\n    },\n    {\n      \"id\": \"recognizes_primary_metric_shapes_behavior\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response sets the new metric as the standard for launch gating, it does not explicitly discuss how the choice of primary metric will shape the team's behavior or what they optimize for going forward.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response gives a concrete recommendation to make the customer-relevant exposure number primary, while explicitly retaining the old mapping accuracy metric as a 'diagnostic and guardrail.'\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1396,
+  "output_tokens": 402
+}

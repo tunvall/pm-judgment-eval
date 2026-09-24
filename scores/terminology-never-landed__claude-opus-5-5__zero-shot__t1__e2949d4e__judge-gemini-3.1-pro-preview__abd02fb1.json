@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e__judge-gemini-3.1-pro-preview__abd02fb1",
+  "run_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:40:10.983185+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly notes that \"the problem isn't a lack of good candidates\" and identifies that each round \"optimized for the previous objection and ran into a new one,\" showing clear recognition of the process failure."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response suggests multiple forcing functions, including naming a single decision owner where reviewers are \"consulted, not given vetoes,\" setting a fixed decision date, and accepting that \"least bad against written criteria\" is a legitimate standard."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate defines strict criteria for reopening the decision, separating principled concerns like \"material harm such as support tickets\" from subjective bikeshedding like \"Someone would have preferred a different word.\""
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response specifically addresses the locked API field name, advising to \"explicitly decouple it from the customer-facing name\" and document the mapping for developers rather than trying to change it."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Instead of just picking another name, the candidate alters the approach by \"moving the explanatory burden from the name into the UI\" and shifting research from open-ended confusion testing to specific task-based questions."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly notes that \\\"the problem isn't a lack of good candidates\\\" and identifies that each round \\\"optimized for the previous objection and ran into a new one,\\\" showing clear recognition of the process failure.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response suggests multiple forcing functions, including naming a single decision owner where reviewers are \\\"consulted, not given vetoes,\\\" setting a fixed decision date, and accepting that \\\"least bad against written criteria\\\" is a legitimate standard.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate defines strict criteria for reopening the decision, separating principled concerns like \\\"material harm such as support tickets\\\" from subjective bikeshedding like \\\"Someone would have preferred a different word.\\\"\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response specifically addresses the locked API field name, advising to \\\"explicitly decouple it from the customer-facing name\\\" and document the mapping for developers rather than trying to change it.\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"Instead of just picking another name, the candidate alters the approach by \\\"moving the explanatory burden from the name into the UI\\\" and shifting research from open-ended confusion testing to specific task-based questions.\"\n    }\n  ]\n}",
+  "input_tokens": 2197,
+  "output_tokens": 409
+}

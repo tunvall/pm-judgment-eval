@@ -1,0 +1,17 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11__alignment-claude-sonnet-5__514029f2",
+  "run_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:25:14.184569+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate makes the customer-facing outcome metric primary and keeps mapping accuracy as a diagnostic/guardrail alongside it, matching the historical decision to prioritize the customer-outcome metric while retaining the old metric as a secondary internal diagnostic.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate makes the customer-facing outcome metric primary and keeps mapping accuracy as a diagnostic/guardrail alongside it, matching the historical decision to prioritize the customer-outcome metric while retaining the old metric as a secondary internal diagnostic.\"\n}",
+  "input_tokens": 1597,
+  "output_tokens": 113
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728__judge-gpt-5.6-sol__7578992a",
+  "run_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:43:39.275359+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes a clear immediate call: disable the new integration\u2019s inclusion logic if possible, otherwise roll back the launch, and do so without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It frames the rollback as a \u201ctemporary reversal\u201d or \u201ctemporary pause\u201d followed by a tested relaunch, recognizing that the chosen mitigation can be undone. However, it does not explicitly compare that reversibility with the difficulty or cost of reversing the alternatives\u2019 consequences."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It directly acknowledges that the public announcement matters but concludes it \u201cdoes not outweigh ongoing incorrect alerts for existing customers,\u201d explicitly balancing launch commitment against accumulating production harm."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects leaving the incident active while a proper fix is built and recommends only a targeted disablement or confirmed-safe rollback, while reserving relaunch for after the fix is tested."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It specifies verification and monitoring, identification of affected customers and alerts, customer and support communications, guidance on handling bad alerts, and a path to relaunch after testing."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"commits_to_a_specific_action_quickly\",\"verdict\":\"met\",\"justification\":\"The response makes a clear immediate call: disable the new integration\u2019s inclusion logic if possible, otherwise roll back the launch, and do so without waiting for the manager.\"},{\"id\":\"distinguishes_reversible_from_expensive_to_reverse\",\"verdict\":\"partially_met\",\"justification\":\"It frames the rollback as a \u201ctemporary reversal\u201d or \u201ctemporary pause\u201d followed by a tested relaunch, recognizing that the chosen mitigation can be undone. However, it does not explicitly compare that reversibility with the difficulty or cost of reversing the alternatives\u2019 consequences.\"},{\"id\":\"weighs_ongoing_harm_against_launch_momentum\",\"verdict\":\"met\",\"justification\":\"It directly acknowledges that the public announcement matters but concludes it \u201cdoes not outweigh ongoing incorrect alerts for existing customers,\u201d explicitly balancing launch commitment against accumulating production harm.\"},{\"id\":\"avoids_betting_on_unvalidated_fast_fix\",\"verdict\":\"met\",\"justification\":\"The response rejects leaving the incident active while a proper fix is built and recommends only a targeted disablement or confirmed-safe rollback, while reserving relaunch for after the fix is tested.\"},{\"id\":\"proposes_concrete_next_step\",\"verdict\":\"met\",\"justification\":\"It specifies verification and monitoring, identification of affected customers and alerts, customer and support communications, guidance on handling bad alerts, and a path to relaunch after testing.\"}]}",
+  "input_tokens": 1222,
+  "output_tokens": 581
+}

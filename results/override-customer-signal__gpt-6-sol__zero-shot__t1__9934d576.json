@@ -1,0 +1,19 @@
+{
+  "run_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576",
+  "timestamp": "2026-09-24T12:32:26.571573+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 424,
+  "output_tokens": 367,
+  "latency_ms": 10295,
+  "prompt": "# Override an explicit customer signal on a launch blocker\n\nYou are a product manager for a notification/alerting feature. Ahead of an\nupcoming launch, a customer focus group surfaced a strong, consistent signal:\ncustomers want the ability to suppress or pause individual alerts, adjust\nthresholds, and reroute notifications away from the default channel, and they want\nit before launch, not after. One participant described receiving the same alert\ndaily for weeks with no easy way to stop it. Several customers said they would only\naccept the higher alert volume that comes with a new detection capability you're\nabout to launch if it's paired with real alert management. A senior reviewer who\nran the focus group summarized this as the single most important piece of feedback\nfrom the session.\n\nWhile digging into your existing system in response to this feedback, you discover\na rudimentary suppress-from-notification capability that already exists in the\nproduct, but it's undocumented and hard to find; almost no one on the team knew it\nwas there. A broader, more complete alert-management framework has also been\nproposed as a longer-term investment, but building full configurability before\nyour launch would take multiple quarters, pushing the whole launch back\nsubstantially. You also know of a cheap design mitigation: guiding customers\ntoward higher alert thresholds on the noisier part of your detection system, which\nwould reduce much of the expected volume increase without any new engineering.\n\nDo you block the launch on alert configurability, or treat it as a fast-follow?\nWhat do you do, and why?\n\nConstraints:\n- The launch timeline is tight; building full alert configurability before launch would take multiple quarters.\n- Customer signal explicitly named this as a launch blocker, not a nice-to-have.",
+  "response": "I would **not make the full, multi-quarter alert-management framework a prerequisite**. But I also would **not call alert management a fast-follow and proceed with the broad launch as planned**. Customers explicitly tied their acceptance of the new alert volume to having control over it.\n\nI\u2019d set a narrower launch gate: customers must have a practical, discoverable way to stop unwanted alerts, and we must show that the launch will not leave them stuck with an unmanageable volume or default routing. I\u2019d quickly make the existing suppression control visible and documented, use the higher-threshold guidance to reduce noise, and check whether threshold changes and rerouting have workable existing or short-term paths. Then I\u2019d put that package in front of the customers who raised the concern and test it against real alert scenarios\u2014not assume that \u201ca suppression feature exists\u201d answers their feedback.\n\nIf it works for them, I\u2019d launch with those controls and commit to the broader framework as a fast-follow. If it does not, I\u2019d delay the broad launch or limit it to an opt-in group that accepts the current controls. The cheap mitigation reduces volume, but it does not by itself give customers the control they asked for; the focus-group signal deserves an explicit launch decision, not a quiet override."
+}

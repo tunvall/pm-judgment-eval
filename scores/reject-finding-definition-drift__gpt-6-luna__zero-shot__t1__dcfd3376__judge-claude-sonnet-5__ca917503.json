@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376__judge-claude-sonnet-5__ca917503",
+  "run_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:27:31.685474+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly distinguishes 'discontinued using this product' from 'left the platform' and states that conflating them 'would overstate the evidence and could undermine trust in the broader strategy,' treating it as a substantive rather than cosmetic issue."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response proposes a rescoped, precisely worded claim rather than a bolt-on footnote, and notes reviewers 'know the underlying data,' but it doesn't explicitly reason through whether this rewording would actually satisfy a technically literate audience versus just reducing but not eliminating scrutiny risk."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It notes the correction should happen 'rather than hoping reviewers don't notice' and that misuse 'could undermine trust in the broader strategy,' but doesn't explicitly weigh this credibility risk against the cost of a weakened argument beyond briefly conceding it might need removal."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response never appeals to the effort already spent drafting or analyzing; it instead prioritizes correcting the document 'before it goes to review.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a specific rewritten claim example, suggests running a platform-wide analysis if time allows or flagging it as an open question otherwise, and recommends notifying the document owner/review lead in advance."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_definitional_mismatch_as_material\", \"verdict\": \"met\", \"justification\": \"The response explicitly distinguishes 'discontinued using this product' from 'left the platform' and states that conflating them 'would overstate the evidence and could undermine trust in the broader strategy,' treating it as a substantive rather than cosmetic issue.\"},\n    {\"id\": \"rejects_caveat_as_sufficient_fix\", \"verdict\": \"partially_met\", \"justification\": \"The response proposes a rescoped, precisely worded claim rather than a bolt-on footnote, and notes reviewers 'know the underlying data,' but it doesn't explicitly reason through whether this rewording would actually satisfy a technically literate audience versus just reducing but not eliminating scrutiny risk.\"},\n    {\"id\": \"weighs_credibility_cost_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"It notes the correction should happen 'rather than hoping reviewers don't notice' and that misuse 'could undermine trust in the broader strategy,' but doesn't explicitly weigh this credibility risk against the cost of a weakened argument beyond briefly conceding it might need removal.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response never appeals to the effort already spent drafting or analyzing; it instead prioritizes correcting the document 'before it goes to review.'\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"It gives a specific rewritten claim example, suggests running a platform-wide analysis if time allows or flagging it as an open question otherwise, and recommends notifying the document owner/review lead in advance.\"}\n  ]\n}",
+  "input_tokens": 2090,
+  "output_tokens": 1632
+}

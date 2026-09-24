@@ -1,0 +1,17 @@
+{
+  "score_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e__alignment-claude-sonnet-5__03c09350",
+  "run_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:40:24.136818+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "diverged",
+  "justification": "The candidate proposes a structured process to lock in a final decision, define reopening criteria, and end the naming cycle for good, whereas the historical record shows the naming remained unresolved and open even through the fourth round, with no such governance fix taking hold. The candidate's outcome (a decision that 'stays made') is substantively different from what actually happened (continued instability).",
+  "raw_judge_response": "{\n  \"alignment\": \"diverged\",\n  \"justification\": \"The candidate proposes a structured process to lock in a final decision, define reopening criteria, and end the naming cycle for good, whereas the historical record shows the naming remained unresolved and open even through the fourth round, with no such governance fix taking hold. The candidate's outcome (a decision that 'stays made') is substantively different from what actually happened (continued instability).\"\n}",
+  "input_tokens": 2748,
+  "output_tokens": 640
+}

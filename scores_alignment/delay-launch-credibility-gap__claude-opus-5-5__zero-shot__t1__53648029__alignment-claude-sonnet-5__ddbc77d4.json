@@ -1,0 +1,17 @@
+{
+  "score_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029__alignment-claude-sonnet-5__ddbc77d4",
+  "run_id": "delay-launch-credibility-gap__claude-opus-5-5__zero-shot__t1__53648029",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:19:16.965906+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate explicitly decided to pause the launch and not ship the middle-ground 'identify-without-quantify' version, matching the historical decision's core logic that public criticism of a partial solution costs more than missing the date. Both use the extra time to make substantive progress rather than shipping a half-measure, though the candidate adds a transparent 'preview' framing at the conference rather than fully retargeting to a later event.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate explicitly decided to pause the launch and not ship the middle-ground 'identify-without-quantify' version, matching the historical decision's core logic that public criticism of a partial solution costs more than missing the date. Both use the extra time to make substantive progress rather than shipping a half-measure, though the candidate adds a transparent 'preview' framing at the conference rather than fully retargeting to a later event.\"\n}\n```",
+  "input_tokens": 2401,
+  "output_tokens": 161
+}

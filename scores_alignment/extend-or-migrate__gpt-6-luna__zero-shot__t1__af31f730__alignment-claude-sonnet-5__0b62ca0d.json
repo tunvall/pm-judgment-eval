@@ -1,0 +1,17 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730__alignment-claude-sonnet-5__0b62ca0d",
+  "run_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:39:17.274519+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to extend the older platform for this launch and treat the full migration to the newer platform as a separate, deliberate effort, which matches the historical decision exactly.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to extend the older platform for this launch and treat the full migration to the newer platform as a separate, deliberate effort, which matches the historical decision exactly.\"\n}",
+  "input_tokens": 1604,
+  "output_tokens": 78
+}

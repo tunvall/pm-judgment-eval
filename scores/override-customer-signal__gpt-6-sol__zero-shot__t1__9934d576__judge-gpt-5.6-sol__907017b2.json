@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576__judge-gpt-5.6-sol__907017b2",
+  "run_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:32:41.589840+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the blocker signal as serious but does not defer to the requested full framework, instead proposing a narrower launch gate based on whether practical controls address the concern."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It directly incorporates the existing suppression control by proposing to make it \u201cvisible and documented,\u201d while also cautioning that its mere existence may not fully answer the feedback."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response separates the need for practical control over unwanted alert volume and routing from the multi-quarter framework, then evaluates suppression and higher-threshold guidance as cheaper ways to meet that need."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It acknowledges the risk of leaving customers with \u201can unmanageable volume\u201d and proposes limiting or delaying launch if mitigations fail, but it does not explicitly identify the hindsight risk created by high adoption amplifying the problem."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete plan: do not gate on the full framework, make suppression discoverable, reduce noise through threshold guidance, validate the package with customers, and then either launch, limit to opt-in, or delay based on the result."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the blocker signal as serious but does not defer to the requested full framework, instead proposing a narrower launch gate based on whether practical controls address the concern.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It directly incorporates the existing suppression control by proposing to make it \u201cvisible and documented,\u201d while also cautioning that its mere existence may not fully answer the feedback.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response separates the need for practical control over unwanted alert volume and routing from the multi-quarter framework, then evaluates suppression and higher-threshold guidance as cheaper ways to meet that need.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It acknowledges the risk of leaving customers with \u201can unmanageable volume\u201d and proposes limiting or delaying launch if mitigations fail, but it does not explicitly identify the hindsight risk created by high adoption amplifying the problem.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete plan: do not gate on the full framework, make suppression discoverable, reduce noise through threshold guidance, validate the package with customers, and then either launch, limit to opt-in, or delay based on the result.\"}]}",
+  "input_tokens": 1422,
+  "output_tokens": 471
+}

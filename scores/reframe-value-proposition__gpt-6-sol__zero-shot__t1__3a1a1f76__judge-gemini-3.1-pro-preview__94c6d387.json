@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76__judge-gemini-3.1-pro-preview__94c6d387",
+  "run_id": "reframe-value-proposition__gpt-6-sol__zero-shot__t1__3a1a1f76",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:20:06.169791+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "While the response uses the complaint data to identify a 'different, costly problem' to base the reframing on, it does not explicitly state that this data was already sufficient grounds for reconsidering, instead citing the leadership announcement as the catalyst that 'makes a speed-only launch a short-lived proposition'."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly separates the two concepts, recommending that the team test 'whether our architecture can solve that problem' while deciding to 'revise the approved go-to-market narrative'."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects this fallacy, stating that 'the year of investment and the approved narrative are reasons to manage the transition carefully, not reasons to defend the old thesis.'"
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate actively engages the dissenting peer, noting they would 'acknowledge that my peer identified this risk earlier and bring them into the reassessment.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete, evidence-based plan: test the architecture's precision on false positives, then either 'reframe the product' if it shows improvement, or 'stop or fold the work' if it does not."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"While the response uses the complaint data to identify a 'different, costly problem' to base the reframing on, it does not explicitly state that this data was already sufficient grounds for reconsidering, instead citing the leadership announcement as the catalyst that 'makes a speed-only launch a short-lived proposition'.\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly separates the two concepts, recommending that the team test 'whether our architecture can solve that problem' while deciding to 'revise the approved go-to-market narrative'.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects this fallacy, stating that 'the year of investment and the approved narrative are reasons to manage the transition carefully, not reasons to defend the old thesis.'\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate actively engages the dissenting peer, noting they would 'acknowledge that my peer identified this risk earlier and bring them into the reassessment.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete, evidence-based plan: test the architecture's precision on false positives, then either 'reframe the product' if it shows improvement, or 'stop or fold the work' if it does not.\"\n    }\n  ]\n}",
+  "input_tokens": 1419,
+  "output_tokens": 410
+}

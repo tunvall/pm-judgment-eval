@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1__judge-gpt-5.6-sol__42dbf706",
+  "run_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:16.007847+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says that \u201cthere\u2019s no hard deadline\u201d and concludes that public pressure would therefore be disproportionate, appropriately calibrating urgency."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "Choosing a private message and giving the peer a chance to provide the public update shows sensitivity, but the response never explicitly identifies trust, embarrassment, or reputational harm as a cost of public escalation."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It rejects using the public channel \u201cmainly to create pressure\u201d despite the original public commitment, and instead treats that commitment as a reason the team may eventually need a neutral update."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends a private message asking about status, changed capacity, and needed help, followed by agreement on a realistic next step or revised date and a coordinated team update."
+    }
+  ],
+  "weighted_total": 8.5,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly says that \u201cthere\u2019s no hard deadline\u201d and concludes that public pressure would therefore be disproportionate, appropriately calibrating urgency.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"Choosing a private message and giving the peer a chance to provide the public update shows sensitivity, but the response never explicitly identifies trust, embarrassment, or reputational harm as a cost of public escalation.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"It rejects using the public channel \u201cmainly to create pressure\u201d despite the original public commitment, and instead treats that commitment as a reason the team may eventually need a neutral update.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends a private message asking about status, changed capacity, and needed help, followed by agreement on a realistic next step or revised date and a coordinated team update.\"}]}",
+  "input_tokens": 866,
+  "output_tokens": 320
+}

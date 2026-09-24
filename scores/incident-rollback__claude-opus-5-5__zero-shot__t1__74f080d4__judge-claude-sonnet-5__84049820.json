@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__claude-opus-5-5__zero-shot__t1__74f080d4__judge-claude-sonnet-5__84049820",
+  "run_id": "incident-rollback__claude-opus-5-5__zero-shot__t1__74f080d4",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:42:36.117960+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response opens with a clear, specific decision \u2014 'I'd roll back the new integration's signal coverage immediately... within the hour, without waiting for my manager' \u2014 rather than laying out options and deferring."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly contrasts reversibility: 'The rollback is also reversible: we can re-enable once fixed. The trust damage from days of bad signals is not reversible,' directly naming the reversibility tradeoff of its chosen path versus the alternative of leaving it live."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly lays out asymmetric costs \u2014 'Keeping it live means several days of compounding harm... Rolling back means a short delay on a feature customers learned about today' \u2014 directly weighing ongoing harm against the cost of walking back the announced launch."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response calls a rushed hotfix 'the tempting trap' and states 'An untested patch to calibration logic during an active incident risks a second incident, and I'd need high confidence to take that bet,' explicitly flagging the optimism/risk of a fast fix rather than defaulting to it."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate rollback, it details a same-day communication plan for affected and new-integration customers plus a staged relaunch and postmortem plan ('Relaunch in stages, behind a flag, to a small cohort first... Run a blameless postmortem')."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response opens with a clear, specific decision \u2014 'I'd roll back the new integration's signal coverage immediately... within the hour, without waiting for my manager' \u2014 rather than laying out options and deferring.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts reversibility: 'The rollback is also reversible: we can re-enable once fixed. The trust damage from days of bad signals is not reversible,' directly naming the reversibility tradeoff of its chosen path versus the alternative of leaving it live.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"It explicitly lays out asymmetric costs \u2014 'Keeping it live means several days of compounding harm... Rolling back means a short delay on a feature customers learned about today' \u2014 directly weighing ongoing harm against the cost of walking back the announced launch.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response calls a rushed hotfix 'the tempting trap' and states 'An untested patch to calibration logic during an active incident risks a second incident, and I'd need high confidence to take that bet,' explicitly flagging the optimism/risk of a fast fix rather than defaulting to it.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate rollback, it details a same-day communication plan for affected and new-integration customers plus a staged relaunch and postmortem plan ('Relaunch in stages, behind a flag, to a small cohort first... Run a blameless postmortem').\"}\n  ]\n}",
+  "input_tokens": 2838,
+  "output_tokens": 1244
+}

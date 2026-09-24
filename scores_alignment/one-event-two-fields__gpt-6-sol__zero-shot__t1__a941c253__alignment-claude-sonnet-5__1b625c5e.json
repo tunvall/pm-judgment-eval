@@ -1,0 +1,17 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253__alignment-claude-sonnet-5__1b625c5e",
+  "run_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:35:58.749791+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose option three: a single event/lifecycle with a new second field for the more precise estimate, explicitly preserving the original field's meaning, matching the historical decision exactly.",
+  "raw_judge_response": "{\"alignment\": \"aligned\", \"justification\": \"The candidate chose option three: a single event/lifecycle with a new second field for the more precise estimate, explicitly preserving the original field's meaning, matching the historical decision exactly.\"}",
+  "input_tokens": 1389,
+  "output_tokens": 77
+}

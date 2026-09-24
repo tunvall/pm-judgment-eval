@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3__judge-gpt-5.6-sol__052c5470",
+  "run_id": "override-customer-signal__gpt-6-luna__zero-shot__t1__c6b1fbc3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:33:46.104547+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the blocker statement as important but not dispositive, rejecting both an automatic multi-quarter delay and an unchanged broad launch in favor of validating narrower controls."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly proposes investigating the existing suppress-from-notification capability and making it discoverable and easy to use as part of the launch-ready mitigation."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response separates the need for usable control over alert volume from the proposed full framework, considering suppression, threshold guidance, and possibly lightweight rerouting as a minimum sufficient solution."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It identifies the risk that customers may still be unable to manage recurring alerts and therefore recommends a delay or limited rollout, but it does not explicitly state that a fast-follow could prove wrong in hindsight if adoption and alert volume are high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It gives a concrete recommendation: do not block on the full framework, gate general availability on validated minimum controls, and delay or use a limited opt-in rollout if those controls are insufficient."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the blocker statement as important but not dispositive, rejecting both an automatic multi-quarter delay and an unchanged broad launch in favor of validating narrower controls.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It explicitly proposes investigating the existing suppress-from-notification capability and making it discoverable and easy to use as part of the launch-ready mitigation.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response separates the need for usable control over alert volume from the proposed full framework, considering suppression, threshold guidance, and possibly lightweight rerouting as a minimum sufficient solution.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It identifies the risk that customers may still be unable to manage recurring alerts and therefore recommends a delay or limited rollout, but it does not explicitly state that a fast-follow could prove wrong in hindsight if adoption and alert volume are high.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It gives a concrete recommendation: do not block on the full framework, gate general availability on validated minimum controls, and delay or use a limited opt-in rollout if those controls are insufficient.\"}]}",
+  "input_tokens": 1468,
+  "output_tokens": 538
+}

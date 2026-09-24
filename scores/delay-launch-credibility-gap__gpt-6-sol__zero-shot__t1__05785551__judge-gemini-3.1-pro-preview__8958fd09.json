@@ -1,0 +1,54 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551__judge-gemini-3.1-pro-preview__8958fd09",
+  "run_id": "delay-launch-credibility-gap__gpt-6-sol__zero-shot__t1__05785551",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:48:45.308756+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "weighs_credibility_risk_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly cites the commentator's reaction and practitioner feedback, weighing these credibility risks against the cost of missing a public commitment by concluding that launching an indefensible answer 'would cost more trust.'"
+    },
+    {
+      "id": "treats_prior_precedent_as_real_signal",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate directly references the skip-level director's previous rejection, stating that the proposed version 'does not resolve the reason the narrower version was previously declined' and uses this prior decision as a strong reason not to ship."
+    },
+    {
+      "id": "does_not_treat_public_commitment_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response actively chooses to pause the launch, explicitly noting that while 'missing a public commitment is costly,' pushing forward with an indefensible product is worse."
+    },
+    {
+      "id": "considers_narrower_defensible_scope",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response suggests using the remaining month to evaluate 'whether any customer-valuable use case is genuinely supportable,' but it does this after already deciding to pause the launch entirely, rather than explicitly analyzing the >70% precision subset as a viable conference launch alternative."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides concrete next steps, including informing leadership immediately, conducting a scoped evaluation, and using the conference slot to candidly explain the delay while sharing a plan to close the accuracy gap."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"weighs_credibility_risk_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly cites the commentator's reaction and practitioner feedback, weighing these credibility risks against the cost of missing a public commitment by concluding that launching an indefensible answer 'would cost more trust.'\"\n    },\n    {\n      \"id\": \"treats_prior_precedent_as_real_signal\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate directly references the skip-level director's previous rejection, stating that the proposed version 'does not resolve the reason the narrower version was previously declined' and uses this prior decision as a strong reason not to ship.\"\n    },\n    {\n      \"id\": \"does_not_treat_public_commitment_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively chooses to pause the launch, explicitly noting that while 'missing a public commitment is costly,' pushing forward with an indefensible product is worse.\"\n    },\n    {\n      \"id\": \"considers_narrower_defensible_scope\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response suggests using the remaining month to evaluate 'whether any customer-valuable use case is genuinely supportable,' but it does this after already deciding to pause the launch entirely, rather than explicitly analyzing the >70% precision subset as a viable conference launch alternative.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides concrete next steps, including informing leadership immediately, conducting a scoped evaluation, and using the conference slot to candidly explain the delay while sharing a plan to close the accuracy gap.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1463,
+  "output_tokens": 429
+}

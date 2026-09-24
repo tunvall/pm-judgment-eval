@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253__judge-gpt-5.6-sol__27bf40db",
+  "run_id": "one-event-two-fields__gpt-6-sol__zero-shot__t1__a941c253",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:35:42.586854+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the reviewer\u2019s valid simplicity goal from the proposed implementation: \u201ca single overwritten field is not required to achieve it,\u201d and explains that one event with two fields still provides the unified view customers requested."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It preserves the existing field\u2019s current meaning and highlights that overwriting it would make its semantics change over time \u201cpotentially without consumers realizing it,\u201d endangering millions of dependent records and integrations."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly notes that a second linked record would \u201cintroduce the duplicate-alert problem customers want to avoid\u201d and uses a single event and alert lifecycle to prevent it."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends one event with one alert lifecycle, retaining the existing field for its current estimate and adding a new field for the slower, more precise estimate, including defined availability and provenance."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It validates the reviewer\u2019s underlying customer-simplicity goal as \u201cright\u201d while explaining why a two-field, single-event mechanism achieves that goal without silently changing established semantics."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_experience_goal_from_mechanism\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the reviewer\u2019s valid simplicity goal from the proposed implementation: \u201ca single overwritten field is not required to achieve it,\u201d and explains that one event with two fields still provides the unified view customers requested.\"},{\"id\":\"protects_existing_field_semantics\",\"verdict\":\"met\",\"justification\":\"It preserves the existing field\u2019s current meaning and highlights that overwriting it would make its semantics change over time \u201cpotentially without consumers realizing it,\u201d endangering millions of dependent records and integrations.\"},{\"id\":\"avoids_duplicate_alert_risk\",\"verdict\":\"met\",\"justification\":\"The response directly notes that a second linked record would \u201cintroduce the duplicate-alert problem customers want to avoid\u201d and uses a single event and alert lifecycle to prevent it.\"},{\"id\":\"proposes_concrete_data_model\",\"verdict\":\"met\",\"justification\":\"It clearly recommends one event with one alert lifecycle, retaining the existing field for its current estimate and adding a new field for the slower, more precise estimate, including defined availability and provenance.\"},{\"id\":\"engages_reviewer_disagreement_on_merits\",\"verdict\":\"met\",\"justification\":\"It validates the reviewer\u2019s underlying customer-simplicity goal as \u201cright\u201d while explaining why a two-field, single-event mechanism achieves that goal without silently changing established semantics.\"}]}",
+  "input_tokens": 1238,
+  "output_tokens": 292
+}

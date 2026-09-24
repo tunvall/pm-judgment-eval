@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba__judge-gpt-5.6-sol__d19453d0",
+  "run_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:44.843788+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly notes that \u201cthere\u2019s no hard deadline\u201d and the broader timeline is flexible, using that context to justify a lower-pressure private check-in."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It identifies concrete interpersonal and reputational costs: a public callout could \u201cembarrass them\u201d or turn a workload issue into a perceived performance issue."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Despite acknowledging that public pressure could create urgency, the response does not treat the public commitment as sufficient reason to escalate and instead favors private outreach."
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It recommends starting with a private, supportive message, provides example wording, and specifies that any later team-channel update should communicate status and impact without singling the peer out."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_hard_from_soft_deadline\",\"verdict\":\"met\",\"justification\":\"The response explicitly notes that \u201cthere\u2019s no hard deadline\u201d and the broader timeline is flexible, using that context to justify a lower-pressure private check-in.\"},{\"id\":\"weighs_relationship_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"It identifies concrete interpersonal and reputational costs: a public callout could \u201cembarrass them\u201d or turn a workload issue into a perceived performance issue.\"},{\"id\":\"avoids_defaulting_to_visible_forcing_function\",\"verdict\":\"met\",\"justification\":\"Despite acknowledging that public pressure could create urgency, the response does not treat the public commitment as sufficient reason to escalate and instead favors private outreach.\"},{\"id\":\"proposes_specific_action\",\"verdict\":\"met\",\"justification\":\"It recommends starting with a private, supportive message, provides example wording, and specifies that any later team-channel update should communicate status and impact without singling the peer out.\"}]}",
+  "input_tokens": 925,
+  "output_tokens": 238
+}

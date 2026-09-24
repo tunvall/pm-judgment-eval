@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba__judge-gemini-3.1-pro-preview__de40914e",
+  "run_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:49.175899+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly references the lack of a hard deadline and timeline flexibility as reasons to avoid a public callout and instead agree on a realistic timeline."
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly weighs the reputational cost, noting that a public callout could \"embarrass them or make a workload issue feel like a performance issue.\""
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively avoids defaulting to a public nudge, deciding instead to \"start with a private, supportive message rather than use the team channel as pressure.\""
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recommends a specific communication approach by providing a concrete script for a private direct message."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly references the lack of a hard deadline and timeline flexibility as reasons to avoid a public callout and instead agree on a realistic timeline.\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly weighs the reputational cost, noting that a public callout could \\\"embarrass them or make a workload issue feel like a performance issue.\\\"\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively avoids defaulting to a public nudge, deciding instead to \\\"start with a private, supportive message rather than use the team channel as pressure.\\\"\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recommends a specific communication approach by providing a concrete script for a private direct message.\"\n    }\n  ]\n}",
+  "input_tokens": 979,
+  "output_tokens": 278
+}

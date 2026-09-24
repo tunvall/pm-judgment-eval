@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d__judge-gemini-3.1-pro-preview__864181dd",
+  "run_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:41:58.805985+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response identifies that the real problem is the flawed decision process causing endless loops, stating 'I\u2019d first fix the decision process that has allowed each round to optimize for one concern, then be overturned'."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests establishing a 'decision rule and decision owner before seeing results' and explicitly advocates for accepting an imperfect name as a 'practical tradeoff rather than a perfect one'."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response clearly distinguishes valid objections from bikeshedding by creating a rule to 'Reopen only if there is material new evidence... not simply a new preference in the next review cycle.'"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly addresses the API constraint, stating 'The locked API field remains unchanged; define and document the mapping between that field and the customer-facing label.'"
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate avoids repeating past mistakes by refusing to start with name generation and instead focusing on upfront alignment ('Bring the relevant family reviewers in now, not after a candidate has been chosen')."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies that the real problem is the flawed decision process causing endless loops, stating 'I\u2019d first fix the decision process that has allowed each round to optimize for one concern, then be overturned'.\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests establishing a 'decision rule and decision owner before seeing results' and explicitly advocates for accepting an imperfect name as a 'practical tradeoff rather than a perfect one'.\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly distinguishes valid objections from bikeshedding by creating a rule to 'Reopen only if there is material new evidence... not simply a new preference in the next review cycle.'\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly addresses the API constraint, stating 'The locked API field remains unchanged; define and document the mapping between that field and the customer-facing label.'\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate avoids repeating past mistakes by refusing to start with name generation and instead focusing on upfront alignment ('Bring the relevant family reviewers in now, not after a candidate has been chosen').\"\n    }\n  ]\n}",
+  "input_tokens": 1604,
+  "output_tokens": 385
+}

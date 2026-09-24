@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea__judge-claude-sonnet-5__d6cb8e0b",
+  "run_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:20:54.400063+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response builds its new thesis around the false-positive complaint data ('The stronger hypothesis is that customers need a risk signal they can trust'), but it frames this alongside the leadership roadmap announcement rather than explicitly noting the complaint data alone was already sufficient grounds for reconsideration independent of the speed announcement."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the two, stating it would 'Explore whether the existing architecture can support the validated precision use case or should be integrated with the primary pipeline' while noting only the speed-driven positioning needs to change, not necessarily the underlying build."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly states 'The investment already made is a cost, not a reason to keep the product unchanged,' explicitly rejecting sunk-cost justification for continuing unchanged."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response says it would 'involve the peer who raised the precision argument' and adopts precision as the stronger hypothesis, but it doesn't substantively engage with why the argument was previously dismissed or what changed to make it now credible."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response lays out a concrete, sequenced plan (validate pain, pilot precision improvements, reassess build/positioning, set a decision gate) rather than just listing abstract options, committing to a specific course of action."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"partially_met\", \"justification\": \"The response builds its new thesis around the false-positive complaint data ('The stronger hypothesis is that customers need a risk signal they can trust'), but it frames this alongside the leadership roadmap announcement rather than explicitly noting the complaint data alone was already sufficient grounds for reconsideration independent of the speed announcement.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates the two, stating it would 'Explore whether the existing architecture can support the validated precision use case or should be integrated with the primary pipeline' while noting only the speed-driven positioning needs to change, not necessarily the underlying build.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response directly states 'The investment already made is a cost, not a reason to keep the product unchanged,' explicitly rejecting sunk-cost justification for continuing unchanged.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"partially_met\", \"justification\": \"The response says it would 'involve the peer who raised the precision argument' and adopts precision as the stronger hypothesis, but it doesn't substantively engage with why the argument was previously dismissed or what changed to make it now credible.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response lays out a concrete, sequenced plan (validate pain, pilot precision improvements, reassess build/positioning, set a decision gate) rather than just listing abstract options, committing to a specific course of action.\"}\n  ]\n}",
+  "input_tokens": 2265,
+  "output_tokens": 1174
+}

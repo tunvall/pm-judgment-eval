@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9__judge-gemini-3.1-pro-preview__ccbc00a1",
+  "run_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:41:01.296771+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response identifies the cycle of failure, noting that past rounds show 'each label fixes one misunderstanding while creating another' and concluding that 'the evidence so far suggests there may be no such name.'"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate suggests a concrete mechanism to end the cycle by agreeing on 'who approves the choice, when the decision closes' and committing to 'ship on a set date.'"
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly defines what warrants reopening the decision by distinguishing a valid concern ('a material customer misunderstanding') from mere bikeshedding ('a newly expressed preference')."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly incorporates the constraint, stating that 'The locked API field would remain unchanged, with its mapping to the customer-facing term documented.'"
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Instead of proposing just another standalone name, the response changes the approach to testing 'complete customer-facing treatments\u2014name plus any short description, UI context, or documentation' to avoid repeating past failures."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_pattern_not_just_instance\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response identifies the cycle of failure, noting that past rounds show 'each label fixes one misunderstanding while creating another' and concluding that 'the evidence so far suggests there may be no such name.'\"\n    },\n    {\n      \"id\": \"proposes_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate suggests a concrete mechanism to end the cycle by agreeing on 'who approves the choice, when the decision closes' and committing to 'ship on a set date.'\"\n    },\n    {\n      \"id\": \"distinguishes_principled_objection_from_bikeshedding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly defines what warrants reopening the decision by distinguishing a valid concern ('a material customer misunderstanding') from mere bikeshedding ('a newly expressed preference').\"\n    },\n    {\n      \"id\": \"accounts_for_locked_constraints\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly incorporates the constraint, stating that 'The locked API field would remain unchanged, with its mapping to the customer-facing term documented.'\"\n    },\n    {\n      \"id\": \"avoids_repeating_failed_approach\",\n      \"verdict\": \"met\",\n      \"justification\": \"Instead of proposing just another standalone name, the response changes the approach to testing 'complete customer-facing treatments\u2014name plus any short description, UI context, or documentation' to avoid repeating past failures.\"\n    }\n  ]\n}",
+  "input_tokens": 1394,
+  "output_tokens": 380
+}

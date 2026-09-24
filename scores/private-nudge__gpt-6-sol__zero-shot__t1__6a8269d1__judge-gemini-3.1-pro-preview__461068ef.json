@@ -1,0 +1,47 @@
+{
+  "score_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1__judge-gemini-3.1-pro-preview__461068ef",
+  "run_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:21.962976+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_hard_from_soft_deadline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly connects the lack of a deadline to the level of pressure applied, stating that 'Since there\u2019s no hard deadline... using a public channel mainly to create pressure would be disproportionate.'"
+    },
+    {
+      "id": "weighs_relationship_cost_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "While the response notes that public pressure would be 'disproportionate' and shows empathy for the peer's workload, it does not explicitly name or weigh the relationship or reputational damage that a public escalation would cause."
+    },
+    {
+      "id": "avoids_defaulting_to_visible_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response actively avoids defaulting to a public nudge despite the public commitment, instead suggesting that they give the peer 'a chance to share that update themselves, or agree on a neutral one together.'"
+    },
+    {
+      "id": "proposes_specific_action",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate recommends a clear, specific step: 'message the peer privately first' to ask where the design stands and what would help them."
+    }
+  ],
+  "weighted_total": 7.0,
+  "max_possible": 10.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"distinguishes_hard_from_soft_deadline\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly connects the lack of a deadline to the level of pressure applied, stating that 'Since there\u2019s no hard deadline... using a public channel mainly to create pressure would be disproportionate.'\"\n    },\n    {\n      \"id\": \"weighs_relationship_cost_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"While the response notes that public pressure would be 'disproportionate' and shows empathy for the peer's workload, it does not explicitly name or weigh the relationship or reputational damage that a public escalation would cause.\"\n    },\n    {\n      \"id\": \"avoids_defaulting_to_visible_forcing_function\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response actively avoids defaulting to a public nudge despite the public commitment, instead suggesting that they give the peer 'a chance to share that update themselves, or agree on a neutral one together.'\"\n    },\n    {\n      \"id\": \"proposes_specific_action\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate recommends a clear, specific step: 'message the peer privately first' to ask where the design stands and what would help them.\"\n    }\n  ]\n}",
+  "input_tokens": 916,
+  "output_tokens": 320
+}

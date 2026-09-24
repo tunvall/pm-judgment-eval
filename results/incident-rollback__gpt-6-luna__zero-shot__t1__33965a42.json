@@ -1,0 +1,19 @@
+{
+  "run_id": "incident-rollback__gpt-6-luna__zero-shot__t1__33965a42",
+  "timestamp": "2026-09-24T12:45:05.830535+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-luna",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 290,
+  "output_tokens": 702,
+  "latency_ms": 14550,
+  "prompt": "# Two-hour decision on a live production incident\n\nYou are a product manager covering as incident lead while your manager is\nunavailable. A launch extending risk-signal coverage to a newly supported\nthird-party integration went out as planned earlier today. Within two hours,\nexisting customers on unrelated, already-supported transaction types started\nseeing incorrect risk signals fire, and a high-severity incident has been\ndeclared.\n\nEngineering has identified the root cause: a scoping bug where the new\nintegration's inclusion logic inadvertently affected signal calibration for\ntransactions that have nothing to do with the new integration. A proper,\nwell-tested fix would take several days to build. Every additional hour the\nissue continues means more customers receiving mistaken alerts and more support\nburden. The new integration launch was publicly announced, and rolling it back\nmeans undoing a commitment customers were already told about.\n\nWhat do you do, and why?\n\nConstraints:\n- You are the acting incident lead; your manager is unavailable.\n- A high-severity incident has already been declared, confirming production impact.\n- The new integration launch was publicly announced.",
+  "response": "I would **contain the incident now**, even if that means temporarily withdrawing the newly announced integration.\n\nI\u2019d ask engineering to use the fastest safe mitigation: disable the new integration\u2019s inclusion path if that is confirmed to stop the faulty calibration; otherwise roll back to the last known-good version. I would not wait several days for a fully tested permanent fix while customers continue receiving incorrect signals. If the mitigation cannot be verified or does not stop the impact, I\u2019d escalate to a broader rollback rather than leave the incident running.\n\nIn parallel, I\u2019d coordinate the response: confirm the mitigation has taken effect, monitor affected signal rates, identify which customers and transactions were impacted, and have support prepare accurate guidance. Once we know the scope, we should tell affected customers what happened, what we\u2019ve done, and what they should do about any mistaken alerts. We should also give a factual update on the new integration\u2019s temporary availability and avoid promising a relaunch date until the fix is tested.\n\nThe public announcement matters for customer trust, but it does not justify continuing a production issue that is harming unrelated customers. A temporary pause with clear communication is a better commitment than leaving a faulty feature live."
+}

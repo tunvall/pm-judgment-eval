@@ -1,0 +1,17 @@
+{
+  "score_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175__alignment-claude-sonnet-5__c2fb28e6",
+  "run_id": "delay-launch-credibility-gap__gpt-6-luna__zero-shot__t1__34c1b175",
+  "case_id": "delay-launch-credibility-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:17:42.338960+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate decided to pause the launch entirely and not ship the identify-without-estimating middle-ground version, converting the conference commitment to a progress update instead\u2014matching the historical decision to pause and retarget rather than ship the partial solution.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate decided to pause the launch entirely and not ship the identify-without-estimating middle-ground version, converting the conference commitment to a progress update instead\u2014matching the historical decision to pause and retarget rather than ship the partial solution.\"\n}",
+  "input_tokens": 1706,
+  "output_tokens": 100
+}

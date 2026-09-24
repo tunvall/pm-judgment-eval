@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730__judge-gpt-5.6-sol__79e2db94",
+  "run_id": "extend-or-migrate__gpt-6-luna__zero-shot__t1__af31f730",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:38:48.487777+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates the strategic destination from the launch vehicle: \u201cThe newer platform remains the right destination,\u201d while recommending that this launch use a bounded legacy extension because migration would endanger the schedule."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It grounds the decision in the technically derived estimate, citing the routing, verification, destination, and template mismatches and stating that onboarding is \u201croughly twice as long, with no schedule margin.\u201d It also explicitly refuses to commit based on the optimistic timeline."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "Although the response proposes an owner, exit criteria, and a later migration, it does not identify or weigh the specific risk that temporarily splitting products or notification traffic across platforms could create an inconsistent customer experience."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly counters the likely perception of resisting strategy by calling the extension \u201ca bridge, not a change in direction\u201d and explaining that it preserves the company-wide destination. It also gives leadership explicit alternatives\u2014reduce scope or move the launch date\u2014if the newer platform must be used."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes a clear recommendation to implement the \u201csmall, bounded extension\u201d for launch and run migration as a separate owned effort, supplemented by concrete actions such as assigning an owner, defining exit criteria, and re-estimating with platform owners."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_direction_from_this_launchs_timeline\",\"verdict\":\"met\",\"justification\":\"The response explicitly separates the strategic destination from the launch vehicle: \u201cThe newer platform remains the right destination,\u201d while recommending that this launch use a bounded legacy extension because migration would endanger the schedule.\"},{\"id\":\"uses_own_realistic_estimate_over_circulating_one\",\"verdict\":\"met\",\"justification\":\"It grounds the decision in the technically derived estimate, citing the routing, verification, destination, and template mismatches and stating that onboarding is \u201croughly twice as long, with no schedule margin.\u201d It also explicitly refuses to commit based on the optimistic timeline.\"},{\"id\":\"identifies_risk_of_partial_migration\",\"verdict\":\"not_met\",\"justification\":\"Although the response proposes an owner, exit criteria, and a later migration, it does not identify or weigh the specific risk that temporarily splitting products or notification traffic across platforms could create an inconsistent customer experience.\"},{\"id\":\"anticipates_pushback_and_addresses_it\",\"verdict\":\"met\",\"justification\":\"The response directly counters the likely perception of resisting strategy by calling the extension \u201ca bridge, not a change in direction\u201d and explaining that it preserves the company-wide destination. It also gives leadership explicit alternatives\u2014reduce scope or move the launch date\u2014if the newer platform must be used.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It makes a clear recommendation to implement the \u201csmall, bounded extension\u201d for launch and run migration as a separate owned effort, supplemented by concrete actions such as assigning an owner, defining exit criteria, and re-estimating with platform owners.\"}]}",
+  "input_tokens": 1421,
+  "output_tokens": 449
+}

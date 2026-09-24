@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3__judge-claude-sonnet-5__2251edd9",
+  "run_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:31:31.359759+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states it will treat the signal 'as binding on the problem, but not on the solution size,' showing it weighs the customer's blocker claim against other considerations rather than deferring to it uncritically."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response makes surfacing and documenting the undocumented suppress capability the 'highest-leverage move' and central pre-launch action, directly tying it to the customer's complaint about having 'no easy way to stop' repeat alerts."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates need from solution: 'Customers aren't asking for configurability for its own sake... That need can be substantially met before launch,' then reasons about which cheaper interventions (suppress, defaults, snooze) meet the need versus deferring the full framework."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response names risks like insufficient mitigation leading to churn or complaints exceeding thresholds and sets kill/pause criteria, but it frames this mainly as an operational safeguard rather than explicitly acknowledging the reputational/hindsight risk of having overridden a senior reviewer's 'most important feedback' if adoption turns out high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a specific, staged plan ('Before launch... At launch... After launch...') with concrete actions like surfacing the suppress feature, setting conservative defaults, gating rollout, and instrumenting metrics, rather than just listing pros and cons."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_treat_signal_as_automatically_binding\", \"verdict\": \"met\", \"justification\": \"The response explicitly states it will treat the signal 'as binding on the problem, but not on the solution size,' showing it weighs the customer's blocker claim against other considerations rather than deferring to it uncritically.\"},\n    {\"id\": \"identifies_existing_capability_as_relevant\", \"verdict\": \"met\", \"justification\": \"The response makes surfacing and documenting the undocumented suppress capability the 'highest-leverage move' and central pre-launch action, directly tying it to the customer's complaint about having 'no easy way to stop' repeat alerts.\"},\n    {\"id\": \"distinguishes_need_from_stated_solution\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates need from solution: 'Customers aren't asking for configurability for its own sake... That need can be substantially met before launch,' then reasons about which cheaper interventions (suppress, defaults, snooze) meet the need versus deferring the full framework.\"},\n    {\"id\": \"flags_residual_risk_explicitly\", \"verdict\": \"partially_met\", \"justification\": \"The response names risks like insufficient mitigation leading to churn or complaints exceeding thresholds and sets kill/pause criteria, but it frames this mainly as an operational safeguard rather than explicitly acknowledging the reputational/hindsight risk of having overridden a senior reviewer's 'most important feedback' if adoption turns out high.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a specific, staged plan ('Before launch... At launch... After launch...') with concrete actions like surfacing the suppress feature, setting conservative defaults, gating rollout, and instrumenting metrics, rather than just listing pros and cons.\"}\n  ]\n}",
+  "input_tokens": 2987,
+  "output_tokens": 1181
+}

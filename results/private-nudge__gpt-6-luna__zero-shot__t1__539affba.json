@@ -1,0 +1,19 @@
+{
+  "run_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba",
+  "timestamp": "2026-09-24T13:16:53.895127+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-luna",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 218,
+  "output_tokens": 262,
+  "latency_ms": 4550,
+  "prompt": "# Public pressure or a private nudge on a slipping deliverable\n\nA peer's committed design deliverable has been slipping for a couple of weeks.\nThere's no hard deadline behind it; the broader team's timeline has flexibility.\nYou know the peer is currently under pressure from other, unrelated work. You're\nconsidering how to follow up: raising it in a team-wide public channel would\nlikely apply useful pressure and create a forcing function, since the original\ncommitment was made publicly. A private direct message would be lower-key but\nmight take longer to produce results.\n\nHow do you follow up, and why?\n\nConstraints:\n- No hard deadline exists for the deliverable itself.\n- The peer is known to be dealing with pressure from other work.",
+  "response": "I\u2019d start with a private, supportive message rather than use the team channel as pressure.\n\nThere\u2019s no hard deadline, the broader timeline is flexible, and I know they\u2019re carrying other work. A public callout could create urgency, but it may also embarrass them or make a workload issue feel like a performance issue. A private check-in lets me learn what\u2019s blocking the deliverable and agree on a realistic next step.\n\nFor example: \u201cHey, I wanted to check in on the design deliverable. How\u2019s it going, and is anything blocking it? Since the broader timeline has some flexibility, let\u2019s figure out what timing is realistic given your other work.\u201d\n\nIf the timing affects the team\u2019s plans, I\u2019d share the updated status and any impact in the team channel without singling them out or using it to apply pressure."
+}

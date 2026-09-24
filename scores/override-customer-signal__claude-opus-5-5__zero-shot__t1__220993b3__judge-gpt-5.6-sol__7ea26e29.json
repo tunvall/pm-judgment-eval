@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3__judge-gpt-5.6-sol__7ea26e29",
+  "run_id": "override-customer-signal__claude-opus-5-5__zero-shot__t1__220993b3",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:31:43.923152+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response treats the signal as \u201cbinding on the problem, but not on the solution size\u201d and weighs it against the multi-quarter delay, mitigation options, and value of launching the detection capability."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It makes surfacing, documenting, and testing the existing suppress capability its \u201chighest-leverage move,\u201d explicitly connecting it to the repeated-alert complaint."
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly separates the need\u2014\u201cDon\u2019t make me drown in noise I can\u2019t stop\u201d\u2014from the full framework, then reasons that suppression, conservative thresholds, and possibly snoozing or deduplication could meet much of that need before launch."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It acknowledges residual risks through controlled rollout, churn concerns, and kill criteria if \u201cvolume or complaints\u201d exceed thresholds. However, it does not explicitly frame the key hindsight risk that high adoption could amplify the inadequacy of the interim controls and make the fast-follow decision look wrong."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It commits to launching on schedule with a concrete pre-launch floor\u2014surfaced suppression, higher thresholds, optional thin additions, and staged rollout\u2014followed by a dated, staffed alert-management investment."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"does_not_treat_signal_as_automatically_binding\",\"verdict\":\"met\",\"justification\":\"The response treats the signal as \u201cbinding on the problem, but not on the solution size\u201d and weighs it against the multi-quarter delay, mitigation options, and value of launching the detection capability.\"},{\"id\":\"identifies_existing_capability_as_relevant\",\"verdict\":\"met\",\"justification\":\"It makes surfacing, documenting, and testing the existing suppress capability its \u201chighest-leverage move,\u201d explicitly connecting it to the repeated-alert complaint.\"},{\"id\":\"distinguishes_need_from_stated_solution\",\"verdict\":\"met\",\"justification\":\"The response clearly separates the need\u2014\u201cDon\u2019t make me drown in noise I can\u2019t stop\u201d\u2014from the full framework, then reasons that suppression, conservative thresholds, and possibly snoozing or deduplication could meet much of that need before launch.\"},{\"id\":\"flags_residual_risk_explicitly\",\"verdict\":\"partially_met\",\"justification\":\"It acknowledges residual risks through controlled rollout, churn concerns, and kill criteria if \u201cvolume or complaints\u201d exceed thresholds. However, it does not explicitly frame the key hindsight risk that high adoption could amplify the inadequacy of the interim controls and make the fast-follow decision look wrong.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It commits to launching on schedule with a concrete pre-launch floor\u2014surfaced suppression, higher thresholds, optional thin additions, and staged rollout\u2014followed by a dated, staffed alert-management investment.\"}]}",
+  "input_tokens": 1923,
+  "output_tokens": 482
+}

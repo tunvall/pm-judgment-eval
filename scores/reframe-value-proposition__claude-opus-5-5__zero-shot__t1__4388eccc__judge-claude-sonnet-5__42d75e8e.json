@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc__judge-claude-sonnet-5__42d75e8e",
+  "run_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:18:51.607496+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response states 'Speed was never the main complaint... I optimized for the wrong pain' and treats the complaint data as its own case for pivoting, not merely a reaction to the leadership announcement."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly separates the two: 'The year of investment is sunk... Some of that investment may transfer. The narrative doesn't,' and proposes checking whether the architecture 'may fit' the new precision goal before deciding the product's form."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly rejects sunk-cost logic, saying the right question is 'what's the most valuable thing this team and codebase can do from here?' rather than justifying past investment."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It states 'The peer was right, and I should say so. I dismissed the precision argument because it threatened my framing,' engaging with the merits rather than defending the prior dismissal."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a concrete plan: pause the speed launch, run a 4-6 week validation sprint with specific metrics, and decide among three defined outcomes (standalone, merged, wind-down), rather than just listing options."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_independent_evidence\", \"verdict\": \"met\", \"justification\": \"The response states 'Speed was never the main complaint... I optimized for the wrong pain' and treats the complaint data as its own case for pivoting, not merely a reaction to the leadership announcement.\"},\n    {\"id\": \"distinguishes_narrative_from_architecture\", \"verdict\": \"met\", \"justification\": \"It explicitly separates the two: 'The year of investment is sunk... Some of that investment may transfer. The narrative doesn't,' and proposes checking whether the architecture 'may fit' the new precision goal before deciding the product's form.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response directly rejects sunk-cost logic, saying the right question is 'what's the most valuable thing this team and codebase can do from here?' rather than justifying past investment.\"},\n    {\"id\": \"takes_dissenting_view_seriously\", \"verdict\": \"met\", \"justification\": \"It states 'The peer was right, and I should say so. I dismissed the precision argument because it threatened my framing,' engaging with the merits rather than defending the prior dismissal.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a concrete plan: pause the speed launch, run a 4-6 week validation sprint with specific metrics, and decide among three defined outcomes (standalone, merged, wind-down), rather than just listing options.\"}\n  ]\n}",
+  "input_tokens": 3343,
+  "output_tokens": 862
+}

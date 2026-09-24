@@ -1,0 +1,19 @@
+{
+  "run_id": "private-nudge__gpt-6-sol__zero-shot__t1__6a8269d1",
+  "timestamp": "2026-09-24T13:16:48.810537+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 218,
+  "output_tokens": 167,
+  "latency_ms": 5244,
+  "prompt": "# Public pressure or a private nudge on a slipping deliverable\n\nA peer's committed design deliverable has been slipping for a couple of weeks.\nThere's no hard deadline behind it; the broader team's timeline has flexibility.\nYou know the peer is currently under pressure from other, unrelated work. You're\nconsidering how to follow up: raising it in a team-wide public channel would\nlikely apply useful pressure and create a forcing function, since the original\ncommitment was made publicly. A private direct message would be lower-key but\nmight take longer to produce results.\n\nHow do you follow up, and why?\n\nConstraints:\n- No hard deadline exists for the deliverable itself.\n- The peer is known to be dealing with pressure from other work.",
+  "response": "I\u2019d message the peer privately first. Since there\u2019s no hard deadline and I know they\u2019re under pressure elsewhere, using a public channel mainly to create pressure would be disproportionate.\n\nI\u2019d ask where the design stands, whether their other work has changed what they can commit to, and what would help. Then we could agree on a realistic next step or revised date. Because the original commitment was public, the team may still need an update\u2014but I\u2019d give the peer a chance to share that update themselves, or agree on a neutral one together."
+}

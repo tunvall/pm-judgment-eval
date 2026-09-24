@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714__judge-gemini-3.1-pro-preview__557bdabf",
+  "run_id": "reject-finding-definition-drift__claude-opus-5-5__zero-shot__t1__0d662714",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:26:04.297063+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes the concepts, noting that \"mislabeling is not a wording nuance\" because stopping use of one product could just mean migration to another, whereas leaving the platform means lost revenue."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate does not simply slap a caveat on the inflated claim; they proactively relabel the claim to match the data and provide an honest caveat, reasoning that doing so \"shows rigor\" and prevents knowledgeable reviewers from destroying their credibility in the room."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs these trade-offs, concluding that \"A somewhat weaker document that holds up under scrutiny serves me, and the decision, better than a compelling one with a crack a reviewer can find.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate justifies retaining the finding based on its actual business value (\"A strong signal preceding product-level abandonment is still useful\"), not on the basis of the time already spent drafting the document."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response outlines a concrete, multi-day action plan that includes re-cutting the data and provides a detailed matrix of exactly how to frame the document's argument based on the outcome."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly distinguishes the concepts, noting that \\\"mislabeling is not a wording nuance\\\" because stopping use of one product could just mean migration to another, whereas leaving the platform means lost revenue.\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate does not simply slap a caveat on the inflated claim; they proactively relabel the claim to match the data and provide an honest caveat, reasoning that doing so \\\"shows rigor\\\" and prevents knowledgeable reviewers from destroying their credibility in the room.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly weighs these trade-offs, concluding that \\\"A somewhat weaker document that holds up under scrutiny serves me, and the decision, better than a compelling one with a crack a reviewer can find.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate justifies retaining the finding based on its actual business value (\\\"A strong signal preceding product-level abandonment is still useful\\\"), not on the basis of the time already spent drafting the document.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response outlines a concrete, multi-day action plan that includes re-cutting the data and provides a detailed matrix of exactly how to frame the document's argument based on the outcome.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 2175,
+  "output_tokens": 422
+}

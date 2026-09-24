@@ -1,0 +1,17 @@
+{
+  "score_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728__alignment-claude-sonnet-5__14d017aa",
+  "run_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:44:09.218539+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose to disable/roll back the new integration promptly rather than wait for a full fix, matching the historical decision to fully roll back the integration coverage quickly. Both also emphasize transparent customer communication afterward.",
+  "raw_judge_response": "{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose to disable/roll back the new integration promptly rather than wait for a full fix, matching the historical decision to fully roll back the integration coverage quickly. Both also emphasize transparent customer communication afterward.\"\n}",
+  "input_tokens": 1265,
+  "output_tokens": 96
+}

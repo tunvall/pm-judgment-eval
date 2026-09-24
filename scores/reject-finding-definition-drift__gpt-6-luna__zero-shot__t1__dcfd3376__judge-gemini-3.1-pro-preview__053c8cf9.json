@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376__judge-gemini-3.1-pro-preview__053c8cf9",
+  "run_id": "reject-finding-definition-drift__gpt-6-luna__zero-shot__t1__dcfd3376",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:27:55.741016+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response correctly identifies the mismatch as material, noting that \"using a product-level label to imply platform-wide churn would overstate the evidence.\""
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response proposes a precise, prominent re-labeling of the claim paired with an honest in-text disclaimer, but it does not explicitly weigh whether a standard caveat or footnote would have been sufficient."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly addresses the reputational risk, reasoning that presenting the inflated claim \"could undermine trust in the broader strategy,\" especially since \"some reviewers know the underlying data.\""
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response does not attempt to keep the finding simply because it is already drafted, explicitly stating they would \"remove the finding as evidence\" if the core argument depends on it."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides concrete next steps, suggesting they would either rescope the claim to a \"narrower point,\" pull alternative data if time permits, or remove the finding entirely."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_definitional_mismatch_as_material\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response correctly identifies the mismatch as material, noting that \\\"using a product-level label to imply platform-wide churn would overstate the evidence.\\\"\"\n    },\n    {\n      \"id\": \"rejects_caveat_as_sufficient_fix\",\n      \"verdict\": \"partially_met\",\n      \"justification\": \"The response proposes a precise, prominent re-labeling of the claim paired with an honest in-text disclaimer, but it does not explicitly weigh whether a standard caveat or footnote would have been sufficient.\"\n    },\n    {\n      \"id\": \"weighs_credibility_cost_explicitly\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly addresses the reputational risk, reasoning that presenting the inflated claim \\\"could undermine trust in the broader strategy,\\\" especially since \\\"some reviewers know the underlying data.\\\"\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response does not attempt to keep the finding simply because it is already drafted, explicitly stating they would \\\"remove the finding as evidence\\\" if the core argument depends on it.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides concrete next steps, suggesting they would either rescope the claim to a \\\"narrower point,\\\" pull alternative data if time permits, or remove the finding entirely.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1444,
+  "output_tokens": 393
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11__judge-claude-sonnet-5__2c954f09",
+  "run_id": "reframe-launch-metric__gpt-6-luna__zero-shot__t1__c6776d11",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:24:16.964017+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "The response acknowledges mapping accuracy is 'an intermediate measure' and that the earlier launch is 'a reason to test that gap,' but it immediately hedges this as 'not proof that the existing metric is worthless,' softening rather than fully treating the mismatch as strong directly relevant evidence against assuming past accuracy predicts customer value."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly separates preservation of the old infrastructure/team effort from the primacy decision, stating it will 'preserve the existing infrastructure and the team's year of work' only as a diagnostic tool, not as justification for keeping the engineering metric primary."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly addresses the missing ground truth, proposing to 'define the outcome measure with customers,' source examples, and use a 'clearly bounded learning pilot' until enough outcome data exists before any broad launch."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response gestures at forward-looking impact ('makes the customer outcome the standard the product ultimately has to meet') but does not explicitly reason about how designating a primary metric will shape what the team optimizes for beyond this single launch's evaluation."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific plan: customer-outcome metric as primary, mapping accuracy retained as a diagnostic guardrail, a bounded pilot to gather outcome data, and pre-set gating criteria for broader launch."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"partially_met\", \"justification\": \"The response acknowledges mapping accuracy is 'an intermediate measure' and that the earlier launch is 'a reason to test that gap,' but it immediately hedges this as 'not proof that the existing metric is worthless,' softening rather than fully treating the mismatch as strong directly relevant evidence against assuming past accuracy predicts customer value.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"The response explicitly separates preservation of the old infrastructure/team effort from the primacy decision, stating it will 'preserve the existing infrastructure and the team's year of work' only as a diagnostic tool, not as justification for keeping the engineering metric primary.\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response explicitly addresses the missing ground truth, proposing to 'define the outcome measure with customers,' source examples, and use a 'clearly bounded learning pilot' until enough outcome data exists before any broad launch.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at forward-looking impact ('makes the customer outcome the standard the product ultimately has to meet') but does not explicitly reason about how designating a primary metric will shape what the team optimizes for beyond this single launch's evaluation.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific plan: customer-outcome metric as primary, mapping accuracy retained as a diagnostic guardrail, a bounded pilot to gather outcome data, and pre-set gating criteria for broader launch.\"}\n  ]\n}",
+  "input_tokens": 2110,
+  "output_tokens": 1667
+}

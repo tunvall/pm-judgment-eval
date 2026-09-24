@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9__judge-claude-sonnet-5__826db6b7",
+  "run_id": "terminology-never-landed__gpt-6-sol__zero-shot__t1__c91317b9",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:40:44.489450+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response reframes the task as fixing the recurring pattern ('each label fixes one misunderstanding while creating another') rather than just picking a better name this round."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It explicitly proposes agreeing on 'who approves the choice, when the decision closes' and to 'ship on a set date,' treating continued indecision as costly rather than neutral."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response sets a bar for reopening as 'a material customer misunderstanding, not a newly expressed preference,' explicitly separating substantive concerns from re-litigation."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It states 'the locked API field would remain unchanged, with its mapping to the customer-facing term documented,' directly incorporating the fixed constraint into the plan."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response explains a process shift (testing full 'name plus description/UI context' treatments and documenting prior objections as constraints) rather than repeating a bare-name contest, but it never proposes or evaluates a concrete new candidate name to show the new process working in practice."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response reframes the task as fixing the recurring pattern ('each label fixes one misunderstanding while creating another') rather than just picking a better name this round.\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It explicitly proposes agreeing on 'who approves the choice, when the decision closes' and to 'ship on a set date,' treating continued indecision as costly rather than neutral.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response sets a bar for reopening as 'a material customer misunderstanding, not a newly expressed preference,' explicitly separating substantive concerns from re-litigation.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"It states 'the locked API field would remain unchanged, with its mapping to the customer-facing term documented,' directly incorporating the fixed constraint into the plan.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"partially_met\", \"justification\": \"The response explains a process shift (testing full 'name plus description/UI context' treatments and documenting prior objections as constraints) rather than repeating a bare-name contest, but it never proposes or evaluates a concrete new candidate name to show the new process working in practice.\"}\n  ]\n}",
+  "input_tokens": 2027,
+  "output_tokens": 985
+}

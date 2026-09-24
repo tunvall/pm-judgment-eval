@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d__judge-gpt-5.6-sol__f979c985",
+  "run_id": "terminology-never-landed__gpt-6-luna__zero-shot__t1__ddfbad8d",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:41:48.387221+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says it would \u201cnot start the fourth round by generating another list of names\u201d and identifies the decision process and late-arriving criteria as the recurring problem."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It establishes one accountable decision-maker, an agreed decision rule, acceptance of a \u201cpractical tradeoff rather than a perfect one,\u201d and a freeze with narrow reopening conditions. These mechanisms directly prevent continued review cycles from functioning as a cost-free default."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The proposed reopening rule distinguishes material new evidence, product changes, and genuine family-wide conflicts from \u201csimply a new preference in the next review cycle.\u201d"
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response preserves the locked API field and recommends documenting its mapping to the customer-facing label rather than reopening the underlying architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explains how this round would differ: align family terminology and criteria upfront, test a small set against explicit comprehension measures, designate an owner, and freeze the result instead of making another ad hoc naming attempt."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly says it would \u201cnot start the fourth round by generating another list of names\u201d and identifies the decision process and late-arriving criteria as the recurring problem.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It establishes one accountable decision-maker, an agreed decision rule, acceptance of a \u201cpractical tradeoff rather than a perfect one,\u201d and a freeze with narrow reopening conditions. These mechanisms directly prevent continued review cycles from functioning as a cost-free default.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The proposed reopening rule distinguishes material new evidence, product changes, and genuine family-wide conflicts from \u201csimply a new preference in the next review cycle.\u201d\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"The response preserves the locked API field and recommends documenting its mapping to the customer-facing label rather than reopening the underlying architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"It explains how this round would differ: align family terminology and criteria upfront, test a small set against explicit comprehension measures, designate an owner, and freeze the result instead of making another ad hoc naming attempt.\"}]}",
+  "input_tokens": 1555,
+  "output_tokens": 576
+}

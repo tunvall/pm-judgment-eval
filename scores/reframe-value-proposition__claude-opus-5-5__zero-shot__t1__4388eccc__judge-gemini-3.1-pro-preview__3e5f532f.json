@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc__judge-gemini-3.1-pro-preview__3e5f532f",
+  "run_id": "reframe-value-proposition__claude-opus-5-5__zero-shot__t1__4388eccc",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:19:10.321902+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly acknowledges that the customer data itself was grounds for a pivot, stating \"Speed was never the main complaint\" and concluding that \"I optimized for the wrong pain.\""
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate explicitly notes that \"Some of that investment may transfer. The narrative doesn't\" and plans to test if the existing architecture can effectively handle the new focus on precision."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly calls out that the prior year of work is a \"sunk\" cost, arguing that the focus must be on future value rather than justifying past investment."
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate explicitly engages with the peer's argument, stating \"The peer was right, and I should say so,\" and recognizes the value of recruiting them to help solve the problem."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a highly concrete, actionable 5-step plan that includes pausing the launch and running a \"4\u20136 week validation sprint\" to test the pivot to precision."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response clearly acknowledges that the customer data itself was grounds for a pivot, stating \\\"Speed was never the main complaint\\\" and concluding that \\\"I optimized for the wrong pain.\\\"\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly notes that \\\"Some of that investment may transfer. The narrative doesn't\\\" and plans to test if the existing architecture can effectively handle the new focus on precision.\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response directly calls out that the prior year of work is a \\\"sunk\\\" cost, arguing that the focus must be on future value rather than justifying past investment.\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate explicitly engages with the peer's argument, stating \\\"The peer was right, and I should say so,\\\" and recognizes the value of recruiting them to help solve the problem.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a highly concrete, actionable 5-step plan that includes pausing the launch and running a \\\"4\u20136 week validation sprint\\\" to test the pivot to precision.\"\n    }\n  ]\n}",
+  "input_tokens": 2237,
+  "output_tokens": 378
+}

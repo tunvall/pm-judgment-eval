@@ -1,0 +1,54 @@
+{
+  "score_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576__judge-gemini-3.1-pro-preview__a4973d5e",
+  "run_id": "override-customer-signal__gpt-6-sol__zero-shot__t1__9934d576",
+  "case_id": "override-customer-signal",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:32:49.714818+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_treat_signal_as_automatically_binding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate takes the customer feedback seriously but refuses to uncritically halt the launch for it, stating 'I would not make the full, multi-quarter alert-management framework a prerequisite.' Instead, they weigh it against other options to test a narrower launch gate."
+    },
+    {
+      "id": "identifies_existing_capability_as_relevant",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly incorporates the undocumented feature into the proposed solution, stating the plan is to 'quickly make the existing suppression control visible and documented.'"
+    },
+    {
+      "id": "distinguishes_need_from_stated_solution",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate successfully separates the customer's core need (to 'have a practical, discoverable way to stop unwanted alerts') from the requested solution of a 'full, multi-quarter alert-management framework,' exploring whether cheaper mitigations suffice."
+    },
+    {
+      "id": "flags_residual_risk_explicitly",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 2,
+      "justification": "The candidate does not mention the residual risk that treating the full framework as a fast-follow could look wrong in hindsight if product adoption is high."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate provides a concrete, actionable plan rather than just listing pros and cons: packaging the existing controls, testing them with the focus group, and deciding to either launch or delay based on that feedback."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "```json\n{\n  \"criteria\": [\n    {\n      \"id\": \"does_not_treat_signal_as_automatically_binding\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate takes the customer feedback seriously but refuses to uncritically halt the launch for it, stating 'I would not make the full, multi-quarter alert-management framework a prerequisite.' Instead, they weigh it against other options to test a narrower launch gate.\"\n    },\n    {\n      \"id\": \"identifies_existing_capability_as_relevant\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly incorporates the undocumented feature into the proposed solution, stating the plan is to 'quickly make the existing suppression control visible and documented.'\"\n    },\n    {\n      \"id\": \"distinguishes_need_from_stated_solution\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate successfully separates the customer's core need (to 'have a practical, discoverable way to stop unwanted alerts') from the requested solution of a 'full, multi-quarter alert-management framework,' exploring whether cheaper mitigations suffice.\"\n    },\n    {\n      \"id\": \"flags_residual_risk_explicitly\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The candidate does not mention the residual risk that treating the full framework as a fast-follow could look wrong in hindsight if product adoption is high.\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate provides a concrete, actionable plan rather than just listing pros and cons: packaging the existing controls, testing them with the focus group, and deciding to either launch or delay based on that feedback.\"\n    }\n  ]\n}\n```",
+  "input_tokens": 1493,
+  "output_tokens": 413
+}

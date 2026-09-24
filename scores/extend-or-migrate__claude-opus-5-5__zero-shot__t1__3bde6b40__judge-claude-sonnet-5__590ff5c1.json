@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__claude-opus-5-5__zero-shot__t1__3bde6b40__judge-claude-sonnet-5__590ff5c1",
+  "run_id": "extend-or-migrate__claude-opus-5-5__zero-shot__t1__3bde6b40",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:37:00.039320+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The newer platform is the right destination. It is also the wrong critical path for this launch date,' cleanly separating strategic direction from launch-specific timing."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly grounds its recommendation in the technically-derived 2x estimate, calling the circulated timeline 'not the real timeline' and stating 'A realistic estimate at roughly double the optimistic one, with zero margin, is not a plan.'"
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response discusses asymmetric failure modes and notes the old platform is already used by the main alerting product, but it does not explicitly weigh the risk of inconsistent customer experience arising from running two different notification platforms across products during the interim period."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly addresses optics with a 'Communicating it' section, framing the recommendation as 'supporting the strategy, not resisting it' and providing a script to use with leadership."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a specific, actionable recommendation (extend old platform, build an abstraction layer, scope migration as a scheduled project with an owner and target quarter) rather than only describing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The newer platform is the right destination. It is also the wrong critical path for this launch date,' cleanly separating strategic direction from launch-specific timing.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"The response explicitly grounds its recommendation in the technically-derived 2x estimate, calling the circulated timeline 'not the real timeline' and stating 'A realistic estimate at roughly double the optimistic one, with zero margin, is not a plan.'\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response discusses asymmetric failure modes and notes the old platform is already used by the main alerting product, but it does not explicitly weigh the risk of inconsistent customer experience arising from running two different notification platforms across products during the interim period.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"met\", \"justification\": \"The response directly addresses optics with a 'Communicating it' section, framing the recommendation as 'supporting the strategy, not resisting it' and providing a script to use with leadership.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a specific, actionable recommendation (extend old platform, build an abstraction layer, scope migration as a scheduled project with an owner and target quarter) rather than only describing tradeoffs.\"}\n  ]\n}",
+  "input_tokens": 3048,
+  "output_tokens": 1392
+}

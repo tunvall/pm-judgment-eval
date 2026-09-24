@@ -1,0 +1,19 @@
+{
+  "run_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397",
+  "timestamp": "2026-09-24T12:23:28.994393+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 350,
+  "output_tokens": 356,
+  "latency_ms": 10761,
+  "prompt": "# Reframing which metric a launch gets judged on\n\nYou are a product manager for a risk-exposure estimation product. It has been\nmeasured internally on an engineering-facing metric: how precisely the system\nmaps raw transaction data onto its internal categorization scheme. You want to\nreframe which metric this launch actually gets judged on, toward how close the\nestimate comes to the number that matters to the customer, a customer-facing\noutcome metric instead.\n\nA senior engineering stakeholder points out that the old, engineering-facing\nmetric likely contributed to a different, earlier launch being paused: a\nmapping-accuracy number that looked fine on paper hadn't translated into\nsomething customers actually found useful. The existing evaluation\ninfrastructure is built entirely around the old metric, and switching primary\nmetrics would mean sourcing new ground-truth data reflecting real\ncustomer-facing outcomes, which you don't yet have. The team that built the\ncurrent metric and its supporting infrastructure has invested roughly a year\noptimizing against it.\n\nWhich metric do you make primary for this launch, and how do you handle the\ntransition?\n\nConstraints:\n- No ground-truth data for the proposed customer-facing metric exists yet; it would need to be sourced from scratch.\n- Existing evaluation infrastructure is built entirely around the current engineering-facing metric.\n- The team that built the current metric and its infrastructure has invested roughly a year optimizing against it.",
+  "response": "I\u2019d make **closeness to the customer\u2019s actual risk-exposure number** the primary *success criterion* for this launch. The earlier pause is a warning that mapping accuracy can look good while the product still fails customers. But I would not pretend we can judge the launch on the new metric today: we have no ground truth for it.\n\nI\u2019d handle the transition in two tracks:\n\n- **Build the outcome evaluation:** agree with engineering and customer-facing teams on what customer number counts as ground truth, how we\u2019ll source representative examples, and what error would be acceptable. Set the launch threshold before seeing the results.\n- **Keep the existing metric as a guardrail:** continue reporting mapping accuracy and using its infrastructure to catch regressions. It remains valuable evidence about the system, just not proof of customer usefulness.\n\nUntil the outcome evaluation exists, I\u2019d allow only a limited, explicitly unvalidated rollout with close customer feedback\u2014not a full launch declared successful on mapping accuracy alone. I\u2019d bring the team that built the current metric into the new evaluation work: their year of investment is an asset, and this is a change in what we need to prove, not a dismissal of what they built."
+}

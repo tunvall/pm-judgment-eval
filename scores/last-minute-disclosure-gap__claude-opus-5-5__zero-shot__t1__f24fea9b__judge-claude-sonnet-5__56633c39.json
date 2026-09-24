@@ -1,0 +1,54 @@
+{
+  "score_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b__judge-claude-sonnet-5__56633c39",
+  "run_id": "last-minute-disclosure-gap__claude-opus-5-5__zero-shot__t1__f24fea9b",
+  "case_id": "last-minute-disclosure-gap",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:28:42.614760+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "does_not_dismiss_minority_path_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response states 'An undisclosed charge is the one failure you can't quietly patch later' and explicitly rejects the idea that rarity excuses the gap: '\"It was rare\" doesn't help the customers it happened to.'"
+    },
+    {
+      "id": "avoids_overcorrecting_into_inaccurate_disclosure",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly notes the common path is 'free and fully covered by the existing, approved materials, so nothing about it is misleading,' and proposes scenario-specific language ('In [scenario X], this feature uses [Service Y]...') rather than a blanket warning."
+    },
+    {
+      "id": "weighs_launch_delay_against_disclosure_gap",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response lays out parallel sections 'Why not launch as-is' and 'Why not automatically delay everything,' weighing billing-incident risk against the cost of unnecessary delay, and concludes delay only if the narrow fix can't be approved in time."
+    },
+    {
+      "id": "considers_narrowly_scoped_fix_before_binary_choice",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Track A explicitly proposes a minimal, scoped fix ('one or two sentences... This is an insertion, not a rewrite') and asks legal to 'review only that delta, not the whole doc set,' before considering the fallback of gating the feature or delaying."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete 24-hour plan with specific actions (draft disclosure language, in-product notice, feature-flag fallback, escalation to manager and stakeholders, go/no-go deadline, briefing support/sales), not just a general principle."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"does_not_dismiss_minority_path_risk\", \"verdict\": \"met\", \"justification\": \"The response states 'An undisclosed charge is the one failure you can't quietly patch later' and explicitly rejects the idea that rarity excuses the gap: '\\\"It was rare\\\" doesn't help the customers it happened to.'\"},\n    {\"id\": \"avoids_overcorrecting_into_inaccurate_disclosure\", \"verdict\": \"met\", \"justification\": \"It explicitly notes the common path is 'free and fully covered by the existing, approved materials, so nothing about it is misleading,' and proposes scenario-specific language ('In [scenario X], this feature uses [Service Y]...') rather than a blanket warning.\"},\n    {\"id\": \"weighs_launch_delay_against_disclosure_gap\", \"verdict\": \"met\", \"justification\": \"The response lays out parallel sections 'Why not launch as-is' and 'Why not automatically delay everything,' weighing billing-incident risk against the cost of unnecessary delay, and concludes delay only if the narrow fix can't be approved in time.\"},\n    {\"id\": \"considers_narrowly_scoped_fix_before_binary_choice\", \"verdict\": \"met\", \"justification\": \"Track A explicitly proposes a minimal, scoped fix ('one or two sentences... This is an insertion, not a rewrite') and asks legal to 'review only that delta, not the whole doc set,' before considering the fallback of gating the feature or delaying.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete 24-hour plan with specific actions (draft disclosure language, in-product notice, feature-flag fallback, escalation to manager and stakeholders, go/no-go deadline, briefing support/sales), not just a general principle.\"}\n  ]\n}",
+  "input_tokens": 2655,
+  "output_tokens": 1074
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e__judge-gpt-5.6-sol__9887fac4",
+  "run_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:40:02.277487+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly says the problem \u201cisn't a lack of good candidates\u201d but a recurring whack-a-mole process in which shifting, unstated criteria overturn each decision."
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes a single decision owner, a fixed decision date, a defined reopening threshold, and choosing the \u201cleast bad\u201d option even if imperfect; it also notes that another candidate chosen through the same process will likely fail, making further cycling costly rather than neutral."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response limits reopening to a genuinely new constraint or evidence of material harm, while explicitly saying that \u201csomeone would have preferred a different word\u201d is insufficient."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It accepts the API field as fixed, recommends decoupling it from the display name, and proposes documenting the mapping rather than reopening the underlying architecture."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Rather than offering another ad hoc label, it changes the process and substance: pre-agreed criteria, task-based comparative testing, a family-wide naming convention, and moving explanatory burden into adjacent UI copy."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_pattern_not_just_instance\",\"verdict\":\"met\",\"justification\":\"The response explicitly says the problem \u201cisn't a lack of good candidates\u201d but a recurring whack-a-mole process in which shifting, unstated criteria overturn each decision.\"},{\"id\":\"proposes_forcing_function\",\"verdict\":\"met\",\"justification\":\"It proposes a single decision owner, a fixed decision date, a defined reopening threshold, and choosing the \u201cleast bad\u201d option even if imperfect; it also notes that another candidate chosen through the same process will likely fail, making further cycling costly rather than neutral.\"},{\"id\":\"distinguishes_principled_objection_from_bikeshedding\",\"verdict\":\"met\",\"justification\":\"The response limits reopening to a genuinely new constraint or evidence of material harm, while explicitly saying that \u201csomeone would have preferred a different word\u201d is insufficient.\"},{\"id\":\"accounts_for_locked_constraints\",\"verdict\":\"met\",\"justification\":\"It accepts the API field as fixed, recommends decoupling it from the display name, and proposes documenting the mapping rather than reopening the underlying architecture.\"},{\"id\":\"avoids_repeating_failed_approach\",\"verdict\":\"met\",\"justification\":\"Rather than offering another ad hoc label, it changes the process and substance: pre-agreed criteria, task-based comparative testing, a family-wide naming convention, and moving explanatory burden into adjacent UI copy.\"}]}",
+  "input_tokens": 2111,
+  "output_tokens": 414
+}

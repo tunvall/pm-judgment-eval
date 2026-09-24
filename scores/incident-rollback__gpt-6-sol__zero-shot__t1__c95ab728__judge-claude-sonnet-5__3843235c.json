@@ -1,0 +1,54 @@
+{
+  "score_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728__judge-claude-sonnet-5__3843235c",
+  "run_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "candidate_case_version": 3,
+  "timestamp": "2026-09-24T12:43:26.402580+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "commits_to_a_specific_action_quickly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a clear, immediate call: 'direct engineering to disable the new integration's inclusion logic or roll back the launch as soon as they confirm the rollback path is safe' and states this is made without waiting for the manager."
+    },
+    {
+      "id": "distinguishes_reversible_from_expensive_to_reverse",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It flags reversibility as relevant to its chosen path ('as soon as they confirm the rollback path is safe' and framing 'a temporary reversal' as more defensible), but does not symmetrically compare the reversibility of the disablement/rollback option against the alternative of pushing a fast fix."
+    },
+    {
+      "id": "weighs_ongoing_harm_against_launch_momentum",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "Explicitly states 'The public announcement matters, but it does not outweigh ongoing incorrect alerts for existing customers,' directly weighing launch commitment against accruing harm."
+    },
+    {
+      "id": "avoids_betting_on_unvalidated_fast_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response rejects waiting on the multi-day proper fix ('I would not leave incorrect signals firing for several days while waiting for the proper fix') and instead opts for disablement/rollback, avoiding reliance on an unvalidated fast patch."
+    },
+    {
+      "id": "proposes_concrete_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Beyond the immediate action, it lays out verification of the fix, monitoring, identifying affected customers, coordinating support/customer communications, and withholding a relaunch date until tested."
+    }
+  ],
+  "weighted_total": 10.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"commits_to_a_specific_action_quickly\", \"verdict\": \"met\", \"justification\": \"The response gives a clear, immediate call: 'direct engineering to disable the new integration's inclusion logic or roll back the launch as soon as they confirm the rollback path is safe' and states this is made without waiting for the manager.\"},\n    {\"id\": \"distinguishes_reversible_from_expensive_to_reverse\", \"verdict\": \"partially_met\", \"justification\": \"It flags reversibility as relevant to its chosen path ('as soon as they confirm the rollback path is safe' and framing 'a temporary reversal' as more defensible), but does not symmetrically compare the reversibility of the disablement/rollback option against the alternative of pushing a fast fix.\"},\n    {\"id\": \"weighs_ongoing_harm_against_launch_momentum\", \"verdict\": \"met\", \"justification\": \"Explicitly states 'The public announcement matters, but it does not outweigh ongoing incorrect alerts for existing customers,' directly weighing launch commitment against accruing harm.\"},\n    {\"id\": \"avoids_betting_on_unvalidated_fast_fix\", \"verdict\": \"met\", \"justification\": \"The response rejects waiting on the multi-day proper fix ('I would not leave incorrect signals firing for several days while waiting for the proper fix') and instead opts for disablement/rollback, avoiding reliance on an unvalidated fast patch.\"},\n    {\"id\": \"proposes_concrete_next_step\", \"verdict\": \"met\", \"justification\": \"Beyond the immediate action, it lays out verification of the fix, monitoring, identifying affected customers, coordinating support/customer communications, and withholding a relaunch date until tested.\"}\n  ]\n}",
+  "input_tokens": 1924,
+  "output_tokens": 1228
+}

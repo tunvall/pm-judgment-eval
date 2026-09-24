@@ -1,0 +1,54 @@
+{
+  "score_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86__judge-gpt-5.6-sol__3ec76f14",
+  "run_id": "reject-finding-definition-drift__gpt-6-sol__zero-shot__t1__d7cb6c86",
+  "case_id": "reject-finding-definition-drift",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:26:56.026839+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_definitional_mismatch_as_material",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response clearly distinguishes stopping use of one product from leaving the platform and states that the analysis \u201cdoes not establish\u201d the latter, making the mismatch material rather than technical."
+    },
+    {
+      "id": "rejects_caveat_as_sufficient_fix",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It does not rely on a footnote to preserve the inflated claim: it removes the platform-departure wording and would retain the finding only if product discontinuation is relevant, explicitly labeled, and accompanied by a statement that it is inconclusive about platform departure. It also recommends surfacing the change before knowledgeable executives discover it themselves."
+    },
+    {
+      "id": "weighs_credibility_cost_explicitly",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly weighs the argument gap against credibility, saying the misleading wording would \u201cput the rest of the argument at risk\u201d and that a gap is preferable to a persuasive claim based on the wrong definition."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "Despite the finding already being drafted, the response recommends removing the unsupported claim immediately and does not use prior analysis or drafting effort as a reason to retain it."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It proposes concrete next steps: rerun the analysis with a defensible platform-departure definition, use it only if validated in time, otherwise rescope it to product discontinuation if relevant or remove it and rebuild the argument using supportable evidence."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"recognizes_definitional_mismatch_as_material\",\"verdict\":\"met\",\"justification\":\"The response clearly distinguishes stopping use of one product from leaving the platform and states that the analysis \u201cdoes not establish\u201d the latter, making the mismatch material rather than technical.\"},{\"id\":\"rejects_caveat_as_sufficient_fix\",\"verdict\":\"met\",\"justification\":\"It does not rely on a footnote to preserve the inflated claim: it removes the platform-departure wording and would retain the finding only if product discontinuation is relevant, explicitly labeled, and accompanied by a statement that it is inconclusive about platform departure. It also recommends surfacing the change before knowledgeable executives discover it themselves.\"},{\"id\":\"weighs_credibility_cost_explicitly\",\"verdict\":\"met\",\"justification\":\"The response explicitly weighs the argument gap against credibility, saying the misleading wording would \u201cput the rest of the argument at risk\u201d and that a gap is preferable to a persuasive claim based on the wrong definition.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"Despite the finding already being drafted, the response recommends removing the unsupported claim immediately and does not use prior analysis or drafting effort as a reason to retain it.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It proposes concrete next steps: rerun the analysis with a defensible platform-departure definition, use it only if validated in time, otherwise rescope it to product discontinuation if relevant or remove it and rebuild the argument using supportable evidence.\"}]}",
+  "input_tokens": 1324,
+  "output_tokens": 407
+}

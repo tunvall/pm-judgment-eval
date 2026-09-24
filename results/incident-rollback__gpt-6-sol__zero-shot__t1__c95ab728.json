@@ -1,0 +1,19 @@
+{
+  "run_id": "incident-rollback__gpt-6-sol__zero-shot__t1__c95ab728",
+  "timestamp": "2026-09-24T12:43:26.029154+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "case_id": "incident-rollback",
+  "case_version": 3,
+  "trial": 1,
+  "layer": "zero-shot",
+  "model_provider": "openai",
+  "model_name": "gpt-6-sol",
+  "temperature": 1.0,
+  "max_tokens": 4096,
+  "system_prompt_version": "v1",
+  "input_tokens": 290,
+  "output_tokens": 318,
+  "latency_ms": 13792,
+  "prompt": "# Two-hour decision on a live production incident\n\nYou are a product manager covering as incident lead while your manager is\nunavailable. A launch extending risk-signal coverage to a newly supported\nthird-party integration went out as planned earlier today. Within two hours,\nexisting customers on unrelated, already-supported transaction types started\nseeing incorrect risk signals fire, and a high-severity incident has been\ndeclared.\n\nEngineering has identified the root cause: a scoping bug where the new\nintegration's inclusion logic inadvertently affected signal calibration for\ntransactions that have nothing to do with the new integration. A proper,\nwell-tested fix would take several days to build. Every additional hour the\nissue continues means more customers receiving mistaken alerts and more support\nburden. The new integration launch was publicly announced, and rolling it back\nmeans undoing a commitment customers were already told about.\n\nWhat do you do, and why?\n\nConstraints:\n- You are the acting incident lead; your manager is unavailable.\n- A high-severity incident has already been declared, confirming production impact.\n- The new integration launch was publicly announced.",
+  "response": "I would direct engineering to **disable the new integration\u2019s inclusion logic or roll back the launch as soon as they confirm the rollback path is safe**. I would not leave incorrect signals firing for several days while waiting for the proper fix. If a targeted disablement is available, I\u2019d use it; otherwise, I\u2019d roll back the launch. As acting incident lead, I\u2019d make that call without waiting for my manager.\n\nThe public announcement matters, but it does not outweigh ongoing incorrect alerts for existing customers. A temporary reversal with a clear explanation is a more defensible commitment than knowingly continuing to produce bad risk signals.\n\nI\u2019d have the incident team verify that the mitigation restores calibration on the unrelated transaction types, monitor for continuing errors, and identify which customers and alerts were affected. In parallel, I\u2019d coordinate support and customer communications: acknowledge the temporary pause and incorrect signals, tell customers what they should do with affected alerts, and avoid promising a relaunch date until the fix is tested."
+}

@@ -1,0 +1,17 @@
+{
+  "score_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba__alignment-claude-sonnet-5__2c2d5d10",
+  "run_id": "private-nudge__gpt-6-luna__zero-shot__t1__539affba",
+  "case_id": "private-nudge",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T13:18:58.666736+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "alignment_prompt_version": "v1",
+  "alignment": "aligned",
+  "justification": "The candidate chose a private direct message to check in on status and timing rather than using the public channel to apply pressure, matching the historical decision to send a private DM asking about expected completion.",
+  "raw_judge_response": "```json\n{\n  \"alignment\": \"aligned\",\n  \"justification\": \"The candidate chose a private direct message to check in on status and timing rather than using the public channel to apply pressure, matching the historical decision to send a private DM asking about expected completion.\"\n}\n```",
+  "input_tokens": 1033,
+  "output_tokens": 84
+}

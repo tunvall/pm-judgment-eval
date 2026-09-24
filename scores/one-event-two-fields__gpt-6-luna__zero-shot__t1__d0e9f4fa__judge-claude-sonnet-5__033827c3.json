@@ -1,0 +1,54 @@
+{
+  "score_id": "one-event-two-fields__gpt-6-luna__zero-shot__t1__d0e9f4fa__judge-claude-sonnet-5__033827c3",
+  "run_id": "one-event-two-fields__gpt-6-luna__zero-shot__t1__d0e9f4fa",
+  "case_id": "one-event-two-fields",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:36:11.717501+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_experience_goal_from_mechanism",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states the research 'supports a unified view and no duplicate alerts, but it doesn't show that overwriting is the right way to achieve them,' separating the validated goal from the reviewer's proposed mechanism."
+    },
+    {
+      "id": "protects_existing_field_semantics",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 3,
+      "justification": "It states the existing field's meaning should stay unchanged 'so current integrations continue to work' and avoids 'silently changing the existing field's semantics,' but does not explicitly discuss the risk that dependent integrations can't be fully enumerated in advance."
+    },
+    {
+      "id": "avoids_duplicate_alert_risk",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly gives the event 'a stable identity so the later result updates the same event rather than creating a second alert,' directly addressing the duplicate-alert risk of the linked-records option."
+    },
+    {
+      "id": "proposes_concrete_data_model",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response commits to a specific structure: 'one event with one lifecycle and two explicitly defined estimate fields,' with a stable identity and a separately named 'best available' field if needed."
+    },
+    {
+      "id": "engages_reviewer_disagreement_on_merits",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It engages the reviewer's simplicity goal by noting the UI can still 'show one event' and lead with the precise estimate, and explains why overwriting specifically isn't necessary, but doesn't directly acknowledge or validate the reviewer's underlying instinct before countering it."
+    }
+  ],
+  "weighted_total": 9.5,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_experience_goal_from_mechanism\", \"verdict\": \"met\", \"justification\": \"The response explicitly states the research 'supports a unified view and no duplicate alerts, but it doesn't show that overwriting is the right way to achieve them,' separating the validated goal from the reviewer's proposed mechanism.\"},\n    {\"id\": \"protects_existing_field_semantics\", \"verdict\": \"partially_met\", \"justification\": \"It states the existing field's meaning should stay unchanged 'so current integrations continue to work' and avoids 'silently changing the existing field's semantics,' but does not explicitly discuss the risk that dependent integrations can't be fully enumerated in advance.\"},\n    {\"id\": \"avoids_duplicate_alert_risk\", \"verdict\": \"met\", \"justification\": \"The response explicitly gives the event 'a stable identity so the later result updates the same event rather than creating a second alert,' directly addressing the duplicate-alert risk of the linked-records option.\"},\n    {\"id\": \"proposes_concrete_data_model\", \"verdict\": \"met\", \"justification\": \"The response commits to a specific structure: 'one event with one lifecycle and two explicitly defined estimate fields,' with a stable identity and a separately named 'best available' field if needed.\"},\n    {\"id\": \"engages_reviewer_disagreement_on_merits\", \"verdict\": \"partially_met\", \"justification\": \"It engages the reviewer's simplicity goal by noting the UI can still 'show one event' and lead with the precise estimate, and explains why overwriting specifically isn't necessary, but doesn't directly acknowledge or validate the reviewer's underlying instinct before countering it.\"}\n  ]\n}",
+  "input_tokens": 1932,
+  "output_tokens": 1292
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6__judge-claude-sonnet-5__1ea66ce5",
+  "run_id": "extend-or-migrate__gpt-6-sol__zero-shot__t1__9c932ad6",
+  "case_id": "extend-or-migrate",
+  "case_version": 2,
+  "candidate_case_version": 2,
+  "timestamp": "2026-09-24T12:37:51.186739+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_direction_from_this_launchs_timeline",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'The newer platform is the right destination, but making this launch depend on a full migration would put the date at risk,' clearly separating the long-term direction from the launch vehicle question."
+    },
+    {
+      "id": "uses_own_realistic_estimate_over_circulating_one",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It grounds the decision in the technically-derived estimate, noting 'the optimistic timeline assumes away real differences' and 'the technically derived estimate leaves no schedule margin,' explicitly favoring its own analysis over the circulated one."
+    },
+    {
+      "id": "identifies_risk_of_partial_migration",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response gestures at the risk of the extension becoming a permanent dependency ('without letting temporary become an unexamined permanent dependency') but does not explicitly discuss the inconsistent customer experience risk from having two products on different notification platforms simultaneously."
+    },
+    {
+      "id": "anticipates_pushback_and_addresses_it",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "It notes intent to 'make that trade-off visible rather than describe the extension as a change in platform strategy,' which implicitly addresses the optics of appearing to resist company direction, but it doesn't explicitly acknowledge that this recommendation could be seen as pushing back against stated strategy or address that perception directly."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete recommendation\u2014extend the older platform, review risk with stakeholders, keep scope limited, and assign ownership for the later migration\u2014rather than just describing tradeoffs."
+    }
+  ],
+  "weighted_total": 10.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_direction_from_this_launchs_timeline\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'The newer platform is the right destination, but making this launch depend on a full migration would put the date at risk,' clearly separating the long-term direction from the launch vehicle question.\"},\n    {\"id\": \"uses_own_realistic_estimate_over_circulating_one\", \"verdict\": \"met\", \"justification\": \"It grounds the decision in the technically-derived estimate, noting 'the optimistic timeline assumes away real differences' and 'the technically derived estimate leaves no schedule margin,' explicitly favoring its own analysis over the circulated one.\"},\n    {\"id\": \"identifies_risk_of_partial_migration\", \"verdict\": \"partially_met\", \"justification\": \"The response gestures at the risk of the extension becoming a permanent dependency ('without letting temporary become an unexamined permanent dependency') but does not explicitly discuss the inconsistent customer experience risk from having two products on different notification platforms simultaneously.\"},\n    {\"id\": \"anticipates_pushback_and_addresses_it\", \"verdict\": \"partially_met\", \"justification\": \"It notes intent to 'make that trade-off visible rather than describe the extension as a change in platform strategy,' which implicitly addresses the optics of appearing to resist company direction, but it doesn't explicitly acknowledge that this recommendation could be seen as pushing back against stated strategy or address that perception directly.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete recommendation\u2014extend the older platform, review risk with stakeholders, keep scope limited, and assign ownership for the later migration\u2014rather than just describing tradeoffs.\"}\n  ]\n}",
+  "input_tokens": 2008,
+  "output_tokens": 1229
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397__judge-gpt-5.6-sol__7f252582",
+  "run_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:23:40.515511+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "openai",
+  "judge_model": "gpt-5.6-sol",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response directly cites the earlier pause as evidence that \u201cmapping accuracy can look good while the product still fails customers,\u201d and therefore refuses to treat mapping accuracy as proof of customer usefulness."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It does not preserve the old metric as primary because of the prior investment; instead, it treats the existing infrastructure and team expertise as assets for regression detection and the transition."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly acknowledges that \u201cwe have no ground truth\u201d and proposes defining and sourcing representative outcome data, setting thresholds in advance, and permitting only a limited unvalidated rollout in the interim."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "Making the customer outcome the primary success criterion and mapping accuracy a guardrail implicitly redirects optimization, but the response does not explicitly explain that primary-metric status will shape the team\u2019s future priorities and behavior."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It clearly recommends customer-outcome closeness as primary, retains mapping accuracy as a regression guardrail, and provides concrete transition steps involving ground-truth sourcing, predefined thresholds, and a limited rollout."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\"criteria\":[{\"id\":\"distinguishes_metric_looks_good_from_correlates_with_customer_value\",\"verdict\":\"met\",\"justification\":\"The response directly cites the earlier pause as evidence that \u201cmapping accuracy can look good while the product still fails customers,\u201d and therefore refuses to treat mapping accuracy as proof of customer usefulness.\"},{\"id\":\"avoids_sunk_cost_reasoning\",\"verdict\":\"met\",\"justification\":\"It does not preserve the old metric as primary because of the prior investment; instead, it treats the existing infrastructure and team expertise as assets for regression detection and the transition.\"},{\"id\":\"accounts_for_measurement_gap_before_committing\",\"verdict\":\"met\",\"justification\":\"The response explicitly acknowledges that \u201cwe have no ground truth\u201d and proposes defining and sourcing representative outcome data, setting thresholds in advance, and permitting only a limited unvalidated rollout in the interim.\"},{\"id\":\"recognizes_primary_metric_shapes_behavior\",\"verdict\":\"partially_met\",\"justification\":\"Making the customer outcome the primary success criterion and mapping accuracy a guardrail implicitly redirects optimization, but the response does not explicitly explain that primary-metric status will shape the team\u2019s future priorities and behavior.\"},{\"id\":\"proposes_realistic_next_step\",\"verdict\":\"met\",\"justification\":\"It clearly recommends customer-outcome closeness as primary, retains mapping accuracy as a regression guardrail, and provides concrete transition steps involving ground-truth sourcing, predefined thresholds, and a limited rollout.\"}]}",
+  "input_tokens": 1239,
+  "output_tokens": 380
+}

@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea__judge-gemini-3.1-pro-preview__f391efcc",
+  "run_id": "reframe-value-proposition__gpt-6-luna__zero-shot__t1__9718e0ea",
+  "case_id": "reframe-value-proposition",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:21:14.517910+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-3.1-pro-preview",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_independent_evidence",
+      "verdict": "not_met",
+      "score": 0.0,
+      "weight": 3,
+      "justification": "The response relies on the engineering leadership's roadmap as the trigger to revisit the narrative, stating it 'needs to be revisited in light of the roadmap.' It fails to acknowledge that the severe complaint data and customer workarounds were already sufficient grounds to reconsider the product's framing."
+    },
+    {
+      "id": "distinguishes_narrative_from_architecture",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The candidate clearly separates the two concepts by suggesting to 'explore whether the existing architecture can support the validated precision use case' while simultaneously planning to 'rework the product and go-to-market narrative.'"
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly rejects continuing based on past effort, stating directly that 'the investment already made is a cost, not a reason to keep the product unchanged.'"
+    },
+    {
+      "id": "takes_dissenting_view_seriously",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The candidate fully adopts the peer's argument by pivoting the product thesis toward precision and explicitly states they would 'involve the peer who raised the precision argument.'"
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response provides a concrete, actionable plan to change the product thesis, validate the customer pain, run a shadow pilot, and establish a clear 'decision gate' for the product's future."
+    }
+  ],
+  "weighted_total": 9.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\n      \"id\": \"recognizes_independent_evidence\",\n      \"verdict\": \"not_met\",\n      \"justification\": \"The response relies on the engineering leadership's roadmap as the trigger to revisit the narrative, stating it 'needs to be revisited in light of the roadmap.' It fails to acknowledge that the severe complaint data and customer workarounds were already sufficient grounds to reconsider the product's framing.\"\n    },\n    {\n      \"id\": \"distinguishes_narrative_from_architecture\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate clearly separates the two concepts by suggesting to 'explore whether the existing architecture can support the validated precision use case' while simultaneously planning to 'rework the product and go-to-market narrative.'\"\n    },\n    {\n      \"id\": \"avoids_sunk_cost_reasoning\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response explicitly rejects continuing based on past effort, stating directly that 'the investment already made is a cost, not a reason to keep the product unchanged.'\"\n    },\n    {\n      \"id\": \"takes_dissenting_view_seriously\",\n      \"verdict\": \"met\",\n      \"justification\": \"The candidate fully adopts the peer's argument by pivoting the product thesis toward precision and explicitly states they would 'involve the peer who raised the precision argument.'\"\n    },\n    {\n      \"id\": \"proposes_realistic_next_step\",\n      \"verdict\": \"met\",\n      \"justification\": \"The response provides a concrete, actionable plan to change the product thesis, validate the customer pain, run a shadow pilot, and establish a clear 'decision gate' for the product's future.\"\n    }\n  ]\n}",
+  "input_tokens": 1535,
+  "output_tokens": 401
+}

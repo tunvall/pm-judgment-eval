@@ -1,0 +1,54 @@
+{
+  "score_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397__judge-claude-sonnet-5__fcac6a08",
+  "run_id": "reframe-launch-metric__gpt-6-sol__zero-shot__t1__7aad7397",
+  "case_id": "reframe-launch-metric",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:23:29.366049+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "distinguishes_metric_looks_good_from_correlates_with_customer_value",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly states 'mapping accuracy can look good while the product still fails customers' and treats the earlier pause as a warning rather than assuming past accuracy predicts future customer outcomes."
+    },
+    {
+      "id": "avoids_sunk_cost_reasoning",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It does not use the year of investment as a reason to keep the old metric primary; instead it reframes that investment as an asset for the new evaluation work ('their year of investment is an asset, and this is a change in what we need to prove, not a dismissal of what they built')."
+    },
+    {
+      "id": "accounts_for_measurement_gap_before_committing",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly acknowledges 'we have no ground truth for it' and lays out an interim plan (limited unvalidated rollout, building outcome evaluation, setting thresholds before seeing results) rather than treating the switch as immediately clean."
+    },
+    {
+      "id": "recognizes_primary_metric_shapes_behavior",
+      "verdict": "partially_met",
+      "score": 0.5,
+      "weight": 2,
+      "justification": "The response implies forward-looking behavior change by making the customer metric the 'primary success criterion' and demoting mapping accuracy to a guardrail, but it never explicitly discusses how the choice of primary metric will shape what the team optimizes for beyond this single launch's scoring."
+    },
+    {
+      "id": "proposes_realistic_next_step",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response gives a concrete, actionable plan: customer-outcome metric as primary, old metric retained as a guardrail, and a limited/unvalidated rollout until ground truth exists, rather than just listing tradeoffs."
+    }
+  ],
+  "weighted_total": 11.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"distinguishes_metric_looks_good_from_correlates_with_customer_value\", \"verdict\": \"met\", \"justification\": \"The response explicitly states 'mapping accuracy can look good while the product still fails customers' and treats the earlier pause as a warning rather than assuming past accuracy predicts future customer outcomes.\"},\n    {\"id\": \"avoids_sunk_cost_reasoning\", \"verdict\": \"met\", \"justification\": \"It does not use the year of investment as a reason to keep the old metric primary; instead it reframes that investment as an asset for the new evaluation work ('their year of investment is an asset, and this is a change in what we need to prove, not a dismissal of what they built').\"},\n    {\"id\": \"accounts_for_measurement_gap_before_committing\", \"verdict\": \"met\", \"justification\": \"The response explicitly acknowledges 'we have no ground truth for it' and lays out an interim plan (limited unvalidated rollout, building outcome evaluation, setting thresholds before seeing results) rather than treating the switch as immediately clean.\"},\n    {\"id\": \"recognizes_primary_metric_shapes_behavior\", \"verdict\": \"partially_met\", \"justification\": \"The response implies forward-looking behavior change by making the customer metric the 'primary success criterion' and demoting mapping accuracy to a guardrail, but it never explicitly discusses how the choice of primary metric will shape what the team optimizes for beyond this single launch's scoring.\"},\n    {\"id\": \"proposes_realistic_next_step\", \"verdict\": \"met\", \"justification\": \"The response gives a concrete, actionable plan: customer-outcome metric as primary, old metric retained as a guardrail, and a limited/unvalidated rollout until ground truth exists, rather than just listing tradeoffs.\"}\n  ]\n}",
+  "input_tokens": 1953,
+  "output_tokens": 1115
+}

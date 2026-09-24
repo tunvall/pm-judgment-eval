@@ -1,0 +1,54 @@
+{
+  "score_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e__judge-claude-sonnet-5__386c47ca",
+  "run_id": "terminology-never-landed__claude-opus-5-5__zero-shot__t1__e2949d4e",
+  "case_id": "terminology-never-landed",
+  "case_version": 1,
+  "candidate_case_version": 1,
+  "timestamp": "2026-09-24T12:39:48.977038+00:00",
+  "git_commit": "558012ec76ae51759e06e8f96bf7d9a5b1bc9e7a",
+  "judge_provider": "anthropic",
+  "judge_model": "claude-sonnet-5",
+  "judge_prompt_version": "v1",
+  "criteria": [
+    {
+      "id": "recognizes_pattern_not_just_instance",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "The response explicitly diagnoses the recurring pattern rather than treating this as a fresh naming problem: 'The pattern across three rounds says the problem isn't a lack of good candidates... That is whack-a-mole, and a fourth candidate chosen the same way will likely fail the same way.'"
+    },
+    {
+      "id": "proposes_forcing_function",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 3,
+      "justification": "It proposes naming a single decision owner ('It should be me, or whoever has authority across the family'), a fixed timebox, and an explicit bar for reopening ('a new constraint emerges, or post-launch data shows material harm... \"Someone would have preferred a different word\" doesn't qualify'), and frames the goal as 'a decision that stays made,' implicitly treating continued indecision as costly."
+    },
+    {
+      "id": "distinguishes_principled_objection_from_bikeshedding",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response directly separates legitimate reopening triggers from re-litigation: 'Every name confused *someone* in every round... so it can't be the tiebreaker' and defines that mere preference-based objections don't qualify as grounds to reopen."
+    },
+    {
+      "id": "accounts_for_locked_constraints",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "It explicitly decouples the customer-facing name from the locked API field, instructing to 'Document the mapping in developer docs... and stop letting the field name influence the display-name debate,' rather than proposing anything requiring architectural changes."
+    },
+    {
+      "id": "avoids_repeating_failed_approach",
+      "verdict": "met",
+      "score": 1.0,
+      "weight": 2,
+      "justification": "The response explicitly contrasts its proposed method with the prior ad hoc rounds by locking criteria and decision rights before any candidate is chosen, shifting explanatory burden to UI copy, and using task-based comprehension testing instead of open-ended confusion research, directly addressing why rounds one through three failed."
+    }
+  ],
+  "weighted_total": 12.0,
+  "max_possible": 12.0,
+  "raw_judge_response": "{\n  \"criteria\": [\n    {\"id\": \"recognizes_pattern_not_just_instance\", \"verdict\": \"met\", \"justification\": \"The response explicitly diagnoses the recurring pattern rather than treating this as a fresh naming problem: 'The pattern across three rounds says the problem isn't a lack of good candidates... That is whack-a-mole, and a fourth candidate chosen the same way will likely fail the same way.'\"},\n    {\"id\": \"proposes_forcing_function\", \"verdict\": \"met\", \"justification\": \"It proposes naming a single decision owner ('It should be me, or whoever has authority across the family'), a fixed timebox, and an explicit bar for reopening ('a new constraint emerges, or post-launch data shows material harm... \\\"Someone would have preferred a different word\\\" doesn't qualify'), and frames the goal as 'a decision that stays made,' implicitly treating continued indecision as costly.\"},\n    {\"id\": \"distinguishes_principled_objection_from_bikeshedding\", \"verdict\": \"met\", \"justification\": \"The response directly separates legitimate reopening triggers from re-litigation: 'Every name confused *someone* in every round... so it can't be the tiebreaker' and defines that mere preference-based objections don't qualify as grounds to reopen.\"},\n    {\"id\": \"accounts_for_locked_constraints\", \"verdict\": \"met\", \"justification\": \"It explicitly decouples the customer-facing name from the locked API field, instructing to 'Document the mapping in developer docs... and stop letting the field name influence the display-name debate,' rather than proposing anything requiring architectural changes.\"},\n    {\"id\": \"avoids_repeating_failed_approach\", \"verdict\": \"met\", \"justification\": \"The response explicitly contrasts its proposed method with the prior ad hoc rounds by locking criteria and decision rights before any candidate is chosen, shifting explanatory burden to UI copy, and using task-based comprehension testing instead of open-ended confusion research, directly addressing why rounds one through three failed.\"}\n  ]\n}",
+  "input_tokens": 3238,
+  "output_tokens": 1199
+}
